@@ -1609,11 +1609,11 @@
   },
   "liberusoftware/module-accounting-erp-filament": {
     "path": "modules/accounting-erp-filament",
-    "reference": "6bbbe7f14b2af8ab42d580ef92946158506da367",
+    "reference": "75ad20da344b36adf2d7985e5907fc9a127de981",
     "repository": "https://github.com/liberusoftware/module-accounting-erp-filament",
-    "source_signature": "9db579eb5e114673a4ba6edde19431c9fbef2df157648932c1a1ce3e9bd93c21",
-    "source_tree": "32c05fc7812cac471afa05c166f3320cd1793d57",
-    "version": "1.0.0"
+    "source_signature": "72d26de4dec2fe1c9573952886b633887dcbc44c97a629d284f393162280445c",
+    "source_tree": "2da676bf81cf427b97205b73e75e9004af55c5ae",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-erp-http": {
     "path": "modules/accounting-erp-http",
@@ -3721,11 +3721,11 @@
   },
   "liberusoftware/tenancy": {
     "path": "modules/tenancy",
-    "reference": "32cdb9096690f29205255f2eafee4b2b2847fcaa",
+    "reference": "5c079502cf9c82c304f37eab141c8c7d5a77b2b7",
     "repository": "https://github.com/liberusoftware/module-tenancy",
-    "source_signature": "ee0fe468adef9cab22c285b554e35807cceb4a6e2e0dcf81a23a69ed39dcfe74",
-    "source_tree": "c9c9a1bb887b98e67db718633f7c50f40638bb54",
-    "version": "1.0.1"
+    "source_signature": "d469d350ee02b7822a5fa89a3d1bcf1bbd06fa4f8e46fc06e6644ffc88c0b8e5",
+    "source_tree": "04f69949afdcdb6c12817d536fee1706df06aa5d",
+    "version": "1.2.2"
   },
   "liberusoftware/theme-accounting-erp": {
     "path": "themes/accounting-erp",
