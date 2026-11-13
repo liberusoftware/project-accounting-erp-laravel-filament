@@ -55,7 +55,9 @@ jobs:
         run: git restore --source=HEAD --worktree -- modules themes
 
       - name: Audit dependencies
-        run: composer audit --locked
+        # The current Vonage SDK requires its abandoned Nexmo namespace bridge.
+        # Report abandonment while continuing to fail for vulnerability advisories.
+        run: composer audit --locked --abandoned=report
 
       - name: Check formatting
         run: vendor/bin/pint --test
