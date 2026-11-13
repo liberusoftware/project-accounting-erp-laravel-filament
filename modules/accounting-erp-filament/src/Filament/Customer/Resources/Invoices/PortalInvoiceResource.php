@@ -10,6 +10,7 @@ use Filament\Schemas\Schema;
 use Filament\Support\Enums\FontWeight;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Auth\Access\Response;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
@@ -49,15 +50,39 @@ class PortalInvoiceResource extends Resource
     }
 
     #[\Override]
+    public static function getCreateAuthorizationResponse(): Response
+    {
+        return static::canCreate()
+            ? parent::getCreateAuthorizationResponse()
+            : Response::deny();
+    }
+
+    #[\Override]
     public static function canEdit(Model $record): bool
     {
         return false;
     }
 
     #[\Override]
+    public static function getEditAuthorizationResponse(Model $record): Response
+    {
+        return static::canEdit($record)
+            ? parent::getEditAuthorizationResponse($record)
+            : Response::deny();
+    }
+
+    #[\Override]
     public static function canDelete(Model $record): bool
     {
         return false;
+    }
+
+    #[\Override]
+    public static function getDeleteAuthorizationResponse(Model $record): Response
+    {
+        return static::canDelete($record)
+            ? parent::getDeleteAuthorizationResponse($record)
+            : Response::deny();
     }
 
     #[\Override]
