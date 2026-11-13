@@ -1599,6 +1599,30 @@
     "source_tree": "2aca25fac59c30a515940daffb9aec0f5823789a",
     "version": "1.0.0"
   },
+  "liberusoftware/module-accounting-erp": {
+    "path": "modules/accounting-erp",
+    "reference": "39f0fa29e8c7fe233742e524fdda32f60e66b90e",
+    "repository": "https://github.com/liberusoftware/module-accounting-erp",
+    "source_signature": "58a0d1735ddf3c0bd852fa25a6e5a859f7d501c372c9283e63f7f8adb96a60fc",
+    "source_tree": "6e3513957c79aa56d8fb54ac550d10ba6b136d7d",
+    "version": "1.0.0"
+  },
+  "liberusoftware/module-accounting-erp-filament": {
+    "path": "modules/accounting-erp-filament",
+    "reference": "6bbbe7f14b2af8ab42d580ef92946158506da367",
+    "repository": "https://github.com/liberusoftware/module-accounting-erp-filament",
+    "source_signature": "9db579eb5e114673a4ba6edde19431c9fbef2df157648932c1a1ce3e9bd93c21",
+    "source_tree": "32c05fc7812cac471afa05c166f3320cd1793d57",
+    "version": "1.0.0"
+  },
+  "liberusoftware/module-accounting-erp-http": {
+    "path": "modules/accounting-erp-http",
+    "reference": "6b2f9c21c79f11175a534bc7ce69060983ed5bfa",
+    "repository": "https://github.com/liberusoftware/module-accounting-erp-http",
+    "source_signature": "4b87558ae376dc1e44e28c7109a9f06f060c960f5c547c61488f1f4f8ca311ac",
+    "source_tree": "71450c441632670300ba64af6cb6510761004938",
+    "version": "1.0.0"
+  },
   "liberusoftware/module-accounting-estimates-and-quotes": {
     "path": "modules/accounting-estimates-and-quotes",
     "reference": "2c31a1912da5771c413ac32f612b2b6354a159bf",
