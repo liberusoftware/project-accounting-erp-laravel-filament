@@ -58,3 +58,6 @@ docs/superpowers
 .github/skills/
 .junie/skills/
 coverage.xml
+# Installed from Packagist, not carried here.
+/modules/module-manager/
+/modules/module-manager-filament/

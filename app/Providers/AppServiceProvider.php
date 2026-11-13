@@ -11,11 +11,14 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 use Laravel\Horizon\Horizon;
 use Liberu\Accounting\Erp\Models\User;
+use Liberu\Foundation\ModuleManagerFilament\Pages\ModuleManagement;
 
 class AppServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
+        Gate::define(ModuleManagement::ABILITY, fn ($user): bool => method_exists($user, 'isAdmin') && $user->isAdmin());
+
         if (class_exists(Horizon::class)) {
             Horizon::auth(
                 static fn ($request) => Gate::check('viewHorizon', [$request->user()]));
