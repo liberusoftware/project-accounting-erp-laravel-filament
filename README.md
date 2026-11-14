@@ -38,7 +38,7 @@ Liberu Accounting ERP is the deployable accounting application built on the Libe
 
 ```bash
 git clone https://github.com/liberusoftware/project-accounting-erp-laravel-filament.git
-cd accounting-erp-laravel
+cd project-accounting-erp-laravel-filament
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -48,7 +48,7 @@ php artisan migrate
 php artisan serve
 ```
 
-Review `.env` before migrating. Use `php artisan migrate --seed` only when example data is wanted. The optional interactive `install.sh` supports local, Docker, and Kubernetes-oriented setup.
+Review `.env` before migrating. Use `php artisan migrate --seed` only when example data is wanted. The optional interactive `install.sh` supports local, Docker, and Kubernetes-oriented setup. On macOS, run it with `bash install.sh` from the repository directory. On Windows, use a WSL2 Linux terminal with the required PHP, Composer, Node.js, and database tools installed, then run `bash install.sh` there.
 
 ## Composable package architecture
 
