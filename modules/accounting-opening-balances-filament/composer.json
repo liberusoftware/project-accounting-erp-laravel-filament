@@ -1,1 +1,32 @@
-{"name":"liberusoftware/module-accounting-opening-balances-filament","description":"Opening balances Filament 5 adapter.","type":"liberu-module","license":"MIT","version":"1.0.0","require":{"php":"^8.5","filament/filament":"^5.11.0","liberusoftware/module-accounting-opening-balances":"^1.0"},"autoload":{"psr-4":{"Liberu\\Accounting\\OpeningBalancesFilament\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\OpeningBalancesFilament\\OpeningBalancesFilamentServiceProvider"]},"liberu":{"name":"accounting-opening-balances-filament"}},"config":{"allow-plugins":{"pestphp/pest-plugin":true}}}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\OpeningBalancesFilament\\OpeningBalancesFilamentServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-opening-balances-filament"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\OpeningBalancesFilament\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-opening-balances-filament",
+  "description": "Opening balances Filament 5 adapter.",
+  "require": {
+    "filament/filament": "^5.11.0",
+    "php": "^8.5",
+    "liberusoftware/module-accounting-opening-balances": "^1.0"
+  },
+  "version": "1.0.1",
+  "license": "MIT"
+}

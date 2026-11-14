@@ -1,1 +1,32 @@
-{"name":"liberusoftware/module-accounting-matching-intelligence-filament","description":"Filament 5 UI for matching intelligence.","type":"liberu-module","license":"MIT","version":"1.0.0","require":{"php":"^8.5","filament/filament":"^5.11.0","liberusoftware/module-accounting-matching-intelligence":"^1.0"},"autoload":{"psr-4":{"Liberu\\Accounting\\MatchingIntelligenceFilament\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\MatchingIntelligenceFilament\\MatchingIntelligenceFilamentServiceProvider"]},"liberu":{"name":"accounting-matching-intelligence-filament"}},"config":{"allow-plugins":{"pestphp/pest-plugin":true}}}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\MatchingIntelligenceFilament\\MatchingIntelligenceFilamentServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-matching-intelligence-filament"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\MatchingIntelligenceFilament\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-matching-intelligence-filament",
+  "description": "Filament 5 UI for matching intelligence.",
+  "require": {
+    "filament/filament": "^5.11.0",
+    "php": "^8.5",
+    "liberusoftware/module-accounting-matching-intelligence": "^1.0"
+  },
+  "version": "1.0.1",
+  "license": "MIT"
+}

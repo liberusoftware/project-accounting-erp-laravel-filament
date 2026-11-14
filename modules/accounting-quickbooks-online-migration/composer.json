@@ -1,1 +1,32 @@
-{"name":"liberusoftware/module-accounting-quickbooks-online-migration","description":"Accounting QuickBooks Online migration domain module","type":"liberu-module","version":"1.0.0","autoload":{"psr-4":{"Liberu\\Accounting\\QuickBooksOnlineMigration\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\QuickBooksOnlineMigration\\QuickBooksOnlineMigrationServiceProvider"]},"liberu":{"name":"accounting-quickbooks-online-migration"}},"require":{"php":"^8.5","illuminate/database":"^13.38.0","illuminate/support":"^13.38.0"},"config":{"allow-plugins":{"pestphp/pest-plugin":true}},"license":"MIT"}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\QuickBooksOnlineMigration\\QuickBooksOnlineMigrationServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-quickbooks-online-migration"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\QuickBooksOnlineMigration\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-quickbooks-online-migration",
+  "description": "Accounting QuickBooks Online migration domain module",
+  "require": {
+    "php": "^8.5",
+    "illuminate/support": "^13.38.0",
+    "illuminate/database": "^13.38.0"
+  },
+  "version": "1.0.1",
+  "license": "MIT"
+}

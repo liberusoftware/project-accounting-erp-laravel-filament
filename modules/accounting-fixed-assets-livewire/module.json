@@ -3,7 +3,7 @@
   "name": "accounting-fixed-assets-livewire",
   "display_name": "Accounting Fixed Assets Livewire",
   "description": "Livewire 4 fixed-asset register and lifecycle interactions.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\FixedAssetsLivewire\\FixedAssetsLivewireServiceProvider",
   "requires": {

@@ -1,1 +1,33 @@
-{"name":"liberusoftware/module-accounting-kpi-and-goals-api","description":"HTTP API for KPI and goals.","type":"liberu-module","license":"MIT","version":"1.0.0","require":{"php":"^8.5","illuminate/http":"^13.38.0","illuminate/routing":"^13.38.0","liberusoftware/module-accounting-kpi-and-goals":"^1.0"},"autoload":{"psr-4":{"Liberu\\Accounting\\KpiAndGoalsApi\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\KpiAndGoalsApi\\KpiAndGoalsApiServiceProvider"]},"liberu":{"name":"accounting-kpi-and-goals-api"}},"config":{"allow-plugins":{"pestphp/pest-plugin":true}}}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\KpiAndGoalsApi\\KpiAndGoalsApiServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-kpi-and-goals-api"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\KpiAndGoalsApi\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-kpi-and-goals-api",
+  "description": "HTTP API for KPI and goals.",
+  "require": {
+    "liberusoftware/module-accounting-kpi-and-goals": "^1.0",
+    "php": "^8.5",
+    "illuminate/routing": "^13.38.0",
+    "illuminate/http": "^13.38.0"
+  },
+  "version": "1.0.1",
+  "license": "MIT"
+}

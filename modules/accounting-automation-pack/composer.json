@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-automation-pack",
   "description": "Accounting automation triggers, recipes, schedules and approvals.",
   "type": "liberu-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\AutomationPack\\": "src/"
