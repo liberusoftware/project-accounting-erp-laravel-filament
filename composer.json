@@ -585,5 +585,10 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "homepage": "https://github.com/liberusoftware/project-accounting-erp-laravel-filament",
+    "support": {
+        "issues": "https://github.com/liberusoftware/project-accounting-erp-laravel-filament/issues",
+        "source": "https://github.com/liberusoftware/project-accounting-erp-laravel-filament"
+    }
 }
