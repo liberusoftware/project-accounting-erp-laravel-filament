@@ -9,6 +9,7 @@ use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Facades\Filament;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -19,9 +20,11 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 use Liberu\Accounting\Erp\Models\Account;
 use Liberu\Accounting\Erp\Models\InventoryItem;
 use Liberu\Accounting\Erp\Modules\Inventory\InventoryModule;
+use Liberu\Accounting\Erp\Policies\BillOfMaterialsPolicy;
 use Liberu\Accounting\Erp\Services\InventoryMovementService;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\InventoryItems\Pages\CreateInventoryItem;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\InventoryItems\Pages\EditInventoryItem;
@@ -86,7 +89,11 @@ class InventoryItemResource extends Resource
                     ->required(),
                 Select::make('account_id')
                     ->label('Inventory account')
-                    ->relationship('account', 'account_name')
+                    ->relationship('account', 'account_name', modifyQueryUsing: fn (Builder $query, string $operation) => $query
+                        ->when($operation === 'create', fn (Builder $query) => $query->where(
+                            'team_id',
+                            app(BillOfMaterialsPolicy::class)->activeTeamId(Filament::auth()->user()) ?? -1,
+                        )))
                     ->searchable()
                     ->required(),
                 Toggle::make('is_active')
@@ -118,6 +125,7 @@ class InventoryItemResource extends Resource
             ])
             ->recordActions([
                 EditAction::make(),
+                BillOfMaterialsAction::make(),
                 Action::make('recordPurchase')
                     ->label('Record purchase')
                     ->icon('heroicon-o-arrow-down-tray')
