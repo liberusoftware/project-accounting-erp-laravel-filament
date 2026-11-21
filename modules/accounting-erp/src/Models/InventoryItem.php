@@ -7,6 +7,7 @@ namespace Liberu\Accounting\Erp\Models;
 use Illuminate\Database\Eloquent\Attributes\UseFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Liberu\Accounting\Erp\Database\Factories\InventoryItemFactory;
 use Liberu\Accounting\Erp\Traits\IsTenantModel;
 
@@ -51,6 +52,12 @@ class InventoryItem extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    /** @return HasMany<BillOfMaterialsComponent, $this> */
+    public function billOfMaterials(): HasMany
+    {
+        return $this->hasMany(BillOfMaterialsComponent::class, 'item_id');
     }
 
     public function transactions()
