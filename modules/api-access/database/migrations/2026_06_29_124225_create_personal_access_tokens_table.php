@@ -11,10 +11,6 @@ return new class() extends Migration
      */
     public function up(): void
     {
-        if (Schema::hasTable('personal_access_tokens')) {
-            return;
-        }
-
         Schema::create('personal_access_tokens', function (Blueprint $table) {
             $table->id();
             $table->morphs('tokenable');
@@ -32,6 +28,6 @@ return new class() extends Migration
      */
     public function down(): void
     {
-        // The host identity stack shares these tokens; retain credentials on rollback.
+        Schema::dropIfExists('personal_access_tokens');
     }
 };

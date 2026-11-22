@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d102aa02820c8c896406bcbcba24b51e",
+    "content-hash": "eb2faf7fbb10d86b25f2a092eade9076",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2093,16 +2093,16 @@
         },
         {
             "name": "filament/actions",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/actions.git",
-                "reference": "251bf264b629c6592fc8e7db7c336750ddf4c1e7"
+                "reference": "beeb4bf15304277a104f6ebe1b0c15e255aeb17e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/actions/zipball/251bf264b629c6592fc8e7db7c336750ddf4c1e7",
-                "reference": "251bf264b629c6592fc8e7db7c336750ddf4c1e7",
+                "url": "https://api.github.com/repos/filamentphp/actions/zipball/beeb4bf15304277a104f6ebe1b0c15e255aeb17e",
+                "reference": "beeb4bf15304277a104f6ebe1b0c15e255aeb17e",
                 "shasum": ""
             },
             "require": {
@@ -2138,20 +2138,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-15T22:01:56+00:00"
+            "time": "2026-11-21T23:30:43+00:00"
         },
         {
             "name": "filament/filament",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/panels.git",
-                "reference": "715eedae259c4aff6b0ffaca720caa7ad507881e"
+                "reference": "19b1406ce7e678e51b8fd738d3aec07178a4dbb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/panels/zipball/715eedae259c4aff6b0ffaca720caa7ad507881e",
-                "reference": "715eedae259c4aff6b0ffaca720caa7ad507881e",
+                "url": "https://api.github.com/repos/filamentphp/panels/zipball/19b1406ce7e678e51b8fd738d3aec07178a4dbb3",
+                "reference": "19b1406ce7e678e51b8fd738d3aec07178a4dbb3",
                 "shasum": ""
             },
             "require": {
@@ -2196,20 +2196,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-15T22:04:19+00:00"
+            "time": "2026-11-21T23:30:19+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/forms.git",
-                "reference": "3df415554fb40c38a47255b523a83ecd3c9a893b"
+                "reference": "ae1dcaccbc3a4997533581c21a50eecc78d835ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/forms/zipball/3df415554fb40c38a47255b523a83ecd3c9a893b",
-                "reference": "3df415554fb40c38a47255b523a83ecd3c9a893b",
+                "url": "https://api.github.com/repos/filamentphp/forms/zipball/ae1dcaccbc3a4997533581c21a50eecc78d835ca",
+                "reference": "ae1dcaccbc3a4997533581c21a50eecc78d835ca",
                 "shasum": ""
             },
             "require": {
@@ -2249,20 +2249,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-15T22:04:07+00:00"
+            "time": "2026-11-21T23:22:18+00:00"
         },
         {
             "name": "filament/infolists",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/infolists.git",
-                "reference": "139c17f78b6d7487549e313c1e020f0ca7f4da86"
+                "reference": "d91335f219f4772ab2aedda92ff855b36ed9291e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/infolists/zipball/139c17f78b6d7487549e313c1e020f0ca7f4da86",
-                "reference": "139c17f78b6d7487549e313c1e020f0ca7f4da86",
+                "url": "https://api.github.com/repos/filamentphp/infolists/zipball/d91335f219f4772ab2aedda92ff855b36ed9291e",
+                "reference": "d91335f219f4772ab2aedda92ff855b36ed9291e",
                 "shasum": ""
             },
             "require": {
@@ -2294,20 +2294,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-13T12:51:20+00:00"
+            "time": "2026-11-21T23:20:55+00:00"
         },
         {
             "name": "filament/notifications",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/notifications.git",
-                "reference": "e4bd860fe0229d6df099d7e9bfac91594a639cdc"
+                "reference": "b8d04d75ed2e0365625fe9e57116e0546060bea2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/notifications/zipball/e4bd860fe0229d6df099d7e9bfac91594a639cdc",
-                "reference": "e4bd860fe0229d6df099d7e9bfac91594a639cdc",
+                "url": "https://api.github.com/repos/filamentphp/notifications/zipball/b8d04d75ed2e0365625fe9e57116e0546060bea2",
+                "reference": "b8d04d75ed2e0365625fe9e57116e0546060bea2",
                 "shasum": ""
             },
             "require": {
@@ -2341,20 +2341,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-15T21:53:14+00:00"
+            "time": "2026-11-21T23:30:35+00:00"
         },
         {
             "name": "filament/query-builder",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/query-builder.git",
-                "reference": "7ac919bbd58e0109ef32dec0df8b8d564d3f6a14"
+                "reference": "98f342f3f63dc7a251d19ce144405f59a6f22b56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/query-builder/zipball/7ac919bbd58e0109ef32dec0df8b8d564d3f6a14",
-                "reference": "7ac919bbd58e0109ef32dec0df8b8d564d3f6a14",
+                "url": "https://api.github.com/repos/filamentphp/query-builder/zipball/98f342f3f63dc7a251d19ce144405f59a6f22b56",
+                "reference": "98f342f3f63dc7a251d19ce144405f59a6f22b56",
                 "shasum": ""
             },
             "require": {
@@ -2387,20 +2387,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-15T22:02:28+00:00"
+            "time": "2026-11-21T23:22:25+00:00"
         },
         {
             "name": "filament/schemas",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/schemas.git",
-                "reference": "dbd06bda932cf9827aad8ca473962d116bb6f8a9"
+                "reference": "3eb85e75e401682415c85c5920acb01bd1e1d1e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/schemas/zipball/dbd06bda932cf9827aad8ca473962d116bb6f8a9",
-                "reference": "dbd06bda932cf9827aad8ca473962d116bb6f8a9",
+                "url": "https://api.github.com/repos/filamentphp/schemas/zipball/3eb85e75e401682415c85c5920acb01bd1e1d1e6",
+                "reference": "3eb85e75e401682415c85c5920acb01bd1e1d1e6",
                 "shasum": ""
             },
             "require": {
@@ -2432,20 +2432,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-15T22:00:32+00:00"
+            "time": "2026-11-21T23:22:36+00:00"
         },
         {
             "name": "filament/spatie-laravel-settings-plugin",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-settings-plugin.git",
-                "reference": "1e9f3a3952afb92c70b59e39083e93181fc26f3f"
+                "reference": "ab15ac660b6fe8985960521211f7e5acc4f7b462"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-settings-plugin/zipball/1e9f3a3952afb92c70b59e39083e93181fc26f3f",
-                "reference": "1e9f3a3952afb92c70b59e39083e93181fc26f3f",
+                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-settings-plugin/zipball/ab15ac660b6fe8985960521211f7e5acc4f7b462",
+                "reference": "ab15ac660b6fe8985960521211f7e5acc4f7b462",
                 "shasum": ""
             },
             "require": {
@@ -2476,20 +2476,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-03T11:53:08+00:00"
+            "time": "2026-11-21T23:21:55+00:00"
         },
         {
             "name": "filament/support",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/support.git",
-                "reference": "7738cc2c47f26d1e74c9e344c9106e6d7036992f"
+                "reference": "6a5e21018b72125efe6c5b6701a9fd989543faf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/support/zipball/7738cc2c47f26d1e74c9e344c9106e6d7036992f",
-                "reference": "7738cc2c47f26d1e74c9e344c9106e6d7036992f",
+                "url": "https://api.github.com/repos/filamentphp/support/zipball/6a5e21018b72125efe6c5b6701a9fd989543faf3",
+                "reference": "6a5e21018b72125efe6c5b6701a9fd989543faf3",
                 "shasum": ""
             },
             "require": {
@@ -2501,7 +2501,7 @@
                 "illuminate/contracts": "^11.28|^12.0|^13.0",
                 "kirschbaum-development/eloquent-power-joins": "^4.0",
                 "league/uri-components": "^7.0",
-                "livewire/livewire": "^4.4.8",
+                "livewire/livewire": "^4.4.9",
                 "nette/php-generator": "^4.0",
                 "php": "^8.2",
                 "ryangjchandler/blade-capture-directive": "^1.0",
@@ -2536,20 +2536,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-15T21:59:42+00:00"
+            "time": "2026-11-21T23:20:59+00:00"
         },
         {
             "name": "filament/tables",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/tables.git",
-                "reference": "e172dbb2ed36cb027d12a93d36cc0a3de6255a42"
+                "reference": "d52619f2ba5633fc5151de86ff762aba8893760c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/tables/zipball/e172dbb2ed36cb027d12a93d36cc0a3de6255a42",
-                "reference": "e172dbb2ed36cb027d12a93d36cc0a3de6255a42",
+                "url": "https://api.github.com/repos/filamentphp/tables/zipball/d52619f2ba5633fc5151de86ff762aba8893760c",
+                "reference": "d52619f2ba5633fc5151de86ff762aba8893760c",
                 "shasum": ""
             },
             "require": {
@@ -2582,20 +2582,20 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-15T22:04:16+00:00"
+            "time": "2026-11-21T23:30:53+00:00"
         },
         {
             "name": "filament/widgets",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/widgets.git",
-                "reference": "d2fc5ec7decb0e2d948d45130cd1cd25f6100381"
+                "reference": "568e89d97e9cc95510eb9292e797fc7bf88e26e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/widgets/zipball/d2fc5ec7decb0e2d948d45130cd1cd25f6100381",
-                "reference": "d2fc5ec7decb0e2d948d45130cd1cd25f6100381",
+                "url": "https://api.github.com/repos/filamentphp/widgets/zipball/568e89d97e9cc95510eb9292e797fc7bf88e26e9",
+                "reference": "568e89d97e9cc95510eb9292e797fc7bf88e26e9",
                 "shasum": ""
             },
             "require": {
@@ -2626,7 +2626,7 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2026-11-13T12:59:18+00:00"
+            "time": "2026-11-21T23:29:04+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -2881,16 +2881,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "8.5.4",
+            "version": "8.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "047202b4f2ac14265ad5f9e039932df4efe0d9bf"
+                "reference": "d1a26e6ce24268e740af501de8748d1c945e6f4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/047202b4f2ac14265ad5f9e039932df4efe0d9bf",
-                "reference": "047202b4f2ac14265ad5f9e039932df4efe0d9bf",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d1a26e6ce24268e740af501de8748d1c945e6f4b",
+                "reference": "d1a26e6ce24268e740af501de8748d1c945e6f4b",
                 "shasum": ""
             },
             "require": {
@@ -2988,7 +2988,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/8.5.4"
+                "source": "https://github.com/guzzle/guzzle/tree/8.5.5"
             },
             "funding": [
                 {
@@ -3004,7 +3004,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-20T22:56:36+00:00"
+            "time": "2026-11-21T21:14:02+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -3092,16 +3092,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "3.5.1",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "ef2058cc884d864affa6ef7cd23a68d45e015c2f"
+                "reference": "1fa0f8319c046b7dec80030460254283d851388e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/ef2058cc884d864affa6ef7cd23a68d45e015c2f",
-                "reference": "ef2058cc884d864affa6ef7cd23a68d45e015c2f",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/1fa0f8319c046b7dec80030460254283d851388e",
+                "reference": "1fa0f8319c046b7dec80030460254283d851388e",
                 "shasum": ""
             },
             "require": {
@@ -3193,7 +3193,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/3.5.1"
+                "source": "https://github.com/guzzle/psr7/tree/3.6.0"
             },
             "funding": [
                 {
@@ -3209,7 +3209,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-19T20:35:18+00:00"
+            "time": "2026-11-22T00:00:35+00:00"
         },
         {
             "name": "guzzlehttp/uri-template",
@@ -6234,16 +6234,16 @@
         },
         {
             "name": "liberusoftware/application",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-application.git",
-                "reference": "1509d3989556547ee7be3e5dcbd80d898af1144d"
+                "reference": "78f01f6939d1bfecb821cff960a57ec232bcf62a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-application/zipball/1509d3989556547ee7be3e5dcbd80d898af1144d",
-                "reference": "1509d3989556547ee7be3e5dcbd80d898af1144d",
+                "url": "https://api.github.com/repos/liberusoftware/module-application/zipball/78f01f6939d1bfecb821cff960a57ec232bcf62a",
+                "reference": "78f01f6939d1bfecb821cff960a57ec232bcf62a",
                 "shasum": ""
             },
             "require": {
@@ -6274,22 +6274,22 @@
             "description": "Required application metadata, health, clocks, identifiers, and secure HTTP defaults.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-application/issues",
-                "source": "https://github.com/liberusoftware/module-application/tree/v1.10.1"
+                "source": "https://github.com/liberusoftware/module-application/tree/v1.10.2"
             },
-            "time": "2026-11-13T23:59:02+00:00"
+            "time": "2026-11-21T18:19:59+00:00"
         },
         {
             "name": "liberusoftware/audit",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-audit.git",
-                "reference": "a2a10e80311af78bf697ee6c710ec6580b07f778"
+                "reference": "96c35af49cfd93c6a55ce1ab5701a8131d131e5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-audit/zipball/a2a10e80311af78bf697ee6c710ec6580b07f778",
-                "reference": "a2a10e80311af78bf697ee6c710ec6580b07f778",
+                "url": "https://api.github.com/repos/liberusoftware/module-audit/zipball/96c35af49cfd93c6a55ce1ab5701a8131d131e5b",
+                "reference": "96c35af49cfd93c6a55ce1ab5701a8131d131e5b",
                 "shasum": ""
             },
             "require": {
@@ -6320,9 +6320,9 @@
             "description": "Contextual material-change audit records with correlation and retention boundaries.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-audit/issues",
-                "source": "https://github.com/liberusoftware/module-audit/tree/v1.10.0"
+                "source": "https://github.com/liberusoftware/module-audit/tree/v1.11.0"
             },
-            "time": "2026-11-05T16:06:54+00:00"
+            "time": "2026-11-22T04:49:00+00:00"
         },
         {
             "name": "liberusoftware/composer-installer",
@@ -6370,16 +6370,16 @@
         },
         {
             "name": "liberusoftware/currency-context",
-            "version": "1.6.3",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-currency-context.git",
-                "reference": "4035af54ec399b242b90996f160dd4153afbedae"
+                "reference": "d639a56289bf54c4553a7c78b7df6d788926fdac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-currency-context/zipball/4035af54ec399b242b90996f160dd4153afbedae",
-                "reference": "4035af54ec399b242b90996f160dd4153afbedae",
+                "url": "https://api.github.com/repos/liberusoftware/module-currency-context/zipball/d639a56289bf54c4553a7c78b7df6d788926fdac",
+                "reference": "d639a56289bf54c4553a7c78b7df6d788926fdac",
                 "shasum": ""
             },
             "require": {
@@ -6411,9 +6411,9 @@
             "description": "Precise money values, ISO currency metadata, context, formatting, and exchange-rate contracts.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-currency-context/issues",
-                "source": "https://github.com/liberusoftware/module-currency-context/tree/v1.6.3"
+                "source": "https://github.com/liberusoftware/module-currency-context/tree/v1.6.4"
             },
-            "time": "2026-11-21T17:58:35+00:00"
+            "time": "2026-11-22T04:49:07+00:00"
         },
         {
             "name": "liberusoftware/developer-experience",
@@ -6555,16 +6555,16 @@
         },
         {
             "name": "liberusoftware/identity-core",
-            "version": "1.7.2",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-identity-core.git",
-                "reference": "264d65ad387161760e13884dedd55e89d8423c0f"
+                "reference": "1d013d31af989394df070ae06b55e2701e194248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-identity-core/zipball/264d65ad387161760e13884dedd55e89d8423c0f",
-                "reference": "264d65ad387161760e13884dedd55e89d8423c0f",
+                "url": "https://api.github.com/repos/liberusoftware/module-identity-core/zipball/1d013d31af989394df070ae06b55e2701e194248",
+                "reference": "1d013d31af989394df070ae06b55e2701e194248",
                 "shasum": ""
             },
             "require": {
@@ -6594,22 +6594,22 @@
             "description": "Provider-neutral identity policy, normalization, and versioned security events.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-identity-core/issues",
-                "source": "https://github.com/liberusoftware/module-identity-core/tree/v1.7.2"
+                "source": "https://github.com/liberusoftware/module-identity-core/tree/v1.8.0"
             },
-            "time": "2026-11-21T17:58:44+00:00"
+            "time": "2026-11-22T04:49:15+00:00"
         },
         {
             "name": "liberusoftware/identity-core-filament",
-            "version": "1.7.3",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-identity-core-filament.git",
-                "reference": "574101add2547d51a138203071064201a6f72fa8"
+                "reference": "2810e1cf24e50e39a154b3a16204ea463b52f828"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-identity-core-filament/zipball/574101add2547d51a138203071064201a6f72fa8",
-                "reference": "574101add2547d51a138203071064201a6f72fa8",
+                "url": "https://api.github.com/repos/liberusoftware/module-identity-core-filament/zipball/2810e1cf24e50e39a154b3a16204ea463b52f828",
+                "reference": "2810e1cf24e50e39a154b3a16204ea463b52f828",
                 "shasum": ""
             },
             "require": {
@@ -6639,17 +6639,17 @@
             "description": "Filament administration adapter for the configured Liberu identity model.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-identity-core-filament/issues",
-                "source": "https://github.com/liberusoftware/module-identity-core-filament/tree/v1.7.3"
+                "source": "https://github.com/liberusoftware/module-identity-core-filament/tree/v1.7.4"
             },
-            "time": "2026-11-21T17:58:48+00:00"
+            "time": "2026-11-22T00:41:53+00:00"
         },
         {
             "name": "liberusoftware/identity-socialstream",
-            "version": "1.8.2",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-identity-socialstream.git",
-                "reference": "6f1562d9e9dfbc0246446b11b6b5c7f5ef0d6c1d"
+                "reference": "b482d60bd978a5b73d2ce6f50d9a8277f3625dc5"
             },
             "require": {
                 "bursteri/socialstream": "^7.0.0",
@@ -6689,7 +6689,7 @@
                 "MIT"
             ],
             "description": "Socialstream/Socialite identity-linking provider adapter.",
-            "time": "2026-11-14T16:27:20+00:00"
+            "time": "2026-11-22T04:49:22+00:00"
         },
         {
             "name": "liberusoftware/import-export",
@@ -6739,16 +6739,17 @@
         },
         {
             "name": "liberusoftware/integrations",
-            "version": "1.9.1",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-integrations.git",
-                "reference": "3cd2a3d187962f9855b3db010d9b2f7e2ff99658"
+                "reference": "26755a76dbd01e49e348e8c852e3ec0b1a40421c"
             },
             "require": {
                 "illuminate/database": "^13.38.0",
                 "illuminate/support": "^13.38.0",
                 "liberusoftware/module-manager": "^1.0",
+                "liberusoftware/organizations-teams": "^1.0",
                 "php": "^8.5"
             },
             "require-dev": {
@@ -6780,7 +6781,7 @@
                 "MIT"
             ],
             "description": "Provider adapter registry and protected connection lifecycle.",
-            "time": "2026-11-21T17:58:55+00:00"
+            "time": "2026-11-22T04:50:43+00:00"
         },
         {
             "name": "liberusoftware/jetstream-bridge",
@@ -27106,15 +27107,16 @@
         },
         {
             "name": "liberusoftware/organizations-teams",
-            "version": "1.11.1",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-organizations-teams.git",
-                "reference": "3f06918f47cbafa05ded50938cc4a1b256e37c7d"
+                "reference": "e889d57baac138320a3d9800c620073bc9dddea5"
             },
             "require": {
                 "laravel/jetstream": "^5.5.3",
                 "liberusoftware/module-manager": "^1.0",
+                "liberusoftware/roles-permissions": "^1.0",
                 "liberusoftware/tenancy": "^1.0",
                 "php": "^8.5",
                 "spatie/laravel-activitylog": "^5.1.3"
@@ -27149,20 +27151,20 @@
                 "MIT"
             ],
             "description": "Organization, team, membership, invitation, ownership, and context foundation.",
-            "time": "2026-11-21T17:59:42+00:00"
+            "time": "2026-11-22T04:50:53+00:00"
         },
         {
             "name": "liberusoftware/organizations-teams-filament",
-            "version": "1.6.3",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-organizations-teams-filament.git",
-                "reference": "340d9d1a4235fa0f696357c094032427cf86a172"
+                "reference": "335c9b835bfcab7d77d3c2495e21572d06636521"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-organizations-teams-filament/zipball/340d9d1a4235fa0f696357c094032427cf86a172",
-                "reference": "340d9d1a4235fa0f696357c094032427cf86a172",
+                "url": "https://api.github.com/repos/liberusoftware/module-organizations-teams-filament/zipball/335c9b835bfcab7d77d3c2495e21572d06636521",
+                "reference": "335c9b835bfcab7d77d3c2495e21572d06636521",
                 "shasum": ""
             },
             "require": {
@@ -27192,17 +27194,17 @@
             "description": "Filament administration adapter for organizations and teams.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-organizations-teams-filament/issues",
-                "source": "https://github.com/liberusoftware/module-organizations-teams-filament/tree/v1.6.3"
+                "source": "https://github.com/liberusoftware/module-organizations-teams-filament/tree/v1.6.4"
             },
-            "time": "2026-11-21T17:59:46+00:00"
+            "time": "2026-11-22T00:42:59+00:00"
         },
         {
             "name": "liberusoftware/passkeys",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/passkeys.git",
-                "reference": "42a9239f450dd44247e960c37629c0931e22ec93"
+                "reference": "1c1205bf7e3d45671481e57b6445faae64aa21e6"
             },
             "require": {
                 "illuminate/contracts": "^13.0",
@@ -27230,7 +27232,7 @@
                 "MIT"
             ],
             "description": "WebAuthn / FIDO2 passkey registration, discoverable passwordless sign-in, step-up authentication, and clone detection for Liberu.",
-            "time": "2026-11-18T14:45:45+00:00"
+            "time": "2026-11-22T04:47:41+00:00"
         },
         {
             "name": "liberusoftware/payment-adyen",
@@ -27270,11 +27272,11 @@
         },
         {
             "name": "liberusoftware/payment-contracts",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-contracts.git",
-                "reference": "2a2f5b899aafffeb156e7fcab58edf15a041bd2e"
+                "reference": "cacb87a55d6f98176697cc19187aff429fc30027"
             },
             "require": {
                 "illuminate/contracts": "^13.0",
@@ -27306,21 +27308,21 @@
                 "MIT"
             ],
             "description": "Provider-neutral merchant payment gateway contracts, DTOs, and lifecycle state machine for Liberu.",
-            "time": "2026-11-18T14:43:39+00:00"
+            "time": "2026-11-22T04:48:13+00:00"
         },
         {
             "name": "liberusoftware/payment-core",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-core.git",
-                "reference": "be69e0652764bcc2423c6460d2c29b6e87d0f1ff"
+                "reference": "313dd3cf554de116bf3c39434df0b0a2d5d0f4e8"
             },
             "require": {
                 "illuminate/database": "^13.0",
                 "illuminate/events": "^13.0",
                 "illuminate/support": "^13.0",
-                "liberusoftware/payment-contracts": "^1.0",
+                "liberusoftware/payment-contracts": "^1.1",
                 "php": "^8.5"
             },
             "type": "liberu-module",
@@ -27343,7 +27345,7 @@
                 "MIT"
             ],
             "description": "Provider-neutral merchant payment orchestration, gateway registry, idempotency, webhook inbox, and reconciliation core.",
-            "time": "2026-11-18T14:43:52+00:00"
+            "time": "2026-11-22T04:48:21+00:00"
         },
         {
             "name": "liberusoftware/payment-gocardless",
@@ -27609,15 +27611,14 @@
         },
         {
             "name": "liberusoftware/roles-permissions",
-            "version": "1.8.1",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-roles-permissions.git",
-                "reference": "43ca6818a6441b4ba540101700a2b70a35e7466c"
+                "reference": "e877f74e5f53d62314aae9d6383414508d9ab6b7"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
-                "liberusoftware/organizations-teams": "^1.0",
                 "php": "^8.5",
                 "spatie/laravel-permission": "^8.3.2"
             },
@@ -27650,20 +27651,20 @@
                 "MIT"
             ],
             "description": "Contextual roles, permissions, policies, and authorization safeguards.",
-            "time": "2026-11-21T17:59:54+00:00"
+            "time": "2026-11-22T04:51:02+00:00"
         },
         {
             "name": "liberusoftware/roles-permissions-filament",
-            "version": "1.6.3",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-roles-permissions-filament.git",
-                "reference": "8eb249655e27f285ff169c9655b9f961ce5b45f8"
+                "reference": "c3349ccf5280ee513bbefdb857740a0772b523e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-roles-permissions-filament/zipball/8eb249655e27f285ff169c9655b9f961ce5b45f8",
-                "reference": "8eb249655e27f285ff169c9655b9f961ce5b45f8",
+                "url": "https://api.github.com/repos/liberusoftware/module-roles-permissions-filament/zipball/c3349ccf5280ee513bbefdb857740a0772b523e8",
+                "reference": "c3349ccf5280ee513bbefdb857740a0772b523e8",
                 "shasum": ""
             },
             "require": {
@@ -27694,22 +27695,22 @@
             "description": "Filament Shield presentation adapter for Liberu authorization.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-roles-permissions-filament/issues",
-                "source": "https://github.com/liberusoftware/module-roles-permissions-filament/tree/v1.6.3"
+                "source": "https://github.com/liberusoftware/module-roles-permissions-filament/tree/v1.6.4"
             },
-            "time": "2026-11-21T17:59:58+00:00"
+            "time": "2026-11-22T00:43:13+00:00"
         },
         {
             "name": "liberusoftware/scheduler-queues",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-scheduler-queues.git",
-                "reference": "5583216f6565d5cf33568e310b2d6527d523a297"
+                "reference": "28017c885ee73ae7ea40b1d7a75d9b93d82b5e01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-scheduler-queues/zipball/5583216f6565d5cf33568e310b2d6527d523a297",
-                "reference": "5583216f6565d5cf33568e310b2d6527d523a297",
+                "url": "https://api.github.com/repos/liberusoftware/module-scheduler-queues/zipball/28017c885ee73ae7ea40b1d7a75d9b93d82b5e01",
+                "reference": "28017c885ee73ae7ea40b1d7a75d9b93d82b5e01",
                 "shasum": ""
             },
             "require": {
@@ -27741,9 +27742,9 @@
             "description": "Queue idempotency, retry, failure, scheduling, locking, and deployment conventions.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-scheduler-queues/issues",
-                "source": "https://github.com/liberusoftware/module-scheduler-queues/tree/v1.6.0"
+                "source": "https://github.com/liberusoftware/module-scheduler-queues/tree/v1.6.1"
             },
-            "time": "2026-11-05T16:15:54+00:00"
+            "time": "2026-11-22T00:41:58+00:00"
         },
         {
             "name": "liberusoftware/search",
@@ -28076,11 +28077,11 @@
         },
         {
             "name": "liberusoftware/theme-support",
-            "version": "1.8.6",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-theme-support.git",
-                "reference": "9bbb0f6837b0fb1a4a59efa4e3e85f5863cef3dc"
+                "reference": "d8788d6f989e7d62b13e87321530287bee70459d"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
@@ -28124,7 +28125,7 @@
                 "MIT"
             ],
             "description": "Theme discovery and host presentation support for Liberu applications.",
-            "time": "2026-11-21T18:00:29+00:00"
+            "time": "2026-11-22T00:42:05+00:00"
         },
         {
             "name": "liberusoftware/theme-support-livewire",
@@ -37948,7 +37949,7 @@
         },
         {
             "name": "filament/upgrade",
-            "version": "v5.11.4",
+            "version": "v5.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/upgrade.git",
