@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Liberu\PackageTestbench\PackageTestCase;
 use Tests\TestCase;
 
 pest()->extend(TestCase::class)
@@ -13,7 +14,7 @@ pest()->extend(TestCase::class)->in('Unit');
 pest()->extend(TestCase::class)->in('Architecture');
 
 if (is_dir(dirname(__DIR__).'/modules')) {
-    if (! class_exists(\Liberu\PackageTestbench\PackageTestCase::class)) {
+    if (! class_exists(PackageTestCase::class)) {
         require_once __DIR__.'/Support/PackageTestCaseShim.php';
     }
 

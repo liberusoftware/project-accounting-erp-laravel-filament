@@ -44,7 +44,7 @@ it('covers app providers, handler, theme colors, and panel providers', function 
     expect($limit)->not->toBeNull();
 
     // AppServiceProvider gates, Horizon auth, Password defaults, and production URL scheme
-    $user = new class extends User
+    $user = new class() extends User
     {
         public bool $adminFlag = true;
 
@@ -87,7 +87,7 @@ it('covers app providers, handler, theme colors, and panel providers', function 
 });
 
 it('covers ModulePlugins resolution, container fallback, invalid plugin, and duplicate id branches', function (): void {
-    $validPlugin = new class implements Plugin
+    $validPlugin = new class() implements Plugin
     {
         public function getId(): string
         {
@@ -99,7 +99,7 @@ it('covers ModulePlugins resolution, container fallback, invalid plugin, and dup
         public function boot(Panel $panel): void {}
     };
 
-    $invalidPlugin = new stdClass;
+    $invalidPlugin = new stdClass();
 
     $this->app->instance($validPlugin::class, $validPlugin);
     $this->app->instance($invalidPlugin::class, $invalidPlugin);

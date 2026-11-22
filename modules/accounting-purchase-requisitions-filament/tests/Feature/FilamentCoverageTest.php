@@ -13,14 +13,16 @@ use Liberu\Accounting\PurchaseRequisitionsFilament\Resources\PurchaseRequisition
 
 it('registers and configures accounting-purchase-requisitions-filament filament resources', function (): void {
     $provider = $this->app->register(PurchaseRequisitionsFilamentServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
     expect($provider)->toBeInstanceOf(PurchaseRequisitionsFilamentServiceProvider::class);
     $plugin = PurchaseRequisitionsFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-purchase-requisitions-filament');
     $plugin->register($panel);
     $plugin->boot($panel);
     expect($plugin->getId())->toBeString()->not->toBeEmpty();
-    $host = new ListPurchaseRequisitions;
+    $host = new ListPurchaseRequisitions();
     expect(PurchaseRequisitionResource::getPages())->toBeArray();
     expect(PurchaseRequisitionResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
     expect(PurchaseRequisitionResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);

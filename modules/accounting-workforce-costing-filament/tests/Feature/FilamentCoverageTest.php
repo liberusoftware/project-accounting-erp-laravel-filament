@@ -7,22 +7,23 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Liberu\Accounting\WorkforceCostingFilament\Resources\Pages\ListWorkforceCostingRules;
-use Liberu\Accounting\WorkforceCostingFilament\Resources\Pages\ListWorkforceCosts;
-use Liberu\Accounting\WorkforceCostingFilament\Resources\WorkforceCostResource;
 use Liberu\Accounting\WorkforceCostingFilament\Resources\WorkforceCostingRuleResource;
+use Liberu\Accounting\WorkforceCostingFilament\Resources\WorkforceCostResource;
 use Liberu\Accounting\WorkforceCostingFilament\WorkforceCostingFilamentPlugin;
 use Liberu\Accounting\WorkforceCostingFilament\WorkforceCostingFilamentServiceProvider;
 
 it('registers and configures accounting-workforce-costing-filament filament resources', function (): void {
     $provider = $this->app->register(WorkforceCostingFilamentServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
     expect($provider)->toBeInstanceOf(WorkforceCostingFilamentServiceProvider::class);
     $plugin = WorkforceCostingFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-workforce-costing-filament');
     $plugin->register($panel);
     $plugin->boot($panel);
     expect($plugin->getId())->toBeString()->not->toBeEmpty();
-    $host = new ListWorkforceCostingRules;
+    $host = new ListWorkforceCostingRules();
     expect(WorkforceCostResource::getPages())->toBeArray();
     expect(WorkforceCostResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
     expect(WorkforceCostResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);

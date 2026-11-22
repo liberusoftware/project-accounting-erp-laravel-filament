@@ -13,14 +13,16 @@ use Liberu\Accounting\SalesOrdersFilament\SalesOrdersFilamentServiceProvider;
 
 it('registers and configures accounting-sales-orders-filament filament resources', function (): void {
     $provider = $this->app->register(SalesOrdersFilamentServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
     expect($provider)->toBeInstanceOf(SalesOrdersFilamentServiceProvider::class);
     $plugin = SalesOrdersFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-sales-orders-filament');
     $plugin->register($panel);
     $plugin->boot($panel);
     expect($plugin->getId())->toBeString()->not->toBeEmpty();
-    $host = new ListSalesOrders;
+    $host = new ListSalesOrders();
     expect(SalesOrderResource::getPages())->toBeArray();
     expect(SalesOrderResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
     expect(SalesOrderResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);

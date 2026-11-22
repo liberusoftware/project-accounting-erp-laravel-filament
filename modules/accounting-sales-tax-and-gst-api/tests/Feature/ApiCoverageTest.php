@@ -2,15 +2,17 @@
 
 declare(strict_types=1);
 
-use Illuminate\Http\Request;
 use Laravel\Sanctum\Sanctum;
 use Liberu\Accounting\Erp\Models\User;
+use Liberu\Accounting\SalesTaxAndGstApi\SalesTaxAndGstApiServiceProvider;
 
 it('covers accounting-sales-tax-and-gst-api api provider, policies, requests, and index route', function (): void {
     $user = User::factory()->create(['current_team_id' => 1]);
     Sanctum::actingAs($user, ['*']);
 
-    $provider = $this->app->register(\Liberu\Accounting\SalesTaxAndGstApi\SalesTaxAndGstApiServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
-    expect($provider)->toBeInstanceOf(\Liberu\Accounting\SalesTaxAndGstApi\SalesTaxAndGstApiServiceProvider::class);
+    $provider = $this->app->register(SalesTaxAndGstApiServiceProvider::class, force: true);
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
+    expect($provider)->toBeInstanceOf(SalesTaxAndGstApiServiceProvider::class);
 });

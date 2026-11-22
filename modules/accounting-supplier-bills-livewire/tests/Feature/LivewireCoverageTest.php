@@ -15,8 +15,8 @@ it('covers accounting-supplier-bills-livewire components', function (): void {
     $provider = $this->app->register(SupplierBillsLivewireServiceProvider::class, force: true);
     $provider->boot();
 
-    expect(fn () => (new SupplierBills)->mount())->toThrow(Exception::class);
-    expect(fn () => (new SupplierBills)->create([], [], app(CreateSupplierBill::class)))->toThrow(AuthorizationException::class);
+    expect(fn () => (new SupplierBills())->mount())->toThrow(Exception::class);
+    expect(fn () => (new SupplierBills())->create([], [], app(CreateSupplierBill::class)))->toThrow(AuthorizationException::class);
 
     $this->actingAs(User::factory()->create(['current_team_id' => 1]));
 

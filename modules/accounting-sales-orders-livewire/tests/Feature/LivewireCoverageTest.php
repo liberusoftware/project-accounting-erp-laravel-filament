@@ -14,7 +14,7 @@ it('covers accounting-sales-orders-livewire components', function (): void {
     $provider = $this->app->register(SalesOrdersLivewireServiceProvider::class, force: true);
     $provider->boot();
 
-    expect(fn () => (new SalesOrders)->render())->toThrow(HttpException::class);
+    expect(fn () => (new SalesOrders())->render())->toThrow(HttpException::class);
 
     $this->actingAs(User::factory()->create(['current_team_id' => 1]));
 
@@ -30,7 +30,7 @@ it('covers accounting-sales-orders-livewire components', function (): void {
         'status' => OrderStatus::Draft,
     ]);
 
-    $component = new SalesOrders;
+    $component = new SalesOrders();
     $component->selectOrder((int) $order->getKey());
     $component->status = 'confirmed';
     $component->transitionStatus(app(TransitionSalesOrder::class));

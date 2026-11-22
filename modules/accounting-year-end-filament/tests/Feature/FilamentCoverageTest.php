@@ -13,14 +13,16 @@ use Liberu\Accounting\YearEndFilament\YearEndFilamentServiceProvider;
 
 it('registers and configures accounting-year-end-filament filament resources', function (): void {
     $provider = $this->app->register(YearEndFilamentServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
     expect($provider)->toBeInstanceOf(YearEndFilamentServiceProvider::class);
     $plugin = YearEndFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-year-end-filament');
     $plugin->register($panel);
     $plugin->boot($panel);
     expect($plugin->getId())->toBeString()->not->toBeEmpty();
-    $host = new ListYearEndCloses;
+    $host = new ListYearEndCloses();
     expect(YearEndCloseResource::getPages())->toBeArray();
     expect(YearEndCloseResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
     expect(YearEndCloseResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);

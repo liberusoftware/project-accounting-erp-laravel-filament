@@ -6,7 +6,9 @@ use Liberu\Accounting\SageAccountingMigrationLivewire\SageAccountingMigrationLiv
 
 it('boots accounting-sage-accounting-migration-livewire service provider', function (): void {
     $provider = $this->app->register(SageAccountingMigrationLivewireServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
 
     expect($provider)->toBeInstanceOf(SageAccountingMigrationLivewireServiceProvider::class);
 });

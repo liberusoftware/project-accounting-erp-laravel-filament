@@ -13,14 +13,16 @@ use Liberu\Accounting\ProjectProfitabilityFilament\Resources\ProjectProfitabilit
 
 it('registers and configures accounting-project-profitability-filament filament resources', function (): void {
     $provider = $this->app->register(ProjectProfitabilityFilamentServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
     expect($provider)->toBeInstanceOf(ProjectProfitabilityFilamentServiceProvider::class);
     $plugin = ProjectProfitabilityFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-project-profitability-filament');
     $plugin->register($panel);
     $plugin->boot($panel);
     expect($plugin->getId())->toBeString()->not->toBeEmpty();
-    $host = new ListProjectProfitability;
+    $host = new ListProjectProfitability();
     expect(ProjectProfitabilityResource::getPages())->toBeArray();
     expect(ProjectProfitabilityResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
     expect(ProjectProfitabilityResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);

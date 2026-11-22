@@ -13,14 +13,16 @@ use Liberu\Accounting\RevenueRecognitionFilament\RevenueRecognitionFilamentServi
 
 it('registers and configures accounting-revenue-recognition-filament filament resources', function (): void {
     $provider = $this->app->register(RevenueRecognitionFilamentServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
     expect($provider)->toBeInstanceOf(RevenueRecognitionFilamentServiceProvider::class);
     $plugin = RevenueRecognitionFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-revenue-recognition-filament');
     $plugin->register($panel);
     $plugin->boot($panel);
     expect($plugin->getId())->toBeString()->not->toBeEmpty();
-    $host = new ListRevenueSchedules;
+    $host = new ListRevenueSchedules();
     expect(RevenueScheduleResource::getPages())->toBeArray();
     expect(RevenueScheduleResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
     expect(RevenueScheduleResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);

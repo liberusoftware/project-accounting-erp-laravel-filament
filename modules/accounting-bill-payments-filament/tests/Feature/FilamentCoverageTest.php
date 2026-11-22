@@ -11,7 +11,6 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
 use Liberu\Accounting\BillPaymentsFilament\BillPaymentsFilamentPlugin;
 use Liberu\Accounting\BillPaymentsFilament\BillPaymentsFilamentServiceProvider;
 use Liberu\Accounting\BillPaymentsFilament\Resources\BillPaymentResource;
@@ -19,14 +18,19 @@ use Livewire\Component;
 
 it('registers and configures accounting-bill-payments-filament filament resources', function (): void {
     $provider = $this->app->register(BillPaymentsFilamentServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
     expect($provider)->toBeInstanceOf(BillPaymentsFilamentServiceProvider::class);
     $plugin = BillPaymentsFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-bill-payments-filament');
     $plugin->register($panel);
     $plugin->boot($panel);
     expect($plugin->getId())->toBeString()->not->toBeEmpty();
-    $host = new class extends Component implements HasActions, HasSchemas, HasTable { use InteractsWithActions, InteractsWithSchemas, InteractsWithTable; };
+    $host = new class() extends Component implements HasActions, HasSchemas, HasTable
+    {
+        use InteractsWithActions, InteractsWithSchemas, InteractsWithTable;
+    };
     expect(BillPaymentResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);
     expect(BillPaymentResource::table(Table::make($host)))->toBeInstanceOf(Table::class);
 });

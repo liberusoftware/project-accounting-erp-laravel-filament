@@ -2,15 +2,17 @@
 
 declare(strict_types=1);
 
-use Illuminate\Http\Request;
 use Laravel\Sanctum\Sanctum;
 use Liberu\Accounting\Erp\Models\User;
+use Liberu\Accounting\YearEndApi\YearEndApiServiceProvider;
 
 it('covers accounting-year-end-api api provider, policies, requests, and index route', function (): void {
     $user = User::factory()->create(['current_team_id' => 1]);
     Sanctum::actingAs($user, ['*']);
 
-    $provider = $this->app->register(\Liberu\Accounting\YearEndApi\YearEndApiServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
-    expect($provider)->toBeInstanceOf(\Liberu\Accounting\YearEndApi\YearEndApiServiceProvider::class);
+    $provider = $this->app->register(YearEndApiServiceProvider::class, force: true);
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
+    expect($provider)->toBeInstanceOf(YearEndApiServiceProvider::class);
 });

@@ -6,7 +6,9 @@ use Liberu\Accounting\CashCollectionAssistantLivewire\CashCollectionAssistantLiv
 
 it('boots accounting-cash-collection-assistant-livewire service provider', function (): void {
     $provider = $this->app->register(CashCollectionAssistantLivewireServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) { $provider->boot(); }
+    if (method_exists($provider, 'boot')) {
+        $provider->boot();
+    }
 
     expect($provider)->toBeInstanceOf(CashCollectionAssistantLivewireServiceProvider::class);
 });
