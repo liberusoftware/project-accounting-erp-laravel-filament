@@ -3,7 +3,7 @@
   "name": "accounting-opening-balances-filament",
   "display_name": "Accounting Opening Balances Filament",
   "description": "Filament 5 adapter for migration and approval review.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\OpeningBalancesFilament\\OpeningBalancesFilamentServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-leases-livewire",
   "display_name": "Accounting Leases Livewire",
   "description": "Livewire 4 lease liability monitor.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\LeasesLivewire\\LeasesLivewireServiceProvider",
   "requires": {

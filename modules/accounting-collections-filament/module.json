@@ -3,7 +3,7 @@
   "name": "accounting-collections-filament",
   "display_name": "Accounting Collections Filament",
   "description": "Filament adapter for collections workflows.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CollectionsFilament\\CollectionsFilamentServiceProvider",
   "requires": {

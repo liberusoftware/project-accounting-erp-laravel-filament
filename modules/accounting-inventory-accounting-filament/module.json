@@ -3,7 +3,7 @@
   "name": "accounting-inventory-accounting-filament",
   "display_name": "Accounting Inventory Accounting Filament",
   "description": "Filament 5 inventory valuation and movement resource.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\InventoryAccountingFilament\\InventoryAccountingFilamentServiceProvider",
   "requires": {

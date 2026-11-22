@@ -3,7 +3,7 @@
   "name": "accounting-close-management-filament",
   "display_name": "Accounting Close Management Filament",
   "description": "Filament adapter for close-cycle workflows.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CloseManagementFilament\\CloseManagementFilamentServiceProvider",
   "requires": {

@@ -13,6 +13,7 @@ final class YearEndLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'accounting-year-end');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'module-accounting-year-end');
         Livewire::component('module-accounting-year-end', YearEndOverview::class);
     }
 }

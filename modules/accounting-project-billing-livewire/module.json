@@ -3,7 +3,7 @@
   "name": "accounting-project-billing-livewire",
   "display_name": "Accounting Project Billing Livewire",
   "description": "Livewire 4 surfaces for project billing.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ProjectBillingLivewire\\ProjectBillingLivewireServiceProvider",
   "requires": {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Liberu\BusinessWorkflowReconciliation\Enums;
+namespace Liberu\Platform\BusinessWorkflowReconciliation\Enums;
 
 enum WorkflowRunState: string
 {

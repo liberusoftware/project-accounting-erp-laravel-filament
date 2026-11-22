@@ -11,7 +11,6 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.5",
         "barryvdh/laravel-dompdf": "^3.1.2",
         "bezhansalleh/filament-shield": "^4.3.1",
         "bursteri/socialstream": "^7.0.0",
@@ -486,6 +485,16 @@
         "liberusoftware/observability": "^1.0",
         "liberusoftware/organizations-teams": "^1.10.3",
         "liberusoftware/organizations-teams-filament": "^1.0",
+        "liberusoftware/passkeys": "^1.0",
+        "liberusoftware/payment-adyen": "^1.0",
+        "liberusoftware/payment-contracts": "^1.0",
+        "liberusoftware/payment-core": "^1.0",
+        "liberusoftware/payment-gocardless": "^1.0",
+        "liberusoftware/payment-mollie": "^1.0",
+        "liberusoftware/payment-paddle": "^1.0",
+        "liberusoftware/payment-paypal": "^1.0",
+        "liberusoftware/payment-square": "^1.0",
+        "liberusoftware/payment-stripe": "^1.0",
         "liberusoftware/profiles": "^1.0",
         "liberusoftware/roles-permissions": "^1.7.2",
         "liberusoftware/roles-permissions-filament": "^1.0",
@@ -503,6 +512,7 @@
         "liberusoftware/users-roles": "^1.0",
         "liberusoftware/webhooks": "^1.0",
         "livewire/livewire": "^4.4.8",
+        "php": "^8.5",
         "spatie/laravel-activitylog": "^5.1.3",
         "spatie/laravel-backup": "^10.3.3",
         "spatie/laravel-menu": "^4.2.2",
@@ -540,16 +550,26 @@
             "Liberu\\Themes\\Dark\\": "themes/dark/src/",
             "Liberu\\Themes\\DefaultTheme\\": "themes/default/src/",
             "Liberu\\Themes\\AccountingErp\\": "themes/accounting-erp/src/"
-        }
+        },
+        "classmap": [
+            "modules/organizations-teams/database/factories/"
+        ],
+        "exclude-from-classmap": [
+            "vendor/league/csv/polyfill/SortDirection.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+        "exclude-from-classmap": [
+            "tests/Support/PackageTestCaseShim.php"
+        ]
     },
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@putenv TELESCOPE_ENABLED=false",
             "@php artisan package:discover --ansi",
             "@php artisan filament:upgrade"
         ],
@@ -683,6 +703,76 @@
             "url": "https://github.com/liberusoftware/module-identity-socialstream.git",
             "only": [
                 "liberusoftware/identity-socialstream"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-contracts.git",
+            "only": [
+                "liberusoftware/payment-contracts"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-core.git",
+            "only": [
+                "liberusoftware/payment-core"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-stripe.git",
+            "only": [
+                "liberusoftware/payment-stripe"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-paypal.git",
+            "only": [
+                "liberusoftware/payment-paypal"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-paddle.git",
+            "only": [
+                "liberusoftware/payment-paddle"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-adyen.git",
+            "only": [
+                "liberusoftware/payment-adyen"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-mollie.git",
+            "only": [
+                "liberusoftware/payment-mollie"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-square.git",
+            "only": [
+                "liberusoftware/payment-square"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/payment-gocardless.git",
+            "only": [
+                "liberusoftware/payment-gocardless"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/passkeys.git",
+            "only": [
+                "liberusoftware/passkeys"
             ]
         }
     ]

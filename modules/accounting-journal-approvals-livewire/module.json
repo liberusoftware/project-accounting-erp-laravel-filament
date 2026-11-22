@@ -3,7 +3,7 @@
   "name": "accounting-journal-approvals-livewire",
   "display_name": "Accounting Journal Approvals Livewire",
   "description": "Livewire 4 journal approval monitor.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\JournalApprovalsLivewire\\JournalApprovalsLivewireServiceProvider",
   "requires": {

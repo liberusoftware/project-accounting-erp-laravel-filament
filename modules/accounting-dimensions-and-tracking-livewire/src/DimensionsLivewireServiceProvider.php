@@ -12,6 +12,7 @@ final class DimensionsLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'accounting-dimensions-and-tracking-livewire');
         Livewire::component('module-accounting-dimensions-and-tracking::dimensions', Dimensions::class);
         Livewire::component('accounting-dimensions', Dimensions::class);
     }

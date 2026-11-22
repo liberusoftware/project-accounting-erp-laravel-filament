@@ -16,18 +16,16 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $configuredPassword = (string) config('app.seed_admin_password');
-        $adminUser = User::firstOrNew(['email' => 'admin@example.com']);
-        $generatedPassword = null;
 
-        if (! $adminUser->exists) {
-            $generatedPassword = $configuredPassword === '' ? Str::random(64) : null;
-            $adminUser->name = 'Admin User';
-            $adminUser->email_verified_at = now();
-            $adminUser->password = Hash::make($generatedPassword ?? $configuredPassword);
-        } elseif ($configuredPassword !== '' && ! Hash::check($configuredPassword, $adminUser->password)) {
-            $adminUser->password = Hash::make($configuredPassword);
-        }
+        $adminPassword = (string) (config('app.seed_admin_password') ?: Str::random(64));
+        $adminUser = User::updateOrCreate(
+            ['email' => 'admin@example.com'],
+            [
+                'name' => 'Admin User',
+                'password' => Hash::make($adminPassword),
+                'email_verified_at' => now(),
+            ],
+        );
 
         $team = Team::firstOrFail();
         $adminUser->forceFill(['current_team_id' => $team->id])->save();
@@ -37,8 +35,9 @@ class UserSeeder extends Seeder
         $role = Role::where('name', 'super_admin')->firstOrFail();
         $adminUser->assignRole($role);
 
-        if (app()->environment('local') && $generatedPassword !== null) {
-            $this->command?->info("Admin password: {$generatedPassword}");
+        // Print passwords to console
+        if (app()->environment('local') && $adminUser->wasRecentlyCreated && blank(config('app.seed_admin_password'))) {
+            $this->command?->info("Admin password: {$adminPassword}");
         }
     }
 }

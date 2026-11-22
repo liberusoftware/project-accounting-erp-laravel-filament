@@ -3,7 +3,7 @@
   "name": "accounting-custom-report-builder-filament",
   "display_name": "Accounting Custom Report Builder Filament",
   "description": "Filament 5 custom report surfaces.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CustomReportBuilderFilament\\CustomReportBuilderFilamentServiceProvider",
   "requires": {

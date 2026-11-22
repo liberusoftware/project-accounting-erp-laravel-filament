@@ -30,7 +30,7 @@ final class PurchaseRequisitions extends Component
         $this->selectedRequisitionId = $requisitionId;
     }
 
-    public function transition(TransitionRequisition $action): void
+    public function transitionStatus(TransitionRequisition $action): void
     {
         $data = $this->validate(['selectedRequisitionId' => ['required', 'integer'], 'status' => ['required', 'in:draft,submitted,approved,sourcing,converted,rejected,cancelled']]);
         $action->handle($this->query()->findOrFail($data['selectedRequisitionId']), RequisitionStatus::from($data['status']));

@@ -3,7 +3,7 @@
   "name": "accounting-bank-accounts-filament",
   "display_name": "Accounting Bank Accounts Filament",
   "description": "Filament 5 presentation for bank accounts.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BankAccountsFilament\\BankAccountsFilamentServiceProvider",
   "requires": {

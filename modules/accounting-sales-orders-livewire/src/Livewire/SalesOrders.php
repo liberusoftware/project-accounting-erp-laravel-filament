@@ -24,7 +24,7 @@ final class SalesOrders extends Component
         $this->selectedOrderId = $orderId;
     }
 
-    public function transition(TransitionSalesOrder $action): void
+    public function transitionStatus(TransitionSalesOrder $action): void
     {
         $data = $this->validate(['selectedOrderId' => ['required', 'integer'], 'status' => ['required', 'in:draft,confirmed,partially_invoiced,invoiced,cancelled']]);
         $action->handle(SalesOrder::query()->where('team_id', (int) auth()->user()->current_team_id)->findOrFail($data['selectedOrderId']), OrderStatus::from($data['status']));

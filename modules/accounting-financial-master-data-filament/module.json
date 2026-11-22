@@ -3,7 +3,7 @@
   "name": "accounting-financial-master-data-filament",
   "display_name": "Accounting Financial Master Data Filament",
   "description": "Filament 5 party administration surface.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\FinancialMasterDataFilament\\FinancialMasterDataFilamentServiceProvider",
   "requires": {

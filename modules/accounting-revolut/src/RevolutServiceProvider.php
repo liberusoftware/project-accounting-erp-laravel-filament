@@ -6,6 +6,7 @@ namespace Liberu\Accounting\Revolut;
 
 use Illuminate\Support\ServiceProvider;
 use Liberu\Foundation\Integrations\Support\IntegrationRegistry;
+use Liberu\Payment\Contracts\Contracts\PaymentGatewayRegistryContract;
 
 final class RevolutServiceProvider extends ServiceProvider
 {
@@ -16,8 +17,8 @@ final class RevolutServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        if ($this->app->bound(IntegrationRegistry::class)) {
-            $this->app->make(IntegrationRegistry::class)->register($this->app->make(RevolutAdapter::class));
-        }
+        $adapter = $this->app->make(RevolutAdapter::class);
+        $this->app->make(IntegrationRegistry::class)->register($adapter);
+        $this->app->make(PaymentGatewayRegistryContract::class)->register($adapter);
     }
 }

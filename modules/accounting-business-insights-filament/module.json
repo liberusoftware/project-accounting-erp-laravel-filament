@@ -3,7 +3,7 @@
   "name": "accounting-business-insights-filament",
   "display_name": "Accounting Business Insights Filament",
   "description": "Filament business insight snapshots.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BusinessInsightsFilament\\BusinessInsightsFilamentServiceProvider",
   "requires": {

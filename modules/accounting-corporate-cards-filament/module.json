@@ -3,7 +3,7 @@
   "name": "accounting-corporate-cards-filament",
   "display_name": "Accounting Corporate Cards Filament",
   "description": "Filament 5 corporate card surfaces.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CorporateCardsFilament\\CorporateCardsFilamentServiceProvider",
   "requires": {

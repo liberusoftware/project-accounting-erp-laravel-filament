@@ -3,7 +3,7 @@
   "name": "accounting-cash-position-filament",
   "display_name": "Accounting Cash Position Filament",
   "description": "Filament adapter for cash position snapshots.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CashPositionFilament\\CashPositionFilamentServiceProvider",
   "requires": {

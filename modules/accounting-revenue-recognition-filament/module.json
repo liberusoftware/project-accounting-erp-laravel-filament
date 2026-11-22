@@ -18,7 +18,7 @@
   "features": [
     "Schedule operations"
   ],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "provider": "Liberu\\Accounting\\RevenueRecognitionFilament\\RevenueRecognitionFilamentServiceProvider",
   "presentation": {
     "filament": {

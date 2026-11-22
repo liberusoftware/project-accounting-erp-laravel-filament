@@ -1,1 +1,32 @@
-{"name":"liberusoftware/module-accounting-policies-filament","description":"Filament adapter for accounting policy rules.","type":"liberu-module","license":"MIT","require":{"php":"^8.5","filament/filament":"^5.11.0","liberusoftware/module-accounting-policies":"^1.0"},"autoload":{"psr-4":{"Liberu\\Accounting\\PoliciesFilament\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\PoliciesFilament\\AccountingPoliciesFilamentServiceProvider"]},"liberu":{"name":"accounting-policies-filament"}},"version":"1.0.0","config":{"allow-plugins":{"pestphp/pest-plugin":true}}}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\PoliciesFilament\\AccountingPoliciesFilamentServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-policies-filament"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\PoliciesFilament\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-policies-filament",
+  "description": "Filament adapter for accounting policy rules.",
+  "require": {
+    "filament/filament": "^5.11.0",
+    "liberusoftware/module-accounting-policies": "^1.0",
+    "php": "^8.5"
+  },
+  "version": "1.1.0",
+  "license": "MIT"
+}

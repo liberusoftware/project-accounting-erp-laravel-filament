@@ -3,7 +3,7 @@
   "name": "accounting-xero-migration-filament",
   "display_name": "Accounting Xero Migration Filament",
   "description": "Filament 5 adapter for Accounting Xero Migration.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\XeroMigrationFilament\\XeroMigrationFilamentServiceProvider",
   "requires": {

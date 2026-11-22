@@ -3,7 +3,7 @@
   "name": "accounting-migration-framework-filament",
   "display_name": "Accounting Migration Framework Filament",
   "description": "Filament 5 migration source and batch operations.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MigrationFrameworkFilament\\MigrationFrameworkFilamentServiceProvider",
   "requires": {

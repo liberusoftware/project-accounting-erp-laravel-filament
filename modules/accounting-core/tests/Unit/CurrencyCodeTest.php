@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use InvalidArgumentException;
 use Liberu\Accounting\Core\ValueObjects\CurrencyCode;
 
 it('accepts an ISO-style uppercase currency code', function (): void {

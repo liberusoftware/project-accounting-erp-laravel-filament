@@ -3,7 +3,7 @@
   "name": "accounting-payroll-integration-livewire",
   "display_name": "Accounting Payroll Integration Livewire",
   "description": "Livewire 4 surfaces for payroll imports.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PayrollIntegrationLivewire\\PayrollIntegrationLivewireServiceProvider",
   "requires": {

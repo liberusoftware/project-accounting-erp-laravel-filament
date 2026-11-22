@@ -3,7 +3,7 @@
   "name": "accounting-bank-reconciliation-filament",
   "display_name": "Accounting Bank Reconciliation Filament",
   "description": "Filament adapter for bank reconciliation.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BankReconciliationFilament\\BankReconciliationFilamentServiceProvider",
   "requires": {

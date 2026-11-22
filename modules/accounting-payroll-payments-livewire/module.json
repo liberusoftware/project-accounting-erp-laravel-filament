@@ -3,7 +3,7 @@
   "name": "accounting-payroll-payments-livewire",
   "display_name": "Accounting Payroll Payments Livewire",
   "description": "Livewire 4 surfaces for payroll payment workflows.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PayrollPaymentsLivewire\\PayrollPaymentsLivewireServiceProvider",
   "requires": {

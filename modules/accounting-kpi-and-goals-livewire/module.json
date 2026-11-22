@@ -3,7 +3,7 @@
   "name": "accounting-kpi-and-goals-livewire",
   "display_name": "Accounting KPI and Goals Livewire",
   "description": "Livewire 4 KPI progress monitor.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\KpiAndGoalsLivewire\\KpiAndGoalsLivewireServiceProvider",
   "requires": {

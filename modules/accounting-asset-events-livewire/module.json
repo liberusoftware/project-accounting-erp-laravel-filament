@@ -3,7 +3,7 @@
   "name": "accounting-asset-events-livewire",
   "display_name": "Accounting Asset Events Livewire",
   "description": "Livewire immutable asset event history.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\AssetEventsLivewire\\AssetEventsLivewireServiceProvider",
   "requires": {

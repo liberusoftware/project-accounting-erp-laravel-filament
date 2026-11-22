@@ -3,7 +3,7 @@
   "name": "accounting-construction-tax-filament",
   "display_name": "Accounting Construction Tax Filament",
   "description": "Filament adapter for construction tax workflows.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ConstructionTaxFilament\\ConstructionTaxFilamentServiceProvider",
   "requires": {

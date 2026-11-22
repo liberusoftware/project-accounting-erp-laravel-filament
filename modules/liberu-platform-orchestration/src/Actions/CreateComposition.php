@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Liberu\PlatformOrchestration\Actions;
+namespace Liberu\Platform\PlatformOrchestration\Actions;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\ValidationException;
-use Liberu\PlatformOrchestration\Enums\CompositionState;
-use Liberu\PlatformOrchestration\Events\CompositionCreated;
-use Liberu\PlatformOrchestration\Models\PlatformComposition;
+use Liberu\Platform\PlatformOrchestration\Enums\CompositionState;
+use Liberu\Platform\PlatformOrchestration\Events\CompositionCreated;
+use Liberu\Platform\PlatformOrchestration\Models\PlatformComposition;
 
 final class CreateComposition
 {

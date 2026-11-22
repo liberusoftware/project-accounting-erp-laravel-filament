@@ -3,7 +3,7 @@
   "name": "accounting-payroll-journals-livewire",
   "display_name": "Accounting Payroll Journals Livewire",
   "description": "Livewire 4 surfaces for payroll journal workflows.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PayrollJournalsLivewire\\PayrollJournalsLivewireServiceProvider",
   "requires": {

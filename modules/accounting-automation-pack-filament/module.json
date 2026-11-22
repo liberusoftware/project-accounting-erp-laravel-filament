@@ -3,7 +3,7 @@
   "name": "accounting-automation-pack-filament",
   "display_name": "Accounting Automation Pack Filament",
   "description": "Filament 5 automation recipe resource.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\AutomationPackFilament\\AutomationPackFilamentServiceProvider",
   "requires": {

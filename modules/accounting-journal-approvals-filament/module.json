@@ -3,7 +3,7 @@
   "name": "accounting-journal-approvals-filament",
   "display_name": "Accounting Journal Approvals Filament",
   "description": "Filament 5 journal approval resource.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\JournalApprovalsFilament\\JournalApprovalsFilamentServiceProvider",
   "requires": {

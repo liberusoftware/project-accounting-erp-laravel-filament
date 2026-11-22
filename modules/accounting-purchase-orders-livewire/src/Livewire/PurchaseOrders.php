@@ -23,7 +23,7 @@ final class PurchaseOrders extends Component
         $this->selectedOrderId = $orderId;
     }
 
-    public function transition(TransitionPurchaseOrder $action): void
+    public function transitionStatus(TransitionPurchaseOrder $action): void
     {
         $data = $this->validate(['selectedOrderId' => ['required', 'integer'], 'status' => ['required', 'in:draft,pending_approval,approved,issued,partially_received,received,closed,cancelled']]);
         $action->handle($this->query()->findOrFail($data['selectedOrderId']), PurchaseOrderStatus::from($data['status']));

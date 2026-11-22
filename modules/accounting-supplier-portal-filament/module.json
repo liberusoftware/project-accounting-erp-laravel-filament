@@ -3,7 +3,7 @@
   "name": "accounting-supplier-portal-filament",
   "display_name": "Accounting Supplier Portal Filament",
   "description": "Filament 5 adapter for Supplier Portal.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\SupplierPortalFilament\\SupplierPortalFilamentServiceProvider",
   "requires": {

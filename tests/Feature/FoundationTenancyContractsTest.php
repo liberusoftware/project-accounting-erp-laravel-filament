@@ -4,13 +4,11 @@ use App\Models\User;
 use Filament\Events\TenantSet;
 use Filament\Facades\Filament;
 use Illuminate\Auth\GenericUser;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
 use Laravel\Jetstream\Features;
 use Liberu\Foundation\Organizations\Models\Team;
-use Liberu\Foundation\Tenancy\Concerns\IsTenantModel;
 use Liberu\Foundation\Tenancy\Http\Middleware\SetPermissionsTeamContext;
 use Liberu\Foundation\Tenancy\Http\Middleware\SetTenantContext;
 use Liberu\Foundation\Tenancy\Jobs\Concerns\TenantAware;
@@ -20,6 +18,7 @@ use Liberu\Foundation\Tenancy\TenantContext;
 use Liberu\Foundation\Tenancy\TenantState;
 use Spatie\Permission\PermissionRegistrar;
 use Symfony\Component\HttpFoundation\Response;
+use Tests\Support\TenantContractRecord;
 
 function accountingTenancyActor(): User
 {
@@ -194,14 +193,3 @@ it('scopes model reads and defaults ownership without overwriting explicit team 
     $global = TenantContractRecord::create(['name' => 'global record']);
     expect($global->team_id)->toBeNull();
 });
-
-final class TenantContractRecord extends Model
-{
-    use IsTenantModel;
-
-    protected $table = 'tenant_contract_records';
-
-    protected $guarded = [];
-
-    public $timestamps = false;
-}

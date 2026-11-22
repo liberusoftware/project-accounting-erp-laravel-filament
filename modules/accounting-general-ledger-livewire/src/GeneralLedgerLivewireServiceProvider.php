@@ -12,6 +12,7 @@ final class GeneralLedgerLivewireServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'accounting-general-ledger-livewire');
         Livewire::component('module-accounting-general-ledger::journals', Journals::class);
         Livewire::component('accounting-general-ledger-journals', Journals::class);
     }

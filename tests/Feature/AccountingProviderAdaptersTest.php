@@ -49,13 +49,13 @@ final class AccountingProviderAdaptersTest extends TestCase
         $wiseBatch = app(WiseBankFeedAdapter::class)->fetch($wise);
         $this->assertSame('42', $wiseBatch['added'][0]['external_id']);
         $this->assertSame('EUR', $wiseBatch['added'][0]['currency']);
-        $wisePayment = (new WiseBankFeedAdapter($wise))->sendPayment(['sourceCurrency' => 'EUR', 'targetCurrency' => 'EUR', 'targetValue' => 10]);
+        $wisePayment = (new WiseBankFeedAdapter($wise))->sendPayment(['customerTransactionId' => 'test-transfer-1', 'sourceCurrency' => 'EUR', 'targetCurrency' => 'EUR', 'targetValue' => 10]);
         $this->assertSame(43, $wisePayment['id']);
-        $wiseBulk = (new WiseBankFeedAdapter($wise))->sendBulkPayments('Test batch', [['sourceCurrency' => 'EUR', 'targetCurrency' => 'EUR', 'targetValue' => 5]], '2026-09-15');
+        $wiseBulk = (new WiseBankFeedAdapter($wise))->sendBulkPayments('Test batch', [['customerTransactionId' => 'test-transfer-2', 'sourceCurrency' => 'EUR', 'targetCurrency' => 'EUR', 'targetValue' => 5]]);
         $this->assertCount(1, $wiseBulk['payments']);
         Http::assertSent(fn ($request): bool => $request->method() === 'POST'
             && str_contains($request->url(), 'transferwise.tech/v1/transfers')
-            && ($request['schedule_for'] ?? null) === '2026-09-15');
+            && ($request['customerTransactionId'] ?? null) === 'test-transfer-2');
 
         $revolutConnection = $this->connection('revolut', 'revolut-account', ['access_token' => 'revolut-secret']);
         $payment = (new RevolutAdapter($revolutConnection))->sendPayment(['amount' => 10, 'currency' => 'EUR', 'reference' => 'Test']);

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Liberu\PlatformOrchestration\Models;
+namespace Liberu\Platform\PlatformOrchestration\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Liberu\PlatformOrchestration\Enums\CompositionState;
+use Liberu\Platform\PlatformOrchestration\Enums\CompositionState;
 
 /**
  * @property int $id

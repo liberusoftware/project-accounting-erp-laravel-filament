@@ -3,7 +3,7 @@
   "name": "accounting-chart-of-accounts-filament",
   "display_name": "Accounting Chart of Accounts Filament",
   "description": "Filament 5 resource for account hierarchy management.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ChartOfAccountsFilament\\ChartOfAccountsFilamentServiceProvider",
   "requires": {
