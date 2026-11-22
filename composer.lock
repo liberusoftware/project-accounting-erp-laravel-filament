@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb2faf7fbb10d86b25f2a092eade9076",
+    "content-hash": "38d7a1af84b3ac0cd6c0ab66aae0b46a",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -6234,16 +6234,16 @@
         },
         {
             "name": "liberusoftware/application",
-            "version": "1.10.2",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-application.git",
-                "reference": "78f01f6939d1bfecb821cff960a57ec232bcf62a"
+                "reference": "65df99cf12034e20ded8add60262fcc102435c40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-application/zipball/78f01f6939d1bfecb821cff960a57ec232bcf62a",
-                "reference": "78f01f6939d1bfecb821cff960a57ec232bcf62a",
+                "url": "https://api.github.com/repos/liberusoftware/module-application/zipball/65df99cf12034e20ded8add60262fcc102435c40",
+                "reference": "65df99cf12034e20ded8add60262fcc102435c40",
                 "shasum": ""
             },
             "require": {
@@ -6274,9 +6274,9 @@
             "description": "Required application metadata, health, clocks, identifiers, and secure HTTP defaults.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-application/issues",
-                "source": "https://github.com/liberusoftware/module-application/tree/v1.10.2"
+                "source": "https://github.com/liberusoftware/module-application/tree/v2.0.6"
             },
-            "time": "2026-11-21T18:19:59+00:00"
+            "time": "2026-11-22T00:41:17+00:00"
         },
         {
             "name": "liberusoftware/audit",
