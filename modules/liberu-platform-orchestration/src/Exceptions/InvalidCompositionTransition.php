@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Liberu\PlatformOrchestration\Exceptions;
+namespace Liberu\Platform\PlatformOrchestration\Exceptions;
 
 use DomainException;
-use Liberu\PlatformOrchestration\Enums\CompositionState;
+use Liberu\Platform\PlatformOrchestration\Enums\CompositionState;
 
 final class InvalidCompositionTransition extends DomainException
 {

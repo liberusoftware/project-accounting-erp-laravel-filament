@@ -23,7 +23,7 @@
   "capabilities": [
     "accounting.chart-of-accounts.filament"
   ],
-  "default_enabled": false,
+  "default_enabled": true,
   "features": [
     "Account resource",
     "Hierarchy selection",

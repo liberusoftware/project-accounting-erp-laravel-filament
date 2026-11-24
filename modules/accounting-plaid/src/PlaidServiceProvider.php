@@ -16,6 +16,10 @@ final class PlaidServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        if (! $this->app->routesAreCached()) {
+            $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        }
+
         if ($this->app->bound(IntegrationRegistry::class)) {
             $this->app->make(IntegrationRegistry::class)->register($this->app->make(PlaidBankFeedAdapter::class));
         }

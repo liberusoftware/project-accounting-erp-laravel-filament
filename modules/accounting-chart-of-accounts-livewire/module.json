@@ -16,7 +16,7 @@
   "capabilities": [
     "accounting.chart-of-accounts.livewire"
   ],
-  "default_enabled": false,
+  "default_enabled": true,
   "features": [
     "Account creation",
     "Hierarchy display",

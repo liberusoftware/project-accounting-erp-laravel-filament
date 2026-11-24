@@ -17,6 +17,10 @@ final class RevolutServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
+        if (! $this->app->routesAreCached()) {
+            $this->loadRoutesFrom(__DIR__.'/../routes/api.php');
+        }
+
         $adapter = $this->app->make(RevolutAdapter::class);
         $this->app->make(IntegrationRegistry::class)->register($adapter);
         $this->app->make(PaymentGatewayRegistryContract::class)->register($adapter);

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Liberu\BusinessWorkflowReconciliation\Events;
+namespace Liberu\Platform\BusinessWorkflowReconciliation\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Liberu\BusinessWorkflowReconciliation\Models\WorkflowRun;
+use Liberu\Platform\BusinessWorkflowReconciliation\Models\WorkflowRun;
 
 final class WorkflowRunStarted
 {

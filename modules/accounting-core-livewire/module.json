@@ -13,7 +13,7 @@
       "liberusoftware/module-accounting-core": "^1.0"
     }
   },
-  "default_enabled": false,
+  "default_enabled": true,
   "capabilities": [
     "accounting.core.livewire"
   ],

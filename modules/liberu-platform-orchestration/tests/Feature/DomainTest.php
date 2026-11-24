@@ -11,13 +11,13 @@ use Liberu\Platform\PlatformOrchestration\Enums\LifecycleStatus;
 use Liberu\Platform\PlatformOrchestration\Events\PlatformWorkflowTransitioned;
 use Liberu\Platform\PlatformOrchestration\Exceptions\InvalidLifecycleTransition;
 use Liberu\Platform\PlatformOrchestration\Models\PlatformWorkflow;
-use Liberu\PlatformOrchestration\Actions\CreateComposition;
-use Liberu\PlatformOrchestration\Actions\TransitionComposition;
-use Liberu\PlatformOrchestration\Enums\CompositionState;
-use Liberu\PlatformOrchestration\Events\CompositionCreated;
-use Liberu\PlatformOrchestration\Events\CompositionStateChanged;
-use Liberu\PlatformOrchestration\Exceptions\InvalidCompositionTransition;
-use Liberu\PlatformOrchestration\Models\PlatformComposition;
+use Liberu\Platform\PlatformOrchestration\Actions\CreateComposition;
+use Liberu\Platform\PlatformOrchestration\Actions\TransitionComposition;
+use Liberu\Platform\PlatformOrchestration\Enums\CompositionState;
+use Liberu\Platform\PlatformOrchestration\Events\CompositionCreated;
+use Liberu\Platform\PlatformOrchestration\Events\CompositionStateChanged;
+use Liberu\Platform\PlatformOrchestration\Exceptions\InvalidCompositionTransition;
+use Liberu\Platform\PlatformOrchestration\Models\PlatformComposition;
 
 foreach ([
     __DIR__.'/../../src/Enums/CompositionState.php',

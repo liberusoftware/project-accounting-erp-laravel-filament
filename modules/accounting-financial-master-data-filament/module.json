@@ -23,7 +23,7 @@
   "capabilities": [
     "accounting.financial-master-data.filament"
   ],
-  "default_enabled": false,
+  "default_enabled": true,
   "features": [
     "Customer resource",
     "Supplier resource",

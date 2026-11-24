@@ -16,7 +16,7 @@
   "capabilities": [
     "accounting.financial-master-data.livewire"
   ],
-  "default_enabled": false,
+  "default_enabled": true,
   "features": [
     "Customer and supplier forms",
     "Duplicate feedback",

@@ -24,3 +24,15 @@ Route::prefix('api/v1/accounting/supplier-bills')->middleware(['auth:sanctum', '
         Route::post('/{supplierBill}/documents', [SupplierBillController::class, 'document']);
     });
 });
+
+\Illuminate\Support\Facades\Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
+    \Illuminate\Support\Facades\Route::apiResource('bills', \Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class);
+
+    \Illuminate\Support\Facades\Route::prefix('v1')->group(function (): void {
+        \Illuminate\Support\Facades\Route::get('bills', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'index'])->middleware('ability:bills:read');
+        \Illuminate\Support\Facades\Route::get('bills/{bill}', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'show'])->middleware('ability:bills:read');
+        \Illuminate\Support\Facades\Route::post('bills', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'store'])->middleware('ability:bills:write');
+        \Illuminate\Support\Facades\Route::put('bills/{bill}', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'update'])->middleware('ability:bills:write');
+        \Illuminate\Support\Facades\Route::delete('bills/{bill}', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'destroy'])->middleware('ability:bills:write');
+    });
+});
