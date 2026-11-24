@@ -19,7 +19,7 @@ final class CreateReconciliationSession
         }
 
         return DB::transaction(function () use ($attributes): ReconciliationSession {
-            if (ReconciliationSession::query()->where('bank_account_id', $attributes['bank_account_id'])->where('period_start', $attributes['period_start'])->where('period_end', $attributes['period_end'])->exists()) {
+            if (ReconciliationSession::query()->where('bank_account_id', $attributes['bank_account_id'])->whereDate('period_start', $attributes['period_start'])->whereDate('period_end', $attributes['period_end'])->exists()) {
                 throw new InvalidReconciliation('A reconciliation already exists for this account and period.');
             }
 

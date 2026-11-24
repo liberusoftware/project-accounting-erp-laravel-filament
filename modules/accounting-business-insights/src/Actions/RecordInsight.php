@@ -17,6 +17,21 @@ final class RecordInsight
             }
         }
 
-        return InsightSnapshot::updateOrCreate(['team_id' => $attributes['team_id'], 'metric' => $attributes['metric'], 'period_start' => $attributes['period_start'], 'period_end' => $attributes['period_end']], [...$attributes, 'refreshed_at' => CarbonImmutable::now()]);
+        $existing = InsightSnapshot::query()
+            ->where('team_id', $attributes['team_id'])
+            ->where('metric', $attributes['metric'])
+            ->whereDate('period_start', $attributes['period_start'])
+            ->whereDate('period_end', $attributes['period_end'])
+            ->first();
+
+        $payload = [...$attributes, 'refreshed_at' => CarbonImmutable::now()];
+
+        if ($existing !== null) {
+            $existing->update($payload);
+
+            return $existing->refresh();
+        }
+
+        return InsightSnapshot::create($payload);
     }
 }

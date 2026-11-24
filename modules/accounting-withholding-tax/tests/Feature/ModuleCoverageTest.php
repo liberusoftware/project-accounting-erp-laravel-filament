@@ -162,7 +162,7 @@ it('calculates withholding deductions respecting threshold and remits liabilitie
     expect($remittance)->toBeInstanceOf(WithholdingTaxRemittance::class)
         ->and($remittance->amount)->toBe('200.07')
         ->and($remittance->remitted_on->toDateString())->toBe('2026-04-15')
-        ->and($remittance->status)->toBe(WithholdingStatus::Remitted->value)
+        ->and($remittance->status)->toBe(WithholdingStatus::Remitted)
         ->and($remittance->metadata)->toBe(['method' => 'faster_payments'])
         ->and($liability->refresh()->status)->toBe(WithholdingStatus::Remitted);
 });

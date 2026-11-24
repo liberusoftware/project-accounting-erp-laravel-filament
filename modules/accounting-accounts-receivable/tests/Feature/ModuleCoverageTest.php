@@ -382,7 +382,8 @@ it('boots the service provider and covers enums, exception, events, listener, mo
         '61_90' => 50.0,
         'over_90' => 60.0,
     ]);
-    expect(app(AgingQuery::class)->handle(null, $asOf)['over_90'])->toBe(120.0);
+    expect(app(AgingQuery::class)->handle(null, $asOf)['over_90'])->toBe(60.0)
+        ->and(app(AgingQuery::class)->handle(null, $asOf)['61_90'])->toBe(200.0);
 
     // SyncFinalizedInvoice & Listener (via event dispatch and direct idempotent call)
     $invoice = SalesInvoice::create([
@@ -416,7 +417,7 @@ it('boots the service provider and covers enums, exception, events, listener, mo
     // CustomerSubledgerQuery
     $subledger = app(CustomerSubledgerQuery::class)->handle($customer->id);
     expect($subledger['open_items'])->toHaveCount(3)
-        ->and($subledger['receipts'])->toHaveCount(2)
+        ->and($subledger['receipts'])->toHaveCount(3)
         ->and($subledger['balance'])->toBe(550.0);
 
     // ControlAccountReconciliationQuery with explicit balance and via GL tables

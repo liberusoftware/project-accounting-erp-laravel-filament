@@ -21,7 +21,10 @@ final class PlaidServiceProvider extends ServiceProvider
         }
 
         if ($this->app->bound(IntegrationRegistry::class)) {
-            $this->app->make(IntegrationRegistry::class)->register($this->app->make(PlaidBankFeedAdapter::class));
+            $registry = $this->app->make(IntegrationRegistry::class);
+            if (! array_key_exists('plaid', $registry->all())) {
+                $registry->register($this->app->make(PlaidBankFeedAdapter::class));
+            }
         }
     }
 }

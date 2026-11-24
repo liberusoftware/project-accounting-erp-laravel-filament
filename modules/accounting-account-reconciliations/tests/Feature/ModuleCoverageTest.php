@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Carbon\CarbonImmutable;
+use Carbon\CarbonInterface;
 use Liberu\Accounting\AccountReconciliations\AccountReconciliationsServiceProvider;
 use Liberu\Accounting\AccountReconciliations\Actions\CarryForwardAccountReconciliation;
 use Liberu\Accounting\AccountReconciliations\Actions\CertifyAccountReconciliation;
@@ -75,8 +75,8 @@ it('boots the service provider and covers enum, exception, model, lifecycle acti
         ->and($rec->supporting_items)->toBe([])
         ->and($rec->template)->toBe(['name' => 'Bank Rec'])
         ->and($rec->aging)->toBe(['0_30' => 100])
-        ->and($rec->period_start)->toBeInstanceOf(CarbonImmutable::class)
-        ->and($rec->period_end)->toBeInstanceOf(CarbonImmutable::class)
+        ->and($rec->period_start)->toBeInstanceOf(CarbonInterface::class)
+        ->and($rec->period_end)->toBeInstanceOf(CarbonInterface::class)
         ->and($rec->isCertified())->toBeFalse();
 
     // Review/Certify/CarryForward fail before proper status

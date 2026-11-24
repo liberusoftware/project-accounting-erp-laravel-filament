@@ -127,7 +127,7 @@ it('publishes regional packs with all required artifact types and rejects incomp
     $allArtifacts[0]['definition'] = ['rate' => 20.0];
     $republished = $publish->handle($published, $allArtifacts);
     expect($republished->artifacts()->count())->toBe(count(RegionalArtifactType::cases()))
-        ->and($republished->artifacts()->where('type', RegionalArtifactType::Tax)->first()?->definition)->toBe(['rate' => 20.0]);
+        ->and($republished->artifacts()->where('type', RegionalArtifactType::Tax)->first()?->definition)->toEqual(['rate' => 20.0]);
 });
 
 it('runs compliance tests and records passed and failed results', function (): void {

@@ -15,7 +15,7 @@ final class RecordVatTransaction
     public function handle(array $attributes): VatRecord
     {
         $directions = array_map(static fn (VatDirection $direction): string => $direction->value, VatDirection::cases());
-        $direction = $attributes['direction'] instanceof VatDirection ? $attributes['direction']->value : $attributes['direction'] ?? null;
+        $direction = ($attributes['direction'] ?? null) instanceof VatDirection ? $attributes['direction']->value : ($attributes['direction'] ?? null);
 
         if (! in_array($direction, $directions, true) || blank($attributes['tax_code'] ?? null) || blank($attributes['occurred_on'] ?? null)) {
             throw new InvalidVat('A VAT direction, tax code, and transaction date are required.');

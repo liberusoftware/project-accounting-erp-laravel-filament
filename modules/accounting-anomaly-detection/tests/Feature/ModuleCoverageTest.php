@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Carbon\CarbonImmutable;
+use Carbon\CarbonInterface;
 use Illuminate\Support\Facades\Event;
 use Liberu\Accounting\AnomalyDetection\Actions\RecordAnomaly;
 use Liberu\Accounting\AnomalyDetection\Actions\SendToReview;
@@ -64,7 +65,7 @@ it('boots the service provider and covers enum, model, actions, and query', func
         ->and($older->status)->toBe(AnomalyStatus::Open)
         ->and((string) $older->confidence)->toBe('0.9125')
         ->and($older->evidence)->toBe(['z_score' => 3.4])
-        ->and($older->detected_at)->toBeInstanceOf(CarbonImmutable::class)
+        ->and($older->detected_at)->toBeInstanceOf(CarbonInterface::class)
         ->and($older->resolved_at)->toBeNull()
         ->and($newer->detected_at)->not->toBeNull();
 

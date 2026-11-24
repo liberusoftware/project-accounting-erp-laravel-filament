@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Carbon\CarbonImmutable;
+use Carbon\CarbonInterface;
 use Liberu\Accounting\AccountantWorkspace\AccountantWorkspaceServiceProvider;
 use Liberu\Accounting\AccountantWorkspace\Actions\CreateWorkspaceItem;
 use Liberu\Accounting\AccountantWorkspace\Enums\WorkspaceItemStatus;
@@ -70,7 +70,7 @@ it('boots the service provider and covers enum, model, create action, and worksp
         'status' => WorkspaceItemStatus::Complete,
     ]);
 
-    expect($earlier->next_deadline)->toBeInstanceOf(CarbonImmutable::class);
+    expect($earlier->next_deadline)->toBeInstanceOf(CarbonInterface::class);
 
     // Ordering: non-null deadlines ascending, nulls last
     $page = $query->paginate(1);

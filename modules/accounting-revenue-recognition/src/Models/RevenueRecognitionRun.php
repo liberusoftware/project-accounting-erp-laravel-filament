@@ -14,5 +14,7 @@ final class RevenueRecognitionRun extends Model
 
     protected $fillable = ['team_id', 'as_of_date', 'status', 'processed_entries', 'failed_entries', 'errors', 'metadata', 'started_at', 'finished_at'];
 
+    protected $attributes = ['processed_entries' => 0, 'failed_entries' => 0];
+
     protected $casts = ['status' => RecognitionRunStatus::class, 'as_of_date' => 'date', 'errors' => 'array', 'metadata' => 'array', 'started_at' => 'datetime', 'finished_at' => 'datetime'];
 }

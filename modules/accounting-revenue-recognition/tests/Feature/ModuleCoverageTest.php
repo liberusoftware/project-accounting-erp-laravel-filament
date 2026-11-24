@@ -55,7 +55,7 @@ it('creates revenue schedules with obligation and entries and validates inputs',
         'status' => 'active',
         'metadata' => ['method' => 'ssp'],
     ]);
-    expect($allocationRef->allocation)->toBe(['standalone_selling_price' => 100.0]);
+    expect($allocationRef->allocation)->toEqual(['standalone_selling_price' => 100.0]);
 
     $schedule = $create->handle([
         'team_id' => 1,

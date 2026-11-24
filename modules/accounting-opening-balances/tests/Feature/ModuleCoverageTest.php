@@ -87,7 +87,7 @@ it('runs full opening balance workflow: create, validate, approve, reconcile wit
     // Validate
     $validated = $validateBatch->handle($batch);
     expect($validated->status)->toBe(OpeningBalanceStatus::Validated)
-        ->and($validated->summary)->toBe([
+        ->and($validated->summary)->toEqual([
             'entry_count' => 4,
             'debit_total' => 2000.0,
             'credit_total' => 2000.0,

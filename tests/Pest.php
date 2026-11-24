@@ -60,10 +60,28 @@ if (is_dir(dirname(__DIR__).'/modules')) {
         }
     });
 
+    $selfBoundRootOnly = [
+        'passkeys',
+        'payment-adyen',
+        'payment-contracts',
+        'payment-core',
+        'payment-gocardless',
+        'payment-mollie',
+        'payment-paddle',
+        'payment-paypal',
+        'payment-square',
+        'payment-stripe',
+    ];
     $moduleTestDirs = [];
     foreach (glob($modulesDir.'/*/tests', GLOB_ONLYDIR) ?: [] as $testDir) {
         $modName = basename(dirname($testDir));
-        if (in_array($modName, ['payment-core', 'roles-permissions-filament'], true)) {
+        if ($modName === 'roles-permissions-filament') {
+            continue;
+        }
+        if (in_array($modName, $selfBoundRootOnly, true)) {
+            if (is_dir($testDir.'/Feature')) {
+                $moduleTestDirs[] = '../modules/'.$modName.'/tests/Feature';
+            }
             continue;
         }
         $moduleTestDirs[] = '../modules/'.$modName.'/tests';

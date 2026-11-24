@@ -10,6 +10,7 @@
     "php": "^8.5",
     "laravel": "^13.0",
     "packages": {
+      "liberusoftware/module-accounting-erp": "^1.0",
       "liberusoftware/module-accounting-quickbooks-online-migration": "^1.0"
     }
   },

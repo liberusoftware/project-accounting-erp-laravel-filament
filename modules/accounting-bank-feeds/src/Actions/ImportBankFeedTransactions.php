@@ -30,7 +30,7 @@ final class ImportBankFeedTransactions
                 }
                 BankFeedTransaction::query()->updateOrCreate(
                     ['connection_id' => $connection->getKey(), 'external_id' => $externalId],
-                    ['team_id' => $connection->team_id, 'mapping_id' => $data['mapping_id'] ?? null, 'transaction_date' => $data['transaction_date'], 'posted_date' => $data['posted_date'] ?? null, 'description' => $data['description'] ?? null, 'amount' => $data['amount'], 'currency' => strtoupper((string) $data['currency']), 'status' => ($data['status'] ?? 'posted') === 'pending' ? FeedTransactionStatus::Pending : FeedTransactionStatus::Posted, 'category' => $data['category'] ?? null, 'raw_data' => $data['raw_data'] ?? $data, 'metadata' => $data['metadata'] ?? null]
+                    ['team_id' => $connection->team_id, 'mapping_id' => $data['mapping_id'] ?? $transaction?->mapping_id, 'transaction_date' => $data['transaction_date'], 'posted_date' => $data['posted_date'] ?? null, 'description' => $data['description'] ?? null, 'amount' => $data['amount'], 'currency' => strtoupper((string) $data['currency']), 'status' => ($data['status'] ?? 'posted') === 'pending' ? FeedTransactionStatus::Pending : FeedTransactionStatus::Posted, 'category' => $data['category'] ?? null, 'raw_data' => $data['raw_data'] ?? $data, 'metadata' => $data['metadata'] ?? null]
                 );
                 $imported++;
             }

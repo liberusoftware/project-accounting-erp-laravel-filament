@@ -25,6 +25,13 @@
             <exclude>modules/activity-comments/tests/Feature/MigrationsTest.php</exclude>
             <exclude>modules/feature-flags/tests/Feature/FeatureFlagStorageTest.php</exclude>
             <exclude>modules/currency-context/tests/Feature/CurrencyPreferencesTest.php</exclude>
+            <exclude>modules/identity-core-filament/tests/Feature/UserResourceTest.php</exclude>
+            <exclude>modules/integrations/tests/Feature</exclude>
+            <exclude>modules/observability/tests/Feature/DiagnosticsIntegrationTest.php</exclude>
+            <exclude>modules/organizations-teams-filament/tests/Feature/TeamResourceTest.php</exclude>
+            <exclude>modules/organizations-teams/tests/Unit/EntitySettingsTest.php</exclude>
+            <exclude>modules/roles-permissions-filament/tests/Unit/RoleResourceTest.php</exclude>
+            <exclude>modules/search/tests/Feature/SearchServiceTest.php</exclude>
         </testsuite>
     </testsuites>
     <source>

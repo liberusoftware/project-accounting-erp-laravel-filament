@@ -114,6 +114,7 @@ it('fetches and normalizes transactions and throws on plaid http failure', funct
                 ],
                 'next_cursor' => 'cur-1',
             ])
+            ->push(['error_message' => 'Unauthorized'], 401)
             ->push(['error_message' => 'Unauthorized'], 401),
     ]);
 

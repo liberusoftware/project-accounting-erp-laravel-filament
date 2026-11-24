@@ -212,7 +212,7 @@ it('declares a Filament plugin class that exists for every panel', function () {
         $manifest = json_decode(file_get_contents($module.'/module.json'), true, flags: JSON_THROW_ON_ERROR);
 
         foreach ($manifest['presentation']['filament'] ?? [] as $panel => $plugins) {
-            expect($panel)->toBeIn(['admin', 'app']);
+            expect($panel)->toBeIn(['admin', 'app', 'customer', 'vendor']);
 
             foreach ((array) $plugins as $plugin) {
                 expect(class_exists($plugin))->toBeTrue("{$manifest['name']} declares {$plugin} for the {$panel} panel, which does not exist.");

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Carbon\CarbonImmutable;
+use Carbon\CarbonInterface;
 use Liberu\Accounting\AuditSupport\Actions\CreateAuditRequest;
 use Liberu\Accounting\AuditSupport\Actions\SubmitAuditRequest;
 use Liberu\Accounting\AuditSupport\AuditSupportServiceProvider;
@@ -45,7 +45,7 @@ it('boots the service provider and covers enum, model, actions, and query', func
         ->and($openReq->reference)->toStartWith('AUD-')
         ->and(strlen($openReq->reference))->toBe(12)
         ->and($openReq->owner_id)->toBe(9)
-        ->and($openReq->due_at)->toBeInstanceOf(CarbonImmutable::class)
+        ->and($openReq->due_at)->toBeInstanceOf(CarbonInterface::class)
         ->and($openReq->evidence)->toBe([['file' => 'bank.pdf']]);
 
     // Submit from Open

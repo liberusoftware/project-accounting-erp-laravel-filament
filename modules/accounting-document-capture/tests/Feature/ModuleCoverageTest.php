@@ -172,7 +172,7 @@ it('extracts, reviews (approve & reject), and archives captured documents with e
     $extracted = $extract->handle($doc, ['lines' => [['description' => 'Hosting', 'amount' => 99.0]]], 0.9542, 'ocr-v2', 'bot-1');
     expect($extracted->status)->toBe(CaptureStatus::Extracted)
         ->and($extracted->confidence)->toBe(0.9542)
-        ->and($extracted->extracted_data)->toBe(['lines' => [['description' => 'Hosting', 'amount' => 99.0]]]);
+        ->and($extracted->extracted_data)->toEqual(['lines' => [['description' => 'Hosting', 'amount' => 99.0]]]);
 
     // Re-extracting an already extracted document throws.
     expect(fn () => $extract->handle($extracted, ['lines' => [['amount' => 1]]], 0.8, 'ocr-v2'))

@@ -26,7 +26,7 @@ it('registers and boots the operational reports service provider', function (): 
 
 it('exposes all operational report enum cases', function (): void {
     expect(array_map(fn (ReportCategory $c): string => $c->value, ReportCategory::cases()))
-        ->toBe(['inventory', 'assets', 'expenses', 'projects', 'payroll', 'exceptions']);
+        ->toBe(['receivables_payables', 'sales_purchases', 'tax', 'bank', 'inventory', 'assets', 'expenses', 'projects', 'payroll', 'exceptions']);
 
     expect(array_map(fn (ReportRunStatus $s): string => $s->value, ReportRunStatus::cases()))
         ->toBe(['draft', 'running', 'ready', 'published', 'failed', 'archived']);

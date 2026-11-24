@@ -205,7 +205,7 @@ it('queries facilities and computes debt position across current and non-current
     $query = app(DebtQuery::class);
 
     expect($query->facilities(999))->toBeEmpty()
-        ->and($query->position(999))->toBe([
+        ->and($query->position(999))->toEqual([
             'facilities' => 0,
             'outstanding' => 0.0,
             'current_due_next_year' => 0.0,

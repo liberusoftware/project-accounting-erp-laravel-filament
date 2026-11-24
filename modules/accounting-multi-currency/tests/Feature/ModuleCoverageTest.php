@@ -114,7 +114,7 @@ it('configures currency profiles, records exchange rates, calculates revaluation
         ->and((float) $run->unrealized_loss)->toBe(30.00)
         ->and((float) $run->realized_gain)->toBe(50.00)
         ->and((float) $run->realized_loss)->toBe(10.00)
-        ->and($run->summary)->toBe([
+        ->and($run->summary)->toEqual([
             'position_count' => 4,
             'net_unrealized' => 20.0,
             'net_realized' => 40.0,

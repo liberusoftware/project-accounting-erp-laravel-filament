@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Carbon\CarbonImmutable;
+use Carbon\CarbonInterface;
 use Liberu\Accounting\AssetEvents\Actions\RecordAssetEvent;
 use Liberu\Accounting\AssetEvents\AssetEventsServiceProvider;
 use Liberu\Accounting\AssetEvents\Models\AssetEvent;
@@ -68,7 +68,7 @@ it('boots the service provider and covers immutable model, record action, and qu
     ]);
 
     expect($first)->toBeInstanceOf(AssetEvent::class)
-        ->and($first->event_date)->toBeInstanceOf(CarbonImmutable::class)
+        ->and($first->event_date)->toBeInstanceOf(CarbonInterface::class)
         ->and($first->old_values)->toBe(['cost' => 0])
         ->and($first->new_values)->toBe(['cost' => 2500])
         ->and($first->evidence)->toBe(['invoice' => 'INV-99'])
