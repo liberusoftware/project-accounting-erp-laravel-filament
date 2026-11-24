@@ -27200,11 +27200,11 @@
         },
         {
             "name": "liberusoftware/passkeys",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/passkeys.git",
-                "reference": "1c1205bf7e3d45671481e57b6445faae64aa21e6"
+                "reference": "b76fe0c49958e795b3879682d5bb7a3f3f40b74d"
             },
             "require": {
                 "illuminate/contracts": "^13.0",
@@ -27232,15 +27232,15 @@
                 "MIT"
             ],
             "description": "WebAuthn / FIDO2 passkey registration, discoverable passwordless sign-in, step-up authentication, and clone detection for Liberu.",
-            "time": "2026-11-22T04:47:41+00:00"
+            "time": "2026-11-24T21:14:38+00:00"
         },
         {
             "name": "liberusoftware/payment-adyen",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-adyen.git",
-                "reference": "de92ee8cc3619c03f56f82d7620db219c5851b1e"
+                "reference": "61d8b8fed51bd1e32754a2a8aad93cbbe434b7d9"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27268,15 +27268,15 @@
                 "MIT"
             ],
             "description": "Unified Adyen merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-22T11:32:00+00:00"
+            "time": "2026-11-24T21:14:41+00:00"
         },
         {
             "name": "liberusoftware/payment-contracts",
-            "version": "v1.1.1",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-contracts.git",
-                "reference": "088e5a3c0966758a7af3782599bfeeac6fcda028"
+                "reference": "c7678ef7e26fae38a936a9f2fb9105f88c4ef271"
             },
             "require": {
                 "illuminate/contracts": "^13.0",
@@ -27308,15 +27308,15 @@
                 "MIT"
             ],
             "description": "Provider-neutral merchant payment gateway contracts, DTOs, and lifecycle state machine for Liberu.",
-            "time": "2026-11-22T11:32:43+00:00"
+            "time": "2026-11-24T21:14:45+00:00"
         },
         {
             "name": "liberusoftware/payment-core",
-            "version": "v1.1.2",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-core.git",
-                "reference": "3fb53e00bb2855033260b82e90132818330b9490"
+                "reference": "b36ecabfd1c81ef44f38f50ab16902d88ebf68ef"
             },
             "require": {
                 "illuminate/database": "^13.0",
@@ -27345,15 +27345,15 @@
                 "MIT"
             ],
             "description": "Provider-neutral merchant payment orchestration, gateway registry, idempotency, webhook inbox, and reconciliation core.",
-            "time": "2026-11-22T21:31:38+00:00"
+            "time": "2026-11-24T21:39:13+00:00"
         },
         {
             "name": "liberusoftware/payment-gocardless",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-gocardless.git",
-                "reference": "1013c7f960e92c16f2f05976bd28dd6641d135dd"
+                "reference": "e30c1c0e729dda5dd29175e40858d57f44b073ef"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27381,15 +27381,15 @@
                 "MIT"
             ],
             "description": "Unified GoCardless merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-22T11:32:55+00:00"
+            "time": "2026-11-24T21:14:48+00:00"
         },
         {
             "name": "liberusoftware/payment-mollie",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-mollie.git",
-                "reference": "c84587ef589677abcabbdaa301294fe8d00128dd"
+                "reference": "97e379fda2706156976ea3645d81529c635aaee7"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27417,15 +27417,15 @@
                 "MIT"
             ],
             "description": "Unified Mollie merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-22T11:33:01+00:00"
+            "time": "2026-11-24T21:14:52+00:00"
         },
         {
             "name": "liberusoftware/payment-paddle",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-paddle.git",
-                "reference": "a26b65caa35c302d9bf4baba18c7628384162bf1"
+                "reference": "65b76d7bf7d68c088c558a5e0f1cf2049d911c06"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27453,15 +27453,15 @@
                 "MIT"
             ],
             "description": "Unified Paddle Billing merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-22T11:33:07+00:00"
+            "time": "2026-11-24T21:14:55+00:00"
         },
         {
             "name": "liberusoftware/payment-paypal",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-paypal.git",
-                "reference": "2c47a727ead7ec0a5f738591eea40f6c51555a8d"
+                "reference": "2679bbbbea7dd42e6de7d40ffdfd9973e6f2d65e"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27489,15 +27489,15 @@
                 "MIT"
             ],
             "description": "Unified PayPal merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-22T11:33:13+00:00"
+            "time": "2026-11-24T21:14:58+00:00"
         },
         {
             "name": "liberusoftware/payment-square",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-square.git",
-                "reference": "3517d285dbd7419442048bcb480dc207a7bf0f1a"
+                "reference": "49cc89068d12761da39e0937725a0ee1d527bd46"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27525,15 +27525,15 @@
                 "MIT"
             ],
             "description": "Unified Square merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-22T11:33:19+00:00"
+            "time": "2026-11-24T21:15:03+00:00"
         },
         {
             "name": "liberusoftware/payment-stripe",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-payment-stripe.git",
-                "reference": "b21289a62579c81d24676d9c2622f233838544d8"
+                "reference": "1260b14d20048ee01e0b290e001409b69f3865d1"
             },
             "require": {
                 "illuminate/support": "^13.0",
@@ -27561,7 +27561,7 @@
                 "MIT"
             ],
             "description": "Unified Stripe merchant payment adapter implementing liberusoftware/payment-contracts on stripe/stripe-php ^23.0.",
-            "time": "2026-11-22T11:33:25+00:00"
+            "time": "2026-11-24T21:15:07+00:00"
         },
         {
             "name": "liberusoftware/profiles",
