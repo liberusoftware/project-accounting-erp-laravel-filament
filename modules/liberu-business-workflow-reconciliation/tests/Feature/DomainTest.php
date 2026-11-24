@@ -5,16 +5,25 @@ declare(strict_types=1);
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Validation\ValidationException;
+use Liberu\BusinessWorkflowReconciliation\Actions\StartWorkflowRun;
+use Liberu\BusinessWorkflowReconciliation\Enums\WorkflowRunState;
+use Liberu\BusinessWorkflowReconciliation\Events\WorkflowRunStarted;
+use Liberu\BusinessWorkflowReconciliation\Models\WorkflowRun;
 use Liberu\Platform\BusinessWorkflowReconciliation\Actions\CreateReconciliationCase;
-use Liberu\Platform\BusinessWorkflowReconciliation\Actions\StartWorkflowRun;
 use Liberu\Platform\BusinessWorkflowReconciliation\Actions\TransitionReconciliationCase;
 use Liberu\Platform\BusinessWorkflowReconciliation\Enums\LifecycleStatus;
-use Liberu\Platform\BusinessWorkflowReconciliation\Enums\WorkflowRunState;
 use Liberu\Platform\BusinessWorkflowReconciliation\Events\ReconciliationCaseTransitioned;
-use Liberu\Platform\BusinessWorkflowReconciliation\Events\WorkflowRunStarted;
 use Liberu\Platform\BusinessWorkflowReconciliation\Exceptions\InvalidLifecycleTransition;
 use Liberu\Platform\BusinessWorkflowReconciliation\Models\ReconciliationCase;
-use Liberu\Platform\BusinessWorkflowReconciliation\Models\WorkflowRun;
+
+foreach ([
+    __DIR__.'/../../src/Enums/WorkflowRunState.php',
+    __DIR__.'/../../src/Models/WorkflowRun.php',
+    __DIR__.'/../../src/Events/WorkflowRunStarted.php',
+    __DIR__.'/../../src/Actions/StartWorkflowRun.php',
+] as $legacyFile) {
+    require_once $legacyFile;
+}
 
 it('creates and hydrates its aggregate through the domain action', function (): void {
     $record = (new CreateReconciliationCase())->execute([

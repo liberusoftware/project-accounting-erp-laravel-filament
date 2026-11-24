@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Liberu\Platform\PlatformOrchestration\Enums;
+namespace Liberu\PlatformOrchestration\Enums;
 
 enum CompositionState: string
 {

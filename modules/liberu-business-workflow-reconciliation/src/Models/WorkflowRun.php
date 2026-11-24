@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Liberu\Platform\BusinessWorkflowReconciliation\Models;
+namespace Liberu\BusinessWorkflowReconciliation\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Liberu\Platform\BusinessWorkflowReconciliation\Enums\WorkflowRunState;
+use Liberu\BusinessWorkflowReconciliation\Enums\WorkflowRunState;
 
 /**
  * @property int $id

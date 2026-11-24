@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Liberu\Platform\PlatformOrchestration\Actions;
+namespace Liberu\PlatformOrchestration\Actions;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\DB;
-use Liberu\Platform\PlatformOrchestration\Enums\CompositionState;
-use Liberu\Platform\PlatformOrchestration\Events\CompositionStateChanged;
-use Liberu\Platform\PlatformOrchestration\Exceptions\InvalidCompositionTransition;
-use Liberu\Platform\PlatformOrchestration\Models\PlatformComposition;
+use Liberu\PlatformOrchestration\Enums\CompositionState;
+use Liberu\PlatformOrchestration\Events\CompositionStateChanged;
+use Liberu\PlatformOrchestration\Exceptions\InvalidCompositionTransition;
+use Liberu\PlatformOrchestration\Models\PlatformComposition;
 
 final class TransitionComposition
 {

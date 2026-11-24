@@ -5,19 +5,31 @@ declare(strict_types=1);
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Validation\ValidationException;
-use Liberu\Platform\PlatformOrchestration\Actions\CreateComposition;
 use Liberu\Platform\PlatformOrchestration\Actions\CreatePlatformWorkflow;
-use Liberu\Platform\PlatformOrchestration\Actions\TransitionComposition;
 use Liberu\Platform\PlatformOrchestration\Actions\TransitionPlatformWorkflow;
-use Liberu\Platform\PlatformOrchestration\Enums\CompositionState;
 use Liberu\Platform\PlatformOrchestration\Enums\LifecycleStatus;
-use Liberu\Platform\PlatformOrchestration\Events\CompositionCreated;
-use Liberu\Platform\PlatformOrchestration\Events\CompositionStateChanged;
 use Liberu\Platform\PlatformOrchestration\Events\PlatformWorkflowTransitioned;
-use Liberu\Platform\PlatformOrchestration\Exceptions\InvalidCompositionTransition;
 use Liberu\Platform\PlatformOrchestration\Exceptions\InvalidLifecycleTransition;
-use Liberu\Platform\PlatformOrchestration\Models\PlatformComposition;
 use Liberu\Platform\PlatformOrchestration\Models\PlatformWorkflow;
+use Liberu\PlatformOrchestration\Actions\CreateComposition;
+use Liberu\PlatformOrchestration\Actions\TransitionComposition;
+use Liberu\PlatformOrchestration\Enums\CompositionState;
+use Liberu\PlatformOrchestration\Events\CompositionCreated;
+use Liberu\PlatformOrchestration\Events\CompositionStateChanged;
+use Liberu\PlatformOrchestration\Exceptions\InvalidCompositionTransition;
+use Liberu\PlatformOrchestration\Models\PlatformComposition;
+
+foreach ([
+    __DIR__.'/../../src/Enums/CompositionState.php',
+    __DIR__.'/../../src/Exceptions/InvalidCompositionTransition.php',
+    __DIR__.'/../../src/Models/PlatformComposition.php',
+    __DIR__.'/../../src/Events/CompositionCreated.php',
+    __DIR__.'/../../src/Events/CompositionStateChanged.php',
+    __DIR__.'/../../src/Actions/CreateComposition.php',
+    __DIR__.'/../../src/Actions/TransitionComposition.php',
+] as $legacyFile) {
+    require_once $legacyFile;
+}
 
 it('creates and hydrates its aggregate through the domain action', function (): void {
     $record = (new CreatePlatformWorkflow())->execute([

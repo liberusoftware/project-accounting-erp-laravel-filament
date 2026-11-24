@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Liberu\Platform\ExecutiveInsights\Events;
+namespace Liberu\ExecutiveInsights\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Liberu\Platform\ExecutiveInsights\Models\MetricDefinition;
+use Liberu\ExecutiveInsights\Models\MetricDefinition;
 
 final class MetricRegistered
 {

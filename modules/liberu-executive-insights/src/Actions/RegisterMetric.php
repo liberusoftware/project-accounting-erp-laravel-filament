@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Liberu\Platform\ExecutiveInsights\Actions;
+namespace Liberu\ExecutiveInsights\Actions;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\ValidationException;
-use Liberu\Platform\ExecutiveInsights\Events\MetricRegistered;
-use Liberu\Platform\ExecutiveInsights\Models\MetricDefinition;
+use Liberu\ExecutiveInsights\Events\MetricRegistered;
+use Liberu\ExecutiveInsights\Models\MetricDefinition;
 
 final class RegisterMetric
 {

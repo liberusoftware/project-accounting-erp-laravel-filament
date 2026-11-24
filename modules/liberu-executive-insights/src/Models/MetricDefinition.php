@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Liberu\Platform\ExecutiveInsights\Models;
+namespace Liberu\ExecutiveInsights\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

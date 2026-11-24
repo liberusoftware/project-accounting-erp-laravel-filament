@@ -5,15 +5,23 @@ declare(strict_types=1);
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Validation\ValidationException;
+use Liberu\ExecutiveInsights\Actions\RegisterMetric;
+use Liberu\ExecutiveInsights\Events\MetricRegistered;
+use Liberu\ExecutiveInsights\Models\MetricDefinition;
 use Liberu\Platform\ExecutiveInsights\Actions\CreateInsightSnapshot;
-use Liberu\Platform\ExecutiveInsights\Actions\RegisterMetric;
 use Liberu\Platform\ExecutiveInsights\Actions\TransitionInsightSnapshot;
 use Liberu\Platform\ExecutiveInsights\Enums\LifecycleStatus;
 use Liberu\Platform\ExecutiveInsights\Events\InsightSnapshotTransitioned;
-use Liberu\Platform\ExecutiveInsights\Events\MetricRegistered;
 use Liberu\Platform\ExecutiveInsights\Exceptions\InvalidLifecycleTransition;
 use Liberu\Platform\ExecutiveInsights\Models\InsightSnapshot;
-use Liberu\Platform\ExecutiveInsights\Models\MetricDefinition;
+
+foreach ([
+    __DIR__.'/../../src/Models/MetricDefinition.php',
+    __DIR__.'/../../src/Events/MetricRegistered.php',
+    __DIR__.'/../../src/Actions/RegisterMetric.php',
+] as $legacyFile) {
+    require_once $legacyFile;
+}
 
 it('creates and hydrates its aggregate through the domain action', function (): void {
     $record = (new CreateInsightSnapshot())->execute([

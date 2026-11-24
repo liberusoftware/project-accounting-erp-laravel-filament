@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Liberu\Platform\PlatformOrchestration\Events;
+namespace Liberu\PlatformOrchestration\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Liberu\Platform\PlatformOrchestration\Enums\CompositionState;
-use Liberu\Platform\PlatformOrchestration\Models\PlatformComposition;
+use Liberu\PlatformOrchestration\Enums\CompositionState;
+use Liberu\PlatformOrchestration\Models\PlatformComposition;
 
 final class CompositionStateChanged
 {
