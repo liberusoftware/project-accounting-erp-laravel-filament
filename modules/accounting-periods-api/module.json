@@ -22,5 +22,5 @@
     "Locks",
     "Reopen evidence"
   ],
-  "default_enabled": false
+  "default_enabled": true
 }

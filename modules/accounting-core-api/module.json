@@ -3,7 +3,7 @@
   "name": "accounting-core-api",
   "display_name": "Accounting Core API",
   "description": "Authenticated, scoped HTTP operations for Accounting Core.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CoreApi\\AccountingCoreApiServiceProvider",
   "requires": {
@@ -17,7 +17,7 @@
   "capabilities": [
     "accounting.core.api"
   ],
-  "default_enabled": false,
+  "default_enabled": true,
   "features": [
     "Versioned legal-entity API",
     "Sanctum authentication",

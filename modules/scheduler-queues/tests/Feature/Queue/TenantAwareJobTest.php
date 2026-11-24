@@ -5,8 +5,8 @@ namespace Tests\Feature\Queue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Liberu\Foundation\Tenancy\Jobs\Concerns\TenantAware;
-use Liberu\Foundation\Tenancy\TenantContext;
+use Liberu\Foundation\Organizations\Support\TenantContext;
+use Liberu\Foundation\SchedulerQueues\Jobs\Concerns\TenantAware;
 use Tests\TestCase;
 
 /**

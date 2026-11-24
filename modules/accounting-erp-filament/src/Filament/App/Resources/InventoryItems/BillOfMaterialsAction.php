@@ -12,8 +12,8 @@ use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Builder;
 use Liberu\Accounting\Erp\Actions\SaveBillOfMaterials;
 use Liberu\Accounting\Erp\Models\InventoryItem;
-use Liberu\Accounting\Erp\Modules\Inventory\InventoryModule;
 use Liberu\Accounting\Erp\Policies\BillOfMaterialsPolicy;
+use Liberu\Foundation\ModuleManager\ModuleRegistry;
 
 final class BillOfMaterialsAction
 {
@@ -21,7 +21,7 @@ final class BillOfMaterialsAction
     {
         return Action::make('billOfMaterials')
             ->label('Bill of materials')
-            ->visible(InventoryModule::isActive())
+            ->visible(fn (): bool => app(ModuleRegistry::class)->enabled('accounting-inventory-accounting', (array) config('modules.enabled', []), (array) config('modules.disabled', [])))
             ->authorize(fn (InventoryItem $record): bool => app(BillOfMaterialsPolicy::class)
                 ->manageBillOfMaterials(Filament::auth()->user(), $record))
             ->fillForm(fn (InventoryItem $record): array => [

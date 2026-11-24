@@ -34,17 +34,17 @@
         "liberusoftware/analytics-meta": "^1.0",
         "liberusoftware/api-access": "^1.0",
         "liberusoftware/application": "^2.0",
-        "liberusoftware/audit": "1.10.0",
+        "liberusoftware/audit": "^1.11",
         "liberusoftware/composer-installer": "^1.1",
         "liberusoftware/currency-context": "^1.0",
         "liberusoftware/developer-experience": "^1.0",
         "liberusoftware/feature-flags": "^1.0",
         "liberusoftware/files-media": "^1.0",
-        "liberusoftware/identity-core": "1.7.2",
+        "liberusoftware/identity-core": "^1.8",
         "liberusoftware/identity-core-filament": "^1.0",
-        "liberusoftware/identity-socialstream": "1.8.2",
+        "liberusoftware/identity-socialstream": "^1.9",
         "liberusoftware/import-export": "^1.0",
-        "liberusoftware/integrations": "1.11.0",
+        "liberusoftware/integrations": "^1.12",
         "liberusoftware/jetstream-bridge": "^1.0",
         "liberusoftware/localization-contracts": "^1.0",
         "liberusoftware/localization-core": "^1.5.1",
@@ -483,22 +483,22 @@
         "liberusoftware/module-manager-filament": "^1.11.2",
         "liberusoftware/notifications": "^1.0",
         "liberusoftware/observability": "^1.0",
-        "liberusoftware/organizations-teams": "1.11.2",
+        "liberusoftware/organizations-teams": "^1.12.2",
         "liberusoftware/organizations-teams-filament": "^1.0",
         "liberusoftware/passkeys": "^1.0",
-        "liberusoftware/payment-adyen": "^1.0",
-        "liberusoftware/payment-contracts": "^1.1",
-        "liberusoftware/payment-core": "^1.1",
-        "liberusoftware/payment-gocardless": "^1.0",
-        "liberusoftware/payment-mollie": "^1.0",
-        "liberusoftware/payment-paddle": "^1.0",
-        "liberusoftware/payment-paypal": "^1.0",
-        "liberusoftware/payment-square": "^1.0",
-        "liberusoftware/payment-stripe": "^1.0",
+        "liberusoftware/payment-adyen": "^1.0.2",
+        "liberusoftware/payment-contracts": "^1.1.1",
+        "liberusoftware/payment-core": "^1.1.1",
+        "liberusoftware/payment-gocardless": "^1.0.2",
+        "liberusoftware/payment-mollie": "^1.0.2",
+        "liberusoftware/payment-paddle": "^1.0.2",
+        "liberusoftware/payment-paypal": "^1.0.2",
+        "liberusoftware/payment-square": "^1.0.2",
+        "liberusoftware/payment-stripe": "^1.0.2",
         "liberusoftware/profiles": "^1.0",
-        "liberusoftware/roles-permissions": "1.8.2",
+        "liberusoftware/roles-permissions": "^1.9",
         "liberusoftware/roles-permissions-filament": "^1.0",
-        "liberusoftware/scheduler-queues": "1.6.0",
+        "liberusoftware/scheduler-queues": "^1.6.2",
         "liberusoftware/search": "^1.0",
         "liberusoftware/search-api": "^1.0",
         "liberusoftware/sessions-devices": "^1.5.2",
@@ -712,63 +712,63 @@
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-contracts.git",
+            "url": "https://github.com/liberusoftware/module-payment-contracts.git",
             "only": [
                 "liberusoftware/payment-contracts"
             ]
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-core.git",
+            "url": "https://github.com/liberusoftware/module-payment-core.git",
             "only": [
                 "liberusoftware/payment-core"
             ]
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-stripe.git",
+            "url": "https://github.com/liberusoftware/module-payment-stripe.git",
             "only": [
                 "liberusoftware/payment-stripe"
             ]
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-paypal.git",
+            "url": "https://github.com/liberusoftware/module-payment-paypal.git",
             "only": [
                 "liberusoftware/payment-paypal"
             ]
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-paddle.git",
+            "url": "https://github.com/liberusoftware/module-payment-paddle.git",
             "only": [
                 "liberusoftware/payment-paddle"
             ]
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-adyen.git",
+            "url": "https://github.com/liberusoftware/module-payment-adyen.git",
             "only": [
                 "liberusoftware/payment-adyen"
             ]
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-mollie.git",
+            "url": "https://github.com/liberusoftware/module-payment-mollie.git",
             "only": [
                 "liberusoftware/payment-mollie"
             ]
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-square.git",
+            "url": "https://github.com/liberusoftware/module-payment-square.git",
             "only": [
                 "liberusoftware/payment-square"
             ]
         },
         {
             "type": "git",
-            "url": "https://github.com/liberusoftware/payment-gocardless.git",
+            "url": "https://github.com/liberusoftware/module-payment-gocardless.git",
             "only": [
                 "liberusoftware/payment-gocardless"
             ]

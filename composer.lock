@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "015cd3d2be0fb0a4675753abfd7b7197",
+    "content-hash": "261c06b7499365f7bddeadd8ce402b7f",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -6186,16 +6186,16 @@
         },
         {
             "name": "liberusoftware/api-access",
-            "version": "1.6.4",
+            "version": "1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-api-access.git",
-                "reference": "1b4aa51530707c4dd5109eb7018c37e3825cfe7b"
+                "reference": "a6dae33b8cfb6ecca4bc939a8b77a4385264b641"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-api-access/zipball/1b4aa51530707c4dd5109eb7018c37e3825cfe7b",
-                "reference": "1b4aa51530707c4dd5109eb7018c37e3825cfe7b",
+                "url": "https://api.github.com/repos/liberusoftware/module-api-access/zipball/a6dae33b8cfb6ecca4bc939a8b77a4385264b641",
+                "reference": "a6dae33b8cfb6ecca4bc939a8b77a4385264b641",
                 "shasum": ""
             },
             "require": {
@@ -6228,9 +6228,9 @@
             "description": "API token, scope, version, rate-limit, idempotency, and revocation policy.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-api-access/issues",
-                "source": "https://github.com/liberusoftware/module-api-access/tree/v1.6.4"
+                "source": "https://github.com/liberusoftware/module-api-access/tree/v1.6.5"
             },
-            "time": "2026-11-21T17:58:25+00:00"
+            "time": "2026-11-22T05:18:42+00:00"
         },
         {
             "name": "liberusoftware/application",
@@ -6280,16 +6280,16 @@
         },
         {
             "name": "liberusoftware/audit",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-audit.git",
-                "reference": "a2a10e80311af78bf697ee6c710ec6580b07f778"
+                "reference": "96c35af49cfd93c6a55ce1ab5701a8131d131e5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-audit/zipball/a2a10e80311af78bf697ee6c710ec6580b07f778",
-                "reference": "a2a10e80311af78bf697ee6c710ec6580b07f778",
+                "url": "https://api.github.com/repos/liberusoftware/module-audit/zipball/96c35af49cfd93c6a55ce1ab5701a8131d131e5b",
+                "reference": "96c35af49cfd93c6a55ce1ab5701a8131d131e5b",
                 "shasum": ""
             },
             "require": {
@@ -6320,9 +6320,9 @@
             "description": "Contextual material-change audit records with correlation and retention boundaries.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-audit/issues",
-                "source": "https://github.com/liberusoftware/module-audit/tree/v1.10.0"
+                "source": "https://github.com/liberusoftware/module-audit/tree/v1.11.0"
             },
-            "time": "2026-11-05T16:06:54+00:00"
+            "time": "2026-11-22T04:49:00+00:00"
         },
         {
             "name": "liberusoftware/composer-installer",
@@ -6555,16 +6555,16 @@
         },
         {
             "name": "liberusoftware/identity-core",
-            "version": "1.7.2",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-identity-core.git",
-                "reference": "264d65ad387161760e13884dedd55e89d8423c0f"
+                "reference": "1d013d31af989394df070ae06b55e2701e194248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-identity-core/zipball/264d65ad387161760e13884dedd55e89d8423c0f",
-                "reference": "264d65ad387161760e13884dedd55e89d8423c0f",
+                "url": "https://api.github.com/repos/liberusoftware/module-identity-core/zipball/1d013d31af989394df070ae06b55e2701e194248",
+                "reference": "1d013d31af989394df070ae06b55e2701e194248",
                 "shasum": ""
             },
             "require": {
@@ -6594,9 +6594,9 @@
             "description": "Provider-neutral identity policy, normalization, and versioned security events.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-identity-core/issues",
-                "source": "https://github.com/liberusoftware/module-identity-core/tree/v1.7.2"
+                "source": "https://github.com/liberusoftware/module-identity-core/tree/v1.8.0"
             },
-            "time": "2026-11-21T17:58:44+00:00"
+            "time": "2026-11-22T04:49:15+00:00"
         },
         {
             "name": "liberusoftware/identity-core-filament",
@@ -6645,11 +6645,11 @@
         },
         {
             "name": "liberusoftware/identity-socialstream",
-            "version": "1.8.2",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-identity-socialstream.git",
-                "reference": "6f1562d9e9dfbc0246446b11b6b5c7f5ef0d6c1d"
+                "reference": "b482d60bd978a5b73d2ce6f50d9a8277f3625dc5"
             },
             "require": {
                 "bursteri/socialstream": "^7.0.0",
@@ -6689,7 +6689,7 @@
                 "MIT"
             ],
             "description": "Socialstream/Socialite identity-linking provider adapter.",
-            "time": "2026-11-14T16:27:20+00:00"
+            "time": "2026-11-22T04:49:22+00:00"
         },
         {
             "name": "liberusoftware/import-export",
@@ -6739,16 +6739,17 @@
         },
         {
             "name": "liberusoftware/integrations",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-integrations.git",
-                "reference": "9d8f67fd2ff6d3f1cbebbda53e0643140f6d5316"
+                "reference": "26755a76dbd01e49e348e8c852e3ec0b1a40421c"
             },
             "require": {
                 "illuminate/database": "^13.38.0",
                 "illuminate/support": "^13.38.0",
                 "liberusoftware/module-manager": "^1.0",
+                "liberusoftware/organizations-teams": "^1.0",
                 "php": "^8.5"
             },
             "require-dev": {
@@ -6780,7 +6781,7 @@
                 "MIT"
             ],
             "description": "Provider adapter registry and protected connection lifecycle.",
-            "time": "2026-11-22T04:50:00+00:00"
+            "time": "2026-11-22T04:50:43+00:00"
         },
         {
             "name": "liberusoftware/jetstream-bridge",
@@ -27106,15 +27107,16 @@
         },
         {
             "name": "liberusoftware/organizations-teams",
-            "version": "1.11.2",
+            "version": "1.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-organizations-teams.git",
-                "reference": "96e7d8820f5a5bb4bf3c29ba070f6d6f21e3924e"
+                "reference": "a727ec8a5556d0c6c945c15271d8cd41c0b37732"
             },
             "require": {
                 "laravel/jetstream": "^5.5.3",
                 "liberusoftware/module-manager": "^1.0",
+                "liberusoftware/roles-permissions": "^1.0",
                 "liberusoftware/tenancy": "^1.0",
                 "php": "^8.5",
                 "spatie/laravel-activitylog": "^5.1.3"
@@ -27149,7 +27151,7 @@
                 "MIT"
             ],
             "description": "Organization, team, membership, invitation, ownership, and context foundation.",
-            "time": "2026-11-22T00:41:18+00:00"
+            "time": "2026-11-22T05:19:15+00:00"
         },
         {
             "name": "liberusoftware/organizations-teams-filament",
@@ -27234,11 +27236,11 @@
         },
         {
             "name": "liberusoftware/payment-adyen",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-adyen.git",
-                "reference": "4694eb9abf1b8bba5fb6f09ccae2298895da6d4a"
+                "reference": "de92ee8cc3619c03f56f82d7620db219c5851b1e"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27266,15 +27268,15 @@
                 "MIT"
             ],
             "description": "Unified Adyen merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-18T14:52:14+00:00"
+            "time": "2026-11-22T11:32:00+00:00"
         },
         {
             "name": "liberusoftware/payment-contracts",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-contracts.git",
-                "reference": "cacb87a55d6f98176697cc19187aff429fc30027"
+                "reference": "088e5a3c0966758a7af3782599bfeeac6fcda028"
             },
             "require": {
                 "illuminate/contracts": "^13.0",
@@ -27306,15 +27308,15 @@
                 "MIT"
             ],
             "description": "Provider-neutral merchant payment gateway contracts, DTOs, and lifecycle state machine for Liberu.",
-            "time": "2026-11-22T04:48:13+00:00"
+            "time": "2026-11-22T11:32:43+00:00"
         },
         {
             "name": "liberusoftware/payment-core",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-core.git",
-                "reference": "313dd3cf554de116bf3c39434df0b0a2d5d0f4e8"
+                "reference": "fd23166f4d2e716b8b2b93337d05dcacd0ba7038"
             },
             "require": {
                 "illuminate/database": "^13.0",
@@ -27343,15 +27345,15 @@
                 "MIT"
             ],
             "description": "Provider-neutral merchant payment orchestration, gateway registry, idempotency, webhook inbox, and reconciliation core.",
-            "time": "2026-11-22T04:48:21+00:00"
+            "time": "2026-11-22T11:32:49+00:00"
         },
         {
             "name": "liberusoftware/payment-gocardless",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-gocardless.git",
-                "reference": "b309efce1172d65c64fb4d260750292e76fe4035"
+                "reference": "1013c7f960e92c16f2f05976bd28dd6641d135dd"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27379,15 +27381,15 @@
                 "MIT"
             ],
             "description": "Unified GoCardless merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-18T14:52:28+00:00"
+            "time": "2026-11-22T11:32:55+00:00"
         },
         {
             "name": "liberusoftware/payment-mollie",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-mollie.git",
-                "reference": "b761f5e657205c04cf6246b90d48ba508bfbba04"
+                "reference": "c84587ef589677abcabbdaa301294fe8d00128dd"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27415,15 +27417,15 @@
                 "MIT"
             ],
             "description": "Unified Mollie merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-18T14:52:21+00:00"
+            "time": "2026-11-22T11:33:01+00:00"
         },
         {
             "name": "liberusoftware/payment-paddle",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-paddle.git",
-                "reference": "7e86d117e70131e77443ac301463dd2a11468d46"
+                "reference": "a26b65caa35c302d9bf4baba18c7628384162bf1"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27451,15 +27453,15 @@
                 "MIT"
             ],
             "description": "Unified Paddle Billing merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-18T14:52:02+00:00"
+            "time": "2026-11-22T11:33:07+00:00"
         },
         {
             "name": "liberusoftware/payment-paypal",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-paypal.git",
-                "reference": "6892f2921d1c5faeee5d224920d9155074946fb5"
+                "reference": "2c47a727ead7ec0a5f738591eea40f6c51555a8d"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27487,15 +27489,15 @@
                 "MIT"
             ],
             "description": "Unified PayPal merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-18T14:51:58+00:00"
+            "time": "2026-11-22T11:33:13+00:00"
         },
         {
             "name": "liberusoftware/payment-square",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-square.git",
-                "reference": "9460e5e632b90c5613ad5fab230d8da8d7b5e1d2"
+                "reference": "3517d285dbd7419442048bcb480dc207a7bf0f1a"
             },
             "require": {
                 "illuminate/http": "^13.0",
@@ -27523,15 +27525,15 @@
                 "MIT"
             ],
             "description": "Unified Square merchant payment adapter implementing liberusoftware/payment-contracts.",
-            "time": "2026-11-18T14:52:24+00:00"
+            "time": "2026-11-22T11:33:19+00:00"
         },
         {
             "name": "liberusoftware/payment-stripe",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/payment-stripe.git",
-                "reference": "57a3d9af55368b0e5204b1204d12c1ece168ff56"
+                "reference": "b21289a62579c81d24676d9c2622f233838544d8"
             },
             "require": {
                 "illuminate/support": "^13.0",
@@ -27559,7 +27561,7 @@
                 "MIT"
             ],
             "description": "Unified Stripe merchant payment adapter implementing liberusoftware/payment-contracts on stripe/stripe-php ^23.0.",
-            "time": "2026-11-18T14:54:54+00:00"
+            "time": "2026-11-22T11:33:25+00:00"
         },
         {
             "name": "liberusoftware/profiles",
@@ -27609,15 +27611,14 @@
         },
         {
             "name": "liberusoftware/roles-permissions",
-            "version": "1.8.2",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-roles-permissions.git",
-                "reference": "7ce86f2f8c22a81d373d8585af220d4cdf49ffc8"
+                "reference": "e877f74e5f53d62314aae9d6383414508d9ab6b7"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
-                "liberusoftware/organizations-teams": "^1.0",
                 "php": "^8.5",
                 "spatie/laravel-permission": "^8.3.2"
             },
@@ -27650,20 +27651,20 @@
                 "MIT"
             ],
             "description": "Contextual roles, permissions, policies, and authorization safeguards.",
-            "time": "2026-11-22T00:41:52+00:00"
+            "time": "2026-11-22T04:51:02+00:00"
         },
         {
             "name": "liberusoftware/roles-permissions-filament",
-            "version": "1.6.4",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-roles-permissions-filament.git",
-                "reference": "c3349ccf5280ee513bbefdb857740a0772b523e8"
+                "reference": "d2eed989dc3c3cd9e38296bcf9808cfb55052578"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-roles-permissions-filament/zipball/c3349ccf5280ee513bbefdb857740a0772b523e8",
-                "reference": "c3349ccf5280ee513bbefdb857740a0772b523e8",
+                "url": "https://api.github.com/repos/liberusoftware/module-roles-permissions-filament/zipball/d2eed989dc3c3cd9e38296bcf9808cfb55052578",
+                "reference": "d2eed989dc3c3cd9e38296bcf9808cfb55052578",
                 "shasum": ""
             },
             "require": {
@@ -27694,22 +27695,22 @@
             "description": "Filament Shield presentation adapter for Liberu authorization.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-roles-permissions-filament/issues",
-                "source": "https://github.com/liberusoftware/module-roles-permissions-filament/tree/v1.6.4"
+                "source": "https://github.com/liberusoftware/module-roles-permissions-filament/tree/v1.7.1"
             },
-            "time": "2026-11-22T00:43:13+00:00"
+            "time": "2026-11-22T05:30:20+00:00"
         },
         {
             "name": "liberusoftware/scheduler-queues",
-            "version": "1.6.0",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-scheduler-queues.git",
-                "reference": "5583216f6565d5cf33568e310b2d6527d523a297"
+                "reference": "a3edadb873350ad2baf313b02ac0e1b518c7bc54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-scheduler-queues/zipball/5583216f6565d5cf33568e310b2d6527d523a297",
-                "reference": "5583216f6565d5cf33568e310b2d6527d523a297",
+                "url": "https://api.github.com/repos/liberusoftware/module-scheduler-queues/zipball/a3edadb873350ad2baf313b02ac0e1b518c7bc54",
+                "reference": "a3edadb873350ad2baf313b02ac0e1b518c7bc54",
                 "shasum": ""
             },
             "require": {
@@ -27741,9 +27742,9 @@
             "description": "Queue idempotency, retry, failure, scheduling, locking, and deployment conventions.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-scheduler-queues/issues",
-                "source": "https://github.com/liberusoftware/module-scheduler-queues/tree/v1.6.0"
+                "source": "https://github.com/liberusoftware/module-scheduler-queues/tree/v1.6.2"
             },
-            "time": "2026-11-05T16:15:54+00:00"
+            "time": "2026-11-22T05:19:22+00:00"
         },
         {
             "name": "liberusoftware/search",
@@ -28023,16 +28024,16 @@
         },
         {
             "name": "liberusoftware/tenancy",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-tenancy.git",
-                "reference": "9c107d1e47b0e164cd297a5537255e61e99d8c07"
+                "reference": "0a0de654ef3046ccfc8206ec545b7af6a5b168ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-tenancy/zipball/9c107d1e47b0e164cd297a5537255e61e99d8c07",
-                "reference": "9c107d1e47b0e164cd297a5537255e61e99d8c07",
+                "url": "https://api.github.com/repos/liberusoftware/module-tenancy/zipball/0a0de654ef3046ccfc8206ec545b7af6a5b168ef",
+                "reference": "0a0de654ef3046ccfc8206ec545b7af6a5b168ef",
                 "shasum": ""
             },
             "require": {
@@ -28070,17 +28071,17 @@
             "description": "Shared Filament and Jetstream team tenancy with scoped runtime context and Eloquent isolation.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-tenancy/issues",
-                "source": "https://github.com/liberusoftware/module-tenancy/tree/v1.2.3"
+                "source": "https://github.com/liberusoftware/module-tenancy/tree/v1.2.4"
             },
-            "time": "2026-11-14T14:54:09+00:00"
+            "time": "2026-11-22T05:18:36+00:00"
         },
         {
             "name": "liberusoftware/theme-support",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-theme-support.git",
-                "reference": "d8788d6f989e7d62b13e87321530287bee70459d"
+                "reference": "c33df013cf00cbb2ad21ae74ac9b5a696ef94088"
             },
             "require": {
                 "liberusoftware/module-manager": "^1.0",
@@ -28124,7 +28125,7 @@
                 "MIT"
             ],
             "description": "Theme discovery and host presentation support for Liberu applications.",
-            "time": "2026-11-22T00:42:05+00:00"
+            "time": "2026-11-22T05:19:45+00:00"
         },
         {
             "name": "liberusoftware/theme-support-livewire",

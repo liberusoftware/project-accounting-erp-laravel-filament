@@ -83,10 +83,24 @@ final class ThemeDiscovery
         if ($this->installedPaths !== null) {
             return $this->installedPaths;
         }
+        if (! class_exists(InstalledVersions::class)) {
+            return [];
+        }
 
-        return array_values(array_filter(array_map(
+        $installed = array_values(array_filter(array_map(
             static fn (string $package): ?string => InstalledVersions::getInstallPath($package),
             InstalledVersions::getInstalledPackagesByType('liberu-theme'),
         ), is_string(...)));
+
+        if ($installed !== []) {
+            return $installed;
+        }
+
+        $baseThemes = function_exists('base_path') ? base_path('themes') : null;
+        if ($baseThemes !== null && File::isDirectory($baseThemes)) {
+            return File::directories($baseThemes);
+        }
+
+        return [];
     }
 }

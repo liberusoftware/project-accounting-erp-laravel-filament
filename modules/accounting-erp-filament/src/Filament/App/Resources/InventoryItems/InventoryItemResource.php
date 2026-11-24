@@ -23,12 +23,12 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Liberu\Accounting\Erp\Models\Account;
 use Liberu\Accounting\Erp\Models\InventoryItem;
-use Liberu\Accounting\Erp\Modules\Inventory\InventoryModule;
 use Liberu\Accounting\Erp\Policies\BillOfMaterialsPolicy;
 use Liberu\Accounting\Erp\Services\InventoryMovementService;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\InventoryItems\Pages\CreateInventoryItem;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\InventoryItems\Pages\EditInventoryItem;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\InventoryItems\Pages\ListInventoryItems;
+use Liberu\Foundation\ModuleManager\ModuleRegistry;
 
 class InventoryItemResource extends Resource
 {
@@ -42,13 +42,13 @@ class InventoryItemResource extends Resource
     #[\Override]
     public static function canAccess(): bool
     {
-        return InventoryModule::isActive();
+        return app(ModuleRegistry::class)->enabled('accounting-inventory-accounting', (array) config('modules.enabled', []), (array) config('modules.disabled', []));
     }
 
     #[\Override]
     public static function shouldRegisterNavigation(): bool
     {
-        return InventoryModule::isActive();
+        return app(ModuleRegistry::class)->enabled('accounting-inventory-accounting', (array) config('modules.enabled', []), (array) config('modules.disabled', []));
     }
 
     #[\Override]

@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
     {
 
         $adminPassword = (string) (config('app.seed_admin_password') ?: Str::random(64));
-        $adminUser = User::updateOrCreate(
+        $adminUser = User::firstOrCreate(
             ['email' => 'admin@example.com'],
             [
                 'name' => 'Admin User',

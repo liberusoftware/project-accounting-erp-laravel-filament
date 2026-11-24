@@ -14,7 +14,7 @@ final class AddYearEndAdjustment
 {
     public function handle(YearEndPeriod $period, array $attributes): YearEndAdjustment
     {
-        if ($period->status === YearEndStatus::Locked || $period->status === YearEndStatus::Archived || (float) ($attributes['amount'] ?? 0) === 0) {
+        if ($period->status === YearEndStatus::Locked || $period->status === YearEndStatus::Archived || (float) ($attributes['amount'] ?? 0) === 0.0) {
             throw new InvalidYearEnd('Locked periods cannot receive zero-value adjustments.');
         } foreach (['adjustment_ref', 'description'] as $field) {
             if (blank($attributes[$field] ?? null)) {

@@ -10,4 +10,6 @@ enum YearEndStatus: string
     case Adjusted = 'adjusted';
     case Locked = 'locked';
     case Archived = 'archived';
+    case Closed = 'closed';
+    case Reopened = 'reopened';
 }

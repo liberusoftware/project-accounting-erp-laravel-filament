@@ -13,10 +13,10 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Liberu\Accounting\Erp\Models\AssetAcquisition;
-use Liberu\Accounting\Erp\Modules\FixedAssets\FixedAssetsModule;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\AssetAcquisitions\Pages\CreateAssetAcquisition;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\AssetAcquisitions\Pages\EditAssetAcquisition;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\AssetAcquisitions\Pages\ListAssetAcquisitions;
+use Liberu\Foundation\ModuleManager\ModuleRegistry;
 
 class AssetAcquisitionResource extends Resource
 {
@@ -29,13 +29,13 @@ class AssetAcquisitionResource extends Resource
     #[\Override]
     public static function canAccess(): bool
     {
-        return FixedAssetsModule::isActive();
+        return app(ModuleRegistry::class)->enabled('accounting-fixed-assets', (array) config('modules.enabled', []), (array) config('modules.disabled', []));
     }
 
     #[\Override]
     public static function shouldRegisterNavigation(): bool
     {
-        return FixedAssetsModule::isActive();
+        return app(ModuleRegistry::class)->enabled('accounting-fixed-assets', (array) config('modules.enabled', []), (array) config('modules.disabled', []));
     }
 
     #[\Override]

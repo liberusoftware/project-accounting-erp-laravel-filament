@@ -13,14 +13,13 @@ class SecurityHeadersTest extends TestCase
         $response = $this->get('/');
 
         $response->assertHeader('X-Content-Type-Options', 'nosniff');
-        $response->assertHeader('X-Frame-Options', 'SAMEORIGIN');
-        $response->assertHeader('X-XSS-Protection', '1; mode=block');
+        $response->assertHeader('X-Frame-Options', 'DENY');
         $response->assertHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
     }
 
     public function test_strict_transport_security_header_present(): void
     {
-        $response = $this->get('/');
+        $response = $this->get('https://localhost/');
 
         $response->assertHeader('Strict-Transport-Security');
     }

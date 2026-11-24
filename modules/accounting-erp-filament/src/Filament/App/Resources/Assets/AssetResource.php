@@ -17,11 +17,11 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Liberu\Accounting\Erp\Models\Asset;
-use Liberu\Accounting\Erp\Modules\FixedAssets\FixedAssetsModule;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\Assets\Pages\CreateAsset;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\Assets\Pages\DepreciationSchedulePage;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\Assets\Pages\EditAsset;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\Assets\Pages\ListAssets;
+use Liberu\Foundation\ModuleManager\ModuleRegistry;
 
 class AssetResource extends Resource
 {
@@ -32,13 +32,13 @@ class AssetResource extends Resource
     #[\Override]
     public static function canAccess(): bool
     {
-        return FixedAssetsModule::isActive();
+        return app(ModuleRegistry::class)->enabled('accounting-fixed-assets', (array) config('modules.enabled', []), (array) config('modules.disabled', []));
     }
 
     #[\Override]
     public static function shouldRegisterNavigation(): bool
     {
-        return FixedAssetsModule::isActive();
+        return app(ModuleRegistry::class)->enabled('accounting-fixed-assets', (array) config('modules.enabled', []), (array) config('modules.disabled', []));
     }
 
     #[\Override]

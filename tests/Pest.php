@@ -35,6 +35,12 @@ if (is_dir(dirname(__DIR__).'/modules')) {
         if (is_dir($modRoot.'/tests')) {
             $moduleTestPrefixes['Tests\\'][] = $modRoot.'/tests/';
         }
+        foreach (glob($modRoot.'/tests/Helpers.php') ?: [] as $helperFile) {
+            require_once $helperFile;
+        }
+        foreach (glob($modRoot.'/tests/Fixtures/*.php') ?: [] as $fixtureFile) {
+            require_once $fixtureFile;
+        }
     }
 
     spl_autoload_register(static function (string $class) use ($moduleTestPrefixes): void {
