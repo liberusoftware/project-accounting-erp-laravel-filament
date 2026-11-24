@@ -20,5 +20,12 @@
   "features": [
     "Dimension list",
     "Dimension creation"
-  ]
+  ],
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\DimensionsFilament\\DimensionsFilamentPlugin"
+      ]
+    }
+  }
 }

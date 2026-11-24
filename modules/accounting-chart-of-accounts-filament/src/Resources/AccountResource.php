@@ -26,6 +26,8 @@ final class AccountResource extends Resource
 {
     protected static ?string $model = Account::class;
 
+    protected static ?string $slug = 'ledger-accounts';
+
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-list-bullet';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Accounting';

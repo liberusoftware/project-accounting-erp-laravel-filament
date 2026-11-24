@@ -20,5 +20,12 @@
     "Activity table",
     "Scope and factor visibility"
   ],
-  "default_enabled": true
+  "default_enabled": true,
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\CarbonAccountingFilament\\CarbonAccountingFilamentPlugin"
+      ]
+    }
+  }
 }

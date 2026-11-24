@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers\Filament;
 
+use App\Filament\ModulePlugins;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -18,13 +19,11 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Liberu\Accounting\ErpFilament\ErpFilamentPlugin;
-use Liberu\Accounting\ErpFilament\Filament\Customer\Pages\Auth\CustomerLogin;
+use Liberu\Accounting\CustomerPortalFilament\Pages\Auth\CustomerLogin;
 
 /**
  * Customer self-service portal. Guard `customer`; no tenancy — a customer's
- * own identity is the scope. Read-only resources are discovered from
- * app/Filament/Customer/Resources.
+ * own identity is the scope. Plugins are composed from enabled modules.
  */
 class CustomerPanelProvider extends PanelProvider
 {
@@ -32,7 +31,7 @@ class CustomerPanelProvider extends PanelProvider
     {
         return $panel
             ->id('customer')
-            ->plugin(ErpFilamentPlugin::make())
+            ->plugins(app(ModulePlugins::class)->forPanel('customer'))
             ->path('portal')
             ->authGuard('customer')
             ->login(CustomerLogin::class)

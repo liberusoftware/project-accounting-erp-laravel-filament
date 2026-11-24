@@ -23,6 +23,8 @@ final class JournalResource extends Resource
 {
     protected static ?string $model = JournalEntry::class;
 
+    protected static ?string $slug = 'gl-journals';
+
     public static function form(Schema $schema): Schema
     {
         return $schema->components([TextInput::make('book_id')->numeric()->required(), DatePicker::make('entry_date')->required(), TextInput::make('description'), Repeater::make('lines')->schema([TextInput::make('account_id')->numeric()->required(), TextInput::make('debit')->numeric()->default(0), TextInput::make('credit')->numeric()->default(0), TextInput::make('description')])->minItems(2)->required()]);

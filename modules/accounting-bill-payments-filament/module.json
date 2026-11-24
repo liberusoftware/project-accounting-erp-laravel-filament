@@ -22,5 +22,12 @@
     "Optimization",
     "Status"
   ],
-  "default_enabled": true
+  "default_enabled": true,
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\BillPaymentsFilament\\BillPaymentsFilamentPlugin"
+      ]
+    }
+  }
 }

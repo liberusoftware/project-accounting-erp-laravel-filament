@@ -23,5 +23,12 @@
     "Authorized forms",
     "Dispute visibility",
     "Credit-control visibility"
-  ]
+  ],
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\AccountsReceivableFilament\\AccountsReceivableFilamentPlugin"
+      ]
+    }
+  }
 }

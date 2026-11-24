@@ -21,5 +21,12 @@
     "Transaction and settlement visibility",
     "Reconciliation visibility"
   ],
-  "default_enabled": true
+  "default_enabled": true,
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\IntercompanyFilament\\IntercompanyFilamentPlugin"
+      ]
+    }
+  }
 }

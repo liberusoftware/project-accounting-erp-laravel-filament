@@ -19,5 +19,12 @@
   "default_enabled": true,
   "features": [
     "Statement navigation"
-  ]
+  ],
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\FinancialStatementsFilament\\FinancialStatementsFilamentPlugin"
+      ]
+    }
+  }
 }

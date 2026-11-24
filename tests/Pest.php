@@ -60,7 +60,18 @@ if (is_dir(dirname(__DIR__).'/modules')) {
         }
     });
 
-    pest()->extend(TestCase::class)
-        ->use(RefreshDatabase::class)
-        ->in('../modules');
+    $moduleTestDirs = [];
+    foreach (glob($modulesDir.'/*/tests', GLOB_ONLYDIR) ?: [] as $testDir) {
+        $modName = basename(dirname($testDir));
+        if (in_array($modName, ['payment-core', 'roles-permissions-filament'], true)) {
+            continue;
+        }
+        $moduleTestDirs[] = '../modules/'.$modName.'/tests';
+    }
+
+    if ($moduleTestDirs !== []) {
+        pest()->extend(TestCase::class)
+            ->use(RefreshDatabase::class)
+            ->in(...$moduleTestDirs);
+    }
 }

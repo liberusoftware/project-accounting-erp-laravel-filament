@@ -15,6 +15,8 @@ final class ReceiptResource extends Resource
 {
     protected static ?string $model = Receipt::class;
 
+    protected static ?string $slug = 'goods-and-service-receipts';
+
     protected static ?string $navigationLabel = 'Goods and service receipts';
 
     public static function form(Schema $schema): Schema

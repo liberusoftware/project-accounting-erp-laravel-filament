@@ -20,5 +20,12 @@
   "features": [
     "Journal list",
     "Journal creation"
-  ]
+  ],
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\GeneralLedgerFilament\\GeneralLedgerFilamentPlugin"
+      ]
+    }
+  }
 }

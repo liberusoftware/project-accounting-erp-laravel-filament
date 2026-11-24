@@ -23,6 +23,9 @@
     "filament": {
       "app": [
         "Liberu\\Accounting\\SupplierPortalFilament\\SupplierPortalFilamentPlugin"
+      ],
+      "vendor": [
+        "Liberu\\Accounting\\SupplierPortalFilament\\SupplierPortalFilamentPlugin"
       ]
     }
   },

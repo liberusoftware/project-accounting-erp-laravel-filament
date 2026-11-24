@@ -23,6 +23,10 @@
   ],
   "default_enabled": true,
   "presentation": {
-    "plugin": "Liberu\\Accounting\\BudgetsFilament\\BudgetsFilamentPlugin"
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\BudgetsFilament\\BudgetsFilamentPlugin"
+      ]
+    }
   }
 }
