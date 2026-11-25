@@ -1,179 +1,179 @@
 {
   "liberusoftware/activity-comments": {
     "path": "modules/activity-comments",
-    "reference": "53a4740bcade73b89fed02198a78abca844ccb6c",
+    "reference": "55c2809752f8d06b50b11eb705e4531f197cec47",
     "repository": "https://github.com/liberusoftware/module-activity-comments",
-    "source_signature": "d0680ad5a15a3dd37b11b60cc1bf5bfe13eb29fd640663ee99e05d0bcd323d78",
-    "source_tree": "de385dd27653361e35111c03b1c82b1ababa3894",
-    "version": "1.4.11"
+    "source_signature": "c828b1c68c9dccb3f0002333946336a4fc91e790a380fa70f50304ef037e20fa",
+    "source_tree": "9c0e807f82bd5f3976d517ca73755b0ee495a960",
+    "version": "1.4.15"
   },
   "liberusoftware/analytics-core": {
     "path": "modules/analytics-core",
-    "reference": "850d7d9d11bc854ae267b745f8f4ca5de15ce9e3",
+    "reference": "3e40afe8e69d0e876fcefa57fbe17e58e7745d77",
     "repository": "https://github.com/liberusoftware/module-analytics-core",
-    "source_signature": "14d0e8639071b33ad96e0baf63e9dc9dea625d924c196503991bc34ba8f238cb",
-    "source_tree": "111a8db976c5dfa72d2388db153aed2b24bf2c35",
-    "version": "1.8.2"
+    "source_signature": "20206754ae36ac09ab2060476fe4b7a4d5c583532e9279ef3989c869e1246f0a",
+    "source_tree": "f97c465a6515de6e5f631f0482186ba07cf79e8a",
+    "version": "1.9.3"
   },
   "liberusoftware/analytics-google": {
     "path": "modules/analytics-google",
-    "reference": "c2e4dfe6c7b368b30284f763237a18acabcccf65",
+    "reference": "aca9d05df3136a0236fb028b937c819c9be27361",
     "repository": "https://github.com/liberusoftware/module-analytics-google",
-    "source_signature": "1cce34db45a35f830f5fc699dc7b96b01341e28b714f62e9a6ab9cdc9126afa3",
-    "source_tree": "7cb62f23963b082271799cad7b962a61d8387d99",
-    "version": "1.5.7"
+    "source_signature": "5608a1e2c91be2e9c163f6fb2086db4fa8999aa305a369d20e2109b533d08022",
+    "source_tree": "1ce902f75ef401afcb9e9dcead35aab8431c94c6",
+    "version": "1.5.10"
   },
   "liberusoftware/analytics-meta": {
     "path": "modules/analytics-meta",
-    "reference": "c32a063abea79e05e03eb9efbd0cd3a724712463",
+    "reference": "d36ddcf63fc84f6cc5ce99a4ea97321b710c363a",
     "repository": "https://github.com/liberusoftware/module-analytics-meta",
-    "source_signature": "2cf798dc9cdd5e8c6bab9924dc3f38552aea62550fef959ecbf91415d6b49a76",
-    "source_tree": "7b5da498b8e76444c888d61fe37ce77dc19ae3bc",
-    "version": "1.4.10"
+    "source_signature": "a9c339e198cce4205117c6a0bed37664c2a64109d7ba844fd44a1fc3d14242db",
+    "source_tree": "69bc73da99e6e6e536134df017fac5d70f3f0c8d",
+    "version": "1.4.13"
   },
   "liberusoftware/api-access": {
     "path": "modules/api-access",
-    "reference": "6f7b004999432b02c8ec9413e8f70863c6e9300e",
+    "reference": "a6dae33b8cfb6ecca4bc939a8b77a4385264b641",
     "repository": "https://github.com/liberusoftware/module-api-access",
-    "source_signature": "8a103ab7707b413024610b394834722c4ebc4fbd76cd23ce9c3d216629142e7d",
-    "source_tree": "c74bf51ed6190b8675a501ecff9b011616a34be8",
-    "version": "1.5.2"
+    "source_signature": "702956077d7b534de6e7f319adcbff71948e314d32b1f9a9f0bdb702f482317a",
+    "source_tree": "bc17c85d6217d098ab6858a25c48b32630b48039",
+    "version": "1.6.5"
   },
   "liberusoftware/application": {
     "path": "modules/application",
-    "reference": "18cce3f22fd7174cc7d080fa27623191a5ea7af3",
+    "reference": "65df99cf12034e20ded8add60262fcc102435c40",
     "repository": "https://github.com/liberusoftware/module-application",
-    "source_signature": "1fcfa74ecb58df72eea79217498a40133023af1763390190394d752dbd021cd6",
-    "source_tree": "02dc0f856428009dc104c073af7165807727e929",
-    "version": "1.8.1"
+    "source_signature": "1f75e80b1376dcbb81e09ff1302ddef591f2b825d459a9391cdbf87500b053b8",
+    "source_tree": "634858bf3abbf2c6a27ecb37279a9618882fffa3",
+    "version": "2.0.6"
   },
   "liberusoftware/audit": {
     "path": "modules/audit",
-    "reference": "8690ca713b93d1ec54fa642e7e45c767e2bd8ab5",
+    "reference": "2893608e719f7bfd8ac808a46be7a266ec906768",
     "repository": "https://github.com/liberusoftware/module-audit",
-    "source_signature": "e5dc262e0c12c14e3e9a67c98c7c0ea363a1a0c6edb9695e2004c0a2d7971198",
-    "source_tree": "0f762707cbf727dea0a5515af44dc8f0c7444e0f",
-    "version": "1.8.2"
+    "source_signature": "f33e7ff63d4d285e8f34e5f92c746804bb1819fdb45c4d3432cb7480685a64a6",
+    "source_tree": "f2e0f3f098517e1239387085ed725b8b57271f52",
+    "version": "1.11.1"
   },
   "liberusoftware/currency-context": {
     "path": "modules/currency-context",
-    "reference": "d23dad32613ef926e2ac246ad8c91504073a8cc1",
+    "reference": "a00e6849b27cc56dabb43f5908d896582423bb48",
     "repository": "https://github.com/liberusoftware/module-currency-context",
-    "source_signature": "5013bda31bef49ff35e0c7ca830523a14d7828a35a4db4c08a93a3f507cc0d7d",
-    "source_tree": "a4a7342d45127579cef20080eef5cc55f18e90ed",
-    "version": "1.5.9"
+    "source_signature": "9e471a8612bc56a30b86543d3dd4d3d8c15f22661bd8af3869ad990e27f9044f",
+    "source_tree": "0b6f9e50a5ed100881b52e4d02f30da2eba47e86",
+    "version": "1.6.5"
   },
   "liberusoftware/developer-experience": {
     "path": "modules/developer-experience",
-    "reference": "eb8fedb8e96482b392340987171bc2a050d1a490",
+    "reference": "04874191560760712a1d93dc6b9bd45442691d3a",
     "repository": "https://github.com/liberusoftware/module-developer-experience",
-    "source_signature": "6dd9d68f299a01578c1ac8468b275b91be4cb2f55e25313eee6268a2ee542085",
-    "source_tree": "379e9bec80a2765d749f9b93049e64274daf1f9d",
-    "version": "1.4.10"
+    "source_signature": "6a41f99af6c48b5aebb1c8c357026856d48cd658618a5e110bac897f83a974b6",
+    "source_tree": "8380579e03bbbf92c566dd241fc81990fd40d086",
+    "version": "1.4.14"
   },
   "liberusoftware/feature-flags": {
     "path": "modules/feature-flags",
-    "reference": "6b95322c0eee4ab09c167ba1be988d7699d17456",
+    "reference": "716c2d80bd3e316f09c89b3f84c356dafcb7a3e6",
     "repository": "https://github.com/liberusoftware/module-feature-flags",
-    "source_signature": "410c6716cf9cb773536f6b6afc66de8369b0cc94865dbfdcc0077a229edbc492",
-    "source_tree": "16338e297dd8c25a5eb2f5eb7d889e140a32161a",
-    "version": "1.4.10"
+    "source_signature": "4772d99405b9a787af0a6510fc8775936e5f053fa6bc9535b7a2a807e0c28bf4",
+    "source_tree": "a6b625c5f7f9879006bde1fd970d53c1f8d21b76",
+    "version": "1.4.14"
   },
   "liberusoftware/files-media": {
     "path": "modules/files-media",
-    "reference": "d80adca92bc4f496b8e280cfc37ffaa2429277a1",
+    "reference": "c2ba8845cf7b0ad87df5fb47154369317789d536",
     "repository": "https://github.com/liberusoftware/module-files-media",
-    "source_signature": "f9460134605a2e53cf0d5770f4694ee5dcd4e6a53857e072b790e2d791724087",
-    "source_tree": "3ecb3f90a4a5787af7b0d3bf7b1b0400fb01b516",
-    "version": "1.5.7"
+    "source_signature": "11c586801d69a28dd362a86e0862a2fd1242990d45ff5f06ec148f144d03db09",
+    "source_tree": "7df8ed26099a65f5a12af7cf923e2670b3acf188",
+    "version": "1.5.11"
   },
   "liberusoftware/identity-core": {
     "path": "modules/identity-core",
-    "reference": "505dc6ec813b497d5848ec26cada90bb5de7ba36",
+    "reference": "5fd737b40bdc1d1840d84a2792a330d8807c0cf7",
     "repository": "https://github.com/liberusoftware/module-identity-core",
-    "source_signature": "7444a51c42a2c7dfc9e0f4edab17275fa6e7684d95d30d1161d269449621965b",
-    "source_tree": "ce5525ab3f0e260f2713019d909ddacaa726d994",
-    "version": "1.5.7"
+    "source_signature": "38ec4156e09b7088ecf1dadd7161a29645b6bf74f183f53254dbaa178d870772",
+    "source_tree": "6f76bd3476a63daf51ca8e9a577587bd78bddef6",
+    "version": "1.8.1"
   },
   "liberusoftware/identity-core-filament": {
     "path": "modules/identity-core-filament",
-    "reference": "a5d8c092df50dcdec0bd94ffc60d77bb0a590ea3",
+    "reference": "35b2e5ea631575f02ccf00b58256c80668bb358d",
     "repository": "https://github.com/liberusoftware/module-identity-core-filament",
-    "source_signature": "d74df6f0f26e27fa6ce284253c021cc7a38fe7a1722921f09ac43b88473c880d",
-    "source_tree": "88c94fc65de89034324c10580a391e736e43257f",
-    "version": "1.6.1"
+    "source_signature": "b568ad636173dbec2014a36106b893199650532dfe0c92b93b5998cb795ea917",
+    "source_tree": "781b9ee4c247f06c170ecaac6efbc0638786a692",
+    "version": "1.7.5"
   },
   "liberusoftware/identity-socialstream": {
     "path": "modules/identity-socialstream",
-    "reference": "3cb6fdcb237a17ab57de2bfe27ff9ba6b692a7ec",
+    "reference": "766ba41d5a4f9dd61415fc85b34f61e28df6ad65",
     "repository": "https://github.com/liberusoftware/module-identity-socialstream",
-    "source_signature": "8c6292b42fa3807989577f5366aabe1043108825b5471136f2921866e1161070",
-    "source_tree": "132eede7f0a4dd82964e326caf6f71754f9bdf4b",
-    "version": "1.6.1"
+    "source_signature": "e3028ac5251ced74889def01e781829662858c4e7c7e37b879742b778aca1504",
+    "source_tree": "457db0d8d073a05abdcfc365d01c27e2b2c26484",
+    "version": "1.9.1"
   },
   "liberusoftware/import-export": {
     "path": "modules/import-export",
-    "reference": "c0626f6d3b2cdb8686b7471ff753bbcc51c9e1be",
+    "reference": "115539477f0b0eaaf39639e0032df9ccca294f1b",
     "repository": "https://github.com/liberusoftware/module-import-export",
-    "source_signature": "04ab2afafd1f95175d4d9b33997d2a48bc7e80a9fcc56187aaf7284627fc1768",
-    "source_tree": "8c9b70d8dbe11f20c865f56515578db10f9a88e8",
-    "version": "1.4.12"
+    "source_signature": "0aff3aad5fd7b03805a5c1f4064d5c92821b6241cdf022cb4d61e4f83af384d6",
+    "source_tree": "b54408fd769dd7c19f38fade6512ea08ac41650c",
+    "version": "1.5.4"
   },
   "liberusoftware/integrations": {
     "path": "modules/integrations",
-    "reference": "c1a21ec9a2c45806a4762bde02cc64c87fc500db",
+    "reference": "8b6e64bcd8a9d7d47ffd6da3a31598bf2b8e9823",
     "repository": "https://github.com/liberusoftware/module-integrations",
-    "source_signature": "921174eeb28a22f52f2a2d80eeb05a078782a1f65840b63bae16d461f356873b",
-    "source_tree": "ee709560bbfaf4a627139f0de9730c226cb667d7",
-    "version": "1.7.0"
+    "source_signature": "b642af625f7ecbb6d93b3362977b188c548c1fad5beee12b615a1e9b4d0ceeba",
+    "source_tree": "0e470a1293ce8c0a621fd0b6450e7b6e27c44ad0",
+    "version": "1.13.1"
   },
   "liberusoftware/jetstream-bridge": {
     "path": "modules/jetstream-bridge",
-    "reference": "501318a92afad22197385b34e8edcae726dea62c",
+    "reference": "d8714e6c271d41b99ab6a99c8677606e0c955cca",
     "repository": "https://github.com/liberusoftware/module-jetstream-bridge",
-    "source_signature": "a8896ae0aa69af15df7588d12efef9f5032674b8f2de748f2643678a4696fe6b",
-    "source_tree": "f4d7c669fd19edbe1bf3100a2c9d3f6f7b5037a9",
-    "version": "1.4.10"
+    "source_signature": "3c54a094e6a6fa385b5b4eb42f799855559575e1da1377aa4da70e0659dbd0c0",
+    "source_tree": "e3d7f309e2c41b01eb004b08108e4c7e796eab8c",
+    "version": "1.4.14"
   },
   "liberusoftware/localization-core": {
     "path": "modules/localization-core",
-    "reference": "37ff428107208a246f729d411e00666ed74f696c",
+    "reference": "58ad01d917179b5b06e0a45e49314fb006738a16",
     "repository": "https://github.com/liberusoftware/module-localization-core",
-    "source_signature": "f8bc6751f70906d0715e2641dc78d6c3fd31aac51649238eb8876e2d00314461",
-    "source_tree": "3d83ce1504f9562c252284ebf7831427d7eaedf3",
-    "version": "1.4.10"
+    "source_signature": "91f2d463299740d941487d5e1cc6bb91ff0981ba91df60e53d22c4bae7629fa0",
+    "source_tree": "4678ec90c509666e27685b0571638cea5531d7f5",
+    "version": "1.5.1"
   },
   "liberusoftware/localization-core-livewire": {
     "path": "modules/localization-core-livewire",
-    "reference": "c4b6c6ed784338b1a20397e3cf631082561f03e8",
+    "reference": "668492e9808d8011e114729590286d981b644c1f",
     "repository": "https://github.com/liberusoftware/module-localization-core-livewire",
-    "source_signature": "a1082f891de476a83b72dc3212fcc3c5c947cad191efc56bfb779e1c69c535e8",
-    "source_tree": "f363d3ef3be42c973335d4bb9baeee142abdef57",
-    "version": "1.4.13"
+    "source_signature": "0aa07ba096b29e9b57533f99d81804c6587c2ba242de8fd9b9dd2ab1139aa63f",
+    "source_tree": "6c7133d0b72e66692ba945bc7b13ff7f928e26d0",
+    "version": "1.5.5"
   },
   "liberusoftware/localization-mymemory": {
     "path": "modules/localization-mymemory",
-    "reference": "869a5051b7e5e08810575c668a557cbafaceeb42",
+    "reference": "1c453269cd2439f792b6d2e64238d91ffe91ce1a",
     "repository": "https://github.com/liberusoftware/module-localization-mymemory",
-    "source_signature": "cf4fa084974462e0834e51054e868a1ea6560b460d7e377972e08074ee057534",
-    "source_tree": "3f51b4f29d9a989a440f6fa5249212c677d3aebd",
-    "version": "1.4.10"
+    "source_signature": "93e9048d4132fa038d53a0240418243dd9dbbaaf788ed1851db97744cf16b22f",
+    "source_tree": "9656bb32a00c2164b2b57b7d6fc9b9c3dc41a0e0",
+    "version": "1.5.1"
   },
   "liberusoftware/module-accounting-account-reconciliations": {
     "path": "modules/accounting-account-reconciliations",
-    "reference": "7e951e813f3f6fd00c65190b6fb2ca79266a8159",
+    "reference": "63919343926497591e0d427d03b1ad048bdcd646",
     "repository": "https://github.com/liberusoftware/module-accounting-account-reconciliations",
-    "source_signature": "6b09b1afad59c7efbb25e6aa89c92c0a9a7421ad1a8b4f51eb653b83b9d52b51",
-    "source_tree": "6a41380ccee3288f964741bbcb68a8d0de1c1b01",
-    "version": "1.0.0"
+    "source_signature": "9d18d7e4741dd4d49962c09ddb6367b8afa4382f8bec26daab630735500caa54",
+    "source_tree": "f3536a443120e25caf53a11986a8694b50ffd5ff",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-account-reconciliations-api": {
     "path": "modules/accounting-account-reconciliations-api",
-    "reference": "ef6e51bf4d26d9b102f2b803c4a912bdd8e1e104",
+    "reference": "bfefff88d02346bd8c987a5878a8ba6a015c57ee",
     "repository": "https://github.com/liberusoftware/module-accounting-account-reconciliations-api",
-    "source_signature": "9a321f467797d50b9d25eb5d101e931c6e99edc01aace52a349044b4faeffb5f",
-    "source_tree": "bf5485ca4368fb7804ba2e27e68453d008c320e7",
-    "version": "1.0.0"
+    "source_signature": "287594ab711141746623c087f6c464a771652773437358f6c0f46b1804f476f1",
+    "source_tree": "06194bd982d40e821de92e593f7906f126adde7b",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-account-reconciliations-filament": {
     "path": "modules/accounting-account-reconciliations-filament",
@@ -193,19 +193,19 @@
   },
   "liberusoftware/module-accounting-accountant-workspace": {
     "path": "modules/accounting-accountant-workspace",
-    "reference": "5acd45b0e5148171d241b5f8eef4152a6c3bf6b1",
+    "reference": "d6d6c87118eeb33aecc4f71096a9b79cb2a2095d",
     "repository": "https://github.com/liberusoftware/module-accounting-accountant-workspace",
-    "source_signature": "c67aa587779a96b4655af4ba501b06d7103b9ed01cb5179618bc8fa6ab2028bf",
-    "source_tree": "1fb5e8b5b60d02d293aaccaa74a62a55aa3663c4",
-    "version": "1.0.1"
+    "source_signature": "f111faf53336617a455075b4b4d4b0eca13e2ec7bc45d1e43eaf7792b7ba9e6c",
+    "source_tree": "b4c57c6cffcd6c5ac4edcd04adb6dea99ec7cb54",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-accountant-workspace-api": {
     "path": "modules/accounting-accountant-workspace-api",
-    "reference": "0acaffa832c5324dd126d003fd8f39a243e5560c",
+    "reference": "4941102363fd75d43bb68c95675606795a923f9f",
     "repository": "https://github.com/liberusoftware/module-accounting-accountant-workspace-api",
-    "source_signature": "87a4bdd028fad0ac9385a5bd00111b3ead1d31b3631bf30cc9100c2611323257",
-    "source_tree": "cf202e549b1eeac0763e93bc60c98b45b668a3ce",
-    "version": "1.0.1"
+    "source_signature": "adebad031ce52796d3c2beea049f3ea5d339abc389ae2e339ac12f1699efd15f",
+    "source_tree": "8514de10236ff34054363ab3f95d580c3a335b82",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-accountant-workspace-filament": {
     "path": "modules/accounting-accountant-workspace-filament",
@@ -225,19 +225,19 @@
   },
   "liberusoftware/module-accounting-accounts-payable": {
     "path": "modules/accounting-accounts-payable",
-    "reference": "ef480bbf25f38d92a97371ef1452b0cf24aa5247",
+    "reference": "afba618d5f86bb8dda006d3e6cf0cf2ac4fdbf43",
     "repository": "https://github.com/liberusoftware/module-accounting-accounts-payable",
-    "source_signature": "65101e8c67640b9e74229b84c97b2d9fb971b2206697c59014808e26319def0d",
-    "source_tree": "54f08a16a014b0a62b4517f663210aebf6cf8126",
-    "version": "1.0.0"
+    "source_signature": "5aa1049407b880e1109b0fe18daae3d08b34e49b97567ec7a9b09051cc2fc634",
+    "source_tree": "04701fc86d8c39c5f092a2f3e0584d012d8cab3f",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-accounts-payable-api": {
     "path": "modules/accounting-accounts-payable-api",
-    "reference": "f46b2e93b257b8b335be79e2400dff59647a810f",
+    "reference": "34fb56d47650287645385e70ab3b0f2a13b59bfa",
     "repository": "https://github.com/liberusoftware/module-accounting-accounts-payable-api",
-    "source_signature": "100eb63fae4960bd06c6a398653d9419472771ff26fe431646396463b3dc7881",
-    "source_tree": "b45e2395fd8d668b7b9e9931c02318902747be2a",
-    "version": "1.0.0"
+    "source_signature": "55d9cec5e08d7c091b3d24de946ad5f4722ba1409f8301d4b942e7a88e93128a",
+    "source_tree": "45ccbc7d9012252e21e8eb94c201fb27e969726f",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-accounts-payable-filament": {
     "path": "modules/accounting-accounts-payable-filament",
@@ -257,19 +257,19 @@
   },
   "liberusoftware/module-accounting-accounts-receivable": {
     "path": "modules/accounting-accounts-receivable",
-    "reference": "1be9602ebdef401c6b6f38e4bb3109a7cd6e4256",
+    "reference": "bf7afd47b528d8ae46fe0fed3c54b0f60b337799",
     "repository": "https://github.com/liberusoftware/module-accounting-accounts-receivable",
-    "source_signature": "37d1e8ba87d02f912ea309bd5fcb38b79d571f19bc8ce79d113df50610db6ea5",
-    "source_tree": "60502078dba12ebec7e2e507d060cffa9294f6e6",
-    "version": "1.0.0"
+    "source_signature": "5c8aa0a4666c577c954785e25236e0ac29aa9816f2d8d1dbfdb3af8a12dc9e21",
+    "source_tree": "620c3f7fb7893f0de82cb9e9715e7e93b4c18171",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-accounts-receivable-api": {
     "path": "modules/accounting-accounts-receivable-api",
-    "reference": "26b11887f5d77a2bfa721c1d12344e3b94af9031",
+    "reference": "c7872b51bd6e0f9d9bf0ee37a79de8512ed94253",
     "repository": "https://github.com/liberusoftware/module-accounting-accounts-receivable-api",
-    "source_signature": "15d28a9278b39c6e586e627e8f11a94c6634620cbdc34cec1a005f1b641e412a",
-    "source_tree": "1eac7c15df33a6084a8dfa29907d5b4b57d13164",
-    "version": "1.0.0"
+    "source_signature": "81366135694aa1d8fc7710639d3e24365c8dd21e4a956e966357633b4f9f2b53",
+    "source_tree": "016dd090ecd4acefcf21af57a84057378ab176f9",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-accounts-receivable-filament": {
     "path": "modules/accounting-accounts-receivable-filament",
@@ -289,19 +289,19 @@
   },
   "liberusoftware/module-accounting-anomaly-detection": {
     "path": "modules/accounting-anomaly-detection",
-    "reference": "cb2193a7f0f52db74e47d1b13a6cdfa6d3df133a",
+    "reference": "df25afa3cfbb456b71ac7faf1a2a2cf970789ed7",
     "repository": "https://github.com/liberusoftware/module-accounting-anomaly-detection",
-    "source_signature": "1fd84e4787c05ef271aab13ff6c44b83e1cea04bb942f93911795079afb3efb4",
-    "source_tree": "47fd88d3c50ef3d1e6644a21f7aab9ceecfd8378",
-    "version": "1.0.1"
+    "source_signature": "73ff995599898c1c1aa880332a68b88d8026a84f946af2225e8bca9cc0e7ed6e",
+    "source_tree": "b5d0d2179dbd5e69284beacc7004e77cc68ada9d",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-anomaly-detection-api": {
     "path": "modules/accounting-anomaly-detection-api",
-    "reference": "f982d18b79c08fff61378437893e6b17d4989c38",
+    "reference": "f2500d52c19544846d62c8efd013bf768b0b609d",
     "repository": "https://github.com/liberusoftware/module-accounting-anomaly-detection-api",
-    "source_signature": "0153a6a5616847f11ee681aa091e10b0deec61ff4f34c706e3eece7f88c25d5c",
-    "source_tree": "950927fbb1d1d302ea09ea65a05a128336196436",
-    "version": "1.0.1"
+    "source_signature": "9ba6eb859005fc9ed429d910ff94ac8849f6675b81906251282d7ce0b2e5c29f",
+    "source_tree": "b39506d6e22a596977da1d2ecfcfd0395800798d",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-anomaly-detection-filament": {
     "path": "modules/accounting-anomaly-detection-filament",
@@ -321,19 +321,19 @@
   },
   "liberusoftware/module-accounting-asset-events": {
     "path": "modules/accounting-asset-events",
-    "reference": "1a8a1421b21f3aa59795ba9e957e1d23e9d760f1",
+    "reference": "c390de740c4b6b170eb999a4722ec1a14d755337",
     "repository": "https://github.com/liberusoftware/module-accounting-asset-events",
-    "source_signature": "a4085ab21ab80b3eafe1ae4619f13558ff85ab635239d4dc112c25905537b310",
-    "source_tree": "2a851d0e51c051e377315a4a19ad799f46bfae2c",
-    "version": "1.0.1"
+    "source_signature": "347c4919b2688f0ea111c2a12cf72f53182b9a7b4e8625e59dbacc90de3f6b17",
+    "source_tree": "c6fdee3505e31a599d259f0f25d20cc885a6fbcc",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-asset-events-api": {
     "path": "modules/accounting-asset-events-api",
-    "reference": "8b9a15f66caff10f15143697d725a2eea43cde6e",
+    "reference": "cbf4c96416a0310c3c3aa74b48722601e2cfeb8e",
     "repository": "https://github.com/liberusoftware/module-accounting-asset-events-api",
-    "source_signature": "da276fc8b42335ce5815aff77d933e8af9144360171f241ffdfe7cfa22f36505",
-    "source_tree": "4abbd834e7d21540ec14b081e596d8a781f09b3b",
-    "version": "1.0.1"
+    "source_signature": "4a04ba73e12b27aed5b10c9fd0a34d62755e6a283b604d4946879a01b78c1def",
+    "source_tree": "59ab74f1847292a06602be7c3b0b07ca51683e32",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-asset-events-filament": {
     "path": "modules/accounting-asset-events-filament",
@@ -353,19 +353,19 @@
   },
   "liberusoftware/module-accounting-audit-support": {
     "path": "modules/accounting-audit-support",
-    "reference": "9f8b1b166d0dab7e1fa1e64236c80a83b04f578b",
+    "reference": "fe3f775aed67d3d5b843942a972316cebb51b6e9",
     "repository": "https://github.com/liberusoftware/module-accounting-audit-support",
-    "source_signature": "0690c10e6d69f447b03b2b2fa8d605410abe6355d394c98c08cf233b3cddc7f1",
-    "source_tree": "98f91775711f151eaa71ccc9a22a89f83990b674",
-    "version": "1.0.1"
+    "source_signature": "c2e8598b50f5c0833aee4d0560f20836984bd5385d24919b735758fc6c8cf741",
+    "source_tree": "0df826697f81f2637f37e96d4f4ca4133bd9679c",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-audit-support-api": {
     "path": "modules/accounting-audit-support-api",
-    "reference": "5d7f926d506a650598cdd5350ebe0581d731851b",
+    "reference": "e1ec195c804d6b68261bb1d93fd647cbc3bee5cd",
     "repository": "https://github.com/liberusoftware/module-accounting-audit-support-api",
-    "source_signature": "e32907e5490673b6cfcd37d0a452415935089ac253e85f0821e86e306484da5e",
-    "source_tree": "b7536e77c0bcef248bb13df351ab76bbf0216c53",
-    "version": "1.0.1"
+    "source_signature": "7841d18554e112639de6e6aec8709043997ed308c81d879f96f6ea59b200de1f",
+    "source_tree": "6ced1ae799f4d84c9d4ebda017184119d767feef",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-audit-support-filament": {
     "path": "modules/accounting-audit-support-filament",
@@ -385,19 +385,19 @@
   },
   "liberusoftware/module-accounting-automation-pack": {
     "path": "modules/accounting-automation-pack",
-    "reference": "a4f5e294afb8501784e13a9963e1e5e3315838e8",
+    "reference": "376410da190efb0d09ca794ca20d6d105a3efbba",
     "repository": "https://github.com/liberusoftware/module-accounting-automation-pack",
-    "source_signature": "bca487009ccf5c507d57918c6592289dbe3cfcc1afb3424f32c3e47539ac6772",
-    "source_tree": "d786071241e48e95fe8498a7310532fbf0b1ebc2",
-    "version": "1.0.1"
+    "source_signature": "cd305f074e8b6b61619401702c251eba21e1f6093b5aa6b5d76448700f8989de",
+    "source_tree": "fa1431f51ff50b8d300a2260a86de7a57a0f31f3",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-automation-pack-api": {
     "path": "modules/accounting-automation-pack-api",
-    "reference": "db18ef643cbd8bedfe2f01bb4532052bab178766",
+    "reference": "3179de66e5d0cc7563f2834edff89d2cd4ad34e3",
     "repository": "https://github.com/liberusoftware/module-accounting-automation-pack-api",
-    "source_signature": "21b259614a0ba8bbd1b2f25abcd9947c386eaa55be045b2212a75b4c42b4cd29",
-    "source_tree": "902727c3048077edc8af4849b9b7ca8ef3acbde5",
-    "version": "1.0.2"
+    "source_signature": "cfbd52aa13104d55d7b1101f9b68d3bc1963e31cb3aa9ca9466003a1346852f9",
+    "source_tree": "35e7d822736843057b6206cb564c9404fd75fddf",
+    "version": "1.0.3"
   },
   "liberusoftware/module-accounting-automation-pack-filament": {
     "path": "modules/accounting-automation-pack-filament",
@@ -417,19 +417,19 @@
   },
   "liberusoftware/module-accounting-bank-accounts": {
     "path": "modules/accounting-bank-accounts",
-    "reference": "b60ce2a2ca936d7dccf391f21d55cf60e0f47e45",
+    "reference": "e70383456e3f7b5cb97bd603822503a506487c1a",
     "repository": "https://github.com/liberusoftware/module-accounting-bank-accounts",
-    "source_signature": "841a919e6a9c918a074dd61f689580cdb190ea30fb0f6b55cc389bd4cfb5fc71",
-    "source_tree": "17452b9687eab431d814a220a2c4cde76ecdeb58",
-    "version": "1.0.0"
+    "source_signature": "9c230c0e6779adb30e0c62677add01c8fc26d2c5a0bf9b1f231b2ba808825dcf",
+    "source_tree": "d027065e9243c6bbf87dfec18b800f924e367cec",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bank-accounts-api": {
     "path": "modules/accounting-bank-accounts-api",
-    "reference": "e9a95b3e202fc1a135f7996507a0945e2a8b3200",
+    "reference": "8ff770043912a6d7047a0bbb845d8741745cc274",
     "repository": "https://github.com/liberusoftware/module-accounting-bank-accounts-api",
-    "source_signature": "aba09d66be4f025691ecaec414f978b85266c122c0a473a495281294a39b601d",
-    "source_tree": "60f2a9d32e02ee2fac9ebe26a1bb297517534366",
-    "version": "1.0.0"
+    "source_signature": "9851dca56de5f0ace13bb72e138f2aaa54b47e28eb4f8ddd395e51ed7cd0829b",
+    "source_tree": "51bcd242eabd3caf892628706a1e1ffc464bb0d6",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bank-accounts-filament": {
     "path": "modules/accounting-bank-accounts-filament",
@@ -449,19 +449,19 @@
   },
   "liberusoftware/module-accounting-bank-feeds": {
     "path": "modules/accounting-bank-feeds",
-    "reference": "c1c6ccee0d971167f09e5c9b34fb6a9e0995cf8c",
+    "reference": "3bc0f199c4d2c7a188060d3b3a54a25fd61516b8",
     "repository": "https://github.com/liberusoftware/module-accounting-bank-feeds",
-    "source_signature": "b20af2d6fffbe453c4837f29d79fc8e76888a00bba48abf8570fb9cf336e6c7c",
-    "source_tree": "8e4369ac9adce93f6a5b02f27337d114725599b3",
-    "version": "1.0.0"
+    "source_signature": "b7a18eccde84c803f165f7b8d32527d87a27ad387f9c5a966104593457a555be",
+    "source_tree": "ad0ea855c797a2626c3e434efeb9cb9647142490",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bank-feeds-api": {
     "path": "modules/accounting-bank-feeds-api",
-    "reference": "f23155c8294ad8e349bbf017825c3079f5a1afa7",
+    "reference": "99911d573180d9f62aaa4591c46c880059b889c4",
     "repository": "https://github.com/liberusoftware/module-accounting-bank-feeds-api",
-    "source_signature": "bf18fe42fbf6ac47cd2abec61a1c73fedff833a92b4fd449e0918f222f201478",
-    "source_tree": "71e92174b5d27b5084c6f93b1d155d494927b8f1",
-    "version": "1.0.0"
+    "source_signature": "419103fe41bd2c514a1714dee3fe789aac2bdab1ef53b32139005a0d9dfccee3",
+    "source_tree": "b08862b1a90d33ef5a4529084ec8f385f14a787e",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bank-feeds-filament": {
     "path": "modules/accounting-bank-feeds-filament",
@@ -481,19 +481,19 @@
   },
   "liberusoftware/module-accounting-bank-reconciliation": {
     "path": "modules/accounting-bank-reconciliation",
-    "reference": "efdadf2fd6dfc0edaedc9e71ab68f5c2d2e1c601",
+    "reference": "59208d17e37a4ba38bf92a89745a296668677b57",
     "repository": "https://github.com/liberusoftware/module-accounting-bank-reconciliation",
-    "source_signature": "09f7f3e73ef717e02225a27af77006163185ffd6d46075e478080e5b523a54a4",
-    "source_tree": "c48be68a8aa5ccb676190a589a3667f88d25d8d3",
-    "version": "1.0.0"
+    "source_signature": "eaf791807911b7e55feaf2ce5700dd6969d06dd8c9c2e96c63c03fb876ac358a",
+    "source_tree": "1b548a0ca1b23d8bc78a1640d871e05536e931df",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bank-reconciliation-api": {
     "path": "modules/accounting-bank-reconciliation-api",
-    "reference": "6b2275e88092501694e354d70ffc37c9732d9389",
+    "reference": "632ecc5b4fb6c1f84481dae1ea22fc427a10623d",
     "repository": "https://github.com/liberusoftware/module-accounting-bank-reconciliation-api",
-    "source_signature": "2bd0ee39b733c5ea921787381e44b3c2fdf2f749f8c9d520d8ac133ac34d9d4c",
-    "source_tree": "0ae1c0242628bcc43d0c1e34d77e954503f05529",
-    "version": "1.0.0"
+    "source_signature": "07fd71d52e496dd7c0343b056cc60a0c60159d5265bd7f93d5daff1969611169",
+    "source_tree": "398e67415cbc0090796beb8ec4ce608c375867ea",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bank-reconciliation-filament": {
     "path": "modules/accounting-bank-reconciliation-filament",
@@ -513,19 +513,19 @@
   },
   "liberusoftware/module-accounting-bank-rules": {
     "path": "modules/accounting-bank-rules",
-    "reference": "d713c86afb6b993a7da076eee2caeb0b77250602",
+    "reference": "11fa3031bd493a9442181eb741eb03baeb34adcd",
     "repository": "https://github.com/liberusoftware/module-accounting-bank-rules",
-    "source_signature": "0024e49f103a3c4d56d948d624ab3465bdf002b7bfa57be99dfa7ad6d0fce09c",
-    "source_tree": "c7b25a84d8934780e54971c4b603183dbe93471e",
-    "version": "1.0.0"
+    "source_signature": "f9fe0c63119cbe07e05c4ed295484766ce59fa5701f53090a01d104028d1fefb",
+    "source_tree": "ade87a4061f25044fffe45e62c3470482c04e6b0",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bank-rules-api": {
     "path": "modules/accounting-bank-rules-api",
-    "reference": "a3533d2b3b7434171565a1b8620bd917cfcc59c4",
+    "reference": "62924075aa470fec932cea33576222c7272b463e",
     "repository": "https://github.com/liberusoftware/module-accounting-bank-rules-api",
-    "source_signature": "73f09d5d586ba27559d24131cb31b41f925a2794b2396b16b1f9a1cbc725d01d",
-    "source_tree": "896472246c98b25b1f52e881b817c8fd11b571a1",
-    "version": "1.0.0"
+    "source_signature": "a00671e25f41b138f5f0ffa5e5c07eec9d3e19cc5a69c607facdf54f33f4e6a3",
+    "source_tree": "77629a877cc5079f70042a67e31d069591fe4d1f",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bank-rules-filament": {
     "path": "modules/accounting-bank-rules-filament",
@@ -545,19 +545,19 @@
   },
   "liberusoftware/module-accounting-bill-payments": {
     "path": "modules/accounting-bill-payments",
-    "reference": "78190a4eb25d540ee92969206e3c66bb19284703",
+    "reference": "b897a50c299a854235dee4746101e686ce218037",
     "repository": "https://github.com/liberusoftware/module-accounting-bill-payments",
-    "source_signature": "932d54b0848a0b4958c60fb5a47ea1747e9a61babf7d54b4392dd03f1cc6202f",
-    "source_tree": "1a22b2f932d060b60497411f8b37136a810fc4eb",
-    "version": "1.0.0"
+    "source_signature": "2e78a5e80be789a6ac3fb14fbdd57f8310d13ad0eccee1058438a7e51910e334",
+    "source_tree": "52a2a4b8292e85cd50cbb097b9d24d0a6af19506",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bill-payments-api": {
     "path": "modules/accounting-bill-payments-api",
-    "reference": "f9317ff78c2745db6cdcbda1f0c4e48725b9a79a",
+    "reference": "f46a6aa7e79d9982ccd5615e501f33709f3ba3e1",
     "repository": "https://github.com/liberusoftware/module-accounting-bill-payments-api",
-    "source_signature": "797c25ff8c964853d3ad3bd7cff0d877796e8a83edd0bc8ee7397347dfcff781",
-    "source_tree": "372b83d2998c1ccc07a0d4d854ea46fb6f6f3104",
-    "version": "1.0.0"
+    "source_signature": "9078c4c516348e31c84f0ef92245c2b036fbf0a515a6f499a55a387deabb4984",
+    "source_tree": "d3e16c0e47ad0806f44f157b845df0d6a4de5cfa",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-bill-payments-filament": {
     "path": "modules/accounting-bill-payments-filament",
@@ -577,19 +577,19 @@
   },
   "liberusoftware/module-accounting-branch-and-location-accounting": {
     "path": "modules/accounting-branch-and-location-accounting",
-    "reference": "c5b440bb03a023fd3ebc1fc63af268e7cec1d743",
+    "reference": "504284e487b23595d2ebbb7c5f5f3e7c2edbfe03",
     "repository": "https://github.com/liberusoftware/module-accounting-branch-and-location-accounting",
-    "source_signature": "745dc5a37c8e0c5f3810a52914b76e05f086f93ca91d9940e5b58a556170b9fb",
-    "source_tree": "9929c002cf2c2be14fc612e3a6d5587eeecb8812",
-    "version": "1.0.1"
+    "source_signature": "bc28ea6731ddb87427f0c65f2f39858dfbaaaa7e65e314932ea10f99f6689d0f",
+    "source_tree": "2b9035d5752711d51dafab6f6402a77aca462b43",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-branch-and-location-accounting-api": {
     "path": "modules/accounting-branch-and-location-accounting-api",
-    "reference": "f3edd479594298bec16f8b95a469a1f67fa36faf",
+    "reference": "3456f482b40c9c73f9a6dc29dd18f74745aea8c8",
     "repository": "https://github.com/liberusoftware/module-accounting-branch-and-location-accounting-api",
-    "source_signature": "e82fb61116b381dc384f15122668bd2000abed08784d8976ac8a442a5346a78e",
-    "source_tree": "f979c035d66d5aff63cedb3b2266c5f71fdba514",
-    "version": "1.0.1"
+    "source_signature": "8eb71ac53ea24080c04501b077d4f4db1871f0d3e1ab25c0a68f0a611976827a",
+    "source_tree": "adacf5c435c78e42eace8ece59c39a2df7532bcc",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-branch-and-location-accounting-filament": {
     "path": "modules/accounting-branch-and-location-accounting-filament",
@@ -609,19 +609,19 @@
   },
   "liberusoftware/module-accounting-budgets": {
     "path": "modules/accounting-budgets",
-    "reference": "be19591f9952fc8c7253d412ca32d9f2cdb3cb69",
+    "reference": "5fc1d7288bc860e6a4f3a08d486875a55927ce0f",
     "repository": "https://github.com/liberusoftware/module-accounting-budgets",
-    "source_signature": "42a61048107005d2d3890eee25de8391fdd392f280c151a0cb2085d6ed5a50f2",
-    "source_tree": "492f12817128339ca19f5996cd724859f0af992e",
-    "version": "1.0.1"
+    "source_signature": "e1f69cfa515aaad47869252794fa699b1a3bdda276015a16022669ecbe17cb8b",
+    "source_tree": "19953eac5c5a2caac98a8b3fb2d91eaedb9ec3f6",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-budgets-api": {
     "path": "modules/accounting-budgets-api",
-    "reference": "5f5addc293490c4a71b690f134397f4341404b8a",
+    "reference": "e5ad8bcb29869f1ccf860752e76b9e36a8f6b03a",
     "repository": "https://github.com/liberusoftware/module-accounting-budgets-api",
-    "source_signature": "73dcda68a99b5151b6a5259fa2b6c7d30f3fd7def42e96d2635facba5095e490",
-    "source_tree": "52ab0ee73c396a176bdaf5cb8d065fe43a3c7122",
-    "version": "1.0.1"
+    "source_signature": "9d81d75d240a6deb1a187d109613631d284ae8bc6c6bb3696740cb31240ea57e",
+    "source_tree": "934c595a0609bb609e957f40197b23695a993564",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-budgets-filament": {
     "path": "modules/accounting-budgets-filament",
@@ -641,19 +641,19 @@
   },
   "liberusoftware/module-accounting-business-insights": {
     "path": "modules/accounting-business-insights",
-    "reference": "db050860bb1ee1445e939a0e7d51be941c467f41",
+    "reference": "85a14e1cf1e021f3e8d14aac3e1f81b9fba99e69",
     "repository": "https://github.com/liberusoftware/module-accounting-business-insights",
-    "source_signature": "eaf22bfad039bac814e1f0b28ae5df9d6f40aa899862aa5b0fee1730587b1f14",
-    "source_tree": "2bd40cd278f0360b89f8a3998a433d3e8591b06d",
-    "version": "1.0.1"
+    "source_signature": "34d8b576126078f884a2f0b53e7540a793ef5758160f8bacf080206e877364fc",
+    "source_tree": "5bb05276c34fd00a1e5b4aa9df91621c4c762106",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-business-insights-api": {
     "path": "modules/accounting-business-insights-api",
-    "reference": "bfc19849d73c10c17446a3d5f45908cca75c6c50",
+    "reference": "9f5060d6b9177d0d4829ec955bd96eadc59523a8",
     "repository": "https://github.com/liberusoftware/module-accounting-business-insights-api",
-    "source_signature": "fab13a860ac53a1f9f8c6ca7b8496c5e8ad55f08a7e7de266c827cbb3feed42b",
-    "source_tree": "d676e281876a74e1fd8522a8b82c0fd00854ef4f",
-    "version": "1.0.1"
+    "source_signature": "53205353cd3fac1d1d6a6e07f05888814f6150513b61019c9c390d798a6e7267",
+    "source_tree": "81e1797d6029c8ac87b6c1af23c970e271689106",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-business-insights-filament": {
     "path": "modules/accounting-business-insights-filament",
@@ -673,19 +673,19 @@
   },
   "liberusoftware/module-accounting-carbon-accounting": {
     "path": "modules/accounting-carbon-accounting",
-    "reference": "270cfe1adc1db868c0426523888b1d2a170cedcc",
+    "reference": "48eac2efa838c95f4cfb50eccbf2f5a9aa750c22",
     "repository": "https://github.com/liberusoftware/module-accounting-carbon-accounting",
-    "source_signature": "02d43cd9e467cc51b6e0a28c86203be6a62d3a941d10492f6f2feb827ec11ca1",
-    "source_tree": "3f3ecee8705fb0d331c0e7d7ebb12799024e8453",
-    "version": "1.0.1"
+    "source_signature": "25de7b88c501c826ee880ac7f82aa63f6f4a719d96c0cc3f45a3fd66fbd2675d",
+    "source_tree": "46ca590c87e8a0feccda68c2fc35e5718bba7ddd",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-carbon-accounting-api": {
     "path": "modules/accounting-carbon-accounting-api",
-    "reference": "d440517f870097b539daf678176f7181f5d3b03d",
+    "reference": "6c1e43759d9902082472335d2d1e0f139aae4068",
     "repository": "https://github.com/liberusoftware/module-accounting-carbon-accounting-api",
-    "source_signature": "178a62b155d802f34772b9b68569db834e3f4be0974739829e245b2a2e0e9aef",
-    "source_tree": "1ebd2cff6093ed271d3150f2a4b4609b5170ba6f",
-    "version": "1.0.1"
+    "source_signature": "8295147584f352c661b4c0b2d6dfb4b9fe58dddede49187cd0276bfbd090dc41",
+    "source_tree": "f0b7f0be750927c0058a7ee961f5ba39d356b298",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-carbon-accounting-filament": {
     "path": "modules/accounting-carbon-accounting-filament",
@@ -705,19 +705,19 @@
   },
   "liberusoftware/module-accounting-cash-coding": {
     "path": "modules/accounting-cash-coding",
-    "reference": "9806c6ce89b28d4d18c5d2b0b7e5454d4ba6d69d",
+    "reference": "52fe7218fa116c33ea5b7a41c732a0dd72ccd774",
     "repository": "https://github.com/liberusoftware/module-accounting-cash-coding",
-    "source_signature": "916a7896fe7b9f73215d23d4f90c9ad9be143ce072f934ee45df8180b1adb79b",
-    "source_tree": "c1d9e2f8eb5b86bc784f0466c94a70397a3d0177",
-    "version": "1.0.0"
+    "source_signature": "a4c466a2657ca74336663514eae4811470d7c038c8c4f7ca8e93a69b39a13749",
+    "source_tree": "2f6dda553d2a9719e68a853abc144b68ba02757e",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-cash-coding-api": {
     "path": "modules/accounting-cash-coding-api",
-    "reference": "73d8736722424ad16b0671f1a4c189803524bafd",
+    "reference": "59974aef82f8e7fef7036810adaed5634b086e1d",
     "repository": "https://github.com/liberusoftware/module-accounting-cash-coding-api",
-    "source_signature": "dd7d690b92177940b9b9c669561f26f4344f8a2abaa0fa654c4d7aa4fc2da183",
-    "source_tree": "7db78ee2ef118c8f085854e1976d9dd286952e0f",
-    "version": "1.0.0"
+    "source_signature": "c271ae40d5c69e505a3b03dab575019e8bfeb311c20497c0dd3b2ade2ee5f5c3",
+    "source_tree": "50b1477af11bb28e38343de0573326c8ba730f7c",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-cash-coding-filament": {
     "path": "modules/accounting-cash-coding-filament",
@@ -737,19 +737,19 @@
   },
   "liberusoftware/module-accounting-cash-collection-assistant": {
     "path": "modules/accounting-cash-collection-assistant",
-    "reference": "4001b531b815f4bbf365f75befa188f037f1f7f3",
+    "reference": "623ef2aa5d6d5580ca5d2e0325ae019efef2f34f",
     "repository": "https://github.com/liberusoftware/module-accounting-cash-collection-assistant",
-    "source_signature": "60abfc01ccacb1dc80f77b3b9be24a760e20aabe463f72221c3be9d9e96cd487",
-    "source_tree": "006e481e2a07ca6398e03e84a4aabca265cc601d",
-    "version": "1.1.0"
+    "source_signature": "acf509b8eb1e3241b2104cbb9f1dda63707ff19ee26577de212d7b526d304080",
+    "source_tree": "6f8c254a52f10ba9c4ac59f28378437280be7fb1",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-cash-collection-assistant-api": {
     "path": "modules/accounting-cash-collection-assistant-api",
-    "reference": "920e0724e85ba9ee1344e0a8e65088528a1aad55",
+    "reference": "38390d70443f188b10bdd2d947701349158f8f98",
     "repository": "https://github.com/liberusoftware/module-accounting-cash-collection-assistant-api",
-    "source_signature": "4575eaa67ae54e1c2cbdd9472fdad1befa70c5dbc5bc6685fa2093f7bdf17493",
-    "source_tree": "e1768aab3e191fb329da2b040f9c9624e26d7db2",
-    "version": "1.1.0"
+    "source_signature": "2dff344aee59ac15a9ef3dd856a1f642566f81d491d6323aa914b5c4530ee837",
+    "source_tree": "02aacf5625f6a28b3ef9c1eacc5140ce92df6c54",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-cash-collection-assistant-filament": {
     "path": "modules/accounting-cash-collection-assistant-filament",
@@ -769,19 +769,19 @@
   },
   "liberusoftware/module-accounting-cash-flow-forecasting": {
     "path": "modules/accounting-cash-flow-forecasting",
-    "reference": "ffd2b922e9daae61b6cc46654bef9076d28c2fcc",
+    "reference": "b69210110f4a612a86d40a4905ead8ca0e6b3d5e",
     "repository": "https://github.com/liberusoftware/module-accounting-cash-flow-forecasting",
-    "source_signature": "364de50dead9e12f7a627a2da8890075ff4e04132774713886f75b4e0a05b290",
-    "source_tree": "cea2d18cfa33334b01c7e6b65d859cd095d380f0",
-    "version": "1.1.0"
+    "source_signature": "3cf144ff1b01e7ea4809ce5fb8f6d23dda6b6b80e6273d4baec1560ca1282e5a",
+    "source_tree": "420bfc01d17dfea43e48cb06336a90abfe41a56e",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-cash-flow-forecasting-api": {
     "path": "modules/accounting-cash-flow-forecasting-api",
-    "reference": "329eccc75865d6717609747e00c5eea573b00f44",
+    "reference": "e37d3551016acaa1130528f89f98642b24145f97",
     "repository": "https://github.com/liberusoftware/module-accounting-cash-flow-forecasting-api",
-    "source_signature": "914a29c810274a91acae432eb26c7e62af11c2febdb6c1685d9a789ab2847549",
-    "source_tree": "1f58eaeac37597da30cee49ff39cbe39c173fc4a",
-    "version": "1.1.0"
+    "source_signature": "b2512e6a8c548e39b5bdda84afbff3457949a5cf77e58561f3316e5113b773e3",
+    "source_tree": "ca35e5f4dc9643f772646c9a1a58d219a6c82e25",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-cash-flow-forecasting-filament": {
     "path": "modules/accounting-cash-flow-forecasting-filament",
@@ -801,19 +801,19 @@
   },
   "liberusoftware/module-accounting-cash-position": {
     "path": "modules/accounting-cash-position",
-    "reference": "76dbdd818d2b7070695e2d4f69397bf82efcdfe0",
+    "reference": "023911f1bac67d90b41a3471796140cb8411d4ec",
     "repository": "https://github.com/liberusoftware/module-accounting-cash-position",
-    "source_signature": "fc205c1617b9bfa22b9645b4ac08ff194ce9ec4bc522a1c71f64b12cbf37ec19",
-    "source_tree": "200e0850fc3df59e7a005f591f4eeb2c2e6f2146",
-    "version": "1.1.0"
+    "source_signature": "7dea0635721ccb74bc7b3fb74c2dcd88dd412013147155ac2734792313710c1e",
+    "source_tree": "62775be0695dda5a343326120f149a529ce3e294",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-cash-position-api": {
     "path": "modules/accounting-cash-position-api",
-    "reference": "242e809d6e1239fa220668ff120ac994b3f99139",
+    "reference": "e4c78fc39a93fa35c571aaaf38190576a6f18582",
     "repository": "https://github.com/liberusoftware/module-accounting-cash-position-api",
-    "source_signature": "4cfee1aaca9e0409ff3bf7f64848f3b35b766eefa23bbbed40d90bf0c95682d7",
-    "source_tree": "1dac89df3dac1a444bc3cf3ce6ccbedfd9b2d9e5",
-    "version": "1.1.0"
+    "source_signature": "39628b10c06787a134f972a28b4514105db8b98f71ad10364a99da1dc1870803",
+    "source_tree": "0fa9ecf89e40374082d90a26ed44e02e0ee6cd65",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-cash-position-filament": {
     "path": "modules/accounting-cash-position-filament",
@@ -833,19 +833,19 @@
   },
   "liberusoftware/module-accounting-chart-of-accounts": {
     "path": "modules/accounting-chart-of-accounts",
-    "reference": "5d180ef96e39f05e0ed31d790f57e98f6a7b2cd8",
+    "reference": "67c98ef86bbd2795316024a3d364d580945a70b1",
     "repository": "https://github.com/liberusoftware/module-accounting-chart-of-accounts",
-    "source_signature": "7d139520636cf4db1deb41211d9cadbd0c64f45e885d7b19923b393f3a241f5e",
-    "source_tree": "982a9d0462df44d864cb92fd91078812c8c09cb9",
-    "version": "1.0.0"
+    "source_signature": "a54e5518f98e7c074399656524d5ab561ea437ce834d056d47e281e03814cc49",
+    "source_tree": "63aefdd2fafbbc070296b8bd4882673b004d74ee",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-chart-of-accounts-api": {
     "path": "modules/accounting-chart-of-accounts-api",
-    "reference": "c1bf673b4662c37eab5e42e7edcdae852e2a0955",
+    "reference": "090bf16de02c15d1a04524ab56a0e97a0512fffc",
     "repository": "https://github.com/liberusoftware/module-accounting-chart-of-accounts-api",
-    "source_signature": "31f0058ec6c4f210855d7174f95fc958a7bc8007273dbde07df184661358ca95",
-    "source_tree": "067474e738f75f09d801d8e99ac41b8478334b49",
-    "version": "1.0.0"
+    "source_signature": "8266891b3eb915bb7dde7ca5d24c1ae3c792f61df0d517a8b768597a62e8c239",
+    "source_tree": "26b7bb0d54581e753bcbc5fc2b8c973ac970363c",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-chart-of-accounts-filament": {
     "path": "modules/accounting-chart-of-accounts-filament",
@@ -857,27 +857,27 @@
   },
   "liberusoftware/module-accounting-chart-of-accounts-livewire": {
     "path": "modules/accounting-chart-of-accounts-livewire",
-    "reference": "0d80b25c7ad530ecbc46be71a5279d099edb362f",
+    "reference": "65fb9cb4e89627ea2beaf237f2c71bbf4f332993",
     "repository": "https://github.com/liberusoftware/module-accounting-chart-of-accounts-livewire",
-    "source_signature": "fe65eaf4e12f3503c4541a0f8a8fc149e45f5b34a23569fce0adec3abbc81ed1",
-    "source_tree": "bf8d26beb24e77d588d494b7dd76106ab8fb1513",
-    "version": "1.0.0"
+    "source_signature": "d02dd783eaa5322fd3c9483ce1626bc585948c2fc9c8c78c11c88c75aa017fe6",
+    "source_tree": "704439c10932621908c5d8ba166d4695c1ab3b0d",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-client-collaboration": {
     "path": "modules/accounting-client-collaboration",
-    "reference": "4b660c8558263d65224daa4434173102012fa00a",
+    "reference": "c72472c7ca83e39b87d0fe8e81278d154152d987",
     "repository": "https://github.com/liberusoftware/module-accounting-client-collaboration",
-    "source_signature": "33f34dcde88fe42cbe2b0d49f9b023a90d09b4a605c836237d180919445d97b0",
-    "source_tree": "04674e2d155783871a932e282cd8b955aa5f5857",
-    "version": "1.1.0"
+    "source_signature": "d9e6076a37757344c5ffd5bb105a9382deac100f004cd4d0088c04338496982f",
+    "source_tree": "ab8b511e8616ed972eb901d8611df3bdaeeaf8b0",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-client-collaboration-api": {
     "path": "modules/accounting-client-collaboration-api",
-    "reference": "c67c0bb9c8e186b606510c87959c6fd8dfaa015d",
+    "reference": "f455d2a911c0a22d641bbeb33b99511d40474226",
     "repository": "https://github.com/liberusoftware/module-accounting-client-collaboration-api",
-    "source_signature": "0c996b791309e3ce0166994ccf9d576c99a754ed4e5a6cb60f5c17ae99dee6bb",
-    "source_tree": "3ebc52fcf8dedee59837c797ac5145b830f1a43c",
-    "version": "1.1.0"
+    "source_signature": "c9fed3e54555607209e32f132d425df8469d37e5c84c0abf26f52ffda879b947",
+    "source_tree": "b5e277b348265de3559c9899d8def09386f0f933",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-client-collaboration-filament": {
     "path": "modules/accounting-client-collaboration-filament",
@@ -897,19 +897,19 @@
   },
   "liberusoftware/module-accounting-close-management": {
     "path": "modules/accounting-close-management",
-    "reference": "8f18118f3ed205be40ae548f41a8efffebee851a",
+    "reference": "d230853436583a113928a7433a3888c5e773c5d7",
     "repository": "https://github.com/liberusoftware/module-accounting-close-management",
-    "source_signature": "018783385d457eabd6b7d152527680b9666cc7d7b9b86d66a414e27af77f6359",
-    "source_tree": "531452d3bf2d485f51705ae8c47d4c2b771730b7",
-    "version": "1.1.0"
+    "source_signature": "9f69bed00070b7f6ea3a3227d558574b3ace933cf6b5019067af01ac6dfa6101",
+    "source_tree": "6f47c657de4fa945aea8da0a154f0d60a0c225d8",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-close-management-api": {
     "path": "modules/accounting-close-management-api",
-    "reference": "671d3c7e7c655b5136e1afe0761cce8b9f5166d2",
+    "reference": "5d91dddbe40f772e21b2e1d5bac9769919a64fa2",
     "repository": "https://github.com/liberusoftware/module-accounting-close-management-api",
-    "source_signature": "cb06a966bf0aba279ce8b15c769c2e8761656f04c40e8e3992165763cd419820",
-    "source_tree": "9054ff84d9136c9898ae4e2f8f306ede5ef57136",
-    "version": "1.1.0"
+    "source_signature": "c0aa62be882ca77eed4bb34ec9f2cd684e098a7525917149f3edee19f11bc464",
+    "source_tree": "2e7fd85cd15e65fe9044a42b335d2395f8dfd332",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-close-management-filament": {
     "path": "modules/accounting-close-management-filament",
@@ -929,19 +929,19 @@
   },
   "liberusoftware/module-accounting-coding-suggestions": {
     "path": "modules/accounting-coding-suggestions",
-    "reference": "50ff932fb82f1ba87adf50b0e0fb3afd25de2182",
+    "reference": "9eed55004a980575b4e3095b23948015af627074",
     "repository": "https://github.com/liberusoftware/module-accounting-coding-suggestions",
-    "source_signature": "8a245448458d0b6106bf92c208765cd1f14e3ef7e77ec8041d3ff6b8797390f1",
-    "source_tree": "b746baa3a0cf5ee50053621bc1f01c5ae65a8088",
-    "version": "1.1.0"
+    "source_signature": "31dcfa66feef78a90aa7c3aae4463d8f81e2cd46290a2c88c885875b733b8446",
+    "source_tree": "9278a2d39135843b2bc719c7c2388a932f40ad5f",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-coding-suggestions-api": {
     "path": "modules/accounting-coding-suggestions-api",
-    "reference": "75ab3281859d4a3099efb28beb41087e01a30d37",
+    "reference": "14514b54e8fa7eb134b34aa0967351100722270b",
     "repository": "https://github.com/liberusoftware/module-accounting-coding-suggestions-api",
-    "source_signature": "c0605d4ad007d961ccee6d853e9af62791a28fc4e770d04940d2991511913d37",
-    "source_tree": "deb3490c31c22bd9ae8dba9d01d305eed33e8479",
-    "version": "1.1.0"
+    "source_signature": "19a7330f447e1e97c0af086bdbbd4ad4f1b661c1df9975c77656caa40329ac82",
+    "source_tree": "a19fd85448a4d2d64cc282991eb06b89d5831c1c",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-coding-suggestions-filament": {
     "path": "modules/accounting-coding-suggestions-filament",
@@ -961,19 +961,19 @@
   },
   "liberusoftware/module-accounting-collections": {
     "path": "modules/accounting-collections",
-    "reference": "4b1e0b7893b5d3eb7b0c3491e4d2f82ff3cd3e66",
+    "reference": "bd402de0b607daeb751ef778cccb9cdbd3c0d324",
     "repository": "https://github.com/liberusoftware/module-accounting-collections",
-    "source_signature": "dd0c4511578fde070f68be55e7b2d8028aab904aa5f7b8bd671546c492f0da37",
-    "source_tree": "ddbc0396c7f7c2236468c64f1d1d4aa4beea7592",
-    "version": "1.1.0"
+    "source_signature": "b0f13cdbb6ed54e69ed0f70c62766df78a49677b55b62d968509ab3930329e7d",
+    "source_tree": "f28acfc27d56f4baec59ae6f665feb4984927216",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-collections-api": {
     "path": "modules/accounting-collections-api",
-    "reference": "d53a3da451a3487c657d6e0cadcb8bfb551efcd1",
+    "reference": "b6d13e41cd0791bbd8a6f83c90b5055e0bc7a4c7",
     "repository": "https://github.com/liberusoftware/module-accounting-collections-api",
-    "source_signature": "2974b65b4d27fd3a30241c2ca6be96c20c3738e8482b758c6a73273b4e6905a7",
-    "source_tree": "e2f6332acba1fa9c1aafded53e17df17da1a956f",
-    "version": "1.1.0"
+    "source_signature": "60f6a30cb08af23c927198c78354f860446723698d09b46cb6a748c13a4b92c0",
+    "source_tree": "131ae627752bbe7712498c5570c1e8545fdd0be0",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-collections-filament": {
     "path": "modules/accounting-collections-filament",
@@ -993,19 +993,19 @@
   },
   "liberusoftware/module-accounting-consolidation": {
     "path": "modules/accounting-consolidation",
-    "reference": "37e39002950cb7c663bd34b071979136ec2327df",
+    "reference": "d5b93f01aa1bd13e9295e2e1ab378e3b3c2b77fc",
     "repository": "https://github.com/liberusoftware/module-accounting-consolidation",
-    "source_signature": "ef1742f1d49d2449560651135a57c675600b3cc6d0d3adbb12370776e352bc03",
-    "source_tree": "ed70a2de1fa956a3c0f1597accd20c275330c203",
-    "version": "1.1.0"
+    "source_signature": "c41c3495ad0a4863d8c369a82f58ceb95d1d74b5028b7099721561909ee092c4",
+    "source_tree": "db42ab2c1a4445081b8d96ed5e81e468f6f85a52",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-consolidation-api": {
     "path": "modules/accounting-consolidation-api",
-    "reference": "1e673f46bd3f461b638629aff6d9b53afd023b63",
+    "reference": "fff07587a8f7d769e9a225e50699f822549c5e7e",
     "repository": "https://github.com/liberusoftware/module-accounting-consolidation-api",
-    "source_signature": "9d4cc7408b9268093bd04ce85b34011d6fa9b61ea272e6c7220110e1edbc0c48",
-    "source_tree": "814f4a077e08931127106f559f1599f6f0bac436",
-    "version": "1.1.0"
+    "source_signature": "45aac3a7a82caa591b109b33ef4c3a32452422e30aae88b9df7ed993c0d2266d",
+    "source_tree": "04f96f6a2030b795ed098b8753434367d95037e7",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-consolidation-filament": {
     "path": "modules/accounting-consolidation-filament",
@@ -1025,19 +1025,19 @@
   },
   "liberusoftware/module-accounting-construction-tax": {
     "path": "modules/accounting-construction-tax",
-    "reference": "c8a710e39106afbc28351f66b97603cef9eab7bf",
+    "reference": "80b9ad522a529d7f5d5f7d64af9d0e946a66c0e8",
     "repository": "https://github.com/liberusoftware/module-accounting-construction-tax",
-    "source_signature": "5e0c2f2bea07e93b69f2b3a343016659508d054992762d36da2128b531312d5d",
-    "source_tree": "f0cf4ff7ca3eb74e61851456c97a2b12eb935cab",
-    "version": "1.1.0"
+    "source_signature": "7aa40e2b72b77405e60410f597d7e10f93ca2d41bcc02822138350d03ce09d2b",
+    "source_tree": "fd30341f3659b1faa4da12efd54d9dd39a61bd7d",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-construction-tax-api": {
     "path": "modules/accounting-construction-tax-api",
-    "reference": "c9d77d0b3ffece621eaa167260cd8df57e6b6511",
+    "reference": "53abecf3f75db311ca867746e06e2fb28ef07dff",
     "repository": "https://github.com/liberusoftware/module-accounting-construction-tax-api",
-    "source_signature": "a67b68135332fafd6d72e70a44b9b18d5b51b38f89faf3b6e3990f876cc411a9",
-    "source_tree": "6ede1ede6211582d4e28c49fc7d443d2edc3d1e5",
-    "version": "1.1.0"
+    "source_signature": "45cf8ca747aa4e99f981af63c7d68b1e39bc4f06f5e19b35849a56d0ffce5be0",
+    "source_tree": "e106d671e227e539e8ce6c01e71115d0446177e5",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-construction-tax-filament": {
     "path": "modules/accounting-construction-tax-filament",
@@ -1057,19 +1057,19 @@
   },
   "liberusoftware/module-accounting-contractor-compliance": {
     "path": "modules/accounting-contractor-compliance",
-    "reference": "6c33f4b7efaf91dfb333899a741298330f26e20d",
+    "reference": "95b41fc9cd65a638f42d5850376177f3dab1e781",
     "repository": "https://github.com/liberusoftware/module-accounting-contractor-compliance",
-    "source_signature": "fb26df76a89e1d68b448266c10b595c290147ceb52b45151d1f4a23220752737",
-    "source_tree": "acbf5c0f70cc62cc28e9e96ef7982263a451b388",
-    "version": "1.1.0"
+    "source_signature": "b9db8f43ae5dd43d69022cfa92b98519643be64f474d8fa5977d60920c409cca",
+    "source_tree": "7f0c32c308b2136c91a8fa70a7c36a68c35f48ce",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-contractor-compliance-api": {
     "path": "modules/accounting-contractor-compliance-api",
-    "reference": "125157a6f50daec1edd570cf14801afc6af8b688",
+    "reference": "df31eeda0d7df022e28539daab529304ebcf261a",
     "repository": "https://github.com/liberusoftware/module-accounting-contractor-compliance-api",
-    "source_signature": "92e7a718d168f43d188387e47f10f72c3018a0288ec52edf1ded1737cd51a881",
-    "source_tree": "2aa0eb5cd75b08a1769bcd4baac46e6af51a8f35",
-    "version": "1.1.0"
+    "source_signature": "3e4b0910254488509e3e87c619a790b07d08d83610460e925eb88bf193cf8834",
+    "source_tree": "f9591cf26e2dbfb45a55235cd9891103fc766c5e",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-contractor-compliance-filament": {
     "path": "modules/accounting-contractor-compliance-filament",
@@ -1089,19 +1089,19 @@
   },
   "liberusoftware/module-accounting-contractor-reporting": {
     "path": "modules/accounting-contractor-reporting",
-    "reference": "564bb8de81cee909caeeaf422f4c2a4125d37095",
+    "reference": "09fed2daa880bb1fc8f56847295df247940000d4",
     "repository": "https://github.com/liberusoftware/module-accounting-contractor-reporting",
-    "source_signature": "4b0f5974ead5736b80648aa2a7396c06738940a0befe695675ed4a0c1b5d13e4",
-    "source_tree": "23a54f05a4cfdcf95fced5c643fc0e3bd0423c83",
-    "version": "1.0.0"
+    "source_signature": "2d7ac4e3b4f66a3ac4e951641ad07d4f854dfcdc43fdf50dd1f3c6df07a1ed47",
+    "source_tree": "c4a30154581455717c8af5dcc9ccce03e938f7e0",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-contractor-reporting-api": {
     "path": "modules/accounting-contractor-reporting-api",
-    "reference": "1b67ac68d85987b6c9035e7c17204383ee93068d",
+    "reference": "ac8096ce0759a8f42b13d473cac78cc51f3e5032",
     "repository": "https://github.com/liberusoftware/module-accounting-contractor-reporting-api",
-    "source_signature": "c15180f633e6970b3f8b92857e43c0f61220640bd67486ad1ad9c0106ad25922",
-    "source_tree": "2c27b8a9b10756db084813bab6d86e9a59f8c0e5",
-    "version": "1.0.0"
+    "source_signature": "93034e78b5ba6b3a56c29fc1e12a2ada477396b95324016396d5a0aedc493123",
+    "source_tree": "809750ec3399a77f9c0cd2525ea700b510afabb1",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-contractor-reporting-filament": {
     "path": "modules/accounting-contractor-reporting-filament",
@@ -1121,19 +1121,19 @@
   },
   "liberusoftware/module-accounting-copilot": {
     "path": "modules/accounting-copilot",
-    "reference": "06bfd285ce69a37faab19c9e228478d1405ea232",
+    "reference": "96dbf954d95e34a8b33e4b53b9d850b1e7b053c8",
     "repository": "https://github.com/liberusoftware/module-accounting-copilot",
-    "source_signature": "58e435b73faa2cc86ce45e9727c85e8816b2f33974f669c61e732ddf08eb58fa",
-    "source_tree": "d60d269f34c2005c0cacc1988e8c2b410fde908e",
-    "version": "1.0.1"
+    "source_signature": "69e1c5f064e37c4f49d2606736dccf1b6df9ecaf58384224431ff449deedfde0",
+    "source_tree": "741fbb4133c1a48594e1f2581a42dbd6b0ca5466",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-copilot-api": {
     "path": "modules/accounting-copilot-api",
-    "reference": "285acdfcfb6d68ce53e7ebe407958ddf6f252410",
+    "reference": "b5641e3e58840a732ac8f37d85e1ec3837710e9d",
     "repository": "https://github.com/liberusoftware/module-accounting-copilot-api",
-    "source_signature": "39a915e432a53985553a32430c7a19e4ed3503e837634e116ab91d8fd55c740c",
-    "source_tree": "e865eade3aab5a3fb79bd672f752a6ace076524e",
-    "version": "1.0.1"
+    "source_signature": "5b4c7f11daa686912ec8324d6d398ff603b7730b447be16b2806d06a5f1c29b1",
+    "source_tree": "294783384e2781394e80aa548c0853fea8bd1dbf",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-copilot-filament": {
     "path": "modules/accounting-copilot-filament",
@@ -1153,19 +1153,19 @@
   },
   "liberusoftware/module-accounting-core": {
     "path": "modules/accounting-core",
-    "reference": "7ea5e8e483445eba7f0d55a2c2408bfbc995c108",
+    "reference": "2355cfb513f98a27b9f4013f66315f1e68e531db",
     "repository": "https://github.com/liberusoftware/module-accounting-core",
-    "source_signature": "e8d9c9db0f0d82db79cbd489d3a7b5770b6cf46401bd61e8bedde3ec9a9305a2",
-    "source_tree": "32f3b78835634bcdac7e75b2eda217ce591adeec",
-    "version": "1.1.0"
+    "source_signature": "ebcc0ef60d226528cbe15a8516fbb42c9f08eb09d8517ab789abab813c8ded56",
+    "source_tree": "393784e87dec296bdaa8c5db2c362d285e9c107a",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-core-api": {
     "path": "modules/accounting-core-api",
-    "reference": "33c64a2b63a5390a597c3695723a60e443f5b1d6",
+    "reference": "2a217a2c37ae01dadd5880077bd900189bc0a2ec",
     "repository": "https://github.com/liberusoftware/module-accounting-core-api",
-    "source_signature": "def8d49411bcaf0ec5b0973bf33d89b1d9b459bcae65154f6346fb2f69d03857",
-    "source_tree": "b7ac6873e2f12be6c0b9416b08b58230830d7bb8",
-    "version": "1.1.0"
+    "source_signature": "8eadd36c0eef1fe74965549923aaab2764d335132d8265a82000098e9e6f058f",
+    "source_tree": "6253ca15a833ae1b1cbc27bcab8aa7a17d05cde6",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-core-filament": {
     "path": "modules/accounting-core-filament",
@@ -1177,27 +1177,27 @@
   },
   "liberusoftware/module-accounting-core-livewire": {
     "path": "modules/accounting-core-livewire",
-    "reference": "f34de4f40ae88f61602a4bbeb067e1454a64dad3",
+    "reference": "21db65bf75cee5a8c3f481d0d252e635230af1d6",
     "repository": "https://github.com/liberusoftware/module-accounting-core-livewire",
-    "source_signature": "95386640337432f352d5e78a7642d3b32ccab6052719bfba8da6d64d08de270f",
-    "source_tree": "bd13a8bbfce4ca541a59b4b7f5354dcb94029e75",
-    "version": "1.1.0"
+    "source_signature": "c48eb5191f021be2b7c68fc46ec22e3c0edaa1cadabec3fe5aa83bd921325aea",
+    "source_tree": "3b1dc18d800fe82a99752118348cd636ed90a9c6",
+    "version": "1.2.1"
   },
   "liberusoftware/module-accounting-corporate-cards": {
     "path": "modules/accounting-corporate-cards",
-    "reference": "8bb4348d96068a89755ec8167dcfa49361305721",
+    "reference": "af0a03fdc5087c2b041b146cd5de90db3686d2b3",
     "repository": "https://github.com/liberusoftware/module-accounting-corporate-cards",
-    "source_signature": "ed170af44bf3a46ec6ab31cc8be2bf5ca6cc4ad5d55fa77647cd6f786a7483af",
-    "source_tree": "494edc5b662f3cdf157e3303e7ceef924da1418e",
-    "version": "1.0.0"
+    "source_signature": "6816f1a74bf5ec05c522cce3aebcc38c84a65709aac3be2cb4b3ca9dba6c8dd4",
+    "source_tree": "379ef9538982dceac2d909a1ef534cdc014c36f7",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-corporate-cards-api": {
     "path": "modules/accounting-corporate-cards-api",
-    "reference": "9c97eb06778f9fc3e9c9ccd39b255a52a33d45f0",
+    "reference": "0eba34f7544999182be5950f496da4f713292c7a",
     "repository": "https://github.com/liberusoftware/module-accounting-corporate-cards-api",
-    "source_signature": "5c461ea92a0363d6eda72143ff87882d487b0131c44cc413bf22b8f7ff2d2370",
-    "source_tree": "55ca3480cb7bb3aebada34cb7a374b4f3798db6f",
-    "version": "1.0.0"
+    "source_signature": "823d267b2234a6abff132debaa8830f841e7909177bc9468d99dcce21dacd5a3",
+    "source_tree": "38987b24a76b200197cdc74a5dec08b96b3ecbe7",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-corporate-cards-filament": {
     "path": "modules/accounting-corporate-cards-filament",
@@ -1217,19 +1217,19 @@
   },
   "liberusoftware/module-accounting-credit-notes-and-adjustments": {
     "path": "modules/accounting-credit-notes-and-adjustments",
-    "reference": "33cd763840706fa6e8f0e102c17ddc282ed8ae31",
+    "reference": "41ed3711410f592c621f2fb84c77e80c92d042d5",
     "repository": "https://github.com/liberusoftware/module-accounting-credit-notes-and-adjustments",
-    "source_signature": "e2f9d7d3530715febbe9dcc2f3a4b97123e10bc03a75ad5285823d371658a0ae",
-    "source_tree": "75d9b8e24b0313f4dae7ccdc39f9b8c98e9eedee",
-    "version": "1.0.0"
+    "source_signature": "88b7eb04ac4974a529b131187dffb6082b5fa1e72bdf3600e1b0690d1a9b491a",
+    "source_tree": "6d4e96f48b3f78f9a273e27ffc35433b8f386902",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-credit-notes-and-adjustments-api": {
     "path": "modules/accounting-credit-notes-and-adjustments-api",
-    "reference": "f0e83fa5d73a55cbe2e266a6a14575cbfbfd11b0",
+    "reference": "18b87ebce5d822d19c14ea11fc14a1101776208a",
     "repository": "https://github.com/liberusoftware/module-accounting-credit-notes-and-adjustments-api",
-    "source_signature": "1c4f00167862fec8a9e7dee1163088dfb5e2c968ca94b4df9a3a0c9e25be0112",
-    "source_tree": "2634f16078a9eda47dda9e2aa484a7c719c50919",
-    "version": "1.0.0"
+    "source_signature": "34f60789cdfd294bffc7e83e4060bf45d1215f0e6758581dd01e02dc7327ced3",
+    "source_tree": "5409df75b85cf097b4dbde8f82859a67d183f332",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-credit-notes-and-adjustments-filament": {
     "path": "modules/accounting-credit-notes-and-adjustments-filament",
@@ -1249,19 +1249,19 @@
   },
   "liberusoftware/module-accounting-custom-report-builder": {
     "path": "modules/accounting-custom-report-builder",
-    "reference": "7c2c51eb68946b85999a6a10cbec7ba7b7a7ebb2",
+    "reference": "5e3f10ff2c100b657a67fd851b42a59bf784d318",
     "repository": "https://github.com/liberusoftware/module-accounting-custom-report-builder",
-    "source_signature": "21717214f6a55fb64685186c9ad06660544c838725185f501f729457819f4eba",
-    "source_tree": "991c88648226009725e75dd6e6a90fdb60bf66f9",
-    "version": "1.0.0"
+    "source_signature": "ae6600e95dcf7d4daf33f9ad14ffbbc7b425c7540e6247338463141c2666a3d3",
+    "source_tree": "dfa5b3302d398be66b5e4215b19b2c12df9f27d7",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-custom-report-builder-api": {
     "path": "modules/accounting-custom-report-builder-api",
-    "reference": "ee6e6ab2285734cee1968a652deaa4ea2a92e55f",
+    "reference": "ffde7eab8a3bc077dc8384beee0b991752af37fa",
     "repository": "https://github.com/liberusoftware/module-accounting-custom-report-builder-api",
-    "source_signature": "e7e7748c8f28fa4e13c06acad3dd65f8608790b2c063ba37c2ecab57e52aa280",
-    "source_tree": "162afb55476a9735849ceaaea426ff2789589b64",
-    "version": "1.0.0"
+    "source_signature": "3e58a6f7bb9a6140c5964ce989f7511dc62ffed57c613bef715fdc1a85ea80d9",
+    "source_tree": "8c955a6990dfbbfe988e72c86061fbef10fc0958",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-custom-report-builder-filament": {
     "path": "modules/accounting-custom-report-builder-filament",
@@ -1281,19 +1281,19 @@
   },
   "liberusoftware/module-accounting-customer-payments": {
     "path": "modules/accounting-customer-payments",
-    "reference": "c77f63542821647af031c8ccd6d26d142bf62cb1",
+    "reference": "91a49be0aadd40c930f2ba632201e8846651aac7",
     "repository": "https://github.com/liberusoftware/module-accounting-customer-payments",
-    "source_signature": "8e2878f7141b7d2a836a1316472d97e30c3ad355220e9e18bc82e14af4f926d2",
-    "source_tree": "7441a8e07acff001e76d786b8e95a95df9869a50",
-    "version": "1.0.0"
+    "source_signature": "7f96e7e019d6526c7030f2db40ce1e29fc54d29a5ddb08fb7d7789ee8d58af71",
+    "source_tree": "3cba5fc7a82937f2e948b86f2ad1f6e9f89ab75b",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-customer-payments-api": {
     "path": "modules/accounting-customer-payments-api",
-    "reference": "215799ec2fdbd09715d770e1b0131a7e05b3d7b2",
+    "reference": "5fa01e036fcbd3023578bf52aff8c631db1f1ecb",
     "repository": "https://github.com/liberusoftware/module-accounting-customer-payments-api",
-    "source_signature": "d4bb27578605a358bff1eb9564d182fd90426a463cb005d2c5e38771a34cf86c",
-    "source_tree": "92422bdff49d3ac3028be0f90fc3599ec5ee5f27",
-    "version": "1.0.0"
+    "source_signature": "6cb19b1174cb88b75b80ca95a140d344a9747988136aa245027cbafc0c5987bc",
+    "source_tree": "b38cebf544a275a3fe6c2375dff083cd6475c8d1",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-customer-payments-filament": {
     "path": "modules/accounting-customer-payments-filament",
@@ -1313,19 +1313,19 @@
   },
   "liberusoftware/module-accounting-customer-portal": {
     "path": "modules/accounting-customer-portal",
-    "reference": "cc92efe7c7b99d21a39444f429ecb9a8c917a62a",
+    "reference": "a2ed1a475ec01dfdea5a3e29e43e9e0db1ba7195",
     "repository": "https://github.com/liberusoftware/module-accounting-customer-portal",
-    "source_signature": "1cdf022dc2f52efc243a25db41a097479c33121caea8d01ee2209f14956bd27d",
-    "source_tree": "f5f42a78d0ad25d850fd1b1493514d3dd719ad0c",
-    "version": "1.0.0"
+    "source_signature": "7b6a11ff3504c5e0cfca3ab332fe84f3b8761f102678dbe2aac6604c9d29d380",
+    "source_tree": "07a287d45ef971410d4d7fe7e0338213cbbe5909",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-customer-portal-api": {
     "path": "modules/accounting-customer-portal-api",
-    "reference": "f74761a3b75613dfcfe2ce5138123dbbc6e380b9",
+    "reference": "20ebbe94f1002d98f0bf11bfb1bf0025ee204805",
     "repository": "https://github.com/liberusoftware/module-accounting-customer-portal-api",
-    "source_signature": "d500a6d4c8937ed78f9dd2133602996d6ac0e97e4ef95cd9be240d4d1e7b7dfa",
-    "source_tree": "093b607cdf8070aff12c80f239cbe02fe8029d8a",
-    "version": "1.0.0"
+    "source_signature": "2e98af7e3e2e6add419b3c0f4b6f1bd687404cd56322425d4dbf34c3a9167788",
+    "source_tree": "321bac3067f5bea76fe8318ef2314699c38a5cfa",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-customer-portal-filament": {
     "path": "modules/accounting-customer-portal-filament",
@@ -1345,19 +1345,19 @@
   },
   "liberusoftware/module-accounting-dashboards": {
     "path": "modules/accounting-dashboards",
-    "reference": "2f3ebad906ced6ec21c36da8d2b614a0c03e79a1",
+    "reference": "6fcddbfa4f9ac7ca2c642c90d0832a6bd26377e1",
     "repository": "https://github.com/liberusoftware/module-accounting-dashboards",
-    "source_signature": "7b097629fa74c0761e8e9eb20e46327a827fa177cad128d52e98a9ae53190baa",
-    "source_tree": "326990f8ade1ce203c09be7af6658f74e5f88a55",
-    "version": "1.0.0"
+    "source_signature": "3d7e3091641f6e2e9fe7a41bdb05df3cea69b7e8aa9dc586d98f4c23272b4439",
+    "source_tree": "183f7fa134ff101745c437458f1a3170bcead51f",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-dashboards-api": {
     "path": "modules/accounting-dashboards-api",
-    "reference": "a9f512b5e98038ae06b261c05681cb28232e9871",
+    "reference": "3c8feb68a93944c96caee070be4dcf4759427ebd",
     "repository": "https://github.com/liberusoftware/module-accounting-dashboards-api",
-    "source_signature": "425fb2eca13c90c9b7f22f1b3aa8de7f3f1cb926e6d36ab41646dd7cc9b971a4",
-    "source_tree": "e801a3fb424592923185a4bcc8b68b5363dad65f",
-    "version": "1.0.0"
+    "source_signature": "7ec057f6b8aa79d63fe50ab865d23f92e9ad0cc4e36ebeadeaed89bdb89644c9",
+    "source_tree": "49fc1379b3f74032c02154a2dd28b5667f8ec09f",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-dashboards-filament": {
     "path": "modules/accounting-dashboards-filament",
@@ -1377,19 +1377,19 @@
   },
   "liberusoftware/module-accounting-debt-and-loans": {
     "path": "modules/accounting-debt-and-loans",
-    "reference": "ffa8dba7c69859ddfee03df2ebdec87e61ba5acb",
+    "reference": "418e8d66d7caa2f1e754d6f2d688c621a1107d48",
     "repository": "https://github.com/liberusoftware/module-accounting-debt-and-loans",
-    "source_signature": "5e78bb1dd97f55e77ce5ef1ed93cfb6ae023de5995c74e582a4e84881a4af183",
-    "source_tree": "6000d42d8ea10b15ca2bb13fe4bb2d92f0069ea2",
-    "version": "1.0.0"
+    "source_signature": "387fe64ceb4345b37e940cfc3a2fefaad1ea26e27b0326551d99f05c6945635e",
+    "source_tree": "07a3f02410712493903d446e37028ea988bb823e",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-debt-and-loans-api": {
     "path": "modules/accounting-debt-and-loans-api",
-    "reference": "52515039e441eb3f8f6d2ec41c93b9b3c7001b1a",
+    "reference": "12614e99f0214d3901ba1f000ce0098c2a42428c",
     "repository": "https://github.com/liberusoftware/module-accounting-debt-and-loans-api",
-    "source_signature": "ae551dd551217137ca6798c0afc3b5871757dae9cb489feff3962d8621c5bf4c",
-    "source_tree": "d86992e137ddc96eb4cc326e41139af2ad051ad4",
-    "version": "1.0.0"
+    "source_signature": "9b30967d4f85ca8d73ba514c41f7e087fb2f912cceef8290c2f5acc6c89036b4",
+    "source_tree": "b37b5a0d1d3a7d58dead02148e883ab323037d5e",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-debt-and-loans-filament": {
     "path": "modules/accounting-debt-and-loans-filament",
@@ -1409,19 +1409,19 @@
   },
   "liberusoftware/module-accounting-deposits-and-clearing": {
     "path": "modules/accounting-deposits-and-clearing",
-    "reference": "fe58145694b0aab62d37936fb5092521a4fef2c0",
+    "reference": "279bf49753d61471b7f83855ef0520c678d0917c",
     "repository": "https://github.com/liberusoftware/module-accounting-deposits-and-clearing",
-    "source_signature": "bfb5ad04a5a7b26630f8787da26ef7a2077d545897f20b76fc516df055155979",
-    "source_tree": "d9657f2f035e25329afe491a4a78a6060e94a041",
-    "version": "1.0.0"
+    "source_signature": "72a5291dda95624fec92aa48a439515209d4be450e40fee8b4b96593f483610b",
+    "source_tree": "a0acb040eab9465eb40fe326dc62481fe2e2e249",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-deposits-and-clearing-api": {
     "path": "modules/accounting-deposits-and-clearing-api",
-    "reference": "0ae09640483386ef2db5f7e514fb37572034d585",
+    "reference": "18efd19d014757c669c8f471b064792164d98316",
     "repository": "https://github.com/liberusoftware/module-accounting-deposits-and-clearing-api",
-    "source_signature": "78f84be695bf4149286d6a4312a9c5bf16c2761692be9812b954d62ba85729e9",
-    "source_tree": "b653967c70e2b9ff08ac43afea66f8fb0e4db37d",
-    "version": "1.0.0"
+    "source_signature": "6f0a386ad50a320bd9c8d819120c7c02e1c1eab6466bcc07cfeae4d196beb9ea",
+    "source_tree": "d8361fd3d39fc253ecee4ae98bdfb6d4ac783a0b",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-deposits-and-clearing-filament": {
     "path": "modules/accounting-deposits-and-clearing-filament",
@@ -1441,19 +1441,19 @@
   },
   "liberusoftware/module-accounting-depreciation": {
     "path": "modules/accounting-depreciation",
-    "reference": "0b11ef55b673bf55372c9cfd30d96ba4f6bfc3fd",
+    "reference": "cb0073ed36af28b04deeed0d8d9dfc558fb2a8d6",
     "repository": "https://github.com/liberusoftware/module-accounting-depreciation",
-    "source_signature": "1b7c6bca040cbac11808dc4e1f599e2f9b4d4db54e239d8d11b8d76f675c9b45",
-    "source_tree": "3defc66f30796273828c8f6a6794a7288cb997a2",
-    "version": "1.0.0"
+    "source_signature": "803364391e45a4a4bb2755f42da9bc94eb95793c630802eb20c089f8a3d4ef6d",
+    "source_tree": "89e46860ad55b6de2af05fec10e488036b502525",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-depreciation-api": {
     "path": "modules/accounting-depreciation-api",
-    "reference": "19e6d229b5096061ab54ca2e05b95f3465e3842e",
+    "reference": "4e51cfec959c1442d1948f57d15965cadbcbe2fa",
     "repository": "https://github.com/liberusoftware/module-accounting-depreciation-api",
-    "source_signature": "ff4e8e7fd33d17b4ca8256471e8e90b09e7f84102a879c186996d6f95b1d8e9e",
-    "source_tree": "777c80a99f560bf7229785ba49bb7b92f2a00999",
-    "version": "1.0.0"
+    "source_signature": "512c74f18e6ddfbb13c2543145d5a3f56de96b8523e43418e84ccd348071947a",
+    "source_tree": "1bc077749cbb8f885ea89b54bb3ce1bdb5cab350",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-depreciation-filament": {
     "path": "modules/accounting-depreciation-filament",
@@ -1473,19 +1473,19 @@
   },
   "liberusoftware/module-accounting-dimensions-and-tracking": {
     "path": "modules/accounting-dimensions-and-tracking",
-    "reference": "b4c4d6fbb005524cfed516c456e9c4c74e5c2ce2",
+    "reference": "ba0f6fe51ef409507d3b3dbe8a708bd349ce5c6b",
     "repository": "https://github.com/liberusoftware/module-accounting-dimensions-and-tracking",
-    "source_signature": "78aee0cdc9b003207cfcedd46f8ab44f473f7e2f1fee8a4732ae2c61e9f4ad85",
-    "source_tree": "71a8c19fb85458b3e78f83c99e7e1dbf6a9399d5",
-    "version": "1.0.0"
+    "source_signature": "05543cb5582c29798d56859591d65bb5bd7ff9bab3c0b888aa9827cd6938604f",
+    "source_tree": "47b83cecb8988844b6f7f91fc7b279fe278bf85b",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-dimensions-and-tracking-api": {
     "path": "modules/accounting-dimensions-and-tracking-api",
-    "reference": "d09278bbf31751fc3123449147eb197c43d6c9f3",
+    "reference": "63c781125c13df19d60285e7436fe02102cf0145",
     "repository": "https://github.com/liberusoftware/module-accounting-dimensions-and-tracking-api",
-    "source_signature": "aa0585f65f28dc3f6388209cf3eb3e48911d506ebc2c6473aad3b2b0c24481e1",
-    "source_tree": "e3fcdf1910460e3b3566e442f2f15d2b8f180f39",
-    "version": "1.0.0"
+    "source_signature": "7bac910693a13a0327d5196036aaea99e401ba3071aba53b1e9154246630d474",
+    "source_tree": "c0c0813de6b2029913bb4d466688f6d41c6a7683",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-dimensions-and-tracking-filament": {
     "path": "modules/accounting-dimensions-and-tracking-filament",
@@ -1505,19 +1505,19 @@
   },
   "liberusoftware/module-accounting-document-capture": {
     "path": "modules/accounting-document-capture",
-    "reference": "d91d8b3575d36b38b9a8bafe015723a831e69ba7",
+    "reference": "ae3b494ba9f5969b8708362d0f3c864314ae08cf",
     "repository": "https://github.com/liberusoftware/module-accounting-document-capture",
-    "source_signature": "0bac1d96261e8ca6ac90cb872e0c89a3b2afe14c49a5455da13b347330b36a65",
-    "source_tree": "63c8b43db14a773c2fb5ffdbcba90823d1c728be",
-    "version": "1.0.0"
+    "source_signature": "422699ae7851191fd4a05d12534b0904751fc9529f1097bf60fada25793c96b8",
+    "source_tree": "44ca1362f8c367e02c6866f9274bc6672c56d473",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-document-capture-api": {
     "path": "modules/accounting-document-capture-api",
-    "reference": "0396296d1143489a526034e5f90cab392b47ce7b",
+    "reference": "da8c1ac0688ed87d6aaba051be4368b15b6fcf3b",
     "repository": "https://github.com/liberusoftware/module-accounting-document-capture-api",
-    "source_signature": "45ba295c4d76131e8bcbeccb65a10ca42f7d66fb004796b8b890ffaa618caedd",
-    "source_tree": "c57b95bc075c733ea3db43cbb0ac058b7167f1de",
-    "version": "1.0.0"
+    "source_signature": "81ecbff2c56906990c97322571eacadbab391e0b1d6bac486bd5312687f64a30",
+    "source_tree": "79c83ff53aaba6f7d4c164803ddabeb5ecec0795",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-document-capture-filament": {
     "path": "modules/accounting-document-capture-filament",
@@ -1537,19 +1537,19 @@
   },
   "liberusoftware/module-accounting-e-invoicing": {
     "path": "modules/accounting-e-invoicing",
-    "reference": "3c142051c2566a2cfcaf246cc430c79517df5b0b",
+    "reference": "832c5b87c294d623883ab6c72e0fb00add30ecf1",
     "repository": "https://github.com/liberusoftware/module-accounting-e-invoicing",
-    "source_signature": "bd03ef902414ed28085b923e960b4a6d5f8ebcf8685096d5bfdcdde41379ec58",
-    "source_tree": "3ced13e38fde743017ae38e2b8eb0451e2d4abd4",
-    "version": "1.0.0"
+    "source_signature": "fe05cd967d0e4c592c9ccf11faf6b0ed93c7475e1168359d5559eb463494fa53",
+    "source_tree": "0ba37a15f1074055f91f55b1859b9c75119326bc",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-e-invoicing-api": {
     "path": "modules/accounting-e-invoicing-api",
-    "reference": "5e10edf922468bc85298d12087e9f4031e8e27d0",
+    "reference": "a1ac2b429e62d13bc1f258b3ac6ac536a65fc306",
     "repository": "https://github.com/liberusoftware/module-accounting-e-invoicing-api",
-    "source_signature": "55b7b8e1743f26096e0df30368a17b40f61a729c0fc61e371a4c72fd5910f631",
-    "source_tree": "6344c2139aec043658462218cd4a7de1401c2d98",
-    "version": "1.0.0"
+    "source_signature": "855e115860619eae3815e4706171715df84ef28ef565154bda625b4dfef9dae1",
+    "source_tree": "dbc14b6901dfea0b76f40816e5af4e101a3bce53",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-e-invoicing-filament": {
     "path": "modules/accounting-e-invoicing-filament",
@@ -1569,19 +1569,19 @@
   },
   "liberusoftware/module-accounting-employee-expenses": {
     "path": "modules/accounting-employee-expenses",
-    "reference": "67973ce18e7a9f83ec32a6cf728bf6121fd88ed7",
+    "reference": "dbd6ed418805b3434e2362c645d864789e45da40",
     "repository": "https://github.com/liberusoftware/module-accounting-employee-expenses",
-    "source_signature": "987862d6101add1607b4145ebc6c68a89ef6fe728c9e3c53f494bbfaf3ae822c",
-    "source_tree": "d2c1e82c9d8b6c018b425a691cdc4923301da742",
-    "version": "1.0.0"
+    "source_signature": "49423409a70be3921466a44af0b945600758b2f59615a8545a1c33176a8a4730",
+    "source_tree": "5447de951ab1c137a6ee4bf2d7354202d270b108",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-employee-expenses-api": {
     "path": "modules/accounting-employee-expenses-api",
-    "reference": "06c2627698f1f17a307b0c532d34c79f1fdb526c",
+    "reference": "3389a79ca01059569b29bfea9c5777ea08256376",
     "repository": "https://github.com/liberusoftware/module-accounting-employee-expenses-api",
-    "source_signature": "034cb9fe0a6b9bdc9c7282d25058f341a061bb298a6a3b88c691ed412fee078a",
-    "source_tree": "ad16c695278d2148e9b2f86b13f30b23b77b3434",
-    "version": "1.0.0"
+    "source_signature": "293f6dcac76cf638bd42da6854e345200ad0f825255edba982b810d64d3cdec9",
+    "source_tree": "537b0e47bda98dc84961708dde251a9bf22ca643",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-employee-expenses-filament": {
     "path": "modules/accounting-employee-expenses-filament",
@@ -1601,43 +1601,43 @@
   },
   "liberusoftware/module-accounting-erp": {
     "path": "modules/accounting-erp",
-    "reference": "0158887b2b628126c923e9bb1b8373cae1dba442",
+    "reference": "ab0b172e8873a0607d5a93c01e2fbe3b1d8151f0",
     "repository": "https://github.com/liberusoftware/module-accounting-erp",
-    "source_signature": "b9390d614707ead20ca898f0a57993dcaadd09837dc5ef7c33563da4b8dba814",
-    "source_tree": "9f95b8c3a465e14900cb5d263163fa6599351dd3",
-    "version": "1.0.1"
+    "source_signature": "18068a8ce332435dc3f2a59346ce80c8575cf78692ed8373b75745280faac2d0",
+    "source_tree": "5713a41994e683202314d2bda27986fd231bdc12",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-erp-filament": {
     "path": "modules/accounting-erp-filament",
-    "reference": "9a454356f3e007fb2d6fcae774434a54220b229c",
+    "reference": "a512b7be3898e7b49d016c364cff243409bcfb9f",
     "repository": "https://github.com/liberusoftware/module-accounting-erp-filament",
-    "source_signature": "7dd6d8a939bd5cbbbf1f51ea55278d0a99329627236cb9109bc260beda5b61df",
-    "source_tree": "61844700d0b39e785b6537a70770d768d5a03592",
-    "version": "1.0.2"
+    "source_signature": "fd2e04654e6102b7638561e2d90d83d744942b9f7760cdcfc90e11807008be60",
+    "source_tree": "a1b1b6d3cc104b8765a5ba5ac0296d0871ca3c1c",
+    "version": "1.0.3"
   },
   "liberusoftware/module-accounting-erp-http": {
     "path": "modules/accounting-erp-http",
-    "reference": "6b2f9c21c79f11175a534bc7ce69060983ed5bfa",
+    "reference": "518f00602ebfde4808c87db0bc4689a371e0535d",
     "repository": "https://github.com/liberusoftware/module-accounting-erp-http",
-    "source_signature": "4b87558ae376dc1e44e28c7109a9f06f060c960f5c547c61488f1f4f8ca311ac",
-    "source_tree": "71450c441632670300ba64af6cb6510761004938",
-    "version": "1.0.0"
+    "source_signature": "dc666d485e4926b8482d809ca70a418b3902ece9c13390ece0a9fe5e149828ea",
+    "source_tree": "a76125bfce1413f575917248b0bf73776589317f",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-estimates-and-quotes": {
     "path": "modules/accounting-estimates-and-quotes",
-    "reference": "2c31a1912da5771c413ac32f612b2b6354a159bf",
+    "reference": "26ae0496f3336063f2ef18b34fe5e2e307cb219a",
     "repository": "https://github.com/liberusoftware/module-accounting-estimates-and-quotes",
-    "source_signature": "f3ef840701e4b2d9048bd6ee3c07ce9e16962218c462fa950791803707227d36",
-    "source_tree": "8b924a6943be29c4f1f8746cc1b18a9a13d3de83",
-    "version": "1.0.0"
+    "source_signature": "c7a6becf64d02693f022d08b1f7de1416c7b8d1909fb72fb4f3f8f5047b815ef",
+    "source_tree": "79b161bfb4ae5ee9c70238e23d990d68b2acc5ab",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-estimates-and-quotes-api": {
     "path": "modules/accounting-estimates-and-quotes-api",
-    "reference": "5f2c7108c1d45fc5e015ab47bd506db841a026b3",
+    "reference": "f89e3e074dd64cf0e59c0b77427909b80b196ab2",
     "repository": "https://github.com/liberusoftware/module-accounting-estimates-and-quotes-api",
-    "source_signature": "8e6ece228d27605b4c102fed8f7d53c6c257519ff3853c0d1ce61e78ae7894c7",
-    "source_tree": "b41d93a2a6c0b7de775ee37103737774e44462e2",
-    "version": "1.0.0"
+    "source_signature": "4de274fe23fc2925aae5fbb8eb31448ff09652255a557b12ab267018b41a0bd4",
+    "source_tree": "54e7d683af4a4e427225e0c95ddcb0b8f98a94a3",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-estimates-and-quotes-filament": {
     "path": "modules/accounting-estimates-and-quotes-filament",
@@ -1657,19 +1657,19 @@
   },
   "liberusoftware/module-accounting-financial-master-data": {
     "path": "modules/accounting-financial-master-data",
-    "reference": "1b2c3eb57f77be5478e081342e9fd01797e15777",
+    "reference": "21e16f56556b190d482b63baea97f62492d25c58",
     "repository": "https://github.com/liberusoftware/module-accounting-financial-master-data",
-    "source_signature": "0e3709bcf6deea367e3c0152093aabd359714f34aff90cd73d25f18cf5adcb16",
-    "source_tree": "b9264cf4ad9b52600c8df31401d453c5a44b2147",
-    "version": "1.0.0"
+    "source_signature": "023c43c0d630b0741b6869b494f17859ae67f1adf7f44696f2cfd828aa3fc907",
+    "source_tree": "dd2ed7ae0ab7f0a09e8246c984c7685ebc636233",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-financial-master-data-api": {
     "path": "modules/accounting-financial-master-data-api",
-    "reference": "9ae1fb7ece38083f0e4184acc0e08e5a47624681",
+    "reference": "2bf8e9757803b23b1a5dba0a36fe99e30284d0b1",
     "repository": "https://github.com/liberusoftware/module-accounting-financial-master-data-api",
-    "source_signature": "62125089a1627d03196db07188fe98fe19112100e1be7a7e6f84f39bb12b8cc5",
-    "source_tree": "6ea18e3079cc9c99a68901ea97d91c3723935a6a",
-    "version": "1.0.0"
+    "source_signature": "10d9bac89f8f6cdde7dfd4f6c6037e4d5020dd7b79f7a9d4d48b2bfadf817263",
+    "source_tree": "3537292af55932076cdbffd14e3ab5042e288eca",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-financial-master-data-filament": {
     "path": "modules/accounting-financial-master-data-filament",
@@ -1689,19 +1689,19 @@
   },
   "liberusoftware/module-accounting-financial-statements": {
     "path": "modules/accounting-financial-statements",
-    "reference": "40479893754f2f1131b8f28cb20912cb71ea6129",
+    "reference": "8509f56bcb5bf133e317895a1daaa3ffb803530e",
     "repository": "https://github.com/liberusoftware/module-accounting-financial-statements",
-    "source_signature": "5eb6e656db1b7a192e2849569a3220f631d0c31bad620bb704d29bbcdcf6817e",
-    "source_tree": "e224befeb09b325aa675411abb40db5295cb713e",
-    "version": "1.0.0"
+    "source_signature": "0204de43aecba4e6556a9751290c9a6ef43a1232c90d4a7c0cb0b9664cc70098",
+    "source_tree": "7a2ed1b0e5715a18cae860dafac7603517a22542",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-financial-statements-api": {
     "path": "modules/accounting-financial-statements-api",
-    "reference": "c51f47686ee187f81b0891f003d0335cd883f713",
+    "reference": "244a32d5c86c9b8a71064779b893f54e1bf7c399",
     "repository": "https://github.com/liberusoftware/module-accounting-financial-statements-api",
-    "source_signature": "de0fb8b07888d749600ae1bdd3fc9ba955cf0d76887aa70b137502bc5cbde2e4",
-    "source_tree": "21226f34a2e53b379784eaa0f71a825eaf12a8f0",
-    "version": "1.0.0"
+    "source_signature": "d387f15c19ea8b44cc18358cc4456cf7a2b1ac315beb5480c1327a8facbc03e4",
+    "source_tree": "5a862c4cae4e5e58773ebd2761c0779fc2bb076a",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-financial-statements-filament": {
     "path": "modules/accounting-financial-statements-filament",
@@ -1721,19 +1721,19 @@
   },
   "liberusoftware/module-accounting-fixed-assets": {
     "path": "modules/accounting-fixed-assets",
-    "reference": "22fd0a3a0dca4e0375ef64d304e8750bad57d466",
+    "reference": "47430e54550d8cff1f37cc5f3f133f9fc9be68bb",
     "repository": "https://github.com/liberusoftware/module-accounting-fixed-assets",
-    "source_signature": "3984803f142ff9c6fd9610a0007922a0c7659696b8f988cf8a5b7e8593c3391f",
-    "source_tree": "8a2d2bf2520564c342e5716e2d9338d91f3b70f1",
-    "version": "1.0.0"
+    "source_signature": "7a17cfcef7ab8a226d81d61cdce3437bc8193e96b4f84f0785af732e523dbe42",
+    "source_tree": "046bd0e6b85d2a258e9dfe5c549959e14eefc0c9",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-fixed-assets-api": {
     "path": "modules/accounting-fixed-assets-api",
-    "reference": "a6dc8ff46239e95008dfe73250e04b816c87b211",
+    "reference": "fb97a5327c1ae528d1a6e782a2410dfbf12d4193",
     "repository": "https://github.com/liberusoftware/module-accounting-fixed-assets-api",
-    "source_signature": "63051a42056089792e8cad5f25cb3bd0fe106e7156c9a51440cf341d6c2387a4",
-    "source_tree": "610fb148c5f3d4528eeaa31ef840073d5ec57414",
-    "version": "1.0.0"
+    "source_signature": "bdaf99deaf7e1aa73eac436c077b49da985f856614a846f15139dd1b269a4b90",
+    "source_tree": "310d250be3af69ba1c0f6f661c8d94d5aaec5481",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-fixed-assets-filament": {
     "path": "modules/accounting-fixed-assets-filament",
@@ -1753,19 +1753,19 @@
   },
   "liberusoftware/module-accounting-forecasts": {
     "path": "modules/accounting-forecasts",
-    "reference": "8df7553cf67faaa1255ea9149d2ce9452f7aaee1",
+    "reference": "92cb308bf9f67c2a5f4223e3141570172bd57218",
     "repository": "https://github.com/liberusoftware/module-accounting-forecasts",
-    "source_signature": "6c24dcacca375724204674057b4e7688411e47515de78cbd3c5a7e97b0c5c953",
-    "source_tree": "efb48c5d37164810a3073b6d6d87ed5618d27258",
-    "version": "1.0.0"
+    "source_signature": "5160945573b0a04c1c6217a617be963e90c12990aa71100fb44864d8e6de539b",
+    "source_tree": "21fd1a1850d8486169e4a3cdf0d95fdde466904f",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-forecasts-api": {
     "path": "modules/accounting-forecasts-api",
-    "reference": "0d7d55f5af755c5d253fc58170fd8f3df9f78da8",
+    "reference": "34f2646a3fb523176e557acfeae06d836d10fe84",
     "repository": "https://github.com/liberusoftware/module-accounting-forecasts-api",
-    "source_signature": "435abf119b73460b0e9986c7941648523defda2b035ef096cd18eaa068ec5a32",
-    "source_tree": "e7cc1e7a1deaa9c61bc188a6ff451a2fa523cca6",
-    "version": "1.0.0"
+    "source_signature": "4752c7120185e7925445131026eeea0ab7d9041d84537dcf2b7880afe9ea36cc",
+    "source_tree": "2a1bf05c4db40478f766978bec083a2aa5e0bba1",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-forecasts-filament": {
     "path": "modules/accounting-forecasts-filament",
@@ -1785,19 +1785,19 @@
   },
   "liberusoftware/module-accounting-general-ledger": {
     "path": "modules/accounting-general-ledger",
-    "reference": "fa8f1f84309e5294eee7afc0245e05afd8058587",
+    "reference": "8ce4671fec72505baad68548c937fc4326d5f111",
     "repository": "https://github.com/liberusoftware/module-accounting-general-ledger",
-    "source_signature": "f685562be8f98638ebb8016d2c0cefcd49a8df8cdb416ae1d0d3133eb1bcddd3",
-    "source_tree": "aaba695331f0c24aa1bb1caeddab2baeadadf171",
-    "version": "1.0.0"
+    "source_signature": "0b2ba9020e175651655bd4f3d163bacc3fb7d47aa3353dd55426e9fbc6d8a653",
+    "source_tree": "cc6810e783d4defca50fb05fa17b21ba9bb39078",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-general-ledger-api": {
     "path": "modules/accounting-general-ledger-api",
-    "reference": "c70f95e22eae8ca6f4582291e7c5f4e8dd42e878",
+    "reference": "3234a525f809304a10f50517a0201687302700cb",
     "repository": "https://github.com/liberusoftware/module-accounting-general-ledger-api",
-    "source_signature": "6115d198e9c5490478f8139f5a9d4488c290452106fc79c27349c1807c060311",
-    "source_tree": "9f4dad51d99a1527d6e8673c982e85a6ff231166",
-    "version": "1.0.0"
+    "source_signature": "4ee9e0e5f4b826aa75c2004f099a8cd2b1a258f607a2ac9821c48d035ceff5fe",
+    "source_tree": "806d54cf3264d454f05b5659ac0330ab519c6bbf",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-general-ledger-filament": {
     "path": "modules/accounting-general-ledger-filament",
@@ -1809,27 +1809,27 @@
   },
   "liberusoftware/module-accounting-general-ledger-livewire": {
     "path": "modules/accounting-general-ledger-livewire",
-    "reference": "d1d856633d377b1707c74041e95c289c2ef9f509",
+    "reference": "0d8bb1966921a18b6292d047080c1836c5e08228",
     "repository": "https://github.com/liberusoftware/module-accounting-general-ledger-livewire",
-    "source_signature": "3df5a1d6de72d996fae87a802ae49126a3558a04ee21a73117805bbf663b2d1d",
-    "source_tree": "5c74ceaa806ab4b2dcabb7dc265306170b0216e0",
-    "version": "1.0.0"
+    "source_signature": "929e899732d65136b15394c4abff69a0a5678ed5956a39d82aa9efbf16e91d07",
+    "source_tree": "10b6fe3628a94f70429c504f341896270cd68aff",
+    "version": "1.1.0"
   },
   "liberusoftware/module-accounting-goods-and-service-receipts": {
     "path": "modules/accounting-goods-and-service-receipts",
-    "reference": "495224b9f55853ec0c626266ed9245910c7cc0e1",
+    "reference": "19d5a7b082926e4d66879865906ecbcc00ba2dca",
     "repository": "https://github.com/liberusoftware/module-accounting-goods-and-service-receipts",
-    "source_signature": "fbca43bdbbd3a6e32b29afb6bfcba8f47c97df7cf6a6216cf49a630c46c7f83e",
-    "source_tree": "38df6690023d855a9b46b25718936c1105d93f9d",
-    "version": "1.0.0"
+    "source_signature": "9a6b9ae867466f765ef14503e8778732ecdc4c48eb391bec8f170f2ba8117cb2",
+    "source_tree": "69d98ecd956badac189b81d6fc749a4e9af05645",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-goods-and-service-receipts-api": {
     "path": "modules/accounting-goods-and-service-receipts-api",
-    "reference": "846eb93ca4823590d21be9dc499ba06b00dd68e2",
+    "reference": "4899b21a3751331429a2081d249210db747fdeda",
     "repository": "https://github.com/liberusoftware/module-accounting-goods-and-service-receipts-api",
-    "source_signature": "8538de0876db75417b1064d21546541ff7b923b5f4de6d15db2957767c457a15",
-    "source_tree": "a0203a876012831ea3d9ba8225363bd1cb9cfa4b",
-    "version": "1.0.0"
+    "source_signature": "96c1951bde878d2f73fe74201c63f232d66d2a6c7f56455f57a19ec7223cf75b",
+    "source_tree": "4719c98c5c6b72e7bce005aecc5b1a3bfd730234",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-goods-and-service-receipts-filament": {
     "path": "modules/accounting-goods-and-service-receipts-filament",
@@ -1849,19 +1849,19 @@
   },
   "liberusoftware/module-accounting-intercompany": {
     "path": "modules/accounting-intercompany",
-    "reference": "27a1fd721b0a08ed2dcba2ee8a3da7f79c8d6fa7",
+    "reference": "0e17e2f9e850685082458cfd212cdc482d4e2e2b",
     "repository": "https://github.com/liberusoftware/module-accounting-intercompany",
-    "source_signature": "964a58b1437f32fcbad188bfe31bb4ef743871d2694dd9ae6ebfa17a74a88b87",
-    "source_tree": "226828db10d2669d97df41a12c8411fa230dcf73",
-    "version": "1.0.0"
+    "source_signature": "e15b8d12e4bbd8da6d5ee9d4383805dad6c4c63426668dd59b3de0d1400c41df",
+    "source_tree": "26fbe443656fe9a297b4ba4fc89e2fbe40ec8e7d",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-intercompany-api": {
     "path": "modules/accounting-intercompany-api",
-    "reference": "682b5bded23698d11c3ed3918175071a7e8aa0ed",
+    "reference": "d6b61807d05e561fce0057f9fdd81c6d7277a3d5",
     "repository": "https://github.com/liberusoftware/module-accounting-intercompany-api",
-    "source_signature": "d0b80cf7d9d6530335891324e89ba2a8105c6e82e3e959822d9acba9807521da",
-    "source_tree": "8fd8f5b99ea7b425b85f8115a8091cbbc48a5c9f",
-    "version": "1.0.0"
+    "source_signature": "cb7fd238f8390d5a2c4fa19a809d1c15c2ce6da1b7605e6eb77d65f065df8f9c",
+    "source_tree": "5484d54ad3a3ffdb3c421e5dc09f1c80b7dec57d",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-intercompany-filament": {
     "path": "modules/accounting-intercompany-filament",
@@ -1881,19 +1881,19 @@
   },
   "liberusoftware/module-accounting-inventory-accounting": {
     "path": "modules/accounting-inventory-accounting",
-    "reference": "e593aa77a4e1d3a03e62bdd55ec2a25bb60036d3",
+    "reference": "c6af4da1124de4fccf2caa3227992db4981b696c",
     "repository": "https://github.com/liberusoftware/module-accounting-inventory-accounting",
-    "source_signature": "2197b431a262e22799940429841d660102d4aa61bc499fd33d7e472416ea0cf1",
-    "source_tree": "eff02283bc9e7a1d044f3f4e363f6f01cf026de3",
-    "version": "1.0.0"
+    "source_signature": "b4cabfce9faea41f9ade642333593b94fa2164f2c3404e986c84f24d3b0851bb",
+    "source_tree": "1d570658f4fec59cce196c880bc274f63044f3c0",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-inventory-accounting-api": {
     "path": "modules/accounting-inventory-accounting-api",
-    "reference": "7471eee2e4e88f3e55df61c100a860b89a84ee5f",
+    "reference": "f1da6983554ce47aaef4e0c7f7b274b16c4c12ba",
     "repository": "https://github.com/liberusoftware/module-accounting-inventory-accounting-api",
-    "source_signature": "ce2669056a917b020bc6a06ec17af37d3cd4b180b9e71bf46725751291a6db7e",
-    "source_tree": "5bc314710eb95a775ea77431a4b6951cdc7f2899",
-    "version": "1.0.0"
+    "source_signature": "45b2a1af9989c3de7ddfb13eab4413b59d07a83f2587a666fdf41214d100cd70",
+    "source_tree": "6c2a559cc8b566c3015508e94dabafb95aa9d2d8",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-inventory-accounting-filament": {
     "path": "modules/accounting-inventory-accounting-filament",
@@ -1913,19 +1913,19 @@
   },
   "liberusoftware/module-accounting-job-estimates": {
     "path": "modules/accounting-job-estimates",
-    "reference": "419daac2fa44e16e3adaa6edf8ea1521d9eba859",
+    "reference": "d07f1bafbecd1916be826a57776f2a3f00e5aedc",
     "repository": "https://github.com/liberusoftware/module-accounting-job-estimates",
-    "source_signature": "e8f795a451682255856144fb88bf8e700af5102582212ad27009a5f2f381ad03",
-    "source_tree": "e0fd8e967316696c96ba76879139ee98027b7374",
-    "version": "1.0.0"
+    "source_signature": "65e90376a3eacd39bd4628dbea55b0b87c9ded8799552cd1191ba78f6a7d183c",
+    "source_tree": "b257644613dd559194f253c3dad4b2bf82832a04",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-job-estimates-api": {
     "path": "modules/accounting-job-estimates-api",
-    "reference": "caec0b4e1db19829421786b93519af9e7f4089a2",
+    "reference": "951c0f8d4e20df0b571f332d1e7e3b5d33d241f9",
     "repository": "https://github.com/liberusoftware/module-accounting-job-estimates-api",
-    "source_signature": "ad0059602a739844e63d6b74191ce3e4498529b925970a53883970e4fddfab95",
-    "source_tree": "c72a599c82427c6667f29679785f760b16e230b6",
-    "version": "1.0.0"
+    "source_signature": "7ef4601e4fbcc18aff0d1deb9fb7815e6c5dfec6d1dc10eb12e019096b085976",
+    "source_tree": "43c05381ae03f226e3ed73d99f959a9482bfbe28",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-job-estimates-filament": {
     "path": "modules/accounting-job-estimates-filament",
@@ -1945,19 +1945,19 @@
   },
   "liberusoftware/module-accounting-journal-approvals": {
     "path": "modules/accounting-journal-approvals",
-    "reference": "284f4a391c2196da25a966f5601731298d774530",
+    "reference": "b32134609ad6729262dfd96110e940f7f7e0628c",
     "repository": "https://github.com/liberusoftware/module-accounting-journal-approvals",
-    "source_signature": "647f07812bb4153cc4ba8acf21956137abac2507d5de94172d4dd6a4b66d3348",
-    "source_tree": "d0a8c96363f8589ab41f56b83f345702b20448ec",
-    "version": "1.0.0"
+    "source_signature": "13fc81ac53913b35bae0132353043494397dbbb10b3262009acdd5e3cb16a464",
+    "source_tree": "cd0ce58b18954156a2ef8fc1a8bf4cd0ab48e63b",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-journal-approvals-api": {
     "path": "modules/accounting-journal-approvals-api",
-    "reference": "01de5a08ca01933c0433cc8b5570c3f11fe5660b",
+    "reference": "827454275615fdaad0b2f49ba34944720092e219",
     "repository": "https://github.com/liberusoftware/module-accounting-journal-approvals-api",
-    "source_signature": "a307d8a98b85943b8608b1b049cfa25ecb6fcdb991d5c1edf1f218dcf299e25b",
-    "source_tree": "12b66abd7753ff81a12fafbb3ec0f2f8a13f47c3",
-    "version": "1.0.0"
+    "source_signature": "19b3e9e25a407c911bb1a5a199b9f89a67b536fa989e6f1317b1a67edaabe314",
+    "source_tree": "9d9bc113bc39da3eed79fbbd86651983214a86b0",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-journal-approvals-filament": {
     "path": "modules/accounting-journal-approvals-filament",
@@ -1977,19 +1977,19 @@
   },
   "liberusoftware/module-accounting-kpi-and-goals": {
     "path": "modules/accounting-kpi-and-goals",
-    "reference": "85348613eced6406316583f3b057d3ecee2a3932",
+    "reference": "1ea29fca43f726f847a245a5a6cc74a9f11b1171",
     "repository": "https://github.com/liberusoftware/module-accounting-kpi-and-goals",
-    "source_signature": "78ba82b75e228327488848d61428e44da0afd767c8ca0f0e9c2aeb72d4912b17",
-    "source_tree": "697a0a717e917622c502d5831f92400a6a4f5c74",
-    "version": "1.0.0"
+    "source_signature": "c07362a7e5dac628643d404155e8850fef599c71c21a74d391fae4934d6df139",
+    "source_tree": "97fbdce64607b5e2e1a9c33676156b0d85619114",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-kpi-and-goals-api": {
     "path": "modules/accounting-kpi-and-goals-api",
-    "reference": "cf9395629ded56b2dc35a2eee573ea18ae0f5602",
+    "reference": "685306fbd0817e8712ace100c3edc5995ba7b928",
     "repository": "https://github.com/liberusoftware/module-accounting-kpi-and-goals-api",
-    "source_signature": "18a87e04f63f75e88a0360cd2f21c1c0af2264eb839292b55dd2680e22af95e2",
-    "source_tree": "030e9b57e240882dd602d202da0f7e6d31093916",
-    "version": "1.0.0"
+    "source_signature": "727fd711711d504668db516d406bd1332c92280ed37bf64f92b9ee8ae9094c60",
+    "source_tree": "4d7b0b8131100fcaefcec0b99b15550a4a424e4e",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-kpi-and-goals-filament": {
     "path": "modules/accounting-kpi-and-goals-filament",
@@ -2009,19 +2009,19 @@
   },
   "liberusoftware/module-accounting-leases": {
     "path": "modules/accounting-leases",
-    "reference": "889ec47edb2f602ff0b1e2a28c3cde8acec82dd9",
+    "reference": "886d2eebcf795aa662177534c6720f89e7b91194",
     "repository": "https://github.com/liberusoftware/module-accounting-leases",
-    "source_signature": "44c1916ff8c956508bdc1731a2a9893b28681c9594efd0651fda989c89dd5b40",
-    "source_tree": "919db91b87a2d19bbb78304ade42a012acf80a3e",
-    "version": "1.0.0"
+    "source_signature": "96304d275e7a9d1f7f513908a9484b64f1e9d112764767226acd39a1d8c19ec8",
+    "source_tree": "e838766b13a647b60ae747147ce75a4fa46874a4",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-leases-api": {
     "path": "modules/accounting-leases-api",
-    "reference": "d1939c2d344e097d7fa27d1f83cac8fedf697949",
+    "reference": "da35fdd501419ddb8d31fa4ede5dbe540e2c4b9c",
     "repository": "https://github.com/liberusoftware/module-accounting-leases-api",
-    "source_signature": "32247bcc7403f5ae8e84b4bcc712b68ef342bcab4e71362dc23a1a691c38a5e8",
-    "source_tree": "77fda2adce7826f678ff56120b20ceb56d853cf3",
-    "version": "1.0.0"
+    "source_signature": "0e10d7dcda99991943a40dd228e3497b385536ca4c6013294919f7a250f949f4",
+    "source_tree": "06dfe740e5e92380f3a1c18c68de8f306b0883b6",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-leases-filament": {
     "path": "modules/accounting-leases-filament",
@@ -2041,19 +2041,19 @@
   },
   "liberusoftware/module-accounting-management-reporting": {
     "path": "modules/accounting-management-reporting",
-    "reference": "299c5131f7f7746c463804a4dd19c774221999fe",
+    "reference": "5390130cc9156496ef10b23f7b20521e38f801c0",
     "repository": "https://github.com/liberusoftware/module-accounting-management-reporting",
-    "source_signature": "a0262246d9e1d55da889241d09c732f2eb0ee8357ba06c0dd9ebd2dec29e8b9a",
-    "source_tree": "264a6c438e3a9acb81bc141ea0ee66d1484f7186",
-    "version": "1.0.0"
+    "source_signature": "38377c526a8950e4fcd3370f9039f282f710e44b6d43f3ee54a090bc6106f486",
+    "source_tree": "5677b053c56184244ac3b21db3e58e1fa7f43987",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-management-reporting-api": {
     "path": "modules/accounting-management-reporting-api",
-    "reference": "50f58b228d3f0fcfdcdabffa46e47a79a173d80f",
+    "reference": "3ad2e27e7828c78c0c7a9e6a4cc024c9734351d2",
     "repository": "https://github.com/liberusoftware/module-accounting-management-reporting-api",
-    "source_signature": "47f62e6fbb72c3200080efee8a19bc6c7898ad7c0aae0b2b78b676ea1a93562a",
-    "source_tree": "ee1f8842aa4891ab9a51068cb68dce18657bfbfe",
-    "version": "1.0.0"
+    "source_signature": "1470c4e9f286659d58b659c90cdd46ae0b6da9ff0d56e872fcf2a4ec9252fb73",
+    "source_tree": "133df5bcab9095c160aa32b5417d7e1a2318c774",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-management-reporting-filament": {
     "path": "modules/accounting-management-reporting-filament",
@@ -2073,19 +2073,19 @@
   },
   "liberusoftware/module-accounting-matching-intelligence": {
     "path": "modules/accounting-matching-intelligence",
-    "reference": "da785a7ca709c9e1c2d8b889fc2c1ac960da3a59",
+    "reference": "9cf13ec51a8d5d438b6c105419a1e2267bd961bf",
     "repository": "https://github.com/liberusoftware/module-accounting-matching-intelligence",
-    "source_signature": "a7f92235eaef09722ce65448788716dc973fec364742540ef51257388f4f9f30",
-    "source_tree": "846e9f4717d48f19f859c1937da5654c2f787e12",
-    "version": "1.0.0"
+    "source_signature": "8f0ed69c03c76f25acd6a8e72a0fa796b5e843611e9282dd9bafee41c77bbb8c",
+    "source_tree": "967aa1226d251bff281706a5a67ab123aa8bafd2",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-matching-intelligence-api": {
     "path": "modules/accounting-matching-intelligence-api",
-    "reference": "15060f40ab78ea993f5311ed2d103d5d84932961",
+    "reference": "e14a945230f42752075169e183d7f462718c309c",
     "repository": "https://github.com/liberusoftware/module-accounting-matching-intelligence-api",
-    "source_signature": "7019b7908946690cdb53cb1c93b75169500f72f2979cfdd625d9341ab2759c2d",
-    "source_tree": "223e773c49b59a16360c4ac340b5b5ca2e96cf47",
-    "version": "1.0.0"
+    "source_signature": "0f01b8be35fc056aecee4caf57a9ab6d14f681b4f0f279db506dd07189265edb",
+    "source_tree": "1c93b7809b20ddc4c72c13ae1ea5402d67853fb4",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-matching-intelligence-filament": {
     "path": "modules/accounting-matching-intelligence-filament",
@@ -2105,19 +2105,19 @@
   },
   "liberusoftware/module-accounting-migration-framework": {
     "path": "modules/accounting-migration-framework",
-    "reference": "def27d203a5a025615ebf8168e111b378fb7d9f9",
+    "reference": "dd013d3159ee832c24984e2e44c23edd3c6f8043",
     "repository": "https://github.com/liberusoftware/module-accounting-migration-framework",
-    "source_signature": "595123a3137371302a904f77b70ce291a2c33878313c297ad578cb54905ba89b",
-    "source_tree": "caa6376f55e947222a231101e73f521720e3ac6f",
-    "version": "1.0.0"
+    "source_signature": "858dd60d4d9dea06f7d24b56c5511965b10b6ef926c40132feb75a83ef4ffe7f",
+    "source_tree": "af3cad426101d8ab9cd60b8dda8f49b6178f56cc",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-migration-framework-api": {
     "path": "modules/accounting-migration-framework-api",
-    "reference": "2d424ff6130fbfba9d367f7d4c48a65a41f9950c",
+    "reference": "fd017be7afec57202eeac8e458b969df7036eac9",
     "repository": "https://github.com/liberusoftware/module-accounting-migration-framework-api",
-    "source_signature": "3f3b8f7cbb8e7014490e649764a69bb54d78c794dfc8fc80eb53f58a66da5393",
-    "source_tree": "183da39cc4f648cb17366f0d220cee8a6c6489e8",
-    "version": "1.0.0"
+    "source_signature": "9d985afb708a5e6f470ff199d9854cd2afd298a870a18c1076853fde803e3930",
+    "source_tree": "970eaec349c5f2739879e3e898b603eda9e5cac4",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-migration-framework-filament": {
     "path": "modules/accounting-migration-framework-filament",
@@ -2137,19 +2137,19 @@
   },
   "liberusoftware/module-accounting-mileage": {
     "path": "modules/accounting-mileage",
-    "reference": "1b3c3a1bb005b80a74e69a938e727e8d2818bed3",
+    "reference": "fe3049e90194253679ba39f75ace34ccd3b8e46b",
     "repository": "https://github.com/liberusoftware/module-accounting-mileage",
-    "source_signature": "f8b0787d16b5cf185f93c67b6faa655e1d7a0328b2ce05c73eae9554d3f08fb1",
-    "source_tree": "268c3a7cae4fd8140847bf4cbb7c7ac8eaccf32e",
-    "version": "1.0.0"
+    "source_signature": "0041185065639bab86dcc3d01e177aa7aad0d0b0a6a15723b594bcf996e21268",
+    "source_tree": "164ddbc6c065c6d3ca607d9f8e76e70830cfb109",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-mileage-api": {
     "path": "modules/accounting-mileage-api",
-    "reference": "653cd9288ede9b5999940476fc53dafd37964391",
+    "reference": "732248f474499f0d9e4c33578667a290ed37a334",
     "repository": "https://github.com/liberusoftware/module-accounting-mileage-api",
-    "source_signature": "cde2452dde464c997f178d9d586a21201ec431b97747786aca545ae6502825a9",
-    "source_tree": "10b536211d064d06e78093c45e4e44f0603f5e94",
-    "version": "1.0.0"
+    "source_signature": "8c1e7338eba145f038446015315a8d612349d08c56a49ca69cdbf77ee924f0ee",
+    "source_tree": "98da6934c5eb3c0a31acecb5622c5163b4eb57a6",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-mileage-filament": {
     "path": "modules/accounting-mileage-filament",
@@ -2169,19 +2169,19 @@
   },
   "liberusoftware/module-accounting-multi-currency": {
     "path": "modules/accounting-multi-currency",
-    "reference": "2bb366d2ff55f65bb8999680ae696d9985d5c72b",
+    "reference": "6432aacaa3d97f252087bd3c2cdce14ee4d08399",
     "repository": "https://github.com/liberusoftware/module-accounting-multi-currency",
-    "source_signature": "9a1bf8ca1a1e1160a4e4f633d57b9f77ab7a98dc78eb425a7b4494642c26c03e",
-    "source_tree": "a810e3a41757bd3c9fa17dc58b6e7bb87d1ee302",
-    "version": "1.0.0"
+    "source_signature": "f9e1589632aa91828924eb87cfe2c121ca18969e4e6089a7b0223f3d082ee558",
+    "source_tree": "938771395372dee870fb08bfb51f20dd6246663f",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-multi-currency-api": {
     "path": "modules/accounting-multi-currency-api",
-    "reference": "29073bdd3a1f97be640308d1f34db1a3912375c9",
+    "reference": "cdbb5297c0f79a5adc4e1daa419654f103b0a205",
     "repository": "https://github.com/liberusoftware/module-accounting-multi-currency-api",
-    "source_signature": "3be464a4a57b07032150a641bf63f19773688e6f960777afbc8815bfac673bc3",
-    "source_tree": "a610ef8d3e57651a206d6e5328e7a8bd485f79c3",
-    "version": "1.0.0"
+    "source_signature": "1e1316f079551fbcf48616c21556261ab922e098aba5b3359187ae94ef923560",
+    "source_tree": "383e33c48b2f26392eb4d025a14d9eee6802f3b7",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-multi-currency-filament": {
     "path": "modules/accounting-multi-currency-filament",
@@ -2201,19 +2201,19 @@
   },
   "liberusoftware/module-accounting-multi-entity": {
     "path": "modules/accounting-multi-entity",
-    "reference": "e08382f22f259f77b783cc142250b890e874da8d",
+    "reference": "2e567f5dad00d54ec262e46c2ae03c278afa0085",
     "repository": "https://github.com/liberusoftware/module-accounting-multi-entity",
-    "source_signature": "e7aa2e6bb7ca0b33ca7aef4763e98baf2064d8270fc5c15dfb2b9bcb9c86d6c1",
-    "source_tree": "839b80c1e7e6dc001833ac6fd4d926ae12c76fd2",
-    "version": "1.0.0"
+    "source_signature": "ca20a4c128c98b4698c6059ecaaf6b54952b2a9892480e5661c15fb314a81c6e",
+    "source_tree": "4d73c4f7dc9fb2936ea3de76beb314a6c4a21e53",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-multi-entity-api": {
     "path": "modules/accounting-multi-entity-api",
-    "reference": "a531546a14e608ac830c3419c9ec08a17a8b827b",
+    "reference": "67231941423e65f3e0e80822efb35805ac4efe06",
     "repository": "https://github.com/liberusoftware/module-accounting-multi-entity-api",
-    "source_signature": "7c14535117520e55d0277f7c7edf1527748c440858357afa1fb5e4f044b323d7",
-    "source_tree": "4169bb312865427ce8126c7a6c5ef0d83b7940da",
-    "version": "1.0.0"
+    "source_signature": "2a4be4aa53dfed3d1b0f04186ed84763170623c3a1b56041653b220ebc8aad77",
+    "source_tree": "8e48cc9d92437c6a9676dcc3e91475d5afd59b7d",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-multi-entity-filament": {
     "path": "modules/accounting-multi-entity-filament",
@@ -2233,19 +2233,19 @@
   },
   "liberusoftware/module-accounting-opening-balances": {
     "path": "modules/accounting-opening-balances",
-    "reference": "601ebf99752f2acd318e3cadb752feeea327c7db",
+    "reference": "762c8a810abfdf663be51bf35429e4e119a03e90",
     "repository": "https://github.com/liberusoftware/module-accounting-opening-balances",
-    "source_signature": "94e370f60686dd34aba54abbb0daa3fcd7ec73e9b1a8f040f52c09aa5442301e",
-    "source_tree": "a999501477369467324fd36dfc55fb6336a53f2a",
-    "version": "1.0.0"
+    "source_signature": "73e73a571860091998fd602becfa3a303927452b961ccfe68196408597fffe00",
+    "source_tree": "3ca5753640d3518c787178bc0780f65305e42392",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-opening-balances-api": {
     "path": "modules/accounting-opening-balances-api",
-    "reference": "f4e550ff989d2283c4e5f402895edc26f61e6575",
+    "reference": "e423b477d30b644f3daaad26bf9a71f899821f63",
     "repository": "https://github.com/liberusoftware/module-accounting-opening-balances-api",
-    "source_signature": "d827e8cfe4eecf4383a4fe17b2b7ec5495376275044ff2f37d408a382548e33f",
-    "source_tree": "559ade8481d77cdcc222210bf0c068be5e06ab42",
-    "version": "1.0.0"
+    "source_signature": "6b70f15ed8f5a3b8e8ef67e6d68af72377582b67c2c4c4575e85a5b5c23347bd",
+    "source_tree": "941da5b301c8114156c7f80a5fe04bb4082e089a",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-opening-balances-filament": {
     "path": "modules/accounting-opening-balances-filament",
@@ -2265,19 +2265,19 @@
   },
   "liberusoftware/module-accounting-operational-reports": {
     "path": "modules/accounting-operational-reports",
-    "reference": "1e31792601c324ce4a894cfbcadbda97f1dc5a4c",
+    "reference": "4b74f80ac4f73fdd35287ccb81d3f2652b0f954b",
     "repository": "https://github.com/liberusoftware/module-accounting-operational-reports",
-    "source_signature": "20c6605d45c11112829b4a29659bfc865cda779b150513ec8408be976da1f1c9",
-    "source_tree": "5166e6137457a03efe986a33f4702685fa45a25f",
-    "version": "1.0.0"
+    "source_signature": "cf5abe9767461bb3736a44d2369d9c79ba23fd6bac0083bab9380b07c95bc984",
+    "source_tree": "73dbf987b40142624e002a4784919f5f28bb0207",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-operational-reports-api": {
     "path": "modules/accounting-operational-reports-api",
-    "reference": "36a4ed0647e3f4f29bb830f4a4b35dcfa4906d6f",
+    "reference": "5329b605f25b4e10b4d768eaacc8e270ded7543a",
     "repository": "https://github.com/liberusoftware/module-accounting-operational-reports-api",
-    "source_signature": "403bda2a92f39e141ba2b666949fecbd30cf7dda5479c1ee9cc4b4e2c7126c7c",
-    "source_tree": "2dab03b63499cd9044d17b59aa43b25ebba3866e",
-    "version": "1.0.0"
+    "source_signature": "207dd3c4f2638dbb58e503533c25f449da2d66003b40448c70805097f014bc0b",
+    "source_tree": "cc1ca818bcaa69dc232aee2ddb45cd81ea89afe0",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-operational-reports-filament": {
     "path": "modules/accounting-operational-reports-filament",
@@ -2297,19 +2297,19 @@
   },
   "liberusoftware/module-accounting-payment-reconciliation": {
     "path": "modules/accounting-payment-reconciliation",
-    "reference": "4fb81c962f441cbdef7f9ad834e4c8c4660a8e24",
+    "reference": "02d41444f0b413a7e9ba92e3f59aad4e82115f14",
     "repository": "https://github.com/liberusoftware/module-accounting-payment-reconciliation",
-    "source_signature": "c852ead80928120c1a382827fd9c9f43612db7e6850f9efeefd39d9d48c9ccaa",
-    "source_tree": "001786ee70d36e61a5c6417ea581601160b4f064",
-    "version": "1.0.0"
+    "source_signature": "f5b03fa7113c5d45beacdbe9db65bc1212041d201df4459ba075ef2b0691b046",
+    "source_tree": "d2588b59947c31a3ab19c70c0292fa4717f18104",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payment-reconciliation-api": {
     "path": "modules/accounting-payment-reconciliation-api",
-    "reference": "799ebae4f3275d9ae95c217ebb0f34c4078ab166",
+    "reference": "f72b6c59723767fd727b2e6fcfee184a90cfaad1",
     "repository": "https://github.com/liberusoftware/module-accounting-payment-reconciliation-api",
-    "source_signature": "8866414e9e29548a353df127358be197e0d87f928608152de6dbf9a81d8b38b6",
-    "source_tree": "2c851d1d7e0f73f8d8fc657f9d5bd3e0adc937f8",
-    "version": "1.0.0"
+    "source_signature": "56b3c1a51b16ac2a4e9bf5fe3aefd7bd5e8063c6068ca459b35b5bb090885bbf",
+    "source_tree": "cbb4bf6a5e9363f0412721f232c6094e6a53a371",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payment-reconciliation-filament": {
     "path": "modules/accounting-payment-reconciliation-filament",
@@ -2329,19 +2329,19 @@
   },
   "liberusoftware/module-accounting-payroll-integration": {
     "path": "modules/accounting-payroll-integration",
-    "reference": "7f9d9fb9ee618bd85efb74bf1733ac322ef58db9",
+    "reference": "34b5ac7bd4fc3290a5a6c5e0e0f09cfe862e0e87",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-integration",
-    "source_signature": "0ae8bf8377b99e5479257649ae6bfb1b4a2996ff693e7804546e8337849c1481",
-    "source_tree": "8cb9e4bb5b6caa985e0bd9843756240e68778e53",
-    "version": "1.0.0"
+    "source_signature": "24c90bbf580e0f6fe3a5b5b60b8f0df32dc89f228615f2509814c03a35801f21",
+    "source_tree": "473dfb17e6ae59bb4f9bffcd0acbca73250637b4",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payroll-integration-api": {
     "path": "modules/accounting-payroll-integration-api",
-    "reference": "71c3e97a6730e885b500d90103b3f4837162b9b1",
+    "reference": "0f1fbec8ca777b036e8caf0b5ee5648693695a5c",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-integration-api",
-    "source_signature": "b33fe7908029d518d2f7aef62124758f15c68aea30b031949171d9dbf2e88541",
-    "source_tree": "8796130040691527637bcbafa83a6c19ff59e495",
-    "version": "1.0.0"
+    "source_signature": "9a10a63768c364f895b53197bcaebc136a5a0828698f8bddfed8ae4b192ff9e2",
+    "source_tree": "e6f1ad72aefabefc5048cbfb5f10a58680508e6c",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payroll-integration-filament": {
     "path": "modules/accounting-payroll-integration-filament",
@@ -2353,27 +2353,27 @@
   },
   "liberusoftware/module-accounting-payroll-integration-livewire": {
     "path": "modules/accounting-payroll-integration-livewire",
-    "reference": "380518bb38cdff6d4d1b362e6f68bc5bfa16bd23",
+    "reference": "5d2bc6f7e18707ca22f41f332dcb524eee3e5b12",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-integration-livewire",
-    "source_signature": "5883517d35efad29c55c506f63c9405abca94b481b7dfda03ed374fe38c8bc26",
-    "source_tree": "97ff6ac001316e7ea139d545084db0ad68012bda",
-    "version": "1.0.0"
+    "source_signature": "fe93691180758e039860c863e3e8702e4c06a2401cd580d0a1823ba6578704e2",
+    "source_tree": "3c918df53bac092319a0d3430c4269518e423413",
+    "version": "1.1.0"
   },
   "liberusoftware/module-accounting-payroll-journals": {
     "path": "modules/accounting-payroll-journals",
-    "reference": "9610985f3d06f1d10227708825897cb1f57b9cfb",
+    "reference": "c3787e6e078fbe510571fc296b92ba866ffd68d7",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-journals",
-    "source_signature": "8ade5aab154a4064f5ba90ed38abb0d89803feff7cb79c365999ff58f3ca87f2",
-    "source_tree": "d55dae3c7d592f8e803989787ccc594467e49f66",
-    "version": "1.0.0"
+    "source_signature": "7cc6d58961b1e49262f5dc7d6c4607d0db6e0d7d5d8fbe7aa0cdf4fd4b845882",
+    "source_tree": "8895596e4dc6b65670ab2e54344fbeb074b5f0d2",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payroll-journals-api": {
     "path": "modules/accounting-payroll-journals-api",
-    "reference": "d5195e339ff6a69b0eb63afa27a718661fb0afce",
+    "reference": "1d3fb2c41cb5f333c6a80ab5b5b14d590a002807",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-journals-api",
-    "source_signature": "5442fa386323e7471d563f6c76a67747f96a761fdb9465808af87f493c6fc0aa",
-    "source_tree": "f91e49d0671c07093dd146da0c5ec2f185eb3fe0",
-    "version": "1.0.0"
+    "source_signature": "912193748d7a8716b8529699db7f403b3470431023df6b80e0c4c66fe1265465",
+    "source_tree": "9973d4b2373d3fb7e97799a27f82f5c01474aaf5",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payroll-journals-filament": {
     "path": "modules/accounting-payroll-journals-filament",
@@ -2385,27 +2385,27 @@
   },
   "liberusoftware/module-accounting-payroll-journals-livewire": {
     "path": "modules/accounting-payroll-journals-livewire",
-    "reference": "759346f54e56bec3d6f30c918aad6cf6d8a84100",
+    "reference": "7d89adeff7f847c2905759ca3e20e30bcca6d824",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-journals-livewire",
-    "source_signature": "1f56b9e2c2b9565813af58c654b0670cfd0ac689b93b7dc291a75bf2417535c2",
-    "source_tree": "cbdc99a94620b317868ca9d045f9d68049b1031f",
-    "version": "1.0.0"
+    "source_signature": "b06bfe20aa4dd085b68065fcabc299af882351c5ee4104211e507d52e777f9fd",
+    "source_tree": "4a95ae3b8038066abafb0dc5a81982300b0d2868",
+    "version": "1.1.0"
   },
   "liberusoftware/module-accounting-payroll-liabilities": {
     "path": "modules/accounting-payroll-liabilities",
-    "reference": "b45dc8119711d7673e42cfe7f4d2244819a17989",
+    "reference": "b3950f2864a4b55dda352011a1b7332cf5f6537c",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-liabilities",
-    "source_signature": "10408cb54a1f8d23ea320c3dd4a14f7b8ced688595419f7a52b840c328b85ff0",
-    "source_tree": "51c6242bf6c0bcbc8b3ab06db2c338b80dd108f4",
-    "version": "1.0.0"
+    "source_signature": "80806e1889da14f31011233d8672e173d9d1bb8b30e5152c18541ff4b94fbde1",
+    "source_tree": "6604444dcf32d3c33f4518d28fd966ecfa6b2b85",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payroll-liabilities-api": {
     "path": "modules/accounting-payroll-liabilities-api",
-    "reference": "74b87fdbc5d5b9d31814d9e5c9a37a9df48523c8",
+    "reference": "c1288ec2d89f65afee23f8c62a746174d237b2b2",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-liabilities-api",
-    "source_signature": "48e7b8569ce642e38561e0015e245107b65a63eca2ba5be0bc1980d7113cad84",
-    "source_tree": "43fefef17ca009c2a29c6e52876a8b091438225d",
-    "version": "1.0.0"
+    "source_signature": "8d8711ca00871a20591092b9adf1d50c498d4b339c586609caa99f674152f301",
+    "source_tree": "5c0347e4e62dd4ff6eb466d525b146a83bc3e710",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payroll-liabilities-filament": {
     "path": "modules/accounting-payroll-liabilities-filament",
@@ -2417,27 +2417,27 @@
   },
   "liberusoftware/module-accounting-payroll-liabilities-livewire": {
     "path": "modules/accounting-payroll-liabilities-livewire",
-    "reference": "5e79a1d2a5573e4c0c2a1de5ed084fc55617bff9",
+    "reference": "b13f9f8849f3436a136e15e7d1448b325b44c28a",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-liabilities-livewire",
-    "source_signature": "b8b2f1559f30cc4e67878e8b6e67359030d4561c0818c69c3d9a0e6a06bb6554",
-    "source_tree": "49deb1fcce6cc122b13b79f18c2db3d30f55f9b2",
-    "version": "1.0.0"
+    "source_signature": "b89591cd8fe67c93d98cee4eeb34ff73a4e15d54f0d1d349d00262699d3da748",
+    "source_tree": "5779acada3ca0c3a6ed54fb0ea4b71cb9f35993e",
+    "version": "1.1.0"
   },
   "liberusoftware/module-accounting-payroll-payments": {
     "path": "modules/accounting-payroll-payments",
-    "reference": "85f8b4e2cca43581966188865f842f04e40e1d04",
+    "reference": "5bc294e3cb9ad1dbf5fccf59f49757eb56fb0a75",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-payments",
-    "source_signature": "2d413561cde12c0b7dfc33bfb7a315d88cb0a36ec3782503f8a52c122d581ec6",
-    "source_tree": "5998aeeb20e7e5647cc802abe4705cb25a00f847",
-    "version": "1.0.0"
+    "source_signature": "71cb56f3c9c73669634e24ee3d6d800559e1289d68754ff787211f23943f79f4",
+    "source_tree": "466c799739c838b17891a1f248e80d1d32e43e80",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payroll-payments-api": {
     "path": "modules/accounting-payroll-payments-api",
-    "reference": "cc5ac6688364e7892bbf9ebdea3c3b6b320f58e7",
+    "reference": "1201472e00955e73a0f422e560edf8776f099389",
     "repository": "https://github.com/liberusoftware/module-accounting-payroll-payments-api",
-    "source_signature": "7b6060f403c303679a9117483d2dbf405751b6f87cf6eb1fd8c013b49b80c14c",
-    "source_tree": "d5278cedc138bb824648c96971d0855ba104c463",
-    "version": "1.0.0"
+    "source_signature": "5d77ed70989e7c92d1794b07ccb47a38e3c551ec97cfeecb8a526d4f05aa11b7",
+    "source_tree": "e3d86fde6dc22d3bca68f0ec7b84ce7fd71cbcd7",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-payroll-payments-filament": {
     "path": "modules/accounting-payroll-payments-filament",
@@ -2457,19 +2457,19 @@
   },
   "liberusoftware/module-accounting-periods": {
     "path": "modules/accounting-periods",
-    "reference": "937661a849dcfd02f13181613bc90a08c75aef50",
+    "reference": "aedb7e96c7c12b4b812eda24d6bbd7b220b22b8d",
     "repository": "https://github.com/liberusoftware/module-accounting-periods",
-    "source_signature": "20d8d79d4932c0248491a4ed8bfba2083b89793267b33eaaf1e9df127668bf4a",
-    "source_tree": "7e1e4a6ab5f047c318c321788d5070873cc48f2b",
-    "version": "1.0.0"
+    "source_signature": "e24cbbfbeb84e2844bb5462859225ffccdb886cbb345ef513354a73a0d6e121a",
+    "source_tree": "2f386889f972f63b4ebb3bd3f88442dcef6ebe9d",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-periods-api": {
     "path": "modules/accounting-periods-api",
-    "reference": "a47d609ddc112b0e03eacf15147cf6b8f7e05ccc",
+    "reference": "4705eb32a01a9392f8ab44f46264779679b8949c",
     "repository": "https://github.com/liberusoftware/module-accounting-periods-api",
-    "source_signature": "6487637b3e6751bec0dcdb6bf6733fda28f20b2e9490807ac9a93e219ed80ef2",
-    "source_tree": "70906e02530c6069329b075e48d7466066ea251d",
-    "version": "1.0.0"
+    "source_signature": "e4148b553e303218bb3c395f2a833f4daf2907ad494b280a989bf1cff480367a",
+    "source_tree": "d469d4c7b6d7c07d985dfe518e55f8091596cddc",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-periods-filament": {
     "path": "modules/accounting-periods-filament",
@@ -2481,35 +2481,35 @@
   },
   "liberusoftware/module-accounting-periods-livewire": {
     "path": "modules/accounting-periods-livewire",
-    "reference": "3034f57172f29c0952e6c7a166687306b57d29a8",
+    "reference": "cf06d3cc1a6b59b9934436f8d38c242903f299f7",
     "repository": "https://github.com/liberusoftware/module-accounting-periods-livewire",
-    "source_signature": "e0b0528fa0009fa70dbe89bd57ac13bc6794384f006da3725edac7f542d8a8ef",
-    "source_tree": "a7209c099becddb61217e77016dcf96274ef8c4c",
-    "version": "1.0.0"
+    "source_signature": "131ccce5be372f97349edf1020a779f16c8d727da685302304fbcf18add4e79a",
+    "source_tree": "5ff97a7c7ffb3fb7cee2371aed8ffc3b917af466",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-plaid": {
     "path": "modules/accounting-plaid",
-    "reference": "69d59335e360f3cda09fb46fd31587fd7b94a412",
+    "reference": "4e64c6be4e0a66e961b8fdc63dd1fa98fa06bffb",
     "repository": "https://github.com/liberusoftware/module-accounting-plaid",
-    "source_signature": "0dadfe710625854ba4badde2bd25cf9d3ff0a75832c4e8bd9656b7f20fc10b93",
-    "source_tree": "fe6d50dab77294875cf790ea4b33bb4f66911291",
-    "version": "1.0.0"
+    "source_signature": "ad746ba56d7cf45353da176c2d4a63ee5b69222b4f89a8d13999451a8760acb1",
+    "source_tree": "419552487fa5eb1e388bd48a743d4132c966c242",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-policies": {
     "path": "modules/accounting-policies",
-    "reference": "561771d13078be88bf0afba299f3bb15417cdc23",
+    "reference": "dc430d57f155a712dfc303017bd22afa25f84f4e",
     "repository": "https://github.com/liberusoftware/module-accounting-policies",
-    "source_signature": "0aa3b5d4e20a681615ac94b5421ce839a277a618ad9181a59fdb629bb5d87ae1",
-    "source_tree": "a7b63462f1a87cc1e54cf1ea09862978f01d8ff1",
-    "version": "1.0.0"
+    "source_signature": "a27b75d880da68e41b0ee0484125a6c17e69f04be8e09e688c18e16b8c23e16e",
+    "source_tree": "68317ade58ad1892347199bbd18020d6df94408b",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-policies-api": {
     "path": "modules/accounting-policies-api",
-    "reference": "3de5976d065b1a7ea6ffce059af53cd2277327ca",
+    "reference": "fd42c15f934271fc3b1f4fdc1f7f67973933fa58",
     "repository": "https://github.com/liberusoftware/module-accounting-policies-api",
-    "source_signature": "08d073fb9c0abd5f41612b0a1119ba343242fc929ed67eedc476ae7e1dc40200",
-    "source_tree": "1a87d475970f432354c2eaa9fba4d7d2a266685a",
-    "version": "1.0.0"
+    "source_signature": "c5fcf2c8e18a68bb3b8303d0402ebea8221d777f79f68996e23c82e900a4a120",
+    "source_tree": "e5d3547c5bc7c27484aaa2f92f58ee050d8d53c3",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-policies-filament": {
     "path": "modules/accounting-policies-filament",
@@ -2521,27 +2521,27 @@
   },
   "liberusoftware/module-accounting-policies-livewire": {
     "path": "modules/accounting-policies-livewire",
-    "reference": "9abed6bebf31e1cc843fff2a38374fbd903c7e66",
+    "reference": "ec7bbc2ba81d25555060f36c38f7f5634b97a716",
     "repository": "https://github.com/liberusoftware/module-accounting-policies-livewire",
-    "source_signature": "d45df12f12404c9bbaff498ba4d096ef58991db31e7ac0ce7aeca811e982cab4",
-    "source_tree": "58f1a612c87fac31ab18d24bdbe244895970c100",
-    "version": "1.0.0"
+    "source_signature": "f638d9558d0c84051268a8e56412709608d0c76c2498e19a9895cc29df3e3b6c",
+    "source_tree": "7f1f46c32486a0d3c1eb59045f6ee086ff187264",
+    "version": "1.1.1"
   },
   "liberusoftware/module-accounting-product-and-service-items": {
     "path": "modules/accounting-product-and-service-items",
-    "reference": "4500e07b3c1db71bfc689b3f7d166e36e47e2ce0",
+    "reference": "1c7fb2acd9f8645f4f37e33d13854f8f89dc21dc",
     "repository": "https://github.com/liberusoftware/module-accounting-product-and-service-items",
-    "source_signature": "ac09f4b84ed3928dd34ff0319b7cab312c39e1101424bf19312215720a0ec87c",
-    "source_tree": "7f6dea0303bb94bceedccaf230f05f4682abbe0a",
-    "version": "1.0.0"
+    "source_signature": "cf69a0175b144c1c2c299daa77d9eff033c4bc275ceda87705fc442b8aad107c",
+    "source_tree": "09f6fc04d52cf79b12431e1ac313399fcf13c1e4",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-product-and-service-items-api": {
     "path": "modules/accounting-product-and-service-items-api",
-    "reference": "9798923e3ea073aed3728bd8723cbe987d68fdbe",
+    "reference": "c7478b54ebf89473459e749c0e698c27b2b84488",
     "repository": "https://github.com/liberusoftware/module-accounting-product-and-service-items-api",
-    "source_signature": "7c6755f766c2356edabac645a0ebaed980e7febf08892299312a95ecd7eaea61",
-    "source_tree": "b29ee0aef82134ca4c0487a7089f2a8e03a86802",
-    "version": "1.0.0"
+    "source_signature": "321307a8bb610ebe42ed53439749eb239101f097f1ef3f68994459cd8b67e61e",
+    "source_tree": "56bc26117247035cf86e50a087e6fec16daf1965",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-product-and-service-items-filament": {
     "path": "modules/accounting-product-and-service-items-filament",
@@ -2561,19 +2561,19 @@
   },
   "liberusoftware/module-accounting-project-billing": {
     "path": "modules/accounting-project-billing",
-    "reference": "ab209f44a9227a7152bc508eab93d246eccc6cfe",
+    "reference": "88ccdc300fc31e0d5df20bd804a66aed8c95d5f2",
     "repository": "https://github.com/liberusoftware/module-accounting-project-billing",
-    "source_signature": "5e97de7fc9a700c5139f01c5009736bff52845f90b88ab86311ebe88cea88524",
-    "source_tree": "d5e55065a42d9915b3638902a8a9f221a0fe7c90",
-    "version": "1.0.0"
+    "source_signature": "e860c107865cfec025ecd42d9dfcd70227edfe6408a4521bbc5155ced6c30e3f",
+    "source_tree": "c9d13e262e7caf1b93f18cd6f462224ff7bd8dd2",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-project-billing-api": {
     "path": "modules/accounting-project-billing-api",
-    "reference": "6618c4c6af634681454067ed7da7a30de4160cb8",
+    "reference": "2f984243836f5867034ef03debfbaad9e9c7ebab",
     "repository": "https://github.com/liberusoftware/module-accounting-project-billing-api",
-    "source_signature": "54ba69f7206809324ca03e91167ecffd2f7235bc8bb00206e12af9ffae440b20",
-    "source_tree": "b4bfb8f7f6928908ddfbd799c67668531de56b83",
-    "version": "1.0.0"
+    "source_signature": "0703085fd1ec45621aaab063a16268d868c0944d2a72f691c0557592877a943c",
+    "source_tree": "d7d14f87480c8d15ca364459f5bb915e2aeefe21",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-project-billing-filament": {
     "path": "modules/accounting-project-billing-filament",
@@ -2593,19 +2593,19 @@
   },
   "liberusoftware/module-accounting-project-costing": {
     "path": "modules/accounting-project-costing",
-    "reference": "b6d216cbd063d67a67ca442c6d06e600c71571c3",
+    "reference": "b64427060436c1ebc5d623afba9786fe30542d60",
     "repository": "https://github.com/liberusoftware/module-accounting-project-costing",
-    "source_signature": "774cffba66d41b6fd44a2a359df6bca1b1aca22f8255c1ee6b068bb1ea7bc603",
-    "source_tree": "d9515fc170fde71b34b1ba96ff0e24e45136c093",
-    "version": "1.0.0"
+    "source_signature": "dda422eb497890382122234d992f563d858ee49f83d85dfc934d79ea1090d134",
+    "source_tree": "a860cbdbe0e59cf9f66a19686531d2c5c01c97f0",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-project-costing-api": {
     "path": "modules/accounting-project-costing-api",
-    "reference": "edf5e8e18e55bba6f71d03a47cd25c4cc698d85f",
+    "reference": "ff25c29e69b56c67c72c95b2dc604514a048e25d",
     "repository": "https://github.com/liberusoftware/module-accounting-project-costing-api",
-    "source_signature": "ddd4c849c26f3f2b7b8777ab2fffb6fd941a1f6012d090d3f1e62cd7fb5b57be",
-    "source_tree": "ef43d2a6a5c366f43fcf204a03cc36d677dea37c",
-    "version": "1.0.0"
+    "source_signature": "08cc5141af2f12fe3b04ad97871f92c7801ee03a9318ebc538cf54becd8dafc5",
+    "source_tree": "7e4655d84f9b0d190f2f98f6ca92211dd1bbec61",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-project-costing-filament": {
     "path": "modules/accounting-project-costing-filament",
@@ -2625,19 +2625,19 @@
   },
   "liberusoftware/module-accounting-project-profitability": {
     "path": "modules/accounting-project-profitability",
-    "reference": "be8e1b2c6bff8729461dcba59af82e4cbc01db85",
+    "reference": "17f61e8c927f7cf69f1febd281a3652c6fbc79cf",
     "repository": "https://github.com/liberusoftware/module-accounting-project-profitability",
-    "source_signature": "31a93cbb3f1fd819c97d1265fa64f70ef07c8c3b887c471f671c4bdbfe3c44b1",
-    "source_tree": "2e533df2baf0f1e4c2eecff4021202955e51fcdd",
-    "version": "1.0.0"
+    "source_signature": "02ab70590c59b6deed8d2013b1456ecd8276f28b01cf1f0c313e0c6a4ebdbb01",
+    "source_tree": "0a14509a5b1f0f0eba0b12a342ad70ce5d8ad31f",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-project-profitability-api": {
     "path": "modules/accounting-project-profitability-api",
-    "reference": "2aaecfa2041f1410b9a1718a34eec3f0412f27dd",
+    "reference": "68e3dccdd76347ce44afb150803ce155350ccf6b",
     "repository": "https://github.com/liberusoftware/module-accounting-project-profitability-api",
-    "source_signature": "85891ad4c2e1f5262a5c677b4d191693e07c26e56065b2c6dba1b359ca425503",
-    "source_tree": "ad1f4813c3a2762e355fb94ef75c097a6be3a032",
-    "version": "1.0.0"
+    "source_signature": "068fd971ae8171fe48936c50effa70e82078ade5be2f874cf5be839eee84236a",
+    "source_tree": "b8fe3703618cd73d1bee9872878dfc47e4cf5ad4",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-project-profitability-filament": {
     "path": "modules/accounting-project-profitability-filament",
@@ -2657,19 +2657,19 @@
   },
   "liberusoftware/module-accounting-projects-and-jobs": {
     "path": "modules/accounting-projects-and-jobs",
-    "reference": "c478e290169d6d8f0098c09b7db5ceadba6c0fd1",
+    "reference": "c736b7197a6d28577e686b45fdbc04d317a17890",
     "repository": "https://github.com/liberusoftware/module-accounting-projects-and-jobs",
-    "source_signature": "224d6ed0d630c7dfb61b1abc87d7424b532d7fba5c2e760b08bff37b9e85f8d2",
-    "source_tree": "bb73de3dbcddaa7189afd1e0a4fe7d775d288cfb",
-    "version": "1.0.0"
+    "source_signature": "f58cd5982709c71b3fb9bef34f5c000b3f0e79f3466b73c40ec2a6c413307d19",
+    "source_tree": "a488d427c1ad5c373884ea78bc1a00ddcf104b32",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-projects-and-jobs-api": {
     "path": "modules/accounting-projects-and-jobs-api",
-    "reference": "3fdd60a6890b823d3edba2bb90d5f568c83b7843",
+    "reference": "386a43b75a4b806be52ddcedc238b83e1e4f3511",
     "repository": "https://github.com/liberusoftware/module-accounting-projects-and-jobs-api",
-    "source_signature": "847dadfe8ad005afd07b634e8e6fc5c5f7b35ae91a6ade5b16bb732aa790b187",
-    "source_tree": "5d822156cef0a8b6e0867e2f514760a6c22d0141",
-    "version": "1.0.0"
+    "source_signature": "cdb210348a33526d8d06218d1865527812aad9500dec2061529e924fc006895e",
+    "source_tree": "adeec6ee65869814bebddadfa43dffebbeebf343",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-projects-and-jobs-filament": {
     "path": "modules/accounting-projects-and-jobs-filament",
@@ -2689,19 +2689,19 @@
   },
   "liberusoftware/module-accounting-purchase-orders": {
     "path": "modules/accounting-purchase-orders",
-    "reference": "a3224a5ac506c1a7d88d96a6834cb34ef6bed4e1",
+    "reference": "0a1904532f1e06134e0c16295ed72ac1940d7377",
     "repository": "https://github.com/liberusoftware/module-accounting-purchase-orders",
-    "source_signature": "8b8ce913f170fb5fd3d18eb09a525c08cd41ea4714fed4078edaeb28e82119e2",
-    "source_tree": "09877b1a8544f98eb978e70fe5be7769145d73d3",
-    "version": "1.0.0"
+    "source_signature": "60aaacd9407e1c71c73ce6cf900a13a5aa41f7bc95614a08391b0068b8f185a6",
+    "source_tree": "9a1def2ee93f7630a7b10b986babda6f69c5b4f0",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-purchase-orders-api": {
     "path": "modules/accounting-purchase-orders-api",
-    "reference": "95027b73fb157e3d8258329e3acd4725f09fe25b",
+    "reference": "8a37546aa0a3cb34105f2a9e070dc751ef6b55a2",
     "repository": "https://github.com/liberusoftware/module-accounting-purchase-orders-api",
-    "source_signature": "485794f4859d8933d34bad543ddb9db9af86396ab5e38233b49f2fd47bbaaacc",
-    "source_tree": "fa5283fdab227a03b95ffec0e3cc9c2c27da3baf",
-    "version": "1.0.0"
+    "source_signature": "6b8c2878c679a4d4e1d77f7e605b0bac94302e6093b76ea1e434eb8197725dd3",
+    "source_tree": "9d7cbdfb61fea0736f958fb6d8936bec94e82764",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-purchase-orders-filament": {
     "path": "modules/accounting-purchase-orders-filament",
@@ -2721,19 +2721,19 @@
   },
   "liberusoftware/module-accounting-purchase-requisitions": {
     "path": "modules/accounting-purchase-requisitions",
-    "reference": "f73485c5f183297bf7ceb4a4e5c507c150279a87",
+    "reference": "d0529f2c0cd959acfedb188ffc74d93bd244ed51",
     "repository": "https://github.com/liberusoftware/module-accounting-purchase-requisitions",
-    "source_signature": "3bf678118f652a437b7e8d93563b152b1aad4a00f27f14b8d05fb4c56e37eb73",
-    "source_tree": "ddd31295b10539335b24848081edbe56a1c750ba",
-    "version": "1.0.0"
+    "source_signature": "369f78f01ee54c39cbd813ce3cf8716d63b9f5212e981bb458f392107f04915d",
+    "source_tree": "c73bfbb695854cc5350383dd2ba3a838c31be2d0",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-purchase-requisitions-api": {
     "path": "modules/accounting-purchase-requisitions-api",
-    "reference": "3d2cb3dc676cf8aad60dc291ecef39c4cc659874",
+    "reference": "fa53816bb78c6d5b4c5ad61df692106bdda72b4f",
     "repository": "https://github.com/liberusoftware/module-accounting-purchase-requisitions-api",
-    "source_signature": "c032473ab015fcd01ce67eee51717fd11e633e5574e3f7d198e3d1e22e5b734c",
-    "source_tree": "dc1e31fd8e8041a4e350b6aa0de250705bbedfea",
-    "version": "1.0.0"
+    "source_signature": "28c57c8f322cd286251e0d11eaabb145f01276a01c2b5f627596384f7bfc79a2",
+    "source_tree": "1f99bdcab7b6eb76c39e78d77a382c2ae7eaecc2",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-purchase-requisitions-filament": {
     "path": "modules/accounting-purchase-requisitions-filament",
@@ -2753,19 +2753,19 @@
   },
   "liberusoftware/module-accounting-quickbooks-online-migration": {
     "path": "modules/accounting-quickbooks-online-migration",
-    "reference": "8fb53e9a268c076de24e10c2692b369b026c3a54",
+    "reference": "44e3d8932f9203a2a34121f9be7e8b0c958d0154",
     "repository": "https://github.com/liberusoftware/module-accounting-quickbooks-online-migration",
-    "source_signature": "47d48625c6d35780e5c58f5ebdfef3a2cc80b5847d1cdbfd724c9e43f1e14e72",
-    "source_tree": "553b725b50e6423b9af0b454e80455e99dce0591",
-    "version": "1.0.0"
+    "source_signature": "330d3cea34932f8e93a8e4ea41a905049edfff06c6bbea3865f50dd110cbbac1",
+    "source_tree": "28ab9525eff68ae164ee0a48204ae05b86298d2b",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-quickbooks-online-migration-api": {
     "path": "modules/accounting-quickbooks-online-migration-api",
-    "reference": "f44a8bc87ca1ae7cc5a015a259bdbefa23ba0e98",
+    "reference": "e95c76cea1ed02f6e17a7dd5c1443654504d503f",
     "repository": "https://github.com/liberusoftware/module-accounting-quickbooks-online-migration-api",
-    "source_signature": "78192537f1a397cfacdfab5481f4316ec91aa997679804d60a41af99cca528a1",
-    "source_tree": "0a21405f94c4ada963c97d75aca3c30fbc9ed491",
-    "version": "1.0.0"
+    "source_signature": "4c4e55606259a974c44a969fd585bbb4356289c4c0e84855a7f8647fde5c1b3d",
+    "source_tree": "d3e1e47b5ed75964abe065ba480fcb34ae3d84e5",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-quickbooks-online-migration-filament": {
     "path": "modules/accounting-quickbooks-online-migration-filament",
@@ -2785,19 +2785,19 @@
   },
   "liberusoftware/module-accounting-receipt-management": {
     "path": "modules/accounting-receipt-management",
-    "reference": "008cb0c1fe2911eeec20c9adae60ccad0ae7f32c",
+    "reference": "e8a3769fd3a8a80b5a8f12bfb9b0922e2e39cf06",
     "repository": "https://github.com/liberusoftware/module-accounting-receipt-management",
-    "source_signature": "e4b74e1e13c7793fee9efdd5ffbfd6694b48ae39186be5da3ba2b8d027c5dbeb",
-    "source_tree": "5c9a05098761d5509c03ce8aeb7fe713bb97a7b7",
-    "version": "1.0.0"
+    "source_signature": "c5eb16f2de58fd56bb0335fd149de9a20bafb869ad3d2d425f88fef0862353ba",
+    "source_tree": "5feda16231ba6f59e33ad0a6d03edce4b922f0ae",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-receipt-management-api": {
     "path": "modules/accounting-receipt-management-api",
-    "reference": "4f76f927710508627df240bc16c55bea99b650df",
+    "reference": "08b1c853f1cf6df6b3641d457b634dd716efff18",
     "repository": "https://github.com/liberusoftware/module-accounting-receipt-management-api",
-    "source_signature": "ddbebeedde825931869867f8335c48410e2eb8d378123e8c365f55029c56bbe6",
-    "source_tree": "d5648af2d8fa07c5044cd1164bdaed76ab87a52d",
-    "version": "1.0.0"
+    "source_signature": "afbafcc6cdd9444023c08d86d8cf96faab8f929f8b39fc3502a1ca45765e5484",
+    "source_tree": "7254bba50b3dc95456f93b49c548f235cdbe443b",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-receipt-management-filament": {
     "path": "modules/accounting-receipt-management-filament",
@@ -2817,19 +2817,19 @@
   },
   "liberusoftware/module-accounting-recurring-transactions": {
     "path": "modules/accounting-recurring-transactions",
-    "reference": "d914d4d9619ee5ba2d8892c1fd660ab6cd95f2f6",
+    "reference": "c58d7cbbe99b269131386e60d0451b3b707582dc",
     "repository": "https://github.com/liberusoftware/module-accounting-recurring-transactions",
-    "source_signature": "1a7f705c20b8eee69f9c1877eedd5d4daf599bd1a0de08731a850d943fa7567a",
-    "source_tree": "c3f35e27caab8dcb582eaec5551c6e9356c16f55",
-    "version": "1.0.0"
+    "source_signature": "e4be15a323158f6485bc3460d4ccfe4e0b192de2baec3872abd847ea4d824d1c",
+    "source_tree": "98360acf23c674a9ee07fbddcfe2cb0d0fccbb7e",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-recurring-transactions-api": {
     "path": "modules/accounting-recurring-transactions-api",
-    "reference": "80af8254030744fea06682b15d394d078b382650",
+    "reference": "33359d2b331942ae9cc5c5ca39b80b6342d4fa87",
     "repository": "https://github.com/liberusoftware/module-accounting-recurring-transactions-api",
-    "source_signature": "3fbcebea89f7e85c2a27cb9dd11490188aeb395c93cbac95c0bd4e731aaee75a",
-    "source_tree": "367b81c48c45e381c1470d33d83e2d664b2e2d96",
-    "version": "1.0.0"
+    "source_signature": "5ffda987c0be38699acd448f0c129e9d69e299d0bcb193ce5e7d3aa1013b18f0",
+    "source_tree": "728aec92b7a61a543c49d1798561265166035971",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-recurring-transactions-filament": {
     "path": "modules/accounting-recurring-transactions-filament",
@@ -2849,19 +2849,19 @@
   },
   "liberusoftware/module-accounting-regional-packs": {
     "path": "modules/accounting-regional-packs",
-    "reference": "852763b825a3387723d85e8790feb2d6302395ca",
+    "reference": "a7fdbec9157a6a91daffae44f9806b22691aae93",
     "repository": "https://github.com/liberusoftware/module-accounting-regional-packs",
-    "source_signature": "4a5807885d3fac764fc2697a4d401093c3dce0fc50d50e50499a065f1ff0ba29",
-    "source_tree": "9c5413a5da7b10adac4877ba1e078fb5abdcd8d5",
-    "version": "1.0.0"
+    "source_signature": "fcb2fe1cfdcf677c1a1e4bdd08ab624de77052e7b81ab592d39896a3325e7de3",
+    "source_tree": "e8a83f4f1d35e78893786a658f05367b3b90c7f2",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-regional-packs-api": {
     "path": "modules/accounting-regional-packs-api",
-    "reference": "fe605377e15db79fef87347b12e6a396f031fb89",
+    "reference": "2c2b896bc19f1f9683feceff0938da8e74959f6b",
     "repository": "https://github.com/liberusoftware/module-accounting-regional-packs-api",
-    "source_signature": "be2766e27a0488f04a1d96c8c02348ccd917c5366490d6a8ae818ea6cd268d93",
-    "source_tree": "003dc2d85d975582d358b869c2788073ce9d239c",
-    "version": "1.0.0"
+    "source_signature": "ed2738a5c7bc97cc2a7e285bbc1ad6973b85de0c11e3a4ec5129de87e0de6824",
+    "source_tree": "aee270460363df01f2b02f95b07f2c47473ba865",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-regional-packs-filament": {
     "path": "modules/accounting-regional-packs-filament",
@@ -2881,19 +2881,19 @@
   },
   "liberusoftware/module-accounting-reimbursements": {
     "path": "modules/accounting-reimbursements",
-    "reference": "b3c38435eedc6074de7d3dafb81c0abed645677e",
+    "reference": "8a4645c2c8c39b48ccdcdee5ff934c8a09d8d1d4",
     "repository": "https://github.com/liberusoftware/module-accounting-reimbursements",
-    "source_signature": "dbd5983b66aa85ce4709d5cdb297fa189c829edd1900420827cf6a8206192bd0",
-    "source_tree": "6b81420d13963c4f292774d2ca77390d3e879831",
-    "version": "1.0.0"
+    "source_signature": "5ad789ae585844a05cce2cd46ae443cb2e3fdd0899062c666f99a65547be3247",
+    "source_tree": "70c34f1b62241115296e9a409a8f4f079bb76052",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-reimbursements-api": {
     "path": "modules/accounting-reimbursements-api",
-    "reference": "e9af442ad7f8982202551b830c65a6b4614dffd8",
+    "reference": "68cf9bafe2b2fca11884c4cf3b52c95e2970ef9b",
     "repository": "https://github.com/liberusoftware/module-accounting-reimbursements-api",
-    "source_signature": "77f5031ba2342042ca8b369538184a9a91d8ed0dd5c2601e201cdde615e3e84a",
-    "source_tree": "ede7feb0e8d9e815010d0559b806ba3182cb6a47",
-    "version": "1.0.0"
+    "source_signature": "6631134077aea630d6cf276e78f63c296606c0ed74c861e721ab8b085e6f9fd7",
+    "source_tree": "1bc51ab39e2a9db0d5c0897a3da98dcb6aa02b45",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-reimbursements-filament": {
     "path": "modules/accounting-reimbursements-filament",
@@ -2913,19 +2913,19 @@
   },
   "liberusoftware/module-accounting-revenue-recognition": {
     "path": "modules/accounting-revenue-recognition",
-    "reference": "fafd78360ea2b3342c2ded3d8d31d08ceb45a538",
+    "reference": "bfebfa89e2e26f75bed74e9945d7bd17bfb79116",
     "repository": "https://github.com/liberusoftware/module-accounting-revenue-recognition",
-    "source_signature": "0d048e6233eacce88517f2144053c3f490106d7e7694bd79e3a626df6f5e1849",
-    "source_tree": "e5329b71666866e9c4c8ac04ea3ff273e9a730a0",
-    "version": "1.0.0"
+    "source_signature": "64b91bf9e1e64aa1f2f63873dc89c6e898b09224b4868d0ac01c9cdc52d9224f",
+    "source_tree": "639ea157a17913f14c151eb912fd67375c906961",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-revenue-recognition-api": {
     "path": "modules/accounting-revenue-recognition-api",
-    "reference": "25fb19a312a6122b374c9bd7a6929f26cd280530",
+    "reference": "ff2bf4099c036b63bc31a18958f46a9f78f015de",
     "repository": "https://github.com/liberusoftware/module-accounting-revenue-recognition-api",
-    "source_signature": "579dc64bc32ea10adda362b9b9577d6625b338792fad57e5abe6fa55a5217ba1",
-    "source_tree": "7ff2e9445997149777c216e35e6b966c23e9dbe8",
-    "version": "1.0.0"
+    "source_signature": "137a793f43603729f9fa06188eda52d132742181c0a546695ed9461fc76f61d2",
+    "source_tree": "ba0f06bfe10bab06a52067f3d9a1ac92dd17b043",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-revenue-recognition-filament": {
     "path": "modules/accounting-revenue-recognition-filament",
@@ -2945,19 +2945,19 @@
   },
   "liberusoftware/module-accounting-review": {
     "path": "modules/accounting-review",
-    "reference": "3cdcddab18f0eb74f3e6ed31b598b8748427814e",
+    "reference": "85dced5627335961944ca3b9d5087debd50b27ae",
     "repository": "https://github.com/liberusoftware/module-accounting-review",
-    "source_signature": "ab62b442f4db8c4d4c0508b6a5ff86216a4a0941ac1d76da66b799ddfd9c4e5a",
-    "source_tree": "930e9a6189ae39b03143bc42172da7b5287f082c",
-    "version": "1.0.0"
+    "source_signature": "fbf162226e9b23026a610d5d2d45622263b1e10fbe22e10122e82dd22c3f5ff2",
+    "source_tree": "aeef1a03a358d5d541655050e200f665720843e1",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-review-api": {
     "path": "modules/accounting-review-api",
-    "reference": "a640ab5f1a8806d01101601ab6226e9f7fab3ca2",
+    "reference": "ea08565c51d90bb308e1ba1ef239e6cf203dfab0",
     "repository": "https://github.com/liberusoftware/module-accounting-review-api",
-    "source_signature": "f023fa465dadc1873da30b1508aa835527dd44905e7d34fae8b3e43ce067bbb4",
-    "source_tree": "040f459087a5b7b873d99a8854c1d6cfa1451b45",
-    "version": "1.0.0"
+    "source_signature": "62c2c3d1a46b7083c7b7126154a6a31da8cc7beb6f0308fd9c9aebbb282c932d",
+    "source_tree": "e3478dac94353d8d4abb5edd7eccf3bd18316c2d",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-review-filament": {
     "path": "modules/accounting-review-filament",
@@ -2977,27 +2977,27 @@
   },
   "liberusoftware/module-accounting-revolut": {
     "path": "modules/accounting-revolut",
-    "reference": "d831c1ee3f04cf5537d6399fca513ddf62d6f7d0",
+    "reference": "119ff8c8a2440d1925e35ebad4cfbd3d9e31d305",
     "repository": "https://github.com/liberusoftware/module-accounting-revolut",
-    "source_signature": "914c438a90a5f51adceb115aa658295dfa70bdddaa63273c0e095f08e537213d",
-    "source_tree": "83087bca89db4da08547d9219c3e404435471de7",
-    "version": "1.0.1"
+    "source_signature": "2b8d0629815ca692f051284447e8906a2e9c1365bd416ef117e8690274421ec1",
+    "source_tree": "5d696df11ce39dd596175e76e527790e245f8da6",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-sage-accounting-migration": {
     "path": "modules/accounting-sage-accounting-migration",
-    "reference": "4c4c81eb0f649c9376f33b2ffe0cfa06a1c12e69",
+    "reference": "4d337c714f74c3c571fb744ad6402deb7afe6a95",
     "repository": "https://github.com/liberusoftware/module-accounting-sage-accounting-migration",
-    "source_signature": "b69338b07315807b4fd77b388fca225ae648607780760f1566775e1dcc53abaf",
-    "source_tree": "ad7370c287490f6d54658fb310f4e3fa7c2b3d36",
-    "version": "1.0.0"
+    "source_signature": "1f135e02fd46711815f5fa8223a451d07e4a17b8ae54b5a4058983fa12737ef4",
+    "source_tree": "600ac9454edaec3d8edf613604cb63eb18831304",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-sage-accounting-migration-api": {
     "path": "modules/accounting-sage-accounting-migration-api",
-    "reference": "789bac387d033184beede654b4bdda3fc2385bfc",
+    "reference": "8b6841481477689ea8691cc964f6ffaf5228463d",
     "repository": "https://github.com/liberusoftware/module-accounting-sage-accounting-migration-api",
-    "source_signature": "598f62dd33b0867113ef9762540fa33446ec56af15267a892d4e7c55dc76fd7d",
-    "source_tree": "b931835526a59434db99c56dbae6751d2a7c10b4",
-    "version": "1.0.0"
+    "source_signature": "cc8f9a7e184958e6f25d84120283a3d45a35add68febb24d96dd8a2dc72a19ef",
+    "source_tree": "50f9d16bb352b230f65451d5f029f4aaa1bd68ce",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-sage-accounting-migration-filament": {
     "path": "modules/accounting-sage-accounting-migration-filament",
@@ -3017,19 +3017,19 @@
   },
   "liberusoftware/module-accounting-sales-invoicing": {
     "path": "modules/accounting-sales-invoicing",
-    "reference": "91952ac83dcfc44c1a5a967b33c91f9810daa973",
+    "reference": "593b1ede963a2dcf21110140399cbe5ed95ba7d6",
     "repository": "https://github.com/liberusoftware/module-accounting-sales-invoicing",
-    "source_signature": "05edf3f51108a5c474cfd2a594bedcf3298f5505fd07de1b026eb1237b214151",
-    "source_tree": "79631e4002ae512d3aeeaffaafa60001b72e0bfb",
-    "version": "1.0.0"
+    "source_signature": "5e1c8aed5076405f49aa7901edafaa7e90467d554d3b9d0e06c73fc9253c28a7",
+    "source_tree": "569bfada83ebc628a242db5b119fc14c896f5b76",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-sales-invoicing-api": {
     "path": "modules/accounting-sales-invoicing-api",
-    "reference": "3fc39ffc2bc58c19f56449e1cd1ed365e379d12f",
+    "reference": "1574752816622eac978be1b603e336f2d8b4c465",
     "repository": "https://github.com/liberusoftware/module-accounting-sales-invoicing-api",
-    "source_signature": "b6fc219277cfea98be20c30ef2771541578e99428ce0201a9216dc7b42954f28",
-    "source_tree": "515a1ac56d193d29225bcd737a8b14f11263201b",
-    "version": "1.0.0"
+    "source_signature": "4554952e09072e980f2861f066d5ceca8e14e4c44a22e1402d65b4be9734e3e9",
+    "source_tree": "c689a291131ae4d626561446878e1a04de6894cd",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-sales-invoicing-filament": {
     "path": "modules/accounting-sales-invoicing-filament",
@@ -3049,19 +3049,19 @@
   },
   "liberusoftware/module-accounting-sales-orders": {
     "path": "modules/accounting-sales-orders",
-    "reference": "b233b35e116f7671f0563b5918c7ed4a61c50551",
+    "reference": "026673f9033a5303a47083d9ea3aeb966e3b3e3a",
     "repository": "https://github.com/liberusoftware/module-accounting-sales-orders",
-    "source_signature": "43aa62b5a8f582fcdcae98c3595ef156803b92f881533e649e326874ca6aae3d",
-    "source_tree": "a9b3da52d295dc391a5d65147ac68406aff5fd60",
-    "version": "1.0.0"
+    "source_signature": "f4c0b8d949a8b306d0241c3c21361044725a9094aa203a8aca0a77ec39af84e7",
+    "source_tree": "436f7027c86e9b191cec42f92905c4aa570c52af",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-sales-orders-api": {
     "path": "modules/accounting-sales-orders-api",
-    "reference": "9d9928beb68d0683fe7a39ccd80612f2d040a3cb",
+    "reference": "a083ed0dd3aeef116d966f4210cef4b23a336033",
     "repository": "https://github.com/liberusoftware/module-accounting-sales-orders-api",
-    "source_signature": "268d2e890d0091dd2a8c9cc4a3c93eaa6b541bdd6a607c7d0f502d6f64d70ced",
-    "source_tree": "f9130f42872ce384c7dd3def36cfda2877b8b751",
-    "version": "1.0.0"
+    "source_signature": "2bd387ea8a910aaa58c6562d1db5bedb71885ca28fe852daab8a26a921a20224",
+    "source_tree": "249aed0dc6f8e7809cb7fc0e2072290c13c089aa",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-sales-orders-filament": {
     "path": "modules/accounting-sales-orders-filament",
@@ -3081,19 +3081,19 @@
   },
   "liberusoftware/module-accounting-sales-tax-and-gst": {
     "path": "modules/accounting-sales-tax-and-gst",
-    "reference": "5a5dcae9d25b7785f04368dc258c7e242f1d4e0a",
+    "reference": "7004e3690fa6a99d691851c32f8dc5bfc00d116f",
     "repository": "https://github.com/liberusoftware/module-accounting-sales-tax-and-gst",
-    "source_signature": "ce1727e9ad89bd2aabe58aaeb3a933f8ace9429990b8d541c90d9ca37f00dcff",
-    "source_tree": "a7355183e01d4a8f8c57843392078c3c02a389a0",
-    "version": "1.0.0"
+    "source_signature": "cd2cadc52eecc14e6fa2b74914b7d572cd671917d1239dc46e1e1ea3da078fbc",
+    "source_tree": "d4a33ecc69e05921905b28f7ce13195cf70c3ad5",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-sales-tax-and-gst-api": {
     "path": "modules/accounting-sales-tax-and-gst-api",
-    "reference": "ac4d223468aa43f468a0b2fef2cee07e57de993e",
+    "reference": "3c79f299f372582cb3a944f9f5154d4fe248e3ff",
     "repository": "https://github.com/liberusoftware/module-accounting-sales-tax-and-gst-api",
-    "source_signature": "1ac1c53c39d1a7e0ff4d59ed3ea184d8db0a21b45f200e308e3ff1bc0c4b6698",
-    "source_tree": "7b8947cede143cd63ac298149666765ea665fa93",
-    "version": "1.0.0"
+    "source_signature": "7f1b958c5c486af393342d601b61f128aad8e79499e51b7dce0a6452668ac361",
+    "source_tree": "e829a9884e9a80840897d10855017333edfc8080",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-sales-tax-and-gst-filament": {
     "path": "modules/accounting-sales-tax-and-gst-filament",
@@ -3113,19 +3113,19 @@
   },
   "liberusoftware/module-accounting-spreadsheet-migration": {
     "path": "modules/accounting-spreadsheet-migration",
-    "reference": "037f754da91a33a1a65d4be4013c75083edf62c0",
+    "reference": "9b395f1f9dacdac356b3c2ce072421404e248709",
     "repository": "https://github.com/liberusoftware/module-accounting-spreadsheet-migration",
-    "source_signature": "4c0a92f92d1fe2ac8bfeb3eb43830ce3d32d5864717585facd281f6800350611",
-    "source_tree": "874d3e489b00eda278922b45d8ac5c1ae56d414b",
-    "version": "1.0.0"
+    "source_signature": "fc2f30bed35536b970feedf59cc1f5e567738c9a8117ec4e7e49303412db6df5",
+    "source_tree": "04bb61365c7e307aa93788f77ceb6352a13b2b1e",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-spreadsheet-migration-api": {
     "path": "modules/accounting-spreadsheet-migration-api",
-    "reference": "ef8447278f20f42bd5dc35746202a9061723ce3a",
+    "reference": "6382faa095e3062d0d7c0e163671264618287159",
     "repository": "https://github.com/liberusoftware/module-accounting-spreadsheet-migration-api",
-    "source_signature": "e2daaae8362c7f91e8086b6d362ca98517415324d9b8f6a03bf9663ce0232a22",
-    "source_tree": "4f63fed4cad358d7aeff7c64ae55adf227d57a87",
-    "version": "1.0.0"
+    "source_signature": "44d04ebbf00af02c2cab7eb1e98b9dd2ac9ec4106a891d6e90fe8fd9feab9ea2",
+    "source_tree": "e32417fdc5af11f16befee14cee84f94390bdc5f",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-spreadsheet-migration-filament": {
     "path": "modules/accounting-spreadsheet-migration-filament",
@@ -3145,19 +3145,19 @@
   },
   "liberusoftware/module-accounting-supplier-bills": {
     "path": "modules/accounting-supplier-bills",
-    "reference": "33b02e9eb38c8df1bb214517b133da8c31a603aa",
+    "reference": "de8c2055c0582840e063cba49a0e3ddc714dcd76",
     "repository": "https://github.com/liberusoftware/module-accounting-supplier-bills",
-    "source_signature": "92e7d3716f07927f4ef36ea8fd7e43a537e58d27e8122d992b146d2766a1fcf2",
-    "source_tree": "1bace81fc7b07f2ebab9b5696cf3b424dc320ca7",
-    "version": "1.0.0"
+    "source_signature": "198edbbb01344d1acd8d972651790aee89acedf79387d8a82a27e3f724bd0820",
+    "source_tree": "52c92d054f25947eed3dea6fd0d5306251ab910e",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-supplier-bills-api": {
     "path": "modules/accounting-supplier-bills-api",
-    "reference": "579559d85955852087c0ecb6a07ec46733306edf",
+    "reference": "13603bf27c815708de300c915ed3b4fe1a9cf7b1",
     "repository": "https://github.com/liberusoftware/module-accounting-supplier-bills-api",
-    "source_signature": "6dbcdd822dd3dbff797577d0411074522c487c6d2f46571080868cf5be41ea56",
-    "source_tree": "a007909c72fe6b7a4c445b1c8e2b275cc7351d73",
-    "version": "1.0.0"
+    "source_signature": "7fa318d6c203b441f080ac0290a0b281f8bff4d5a6199d0cbd9fe2fbee6eba5a",
+    "source_tree": "b991f8c837bb8b9dcbaeced1262160090cd84416",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-supplier-bills-filament": {
     "path": "modules/accounting-supplier-bills-filament",
@@ -3177,19 +3177,19 @@
   },
   "liberusoftware/module-accounting-supplier-portal": {
     "path": "modules/accounting-supplier-portal",
-    "reference": "7d02fd72e531da172c902c75d35cb754f94b441f",
+    "reference": "1693ac5c721921153eb8ee1cbac85c26312f24a7",
     "repository": "https://github.com/liberusoftware/module-accounting-supplier-portal",
-    "source_signature": "0d1a98e8a3f992358a7c1e33e5f8520a780a2f4ecc5877edf4f92b99e24380d4",
-    "source_tree": "499648bfc8c20a25671e709e12a5fe1048447b84",
-    "version": "1.0.0"
+    "source_signature": "b651cf73d53972a0137bc11f57052d9df239f810ecde11d4b51dd0a01a43764f",
+    "source_tree": "01d675a0856cc1973fd380bc8d2ae8506133caec",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-supplier-portal-api": {
     "path": "modules/accounting-supplier-portal-api",
-    "reference": "91b3a77b4295f7ab435e31f9a6bba157a7cd0d32",
+    "reference": "03633de376345ff260f111ec162ea8df1604f2c6",
     "repository": "https://github.com/liberusoftware/module-accounting-supplier-portal-api",
-    "source_signature": "7e6c48ad4fa215bcc04d210e73d92947d658365f25aff677484f831798ba5782",
-    "source_tree": "8c8acf8cc136414e85bc041e57de326aa020aa24",
-    "version": "1.0.0"
+    "source_signature": "8eb17cf1303f0b91dbdac04123413adbbcee9de5a56319f3ae1de0153e1696fd",
+    "source_tree": "d31330faf19229136d1393da2eca4f52e7fdcaa2",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-supplier-portal-filament": {
     "path": "modules/accounting-supplier-portal-filament",
@@ -3209,19 +3209,19 @@
   },
   "liberusoftware/module-accounting-tax-core": {
     "path": "modules/accounting-tax-core",
-    "reference": "0dc34f2802c9925e4c98dfc421898d4ebb29a0d7",
+    "reference": "7520e0f16c17818d27613a027749a13d28b3e4c4",
     "repository": "https://github.com/liberusoftware/module-accounting-tax-core",
-    "source_signature": "97c17f1e235753fdc54f13a182fffa507098322cbed60e605d4873c4624b029d",
-    "source_tree": "24431adaa1afee2566c5b8f326a65012da4d8e6d",
-    "version": "1.0.0"
+    "source_signature": "72ffc11c9ac4ae7f6f1d2c5bfdb38f182c6f1a4d90d0851a7b57077e515de621",
+    "source_tree": "b41ce3294cbb74b4d964e20fb110f389a1ac696b",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-tax-core-api": {
     "path": "modules/accounting-tax-core-api",
-    "reference": "b92e9d8f2ce9766e61bf741e8074d3fd560720f6",
+    "reference": "29cea5025fa14082279d3a5a6bf8f1b213746815",
     "repository": "https://github.com/liberusoftware/module-accounting-tax-core-api",
-    "source_signature": "b17dc9971824fe1108a46f288e443408ab2e0c93ae6f344189f500f03b641b5b",
-    "source_tree": "b0a904d88ed4ff592f2ceea9ecb0d334f36c7bda",
-    "version": "1.0.0"
+    "source_signature": "d807df04e4a61e8e9de39f5fb42ae0befb8d3b1cfe1be4b59184fddea4346136",
+    "source_tree": "24c9177eb9c01dbc725d05a735793cc960713780",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-tax-core-filament": {
     "path": "modules/accounting-tax-core-filament",
@@ -3241,19 +3241,19 @@
   },
   "liberusoftware/module-accounting-tax-returns": {
     "path": "modules/accounting-tax-returns",
-    "reference": "1871bc204884e4a9b038001f7a5c59bf5920a1c1",
+    "reference": "ad66c3c7d84961de8cdc462a0dd071b30bf6f224",
     "repository": "https://github.com/liberusoftware/module-accounting-tax-returns",
-    "source_signature": "2be93aeb7f62f0c36e76d4c7406dcc30eec3f2cbf4d2b372d27ba527e082017a",
-    "source_tree": "a31140b6fb9998f58a2110a5aab45288595fb84b",
-    "version": "1.0.0"
+    "source_signature": "2e8b30c0aa7afe58cbe4f5b289ebf88222c94dd13874de1ef38c1bb5bbd2065d",
+    "source_tree": "6622a67aae788b6725dec09eab65dd588884c7cb",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-tax-returns-api": {
     "path": "modules/accounting-tax-returns-api",
-    "reference": "3d48b452c4da17ac4102e5790d507db448f8ceeb",
+    "reference": "2b64e73996ed01fe2ec88b03e55d1f0b5cbc72e6",
     "repository": "https://github.com/liberusoftware/module-accounting-tax-returns-api",
-    "source_signature": "00b64c0d8de5c498ad3cf4fdb8187f2051fddceeb3935d84c49285c81bd6ecf7",
-    "source_tree": "785229abc4d9b84ddad72914cb82c7527f83eef0",
-    "version": "1.0.0"
+    "source_signature": "ac6fcb7b30bd471df1c70e8af811a7dd0de67b339b039f8002b33ca407c6c792",
+    "source_tree": "2d698988c79325aa47ac34d17de5fe591b3f830a",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-tax-returns-filament": {
     "path": "modules/accounting-tax-returns-filament",
@@ -3273,19 +3273,19 @@
   },
   "liberusoftware/module-accounting-three-way-matching": {
     "path": "modules/accounting-three-way-matching",
-    "reference": "13468c714bad8de816cb371161b999a1acfdbb38",
+    "reference": "a26f8ddf6ae97e9b5a79f132595a094b139c99a9",
     "repository": "https://github.com/liberusoftware/module-accounting-three-way-matching",
-    "source_signature": "68e12eab77bc45c6504227960ac4823050620b3f9933a2c70de3e679575b83fe",
-    "source_tree": "5438acd8f550875c5cec2f48b8e1ce888361bcac",
-    "version": "1.0.0"
+    "source_signature": "adb10b0195010fa6d74386ee4d347b6c1d1100cf48bd7dd55d079d37d5cd76b4",
+    "source_tree": "13442c9c0f2282009c8896ecc2f801eb7734c4c6",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-three-way-matching-api": {
     "path": "modules/accounting-three-way-matching-api",
-    "reference": "535d5216604a209e6637009b8e8a31299babb1b1",
+    "reference": "c38056bf9f0fe3aebdcac31e670d27b543754d44",
     "repository": "https://github.com/liberusoftware/module-accounting-three-way-matching-api",
-    "source_signature": "fc6088b0af4fd91b0368b5471fc80191aac799c779ba424629314e84215b58fd",
-    "source_tree": "845fd987067b45da3227698be0d5fae129ccdd91",
-    "version": "1.0.0"
+    "source_signature": "76463e674f627b372426978594a2bec897e3a6a968260f176e4da1f5985655ab",
+    "source_tree": "380634671fec899161ed4f618ff7f2c63c34b87a",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-three-way-matching-filament": {
     "path": "modules/accounting-three-way-matching-filament",
@@ -3305,19 +3305,19 @@
   },
   "liberusoftware/module-accounting-time-tracking": {
     "path": "modules/accounting-time-tracking",
-    "reference": "04859d573c3005c517694b1b7416faf757e692ac",
+    "reference": "ae951c60ed22a5b4d8b669969fcd708c61208af7",
     "repository": "https://github.com/liberusoftware/module-accounting-time-tracking",
-    "source_signature": "6a2b82b60923ba14941731407b08bc445c2427a5e6e82acdb1faf8aad711fc41",
-    "source_tree": "8b51280e5a51fcab538db3cdcdbb9f9e054864b9",
-    "version": "1.0.0"
+    "source_signature": "9b3fe21ccfa5f5fbb6b587ccacc1d1a242f6ef18f126df39c93d648fc7368a97",
+    "source_tree": "2cfb236ec0aa468ad4872d4eff6e672311fdf311",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-time-tracking-api": {
     "path": "modules/accounting-time-tracking-api",
-    "reference": "6b0c9ed206b18f5d556e45116722506c5715ed48",
+    "reference": "d9cc5939cfa45564e037e31ca0103c9b0ea55c68",
     "repository": "https://github.com/liberusoftware/module-accounting-time-tracking-api",
-    "source_signature": "bcc6c00563a5110f0e96b4d0e0c5637a15cbb2eb8e211dc14934520c80174546",
-    "source_tree": "977fcd2b800bb474c4af9e63bd2e0e160719e11f",
-    "version": "1.0.0"
+    "source_signature": "9338d8204dc5914568af77cf8e863a80a61c99613f83ee303ecb47a73d80e590",
+    "source_tree": "82e073213ffc8129dde1f8fab0f7fe55d36089ee",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-time-tracking-filament": {
     "path": "modules/accounting-time-tracking-filament",
@@ -3337,19 +3337,19 @@
   },
   "liberusoftware/module-accounting-transfers": {
     "path": "modules/accounting-transfers",
-    "reference": "b9dd40b310365e6e9948346245ae2d9491df166a",
+    "reference": "8898eb194695e848831df60bfc505d771348b067",
     "repository": "https://github.com/liberusoftware/module-accounting-transfers",
-    "source_signature": "d1360aaec185fe5b2af2a97ad655070513064db3a74a99969a62f63654c0741f",
-    "source_tree": "95357ec78bab453778c6813f0e3a3b3a1914ab61",
-    "version": "1.0.0"
+    "source_signature": "6c57c807e7966ccaa61c5c8cab70bf0158ade11cd29f77c33256d9f87b731247",
+    "source_tree": "9a2f6dae465c36ce8c99fd0da31c7654bdb18243",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-transfers-api": {
     "path": "modules/accounting-transfers-api",
-    "reference": "25abedad6f435096d8e1d15702af607af340b1cd",
+    "reference": "572fe724db68d6494968e448f872e84845d6f305",
     "repository": "https://github.com/liberusoftware/module-accounting-transfers-api",
-    "source_signature": "1e26f205048e193a57629ed3c702e5f8e823bd4e9cd43ff8d100f3f710e58420",
-    "source_tree": "ada61fca6118062633f3bfd2c32bd5234b18841b",
-    "version": "1.0.0"
+    "source_signature": "4b418b739ba40c4108c4f6faad820108cddb3efacabe3af99baac8218ba1c1a1",
+    "source_tree": "53efd034b37cba2f157fcca9046dc87d28c0ff19",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-transfers-filament": {
     "path": "modules/accounting-transfers-filament",
@@ -3369,19 +3369,19 @@
   },
   "liberusoftware/module-accounting-vat": {
     "path": "modules/accounting-vat",
-    "reference": "1c1a9649e2cfa3c46f89e745ca5cff2eb2ff8406",
+    "reference": "44ecaf8e5758c06c0c58fb3fcd9dfd52cf5e86e4",
     "repository": "https://github.com/liberusoftware/module-accounting-vat",
-    "source_signature": "dd7ece63faa787003efdeb8f0a7545123f7e44c83fd25bb3ddd10d0567e9338e",
-    "source_tree": "f46800815135db029d6dad417d02a2b0f49acce5",
-    "version": "1.0.0"
+    "source_signature": "a69debad53912adffdc71f458bfe146bcf51008f2899a5eed4786e3a873e1ae1",
+    "source_tree": "9b4740fb27eebf4c2b8d0d04c9e57402ff141ef6",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-vat-api": {
     "path": "modules/accounting-vat-api",
-    "reference": "aad6a6277b228fcc19dff7626c7fe23d70215b68",
+    "reference": "1036b53859e3cfa9b866ee0c369930b277633343",
     "repository": "https://github.com/liberusoftware/module-accounting-vat-api",
-    "source_signature": "3e75ea84b11f4f85ed0d6ce23a94fe2160520fe1273b8233c33bdcd80d24e2a5",
-    "source_tree": "a5dabfd11aa82e963d2ab4d055384ce9b523465d",
-    "version": "1.0.0"
+    "source_signature": "2c4ca23d5a67aab25a962e77b29fb181cb730a9b0c96704014a5a48ccf4117ca",
+    "source_tree": "4b40d572133098a90a04621d15b6732f2f731b3a",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-vat-filament": {
     "path": "modules/accounting-vat-filament",
@@ -3401,27 +3401,27 @@
   },
   "liberusoftware/module-accounting-wise": {
     "path": "modules/accounting-wise",
-    "reference": "4d8bbc58443cace74d51516941f22c8c1e70551f",
+    "reference": "185b297b2a3a2a74783437763f0468a9548e5e11",
     "repository": "https://github.com/liberusoftware/module-accounting-wise",
-    "source_signature": "a90d6eb289c0fc9c099fc57b69b4d9362949ccfcb6e2a0d59b2b520647c57cac",
-    "source_tree": "d3bda54221080d2648cdd6448c8d8d453345294b",
-    "version": "1.0.1"
+    "source_signature": "28cb4b041ac9a6ed97ee166a6a1f080c6817795bdf24b0e070c5c50300de098f",
+    "source_tree": "6f4ecbd9cb1fc3339798ab8acf54933e893acbc2",
+    "version": "1.0.2"
   },
   "liberusoftware/module-accounting-withholding-tax": {
     "path": "modules/accounting-withholding-tax",
-    "reference": "dbe962f6a8fc467e7c30025998215f3b7ab2e70f",
+    "reference": "d85e68c010489856a271408a5fd9db57fd7d017f",
     "repository": "https://github.com/liberusoftware/module-accounting-withholding-tax",
-    "source_signature": "ada0e8bc91d86d26da7bfbceb94099b01418d0b2112a41b051dd5097bf4b74c2",
-    "source_tree": "44beb48440d26fa091d9c80949633c1b27a08623",
-    "version": "1.0.0"
+    "source_signature": "b233fd054d9ad42bb70abd7766911651e6d306ed6ce16ec02e9fa253f96ef2f4",
+    "source_tree": "7453f30fed7386e14302fc54c87027b3b67d21e3",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-withholding-tax-api": {
     "path": "modules/accounting-withholding-tax-api",
-    "reference": "f0d30e1fdcc2f530c443c66ce4838713601f8696",
+    "reference": "56f3e22b4d61ccba960e24af682b523055e36c22",
     "repository": "https://github.com/liberusoftware/module-accounting-withholding-tax-api",
-    "source_signature": "2ae2c105cbb9b2250328560f09fac45e41f7dbce981b48a3f069e192a13e5ebf",
-    "source_tree": "c056f91c5d3a5c08bdcda1514078718c1ccf8934",
-    "version": "1.0.0"
+    "source_signature": "c859d62943e37e3699385ab70ff5243a59ac30f3164dae685877b61381543ff3",
+    "source_tree": "1ac10661422176d552b2cf401c7b100fa25ab908",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-withholding-tax-filament": {
     "path": "modules/accounting-withholding-tax-filament",
@@ -3441,19 +3441,19 @@
   },
   "liberusoftware/module-accounting-workforce-costing": {
     "path": "modules/accounting-workforce-costing",
-    "reference": "c940ab0c10dfa12f44ebb90e3534ab15ceb9780f",
+    "reference": "46afd35a43d2f0af9d30907c905cadf2dbb73e5f",
     "repository": "https://github.com/liberusoftware/module-accounting-workforce-costing",
-    "source_signature": "59e826d458035501c2a36c32e3eeb98b81ad4d1953461809a636acb3da61907e",
-    "source_tree": "e4607f8a07ea03b759f9b101d633e2899b3bc3c0",
-    "version": "1.0.0"
+    "source_signature": "27b88c0063deae68d1b09634db9a764a5eee55bd1a6bad1cf761676c382601b9",
+    "source_tree": "5ba32ae38e06e7e8a89248f58719e41ac3c03e1a",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-workforce-costing-api": {
     "path": "modules/accounting-workforce-costing-api",
-    "reference": "3b024113e71d02928b10fe044648f691f8f0aae3",
+    "reference": "f7933cee400acb462dfdbc5f2a4b344fd2475973",
     "repository": "https://github.com/liberusoftware/module-accounting-workforce-costing-api",
-    "source_signature": "d4ba63d16c48a97a0dc3ed8f53d0d3d7bfc8159b24e2cf5ed34048aaf1967a56",
-    "source_tree": "35f8aa8d9db41472d4d0db893dccf9f51b4946dc",
-    "version": "1.0.0"
+    "source_signature": "525440a5510c917640a29da696f48e42f2f487541def8bade2453413230ae5c7",
+    "source_tree": "4407be5fa141ad91d381d84ff8ecd796b2eab0aa",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-workforce-costing-filament": {
     "path": "modules/accounting-workforce-costing-filament",
@@ -3473,19 +3473,19 @@
   },
   "liberusoftware/module-accounting-workpapers": {
     "path": "modules/accounting-workpapers",
-    "reference": "e97c58d6c017c978ed6e0870529bc7e868d3a6f9",
+    "reference": "0eabcf6debcc7b4c559a65057a7dd31189c587ac",
     "repository": "https://github.com/liberusoftware/module-accounting-workpapers",
-    "source_signature": "a6f9e8b82e61f828df3782378c247703a5d083fc2d400cfdaeed82b732d23446",
-    "source_tree": "120e74985e40fa4f09def5d009c8b02f6e58adba",
-    "version": "1.0.0"
+    "source_signature": "30d29e96f7b452313eb506cd56c1227f058f3beb3919a5cff921933a7be3c882",
+    "source_tree": "819d839d469bb136b5bd62dbe481939a679ab860",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-workpapers-api": {
     "path": "modules/accounting-workpapers-api",
-    "reference": "b921239448fb1a620ae31412ce026ecdfa38ddd3",
+    "reference": "3048fa40df7224f09858a14c50f29aef0d00493c",
     "repository": "https://github.com/liberusoftware/module-accounting-workpapers-api",
-    "source_signature": "f1ac55febe00216a87ba12909d6a747f6ff5df66c17dab9c08c6ba75e06b4777",
-    "source_tree": "009b590c0600a6760703632a00275b890b9d82fb",
-    "version": "1.0.0"
+    "source_signature": "09f330491c9b5680b9fcd749793d66875b13c09de4b9d40a8ce1996a055e5c9c",
+    "source_tree": "3386ebb671cd552520ad1373a7e80a90cf58cf02",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-workpapers-filament": {
     "path": "modules/accounting-workpapers-filament",
@@ -3505,19 +3505,19 @@
   },
   "liberusoftware/module-accounting-xero-migration": {
     "path": "modules/accounting-xero-migration",
-    "reference": "b26e8afb7481d574dcf91c7697b96535bca319dc",
+    "reference": "7c107826fdc9952a9b97e77aaf150b89f1496e70",
     "repository": "https://github.com/liberusoftware/module-accounting-xero-migration",
-    "source_signature": "fefcabfd15ff3090291cb548b4a83b6b5c2e6f9b688d86a59f262778c60c8b30",
-    "source_tree": "d40a56c01701705ad21877c474e9051f0cd1f034",
-    "version": "1.0.0"
+    "source_signature": "f8dc0d852fd7c1db23dc752f7f9ce9422ae20f837d0dfc2fd6c3d34c5a0913ea",
+    "source_tree": "441db1bdbfae523993880b86d6d40162c77f4a98",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-xero-migration-api": {
     "path": "modules/accounting-xero-migration-api",
-    "reference": "a916abbe87821628f5a885ec0643ad559e4a6901",
+    "reference": "d3bd4b652ef16d04932a0d05d819173e3916aabf",
     "repository": "https://github.com/liberusoftware/module-accounting-xero-migration-api",
-    "source_signature": "c9d2e35aabcdc5363d63e6adc19b984b42c6192db2292f3680c2838bde8870a3",
-    "source_tree": "7145f6957ae21e32f1bbf2b096a7de8669d86346",
-    "version": "1.0.0"
+    "source_signature": "9783bdf40cee18e4f9b2fd11860bf5e37ca07141d826259d7bf8fdc56c0fe428",
+    "source_tree": "4aabe30998fb9a8e1b717ed9fd4a114b2c08cf01",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-xero-migration-filament": {
     "path": "modules/accounting-xero-migration-filament",
@@ -3537,19 +3537,19 @@
   },
   "liberusoftware/module-accounting-year-end": {
     "path": "modules/accounting-year-end",
-    "reference": "b6f26608c68c919dc303f2afda1df3d66f95f1d7",
+    "reference": "cee30b2c71fee4bf046c8fc5a620d00e34e6f024",
     "repository": "https://github.com/liberusoftware/module-accounting-year-end",
-    "source_signature": "96e710a652926a519d857a0d3fcc34a1f79418ef346d725524e0aa546624d037",
-    "source_tree": "f33d753097c0edc88207303e505ab71b157002f1",
-    "version": "1.0.0"
+    "source_signature": "9c4539d5bbb862319464c1bbc1c0000deddafd73675ca3dc0b09907da69c077f",
+    "source_tree": "2217987543452dc544ab7fac2af111fd9972596a",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-year-end-api": {
     "path": "modules/accounting-year-end-api",
-    "reference": "420d74662d2cc212280930e00979f84daeb3db29",
+    "reference": "d6f2e2762bc640b37cdcf7d7b6dc35df8829b6d2",
     "repository": "https://github.com/liberusoftware/module-accounting-year-end-api",
-    "source_signature": "6d61caafe6b459f9d4b1d1de76354a81f9751c3b56ec897f8032859be1fcc1a6",
-    "source_tree": "f2c3473ef33e009cad9e56e89a7161f2cb5f7f1b",
-    "version": "1.0.0"
+    "source_signature": "f53d9508d90cff42eedf53313aab8ba7f1ff13de52b42fa154d049b645935b3f",
+    "source_tree": "c12b2bde817d5aa25ba29c5bacad03d140e88dc4",
+    "version": "1.0.1"
   },
   "liberusoftware/module-accounting-year-end-filament": {
     "path": "modules/accounting-year-end-filament",
@@ -3609,27 +3609,27 @@
   },
   "liberusoftware/notifications": {
     "path": "modules/notifications",
-    "reference": "b187fa63ac3f31d4ddc2aa6f1105e39d01e76f7d",
+    "reference": "682509961c7f9cc94c86fd19081e18fa0fa9cda0",
     "repository": "https://github.com/liberusoftware/module-notifications",
-    "source_signature": "26d30f6bf7796d81f1a460eb1500deb4422128305982c2ae3f8e00de1020bc51",
-    "source_tree": "d637718847638a111ca69e2d302105859d156430",
-    "version": "1.5.1"
+    "source_signature": "89572723f46c3cace4037eb268eb2b09f5dfe3876c2bf2c0fa16a9006813475a",
+    "source_tree": "3c651c7fa0fc11c7979a54228da6bdf2fa18258f",
+    "version": "1.5.2"
   },
   "liberusoftware/observability": {
     "path": "modules/observability",
-    "reference": "093591947f97d89016572c3642166b491d028dd2",
+    "reference": "53ec201689cac6a3eea9a741ab28ce0292b7612b",
     "repository": "https://github.com/liberusoftware/module-observability",
-    "source_signature": "7acacba40e9dfdf4285cb9e81761e27acb60387e99c9ecd3bfc8b0e8d2bede5d",
-    "source_tree": "482399ca144d874b9e260ef5a0e265a0d809d00f",
-    "version": "1.4.7"
+    "source_signature": "4a1b7c6d947fbc855d7017e345f581d40103ae6be11b8cc6cf5dca1c229fd80a",
+    "source_tree": "4a04658725b2f80c78b9aa629fdd666b5214c8f5",
+    "version": "1.4.8"
   },
   "liberusoftware/organizations-teams": {
     "path": "modules/organizations-teams",
-    "reference": "9e3a99f21f3ffb57f089980ab86fd8608b989b87",
+    "reference": "afc4badb4b61497bb2d06c779a91809446f29d17",
     "repository": "https://github.com/liberusoftware/module-organizations-teams",
-    "source_signature": "9d80d2b477fa3d6b795b3f5ef47526d570852ea42609dd7b75d6249314bd3881",
-    "source_tree": "8ffeb2a37e5c04b833a320f1f66cd68178ec904e",
-    "version": "1.7.1"
+    "source_signature": "7ba8d5262e4473510428b4f46489f1bcfb7016553b1fab32b8912031d7259aed",
+    "source_tree": "c53ff503df15c3c6cab22dc74ffa1efdd8d0f00d",
+    "version": "1.13.0"
   },
   "liberusoftware/organizations-teams-filament": {
     "path": "modules/organizations-teams-filament",
@@ -3641,35 +3641,35 @@
   },
   "liberusoftware/profiles": {
     "path": "modules/profiles",
-    "reference": "e0abfff24d8bddb9871bdfc5c93f366d9550ca5a",
+    "reference": "68ca1997d7ee6e76d40c834adcee3fa70384714b",
     "repository": "https://github.com/liberusoftware/module-profiles",
-    "source_signature": "c0bcf1f42c0d00ff580f43cf0775554a836da7b14f8ce57be3eeba871f1242ad",
-    "source_tree": "3a2c247167926900315b2c3dbb2ee14585a07113",
-    "version": "1.5.2"
+    "source_signature": "f9c1f1b782e8c311b9d024f350fd372f2a4c251a98afea42bee2a113596d5a70",
+    "source_tree": "bdebc74802bb6effd09f50b4fb4ae5ea56f0cf71",
+    "version": "1.6.3"
   },
   "liberusoftware/roles-permissions": {
     "path": "modules/roles-permissions",
-    "reference": "c2e097c1b65b075b04aa24a7c4af2f820d1f1ecf",
+    "reference": "22f64e841150ee0422ac7ec7fbb4585e0465a1d3",
     "repository": "https://github.com/liberusoftware/module-roles-permissions",
-    "source_signature": "180f5d74bff0cf741493d7980f1711d07c6e9e71bb61256957720045b37cd269",
-    "source_tree": "dc7f3cb4f70b19a4ec05c4a37b28f2aa3ee6fb0a",
-    "version": "1.5.1"
+    "source_signature": "5cbfe144614840f4b3b9235ad3b998cbda8e1f02734910a2b1e3a0742d578324",
+    "source_tree": "39628dda951bf0374dda0daa37e1d801a8f218f0",
+    "version": "1.9.1"
   },
   "liberusoftware/roles-permissions-filament": {
     "path": "modules/roles-permissions-filament",
-    "reference": "c962db77432af9a61c7d849f898975f8dfe848f3",
+    "reference": "e7891b9cdb49df3bf537cb0575e44ff7720bcad6",
     "repository": "https://github.com/liberusoftware/module-roles-permissions-filament",
-    "source_signature": "0c0ce0c7069ffb3edac28d8c8736c39a7e1f734122a5cc44c2d3bd3cd8d78dc0",
-    "source_tree": "09b488c33443d13b9c18572d1d125f1193700d97",
-    "version": "1.5.3"
+    "source_signature": "751749181b8c0d4a44a8ac7288b11b9b4c38f1cd53cd144306410e7dbbd434ce",
+    "source_tree": "b89d48c60fd6444827944fe6ae8216e14f000d8f",
+    "version": "1.7.2"
   },
   "liberusoftware/scheduler-queues": {
     "path": "modules/scheduler-queues",
-    "reference": "be463dea886d4303f840beb13ad0e98032f52940",
+    "reference": "a3edadb873350ad2baf313b02ac0e1b518c7bc54",
     "repository": "https://github.com/liberusoftware/module-scheduler-queues",
-    "source_signature": "da1a6c7bc18ed24e9e26ff79a56fa26ff6cece5ba89db52d5680470476d8cdc0",
-    "source_tree": "8c01aa181baeb871a079425623cc75b94f87ec57",
-    "version": "1.5.1"
+    "source_signature": "db2a49eb52eb317111f6b1b71cfbb6858c49f0a4b6a5cfdd9bc0b6e9d6281ff3",
+    "source_tree": "711e63afa70c129486965d86884c54e28c80e4e2",
+    "version": "1.6.2"
   },
   "liberusoftware/search": {
     "path": "modules/search",
@@ -3681,19 +3681,19 @@
   },
   "liberusoftware/search-api": {
     "path": "modules/search-api",
-    "reference": "ffb9d64da147084f9751f4d00f4b97e144c2612c",
+    "reference": "31898a7b19ad8ca8f5c5db8f43b88ad8167aa80f",
     "repository": "https://github.com/liberusoftware/module-search-api",
-    "source_signature": "1fb715fcdd3e32fe4beddd7a39977dbc79c65ea96e2dc181c85774282286da51",
-    "source_tree": "fb8f80908fcabaf4a841926759c1439dcde99450",
-    "version": "1.5.3"
+    "source_signature": "ca75c2d5d487e86681723d6fa341e3df3fb91f0d5a7412c4d9b656b0036c4da9",
+    "source_tree": "8078b585fb4c78f2e6087be1c0ada9c4b2f0750b",
+    "version": "1.6.2"
   },
   "liberusoftware/sessions-devices": {
     "path": "modules/sessions-devices",
-    "reference": "50174438d8f823f16390ca06093f67967ccb5c1d",
+    "reference": "f76f707dc3b657ab1cca20d56fd33286bb97b7e5",
     "repository": "https://github.com/liberusoftware/module-sessions-devices",
-    "source_signature": "aaa15409777dd8920ad9b02b13f2f7e6899581f4adaefd6c18e6258c30d099f0",
-    "source_tree": "86dff081059ee1edb16ebc24d6644f11a2ee2a63",
-    "version": "1.5.1"
+    "source_signature": "41ac3b4cd1fe704f6a8b21ed66487f18659dc109a76db0136ecd93a43bbe8c4e",
+    "source_tree": "1851e4b40ea14821ba54ffcde39a1785c7069859",
+    "version": "1.5.2"
   },
   "liberusoftware/sessions-devices-filament": {
     "path": "modules/sessions-devices-filament",
@@ -3705,11 +3705,11 @@
   },
   "liberusoftware/settings": {
     "path": "modules/settings",
-    "reference": "5ef0f0312941ac4567512d930108e43586cb69b7",
+    "reference": "b2fbb2a2efbb67746b4ea6986fc8064e71e3dac0",
     "repository": "https://github.com/liberusoftware/module-settings",
-    "source_signature": "791c26370f6e259f7bb22dd1ac68cea7a44b49cd7f575b4cffd54d1fc2ca8eea",
-    "source_tree": "479c070f3da14d7eed8f23274f999ea05033bc9f",
-    "version": "1.5.1"
+    "source_signature": "e40c485e44f55ab8a727686672618143506bcf79465be66fc14539e60bfb3eb0",
+    "source_tree": "4893b74adfd61f1e789f83242c741f70cbef3c12",
+    "version": "1.5.3"
   },
   "liberusoftware/settings-filament": {
     "path": "modules/settings-filament",
@@ -3721,11 +3721,11 @@
   },
   "liberusoftware/tenancy": {
     "path": "modules/tenancy",
-    "reference": "5c079502cf9c82c304f37eab141c8c7d5a77b2b7",
+    "reference": "0a0de654ef3046ccfc8206ec545b7af6a5b168ef",
     "repository": "https://github.com/liberusoftware/module-tenancy",
-    "source_signature": "d469d350ee02b7822a5fa89a3d1bcf1bbd06fa4f8e46fc06e6644ffc88c0b8e5",
-    "source_tree": "04f69949afdcdb6c12817d536fee1706df06aa5d",
-    "version": "1.2.2"
+    "source_signature": "255b0077a4625629072b78977514a42dda8e33461ac9f06aa4a5a56f4ba30b39",
+    "source_tree": "b39293875895c49be3c4cc1d6af5832816848e47",
+    "version": "1.2.4"
   },
   "liberusoftware/theme-accounting-erp": {
     "path": "themes/accounting-erp",
@@ -3769,27 +3769,27 @@
   },
   "liberusoftware/theme-support": {
     "path": "modules/theme-support",
-    "reference": "2168eace00577d9ad588541a645f9fd7dddf3025",
+    "reference": "e6640be1c8aa965b9acdf9aeaeda3a1868d060c6",
     "repository": "https://github.com/liberusoftware/module-theme-support",
-    "source_signature": "553d29a8e9c81f1a22dc3222dd85014a1bbe0a5900e4246d06faa19272fcad3c",
-    "source_tree": "3133a41ed026f81dcb1d5547fcfb26a401b2180d",
-    "version": "1.7.0"
+    "source_signature": "7a0a39b6d11de480580491006e35c8cdb1ecbd099b101ae70a0f4b4404d58d62",
+    "source_tree": "f661fec707abebe894cd0ce745d438512baebab4",
+    "version": "1.9.2"
   },
   "liberusoftware/theme-support-livewire": {
     "path": "modules/theme-support-livewire",
-    "reference": "f4212c863aa77c7593c392f0b58312569c2e8c01",
+    "reference": "0a97ebdf6c87902033676834f4b212bfb837d1f3",
     "repository": "https://github.com/liberusoftware/module-theme-support-livewire",
-    "source_signature": "8d037f1a0027ab325b948ff2327e59380e8d910efeb5e435cb5a2b62bba86f8f",
-    "source_tree": "ec54af6eb72a681166cd41f4bb7ca88ebf1c2612",
-    "version": "1.5.3"
+    "source_signature": "9458e2414dfc4a9e93118534bdc14957ae1f36241579636cbdd6401bffa73923",
+    "source_tree": "70a4b1ec74814b621d2497af324cdd709571ea7f",
+    "version": "1.6.4"
   },
   "liberusoftware/two-factor-authentication": {
     "path": "modules/two-factor-authentication",
-    "reference": "3ca80cbc17980d9749faf765c0db847ba43c4d29",
+    "reference": "bbba0489fb698d12d24e68156e677767379348dc",
     "repository": "https://github.com/liberusoftware/module-two-factor-authentication",
-    "source_signature": "bdc7d5e730187b97a8d079b0a4dcf690e113a9c7d76149e48aeabe9066abf199",
-    "source_tree": "21c52926225fb1ae0bfffe3ef3dd15535a9fecb2",
-    "version": "1.4.6"
+    "source_signature": "2f7c141d1f8357adc861cb3d19769dfb2de1682dba5d517be617e34be6166443",
+    "source_tree": "4d91972145371020ae54d5be6373be897485b84c",
+    "version": "1.4.7"
   },
   "liberusoftware/users-roles": {
     "path": "modules/users-roles",
