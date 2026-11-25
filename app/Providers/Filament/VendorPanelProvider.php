@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers\Filament;
 
+use App\Filament\ModulePlugins;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -18,12 +19,11 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Liberu\Accounting\ErpFilament\ErpFilamentPlugin;
 
 /**
- * Vendor self-service portal. Guard `vendor`; no tenancy. Read-only resources
- * are discovered from app/Filament/Vendor/Resources. Vendor's auth username is
- * the standard `email` column, so the default Filament login page works.
+ * Vendor self-service portal. Guard `vendor`; no tenancy. Plugins are composed
+ * from enabled modules. Vendor's auth username is the standard `email` column,
+ * so the default Filament login page works.
  */
 class VendorPanelProvider extends PanelProvider
 {
@@ -31,7 +31,7 @@ class VendorPanelProvider extends PanelProvider
     {
         return $panel
             ->id('vendor')
-            ->plugin(ErpFilamentPlugin::make())
+            ->plugins(app(ModulePlugins::class)->forPanel('vendor'))
             ->path('vendor-portal')
             ->authGuard('vendor')
             ->login()

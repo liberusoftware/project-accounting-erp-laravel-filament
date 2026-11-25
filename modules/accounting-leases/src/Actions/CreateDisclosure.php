@@ -15,6 +15,25 @@ final class CreateDisclosure
         $remaining = (float) $lease->lease_liability;
         $current = min($remaining, (float) $lease->payment_amount * 12);
 
-        return DB::transaction(fn (): LeaseDisclosure => LeaseDisclosure::updateOrCreate(['lease_id' => $lease->id, 'as_of_date' => $asOfDate], ['remaining_liability' => $remaining, 'current_liability' => $current, 'non_current_liability' => max(0, $remaining - $current), 'future_payments' => $lease->payments()->where('status', 'scheduled')->get(['due_date', 'amount'])->toArray()]));
+        return DB::transaction(function () use ($lease, $asOfDate, $remaining, $current): LeaseDisclosure {
+            $payload = [
+                'remaining_liability' => $remaining,
+                'current_liability' => $current,
+                'non_current_liability' => max(0, $remaining - $current),
+                'future_payments' => $lease->payments()->where('status', 'scheduled')->get(['due_date', 'amount'])->toArray(),
+            ];
+            $existing = LeaseDisclosure::query()
+                ->where('lease_id', $lease->id)
+                ->whereDate('as_of_date', $asOfDate)
+                ->first();
+
+            if ($existing !== null) {
+                $existing->update($payload);
+
+                return $existing->refresh();
+            }
+
+            return LeaseDisclosure::create(['lease_id' => $lease->id, 'as_of_date' => $asOfDate, ...$payload]);
+        });
     }
 }

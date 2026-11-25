@@ -13,6 +13,12 @@ final class PayrollPaymentSummary
     {
         $rows = PayrollPaymentBatch::query()->when($teamId !== null, fn ($q) => $q->where('team_id', $teamId))->get();
 
-        return ['count' => $rows->count(), 'total_amount' => (float) $rows->sum(fn (PayrollPaymentBatch $batch): float => $batch->totalAmount()), 'pending' => $rows->whereIn('status', ['draft', 'approved', 'submitted'])->count(), 'failed' => $rows->where('status', 'failed')->count(), 'reconciled' => $rows->where('status', 'reconciled')->count()];
+        return [
+            'count' => $rows->count(),
+            'total_amount' => (float) $rows->sum(fn (PayrollPaymentBatch $batch): float => $batch->totalAmount()),
+            'pending' => $rows->filter(static fn (PayrollPaymentBatch $b): bool => in_array($b->status?->value, ['draft', 'approved', 'submitted'], true))->count(),
+            'failed' => $rows->filter(static fn (PayrollPaymentBatch $b): bool => $b->status?->value === 'failed')->count(),
+            'reconciled' => $rows->filter(static fn (PayrollPaymentBatch $b): bool => $b->status?->value === 'reconciled')->count(),
+        ];
     }
 }

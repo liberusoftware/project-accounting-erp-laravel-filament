@@ -21,13 +21,15 @@
   },
   "extra": {
     "laravel": {
-      "providers": ["Liberu\\Accounting\\Core\\AccountingCoreServiceProvider"]
+      "providers": [
+        "Liberu\\Accounting\\Core\\AccountingCoreServiceProvider"
+      ]
     },
     "liberu": {
       "name": "accounting-core"
     }
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "require-dev": {
     "liberusoftware/package-testbench": "^1.5",
     "pestphp/pest": "^5.3.3"

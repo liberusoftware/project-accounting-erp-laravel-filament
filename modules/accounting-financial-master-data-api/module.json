@@ -6,8 +6,21 @@
   "version": "1.0.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\FinancialMasterDataApi\\FinancialMasterDataApiServiceProvider",
-  "requires": { "php": "^8.5", "laravel": "^13.0", "packages": { "liberusoftware/module-accounting-financial-master-data": "^1.0" } },
-  "capabilities": ["accounting.financial-master-data.api"],
-  "default_enabled": false,
-  "features": ["Customer and supplier party API", "Scoped permissions", "Explicit resources", "OpenAPI 3.1"]
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-financial-master-data": "^1.0"
+    }
+  },
+  "capabilities": [
+    "accounting.financial-master-data.api"
+  ],
+  "default_enabled": true,
+  "features": [
+    "Customer and supplier party API",
+    "Scoped permissions",
+    "Explicit resources",
+    "OpenAPI 3.1"
+  ]
 }

@@ -14,11 +14,13 @@ final class ConfirmReconciliationEntry
 {
     public function handle(ReconciliationEntry $entry): ReconciliationEntry
     {
+        $sessionStatus = $entry->session()->value('status');
+        $sessionStatusValue = $sessionStatus instanceof \BackedEnum ? $sessionStatus->value : $sessionStatus;
+        if ($sessionStatusValue === 'signed_off') {
+            throw new InvalidReconciliation('Signed-off sessions cannot change entries.');
+        }
         if ($entry->status === ReconciliationEntryStatus::Confirmed) {
             return $entry;
-        }
-        if ($entry->session()->value('status') === 'signed_off') {
-            throw new InvalidReconciliation('Signed-off sessions cannot change entries.');
         }
 
         return DB::transaction(function () use ($entry): ReconciliationEntry {

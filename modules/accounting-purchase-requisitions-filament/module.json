@@ -1,1 +1,30 @@
-{"$schema":"https://schemas.liberu.dev/module/v1.json","name":"accounting-purchase-requisitions-filament","display_name":"Accounting Purchase Requisitions Filament","description":"Filament presentation for purchase requisitions.","version":"1.0.0","category":"presentation","provider":"Liberu\\Accounting\\PurchaseRequisitionsFilament\\PurchaseRequisitionsFilamentServiceProvider","requires":{"php":"^8.5","laravel":"^13.0","packages":{"liberusoftware/module-accounting-purchase-requisitions":"^1.0"}},"capabilities":["accounting.purchase-requisitions.filament"],"features":["Request and approval management"],"presentation":{"filament":{"app":["Liberu\\Accounting\\PurchaseRequisitionsFilament\\PurchaseRequisitionsFilamentPlugin"]}},"default_enabled":true}
+{
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-purchase-requisitions": "^1.0"
+    }
+  },
+  "display_name": "Accounting Purchase Requisitions Filament",
+  "capabilities": [
+    "accounting.purchase-requisitions.filament"
+  ],
+  "category": "presentation",
+  "name": "accounting-purchase-requisitions-filament",
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "description": "Filament presentation for purchase requisitions.",
+  "default_enabled": true,
+  "features": [
+    "Request and approval management"
+  ],
+  "version": "1.1.0",
+  "provider": "Liberu\\Accounting\\PurchaseRequisitionsFilament\\PurchaseRequisitionsFilamentServiceProvider",
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\PurchaseRequisitionsFilament\\PurchaseRequisitionsFilamentPlugin"
+      ]
+    }
+  }
+}

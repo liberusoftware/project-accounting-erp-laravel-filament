@@ -9,6 +9,8 @@ use Liberu\Accounting\AccountReconciliations\Actions\CreateAccountReconciliation
 use Liberu\Accounting\AccountReconciliations\Actions\PrepareAccountReconciliation;
 use Liberu\Accounting\AccountReconciliations\Actions\ReviewAccountReconciliation;
 use Liberu\Accounting\AccountReconciliations\Enums\ReconciliationStatus;
+use Liberu\Accounting\AccountReconciliations\Exceptions\InvalidAccountReconciliation;
+use Liberu\Accounting\AccountReconciliations\Queries\AccountReconciliationQuery;
 
 uses(RefreshDatabase::class);
 
@@ -44,4 +46,32 @@ it('supports the preparation review certification and carry-forward lifecycle', 
 
     expect($carriedForward->status)->toBe(ReconciliationStatus::CarriedForward)
         ->and($carriedForward->carry_forward['period_start'])->toBe('2026-09-01');
+
+    $paginated = app(AccountReconciliationQuery::class)
+        ->paginate(101, ReconciliationStatus::CarriedForward->value, 10);
+    expect($paginated->total())->toBe(1);
+});
+
+it('rejects invalid reconciliation states and inputs', function (): void {
+    $create = app(CreateAccountReconciliation::class);
+    expect(fn () => $create->handle([]))->toThrow(InvalidAccountReconciliation::class);
+    expect(fn () => $create->handle([
+        'team_id' => 101, 'book_id' => 10, 'account_id' => 200, 'period_start' => '2026-09-01', 'period_end' => '2026-08-01',
+    ]))->toThrow(InvalidAccountReconciliation::class);
+
+    $reconciliation = $create->handle([
+        'team_id' => 101, 'book_id' => 10, 'account_id' => 200, 'period_start' => '2026-08-01', 'period_end' => '2026-08-31',
+    ]);
+
+    expect(fn () => app(PrepareAccountReconciliation::class)->handle($reconciliation, [], []))
+        ->toThrow(InvalidAccountReconciliation::class);
+
+    expect(fn () => app(ReviewAccountReconciliation::class)->handle($reconciliation, ['user_id' => 2]))
+        ->toThrow(InvalidAccountReconciliation::class);
+
+    expect(fn () => app(CertifyAccountReconciliation::class)->handle($reconciliation, []))
+        ->toThrow(InvalidAccountReconciliation::class);
+
+    expect(fn () => app(CarryForwardAccountReconciliation::class)->handle($reconciliation, []))
+        ->toThrow(InvalidAccountReconciliation::class);
 });

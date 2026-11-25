@@ -18,3 +18,15 @@ Route::middleware(['api', 'auth:sanctum', 'throttle:api'])->prefix('api/v1/accou
         Route::post('/{estimate}/convert', [EstimatesController::class, 'convert']);
     });
 });
+
+\Illuminate\Support\Facades\Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
+    \Illuminate\Support\Facades\Route::apiResource('estimates', \Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class);
+
+    \Illuminate\Support\Facades\Route::prefix('v1')->group(function (): void {
+        \Illuminate\Support\Facades\Route::get('estimates', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'index'])->middleware('ability:estimates:read');
+        \Illuminate\Support\Facades\Route::get('estimates/{estimate}', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'show'])->middleware('ability:estimates:read');
+        \Illuminate\Support\Facades\Route::post('estimates', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'store'])->middleware('ability:estimates:write');
+        \Illuminate\Support\Facades\Route::put('estimates/{estimate}', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'update'])->middleware('ability:estimates:write');
+        \Illuminate\Support\Facades\Route::delete('estimates/{estimate}', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'destroy'])->middleware('ability:estimates:write');
+    });
+});

@@ -26,13 +26,13 @@ use Filament\Tables\Table;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Liberu\Accounting\Erp\Models\BankStatement;
-use Liberu\Accounting\Erp\Modules\Reconciliation\ReconciliationModule;
 use Liberu\Accounting\Erp\Notifications\ImportFailedNotification;
 use Liberu\Accounting\Erp\Services\BankStatementImportService;
 use Liberu\Accounting\Erp\Services\ReconciliationService;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\BankStatements\Pages\CreateBankStatement;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\BankStatements\Pages\EditBankStatement;
 use Liberu\Accounting\ErpFilament\Filament\App\Resources\BankStatements\Pages\ListBankStatements;
+use Liberu\Foundation\ModuleManager\ModuleRegistry;
 
 class BankStatementResource extends Resource
 {
@@ -233,7 +233,7 @@ class BankStatementResource extends Resource
                     ->label('Reconcile')
                     ->icon('heroicon-o-check-circle')
                     ->color('success')
-                    ->visible(fn (BankStatement $record): bool => ReconciliationModule::isActive() && $record->transactions()->exists() && ! $record->reconciled)
+                    ->visible(fn (BankStatement $record): bool => app(ModuleRegistry::class)->enabled('accounting-bank-reconciliation', (array) config('modules.enabled', []), (array) config('modules.disabled', [])) && $record->transactions()->exists() && ! $record->reconciled)
                     ->requiresConfirmation()
                     ->modalHeading('Reconcile Bank Statement')
                     ->modalDescription('This will attempt to match and reconcile all transactions for this statement.')
@@ -269,7 +269,7 @@ class BankStatementResource extends Resource
                     ->label('View Discrepancies')
                     ->icon('heroicon-o-exclamation-triangle')
                     ->color('warning')
-                    ->visible(fn (BankStatement $record) => ReconciliationModule::isActive() && $record->transactions()->exists())
+                    ->visible(fn (BankStatement $record) => app(ModuleRegistry::class)->enabled('accounting-bank-reconciliation', (array) config('modules.enabled', []), (array) config('modules.disabled', [])) && $record->transactions()->exists())
                     ->modalHeading('Reconciliation Discrepancies')
                     ->modalContent(function (BankStatement $record): Factory|View {
                         $reconciliationService = app(ReconciliationService::class);

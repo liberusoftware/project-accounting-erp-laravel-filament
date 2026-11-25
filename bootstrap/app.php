@@ -1,15 +1,17 @@
 <?php
 
+use Composer\InstalledVersions;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Foundation\PackageManifest;
 use Illuminate\Http\Request;
 use Laravel\Sanctum\Http\Middleware\CheckAbilities;
 use Liberu\Accounting\Erp\Http\Middleware\EnsurePremiumAccess;
-use Liberu\Accounting\Erp\Http\Middleware\SecurityHeaders;
+use Liberu\Foundation\ApplicationCore\Http\Middleware\SecurityHeaders;
 use Liberu\Foundation\Localization\Http\Middleware\SetLocale;
 
-return Application::configure(basePath: dirname(__DIR__))
+$app = Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
         web: __DIR__.'/../routes/web.php',
         api: __DIR__.'/../routes/api.php',
@@ -30,3 +32,16 @@ return Application::configure(basePath: dirname(__DIR__))
             fn (Request $request) => $request->is('api/*') || $request->expectsJson(),
         );
     })->create();
+
+$app->extend(PackageManifest::class, fn (PackageManifest $manifest) => new class($manifest->files, $manifest->basePath, $manifest->manifestPath) extends PackageManifest
+{
+    protected function packagesToIgnore(): array
+    {
+        return array_merge(
+            parent::packagesToIgnore(),
+            InstalledVersions::getInstalledPackagesByType('liberu-module'),
+        );
+    }
+});
+
+return $app;

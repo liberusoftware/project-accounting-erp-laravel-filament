@@ -3,7 +3,7 @@
   "name": "accounting-core",
   "display_name": "Accounting Core",
   "description": "Provider-neutral accounting foundation and lifecycle rules.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "category": "capability",
   "provider": "Liberu\\Accounting\\Core\\AccountingCoreServiceProvider",
   "requires": {
@@ -13,7 +13,19 @@
       "liberusoftware/module-manager": "^1.0"
     }
   },
-  "capabilities": ["accounting.core"],
+  "capabilities": [
+    "accounting.core"
+  ],
   "default_enabled": true,
-  "features": ["Legal entities", "Books", "Accounting basis", "Currencies", "Fiscal calendars", "Numbering", "Defaults", "Policies", "Domain events"]
+  "features": [
+    "Legal entities",
+    "Books",
+    "Accounting basis",
+    "Currencies",
+    "Fiscal calendars",
+    "Numbering",
+    "Defaults",
+    "Policies",
+    "Domain events"
+  ]
 }

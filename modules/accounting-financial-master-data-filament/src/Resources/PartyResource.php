@@ -22,6 +22,8 @@ final class PartyResource extends Resource
 {
     protected static ?string $model = Party::class;
 
+    protected static bool $isScopedToTenant = false;
+
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-user-group';
 
     protected static string|\UnitEnum|null $navigationGroup = 'Accounting';

@@ -70,8 +70,8 @@ jobs:
       - name: Generate application key
         run: php artisan key:generate
 
-      # The threshold measures app/ alone — the host's five composition classes. Package
-      # coverage is each package's own gate, against its own phpunit.xml (§3.10).
+      # The root coverage gate measures app/ and production PHP under modules/.
+      # Each package also has its own phpunit.xml and coverage gate.
       - name: Run tests with coverage
         run: php artisan test --coverage --coverage-clover=coverage.xml --min=100
 

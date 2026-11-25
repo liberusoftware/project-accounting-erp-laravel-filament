@@ -1,1 +1,32 @@
-{"name":"liberusoftware/module-accounting-goods-and-service-receipts-filament","description":"Filament 5 UI for goods and service receipts.","type":"liberu-module","license":"MIT","version":"1.0.0","require":{"php":"^8.5","filament/filament":"^5.11.0","liberusoftware/module-accounting-goods-and-service-receipts":"^1.0"},"autoload":{"psr-4":{"Liberu\\Accounting\\GoodsAndServiceReceiptsFilament\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\GoodsAndServiceReceiptsFilament\\GoodsAndServiceReceiptsFilamentServiceProvider"]},"liberu":{"name":"accounting-goods-and-service-receipts-filament"}},"config":{"allow-plugins":{"pestphp/pest-plugin":true}}}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\GoodsAndServiceReceiptsFilament\\GoodsAndServiceReceiptsFilamentServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-goods-and-service-receipts-filament"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\GoodsAndServiceReceiptsFilament\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-goods-and-service-receipts-filament",
+  "description": "Filament 5 UI for goods and service receipts.",
+  "require": {
+    "filament/filament": "^5.11.0",
+    "php": "^8.5",
+    "liberusoftware/module-accounting-goods-and-service-receipts": "^1.0"
+  },
+  "version": "1.1.0",
+  "license": "MIT"
+}

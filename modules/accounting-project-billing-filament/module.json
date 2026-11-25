@@ -1,1 +1,32 @@
-{"$schema":"https://schemas.liberu.dev/module/v1.json","name":"accounting-project-billing-filament","display_name":"Accounting Project Billing Filament","description":"Filament 5 surfaces for project billing.","version":"1.0.0","category":"presentation","provider":"Liberu\\Accounting\\ProjectBillingFilament\\ProjectBillingFilamentServiceProvider","requires":{"php":"^8.5","laravel":"^13.0","packages":{"liberusoftware/module-accounting-project-billing":"^1.0"}},"capabilities":["accounting.project-billing.filament"],"features":["Billing","Summary","Handoff"],"presentation":{"filament":{"app":["Liberu\\Accounting\\ProjectBillingFilament\\ProjectBillingFilamentPlugin"]}},"default_enabled":true}
+{
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-project-billing": "^1.0"
+    }
+  },
+  "display_name": "Accounting Project Billing Filament",
+  "capabilities": [
+    "accounting.project-billing.filament"
+  ],
+  "category": "presentation",
+  "name": "accounting-project-billing-filament",
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "description": "Filament 5 surfaces for project billing.",
+  "default_enabled": true,
+  "features": [
+    "Billing",
+    "Summary",
+    "Handoff"
+  ],
+  "version": "1.1.0",
+  "provider": "Liberu\\Accounting\\ProjectBillingFilament\\ProjectBillingFilamentServiceProvider",
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\ProjectBillingFilament\\ProjectBillingFilamentPlugin"
+      ]
+    }
+  }
+}

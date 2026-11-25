@@ -11,7 +11,6 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.5",
         "barryvdh/laravel-dompdf": "^3.1.2",
         "bezhansalleh/filament-shield": "^4.3.1",
         "bursteri/socialstream": "^7.0.0",
@@ -35,22 +34,22 @@
         "liberusoftware/analytics-meta": "^1.0",
         "liberusoftware/api-access": "^1.0",
         "liberusoftware/application": "^2.0",
-        "liberusoftware/audit": "^1.0",
+        "liberusoftware/audit": "^1.11",
         "liberusoftware/composer-installer": "^1.1",
         "liberusoftware/currency-context": "^1.0",
         "liberusoftware/developer-experience": "^1.0",
         "liberusoftware/feature-flags": "^1.0",
         "liberusoftware/files-media": "^1.0",
-        "liberusoftware/identity-core": "^1.0",
+        "liberusoftware/identity-core": "^1.8",
         "liberusoftware/identity-core-filament": "^1.0",
-        "liberusoftware/identity-socialstream": "^1.0",
+        "liberusoftware/identity-socialstream": "^1.9",
         "liberusoftware/import-export": "^1.0",
-        "liberusoftware/integrations": "^1.7",
+        "liberusoftware/integrations": "^1.12",
         "liberusoftware/jetstream-bridge": "^1.0",
         "liberusoftware/localization-contracts": "^1.0",
-        "liberusoftware/localization-core": "^1.0",
-        "liberusoftware/localization-core-livewire": "^1.0",
-        "liberusoftware/localization-mymemory": "^1.0",
+        "liberusoftware/localization-core": "^1.5.1",
+        "liberusoftware/localization-core-livewire": "^1.5.3",
+        "liberusoftware/localization-mymemory": "^1.5.1",
         "liberusoftware/module-accounting-account-reconciliations": "^1.0",
         "liberusoftware/module-accounting-account-reconciliations-api": "^1.0",
         "liberusoftware/module-accounting-account-reconciliations-filament": "^1.0",
@@ -480,29 +479,40 @@
         "liberusoftware/module-liberu-business-workflow-reconciliation": "^1.0",
         "liberusoftware/module-liberu-executive-insights": "^1.0",
         "liberusoftware/module-liberu-platform-orchestration": "^1.0",
-        "liberusoftware/module-manager": "^1.9",
-        "liberusoftware/module-manager-filament": "^1.11",
+        "liberusoftware/module-manager": "^1.9.2",
+        "liberusoftware/module-manager-filament": "^1.11.2",
         "liberusoftware/notifications": "^1.0",
         "liberusoftware/observability": "^1.0",
-        "liberusoftware/organizations-teams": "^1.0",
+        "liberusoftware/organizations-teams": "^1.12.2",
         "liberusoftware/organizations-teams-filament": "^1.0",
+        "liberusoftware/passkeys": "^1.0",
+        "liberusoftware/payment-adyen": "^1.0.2",
+        "liberusoftware/payment-contracts": "^1.1.1",
+        "liberusoftware/payment-core": "^1.1.1",
+        "liberusoftware/payment-gocardless": "^1.0.2",
+        "liberusoftware/payment-mollie": "^1.0.2",
+        "liberusoftware/payment-paddle": "^1.0.2",
+        "liberusoftware/payment-paypal": "^1.0.2",
+        "liberusoftware/payment-square": "^1.0.2",
+        "liberusoftware/payment-stripe": "^1.0.2",
         "liberusoftware/profiles": "^1.0",
-        "liberusoftware/roles-permissions": "^1.0",
+        "liberusoftware/roles-permissions": "^1.9",
         "liberusoftware/roles-permissions-filament": "^1.0",
-        "liberusoftware/scheduler-queues": "^1.0",
+        "liberusoftware/scheduler-queues": "^1.6.2",
         "liberusoftware/search": "^1.0",
         "liberusoftware/search-api": "^1.0",
-        "liberusoftware/sessions-devices": "^1.0",
+        "liberusoftware/sessions-devices": "^1.5.2",
         "liberusoftware/sessions-devices-filament": "^1.1",
-        "liberusoftware/settings": "^1.0",
+        "liberusoftware/settings": "^1.5.3",
         "liberusoftware/settings-filament": "^1.0",
         "liberusoftware/tenancy": "^1.0.1",
-        "liberusoftware/theme-support": "^1.0",
-        "liberusoftware/theme-support-livewire": "^1.1",
-        "liberusoftware/two-factor-authentication": "^1.0",
+        "liberusoftware/theme-support": "^1.8.4",
+        "liberusoftware/theme-support-livewire": "^1.6.2",
+        "liberusoftware/two-factor-authentication": "^1.4.7",
         "liberusoftware/users-roles": "^1.0",
         "liberusoftware/webhooks": "^1.0",
         "livewire/livewire": "^4.4.8",
+        "php": "^8.5",
         "spatie/laravel-activitylog": "^5.1.3",
         "spatie/laravel-backup": "^10.3.3",
         "spatie/laravel-menu": "^4.2.2",
@@ -540,16 +550,26 @@
             "Liberu\\Themes\\Dark\\": "themes/dark/src/",
             "Liberu\\Themes\\DefaultTheme\\": "themes/default/src/",
             "Liberu\\Themes\\AccountingErp\\": "themes/accounting-erp/src/"
-        }
+        },
+        "classmap": [
+            "modules/organizations-teams/database/factories/"
+        ],
+        "exclude-from-classmap": [
+            "vendor/league/csv/polyfill/SortDirection.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
-        }
+        },
+        "exclude-from-classmap": [
+            "tests/Support/PackageTestCaseShim.php"
+        ]
     },
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@putenv TELESCOPE_ENABLED=false",
             "@php artisan package:discover --ansi",
             "@php artisan filament:upgrade"
         ],
@@ -590,5 +610,175 @@
     "support": {
         "issues": "https://github.com/liberusoftware/project-accounting-erp-laravel-filament/issues",
         "source": "https://github.com/liberusoftware/project-accounting-erp-laravel-filament"
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-module-manager-filament.git",
+            "only": [
+                "liberusoftware/module-manager-filament"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-localization-mymemory.git",
+            "only": [
+                "liberusoftware/localization-mymemory"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-settings.git",
+            "only": [
+                "liberusoftware/settings"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-theme-support.git",
+            "only": [
+                "liberusoftware/theme-support"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-localization-core.git",
+            "only": [
+                "liberusoftware/localization-core"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-localization-core-livewire.git",
+            "only": [
+                "liberusoftware/localization-core-livewire"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-theme-support-livewire.git",
+            "only": [
+                "liberusoftware/theme-support-livewire"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-organizations-teams.git",
+            "only": [
+                "liberusoftware/organizations-teams"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-roles-permissions.git",
+            "only": [
+                "liberusoftware/roles-permissions"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-integrations.git",
+            "only": [
+                "liberusoftware/integrations"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-module-manager.git",
+            "only": [
+                "liberusoftware/module-manager"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-sessions-devices.git",
+            "only": [
+                "liberusoftware/sessions-devices"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-two-factor-authentication.git",
+            "only": [
+                "liberusoftware/two-factor-authentication"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-identity-socialstream.git",
+            "only": [
+                "liberusoftware/identity-socialstream"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-contracts.git",
+            "only": [
+                "liberusoftware/payment-contracts"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-core.git",
+            "only": [
+                "liberusoftware/payment-core"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-stripe.git",
+            "only": [
+                "liberusoftware/payment-stripe"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-paypal.git",
+            "only": [
+                "liberusoftware/payment-paypal"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-paddle.git",
+            "only": [
+                "liberusoftware/payment-paddle"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-adyen.git",
+            "only": [
+                "liberusoftware/payment-adyen"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-mollie.git",
+            "only": [
+                "liberusoftware/payment-mollie"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-square.git",
+            "only": [
+                "liberusoftware/payment-square"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/module-payment-gocardless.git",
+            "only": [
+                "liberusoftware/payment-gocardless"
+            ]
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/liberusoftware/passkeys.git",
+            "only": [
+                "liberusoftware/passkeys"
+            ]
+        }
+    ]
 }

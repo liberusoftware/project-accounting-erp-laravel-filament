@@ -1,1 +1,32 @@
-{"$schema":"https://schemas.liberu.dev/module/v1.json","name":"accounting-project-profitability-filament","display_name":"Accounting Project Profitability Filament","description":"Filament 5 surfaces for profitability dashboards and records.","version":"1.0.0","category":"presentation","provider":"Liberu\\Accounting\\ProjectProfitabilityFilament\\ProjectProfitabilityFilamentServiceProvider","requires":{"php":"^8.5","laravel":"^13.0","packages":{"liberusoftware/module-accounting-project-profitability":"^1.0"}},"capabilities":["accounting.project-profitability.filament"],"features":["Records","Dashboard","Drill-through"],"presentation":{"filament":{"app":["Liberu\\Accounting\\ProjectProfitabilityFilament\\ProjectProfitabilityFilamentPlugin"]}},"default_enabled":true}
+{
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-project-profitability": "^1.0"
+    }
+  },
+  "display_name": "Accounting Project Profitability Filament",
+  "capabilities": [
+    "accounting.project-profitability.filament"
+  ],
+  "category": "presentation",
+  "name": "accounting-project-profitability-filament",
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "description": "Filament 5 surfaces for profitability dashboards and records.",
+  "default_enabled": true,
+  "features": [
+    "Records",
+    "Dashboard",
+    "Drill-through"
+  ],
+  "version": "1.1.0",
+  "provider": "Liberu\\Accounting\\ProjectProfitabilityFilament\\ProjectProfitabilityFilamentServiceProvider",
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\ProjectProfitabilityFilament\\ProjectProfitabilityFilamentPlugin"
+      ]
+    }
+  }
+}

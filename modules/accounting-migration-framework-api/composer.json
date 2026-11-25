@@ -1,1 +1,33 @@
-{"name":"liberusoftware/module-accounting-migration-framework-api","description":"HTTP API for the accounting migration framework.","type":"liberu-module","license":"MIT","version":"1.0.0","require":{"php":"^8.5","illuminate/http":"^13.38.0","illuminate/routing":"^13.38.0","liberusoftware/module-accounting-migration-framework":"^1.0"},"autoload":{"psr-4":{"Liberu\\Accounting\\MigrationFrameworkApi\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\MigrationFrameworkApi\\MigrationFrameworkApiServiceProvider"]},"liberu":{"name":"accounting-migration-framework-api"}},"config":{"allow-plugins":{"pestphp/pest-plugin":true}}}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\MigrationFrameworkApi\\MigrationFrameworkApiServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-migration-framework-api"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\MigrationFrameworkApi\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-migration-framework-api",
+  "description": "HTTP API for the accounting migration framework.",
+  "require": {
+    "liberusoftware/module-accounting-migration-framework": "^1.0",
+    "php": "^8.5",
+    "illuminate/routing": "^13.38.0",
+    "illuminate/http": "^13.38.0"
+  },
+  "version": "1.0.1",
+  "license": "MIT"
+}

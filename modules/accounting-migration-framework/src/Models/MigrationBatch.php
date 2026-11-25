@@ -24,6 +24,8 @@ final class MigrationBatch extends Model
 
     protected $fillable = ['team_id', 'batch_ref', 'source_id', 'mapping_id', 'status', 'dry_run', 'resume_token', 'total_count', 'processed_count', 'success_count', 'error_count', 'skipped_count', 'started_at', 'completed_at', 'paused_at', 'failure_message', 'metadata'];
 
+    protected $attributes = ['processed_count' => 0, 'success_count' => 0, 'error_count' => 0, 'skipped_count' => 0];
+
     protected $casts = ['status' => MigrationStatus::class, 'dry_run' => 'boolean', 'total_count' => 'integer', 'processed_count' => 'integer', 'success_count' => 'integer', 'error_count' => 'integer', 'skipped_count' => 'integer', 'started_at' => 'datetime', 'completed_at' => 'datetime', 'paused_at' => 'datetime', 'metadata' => 'array'];
 
     /** @return BelongsTo<MigrationMapping, $this> */

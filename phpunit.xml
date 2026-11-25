@@ -14,17 +14,34 @@
         <testsuite name="Architecture">
             <directory>tests/Architecture</directory>
         </testsuite>
+        <testsuite name="Modules">
+            <directory>modules/*/tests</directory>
+            <exclude>modules/module-manager/tests</exclude>
+            <exclude>modules/module-manager-filament/tests</exclude>
+            <exclude>modules/api-access/tests</exclude>
+            <exclude>modules/identity-socialstream/tests/Feature/ProviderContractsTest.php</exclude>
+            <exclude>modules/organizations-teams/tests/Feature/Teams</exclude>
+            <exclude>modules/roles-permissions/tests/Feature/Permissions</exclude>
+            <exclude>modules/activity-comments/tests/Feature/MigrationsTest.php</exclude>
+            <exclude>modules/feature-flags/tests/Feature/FeatureFlagStorageTest.php</exclude>
+            <exclude>modules/currency-context/tests/Feature/CurrencyPreferencesTest.php</exclude>
+            <exclude>modules/identity-core-filament/tests/Feature/UserResourceTest.php</exclude>
+            <exclude>modules/integrations/tests/Feature</exclude>
+            <exclude>modules/observability/tests/Feature/DiagnosticsIntegrationTest.php</exclude>
+            <exclude>modules/organizations-teams-filament/tests/Feature/TeamResourceTest.php</exclude>
+            <exclude>modules/organizations-teams/tests/Unit/EntitySettingsTest.php</exclude>
+            <exclude>modules/roles-permissions-filament/tests/Unit/RoleResourceTest.php</exclude>
+            <exclude>modules/search/tests/Feature/SearchServiceTest.php</exclude>
+        </testsuite>
     </testsuites>
-    <!-- The host measures the host. Each package runs and measures itself, against its
-         own phpunit.xml and its own coverage threshold — a package's numbers are not
-         the composition's to report. -->
     <source>
         <include>
             <directory>app</directory>
+            <directory>modules/*/src</directory>
         </include>
     </source>
     <php>
-        <ini name="memory_limit" value="512M"/>
+        <ini name="memory_limit" value="1G"/>
         <env name="APP_ENV" value="testing"/>
         <env name="APP_KEY" value="base64:3xVFJ5tTr05dWL1gsJqF+UvWdv3X0Cz/CBaUG47hb3U="/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>

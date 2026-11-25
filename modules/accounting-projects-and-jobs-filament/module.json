@@ -1,1 +1,30 @@
-{"$schema":"https://schemas.liberu.dev/module/v1.json","name":"accounting-projects-and-jobs-filament","display_name":"Accounting Projects and Jobs Filament","description":"Filament presentation for projects and jobs.","version":"1.0.0","category":"presentation","provider":"Liberu\\Accounting\\ProjectsAndJobsFilament\\ProjectsAndJobsFilamentServiceProvider","requires":{"php":"^8.5","laravel":"^13.0","packages":{"liberusoftware/module-accounting-projects-and-jobs":"^1.0"}},"capabilities":["accounting.projects-and-jobs.filament"],"features":["Project management"],"presentation":{"filament":{"app":["Liberu\\Accounting\\ProjectsAndJobsFilament\\ProjectsAndJobsFilamentPlugin"]}},"default_enabled":true}
+{
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-projects-and-jobs": "^1.0"
+    }
+  },
+  "display_name": "Accounting Projects and Jobs Filament",
+  "capabilities": [
+    "accounting.projects-and-jobs.filament"
+  ],
+  "category": "presentation",
+  "name": "accounting-projects-and-jobs-filament",
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "description": "Filament presentation for projects and jobs.",
+  "default_enabled": true,
+  "features": [
+    "Project management"
+  ],
+  "version": "1.1.0",
+  "provider": "Liberu\\Accounting\\ProjectsAndJobsFilament\\ProjectsAndJobsFilamentServiceProvider",
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\ProjectsAndJobsFilament\\ProjectsAndJobsFilamentPlugin"
+      ]
+    }
+  }
+}

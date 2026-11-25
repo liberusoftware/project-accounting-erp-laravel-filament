@@ -13,3 +13,7 @@ Route::prefix('api/v1/accounting/bank-accounts')->middleware(['auth:sanctum', 't
     Route::patch('/{bankAccount}', [BankAccountController::class, 'update'])->middleware('ability:accounting.bank-accounts.write');
     Route::post('/{bankAccount}/status', [BankAccountController::class, 'status'])->middleware('ability:accounting.bank-accounts.write');
 });
+
+\Illuminate\Support\Facades\Route::middleware(['api', 'auth:sanctum'])->prefix('api')->group(function (): void {
+    \Illuminate\Support\Facades\Route::apiResource('transactions', \Liberu\Accounting\BankAccountsApi\Http\Controllers\TransactionController::class);
+});

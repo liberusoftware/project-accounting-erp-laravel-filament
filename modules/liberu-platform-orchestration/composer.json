@@ -1,17 +1,41 @@
 {
   "name": "liberusoftware/module-liberu-platform-orchestration",
-  "description": "Provider-neutral Liberu platform composition and lifecycle orchestration.",
+  "version": "1.5.2",
   "type": "liberu-module",
+  "description": "Liberu liberu-platform-orchestration module.",
   "license": "MIT",
-  "require": { "php": "^8.5", "illuminate/database": "^13.38.0", "illuminate/support": "^13.38.0", "liberusoftware/module-manager": "^1.0" },
-  "autoload": { "psr-4": { "Liberu\\PlatformOrchestration\\": "src/" } },
-  "autoload-dev": { "psr-4": { "Liberu\\PlatformOrchestration\\Tests\\": "tests/" } },
-  "extra": {
-    "laravel": { "providers": ["Liberu\\PlatformOrchestration\\PlatformOrchestrationServiceProvider"] },
-    "liberu": { "name": "liberu-platform-orchestration" }
+  "require": {
+    "php": "^8.5",
+    "illuminate/database": "^13.38.0",
+    "illuminate/events": "^13.38.0",
+    "illuminate/support": "^13.38.0"
   },
-  "version": "1.0.0",
-  "require-dev": { "liberusoftware/package-testbench": "^1.5", "pestphp/pest": "^5.3.3" },
-  "scripts": { "test": "pest" },
-  "config": { "allow-plugins": { "pestphp/pest-plugin": true } }
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Platform\\PlatformOrchestration\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Liberu\\Platform\\PlatformOrchestration\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "liberusoftware/package-testbench": "^1.5",
+    "pestphp/pest": "^5.3.3"
+  },
+  "scripts": {
+    "test": "pest"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "extra": {
+    "liberu": {
+      "name": "liberu-platform-orchestration",
+      "provider": "Liberu\\Platform\\PlatformOrchestration\\PlatformOrchestrationServiceProvider"
+    }
+  }
 }

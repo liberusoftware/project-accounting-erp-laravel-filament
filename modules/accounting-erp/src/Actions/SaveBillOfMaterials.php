@@ -11,8 +11,8 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use Liberu\Accounting\Erp\Models\BillOfMaterialsComponent;
 use Liberu\Accounting\Erp\Models\InventoryItem;
-use Liberu\Accounting\Erp\Modules\Inventory\InventoryModule;
 use Liberu\Accounting\Erp\Policies\BillOfMaterialsPolicy;
+use Liberu\Foundation\ModuleManager\ModuleRegistry;
 
 final readonly class SaveBillOfMaterials
 {
@@ -20,7 +20,7 @@ final readonly class SaveBillOfMaterials
 
     public function handle(Authenticatable $actor, InventoryItem $item, array $components): void
     {
-        if (! InventoryModule::isActive() || ! $this->policy->manageBillOfMaterials($actor, $item)) {
+        if (! app(ModuleRegistry::class)->enabled('accounting-inventory-accounting', (array) config('modules.enabled', []), (array) config('modules.disabled', [])) || ! $this->policy->manageBillOfMaterials($actor, $item)) {
             throw new AuthorizationException();
         }
 

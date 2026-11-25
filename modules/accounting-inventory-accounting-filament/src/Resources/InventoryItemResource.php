@@ -15,6 +15,8 @@ final class InventoryItemResource extends Resource
 {
     protected static ?string $model = InventoryItem::class;
 
+    protected static ?string $slug = 'inventory-accounting-items';
+
     protected static ?string $navigationLabel = 'Inventory accounting';
 
     public static function form(Schema $schema): Schema

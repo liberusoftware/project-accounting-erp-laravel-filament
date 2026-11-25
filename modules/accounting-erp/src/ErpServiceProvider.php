@@ -5,8 +5,6 @@ namespace Liberu\Accounting\Erp;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Jetstream\Jetstream;
-use Liberu\Accounting\Erp\Modules\ModuleManager;
-use Liberu\Accounting\Erp\Modules\ModuleServiceProvider;
 use Liberu\Accounting\Erp\Providers\EventServiceProvider;
 use Liberu\Accounting\Erp\Providers\FortifyServiceProvider;
 use Liberu\Accounting\Erp\Providers\JetstreamServiceProvider;
@@ -15,8 +13,6 @@ final class ErpServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->app->singleton(ModuleManager::class);
-        $this->app->register(ModuleServiceProvider::class);
         $this->app->register(EventServiceProvider::class);
         $this->app->register(FortifyServiceProvider::class);
         $this->app->register(JetstreamServiceProvider::class);
@@ -37,7 +33,6 @@ final class ErpServiceProvider extends ServiceProvider
                 Console\Commands\BackfillDocuments::class,
                 Console\Commands\BackfillTenancy::class,
                 Console\Commands\CalculateLateFees::class,
-                Console\Commands\ModuleCommand::class,
                 Console\Commands\PostInvoice::class,
                 Console\Commands\PostPayment::class,
                 Console\Commands\ProcessRecurringTransactions::class,

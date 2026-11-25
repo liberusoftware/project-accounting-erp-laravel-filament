@@ -17,8 +17,9 @@ class UserSeeder extends Seeder
     public function run(): void
     {
 
-        $adminPassword = (string) (config('app.seed_admin_password') ?: Str::random(64));
-        $adminUser = User::updateOrCreate(
+        $configuredPassword = config('app.seed_admin_password');
+        $adminPassword = (string) ($configuredPassword ?: Str::random(64));
+        $adminUser = User::firstOrCreate(
             ['email' => 'admin@example.com'],
             [
                 'name' => 'Admin User',
@@ -26,6 +27,10 @@ class UserSeeder extends Seeder
                 'email_verified_at' => now(),
             ],
         );
+
+        if (filled($configuredPassword) && ! $adminUser->wasRecentlyCreated) {
+            $adminUser->forceFill(['password' => Hash::make((string) $configuredPassword)])->save();
+        }
 
         $team = Team::firstOrFail();
         $adminUser->forceFill(['current_team_id' => $team->id])->save();

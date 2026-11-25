@@ -1,9 +1,11 @@
 <?php
 
+use Illuminate\Foundation\PackageManifest;
 use Liberu\Foundation\ModuleManager\Exceptions\DependencyResolutionFailed;
 use Liberu\Foundation\ModuleManager\Manifest;
 use Liberu\Foundation\ModuleManager\ModuleDiscovery;
 use Liberu\Foundation\ModuleManager\ModuleRegistry;
+use Livewire\LivewireServiceProvider;
 
 it('discovers canonical packages from the modules directory', function () {
     $registry = (new ModuleDiscovery())->discover([base_path('modules')]);
@@ -11,6 +13,16 @@ it('discovers canonical packages from the modules directory', function () {
     expect($registry->has('module-manager'))->toBeTrue()
         ->and($registry->get('module-manager'))->toBeInstanceOf(Manifest::class)
         ->and($registry->get('module-manager')->capabilities())->toBe(['foundation.modules']);
+});
+
+it('registers module providers through the module manager and discovers other packages normally', function () {
+    $registry = app(ModuleRegistry::class);
+    $moduleProviders = array_map(fn (Manifest $manifest) => $manifest->provider(), $registry->all());
+    $discoveredProviders = app(PackageManifest::class)->providers();
+
+    expect(array_intersect($moduleProviders, $discoveredProviders))->toBeEmpty()
+        ->and($discoveredProviders)->toContain(LivewireServiceProvider::class)
+        ->and(app()->getProvider($registry->get('settings')->provider()))->not->toBeNull();
 });
 
 it('resolves enabled modules in stable dependency order', function () {

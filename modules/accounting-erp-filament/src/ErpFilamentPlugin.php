@@ -22,8 +22,6 @@ final class ErpFilamentPlugin implements Plugin
         $sections = match ($panel->getId()) {
             'admin' => ['Admin', 'App'],
             'app' => ['App'],
-            'customer' => ['Customer'],
-            'vendor' => ['Vendor'],
             default => [],
         };
 

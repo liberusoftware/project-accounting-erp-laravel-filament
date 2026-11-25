@@ -1,1 +1,32 @@
-{"name":"liberusoftware/module-accounting-inventory-accounting-livewire","description":"Livewire 4 UI for inventory accounting.","type":"liberu-module","license":"MIT","version":"1.0.0","require":{"php":"^8.5","livewire/livewire":"^4.4.8","liberusoftware/module-accounting-inventory-accounting":"^1.0"},"autoload":{"psr-4":{"Liberu\\Accounting\\InventoryAccountingLivewire\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\InventoryAccountingLivewire\\InventoryAccountingLivewireServiceProvider"]},"liberu":{"name":"accounting-inventory-accounting-livewire"}},"config":{"allow-plugins":{"pestphp/pest-plugin":true}}}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\InventoryAccountingLivewire\\InventoryAccountingLivewireServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-inventory-accounting-livewire"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\InventoryAccountingLivewire\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-inventory-accounting-livewire",
+  "description": "Livewire 4 UI for inventory accounting.",
+  "require": {
+    "liberusoftware/module-accounting-inventory-accounting": "^1.0",
+    "php": "^8.5",
+    "livewire/livewire": "^4.4.8"
+  },
+  "version": "1.1.0",
+  "license": "MIT"
+}

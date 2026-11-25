@@ -31,6 +31,11 @@ class SeederSecurityTest extends TestCase
         $this->assertTrue(Hash::check('private-configured-seed-password', $admin->password));
         $this->assertStringNotContainsString('private-configured-seed-password', $output.Artisan::output());
         $this->assertStringNotContainsString('Admin password:', $output.Artisan::output());
+
+        config(['app.seed_admin_password' => 'replacement-configured-seed-password']);
+        $this->assertSame(0, Artisan::call('db:seed', ['--class' => DatabaseSeeder::class, '--force' => true]));
+        $this->assertTrue(Hash::check('replacement-configured-seed-password', $admin->fresh()->password));
+        $this->assertStringNotContainsString('replacement-configured-seed-password', Artisan::output());
     }
 
     public function test_unconfigured_administrator_password_is_not_predictable(): void

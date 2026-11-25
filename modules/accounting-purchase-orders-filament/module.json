@@ -1,1 +1,31 @@
-{"$schema":"https://schemas.liberu.dev/module/v1.json","name":"accounting-purchase-orders-filament","display_name":"Accounting Purchase Orders Filament","description":"Filament presentation for purchase orders.","version":"1.0.0","category":"presentation","provider":"Liberu\\Accounting\\PurchaseOrdersFilament\\PurchaseOrdersFilamentServiceProvider","requires":{"php":"^8.5","laravel":"^13.0","packages":{"liberusoftware/module-accounting-purchase-orders":"^1.0"}},"capabilities":["accounting.purchase-orders.filament"],"features":["Order management","Receipts and closure"],"presentation":{"filament":{"app":["Liberu\\Accounting\\PurchaseOrdersFilament\\PurchaseOrdersFilamentPlugin"]}},"default_enabled":true}
+{
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-purchase-orders": "^1.0"
+    }
+  },
+  "display_name": "Accounting Purchase Orders Filament",
+  "capabilities": [
+    "accounting.purchase-orders.filament"
+  ],
+  "category": "presentation",
+  "name": "accounting-purchase-orders-filament",
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "description": "Filament presentation for purchase orders.",
+  "default_enabled": true,
+  "features": [
+    "Order management",
+    "Receipts and closure"
+  ],
+  "version": "1.1.0",
+  "provider": "Liberu\\Accounting\\PurchaseOrdersFilament\\PurchaseOrdersFilamentServiceProvider",
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\PurchaseOrdersFilament\\PurchaseOrdersFilamentPlugin"
+      ]
+    }
+  }
+}

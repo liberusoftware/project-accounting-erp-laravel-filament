@@ -31,7 +31,7 @@ it('keeps the legal entity resource explicit and stable', function (): void {
 });
 
 it('declares the supported legal entity input contract', function (): void {
-    $rules = app(StoreLegalEntityRequest::class)->rules();
+    $rules = (new StoreLegalEntityRequest())->rules();
 
     expect($rules)->toMatchArray([
         'name' => ['required', 'string', 'max:255'],

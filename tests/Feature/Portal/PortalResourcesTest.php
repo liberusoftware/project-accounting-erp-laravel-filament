@@ -9,9 +9,9 @@ use Liberu\Accounting\Erp\Models\Bill;
 use Liberu\Accounting\Erp\Models\Customer;
 use Liberu\Accounting\Erp\Models\Invoice;
 use Liberu\Accounting\Erp\Models\Vendor;
-use Liberu\Accounting\ErpFilament\Filament\Customer\Resources\Invoices\PortalInvoiceResource;
-use Liberu\Accounting\ErpFilament\Filament\Customer\Widgets\PortalBalanceWidget;
-use Liberu\Accounting\ErpFilament\Filament\Vendor\Resources\Bills\PortalBillResource;
+use Liberu\Accounting\CustomerPortalFilament\Resources\Invoices\PortalInvoiceResource;
+use Liberu\Accounting\CustomerPortalFilament\Widgets\PortalBalanceWidget;
+use Liberu\Accounting\SupplierPortalFilament\Resources\Bills\PortalBillResource;
 use Tests\TestCase;
 
 class PortalResourcesTest extends TestCase

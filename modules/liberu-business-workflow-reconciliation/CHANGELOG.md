@@ -1,5 +1,9 @@
 # Changelog
 
-## 1.0.0 - 2026-08-24
+## 1.1.0
 
-- Added idempotent workflow run registration and correlation events.
+- Added tenant-safe lifecycle transitions, typed rejection, and committed domain events.
+
+## 1.0.0
+
+- Initial documented module boundary.

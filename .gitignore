@@ -58,6 +58,18 @@ docs/superpowers
 .github/skills/
 .junie/skills/
 coverage.xml
-# Installed from Packagist, not carried here.
+.libs/
+**/__pycache__/
+# Installed from Packagist/GitHub, not carried here.
 /modules/module-manager/
 /modules/module-manager-filament/
+/modules/passkeys/
+/modules/payment-adyen/
+/modules/payment-contracts/
+/modules/payment-core/
+/modules/payment-gocardless/
+/modules/payment-mollie/
+/modules/payment-paddle/
+/modules/payment-paypal/
+/modules/payment-square/
+/modules/payment-stripe/

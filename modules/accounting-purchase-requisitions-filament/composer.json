@@ -1,1 +1,32 @@
-{"name":"liberusoftware/module-accounting-purchase-requisitions-filament","description":"Purchase requisitions Filament adapter.","type":"liberu-module","license":"MIT","require":{"php":"^8.5","filament/filament":"^5.11.0","liberusoftware/module-accounting-purchase-requisitions":"^1.0"},"autoload":{"psr-4":{"Liberu\\Accounting\\PurchaseRequisitionsFilament\\":"src/"}},"extra":{"laravel":{"providers":["Liberu\\Accounting\\PurchaseRequisitionsFilament\\PurchaseRequisitionsFilamentServiceProvider"]},"liberu":{"name":"accounting-purchase-requisitions-filament"}},"version":"1.0.0","config":{"allow-plugins":{"pestphp/pest-plugin":true}}}
+{
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\PurchaseRequisitionsFilament\\PurchaseRequisitionsFilamentServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-purchase-requisitions-filament"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\PurchaseRequisitionsFilament\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-purchase-requisitions-filament",
+  "description": "Purchase requisitions Filament adapter.",
+  "require": {
+    "filament/filament": "^5.11.0",
+    "php": "^8.5",
+    "liberusoftware/module-accounting-purchase-requisitions": "^1.0"
+  },
+  "version": "1.1.0",
+  "license": "MIT"
+}

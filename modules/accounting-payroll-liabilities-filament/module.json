@@ -1,1 +1,32 @@
-{"$schema":"https://schemas.liberu.dev/module/v1.json","name":"accounting-payroll-liabilities-filament","display_name":"Accounting Payroll Liabilities Filament","description":"Filament 5 surfaces for payroll liabilities.","version":"1.0.0","category":"presentation","provider":"Liberu\\Accounting\\PayrollLiabilitiesFilament\\PayrollLiabilitiesFilamentServiceProvider","requires":{"php":"^8.5","laravel":"^13.0","packages":{"liberusoftware/module-accounting-payroll-liabilities":"^1.0"}},"capabilities":["accounting.payroll-liabilities.filament"],"features":["Liabilities","Allocations","Reconciliation"],"presentation":{"filament":{"app":["Liberu\\Accounting\\PayrollLiabilitiesFilament\\PayrollLiabilitiesFilamentPlugin"]}},"default_enabled":true}
+{
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-payroll-liabilities": "^1.0"
+    }
+  },
+  "display_name": "Accounting Payroll Liabilities Filament",
+  "capabilities": [
+    "accounting.payroll-liabilities.filament"
+  ],
+  "category": "presentation",
+  "name": "accounting-payroll-liabilities-filament",
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "description": "Filament 5 surfaces for payroll liabilities.",
+  "default_enabled": true,
+  "features": [
+    "Liabilities",
+    "Allocations",
+    "Reconciliation"
+  ],
+  "version": "1.1.0",
+  "provider": "Liberu\\Accounting\\PayrollLiabilitiesFilament\\PayrollLiabilitiesFilamentServiceProvider",
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\PayrollLiabilitiesFilament\\PayrollLiabilitiesFilamentPlugin"
+      ]
+    }
+  }
+}

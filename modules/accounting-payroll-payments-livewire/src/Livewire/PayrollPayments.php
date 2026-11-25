@@ -22,7 +22,7 @@ final class PayrollPayments extends Component
         $this->selectedBatchId = $batchId;
     }
 
-    public function transition(TransitionPayrollPayment $transition): void
+    public function transitionStatus(TransitionPayrollPayment $transition): void
     {
         $validated = $this->validate([
             'selectedBatchId' => ['required', 'integer'],

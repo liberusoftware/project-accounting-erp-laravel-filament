@@ -4,20 +4,62 @@ declare(strict_types=1);
 
 namespace Liberu\Accounting\Wise;
 
+use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 use Liberu\Accounting\BankFeeds\Contracts\BankFeedAdapter;
 use Liberu\Accounting\BankFeeds\Models\BankFeedConnection;
-use Liberu\Foundation\Integrations\Contracts\IntegrationAdapter;
+use Liberu\Foundation\Integrations\Contracts\OAuthIntegrationAdapter;
 use Liberu\Foundation\Integrations\Contracts\PaymentProviderAdapter;
+use Liberu\Payment\Contracts\Contracts\OutboundPaymentAdapterContract;
+use Liberu\Payment\Contracts\DTOs\ConnectionHealthDto;
+use Liberu\Payment\Contracts\DTOs\MerchantAccountContextDto;
+use Liberu\Payment\Contracts\DTOs\PaymentCapabilityDescriptorDto;
 
-final class WiseBankFeedAdapter implements BankFeedAdapter, IntegrationAdapter, PaymentProviderAdapter
+final class WiseBankFeedAdapter implements BankFeedAdapter, OAuthIntegrationAdapter, OutboundPaymentAdapterContract, PaymentProviderAdapter
 {
     public function __construct(private readonly ?BankFeedConnection $connection = null) {}
 
     public function name(): string
     {
         return 'wise';
+    }
+
+    public function providerKey(): string
+    {
+        return $this->name();
+    }
+
+    public function descriptor(): PaymentCapabilityDescriptorDto
+    {
+        return new PaymentCapabilityDescriptorDto(
+            providerKey: $this->providerKey(),
+            displayName: 'Wise',
+            supportedMethods: ['bank_transfer'],
+            supportedCurrencies: [],
+            supportsAuthorizeOnly: false,
+            supportsPartialCapture: false,
+            supportsPartialRefund: false,
+            supportsVaulting: false,
+            supportsDisputes: false,
+            supportsSettlementReconciliation: false,
+        );
+    }
+
+    public function testConnection(MerchantAccountContextDto $account): ConnectionHealthDto
+    {
+        $token = $account->credentials['access_token'] ?? null;
+        if (! is_string($token) || trim($token) === '') {
+            return new ConnectionHealthDto($this->providerKey(), false, 'An access token is required.');
+        }
+
+        try {
+            $healthy = $this->paymentClient($account)->get($this->baseUrl($account->sandbox).'/v2/profiles')->successful();
+        } catch (ConnectionException) {
+            $healthy = false;
+        }
+
+        return new ConnectionHealthDto($this->providerKey(), $healthy, $healthy ? 'Connected.' : 'Provider connection failed.');
     }
 
     public function capabilities(): array
@@ -81,26 +123,56 @@ final class WiseBankFeedAdapter implements BankFeedAdapter, IntegrationAdapter, 
         return ['added' => array_map(fn (array $transfer): array => $this->normalize($transfer), $transfers), 'modified' => [], 'removed' => [], 'next_cursor' => $connection->cursor];
     }
 
-    /** @param array<string, mixed> $payment */
     public function sendPayment(array $payment): array
     {
-        return $this->paymentClient()->post($this->baseUrl().'/v1/transfers', $payment)->throw()->json();
+        return $this->sendOutboundPayment($this->bankFeedAccount(), $payment);
     }
 
-    /**
-     * Wise has no provider-side bulk endpoint; each transfer is submitted through
-     * the same authenticated, bounded client so orchestration can retry per item.
-     *
-     * @param  list<array<string, mixed>>  $payments
-     * @return array{title: string, payments: list<array<string, mixed>>}
-     */
     public function sendBulkPayments(string $title, array $payments, ?string $scheduleFor = null): array
     {
+        return $this->sendOutboundBatch($this->bankFeedAccount(), $title, $payments, $scheduleFor);
+    }
+
+    public function sendOutboundPayment(MerchantAccountContextDto $account, array $payment): array
+    {
+        $this->validateTransfer($payment);
+
+        return $this->createTransfer($account, $payment);
+    }
+
+    public function sendOutboundBatch(MerchantAccountContextDto $account, string $title, array $payments, ?string $scheduleFor = null): array
+    {
+        if ($scheduleFor !== null) {
+            throw new \InvalidArgumentException('Wise transfer creation does not support scheduled batches.');
+        }
+
         if (count($payments) > 100) {
             throw new \InvalidArgumentException('Wise bulk submissions are limited to 100 transfers.');
         }
 
-        return ['title' => $title, 'payments' => array_map(fn (array $payment): array => $this->sendPayment(array_merge($payment, ['schedule_for' => $scheduleFor])), $payments)];
+        // Validate the entire batch before submitting any transfer. The caller
+        // can safely retry a partially submitted batch with the same IDs.
+        foreach ($payments as $payment) {
+            $this->validateTransfer($payment);
+        }
+
+        return [
+            'title' => $title,
+            'payments' => array_map(fn (array $payment): array => $this->createTransfer($account, $payment), $payments),
+        ];
+    }
+
+    private function validateTransfer(array $payment): void
+    {
+        $transactionId = $payment['customerTransactionId'] ?? null;
+        if (! is_string($transactionId) || trim($transactionId) === '') {
+            throw new \InvalidArgumentException('A customerTransactionId is required for Wise transfers.');
+        }
+    }
+
+    private function createTransfer(MerchantAccountContextDto $account, array $payment): array
+    {
+        return $this->paymentClient($account)->post($this->baseUrl($account->sandbox).'/v1/transfers', $payment)->throw()->json();
     }
 
     private function normalize(array $transfer): array
@@ -110,9 +182,9 @@ final class WiseBankFeedAdapter implements BankFeedAdapter, IntegrationAdapter, 
         return ['external_id' => (string) ($transfer['id'] ?? ''), 'transaction_date' => substr((string) ($transfer['createdDate'] ?? now()->toDateString()), 0, 10), 'amount' => -abs((float) $amount), 'currency' => $transfer['targetCurrency'] ?? $transfer['sourceCurrency'] ?? 'USD', 'status' => in_array($transfer['status'] ?? '', ['outgoing_payment_sent', 'completed'], true) ? 'posted' : 'pending', 'description' => $transfer['reference'] ?? 'Wise transfer', 'raw_data' => $transfer];
     }
 
-    private function baseUrl(): string
+    private function baseUrl(?bool $sandbox = null): string
     {
-        return config('services.wise.environment', 'sandbox') === 'production' ? 'https://api.transferwise.com' : 'https://api.sandbox.transferwise.tech';
+        return ($sandbox ?? (config('services.wise.environment', 'sandbox') !== 'production')) ? 'https://api.sandbox.transferwise.tech' : 'https://api.transferwise.com';
     }
 
     private function authUrl(): string
@@ -125,12 +197,27 @@ final class WiseBankFeedAdapter implements BankFeedAdapter, IntegrationAdapter, 
         return (string) config('services.wise.client_id', '');
     }
 
-    private function paymentClient(): PendingRequest
+    private function bankFeedAccount(): MerchantAccountContextDto
     {
         if ($this->connection === null) {
             throw new \RuntimeException('A connection is required for payments.');
         }
 
-        return Http::timeout(30)->connectTimeout(10)->withToken($this->connection->access_token);
+        return new MerchantAccountContextDto(
+            tenantId: (string) $this->connection->team_id,
+            providerKey: $this->providerKey(),
+            credentials: ['access_token' => $this->connection->access_token],
+            sandbox: config('services.wise.environment', 'sandbox') !== 'production',
+        );
+    }
+
+    private function paymentClient(MerchantAccountContextDto $account): PendingRequest
+    {
+        $token = $account->credentials['access_token'] ?? null;
+        if (! is_string($token) || trim($token) === '') {
+            throw new \InvalidArgumentException('An access token is required for payments.');
+        }
+
+        return Http::timeout(30)->connectTimeout(10)->withToken($token);
     }
 }

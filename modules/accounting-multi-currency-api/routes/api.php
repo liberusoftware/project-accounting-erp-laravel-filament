@@ -2,7 +2,12 @@
 
 declare(strict_types=1);
 use Illuminate\Support\Facades\Route;
+use Liberu\Accounting\Erp\Services\ExchangeRateService;
 use Liberu\Accounting\MultiCurrencyApi\Http\Controllers\MultiCurrencyController;
+
+Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
+    Route::get('/exchange-rates', fn () => app(ExchangeRateService::class)->getLatestRates());
+});
 
 Route::middleware(['api', 'auth:sanctum', 'throttle:api'])->prefix('api/v1/accounting/multi-currency')->group(function (): void {
     Route::get('/rates', [MultiCurrencyController::class, 'rates'])->name('accounting.multi-currency.rates');

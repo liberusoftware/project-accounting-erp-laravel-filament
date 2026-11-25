@@ -1,1 +1,30 @@
-{"$schema":"https://schemas.liberu.dev/module/v1.json","name":"accounting-recurring-transactions-filament","display_name":"Accounting Recurring Transactions Filament","description":"Filament presentation for recurring transactions.","version":"1.0.0","category":"presentation","provider":"Liberu\\Accounting\\RecurringTransactionsFilament\\RecurringTransactionsFilamentServiceProvider","requires":{"php":"^8.5","laravel":"^13.0","packages":{"liberusoftware/module-accounting-recurring-transactions":"^1.0"}},"capabilities":["accounting.recurring-transactions.filament"],"features":["Template management"],"presentation":{"filament":{"app":["Liberu\\Accounting\\RecurringTransactionsFilament\\RecurringTransactionsFilamentPlugin"]}},"default_enabled":true}
+{
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-recurring-transactions": "^1.0"
+    }
+  },
+  "display_name": "Accounting Recurring Transactions Filament",
+  "capabilities": [
+    "accounting.recurring-transactions.filament"
+  ],
+  "category": "presentation",
+  "name": "accounting-recurring-transactions-filament",
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "description": "Filament presentation for recurring transactions.",
+  "default_enabled": true,
+  "features": [
+    "Template management"
+  ],
+  "version": "1.1.0",
+  "provider": "Liberu\\Accounting\\RecurringTransactionsFilament\\RecurringTransactionsFilamentServiceProvider",
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\RecurringTransactionsFilament\\RecurringTransactionsFilamentPlugin"
+      ]
+    }
+  }
+}

@@ -1,1 +1,32 @@
-{"$schema":"https://schemas.liberu.dev/module/v1.json","name":"accounting-product-and-service-items-filament","display_name":"Accounting Product and Service Items Filament","description":"Filament 5 surfaces for item and service master data.","version":"1.0.0","category":"presentation","provider":"Liberu\\Accounting\\ProductAndServiceItemsFilament\\ProductAndServiceItemsFilamentServiceProvider","requires":{"php":"^8.5","laravel":"^13.0","packages":{"liberusoftware/module-accounting-product-and-service-items":"^1.0"}},"capabilities":["accounting.product-and-service-items.filament"],"features":["Items","Search","Pricing"],"presentation":{"filament":{"app":["Liberu\\Accounting\\ProductAndServiceItemsFilament\\ProductAndServiceItemsFilamentPlugin"]}},"default_enabled":true}
+{
+  "requires": {
+    "php": "^8.5",
+    "laravel": "^13.0",
+    "packages": {
+      "liberusoftware/module-accounting-product-and-service-items": "^1.0"
+    }
+  },
+  "display_name": "Accounting Product and Service Items Filament",
+  "capabilities": [
+    "accounting.product-and-service-items.filament"
+  ],
+  "category": "presentation",
+  "name": "accounting-product-and-service-items-filament",
+  "$schema": "https://schemas.liberu.dev/module/v1.json",
+  "description": "Filament 5 surfaces for item and service master data.",
+  "default_enabled": true,
+  "features": [
+    "Items",
+    "Search",
+    "Pricing"
+  ],
+  "version": "1.1.0",
+  "provider": "Liberu\\Accounting\\ProductAndServiceItemsFilament\\ProductAndServiceItemsFilamentServiceProvider",
+  "presentation": {
+    "filament": {
+      "app": [
+        "Liberu\\Accounting\\ProductAndServiceItemsFilament\\ProductAndServiceItemsFilamentPlugin"
+      ]
+    }
+  }
+}

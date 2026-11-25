@@ -6,6 +6,10 @@ namespace Liberu\Accounting\SupplierPortalFilament;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Liberu\Accounting\SupplierPortalFilament\Resources\Bills\PortalBillResource;
+use Liberu\Accounting\SupplierPortalFilament\Resources\PortalResourceResource;
+use Liberu\Accounting\SupplierPortalFilament\Resources\VendorCredits\PortalVendorCreditResource;
+use Liberu\Accounting\SupplierPortalFilament\Widgets\PortalBalanceWidget;
 
 final class SupplierPortalFilamentPlugin implements Plugin
 {
@@ -21,7 +25,14 @@ final class SupplierPortalFilamentPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->resources([Resources\PortalResourceResource::class]);
+        if ($panel->getId() === 'vendor') {
+            $panel->resources([PortalBillResource::class, PortalVendorCreditResource::class])
+                ->widgets([PortalBalanceWidget::class]);
+
+            return;
+        }
+
+        $panel->resources([PortalResourceResource::class]);
     }
 
     public function boot(Panel $panel): void {}

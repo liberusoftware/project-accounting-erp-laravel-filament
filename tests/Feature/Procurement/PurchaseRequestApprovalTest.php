@@ -39,7 +39,7 @@ class PurchaseRequestApprovalTest extends TestCase
         $team = Team::forceCreate(['user_id' => $user->id, 'name' => 'Acme', 'personal_team' => false]);
         // The first approval step notifies users holding this Spatie role (see
         // ApprovalRequestedNotification::dispatchToRole), so it must exist first.
-        Role::create(['name' => 'manager', 'guard_name' => 'web']);
+        Role::firstOrCreate(['name' => 'manager', 'guard_name' => 'web']);
         ApprovalRule::create([
             'team_id' => $team->id, 'approvable_type' => 'PurchaseRequest',
             'min_amount' => 100, 'steps' => ['manager'], 'is_active' => true,
