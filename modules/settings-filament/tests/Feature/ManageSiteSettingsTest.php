@@ -70,6 +70,7 @@ it('offers every discovered theme in the theme select', function () {
     // stops resolving it or the discovery returns nothing — which is what would
     // happen if the theme packages were not installed alongside.
     $this->actingAs(TestUser::factory()->create());
+    expect(ManageSiteSettings::getNavigationLabel())->toBe(__('filament.pages.manage_site_settings'));
 
     Livewire::test(ManageSiteSettings::class)
         ->assertOk()

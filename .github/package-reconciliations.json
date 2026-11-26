@@ -1,0 +1,1266 @@
+{
+  "liberusoftware/module-accounting-account-reconciliations-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "429b55555aedbce8f04c365bf7aa3908ff0c635f6d3b16f257e0418ba392859c",
+      "604f0ecdbba4202228df1821e4e7b62625fcac247ed905243853592330344ea4"
+    ]
+  },
+  "liberusoftware/module-accounting-account-reconciliations-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "3f9eaaf9989f8c0641ae8ef2848c7bb722748558f021f45213b8ab5e6c2cb3f4",
+      "8a76ff88ef9da3a0e83f91468f7f6cd7f2afdd3ee179f340eb8644fca081aae7"
+    ]
+  },
+  "liberusoftware/module-accounting-accountant-workspace-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "d2fe6fc4d4f2359dd3f90267f767f9d7baa125b60040ed63b8bba8982b79dd35",
+      "ea8e6da9f01443bd1f12f17947bfa845bc025e14246d1e81d2ca6f111e71b794"
+    ]
+  },
+  "liberusoftware/module-accounting-accountant-workspace-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "11c98aecdfc8dd9fc3d7359a62d485a44b594c7a6eb62e72cabfbb47c8be7fbd",
+      "40afbd6d1f54e02a0d9a443ae9628a691edea396e814dce05f9e4d250dd73c2e"
+    ]
+  },
+  "liberusoftware/module-accounting-accounts-payable-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "1c94c89c8213009009f4fa338daa3eb6cd9c16dc5c70c442270b44a0b7ea6032",
+      "7bc13bd36557ca6e8e48c1d058a4129d121efd571653d6be48c3b5f72dab6961"
+    ]
+  },
+  "liberusoftware/module-accounting-accounts-payable-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "f67b705972df8e669b355e5243b746bf80970bc87eb6c87149145f24f0cd5ded",
+      "e6d525437f0c0583c6f32c2ec875c58643a56aa30068f71eb6411473b7fd40d3"
+    ]
+  },
+  "liberusoftware/module-accounting-accounts-receivable-filament": {
+    "src/Resources/ReceivableOpenItemResource.php": [
+      "2eef291dc61a5916e5f4a80d42d6dff360f4abeceee1168a125659977a9757a0",
+      "6f25e5e2d92e65376dce4081c32d1766879459fbed84a1af7f0acc41150e83e3"
+    ],
+    "tests/Feature/FilamentCoverageTest.php": [
+      "9e94a54a553b42aaac26c7a8912400095b74d8e14d63c3451d4d565d4b0c9002",
+      "c9e9916d379660b790a8e3fffdacf0672c70291314b2530146698e5edcd351d9"
+    ]
+  },
+  "liberusoftware/module-accounting-accounts-receivable-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "5eafdb722f3d3f42f968baf7e774270794e9b78cfa4d8f12b10e64f78cc3df6d",
+      "d7e92e5c1df3b3221f2678771d4cdd9d343da9b229747a3ba7cebf9ed3bff07b"
+    ]
+  },
+  "liberusoftware/module-accounting-anomaly-detection-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "66b0664cc009e240df20b2dda50f6635f34df3d03342e3f24c5371f39b4c85a2",
+      "5e122b173f92cca7e609bae4472df5b389598b8d30e0d83a083e050dbececb0a"
+    ]
+  },
+  "liberusoftware/module-accounting-anomaly-detection-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "47437467fdf5b7aa34cc6fe794d23a976069407c5206eaf4a30653dd0626f067",
+      "83eee95e690011ad160dd4441c0352a515593975ecee468c3059448f4495f9fb"
+    ]
+  },
+  "liberusoftware/module-accounting-asset-events-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "cce5b98575a49fba5ea7be9666d7fa0624c27eb3673b9ebf748993307401def7",
+      "a94db192dc1ac3917b34ab799a1e285df414aeea82e35d571efba81ccff93975"
+    ]
+  },
+  "liberusoftware/module-accounting-asset-events-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "7266d11f3e042b31fc4fc2fc6de7ec57421618d00bbedf6311328f9104afedaa",
+      "08dc701affabad3df81e50aafb22038da9578eab5e5ffce4dd20d81ef964ffcc"
+    ]
+  },
+  "liberusoftware/module-accounting-audit-support-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "0072e3248e3641e0500e14e3162ba9b4b3bf4ae4a1c9e84c18339445e35dec92",
+      "b2fc7962ad1be9cc1e235a0db2d8c4704e92a57ea062435599f5e0cddb337217"
+    ]
+  },
+  "liberusoftware/module-accounting-audit-support-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "9fd374a2ac07d9525a8a5cacd6d0c5e91cc9bcac93516bb045e99c3e58a0c437",
+      "784a0353b05eb4a4356b18e43b48005e9d0f8411ea9618001ed1e9e3f9dc398b"
+    ]
+  },
+  "liberusoftware/module-accounting-automation-pack-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "ea56a71e91bae48aaa22100d38d47b3a3d7b5298baeeebeab14d3ef9d35bae85",
+      "e07cbada32c002257d4ec29a630caebed9ee395a489345e8369eedff2bb7ef38"
+    ]
+  },
+  "liberusoftware/module-accounting-automation-pack-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "f1be6b5985b6f63f05136bbd305c10ee812d99350eda493953cf9e7ad5bab248",
+      "2a9abc4ea29c95e680c716ff118775f24d8e6aa951d41edbd5619f26666c705e"
+    ]
+  },
+  "liberusoftware/module-accounting-bank-accounts-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "dd2c77e8d14231f567df24eea33557c93836ab1aba1d15e45ce7c7a167681a6c",
+      "a62938d8653b4155dda3fc09da927ddc7570b9407124b6c0b6af73c5fc30e5e7"
+    ]
+  },
+  "liberusoftware/module-accounting-bank-accounts-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "0378a498f7f6d7ecc48f7c2f202a764abed3971c668bc206959a0b862e42a3bd",
+      "9d1ba967126815e5f42ab3a85300ec54b5b26e1748adac51a3a6b6b90d745674"
+    ]
+  },
+  "liberusoftware/module-accounting-bank-feeds-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "4121b07492d9ab17ad249e947156ee44da5c70bc41c2dc253a0bcfaafc573efc",
+      "80a19cb19abc0524f4d733eda984b1d01152060157258d39cbcdb5ec30b7e412"
+    ]
+  },
+  "liberusoftware/module-accounting-bank-feeds-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "419f1bcb0efa3505e197f1cd89013db6b16dd4782e08c8b33b25784cbbbfe4a2",
+      "541154c2c6635e9931298fbff37636d6484ca2b2214e611de1a41a1331cd8d25"
+    ]
+  },
+  "liberusoftware/module-accounting-bank-reconciliation-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "232ea722ce6d6f99bb5951a57a7cbcc52dcae4c7860d7d29601af416cac1dc61",
+      "c23c4b12bd9841c6af1b33c584361e1a24d98638609ba952399094fb27e75711"
+    ]
+  },
+  "liberusoftware/module-accounting-bank-reconciliation-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "dcd1d76dd66554ec41577b737e833c3d0ee7c7fa47bd633c24c12cabe01d5e61",
+      "a191dada2dc3e55173c9760bfd04b76aa0bb820d14a54e4ef6032cc891f8c536"
+    ]
+  },
+  "liberusoftware/module-accounting-bank-rules-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "fddefb0c2feb876d192a82c952735d4470bf302ad2ae9a47778b2c1ee358cee7",
+      "121c1d254151f97723bba543d16df7a410aee8b3eb013a53a2bbbaff9cf7a26d"
+    ]
+  },
+  "liberusoftware/module-accounting-bank-rules-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "bf314e9ebcdbf8e313cb6acbf9de35fc8ec2a65874b72c4cf5f3a6301e8ed6cb",
+      "fb1fec3e7ec573cbd9ff064e96a5472929e3a3ecb9f05036c7fe6fb24e7366d3"
+    ]
+  },
+  "liberusoftware/module-accounting-bill-payments-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "7cd1cb8ff257e23cf9dbc330e28c17f1dfcb68eb78a761f5dca0ee37465cdd75",
+      "bf305b6b92b28416518d870640d3351a5bcf82076b64bb4d3f086a23d1ef1f90"
+    ]
+  },
+  "liberusoftware/module-accounting-bill-payments-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "e7aa9331183a943ba3ede59676f7c05f8b4b1482a08bd6c3b430ae46e5742942",
+      "acac14ae09314e18fae90f6319d4b863278998a17c32adb83981de065b3848f4"
+    ]
+  },
+  "liberusoftware/module-accounting-branch-and-location-accounting-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "09fd7b048e56114dfda9960f9781560aa9806da698fc6f032598c8d8b4bd6854",
+      "95cf30baf8cc48fb872f26ae0230260f283ef82d3f7ac812c0fe3b805afd5aa5"
+    ]
+  },
+  "liberusoftware/module-accounting-branch-and-location-accounting-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "080553b4db9efb4803b4614af499184c478e71d29d640d8f4e0d7b561a98dcd3",
+      "b4a8d35aed96de4b51d052ef4cf75cbacc6b3d33ccd7ed9afb6c0525c3ed913e"
+    ]
+  },
+  "liberusoftware/module-accounting-budgets-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "c17f7cd4e412959b3904698f1d1daa0d97043d9af4e999992cd1e67050d8cf64",
+      "519ac15dff9d24e3e02819ec7ca0c8ecb5af13d90571a2f9b400ad9df17e2bce"
+    ]
+  },
+  "liberusoftware/module-accounting-budgets-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "e117434f002f557cbf5e3244e4e94141ee5e12f2aa1c659cdb9ad74bfa8ce189",
+      "8261d57b6cd7477cb6307c101a093af281ecd29a4686d2ae31cb120dc9ff5dbf"
+    ]
+  },
+  "liberusoftware/module-accounting-business-insights-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "e365dcfc3dd5f25af8f63594929508e1b0493b9b60a5aef014840d1334534cb0",
+      "6dc72ae279fa32165d040b07029939cfdd330e23603530bfb60e636fdf4189a7"
+    ]
+  },
+  "liberusoftware/module-accounting-business-insights-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "9c82532060fad953cd18d5a42d4a0690cf94019e73f21e06fbce46182a01117a",
+      "08ae04d67ceffcaebaaf7c6da0edfce38260cb0076e03f6078507559793081d0"
+    ]
+  },
+  "liberusoftware/module-accounting-carbon-accounting-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "eb45263830e5ed2e1e956ca7dee03c9087cb643b9143bcf30d34d7b526ee4b97",
+      "5f68706ce1367692d04b849f113d242749a5dda06eba4154d92ec26b7abfe431"
+    ]
+  },
+  "liberusoftware/module-accounting-carbon-accounting-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "3705642ded9a7ba2eef45980864fc0bf15eba4dddd9dae23f3bc1df3cb6dcad3",
+      "c6225f4caabc7658c01d4f763b32b6ee493b77ed6b48650cc5cb13b4493cea1a"
+    ]
+  },
+  "liberusoftware/module-accounting-cash-coding-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "8f56a8aea6f72554bb167d698c0c84ba0e0a1eb77ead672d9775fa18eb83fc43",
+      "e8d77d3eb10670afedc08b827a151e9343a294e845a036f4ab17eff2029a3497"
+    ]
+  },
+  "liberusoftware/module-accounting-cash-coding-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "3dc74584d7580fe180cf832a5d9893af17d9a0769905446cb88e2a96c14df908",
+      "19acef9450127bce9436159162a47eca62bebbede423a7a38ccc8f275abbc3fd"
+    ]
+  },
+  "liberusoftware/module-accounting-cash-collection-assistant-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "a12b0d6ee7ee798db9fd52e2dcba1274310fb258c496c8076f74afcc860788d1",
+      "c19dc8fe9867173749047cc1ef1245c7e83cd115acdc978d6a4188629927ade0"
+    ]
+  },
+  "liberusoftware/module-accounting-cash-collection-assistant-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "8fe3d5f5ff3b4645cc237c0496245c947637dc66731547fb99c39721831176e0",
+      "933d19afb2216a0154f328dc3f32ed1e6ea6303c9d640ff531932adb6bb9a471"
+    ]
+  },
+  "liberusoftware/module-accounting-cash-flow-forecasting-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "89a1f61161c84507cc9f0d8171c9a8fa8a10f56f3c03f4572375ab78aa6348f6",
+      "b43713d9dada48caef726533d1bc36f64041c52c4eb258b22fcfe26d36944355"
+    ]
+  },
+  "liberusoftware/module-accounting-cash-flow-forecasting-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "357c91ef43ace7969f5fffd2f69acf74428626f4c6c971f0d5c6604578c1d46a",
+      "d5aad318dbdec003404fe3c507d49f1676da348606a1c473f9c742d7c094a61f"
+    ]
+  },
+  "liberusoftware/module-accounting-cash-position-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "1365a5c3225f57911f3d4cc1a819a683df8541041e25b9a31f6bf259b1b0b0e2",
+      "ebbd2cea6b70767e3eb6fac5d2ebea23423d76eb23703426ea20fc39224800ae"
+    ]
+  },
+  "liberusoftware/module-accounting-cash-position-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "2e3f4f9f52dc3937ad92fab7b3423d454b9646574a5a6cc6ce3150026a72b497",
+      "cc1068c8f25017e1efbc54a875237b72ee531414f58123ec23aa7e49b678e07c"
+    ]
+  },
+  "liberusoftware/module-accounting-chart-of-accounts-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "183c7da44576fbc8f6b3f80073b8b51d7a83139d8a75403e9199f912b124a21c",
+      "5873a61afd163180c27341a5f2f5962f8b700c8e239a80458148199bd2a425a5"
+    ]
+  },
+  "liberusoftware/module-accounting-client-collaboration-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "a12caf04080ca04c4e7cb3a2f844932a7863907779be72ae671224a94cbed7b2",
+      "17b8eb0b4aa86af7ac9d7bae7b5fbc28852d8bedde799fcc100c1204b50e107d"
+    ]
+  },
+  "liberusoftware/module-accounting-client-collaboration-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "bf737b93b89b681897509573c4ef8208d82d75d6e46a48d2fad9334f6226f6a7",
+      "03edbd3ed37a9a143a2fb2d45cba8e455dc39d48db98711943a299977c671652"
+    ]
+  },
+  "liberusoftware/module-accounting-close-management-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "8a6aad04aa21e52594d591bc4d7b882a8cc2a0898c9df0dcc50045df6607b328",
+      "351907060987f3e685249455ef71c403acfaa64b6c1e4a532d56aa2007964cd5"
+    ]
+  },
+  "liberusoftware/module-accounting-close-management-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "b11cc86e983645d7da612fb499d621077cc12f1850239b5c22304e0aa7bc3037",
+      "adce8606ffb065a105acc49b1efbd16c4d21b4c97efb1d2251cd962e3711a756"
+    ]
+  },
+  "liberusoftware/module-accounting-coding-suggestions-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "1fbb521461c4a5ea1ec8909f1ea51b645553b0ebbbb683ee6cc3ca2e21aefa6b",
+      "1333ae6374f021550da590a69349034117b72d2134d0da884a54a565959172c6"
+    ]
+  },
+  "liberusoftware/module-accounting-coding-suggestions-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "0d99409800def4135723418544fedf3e0fa916762dd9dca3f42ee8f1beda008a",
+      "ec13e10072f4c91a26e0ad8644a712f21ce2971c19d7a5bae227afef87909910"
+    ]
+  },
+  "liberusoftware/module-accounting-collections-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "e57e3622fadf0512e78fe31fb9af77981fb1e069e5476710008824171237083b",
+      "85d934747687dee3e04b693e29d0b1569a34ce5c45270373ebc255c627fcb8ea"
+    ]
+  },
+  "liberusoftware/module-accounting-collections-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "b5dcbf45ec532bf2e50edfb615a44f447e5250d3c55dc4545a28935ef2606bd6",
+      "e317ce053cc5eeb37f5da21d5746330020f015b58b662c8c70cdf5c35468280c"
+    ]
+  },
+  "liberusoftware/module-accounting-consolidation-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "76414a7fe8f895b668db56f89013ca316f95753eae120ffb7bc4882aa9e3172f",
+      "7aaa2619821627b56a04836349a4e23c2e6e2f07b45fcd817d9dea9b2140ca81"
+    ]
+  },
+  "liberusoftware/module-accounting-consolidation-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "75ab39143f70e3fb42304e60e2a50a0101972fe461d81370ccf5caa83dde05f2",
+      "bfb6764950628c609a8c307f1143593e3951b7737c4be69083b07a5f9926503c"
+    ]
+  },
+  "liberusoftware/module-accounting-construction-tax-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "ddfcf2a24a6a61de8c2c3112621aee20cfcac20a38ec6269a5a00e45255a9eda",
+      "454daec1f469e0053e797ce1638c7eb7347c2354af9eef8d1ec9deccc1b4bcf9"
+    ]
+  },
+  "liberusoftware/module-accounting-construction-tax-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "113ca69dc7831a04941c2829cd7c8341785edd82b7a3f1d90c58aede9cb61fd5",
+      "8b8d374c290349cdd5904d2b66da62be6fbb30bc7057f7521ec351a9f228eb2a"
+    ]
+  },
+  "liberusoftware/module-accounting-contractor-compliance-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "b79f9f7b56fc9b6be3d5b8e8d4762c3c70bd5d66a0bda2819e25bf012480b86b",
+      "5851d179c882fcf202b32374be4f4ee7ecd007680739ac72a1e785942877dc8d"
+    ]
+  },
+  "liberusoftware/module-accounting-contractor-compliance-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "5c2854a79cfb991bee4c5817dcb0c89eb2848b3a07d5f501476f2c25e693ec55",
+      "50504c83fc6b860dd00e67dc6990c2b6902a24d3dc24b343329fde3550884e1d"
+    ]
+  },
+  "liberusoftware/module-accounting-contractor-reporting-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "930c89f3ef6cbfa2762019c8602151008dd9f7e494e591a38ffa2dfc10f1d8b3",
+      "7b9387682684e9153f7a87580359231961f980b3cc11ad28297ad49157c108dc"
+    ]
+  },
+  "liberusoftware/module-accounting-contractor-reporting-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "48a821327bb97e1154a6814d38eafe12699d485978ebc2bd3d9c1de860a2ff1d",
+      "c9695f56df141ea3932321001e72404735a76fa174740826ced3cdd61e6d8fc9"
+    ]
+  },
+  "liberusoftware/module-accounting-copilot-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "999321e191ed83ed4b97acfbb005c1860e97ecb156983b220aeca27d556a438c",
+      "e27534139977bba2762cea0836ae0576793fd98080aad90ef5bc30b02c2b19a7"
+    ]
+  },
+  "liberusoftware/module-accounting-copilot-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "9256c3a5d6d935d786b7ed2ac3035e49354c0897b52dd5cc1cbb23ca8a590bde",
+      "ef736761ae1752b1b081beae6a96bb0d089ded5e6fcd6487cadfb66149e11c55"
+    ]
+  },
+  "liberusoftware/module-accounting-core-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "960c4d233b3186cf7e9c13be4db6033b4ffd66cfcef667bd2c477b983c0ec826",
+      "40250241f2d13421fcd0f9505b04569974e43892d98fc22b98580e6eae7076f0"
+    ]
+  },
+  "liberusoftware/module-accounting-corporate-cards-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "3560fd1008b8bd88d6b01f3a4949cced7f1915464a4b5a12c486c569ed477596",
+      "85f224e7efb8680c8457d7f8fccff15fadaaa84c07b5761ccdefd9aa8faf911c"
+    ]
+  },
+  "liberusoftware/module-accounting-corporate-cards-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "b86a475a6f59b886e630b8841e40a3be906efb86de16a76a9f47d1a5fa033a5e",
+      "28433794fd4990221ecc2e8daefa62b64ab45ff23d74dbaf0dcb01ffae53855a"
+    ]
+  },
+  "liberusoftware/module-accounting-credit-notes-and-adjustments-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "2441a26fdd982b1c637d4368ac353f4c351fb85e62a4f9e42aff9a35a34fee81",
+      "1cd4cce1669de10bfaef8aca42a3f0740ef42f5ecb23943684952e1ee8f48fea"
+    ]
+  },
+  "liberusoftware/module-accounting-credit-notes-and-adjustments-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "633ba75ab7ce0b2a6c174cecaf7416e18681c81eaf5ddffd9476e3bc50006161",
+      "ee8784d46cc8ff0476fd7248fc986d2c745772d444761a92522ac8377fb704ac"
+    ]
+  },
+  "liberusoftware/module-accounting-custom-report-builder-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "7b6613695b24bfaa6c784f6dc92fc75d64028b37aced3d1b262eec86289f5cc2",
+      "c5ea594466a10a3ca2f08bf0781bbb06b356b9865d8de43b91b9549d8383d8ed"
+    ]
+  },
+  "liberusoftware/module-accounting-custom-report-builder-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "9b7b7441c98c5843b7a457b5c4e7050ea8b7aa640e7935c3341c2fde0a12a69d",
+      "dc9880daa193cab0617bd28e5d26a76cc35e209e79efb035176571c8adeb1e38"
+    ]
+  },
+  "liberusoftware/module-accounting-customer-payments-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "fe0f6bba026f0a40f0092a0a26baccbf8c258d8a90b78e2d68efc5605d8b3dfb",
+      "a31081d8aca8b2cdbdf47b56105a1db5e89811b528ce15969153b71e7e8608cd"
+    ]
+  },
+  "liberusoftware/module-accounting-customer-payments-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "7dd25bf2cbaccc395ea44cf544019c3ecfbe6aa9e17b93d136f39f2668c84ed2",
+      "3e69e44e219d0fdc924f279a826e94a1d8dd4defc1109bb9de0f81b6d6f0e105"
+    ]
+  },
+  "liberusoftware/module-accounting-customer-portal-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "32adc5e04b721f31fca53ab6ebe4f550780e4c0a3f6cf377a4e7e30fa20dccbf",
+      "26d58bbb7b2958ebf9953b3c356eecce1a9cb937551a831396b6d4637c61dd31"
+    ]
+  },
+  "liberusoftware/module-accounting-customer-portal-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "a55da24913a3149596e88ab70d257c5bb982bdf62593e5622d14aef5c77ccd05",
+      "9dcc57105a1615547eb8eb00395060aeb04fb69375edef81a52d27012e5394a2"
+    ]
+  },
+  "liberusoftware/module-accounting-dashboards-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "ccf281a924af7747cbd30c1031b93f72cb23988bb00baa0ae57f19826c34e212",
+      "d0914089e8cda56a0e3436373f5d8a107f71f6d825554668d3e9fa2d0e4d9b63"
+    ]
+  },
+  "liberusoftware/module-accounting-dashboards-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "e2234ee47f49d07ff66c47e405a7a54e3545e7437a6a9cd8b3c91ce7709aa393",
+      "c6fdaa77d858ef45964397401b4987fffb4a0e424f01aa6ce7c5406f954260b6"
+    ]
+  },
+  "liberusoftware/module-accounting-debt-and-loans-filament": {
+    "src/Resources/DebtFacilityResource.php": [
+      "1156008ef6ea17f3db28894b10e6e1dd8a127c1029e86c0f704f32e860df9ea0",
+      "175ad04ff727eca31b0ec540204245cf0f785e64f5163cb2aff45debafc3249e"
+    ],
+    "tests/Feature/FilamentCoverageTest.php": [
+      "aea0c903aefccce48fd54b469af8949fcb9c3c793104431d20f4ac0d3837a838",
+      "648a982d7fb534537ac09bf70b978d1c5597c13a2ce21650cc87db65ec0f0ef7"
+    ]
+  },
+  "liberusoftware/module-accounting-debt-and-loans-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "a62df7be590818f54361a5a48bbd271a85544a7efac2bcdce4cbde2f04646d05",
+      "f84c72ec82245df6c73e9fe454d14d1e80075c4ead633e7fed24fa4d74114183"
+    ]
+  },
+  "liberusoftware/module-accounting-deposits-and-clearing-filament": {
+    "src/Resources/ClearingDepositResource.php": [
+      "bc73ef8b29315658677474753126d01b52620459f9cf189b5bb82bb242d4706d",
+      "6b4957d0057434ff549b1ea3bcad762d2a68bb7c3df6855440e7681349c44564"
+    ],
+    "tests/Feature/FilamentCoverageTest.php": [
+      "11d0ad5055456342fc0403e7585731b6773a0711b5121121911b20bfa7f13b0e",
+      "844b4bc334d09e152feec0152ab2e050e686fe19c9398d1e2172b9767850b36c"
+    ]
+  },
+  "liberusoftware/module-accounting-deposits-and-clearing-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "37e6086ac80a0f2379fbb39d2fd0a111ab4202c75fad9b84d74ca575de58b5a6",
+      "14dfc6b28b15c21381543ccdb6f57dbf47d8fcaabd22b83dafb749930f188b45"
+    ]
+  },
+  "liberusoftware/module-accounting-depreciation-filament": {
+    "src/Resources/DepreciationScheduleResource.php": [
+      "e7742e660938147ca2fd348ed76c8531e2602d9f6b680dbe2708443c3540a737",
+      "f92febad03fe76c4100c0ceb0bd584e5f719969dc5708e926d3a158282ed9341"
+    ],
+    "tests/Feature/FilamentCoverageTest.php": [
+      "c8c0efb366b8b259ecb19854903dd9247cb0094e2cba657bfd3b77bf255c1f2b",
+      "2bbb513b75882d150d4dff7c45217991e6108f075a746ea0af7a16104f0dea62"
+    ]
+  },
+  "liberusoftware/module-accounting-depreciation-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "ab30b4b7bf93d781bf0a8a6d646dfc4e5706c9464bda36f03872bc2f9a290c71",
+      "5a8808b92c6dd593393ff316628ce98d653f818602c5bdb3318bfb35cce66d86"
+    ]
+  },
+  "liberusoftware/module-accounting-dimensions-and-tracking-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "5e9858290df3316b7928d75872da2757461a50427d08b80ec5841cc8905d6006",
+      "af2e85a1e01faed73be4a401a00c8b2e08e1d30fb1216d2f1f7e7e5263fc7971"
+    ]
+  },
+  "liberusoftware/module-accounting-dimensions-and-tracking-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "f6a604bac278ea381b8b3a1df37ef1bd779a1e17aff9c01f66da2645b27fad59",
+      "c76d73c6910d42985e26c23cbdeea318dcbdc0ea5cf5647d7681cb4139876fdf"
+    ]
+  },
+  "liberusoftware/module-accounting-document-capture-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "6bfede0aab0ff6409d04dd315026cf304be1ae03e063542ff13681906cdc5a17",
+      "dd765532c6e173e22782c92fe7e7eeafe83ade31774b474ccb697775dc367531"
+    ]
+  },
+  "liberusoftware/module-accounting-document-capture-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "94125f979baa2fce9d5141de9365a0bda7cf000147e1172f8a444b3b6b7a1bcc",
+      "92edd181d0b504b292974ad5401438008a397ab2e3bd96bf39e41463496c52ed"
+    ]
+  },
+  "liberusoftware/module-accounting-e-invoicing-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "aaca4250240dca4063281f79ad1e9a6e219932defbdfc1005528bcf0adcd407a",
+      "3f53b84096a84c7353341f390de625eb2545c7b22e1cf7571fad7297365b479d"
+    ]
+  },
+  "liberusoftware/module-accounting-e-invoicing-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "4d3395a14af9d92a59ef86fce1c15589b7f5fb11745953a6c81326dacfda85a6",
+      "ca81f8492c1e3fdad126ccb8d5cc7762011cafd69536612d45855dc96d323973"
+    ]
+  },
+  "liberusoftware/module-accounting-employee-expenses-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "efbb6103e0bfa3ca46bb67cf55c5261e037b49b23fa5bbd7766c834cb485082d",
+      "49e7ece2d0e4786d3e882e8c3be580b63b81bb86e042354d6fa7b9aa1493f143"
+    ]
+  },
+  "liberusoftware/module-accounting-employee-expenses-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "b482b4755f63c258fb099baf81d148611b24f4ec9b4830877b4b559c044d703e",
+      "95830c633c798e1d2c45fabcf4651d317977d46df68905be58b560dff3e5118d"
+    ]
+  },
+  "liberusoftware/module-accounting-estimates-and-quotes-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "a110f39b3e6d13c127f446c90b0a2a9846c7758b51cd7cd69fbdd431c76c610c",
+      "44ec7daa36cf30cb75920d80bffad7963a121a845fbfd112e84478e3188f358b"
+    ]
+  },
+  "liberusoftware/module-accounting-estimates-and-quotes-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "65f832f68f8b709352b2c3a39c789f0ddf7b564f487aab5d70a98014a84daef5",
+      "18be84ae5544e67720035552bf68d4f9479d8ad41670cf164107c03f59750115"
+    ]
+  },
+  "liberusoftware/module-accounting-financial-master-data-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "51c9a0537bf842b240187829cfa006f762adeca3a718284fb2a13eeed22b7ff2",
+      "303a86b18b7671f122f8f64c737f77d59cf56dce2f592a7b0119fddf13f3923e"
+    ]
+  },
+  "liberusoftware/module-accounting-financial-master-data-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "542a4ae8de7ff8741a0bb48353589fc8c1e489431d0e55336fa06aedf6eb62af",
+      "dc4af9ec5c09eeff7caca7cf98c538220b88b67de479f106e8880735c2ea5af3"
+    ]
+  },
+  "liberusoftware/module-accounting-financial-statements-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "55dc340d0429db06a6270b01024aa027cc95771bec44cf175ae3daf0b4beb459",
+      "55b4294dd442fce879b5992bf4fcf6ef51b2d5cad9e7a5f032e4fa4628b4cd1b"
+    ]
+  },
+  "liberusoftware/module-accounting-financial-statements-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "64b567b42ea5999708550625790abaa34e723e2de900124e87d8b2cad3a60448",
+      "9d1131655a7eb032bf2cc17e82119d1c016c4b78338323fdfc12e92717163740"
+    ]
+  },
+  "liberusoftware/module-accounting-fixed-assets-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "7997e5bc8af791749b171f642073edcaf422b454aaab75ac278109e20d54ed0a",
+      "70d94e2a1605263a940f6fd9c3807d8a1c9ed272b84cf484cd9261038653917e"
+    ]
+  },
+  "liberusoftware/module-accounting-fixed-assets-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "668721a9e41a13fe4a6d0d19d874f098224a7513c18c7ad2605f0fb252e2f530",
+      "4ccbe9d292f230e957da1a790dafa48e6a5f701ff9c9de657417e3454df511d9"
+    ]
+  },
+  "liberusoftware/module-accounting-forecasts-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "b84fa8bdf88537ad82c7427eb382cac91655e601b509b21ff5b13c1631fd47f4",
+      "a00813ed9620ec777689fd2e4ccf88f4aeb8dbfc279f31b64addff59763eeed0"
+    ]
+  },
+  "liberusoftware/module-accounting-forecasts-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "e3167611a220f74ab99f29b1779dd91989e48439908e3f2f73e9bfa5ee88650a",
+      "920df34d3f1c98262bd0d8dab729e5cbda82157c8370410e982613c700c93c2e"
+    ]
+  },
+  "liberusoftware/module-accounting-general-ledger-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "bd2527569f4c87a7e037ccf03b607c8ae6d601eee5e717c2ee11ce890c15e39c",
+      "20bb5381a05e8b1e5259d977d3a00822fa8bdefd97376b43f5cbbb874c33c54b"
+    ]
+  },
+  "liberusoftware/module-accounting-goods-and-service-receipts-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "426aa9055112095e5ea5616439e00ddb2073e6522f24937615f2aaf43454835d",
+      "6e3c03846345f1893e828bb727dcfda2b09838c5b718253c5a34d4d6e56df774"
+    ]
+  },
+  "liberusoftware/module-accounting-goods-and-service-receipts-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "1fe88f5911a60ca7da8ad057b2cb53e2ca43f8afbbc09709cb3e999494c3c8fb",
+      "c3651208b67f9055ce7a472b3e9c4b5be0204c242aff3dc97dbe32270dedcd9c"
+    ]
+  },
+  "liberusoftware/module-accounting-intercompany-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "16e648da4427d41ee99114181e75886595e4991323ae061cba2bcef2f3c2ba75",
+      "229c7f82b934effe073acf539ea2c28a02248b4dd523ffacd5249e926048c3fb"
+    ]
+  },
+  "liberusoftware/module-accounting-intercompany-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "bcb38ad55e8e50c460f75b868313f301dcaf5cb016e108dcaf504083f4a79dc9",
+      "531c39d743bac92a5db72ab49244c7176742aa0252e9283d00acfefccb3f92c2"
+    ]
+  },
+  "liberusoftware/module-accounting-inventory-accounting-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "d0d227c6947ad03c20ec96067333b12103df45f84ae162643324f91065d4cb4a",
+      "b318db301b971278e3af372e7dbbe23ed7855e1dfd047aa88aa715278ef856bf"
+    ]
+  },
+  "liberusoftware/module-accounting-inventory-accounting-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "b1297d5afd85d354a50f3c8d3b38b1e19608a06b2156714a42c34c61996173c3",
+      "84e70cfbb8e450020b0a7b147142c4bf60b3ff6ded1ab5cf04ab6d1d50f2ac2a"
+    ]
+  },
+  "liberusoftware/module-accounting-job-estimates-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "171d7aeb20b11e93d216cd83499354e5335f78551af4a11d8e8eeee2fc91ec84",
+      "1119f0db933d2736a8de155e7911d126c234c0061c148b0bba5eba0d20621ae8"
+    ]
+  },
+  "liberusoftware/module-accounting-job-estimates-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "69248dcd35029c22d9017e1e09727e1cca9b36bc322e2a036bb27ca2d37ce6d2",
+      "8ebaf7bf9556ce72181ba744789cb1f8aed0c83f941faed4e498658d72a9af8d"
+    ]
+  },
+  "liberusoftware/module-accounting-journal-approvals-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "7b1423f40e4eb7f31e6d9c01bac0e4cc3eb9d08d84cc2f53e471c45d5cc3c830",
+      "9eb179dc8c0e70346106afaad46abe39d43b2fc2f24831da8d305e9473d12bc7"
+    ]
+  },
+  "liberusoftware/module-accounting-journal-approvals-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "4d981635bd23996bfa7536257c16d2cde6c526378eddccf4882407370145887a",
+      "90ca548a5e73d8dce55944c85378de62bf68a2e04362072170a66cf108d164a2"
+    ]
+  },
+  "liberusoftware/module-accounting-kpi-and-goals-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "129c5162a8e70272868a56b0eaf6edfb7b67b1f8d0bedaaf141797777b0c158c",
+      "f17af6dc66835e02471307f8430ba4fc101c85faecc26466eed551aeba49dce0"
+    ]
+  },
+  "liberusoftware/module-accounting-kpi-and-goals-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "45105c295cc20d63ea8dfa26999d0081a32d1b454790550f7ef88d5f1b1ac6b7",
+      "c5c9fa63accf09f48cf411b0b453239a702aed030ef9886b5863314df56e1e10"
+    ]
+  },
+  "liberusoftware/module-accounting-leases-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "81009a80b94e2b722f23e4fdd8b26857319f33ca934b0773c453523212938170",
+      "962588c722b8ceb1851f9d949e6cadb0cf02fedc118287b77bfa3bbe7d95a561"
+    ]
+  },
+  "liberusoftware/module-accounting-leases-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "0cc9705aa8d767d53248b9158c8fd8803580e258fe97583cfbd2ef2838519bb5",
+      "b79ede9ce573e17c79082ffed9e876262cc4d9ab68cdffdb65e70ef27d715701"
+    ]
+  },
+  "liberusoftware/module-accounting-management-reporting-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "94ae3f09d2b0884b0657ed4ba6ec9c4ddb9a17f4d57dcd362f42f1704175ce5a",
+      "245b912826a1ada1b424daab601a9369dbe23a5b9c1ac5fe70413f3930199021"
+    ]
+  },
+  "liberusoftware/module-accounting-management-reporting-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "a7ee65dec92e8af1669caab7685bfab2e7fed754a370a23a592046b4eb773f40",
+      "f4ed820e172ef93e1259734fb900e7ba539cbd90ff2de6c8f59ebe4abfb1557e"
+    ]
+  },
+  "liberusoftware/module-accounting-matching-intelligence-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "1d8f4b8e7f36d4e13bf8f76b9fb160f98869ed43471dde2c8e7dc17883cc2e9d",
+      "0f8a0bfa0b022ea0ff9e987dacc1076964ecb76fc6a15269226ceb38908cc828"
+    ]
+  },
+  "liberusoftware/module-accounting-matching-intelligence-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "cd6f6bd8d9cafabfef44eab6e36c927b620b730cd7437cd23a3b36fc11439803",
+      "3b9d337849a0e41e00a177cae95a3a3ec6a0392d3fdbdf29221d7a2031f48bb4"
+    ]
+  },
+  "liberusoftware/module-accounting-migration-framework-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "4e367611a3f7b4200ab1a954360dacc34a51205317d660e952fcf355e0a5cc7b",
+      "0562c1cceda08bb8bcdf6c1b472d9c5899846a56b788ab76fdb6dd82cc9cd59e"
+    ]
+  },
+  "liberusoftware/module-accounting-migration-framework-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "68dd04280910ec447bf873cdbdb4055f81f9f6fe61f2ee54e6165f3860c03596",
+      "03a60dc055e9d4a59a09427847fcca2e6ce8e8b75239c00a6ed94de4e8963cb8"
+    ]
+  },
+  "liberusoftware/module-accounting-mileage-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "84982fcda0bbffc38b0669b1dbf6ac30a937f01aec22487a4edd5859ac690128",
+      "29ebf3dea0558f5d1a5ff0be610245f673cde0c23d24557df370bb0b839d5a82"
+    ]
+  },
+  "liberusoftware/module-accounting-mileage-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "4f36e16dfa8e6904f87ea4ea71c39799b75c57d725ebeb98a00df4ef5fb47d5b",
+      "8449ec2f4fde5eb44656f691b44c1a78242c3a614cfe87b93d0acac3511b5664"
+    ]
+  },
+  "liberusoftware/module-accounting-multi-currency-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "938c90bbbee4044baf90cdfcdb8d0a321d2dfb2874b04a1d53af55658f2e2d08",
+      "ef2ef6e782bf5d267796cd6074798cfd16f71a3d6ea85c2035cfdbbb186dff71"
+    ]
+  },
+  "liberusoftware/module-accounting-multi-currency-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "3bb381fb73883f9d97ac9221d89fa3074b5ec1fa2019ce925a17962ea245d986",
+      "cb9786165444dbaf536c641c69bafa3b96b634f5e074ed47e4ee0af2eb27f33d"
+    ]
+  },
+  "liberusoftware/module-accounting-multi-entity-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "0b82e666fa61aa0cb02070baca28993dec6c471217eb0046654c48e0e2b7c874",
+      "9b6c991b1d0c9a32220d6a4a1f54ef98555a8ae7411ea771997509fa99eade3e"
+    ]
+  },
+  "liberusoftware/module-accounting-multi-entity-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "35c628026cbe9a01fc46a66fe35008d8d7a340d6f8f89dc284331abe04b78324",
+      "9e15e0d236620f853aa6513593e016f70e8995e3c560ead0feb88502b9edf89a"
+    ]
+  },
+  "liberusoftware/module-accounting-opening-balances-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "96fbd874b517614771df98fc9265f3db9ee731438b7e87b2e8301cfe0d9f06a9",
+      "66a885249127e00704481bcc7e43fbfa90d9cae5621a3a60d747eb3c47ea4d6b"
+    ]
+  },
+  "liberusoftware/module-accounting-opening-balances-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "23598a7e7b825dc28045087ffbef3d8286db4f28b1d9da8745a61e81b0cd8f08",
+      "2f43e7c686029183e608984c0342ad047119e7604c6e130951d378d69a009396"
+    ]
+  },
+  "liberusoftware/module-accounting-operational-reports-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "90960114263e5e78e77f3b3307bb360f8a7533b6003448f68bc6c0d772f1e5be",
+      "8289c201b6ef2fb433ab255e7039c477d50c9c63ddae06727cddcdd6702a449f"
+    ]
+  },
+  "liberusoftware/module-accounting-operational-reports-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "51551e5987b91965a25bf0b36044b40172ef4aa8cbb0f77bf382597f49e8f212",
+      "a5305860da67a953a4f69182684f8bb693808f082aa81ac432f48dae1d694453"
+    ]
+  },
+  "liberusoftware/module-accounting-payment-reconciliation-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "f089a4c203a803292b3788c6e3c4e2646eb14787e19fe76e92446f5a6923584c",
+      "8fc9ab6565c7601488a1ca0bb3558aa0dd847e2bd693dd98166f8638c93f6999"
+    ]
+  },
+  "liberusoftware/module-accounting-payment-reconciliation-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "36967877dbe1cd6c63c48036f6a4a5dd9ded9e217ae0d5faffca377ae252de1c",
+      "53f97dfcc57cd1d8adc85067725cfd7e9c6b5dc059e43b12c0fc3dc76632fc5e"
+    ]
+  },
+  "liberusoftware/module-accounting-payroll-integration-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "ba42bd00b244cd8a273fa162312df3efb225be4a43737aa363268c86e9c7b913",
+      "d674a98d69b5ffbba2aa100e00c5a7769e775eb88b6c0c53bd46c2fb6df3429e"
+    ]
+  },
+  "liberusoftware/module-accounting-payroll-journals-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "5913abbe2f2a4b4c95c99579f1817b37625e4384a49082a30e9d30767f9d4976",
+      "42e808f3ba01602d384241ee2da695228915fe8d62839b44b298c1d953ec7a73"
+    ]
+  },
+  "liberusoftware/module-accounting-payroll-liabilities-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "8ae6027fa32bf717a4e8f22c3b0a40dc02873acdad2b3e7416c99ad4120884e4",
+      "3f2861af896b00dd9aba6043f61c5d57988b375a646ac329fd8c727046f0b2c8"
+    ]
+  },
+  "liberusoftware/module-accounting-payroll-payments-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "b7d682eb3e2a4eb4f901d553322bdb408b3b4f6489c335ba9dc4f9feb938ccde",
+      "8920de0b092b08def0b7062b0b9e5f9967b929dd485a2b5713a8ecfcb36272e0"
+    ]
+  },
+  "liberusoftware/module-accounting-payroll-payments-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "5238dc12688d5f0a695752ff23b9d919d79ae4cea325472d0bbe6220e8879009",
+      "7a0f5c43006aadb8018402dc28bbdb233bee241de4593199b8f814cd85e675c5"
+    ]
+  },
+  "liberusoftware/module-accounting-periods-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "e0ca47063980d28c3754272f0c2b8b7c526ae49e0f33dedf86b39937a150e835",
+      "ebec57009584e4745b72561c75a7a4f9be894c71a8065ddfa787e77d8052e9f4"
+    ]
+  },
+  "liberusoftware/module-accounting-policies-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "40530bc503110539f0a0105c1c82b8e8b9e9d56f39547f22366e4f19c8003fcc",
+      "fc1e506da4c67b4f08066dd68c402301ea503e35cd5113800f46cc19cc0ce629"
+    ]
+  },
+  "liberusoftware/module-accounting-product-and-service-items-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "56fa745b1bb46de8fe97acdc1378b958c829d5e43deed9cb5ec3fdc0f0e47e2d",
+      "9be5a6d18ace28dfbdb76134179e7f10a94e987060cf0bbd36a5ee4418e19b4b"
+    ]
+  },
+  "liberusoftware/module-accounting-product-and-service-items-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "c1dae7d8dca0cbfcd0956c2cf45a248ef12bb18f1ece7fe1a25ff0f9fe912ac3",
+      "faa7a6c50483fb95433729b440d49f6cfc031e3ae437c4db660e382ada9a44dd"
+    ]
+  },
+  "liberusoftware/module-accounting-project-billing-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "914e370ec3857e17c6ee3acafc52912dd4bd594a95e3b7b8cc1d150093ab33c3",
+      "ed1e1e2cb26f2d047e25fc71f74df4f45aed7f22fae8a43eca0fd156facd63d7"
+    ]
+  },
+  "liberusoftware/module-accounting-project-billing-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "311bae4987ba03ed61313173899bd7bdca5e0b28e907ae5e56d6d6ba65b539ae",
+      "2c86f2ea2c0679ec4fdde150d2f3ce4d4b281f5d891fb3676b1af102922fbc61"
+    ]
+  },
+  "liberusoftware/module-accounting-project-costing-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "39dda8d1246f4555c935cb93cb37d7644cdfe375962aa5d4c08013b98c03dd6e",
+      "e1544c70930d40c6187e3abf359711c9ed4e310949e0eece0c62c5cbf3077244"
+    ]
+  },
+  "liberusoftware/module-accounting-project-costing-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "25fbf6b3763dcbff3ce4469cff44a493913ede79037968e5ce3b2d1bdf95f448",
+      "86c249e186e00ec37c400f1fed68d2af50c4742860022cf792d81a547695ff94"
+    ]
+  },
+  "liberusoftware/module-accounting-project-profitability-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "bd87dc76e0cbdab639e5b930daca8cfb7556247700333296fc1e6673a041c502",
+      "3184a33e7cc154478cfb1af0ae70157cb92af3a67259b17e1f8537387cd41246"
+    ]
+  },
+  "liberusoftware/module-accounting-project-profitability-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "32658e211b604002ef64da926ed3da4f860b9de99c2dabe18f820a769419debf",
+      "d9bd51e692b0adc3e24eee1feba0a6b457e2679f3a95b09b044b71cd57af8374"
+    ]
+  },
+  "liberusoftware/module-accounting-projects-and-jobs-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "4d9b81f00d29d5043f07033fdf44274c9cb23212d7a4ccea44064bf4816728a4",
+      "a0532b0eb042bde3b81b113a7d7201e01e0dfd0e059ee33d54649c8703f70f56"
+    ]
+  },
+  "liberusoftware/module-accounting-projects-and-jobs-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "ad2d6e98acc930c5f1b21690ffa6136b66e883aa05e869b15c32c6196cc02559",
+      "d77477cf7fa9ff6350172db30b4bd66f9c6585be22306b553def9c4b47adfb43"
+    ]
+  },
+  "liberusoftware/module-accounting-purchase-orders-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "b78149223a16a497256b136529cbc70cdace6f418876c84329eab96ba5a691a6",
+      "054199ceb454cc4856a04db7c8ca8c2b41dfb8af4015ac863ed0f16005598830"
+    ]
+  },
+  "liberusoftware/module-accounting-purchase-orders-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "cca5b74118bcd4f56f40e6a821f780a5b10a5f6f802674e25f66cadf058449aa",
+      "6790a6e1ee47fce4630e9f88360b3ebb1cb5967b50c5dba43fd06e2dd934d618"
+    ]
+  },
+  "liberusoftware/module-accounting-purchase-requisitions-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "d7f1296d69383a470efc100f7902a60c898701523e1c6c0aaa83d2904d9a43b3",
+      "fadbddb704139651556bc10a24a12315ef1618ee23497c7892a8a23a65d0be94"
+    ]
+  },
+  "liberusoftware/module-accounting-purchase-requisitions-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "ecba83d8412ee2f02faef6ceb4c33ba73e621bd877d6fde8a7397826b495c3e6",
+      "1749d5f5cce57f1e015f7e3152b3c40c13dbd650e87bf4caa8c0f573f4223229"
+    ]
+  },
+  "liberusoftware/module-accounting-quickbooks-online-migration-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "3946098602b22b0ad737bad123473f3bce308a3dc0f1086a5de7fba894a067c0",
+      "213d04cb44b33c041567ace13f4dee9cd6849dff7f77b15f7ced67c2efa68550"
+    ]
+  },
+  "liberusoftware/module-accounting-quickbooks-online-migration-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "b1699c7359348edfca0a79ca6da68f2066eb409ce4a7700b6d21445b3a99aa1a",
+      "cbfb9b576455a61c7b6f7dc14b65be4abae60b5ca14624f844f8265e9df5273e"
+    ]
+  },
+  "liberusoftware/module-accounting-receipt-management-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "9c3c60bb5b9c12c4d9f1def53a8d41f387e08cc2f934eb63d34a9e7d855f9564",
+      "4496fd066f73b31ac65ddd3a0651126dec2c09d593e93014b583628e8a75ef06"
+    ]
+  },
+  "liberusoftware/module-accounting-receipt-management-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "d06415521c4c43fee684908d26c360ccf69fc33b7f628227afd78f4083f6da7f",
+      "539b0621579660b726b343a5071eef8c6e222746c45c3519c28dddc84d12f79e"
+    ]
+  },
+  "liberusoftware/module-accounting-recurring-transactions-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "3fa4fbc4288c89c12e7fd05566876bc7d2805482e2bb3b5cfe704417a097aa0b",
+      "867fc6312cd874806f0a6d466660d5080df02823aafd0a1ceff29ff34fc34964"
+    ]
+  },
+  "liberusoftware/module-accounting-recurring-transactions-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "2525a5d7623fe479fb884c62e2ced8303dbff92c8f92ce8453d0da403cacaade",
+      "a4ceeb0d223c2872f4103c7942a438c42fa4c10e09ce8f1abc5d69247811d763"
+    ]
+  },
+  "liberusoftware/module-accounting-regional-packs-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "054855d75c7fefb91d648f50c3ec368b5e65e235208d25a421c9883db3a55827",
+      "eb9cd7f8219b7c56ab5e1d64f6c6ff2b729b90a9c71940a060656dd38f4b76de"
+    ]
+  },
+  "liberusoftware/module-accounting-regional-packs-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "981257891c1e4ece6498fd512ab550acd7530ae4467d09fcc68f91eebcfc527b",
+      "bd94e1448edfabc25d2d9e86e79b9f2b2fdc61850805f532318b168f9bdcb6cc"
+    ]
+  },
+  "liberusoftware/module-accounting-reimbursements-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "8798019e97291bdbab475108fd7c27ab1fe315830a6cd04217d4513bbdcaddd2",
+      "c17dfaf69fde11c668842cb5833f9d6080a0092570290623ef98ad91e87bc6cf"
+    ]
+  },
+  "liberusoftware/module-accounting-reimbursements-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "f20fa5a20fda0d0c3757a8aceaa7b1babd882cfa80f24c201fb06a6d594035cd",
+      "56ea3beb2b2e59bb24e00823e8e46f4ad320776dfbc7e120481794147c0ee029"
+    ]
+  },
+  "liberusoftware/module-accounting-revenue-recognition-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "4063ddb52de3d46f37be0e289a545ab3f954ce0462bd9c225aaaa273fe9fcfa2",
+      "88ea75fbe3d51f6eae172dec4f0969c3681a40cb2bbdd7e7e2d6bc8cbfcf13e2"
+    ]
+  },
+  "liberusoftware/module-accounting-revenue-recognition-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "cfb1d4eda7d7e047714d7f4c566f26bb6df2615bad703f503f36e892958baeb6",
+      "f1cdfa614d008a30bc0d60679194c62756c9854fe1122109a91f5da00a14279f"
+    ]
+  },
+  "liberusoftware/module-accounting-review-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "c15f445ce2d5d0d7cc5a29e5b1580eb13416c68b3d444d7072ec77bfe4677506",
+      "50752b84b041808f3dc90ad4a709446f37d7f17ec4b56ad4c56f2c96c142af3a"
+    ]
+  },
+  "liberusoftware/module-accounting-review-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "660f71442707a2806d09b5e830e9497dd42bad417dfb9ceec1ac5bce64b496c6",
+      "13caa2e36ad6eb854b2dd30abb8a6cb8529c7b2574dc8b40ffd86eaa511b2297"
+    ]
+  },
+  "liberusoftware/module-accounting-sage-accounting-migration-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "4841e3af9481236a8f34b6a734ceb90d950b6dde200340553fb4c04eb4e7cb68",
+      "82f7f1e0a975540639f728fb9fb47a7b157505553eb47317b80cfb9ec30b29fd"
+    ]
+  },
+  "liberusoftware/module-accounting-sage-accounting-migration-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "b6b88945cbe245639a0de8088b718e4c4c811276ddd87ebcf33afb8747742929",
+      "8400fa31ea0451e24a66437880c83c54504270b7785cf60e87d80e794fc11ce4"
+    ]
+  },
+  "liberusoftware/module-accounting-sales-invoicing-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "6d38b4b6257f954336038a427bc36436a9e96fbe52bae6ac74aeb06d9a733f53",
+      "77dc2fa5f6ef8feb823f5ddf5ca41cd6079b08220d20e0f7462b5b8af93b9531"
+    ]
+  },
+  "liberusoftware/module-accounting-sales-invoicing-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "1a7439609103587e83ebf87ea5ac8659f5e956b35850cabcf9f37bbd07e95190",
+      "32515bb634eaa9d3d59f5abda8c2a3240180fa62a45506030a42ab84120be6d9"
+    ]
+  },
+  "liberusoftware/module-accounting-sales-orders-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "3c94fb0c593454cfd71e976a48d779347012e8e56331b5857c7939c26bd29df9",
+      "46df377b17ab41ad4bbac11339b875c1167b4555e4495d9653376ab6c26afa08"
+    ]
+  },
+  "liberusoftware/module-accounting-sales-orders-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "4080e23cb29a0333939492c378cdbcf43431cdc66f2d6721d724c0060f44b45e",
+      "e423d0da7f8d1454d1a4b6a42087c65f05f491950d287b4a0bd1d2d358ea4528"
+    ]
+  },
+  "liberusoftware/module-accounting-sales-tax-and-gst-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "d78e3f857a7ca78f60a151069cd1336bf331f971b87fbd60ead0836acefefba1",
+      "c538e59f0422a3626c5cd97a465c26ec7cb141c5bc42d5c3c51cc04e04cb6f08"
+    ]
+  },
+  "liberusoftware/module-accounting-sales-tax-and-gst-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "12644fdbec3371cb0cb742869f862fbb5fd293f770798184e3de44c95cce0d2d",
+      "5825f18a2b3b66736007996b89f9d30c40644722b287874dde17d9102d0925dc"
+    ]
+  },
+  "liberusoftware/module-accounting-spreadsheet-migration-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "2551c2208ae77a7d4965b140435bc698c1bce9f7845db3ce66e790635118b623",
+      "870f7a03879a742af670b8b466ed18a6ccc8755c22c969f6120b3965555d31b7"
+    ]
+  },
+  "liberusoftware/module-accounting-spreadsheet-migration-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "1de7a3764c987de1afa61a590cd1ecc52bc04d459bc02b4149ec28b95c7171f6",
+      "7f3df0f16045df9ed59f25b5df8fb041cf19bae5117dc78255d62029a1645cc8"
+    ]
+  },
+  "liberusoftware/module-accounting-supplier-bills-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "e88ee695a91644234b449612c816240a1f32cafae4d33d9da7c29790c771f155",
+      "0bb37baaadd2dde2c8ba5c7ba500dc35fa5f4c945f6967868d5d3123fc2b820b"
+    ]
+  },
+  "liberusoftware/module-accounting-supplier-bills-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "30c9bd84c045085adbb62cd6c642de1c37542cdd7a446dddba7d5aae78eb5c4e",
+      "4e8cd2b54e93034961e5eaca5ee22a4ee155a18815d9f94ef900adea5e46941a"
+    ]
+  },
+  "liberusoftware/module-accounting-supplier-portal-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "8d21eb245dbf683f76d895dfa911d394140a8ea85af70b3f7c5016d3ef60f89b",
+      "72d55a0de4929c9b1982f6f1d1d5ee2a30421879dc9439b6c2773334ce273965"
+    ]
+  },
+  "liberusoftware/module-accounting-supplier-portal-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "28c08ba6775fe2c8f5ba254b93f9ba399a78bf592bea65518d9fa49a837019d1",
+      "ea43f07709171b814b57b7e948afbc363e405b46196cbc82468ee881cadaf955"
+    ]
+  },
+  "liberusoftware/module-accounting-tax-core-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "082b6660b88d7aa6a0ae74608c1993d0420120ef31d73fba7d00cbdec52f305a",
+      "919e6592b1665504059cbdb3da509d1ee4fa6941a5caba168f70551698ff7a07"
+    ]
+  },
+  "liberusoftware/module-accounting-tax-core-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "a846a5ba264ae58d2c359b42abb0ec6a96f5e81d7ddda2acd64e45f772b8abe7",
+      "d5559fda2abba3e46bb34d5d67f074759d4f95666202fe467cd08d0c092fa86b"
+    ]
+  },
+  "liberusoftware/module-accounting-tax-returns-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "c9076b7541e600b108cf96c8beaaffefcddb8975df83593ce107a1c9bbe0a752",
+      "27bcd0eba151cd2b741cc628599d260eb9e53a63d8bef6fdc3ed0d42b96d0f5d"
+    ]
+  },
+  "liberusoftware/module-accounting-tax-returns-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "64b37c873b1a8be6d0e85df49082524c2d7ce6cf1395662c72f21587c4b006a6",
+      "094f4c28a41aa200e79a3f198e0672529760e054c2a5040e5aaa9a3cefb215be"
+    ]
+  },
+  "liberusoftware/module-accounting-three-way-matching-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "7e193562eaac7152747af1596862df7adbaf612d968df55033f3391609edb57a",
+      "e3f7de24846dfd2e346bce60cfd8dce9f08e72d3ed35706f5872e9678bb4c22f"
+    ]
+  },
+  "liberusoftware/module-accounting-three-way-matching-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "19e9f6e9e6c33f29fb9a1a38630d780d52ee331b513e1b6e7eee7e836c5e6fe2",
+      "c785d312368b331e05483195e3baf25b0f64131385590f5a17ca4790d43c69ac"
+    ]
+  },
+  "liberusoftware/module-accounting-time-tracking-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "5b67301d79a66aaecf6012311d3e9f25851a83d2eeafb0fefb42ebd3a8b32ed3",
+      "675dfd074f3856db303d9866f45457b598681ca90c154c442ec6324e748a2c2a"
+    ]
+  },
+  "liberusoftware/module-accounting-time-tracking-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "3a046dc8c042377252b90af548c2e910939c0fad6f9cb02e4ba387317cc9d90f",
+      "0ee0646527e84f0d0f3b114598b3b9463feed2f6fe7e333dd58516bcf9d73b4f"
+    ]
+  },
+  "liberusoftware/module-accounting-transfers-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "5beb290cd4d937dee4d60c81cf66d724e532bda19c8826e460c6e74643ee5440",
+      "0dbd3955d02b7d0c75507b29ab11a41e18b509e51ae1acbd92899bca3234ea73"
+    ]
+  },
+  "liberusoftware/module-accounting-transfers-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "ae1afc9db72253dde8ca13ebde713895020f6ccb7dfaeb20403c19f17715adca",
+      "40cd587ddf35f6e9504552ec2fe49fd794b2bfbb0432635101ec9253e1ce8e8c"
+    ]
+  },
+  "liberusoftware/module-accounting-vat-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "d098e773196cd7b801da5c6ee76cb53d0fb752b1e9f3365465136ccd41dcd1c4",
+      "3fe06143566dcc8f3e10a628143d787899f1945ebb0d5b00456b3ccab601f873"
+    ]
+  },
+  "liberusoftware/module-accounting-vat-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "7a6814fc77e3ca06dbfa843d893ae03ebd57186faf22d4958b96e878318c2114",
+      "08a6c1d2cc29dc901d8ff10478aa88120c51e87fd78a56c2e384dfd522a1c797"
+    ]
+  },
+  "liberusoftware/module-accounting-withholding-tax-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "42d655007057d2de8b1e3648e387c4d741305186a129de3673024b7eb322928f",
+      "0d4e7b79582adabf502eb91fa3ae8459b1bd8adda4ddbef68769159fbfd866eb"
+    ]
+  },
+  "liberusoftware/module-accounting-withholding-tax-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "2905f19acf35351e0f3a817e7ecefc2bbf25d8dfbf6553432fb77f18809f7852",
+      "cc02bb5a7f9c1eb0ab679a939a3dc8003f91c14a7f31a50f88eafd1bb58b367f"
+    ]
+  },
+  "liberusoftware/module-accounting-workforce-costing-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "2b13e2e2517b49c1fffac729da7bf8b41f369119cbf0be5290dfd1111a9d2206",
+      "2333609691301ac77b1339a72b87e17763779ab60d8091081d025dbc89897eec"
+    ]
+  },
+  "liberusoftware/module-accounting-workforce-costing-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "de7f9fb969332527015de718c11e511c01bcdf09ffcbbf2732daa8878a90ad85",
+      "bccc1877628f7fb97b4d1441002c22d36e7a41eab45cef080987be8f5b15327d"
+    ]
+  },
+  "liberusoftware/module-accounting-workpapers-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "f5f842edee095d2c56485cf193d196afe6088d1605805c9c93340a02a9775e2f",
+      "03e48277a6f1290d01983c220b5c1c0db5b83a4cb140c8b4bf65907537894146"
+    ]
+  },
+  "liberusoftware/module-accounting-workpapers-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "6d56d4fd5a5636978dd5b5a0f1120cec7ec621609d32e438ffc846ea35191117",
+      "ede76469c5e9f60414d665cc341eea20f0d2074b14d371d497e83b22ca859902"
+    ]
+  },
+  "liberusoftware/module-accounting-xero-migration-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "2f053a38d6f6eccd25fdeef1fb03942bacc3b22e40af20482a1271b2c00fd33a",
+      "d92992238a0431e9ce03f007284fb7c2b3f3e225c9f668c06ac96d14b1af6da0"
+    ]
+  },
+  "liberusoftware/module-accounting-xero-migration-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "599a4d39ccf7f42f6086982758ede8341fff030e1d623caa2672b27b4388f0a6",
+      "8743e4fdf6062ed5a23a268587c107572118703626b5853835f6dac8f362232d"
+    ]
+  },
+  "liberusoftware/module-accounting-year-end-filament": {
+    "tests/Feature/FilamentCoverageTest.php": [
+      "5d854e6888518b261f23590aca2e1f7fe0cb9987c763478585bcac1409b19062",
+      "93408453e4c169d358dbcdcde210d8d0e430c91017108a5d4a6f0d676fa4c0f7"
+    ]
+  },
+  "liberusoftware/module-accounting-year-end-livewire": {
+    "tests/Feature/LivewireCoverageTest.php": [
+      "763ff4dcb052d1210147e11af182f87a4c0d40d372c486dcc9ceba975a63e5f6",
+      "5b5ce4c399208e2d82d2d469acd87048df71ca08c79f6706ece8df1bcac5474f"
+    ]
+  },
+  "liberusoftware/module-liberu-business-workflow-reconciliation": {
+    "tests/Feature/DomainTest.php": [
+      "f6fb70852546639c17cc87dab5effe83404e1bd69e12a852c45586f78a357d2c",
+      "1e28edb255371a16967c19c3fab2c9a1cb7851a06f298b383ded40ba8d381363"
+    ]
+  },
+  "liberusoftware/module-liberu-executive-insights": {
+    "tests/Feature/DomainTest.php": [
+      "831454d4fd50f83315b406387ab8d54c8ef6273143c551424ca415eed6d9def3",
+      "d161a40586318cd8f63ee337692bf363479575a6ce0ba4f3d074bc78982aadb7"
+    ]
+  },
+  "liberusoftware/module-liberu-platform-orchestration": {
+    "tests/Feature/DomainTest.php": [
+      "5965992d193cd827e0eea8dd5bdbb9959a097817981207a4c1ef4ec207cd767b",
+      "558ce5e2b64942f873d2cb20bc2f260b0d3aef6728febcef3f49dae0328120cb"
+    ]
+  },
+  "liberusoftware/module-sessions-devices-filament": {
+    "tests/AccountSecurityTest.php": [
+      "4f6d92cb157378485dda6cab95acf9fee67b41441b9f6fd96b8097ad0fbea4e7",
+      "7346a40b3c72ac586692df2e8690a1152166973dca7a455b29e46023210540a3"
+    ]
+  },
+  "liberusoftware/module-settings-filament": {
+    "tests/Feature/ManageSiteSettingsTest.php": [
+      "69dbe67558b9e3021f4abea27a237778e1caadd503abd075a8757de32fd344b5",
+      "e8958def5b680d4be2f567ca28cd16a90ccc7d5940b007514f4bd30f86e3d542"
+    ]
+  },
+  "liberusoftware/module-users-roles": {
+    "tests/UsersRolesCoverageTest.php": [
+      "2c9e9bdecae93bc093eb656b25a4cd9f4f065de8180ddd7237a4b99307746c2b",
+      "11523b7df86c94f5dd928090a15d3748028868aad2bd899bb4b4c3c547406a6c"
+    ]
+  }
+}

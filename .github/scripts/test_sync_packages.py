@@ -1,4 +1,5 @@
 import importlib.util
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -499,6 +500,29 @@ class IndependentChangeTests(unittest.TestCase):
         self.commit('fix: adopt the hotfix')
         self.publish()
         self.assertEqual(self.run_git('--git-dir', str(self.remote), 'show', 'main:src/Other.php'), 'more')
+
+    def test_a_reconciled_file_requires_both_reviewed_versions_to_match(self):
+        self.publish()
+        self.in_destination(lambda checkout: (checkout / 'src' / 'Example.php').write_text('hotfix'))
+        self.write('src/Example.php', 'first with hotfix')
+        self.commit('fix: reconcile the hotfix with the source')
+        receipts = Path('.github/package-reconciliations.json')
+        receipts.write_text(json.dumps({'liberusoftware/module-example': {
+            'src/Example.php': [
+                hashlib.sha256(b'hotfix').hexdigest(),
+                hashlib.sha256(b'first with hotfix').hexdigest(),
+            ],
+        }}))
+        self.write('src/Example.php', 'unreviewed replacement')
+        self.commit('fix: change the replacement again')
+        self.assert_refused('src/Example.php')
+        self.write('src/Example.php', 'first with hotfix')
+        self.commit('fix: restore the reviewed replacement')
+        self.in_destination(lambda checkout: (checkout / 'src' / 'Example.php').write_text('another hotfix'))
+        self.assert_refused('src/Example.php')
+        self.in_destination(lambda checkout: (checkout / 'src' / 'Example.php').write_text('hotfix'))
+        self.publish()
+        self.assertEqual(self.run_git('--git-dir', str(self.remote), 'show', 'main:src/Example.php'), 'first with hotfix')
 
     def test_a_destination_version_bump_is_not_independent_work(self):
         self.publish()
