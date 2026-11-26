@@ -445,6 +445,14 @@ def publish(path, head, before):
             (declared_version[0] == 0 and declared_version[1] != previous_version[1]))
         explicit_bump = declared_version and (incompatible or declared_version > (previous_version or (0, 0, 0)))
         if changed or not has_head or explicit_bump:
+            if has_head:
+                # A partial workflow can publish this package before another package fails.
+                # Use that package's exported commit when calculating its next release.
+                marker = f'chore: sync {path} from {os.environ["GITHUB_REPOSITORY"]}@'
+                previous_message = git('log', '-1', '--format=%B', cwd=target)
+                previous_sync = re.match(re.escape(marker) + r'([0-9a-f]{40,64})\n', previous_message)
+                if previous_sync and is_ancestor(Path.cwd(), previous_sync[1], head):
+                    before = previous_sync[1]
             history = [f'{before}..{head}'] if before and set(before) != {'0'} else [head]
             messages = git('log', '--format=%B', *history, '--', path)
             # Project-wide breaking releases do not change every library's public API.

@@ -145,6 +145,19 @@ class PublishTests(unittest.TestCase):
         self.assertEqual(len(self.releases), 2)
         self.assertEqual(self.packagist_calls[-1], ('liberusoftware/example', 'https://github.com/liberusoftware/module-example'))
 
+    def test_package_revision_advances_even_when_the_workflow_baseline_does_not(self):
+        baseline = self.real_git('rev-parse', 'HEAD')
+        self.publish()
+        (self.package / 'source.php').write_text('feature')
+        self.commit('feat: add a package feature')
+        self.publish(baseline)
+        (self.package / 'source.php').write_text('fixed feature')
+        self.commit('fix: repair the package feature')
+        self.publish(baseline)
+
+        tags = self.real_git('--git-dir', str(self.root / 'remote.git'), 'tag', '--list').splitlines()
+        self.assertEqual(tags, ['v1.0.0', 'v1.1.0', 'v1.1.1'])
+
     def test_retry_after_push_does_not_bump_again(self):
         self.fail_release = True
         with self.assertRaisesRegex(RuntimeError, 'Simulated'):
