@@ -178,7 +178,9 @@ test('Account covers boot hooks, relationships, currency conversion, calculated 
 
     expect($liability->normal_balance)->toBe('credit')
         ->and($parent->user)->toBeInstanceOf(User::class)
-        ->and($parent->currency)->toBeInstanceOf(Currency::class)
+        ->and($parent->currency->is($usd))->toBeTrue()
+        ->and($usd->accounts->modelKeys())->toBe([$parent->getKey()])
+        ->and($usd->transactions)->toBeEmpty()
         ->and($child->parent->id)->toBe($parent->id)
         ->and($parent->children)->toHaveCount(1)
         ->and($parent->transactions())->toBeInstanceOf(HasMany::class)

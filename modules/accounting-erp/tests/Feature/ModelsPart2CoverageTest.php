@@ -113,6 +113,7 @@ function makePart2Vendor(int $teamId, int $seq = 1): Vendor
 
 test('Inventory models cover relationships, updateQuantity, and needsReorder', function () {
     [$user, $team] = makePart2UserAndTeam();
+    $this->actingAs($user);
     $account = Account::create([
         'account_number' => 1400,
         'account_name' => 'Merchandise Inventory',
@@ -122,7 +123,7 @@ test('Inventory models cover relationships, updateQuantity, and needsReorder', f
     ]);
     $category = Category::create(['name' => 'Hardware']);
 
-    $item = InventoryItem::create([
+    $item = new InventoryItem([
         'name' => 'Widget A',
         'sku' => 'WID-A-001',
         'unit_price' => 25.00,
@@ -131,34 +132,35 @@ test('Inventory models cover relationships, updateQuantity, and needsReorder', f
         'account_id' => $account->id,
         'category_id' => $category->id,
         'valuation_method' => 'fifo',
-        'team_id' => $team->id,
     ]);
+    $item->team()->associate($team);
+    $item->save();
 
-    $layer = InventoryCostLayer::create([
+    $layer = new InventoryCostLayer([
         'inventory_item_id' => $item->id,
         'quantity' => 10,
         'unit_cost' => 12.50,
         'purchase_date' => now()->toDateString(),
-        'team_id' => $team->id,
     ]);
+    $layer->team()->associate($team);
+    $layer->save();
 
     $tx = Transaction::create([
         'transaction_date' => now()->toDateString(),
         'amount' => 125.00,
         'transaction_type' => 'purchase',
         'account_id' => $account->id,
-        'user_id' => $user->id,
-        'team_id' => $team->id,
     ]);
 
-    $invTx = InventoryTransaction::create([
+    $invTx = new InventoryTransaction([
         'inventory_item_id' => $item->id,
         'transaction_id' => $tx->transaction_id,
         'quantity' => 5,
         'unit_price' => 12.50,
         'transaction_type' => 'purchase',
-        'team_id' => $team->id,
     ]);
+    $invTx->team()->associate($team);
+    $invTx->save();
 
     expect($item->account->id)->toBe($account->id)
         ->and($item->category->id)->toBe($category->id)
@@ -167,6 +169,7 @@ test('Inventory models cover relationships, updateQuantity, and needsReorder', f
         ->and($layer->inventoryItem->id)->toBe($item->id)
         ->and($invTx->inventoryItem->id)->toBe($item->id)
         ->and($invTx->transaction->transaction_id)->toBe($tx->transaction_id)
+        ->and($tx->inventoryTransactions->modelKeys())->toBe([$invTx->getKey()])
         ->and($item->needsReorder())->toBeFalse();
 
     $item->updateQuantity(-6);

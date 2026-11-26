@@ -7,6 +7,7 @@ namespace Liberu\Accounting\Erp\Models;
 use Illuminate\Database\Eloquent\Attributes\UseFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Liberu\Accounting\Erp\Database\Factories\CurrencyFactory;
 
 #[UseFactory(CurrencyFactory::class)]
@@ -30,13 +31,13 @@ class Currency extends Model
         'is_default' => 'boolean',
     ];
 
-    public function accounts()
+    public function accounts(): HasMany
     {
-        return $this->hasMany(Account::class);
+        return $this->hasMany(Account::class, 'currency_id', 'currency_id');
     }
 
-    public function transactions()
+    public function transactions(): HasMany
     {
-        return $this->hasMany(Transaction::class);
+        return $this->hasMany(Transaction::class, 'currency_id', 'currency_id');
     }
 }

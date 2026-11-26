@@ -132,7 +132,7 @@ class Transaction extends Model
      */
     public function inventoryTransactions(): HasMany
     {
-        return $this->hasMany(InventoryTransaction::class);
+        return $this->hasMany(InventoryTransaction::class, 'transaction_id', 'transaction_id');
     }
 
     public function bankConnection()

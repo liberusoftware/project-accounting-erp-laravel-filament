@@ -6,6 +6,7 @@ namespace Liberu\Accounting\Erp\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Liberu\Accounting\Erp\Traits\IsTenantModel;
 
 /**
@@ -41,8 +42,8 @@ class InventoryTransaction extends Model
         return $this->belongsTo(InventoryItem::class);
     }
 
-    public function transaction()
+    public function transaction(): BelongsTo
     {
-        return $this->belongsTo(Transaction::class);
+        return $this->belongsTo(Transaction::class, 'transaction_id', 'transaction_id');
     }
 }
