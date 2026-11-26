@@ -17,6 +17,7 @@ it('registers and configures accounting-xero-migration-filament filament resourc
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(XeroMigrationFilamentServiceProvider::class);
+    expect($this->app->make(XeroMigrationFilamentPlugin::class))->toBeInstanceOf(XeroMigrationFilamentPlugin::class);
     $plugin = XeroMigrationFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-xero-migration-filament');
     $plugin->register($panel);

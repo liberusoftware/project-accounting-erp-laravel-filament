@@ -17,6 +17,7 @@ it('registers and configures accounting-workpapers-filament filament resources',
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(WorkpapersFilamentServiceProvider::class);
+    expect($this->app->make(WorkpapersFilamentPlugin::class))->toBeInstanceOf(WorkpapersFilamentPlugin::class);
     $plugin = WorkpapersFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-workpapers-filament');
     $plugin->register($panel);

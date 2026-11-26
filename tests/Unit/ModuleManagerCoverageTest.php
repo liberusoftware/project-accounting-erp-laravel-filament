@@ -47,6 +47,13 @@ final class ModuleManagerCovThrowingProvider extends ServiceProvider
 
 final class ModuleManagerCovDummyPlugin {}
 
+function mmReloadInstalled(array $data, ?bool $canGetVendors = false): void
+{
+    InstalledVersions::reload($data);
+    $prop = new ReflectionProperty(InstalledVersions::class, 'canGetVendors');
+    $prop->setValue(null, $canGetVendors);
+}
+
 beforeEach(function (): void {
     $this->mmRoot = sys_get_temp_dir().'/mm-cov-'.bin2hex(random_bytes(6));
     mkdir($this->mmRoot, 0777, true);
@@ -56,11 +63,11 @@ beforeEach(function (): void {
         $this->mmInstalled['versions'] ?? [],
         static fn (array $info): bool => ($info['type'] ?? null) !== 'liberu-module',
     );
-    InstalledVersions::reload($this->mmInstalled);
+    mmReloadInstalled($this->mmInstalled, false);
 });
 
 afterEach(function (): void {
-    InstalledVersions::reload($this->mmOriginalInstalled);
+    mmReloadInstalled($this->mmOriginalInstalled, null);
     (new Filesystem())->deleteDirectory($this->mmRoot);
 });
 
@@ -115,7 +122,7 @@ function mmWriteFixture(
                 'aliases' => [],
                 'dev_requirement' => false,
             ];
-            InstalledVersions::reload($test->mmInstalled);
+            mmReloadInstalled($test->mmInstalled);
         }
     }
 

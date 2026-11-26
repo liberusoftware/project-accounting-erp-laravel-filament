@@ -17,6 +17,7 @@ it('registers and configures accounting-tax-returns-filament filament resources'
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(TaxReturnsFilamentServiceProvider::class);
+    expect($this->app->make(TaxReturnsFilamentPlugin::class))->toBeInstanceOf(TaxReturnsFilamentPlugin::class);
     $plugin = TaxReturnsFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-tax-returns-filament');
     $plugin->register($panel);

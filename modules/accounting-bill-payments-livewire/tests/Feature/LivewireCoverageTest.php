@@ -15,7 +15,7 @@ it('renders accounting-bill-payments-livewire livewire components', function ():
 
     expect(fn () => (new Proposals())->mount())->toThrow(Exception::class);
 
-    $this->actingAs(User::factory()->create());
+    $this->actingAs(User::factory()->create(['current_team_id' => 1]));
 
     $component = new Proposals();
     if (method_exists($component, 'mount')) {

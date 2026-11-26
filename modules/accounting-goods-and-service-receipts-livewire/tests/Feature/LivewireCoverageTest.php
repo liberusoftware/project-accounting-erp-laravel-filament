@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Liberu\Accounting\Erp\Models\User;
+use Liberu\Accounting\GoodsAndServiceReceipts\Enums\ReceiptStatus;
 use Liberu\Accounting\GoodsAndServiceReceiptsLivewire\GoodsAndServiceReceiptsLivewireServiceProvider;
 use Liberu\Accounting\GoodsAndServiceReceiptsLivewire\Livewire\Receipts;
 
@@ -22,8 +23,9 @@ it('renders accounting-goods-and-service-receipts-livewire livewire components',
         $component->mount();
     }
     expect($component->render())->not->toBeNull();
-    $component->status = 'active';
+    $component->status = ReceiptStatus::cases()[0]->value;
     if (method_exists($component, 'updated'.ucfirst('status'))) {
         $component->{'updated'.ucfirst('status')}();
     }
+    expect($component->render())->not->toBeNull();
 });

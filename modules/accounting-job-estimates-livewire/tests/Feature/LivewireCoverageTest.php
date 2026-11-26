@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Liberu\Accounting\Erp\Models\User;
+use Liberu\Accounting\JobEstimates\Enums\EstimateStatus;
 use Liberu\Accounting\JobEstimatesLivewire\JobEstimatesLivewireServiceProvider;
 use Liberu\Accounting\JobEstimatesLivewire\Livewire\JobEstimates;
 
@@ -22,8 +23,9 @@ it('renders accounting-job-estimates-livewire livewire components', function ():
         $component->mount();
     }
     expect($component->render())->not->toBeNull();
-    $component->status = 'active';
+    $component->status = EstimateStatus::cases()[0]->value;
     if (method_exists($component, 'updated'.ucfirst('status'))) {
         $component->{'updated'.ucfirst('status')}();
     }
+    expect($component->render())->not->toBeNull();
 });

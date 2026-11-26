@@ -8,7 +8,7 @@ use Liberu\Accounting\CashCodingApi\CashCodingApiServiceProvider;
 use Liberu\Accounting\CashCodingApi\Policies\CashCodingPolicy;
 use Liberu\Accounting\Erp\Models\User;
 
-it('covers accounting-cash-coding-api api provider, policies, requests, and index route', function (): void {
+it('covers accounting-cash-coding-api api provider, policies, resources, and routes', function (): void {
     $user = User::factory()->create(['current_team_id' => 1]);
     Sanctum::actingAs($user, ['*']);
 
@@ -17,10 +17,20 @@ it('covers accounting-cash-coding-api api provider, policies, requests, and inde
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(CashCodingApiServiceProvider::class);
+
     $policy = new CashCodingPolicy();
     $allowUser = new class() extends User
     {
         public int $current_team_id = 1;
+
+        public function tokenCan(string $a): bool
+        {
+            return true;
+        }
+    };
+    $otherTeamUser = new class() extends User
+    {
+        public int $current_team_id = 2;
 
         public function tokenCan(string $a): bool
         {
@@ -36,19 +46,58 @@ it('covers accounting-cash-coding-api api provider, policies, requests, and inde
             return false;
         }
     };
-    $record = (new CashCodingBatch())->forceFill(['team_id' => 1, 'legal_entity_id' => 1]);
-    expect($policy->viewAny($allowUser))->toBeBool();
-    expect($policy->viewAny($denyUser))->toBeBool();
+    $record = (new CashCodingBatch())->forceFill(['team_id' => 1]);
+    expect($policy->viewAny($allowUser))->toBeTrue();
+    expect($policy->viewAny($denyUser))->toBeFalse();
     expect($policy->viewAny(null))->toBeFalse();
-    expect($policy->view($allowUser, $record))->toBeBool();
-    expect($policy->view($denyUser, $record))->toBeBool();
+    expect($policy->view($allowUser, $record))->toBeTrue();
+    expect($policy->view($otherTeamUser, $record))->toBeFalse();
+    expect($policy->view($denyUser, $record))->toBeFalse();
     expect($policy->view(null, $record))->toBeFalse();
-    expect($policy->create($allowUser))->toBeBool();
-    expect($policy->create($denyUser))->toBeBool();
+    expect($policy->create($allowUser))->toBeTrue();
+    expect($policy->create($denyUser))->toBeFalse();
     expect($policy->create(null))->toBeFalse();
-    expect($policy->update($allowUser, $record))->toBeBool();
-    expect($policy->update($denyUser, $record))->toBeBool();
+    expect($policy->update($allowUser, $record))->toBeTrue();
+    expect($policy->update($otherTeamUser, $record))->toBeFalse();
+    expect($policy->update($denyUser, $record))->toBeFalse();
     expect($policy->update(null, $record))->toBeFalse();
-    $res = $this->getJson('/api/v1/accounting/cash-coding');
-    expect($res->status())->toBeLessThan(500);
+
+    $storeRes = $this->postJson('/api/v1/accounting/cash-coding', [
+        'reference' => 'CCB-2026-001',
+        'currency' => 'GBP',
+        'lines' => [
+            [
+                'source_reference' => 'TX-1001',
+                'amount' => 125.50,
+                'currency' => 'GBP',
+                'account_id' => 1001,
+            ],
+        ],
+        'payee_creation_policy' => 'review',
+        'metadata' => ['source' => 'bank-feed'],
+    ])->assertSuccessful();
+
+    $batchId = $storeRes->json('data.id');
+    expect($batchId)->not->toBeNull();
+
+    $this->getJson('/api/v1/accounting/cash-coding')
+        ->assertOk()
+        ->assertJsonPath('data.0.type', 'accounting-cash-coding');
+
+    $this->getJson("/api/v1/accounting/cash-coding/{$batchId}")
+        ->assertOk()
+        ->assertJsonPath('data.attributes.reference', 'CCB-2026-001');
+
+    $this->postJson("/api/v1/accounting/cash-coding/{$batchId}/review")
+        ->assertOk()
+        ->assertJsonPath('data.attributes.status', 'in_review');
+
+    $this->postJson("/api/v1/accounting/cash-coding/{$batchId}/post")
+        ->assertOk()
+        ->assertJsonPath('data.attributes.status', 'posted');
+
+    $this->postJson("/api/v1/accounting/cash-coding/{$batchId}/undo", [
+        'reason' => 'Duplicate bank feed batch',
+    ])->assertOk()
+        ->assertJsonPath('data.attributes.status', 'undone');
 });

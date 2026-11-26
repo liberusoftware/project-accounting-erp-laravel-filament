@@ -13,11 +13,14 @@ it('renders accounting-product-and-service-items-livewire livewire components', 
     }
     expect($provider)->toBeInstanceOf(ProductAndServiceItemsLivewireServiceProvider::class);
 
-    $this->actingAs(User::factory()->create());
+    $this->actingAs(User::factory()->create(['current_team_id' => 1]));
 
     $component = new AccountingItems();
     if (method_exists($component, 'mount')) {
         $component->mount();
     }
+    expect($component->render())->not->toBeNull();
+
+    $component->search = 'widget';
     expect($component->render())->not->toBeNull();
 });

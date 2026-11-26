@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Liberu\Accounting\Erp\Models\User;
 use Liberu\Accounting\PayrollIntegration\Models\PayrollImport;
+use Liberu\Accounting\PayrollIntegrationLivewire\Livewire\PayrollImports;
 use Liberu\Accounting\PayrollIntegrationLivewire\PayrollIntegrationLivewireServiceProvider;
 use Livewire\Livewire;
 
@@ -31,4 +32,6 @@ it('covers accounting-payroll-integration-livewire components', function (): voi
         ->call('mark')
         ->assertDispatched('payroll-import-status-changed')
         ->assertOk();
+
+    expect(new PayrollImports())->toBeInstanceOf(PayrollImports::class);
 });

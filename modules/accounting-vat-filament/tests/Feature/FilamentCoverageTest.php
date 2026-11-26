@@ -7,6 +7,7 @@ use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Liberu\Accounting\VatFilament\Resources\Pages\ListVatRecords;
+use Liberu\Accounting\VatFilament\Resources\Pages\ListVatReturns;
 use Liberu\Accounting\VatFilament\Resources\VatRecordResource;
 use Liberu\Accounting\VatFilament\Resources\VatReturnResource;
 use Liberu\Accounting\VatFilament\VatFilamentPlugin;
@@ -18,6 +19,7 @@ it('registers and configures accounting-vat-filament filament resources', functi
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(VatFilamentServiceProvider::class);
+    expect($this->app->make(VatFilamentPlugin::class))->toBeInstanceOf(VatFilamentPlugin::class);
     $plugin = VatFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-vat-filament');
     $plugin->register($panel);
@@ -32,4 +34,5 @@ it('registers and configures accounting-vat-filament filament resources', functi
     expect(VatReturnResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
     expect(VatReturnResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);
     expect(VatReturnResource::table(Table::make($host)))->toBeInstanceOf(Table::class);
+    expect(new ListVatReturns())->toBeInstanceOf(ListVatReturns::class);
 });

@@ -7,15 +7,14 @@ use Liberu\Accounting\AssetEventsApi\AssetEventsApiServiceProvider;
 use Liberu\Accounting\AssetEventsApi\Policies\AssetEventPolicy;
 use Liberu\Accounting\Erp\Models\User;
 
-it('covers accounting-asset-events-api api provider, policies, requests, and index route', function (): void {
+it('covers accounting-asset-events-api provider, policy, controller, and resource', function (): void {
     $user = User::factory()->create(['current_team_id' => 1]);
     Sanctum::actingAs($user, ['*']);
 
     $provider = $this->app->register(AssetEventsApiServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) {
-        $provider->boot();
-    }
+    $provider->boot();
     expect($provider)->toBeInstanceOf(AssetEventsApiServiceProvider::class);
+
     $policy = new AssetEventPolicy();
     $allowUser = new class() extends User
     {
@@ -35,13 +34,37 @@ it('covers accounting-asset-events-api api provider, policies, requests, and ind
             return false;
         }
     };
-    $record = (object) ['team_id' => 1, 'legal_entity_id' => 1, 'user_id' => 1];
-    expect($policy->viewAny($allowUser))->toBeBool();
-    expect($policy->viewAny($denyUser))->toBeBool();
+    $noTeamUser = new class() extends User
+    {
+        public ?int $current_team_id = null;
+
+        public function tokenCan(string $a): bool
+        {
+            return true;
+        }
+    };
+
+    expect($policy->viewAny($allowUser))->toBeTrue();
+    expect($policy->viewAny($denyUser))->toBeFalse();
     expect($policy->viewAny(null))->toBeFalse();
-    expect($policy->create($allowUser))->toBeBool();
-    expect($policy->create($denyUser))->toBeBool();
+    expect($policy->create($allowUser))->toBeTrue();
+    expect($policy->create($noTeamUser))->toBeFalse();
+    expect($policy->create($denyUser))->toBeFalse();
     expect($policy->create(null))->toBeFalse();
-    $res = $this->getJson('/api/v1/accounting/asset-events');
-    expect($res->status())->toBeLessThan(500);
+
+    $storeRes = $this->postJson('/api/v1/accounting/asset-events', [
+        'asset_id' => 42,
+        'event_type' => 'revaluation',
+        'event_date' => '2026-01-15',
+        'description' => 'Annual valuation adjustment',
+        'source_type' => 'manual',
+        'source_id' => 'evt-1',
+        'old_values' => ['value' => 10000],
+        'new_values' => ['value' => 12000],
+        'evidence' => [['document' => 'appraisal.pdf']],
+    ]);
+    expect($storeRes->status())->toBeLessThan(300);
+
+    expect($this->getJson('/api/v1/accounting/asset-events')->status())->toBe(200);
+    expect($this->getJson('/api/v1/accounting/asset-events?asset_id=42&per_page=10')->status())->toBe(200);
 });

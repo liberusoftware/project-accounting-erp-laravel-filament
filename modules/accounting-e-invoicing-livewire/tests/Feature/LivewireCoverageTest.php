@@ -26,4 +26,5 @@ it('renders accounting-e-invoicing-livewire livewire components', function (): v
     if (method_exists($component, 'updated'.ucfirst('status'))) {
         $component->{'updated'.ucfirst('status')}();
     }
+    expect($component->render())->not->toBeNull();
 });

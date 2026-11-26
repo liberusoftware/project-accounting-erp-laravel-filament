@@ -26,4 +26,5 @@ it('renders accounting-management-reporting-livewire livewire components', funct
     if (method_exists($component, 'updated'.ucfirst('status'))) {
         $component->{'updated'.ucfirst('status')}();
     }
+    expect($component->render())->not->toBeNull();
 });

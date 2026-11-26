@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
+use Filament\Panel;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Liberu\Accounting\AssetEventsFilament\AssetEventsFilamentPlugin;
 use Liberu\Accounting\AssetEventsFilament\AssetEventsFilamentServiceProvider;
 use Liberu\Accounting\AssetEventsFilament\Resources\AssetEventResource;
 use Liberu\Accounting\AssetEventsFilament\Resources\Pages\CreateAssetEvent;
@@ -16,6 +18,11 @@ it('registers and configures accounting-asset-events-filament filament resources
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(AssetEventsFilamentServiceProvider::class);
+    $plugin = AssetEventsFilamentPlugin::make();
+    $panel = Panel::make()->id('test-accounting-asset-events-filament');
+    $plugin->register($panel);
+    $plugin->boot($panel);
+    expect($plugin->getId())->toBeString()->not->toBeEmpty();
     $host = new ListAssetEvents();
     expect(AssetEventResource::getPages())->toBeArray();
     expect(AssetEventResource::getEloquentQuery())->toBeInstanceOf(Builder::class);

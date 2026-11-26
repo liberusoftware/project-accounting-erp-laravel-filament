@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Liberu\Accounting\Erp\Models\User;
+use Liberu\Accounting\InventoryAccounting\Enums\InventoryStatus;
 use Liberu\Accounting\InventoryAccountingLivewire\InventoryAccountingLivewireServiceProvider;
 use Liberu\Accounting\InventoryAccountingLivewire\Livewire\InventoryAccounting;
 
@@ -22,8 +23,9 @@ it('renders accounting-inventory-accounting-livewire livewire components', funct
         $component->mount();
     }
     expect($component->render())->not->toBeNull();
-    $component->status = 'active';
+    $component->status = InventoryStatus::cases()[0]->value;
     if (method_exists($component, 'updated'.ucfirst('status'))) {
         $component->{'updated'.ucfirst('status')}();
     }
+    expect($component->render())->not->toBeNull();
 });

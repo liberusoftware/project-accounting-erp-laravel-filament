@@ -26,4 +26,5 @@ it('renders accounting-matching-intelligence-livewire livewire components', func
     if (method_exists($component, 'updated'.ucfirst('status'))) {
         $component->{'updated'.ucfirst('status')}();
     }
+    expect($component->render())->not->toBeNull();
 });

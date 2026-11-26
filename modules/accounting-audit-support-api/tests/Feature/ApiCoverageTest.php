@@ -7,15 +7,14 @@ use Liberu\Accounting\AuditSupportApi\AuditSupportApiServiceProvider;
 use Liberu\Accounting\AuditSupportApi\Policies\AuditSupportPolicy;
 use Liberu\Accounting\Erp\Models\User;
 
-it('covers accounting-audit-support-api api provider, policies, requests, and index route', function (): void {
+it('covers accounting-audit-support-api provider, policy, controller, and resource', function (): void {
     $user = User::factory()->create(['current_team_id' => 1]);
     Sanctum::actingAs($user, ['*']);
 
     $provider = $this->app->register(AuditSupportApiServiceProvider::class, force: true);
-    if (method_exists($provider, 'boot')) {
-        $provider->boot();
-    }
+    $provider->boot();
     expect($provider)->toBeInstanceOf(AuditSupportApiServiceProvider::class);
+
     $policy = new AuditSupportPolicy();
     $allowUser = new class() extends User
     {
@@ -35,16 +34,52 @@ it('covers accounting-audit-support-api api provider, policies, requests, and in
             return false;
         }
     };
-    $record = (object) ['team_id' => 1, 'legal_entity_id' => 1, 'user_id' => 1];
-    expect($policy->viewAny($allowUser))->toBeBool();
-    expect($policy->viewAny($denyUser))->toBeBool();
+    $wrongTeamUser = new class() extends User
+    {
+        public int $current_team_id = 2;
+
+        public function tokenCan(string $a): bool
+        {
+            return true;
+        }
+    };
+    $noTeamUser = new class() extends User
+    {
+        public ?int $current_team_id = null;
+
+        public function tokenCan(string $a): bool
+        {
+            return true;
+        }
+    };
+    $record = (object) ['team_id' => 1];
+
+    expect($policy->viewAny($allowUser))->toBeTrue();
+    expect($policy->viewAny($denyUser))->toBeFalse();
     expect($policy->viewAny(null))->toBeFalse();
-    expect($policy->create($allowUser))->toBeBool();
-    expect($policy->create($denyUser))->toBeBool();
+    expect($policy->create($allowUser))->toBeTrue();
+    expect($policy->create($noTeamUser))->toBeFalse();
+    expect($policy->create($denyUser))->toBeFalse();
     expect($policy->create(null))->toBeFalse();
-    expect($policy->update($allowUser, $record))->toBeBool();
-    expect($policy->update($denyUser, $record))->toBeBool();
+    expect($policy->update($allowUser, $record))->toBeTrue();
+    expect($policy->update($wrongTeamUser, $record))->toBeFalse();
+    expect($policy->update($denyUser, $record))->toBeFalse();
     expect($policy->update(null, $record))->toBeFalse();
-    $res = $this->getJson('/api/v1/accounting/audit-support');
-    expect($res->status())->toBeLessThan(500);
+
+    $storeRes = $this->postJson('/api/v1/accounting/audit-support', [
+        'reference' => 'AUD-2026-001',
+        'title' => 'Bank Confirmations',
+        'description' => 'Provide year-end bank confirmation letters.',
+        'owner_id' => $user->id,
+        'due_at' => '2026-03-31',
+        'evidence' => [['file' => 'bank-letter.pdf']],
+    ]);
+    expect($storeRes->status())->toBeLessThan(300);
+    $id = $storeRes->json('data.id');
+
+    expect($this->getJson('/api/v1/accounting/audit-support')->status())->toBe(200);
+    expect($this->getJson('/api/v1/accounting/audit-support?status=open&per_page=10')->status())->toBe(200);
+
+    $submitRes = $this->postJson("/api/v1/accounting/audit-support/{$id}/submit");
+    expect($submitRes->status())->toBe(200);
 });

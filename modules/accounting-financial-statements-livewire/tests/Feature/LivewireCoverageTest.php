@@ -28,6 +28,7 @@ it('covers accounting-financial-statements-livewire components', function (): vo
     $component->mount((int) $book->getKey(), '2026-01-01', '2026-12-31');
     $component->updatedStatementType('invalid');
     expect($component->statementType)->toBe(StatementType::ProfitAndLoss->value);
+    $component->updatedStatementType(StatementType::BalanceSheet->value);
 
     foreach (StatementType::cases() as $type) {
         $component->statementType = $type->value;

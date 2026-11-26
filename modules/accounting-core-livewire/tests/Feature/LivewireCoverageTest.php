@@ -5,6 +5,9 @@ declare(strict_types=1);
 use Liberu\Accounting\Core\Models\Book;
 use Liberu\Accounting\Core\Models\LegalEntity;
 use Liberu\Accounting\CoreLivewire\AccountingCoreLivewireServiceProvider;
+use Liberu\Accounting\CoreLivewire\Livewire\AccountingSettings;
+use Liberu\Accounting\CoreLivewire\Livewire\Books;
+use Liberu\Accounting\CoreLivewire\Livewire\LegalEntities;
 use Liberu\Accounting\Erp\Models\User;
 use Livewire\Livewire;
 
@@ -13,7 +16,7 @@ it('covers accounting-core-livewire components', function (): void {
     $provider->boot();
     $this->actingAs(User::factory()->create());
 
-    Livewire::test('module-accounting-core-legal-entities')
+    Livewire::test(LegalEntities::class)
         ->set('name', 'Core Entity')
         ->set('currencyCode', 'USD')
         ->set('accountingBasis', 'accrual')
@@ -23,7 +26,7 @@ it('covers accounting-core-livewire components', function (): void {
 
     $entity = LegalEntity::query()->firstOrFail();
 
-    Livewire::test('module-accounting-core-books')
+    Livewire::test(Books::class)
         ->set('legalEntityId', $entity->getKey())
         ->set('name', 'Main Book')
         ->set('code', 'MAIN')
@@ -34,7 +37,7 @@ it('covers accounting-core-livewire components', function (): void {
 
     $book = Book::query()->firstOrFail();
 
-    Livewire::test('module-accounting-core-settings')
+    Livewire::test(AccountingSettings::class)
         ->set('bookId', $book->getKey())
         ->set('setting', 'defaults')
         ->set('key', 'rounding')
@@ -42,5 +45,9 @@ it('covers accounting-core-livewire components', function (): void {
         ->call('save')
         ->assertDispatched('accounting-setting-saved')
         ->set('setting', 'policies')
+        ->set('key', 'cutoff')
+        ->set('value', '{"days":5}')
+        ->call('save')
+        ->assertDispatched('accounting-setting-saved')
         ->assertOk();
 });

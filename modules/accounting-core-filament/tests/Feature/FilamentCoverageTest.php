@@ -10,6 +10,8 @@ use Liberu\Accounting\CoreFilament\AccountingCoreFilamentServiceProvider;
 use Liberu\Accounting\CoreFilament\Resources\BookResource;
 use Liberu\Accounting\CoreFilament\Resources\BookResource\Pages\ListBooks;
 use Liberu\Accounting\CoreFilament\Resources\LegalEntityResource;
+use Liberu\Accounting\CoreFilament\Resources\LegalEntityResource\Pages\CreateLegalEntity;
+use Liberu\Accounting\CoreFilament\Resources\LegalEntityResource\Pages\EditLegalEntity;
 use Liberu\Accounting\CoreFilament\Resources\LegalEntityResource\Pages\ListLegalEntities;
 
 it('registers and configures accounting-core-filament filament resources', function (): void {
@@ -34,4 +36,6 @@ it('registers and configures accounting-core-filament filament resources', funct
     expect($hdrActions)->toBeArray();
     $hdrActions = Closure::bind(fn () => $this->getHeaderActions(), new ListLegalEntities(), ListLegalEntities::class)();
     expect($hdrActions)->toBeArray();
+    expect(new CreateLegalEntity())->toBeInstanceOf(CreateLegalEntity::class);
+    expect(new EditLegalEntity())->toBeInstanceOf(EditLegalEntity::class);
 });

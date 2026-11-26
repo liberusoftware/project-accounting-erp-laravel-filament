@@ -2,9 +2,11 @@
 
 declare(strict_types=1);
 
+use Filament\Panel;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Liberu\Accounting\AccountantWorkspaceFilament\AccountantWorkspaceFilamentPlugin;
 use Liberu\Accounting\AccountantWorkspaceFilament\AccountantWorkspaceFilamentServiceProvider;
 use Liberu\Accounting\AccountantWorkspaceFilament\Resources\Pages\CreateWorkspaceItem;
 use Liberu\Accounting\AccountantWorkspaceFilament\Resources\Pages\ListWorkspaceItems;
@@ -16,6 +18,11 @@ it('registers and configures accounting-accountant-workspace-filament filament r
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(AccountantWorkspaceFilamentServiceProvider::class);
+    $plugin = AccountantWorkspaceFilamentPlugin::make();
+    $panel = Panel::make()->id('test-accounting-accountant-workspace-filament');
+    $plugin->register($panel);
+    $plugin->boot($panel);
+    expect($plugin->getId())->toBeString()->not->toBeEmpty();
     $host = new ListWorkspaceItems();
     expect(WorkspaceItemResource::getPages())->toBeArray();
     expect(WorkspaceItemResource::getEloquentQuery())->toBeInstanceOf(Builder::class);

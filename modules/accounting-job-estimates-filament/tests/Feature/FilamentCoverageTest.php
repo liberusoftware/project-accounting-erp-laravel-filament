@@ -6,6 +6,7 @@ use Filament\Panel;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Liberu\Accounting\Erp\Models\User;
 use Liberu\Accounting\JobEstimatesFilament\JobEstimatesFilamentPlugin;
 use Liberu\Accounting\JobEstimatesFilament\JobEstimatesFilamentServiceProvider;
 use Liberu\Accounting\JobEstimatesFilament\Resources\JobEstimateResource;
@@ -24,6 +25,10 @@ it('registers and configures accounting-job-estimates-filament filament resource
     expect($plugin->getId())->toBeString()->not->toBeEmpty();
     $host = new ListJobEstimates();
     expect(JobEstimateResource::getPages())->toBeArray();
+    expect(JobEstimateResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
+    $user = new User();
+    $user->current_team_id = 1;
+    $this->actingAs($user);
     expect(JobEstimateResource::getEloquentQuery())->toBeInstanceOf(Builder::class);
     expect(JobEstimateResource::form(Schema::make($host)))->toBeInstanceOf(Schema::class);
     expect(JobEstimateResource::table(Table::make($host)))->toBeInstanceOf(Table::class);

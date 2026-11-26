@@ -26,4 +26,5 @@ it('renders accounting-mileage-livewire livewire components', function (): void 
     if (method_exists($component, 'updated'.ucfirst('region'))) {
         $component->{'updated'.ucfirst('region')}();
     }
+    expect($component->render())->not->toBeNull();
 });

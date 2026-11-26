@@ -17,6 +17,7 @@ it('registers and configures accounting-time-tracking-filament filament resource
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(TimeTrackingFilamentServiceProvider::class);
+    expect($this->app->make(TimeTrackingFilamentPlugin::class))->toBeInstanceOf(TimeTrackingFilamentPlugin::class);
     $plugin = TimeTrackingFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-time-tracking-filament');
     $plugin->register($panel);

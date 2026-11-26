@@ -22,7 +22,7 @@ it('covers accounting-bank-rules-livewire components', function (): void {
         'name' => 'Coffee Rule',
         'priority' => 10,
         'enabled' => true,
-        'conditions' => [['field' => 'description', 'operator' => 'contains', 'value' => 'coffee']],
+        'conditions' => ['text' => 'coffee'],
         'actions' => ['category' => 'meals'],
         'automation_mode' => 'suggest',
     ]);
@@ -32,5 +32,9 @@ it('covers accounting-bank-rules-livewire components', function (): void {
     $component->transactionText = 'Morning coffee shop';
     $component->testRule((int) $rule->getKey());
     expect($component->testResult)->toBe('Rule matched.');
+
+    $component->transactionText = 'Office supplies';
+    $component->testRule((int) $rule->getKey());
+    expect($component->testResult)->toBe('Rule did not match.');
     expect($component->render())->not->toBeNull();
 });

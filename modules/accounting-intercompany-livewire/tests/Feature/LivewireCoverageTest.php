@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Liberu\Accounting\Erp\Models\User;
+use Liberu\Accounting\Intercompany\Enums\TransactionStatus;
 use Liberu\Accounting\IntercompanyLivewire\IntercompanyLivewireServiceProvider;
 use Liberu\Accounting\IntercompanyLivewire\Livewire\Intercompany;
 
@@ -22,8 +23,9 @@ it('renders accounting-intercompany-livewire livewire components', function (): 
         $component->mount();
     }
     expect($component->render())->not->toBeNull();
-    $component->status = 'active';
+    $component->status = TransactionStatus::cases()[0]->value;
     if (method_exists($component, 'updated'.ucfirst('status'))) {
         $component->{'updated'.ucfirst('status')}();
     }
+    expect($component->render())->not->toBeNull();
 });

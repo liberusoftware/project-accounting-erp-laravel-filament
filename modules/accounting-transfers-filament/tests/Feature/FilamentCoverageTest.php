@@ -17,6 +17,7 @@ it('registers and configures accounting-transfers-filament filament resources', 
         $provider->boot();
     }
     expect($provider)->toBeInstanceOf(TransfersFilamentServiceProvider::class);
+    expect($this->app->make(TransfersFilamentPlugin::class))->toBeInstanceOf(TransfersFilamentPlugin::class);
     $plugin = TransfersFilamentPlugin::make();
     $panel = Panel::make()->id('test-accounting-transfers-filament');
     $plugin->register($panel);

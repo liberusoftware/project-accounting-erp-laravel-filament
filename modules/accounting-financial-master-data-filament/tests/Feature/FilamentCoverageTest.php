@@ -8,8 +8,12 @@ use Filament\Tables\Table;
 use Liberu\Accounting\FinancialMasterDataFilament\FinancialMasterDataFilamentPlugin;
 use Liberu\Accounting\FinancialMasterDataFilament\FinancialMasterDataFilamentServiceProvider;
 use Liberu\Accounting\FinancialMasterDataFilament\Resources\ItemServiceResource;
+use Liberu\Accounting\FinancialMasterDataFilament\Resources\ItemServiceResource\Pages\CreateItemService;
+use Liberu\Accounting\FinancialMasterDataFilament\Resources\ItemServiceResource\Pages\EditItemService;
 use Liberu\Accounting\FinancialMasterDataFilament\Resources\ItemServiceResource\Pages\ListItemServices;
 use Liberu\Accounting\FinancialMasterDataFilament\Resources\PartyResource;
+use Liberu\Accounting\FinancialMasterDataFilament\Resources\PartyResource\Pages\CreateParty;
+use Liberu\Accounting\FinancialMasterDataFilament\Resources\PartyResource\Pages\EditParty;
 use Liberu\Accounting\FinancialMasterDataFilament\Resources\PartyResource\Pages\ListParties;
 
 it('registers and configures accounting-financial-master-data-filament filament resources', function (): void {
@@ -34,4 +38,8 @@ it('registers and configures accounting-financial-master-data-filament filament 
     expect($hdrActions)->toBeArray();
     $hdrActions = Closure::bind(fn () => $this->getHeaderActions(), new ListParties(), ListParties::class)();
     expect($hdrActions)->toBeArray();
+    expect(new CreateItemService())->toBeInstanceOf(CreateItemService::class);
+    expect(new EditItemService())->toBeInstanceOf(EditItemService::class);
+    expect(new CreateParty())->toBeInstanceOf(CreateParty::class);
+    expect(new EditParty())->toBeInstanceOf(EditParty::class);
 });
