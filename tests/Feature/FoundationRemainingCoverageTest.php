@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Artisan;
+use Liberu\Accounting\ChartOfAccounts\Enums\AccountType;
+use Liberu\Accounting\ChartOfAccounts\Enums\NormalBalance;
+use Liberu\Accounting\ChartOfAccounts\Models\Account;
 use Liberu\Accounting\Core\Models\Book;
 use Liberu\Accounting\Core\Models\LegalEntity;
 use Liberu\Accounting\Erp\Models\User;
@@ -186,34 +189,43 @@ it('covers SearchApi SearchController users and all endpoints', function (): voi
         ->and($allResponse->getData(true)['users']['data'][0]['name'])->toBe('Searchable Alice');
 });
 
-it('covers GeneralLedger CreateTypedJournal action', function (): void {
+it('persists the requested type and lines when creating a typed journal', function (): void {
     $entity = LegalEntity::query()->create([
-        'team_id' => 1,
         'name' => 'Typed Journal Entity',
-        'code' => 'TJE',
-        'functional_currency' => 'GBP',
-        'status' => 'active',
+        'currency_code' => 'GBP',
     ]);
     $book = Book::query()->create([
         'legal_entity_id' => $entity->id,
         'name' => 'Primary Book',
         'code' => 'MAIN',
-        'currency' => 'GBP',
-        'is_primary' => true,
+    ]);
+    $cash = Account::query()->create([
+        'legal_entity_id' => $entity->id,
+        'code' => '1000',
+        'name' => 'Cash',
+        'type' => AccountType::Asset,
+        'normal_balance' => NormalBalance::Debit,
+    ]);
+    $revenue = Account::query()->create([
+        'legal_entity_id' => $entity->id,
+        'code' => '4000',
+        'name' => 'Revenue',
+        'type' => AccountType::Revenue,
+        'normal_balance' => NormalBalance::Credit,
     ]);
     $entry = (new CreateTypedJournal())->handle(
-        JournalType::cases()[0],
+        JournalType::Correction,
         [
-            'legal_entity_id' => $entity->id,
             'book_id' => $book->id,
             'entry_date' => '2026-01-15',
-            'currency' => 'GBP',
             'description' => 'Typed journal test',
         ],
         [
-            ['account_code' => '1000', 'debit' => 100, 'credit' => 0],
-            ['account_code' => '2000', 'debit' => 0, 'credit' => 100],
+            ['account_id' => $cash->id, 'debit' => 100],
+            ['account_id' => $revenue->id, 'credit' => 100],
         ],
     );
-    expect($entry->journal_type)->toBe(JournalType::cases()[0]->value);
+    expect($entry->refresh()->journal_type)->toBe(JournalType::Correction)
+        ->and($entry->lines->pluck('account_id')->all())->toEqualCanonicalizing([$cash->id, $revenue->id])
+        ->and($entry->isBalanced())->toBeTrue();
 });

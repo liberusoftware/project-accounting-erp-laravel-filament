@@ -266,6 +266,11 @@ it('enforces validation and posting/reversal preconditions across journal action
         ->and(fn () => $create->handle(['book_id' => 999999, 'entry_date' => '2026-01-01'], $validLines))
         ->toThrow(InvalidJournal::class, 'The journal book does not exist.')
         ->and(fn () => $create->handle(['book_id' => $book->getKey(), 'entry_date' => '2026-01-01'], [
+            ['debit' => 50, 'credit' => 0],
+            $validLines[1],
+        ]))
+        ->toThrow(InvalidJournal::class, 'Every journal line must reference an account in the book legal entity.')
+        ->and(fn () => $create->handle(['book_id' => $book->getKey(), 'entry_date' => '2026-01-01'], [
             ['account_id' => $foreignAccount->getKey(), 'debit' => 50, 'credit' => 0],
             ['account_id' => $revenue->getKey(), 'debit' => 0, 'credit' => 50],
         ]))

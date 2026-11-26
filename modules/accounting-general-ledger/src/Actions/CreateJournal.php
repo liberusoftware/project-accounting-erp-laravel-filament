@@ -25,7 +25,7 @@ final class CreateJournal
             if ($book === null) {
                 throw new InvalidJournal('The journal book does not exist.');
             }
-            $accountIds = collect($lines)->pluck('account_id')->filter()->unique()->values();
+            $accountIds = collect($lines)->pluck('account_id')->unique()->values();
             $accounts = Account::query()->whereIn('id', $accountIds)->get()->keyBy('id');
             if ($accounts->count() !== $accountIds->count() || $accounts->contains(fn (Account $account): bool => (int) $account->legal_entity_id !== (int) $book->getAttribute('legal_entity_id'))) {
                 throw new InvalidJournal('Every journal line must reference an account in the book legal entity.');
@@ -37,7 +37,8 @@ final class CreateJournal
                 $credit = (float) ($line['credit'] ?? 0);
                 if ($debit < 0 || $credit < 0 || ($debit > 0 && $credit > 0) || ($debit == 0 && $credit == 0)) {
                     throw new InvalidJournal('Each line must contain either a positive debit or credit.');
-                }$debits += $debit;
+                }
+                $debits += $debit;
                 $credits += $credit;
             }
             if (abs($debits - $credits) > 0.005) {

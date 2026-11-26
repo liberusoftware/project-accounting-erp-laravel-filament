@@ -69,8 +69,11 @@ use Liberu\Accounting\Erp\Notifications\ExpenseApprovalNotification;
 
 function createUserWithTeam(): array
 {
-    $user = User::factory()->withPersonalTeam()->create();
-    $team = $user->ownedTeams()->first();
+    $user = User::factory()->create();
+    $team = $user->ownedTeams()->create([
+        'name' => $user->name."'s Team",
+        'personal_team' => true,
+    ]);
     $user->forceFill(['current_team_id' => $team->id])->save();
     $user->refresh();
 
