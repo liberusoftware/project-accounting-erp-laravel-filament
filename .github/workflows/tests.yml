@@ -46,13 +46,16 @@ jobs:
         run: cp .env.example .env
 
       - name: Install dependencies
-        run: composer install --no-interaction --prefer-dist --optimize-autoloader
+        run: composer install --no-interaction --prefer-dist --no-scripts
 
       # Composer's custom module installer places remote package archives under
       # tracked module/theme directories. Restore the repository-owned sources so
       # formatting, analysis, and tests exercise the checked-in implementation.
       - name: Restore tracked package sources
         run: git restore --source=HEAD --worktree -- modules themes
+
+      - name: Rebuild the autoloader and discover packages
+        run: composer dump-autoload --no-interaction --optimize
 
       - name: Audit dependencies
         # The current Vonage SDK requires its abandoned Nexmo namespace bridge.
