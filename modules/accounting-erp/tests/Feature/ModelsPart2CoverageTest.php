@@ -13,14 +13,12 @@ use Illuminate\Http\Response;
 use Liberu\Accounting\Erp\Models\Account;
 use Liberu\Accounting\Erp\Models\BankConnection;
 use Liberu\Accounting\Erp\Models\Bill;
-use Liberu\Accounting\Erp\Models\Budget;
 use Liberu\Accounting\Erp\Models\Category;
 use Liberu\Accounting\Erp\Models\Currency;
 use Liberu\Accounting\Erp\Models\Customer;
 use Liberu\Accounting\Erp\Models\Employee;
 use Liberu\Accounting\Erp\Models\Estimate;
 use Liberu\Accounting\Erp\Models\ExchangeRate;
-use Liberu\Accounting\Erp\Models\Expense;
 use Liberu\Accounting\Erp\Models\InventoryCostLayer;
 use Liberu\Accounting\Erp\Models\InventoryItem;
 use Liberu\Accounting\Erp\Models\InventoryTransaction;
@@ -384,8 +382,8 @@ test('JournalEntry and JournalEntryLine cover boot hooks, period lock, relations
         ->and((float) $debitLine->amount)->toBe(250.0)
         ->and($debitLine->type)->toBe('debit')
         ->and($je->isBalanced())->toBeFalse()
-        ->and(fn () => $je->post())->toThrow(\Exception::class, 'must be balanced')
-        ->and(fn () => $je->reverse())->toThrow(\Exception::class, 'Cannot reverse an unposted');
+        ->and(fn () => $je->post())->toThrow(Exception::class, 'must be balanced')
+        ->and(fn () => $je->reverse())->toThrow(Exception::class, 'Cannot reverse an unposted');
 
     $creditLine = JournalEntryLine::create([
         'journal_entry_id' => $je->id,
@@ -404,7 +402,7 @@ test('JournalEntry and JournalEntryLine cover boot hooks, period lock, relations
     expect($je->is_posted)->toBeTrue()
         ->and((float) $debitAcc->fresh()->balance)->toBe(350.0)
         ->and((float) $creditAcc->fresh()->balance)->toBe(300.0)
-        ->and(fn () => $je->post())->toThrow(\Exception::class, 'already posted');
+        ->and(fn () => $je->post())->toThrow(Exception::class, 'already posted');
 
     $je->reverse();
     expect($je->is_posted)->toBeFalse()
@@ -421,7 +419,7 @@ test('JournalEntry and JournalEntryLine cover boot hooks, period lock, relations
     expect(fn () => JournalEntry::create([
         'entry_date' => now()->subDays(5)->toDateString(),
         'team_id' => $team->id,
-    ]))->toThrow(\DomainException::class, 'books are closed');
+    ]))->toThrow(DomainException::class, 'books are closed');
 });
 
 // =========================================================================
@@ -1104,7 +1102,7 @@ test('Vendor, VendorCredit, VendorCreditApplication, and VendorCreditItem cover 
         ->and($vc->isFullyApplied())->toBeFalse();
 
     // Exceeding balance guard
-    expect(fn () => $vc->applyToBill($bill->bill_id, 500.00))->toThrow(\Exception::class, 'exceeds remaining');
+    expect(fn () => $vc->applyToBill($bill->bill_id, 500.00))->toThrow(Exception::class, 'exceeds remaining');
 
     // Partial then full application
     $vc->applyToBill($bill->bill_id, 50.00);

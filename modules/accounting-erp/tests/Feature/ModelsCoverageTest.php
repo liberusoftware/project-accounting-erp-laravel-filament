@@ -61,7 +61,6 @@ use Liberu\Accounting\Erp\Models\PurchaseOrder;
 use Liberu\Accounting\Erp\Models\SalesOrder;
 use Liberu\Accounting\Erp\Models\Supplier;
 use Liberu\Accounting\Erp\Models\TaxRate;
-use Liberu\Accounting\Erp\Models\Team;
 use Liberu\Accounting\Erp\Models\Transaction;
 use Liberu\Accounting\Erp\Models\User;
 use Liberu\Accounting\Erp\Models\Vendor;
@@ -824,9 +823,9 @@ test('CreditMemo, CreditMemoApplication, and CreditMemoItem cover boot, tax, app
         ->and($cm->is_fully_applied)->toBeFalse();
 
     // Exception branches on applyToInvoice
-    expect(fn () => $cm->applyToInvoice($invoice1->id, 999.00))->toThrow(\Exception::class, 'Cannot apply more')
-        ->and(fn () => $cm->applyToInvoice(999999, 10.00))->toThrow(\Exception::class, 'Invoice not found')
-        ->and(fn () => $cm->applyToInvoice($invoice2->id, 10.00))->toThrow(\Exception::class, 'same customer');
+    expect(fn () => $cm->applyToInvoice($invoice1->id, 999.00))->toThrow(Exception::class, 'Cannot apply more')
+        ->and(fn () => $cm->applyToInvoice(999999, 10.00))->toThrow(Exception::class, 'Invoice not found')
+        ->and(fn () => $cm->applyToInvoice($invoice2->id, 10.00))->toThrow(Exception::class, 'same customer');
 
     // Partial application then full application
     $app1 = $cm->applyToInvoice($invoice1->id, 50.00);
@@ -929,7 +928,7 @@ test('DelayedCharge covers boot auto-calc, relationships, addToInvoice, status h
     $charge->addToInvoice($invoice->id);
     expect($charge->isInvoiced())->toBeTrue()
         ->and($charge->invoice->id)->toBe($invoice->id)
-        ->and(fn () => $charge->addToInvoice($invoice->id))->toThrow(\Exception::class, 'already been invoiced');
+        ->and(fn () => $charge->addToInvoice($invoice->id))->toThrow(Exception::class, 'already been invoiced');
 
     $charge->void();
     expect($charge->status)->toBe('void');
@@ -1076,7 +1075,7 @@ test('Estimate and EstimateItem cover boot, expiration, compound tax, status tra
     expect($est->status)->toBe('sent');
     $est->markAsViewed();
     expect($est->status)->toBe('viewed');
-    expect(fn () => $est->convertToInvoice())->toThrow(\Exception::class, 'Only accepted estimates');
+    expect(fn () => $est->convertToInvoice())->toThrow(Exception::class, 'Only accepted estimates');
 
     $est->decline('Too expensive');
     expect($est->status)->toBe('declined')
@@ -1091,7 +1090,7 @@ test('Estimate and EstimateItem cover boot, expiration, compound tax, status tra
 
     // Already converted guard
     $est->update(['invoice_id' => $invoice->id]);
-    expect(fn () => $est->convertToInvoice())->toThrow(\Exception::class, 'already been converted');
+    expect(fn () => $est->convertToInvoice())->toThrow(Exception::class, 'already been converted');
 
     // Already has sales order guard
     $estWithSo = Estimate::create([
@@ -1108,7 +1107,7 @@ test('Estimate and EstimateItem cover boot, expiration, compound tax, status tra
         'order_date' => now()->toDateString(),
         'team_id' => $team->id,
     ]);
-    expect(fn () => $estWithSo->convertToInvoice())->toThrow(\Exception::class, 'already has a sales order');
+    expect(fn () => $estWithSo->convertToInvoice())->toThrow(Exception::class, 'already has a sales order');
 });
 
 // =========================================================================
@@ -1176,7 +1175,7 @@ test('Expense covers relationships, approve, reject, isPending, getAllocatedAmou
     ]);
     try {
         expect($direct->getAllocatedAmount())->toBe(100.0);
-    } catch (\TypeError) {
+    } catch (TypeError) {
         expect(true)->toBeTrue();
     }
 });
