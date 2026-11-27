@@ -39,11 +39,12 @@ it('covers OrganizationsFilamentPlugin, service provider, TeamResource form/tabl
     expect($schema->getComponents())->toHaveCount(3);
 
     $table = TeamResource::table(Table::make($listPage));
-    expect($table->getColumns())->toHaveCount(4);
+    expect(array_keys($table->getColumns()))->toBe(['name', 'owner.name', 'personal_team', 'status', 'archived_at', 'created_at']);
 
     $listHeaderActions = Closure::bind(fn (): array => $this->getHeaderActions(), $listPage, ListTeams::class)();
-    expect($listHeaderActions)->toHaveCount(1)
-        ->and($listHeaderActions[0])->toBeInstanceOf(CreateAction::class);
+    expect($listHeaderActions)->toHaveCount(2)
+        ->and($listHeaderActions[0])->toBeInstanceOf(CreateAction::class)
+        ->and($listHeaderActions[1]->getName())->toBe('import');
 
     $editHeaderActions = Closure::bind(fn (): array => $this->getHeaderActions(), $editPage, EditTeam::class)();
     expect($editHeaderActions)->toHaveCount(1)
