@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "25e55f0bb90569e42fd4248342695b14",
+    "content-hash": "ac891b2e4cd4f3473f66f757a98560be",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -13762,21 +13762,22 @@
         },
         {
             "name": "liberusoftware/module-accounting-customer-portal-filament",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-customer-portal-filament.git",
-                "reference": "1814339892402d7cc7a2725048e4605eea882c16"
+                "reference": "8c9f98a0fb2bc7f483ce8f441bd762c8c4e60d85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-customer-portal-filament/zipball/1814339892402d7cc7a2725048e4605eea882c16",
-                "reference": "1814339892402d7cc7a2725048e4605eea882c16",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-customer-portal-filament/zipball/8c9f98a0fb2bc7f483ce8f441bd762c8c4e60d85",
+                "reference": "8c9f98a0fb2bc7f483ce8f441bd762c8c4e60d85",
                 "shasum": ""
             },
             "require": {
                 "filament/filament": "^5.11.0",
                 "liberusoftware/module-accounting-customer-portal": "^1.0",
+                "liberusoftware/module-accounting-erp": "^1.0",
                 "php": "^8.5"
             },
             "type": "liberu-module",
@@ -13802,9 +13803,9 @@
             "description": "Accounting customer portal Filament 5 surfaces.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-customer-portal-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-customer-portal-filament/tree/v1.1.0"
+                "source": "https://github.com/liberusoftware/module-accounting-customer-portal-filament/tree/v1.1.1"
             },
-            "time": "2026-11-19T09:47:59+00:00"
+            "time": "2026-11-26T23:48:06+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-customer-portal-livewire",
