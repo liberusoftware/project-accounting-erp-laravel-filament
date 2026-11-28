@@ -10,7 +10,6 @@ use Liberu\Accounting\Erp\Models\Budget;
 use Liberu\Accounting\Erp\Models\ConsolidationGroup;
 use Liberu\Accounting\Erp\Models\Currency;
 use Liberu\Accounting\Erp\Models\Customer;
-use Liberu\Accounting\Erp\Models\ExchangeRate;
 use Liberu\Accounting\Erp\Models\Expense;
 use Liberu\Accounting\Erp\Models\ForecastScenario;
 use Liberu\Accounting\Erp\Models\Invoice;
@@ -404,9 +403,9 @@ describe('BudgetService & ForecastService', function (): void {
             'end_date' => '2026-01-31',
             'planned_amount' => 5000,
         ]);
-        $orphanBudget = Budget::factory()->create([
+        $zeroPlanBudget = Budget::factory()->create([
             'team_id' => $team->id,
-            'account_id' => null,
+            'account_id' => $expAccount->id,
             'start_date' => '2026-01-01',
             'end_date' => '2026-01-31',
             'planned_amount' => 0,
@@ -415,6 +414,10 @@ describe('BudgetService & ForecastService', function (): void {
         $budgetService = new BudgetService();
         $comparison = $budgetService->getBudgetComparison('2026-01-01', '2026-01-31');
         expect($comparison)->toHaveCount(2);
+
+        // Cover null-account guard in BudgetService::calculateActualAmount
+        $calcActual = new ReflectionMethod(BudgetService::class, 'calculateActualAmount');
+        expect($calcActual->invoke($budgetService, null, $zeroPlanBudget))->toBe(0);
 
         $forecast = $budgetService->generateForecast($budget);
         expect((float) $forecast)->toBe(1500.0)

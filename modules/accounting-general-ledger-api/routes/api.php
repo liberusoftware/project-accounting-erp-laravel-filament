@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Liberu\Accounting\GeneralLedgerApi\Http\Controllers\ErpGeneralLedgerController;
 use Liberu\Accounting\GeneralLedgerApi\Http\Controllers\GeneralLedgerController;
+use Liberu\Accounting\GeneralLedgerApi\Http\Controllers\JournalEntryController;
 
 Route::middleware('auth:sanctum')->prefix('api/v1/accounting/general-ledger')->group(function (): void {
     Route::middleware('ability:accounting.general-ledger.read')->group(function (): void {
@@ -21,18 +23,18 @@ Route::middleware('auth:sanctum')->prefix('api/v1/accounting/general-ledger')->g
     });
 });
 
-\Illuminate\Support\Facades\Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
-    \Illuminate\Support\Facades\Route::apiResource('journal-entries', \Liberu\Accounting\GeneralLedgerApi\Http\Controllers\JournalEntryController::class)
+Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
+    Route::apiResource('journal-entries', JournalEntryController::class)
         ->only(['index', 'store', 'show', 'destroy']);
-    \Illuminate\Support\Facades\Route::get('/general-ledger/trial-balance', [\Liberu\Accounting\GeneralLedgerApi\Http\Controllers\ErpGeneralLedgerController::class, 'trialBalance']);
-    \Illuminate\Support\Facades\Route::get('/general-ledger/balances', [\Liberu\Accounting\GeneralLedgerApi\Http\Controllers\ErpGeneralLedgerController::class, 'balances']);
+    Route::get('/general-ledger/trial-balance', [ErpGeneralLedgerController::class, 'trialBalance']);
+    Route::get('/general-ledger/balances', [ErpGeneralLedgerController::class, 'balances']);
 
-    \Illuminate\Support\Facades\Route::prefix('v1')->group(function (): void {
-        \Illuminate\Support\Facades\Route::get('journal-entries', [\Liberu\Accounting\GeneralLedgerApi\Http\Controllers\JournalEntryController::class, 'index'])->middleware('ability:journal-entries:read');
-        \Illuminate\Support\Facades\Route::get('journal-entries/{journal_entry}', [\Liberu\Accounting\GeneralLedgerApi\Http\Controllers\JournalEntryController::class, 'show'])->middleware('ability:journal-entries:read');
-        \Illuminate\Support\Facades\Route::post('journal-entries', [\Liberu\Accounting\GeneralLedgerApi\Http\Controllers\JournalEntryController::class, 'store'])->middleware('ability:journal-entries:write');
-        \Illuminate\Support\Facades\Route::delete('journal-entries/{journal_entry}', [\Liberu\Accounting\GeneralLedgerApi\Http\Controllers\JournalEntryController::class, 'destroy'])->middleware('ability:journal-entries:write');
-        \Illuminate\Support\Facades\Route::get('general-ledger/trial-balance', [\Liberu\Accounting\GeneralLedgerApi\Http\Controllers\ErpGeneralLedgerController::class, 'trialBalance'])->middleware('ability:general-ledger:read');
-        \Illuminate\Support\Facades\Route::get('general-ledger/balances', [\Liberu\Accounting\GeneralLedgerApi\Http\Controllers\ErpGeneralLedgerController::class, 'balances'])->middleware('ability:general-ledger:read');
+    Route::prefix('v1')->group(function (): void {
+        Route::get('journal-entries', [JournalEntryController::class, 'index'])->middleware('ability:journal-entries:read');
+        Route::get('journal-entries/{journal_entry}', [JournalEntryController::class, 'show'])->middleware('ability:journal-entries:read');
+        Route::post('journal-entries', [JournalEntryController::class, 'store'])->middleware('ability:journal-entries:write');
+        Route::delete('journal-entries/{journal_entry}', [JournalEntryController::class, 'destroy'])->middleware('ability:journal-entries:write');
+        Route::get('general-ledger/trial-balance', [ErpGeneralLedgerController::class, 'trialBalance'])->middleware('ability:general-ledger:read');
+        Route::get('general-ledger/balances', [ErpGeneralLedgerController::class, 'balances'])->middleware('ability:general-ledger:read');
     });
 });

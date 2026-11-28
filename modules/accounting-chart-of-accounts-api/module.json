@@ -3,7 +3,7 @@
   "name": "accounting-chart-of-accounts-api",
   "display_name": "Accounting Chart of Accounts API",
   "description": "Authenticated, scoped HTTP operations for the chart of accounts.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ChartOfAccountsApi\\ChartOfAccountsApiServiceProvider",
   "requires": {

@@ -306,7 +306,7 @@ test('Invoice, InvoiceItem, Payment, and TimeEntry cover boot, totals, payment s
     expect((float) $invoice->calculateTotalFromTimeEntries())->toBe((float) $te->total_amount);
 
     // generatePDF via mocked Pdf facade
-    $pdfMock = Mockery::mock();
+    $pdfMock = Mockery::mock(Barryvdh\DomPDF\PDF::class);
     $pdfMock->shouldReceive('download')->once()->andReturn(new Response('pdf-bytes'));
     Pdf::shouldReceive('loadView')->once()->andReturn($pdfMock);
     expect($invoice->generatePDF())->toBeInstanceOf(Response::class);
@@ -498,7 +498,7 @@ test('Payroll covers employee relation, grossSalary, calculateNetSalary, and tot
 
     $payroll = Payroll::create([
         'employee_id' => $emp->id,
-        'base_salary' => 4000.00,
+        'base_salary' => 40000.00,
         'overtime_hours' => 5.00,
         'overtime_rate' => 50.00,
         'other_deductions' => 100.00,
@@ -510,11 +510,11 @@ test('Payroll covers employee relation, grossSalary, calculateNetSalary, and tot
     ]);
 
     expect($payroll->employee->id)->toBe($emp->id)
-        ->and($payroll->grossSalary())->toBe(4250.0);
+        ->and($payroll->grossSalary())->toBe(40250.0);
 
     $payroll->calculateNetSalary();
     expect($payroll->totalDeductions())->toBeGreaterThan(100.0)
-        ->and((float) $payroll->net_salary)->toBeLessThan(4250.0);
+        ->and((float) $payroll->net_salary)->toBeLessThan(40250.0);
 });
 
 test('Plan and Subscription cover boot hooks, relationships, pause, resume, and cancel', function () {
@@ -874,7 +874,7 @@ test('TaxForm and TaxRate cover relationships, tax calculation, summary accessor
         'team_id' => $team->id,
     ]);
 
-    $pdfMock = Mockery::mock();
+    $pdfMock = Mockery::mock(Barryvdh\DomPDF\PDF::class);
     $pdfMock->shouldReceive('download')->once()->andReturn(new Response('tax-pdf'));
     Pdf::shouldReceive('loadView')->once()->andReturn($pdfMock);
 

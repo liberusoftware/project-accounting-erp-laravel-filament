@@ -3,7 +3,7 @@
   "name": "accounting-multi-currency-livewire",
   "display_name": "Accounting Multi-Currency Livewire",
   "description": "Livewire 4 rate and revaluation review adapter.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MultiCurrencyLivewire\\MultiCurrencyLivewireServiceProvider",
   "requires": {

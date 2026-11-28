@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
 use Liberu\Accounting\BankAccountsApi\Http\Controllers\BankAccountController;
+use Liberu\Accounting\BankAccountsApi\Http\Controllers\TransactionController;
 
 Route::prefix('api/v1/accounting/bank-accounts')->middleware(['auth:sanctum', 'throttle:60,1'])->group(function (): void {
     Route::get('/', [BankAccountController::class, 'index'])->middleware('ability:accounting.bank-accounts.read');
@@ -14,6 +15,6 @@ Route::prefix('api/v1/accounting/bank-accounts')->middleware(['auth:sanctum', 't
     Route::post('/{bankAccount}/status', [BankAccountController::class, 'status'])->middleware('ability:accounting.bank-accounts.write');
 });
 
-\Illuminate\Support\Facades\Route::middleware(['api', 'auth:sanctum'])->prefix('api')->group(function (): void {
-    \Illuminate\Support\Facades\Route::apiResource('transactions', \Liberu\Accounting\BankAccountsApi\Http\Controllers\TransactionController::class);
+Route::middleware(['api', 'auth:sanctum'])->prefix('api')->group(function (): void {
+    Route::apiResource('transactions', TransactionController::class);
 });

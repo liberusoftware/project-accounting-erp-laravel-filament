@@ -46,8 +46,8 @@ jobs:
       # are generated output, so their release contents may legitimately differ.
       - name: Installed packages match the tracked source
         run: |
-          path_packages="$(php -r '$composer=json_decode(file_get_contents("composer.json"), true, 512, JSON_THROW_ON_ERROR); foreach ($composer["repositories"] as $repository) { if (($repository["type"] ?? null) === "path") { echo $repository["url"]." "; } }')"
-          if ! git diff --exit-code --stat -- $path_packages; then
+          path_packages="$(php -r '$composer=json_decode(file_get_contents("composer.json"), true, 512, JSON_THROW_ON_ERROR); foreach ($composer["repositories"] ?? [] as $repository) { if (($repository["type"] ?? null) === "path") { echo $repository["url"]." "; } }')"
+          if [[ -n "$path_packages" ]] && ! git diff --exit-code --stat -- $path_packages; then
             echo "::error::A clean install rewrote a tracked Composer path repository."
             echo "Edit the package source in its path repository and keep the install reproducible."
             exit 1

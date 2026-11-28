@@ -3,7 +3,7 @@
   "name": "accounting-copilot-filament",
   "display_name": "Accounting Copilot Filament",
   "description": "Filament 5 Copilot request and confirmation surface.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CopilotFilament\\CopilotFilamentServiceProvider",
   "requires": {

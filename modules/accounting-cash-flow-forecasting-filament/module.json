@@ -3,7 +3,7 @@
   "name": "accounting-cash-flow-forecasting-filament",
   "display_name": "Accounting Cash-Flow Forecasting Filament",
   "description": "Filament adapter for cash-flow forecasting.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CashFlowForecastingFilament\\CashFlowForecastingFilamentServiceProvider",
   "requires": {

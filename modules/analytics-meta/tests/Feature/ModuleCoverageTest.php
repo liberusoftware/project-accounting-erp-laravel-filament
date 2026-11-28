@@ -84,7 +84,7 @@ it('boots analytics meta service provider both with and without bound transport'
         }
     };
 
-    $transport = new class implements MetaTransport
+    $transport = new class() implements MetaTransport
     {
         public function send(array $payload): array
         {

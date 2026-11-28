@@ -3,7 +3,7 @@
   "name": "accounting-e-invoicing-livewire",
   "display_name": "Accounting E-Invoicing Livewire",
   "description": "Livewire 4 e-invoice status monitor.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\EInvoicingLivewire\\EInvoicingLivewireServiceProvider",
   "requires": {

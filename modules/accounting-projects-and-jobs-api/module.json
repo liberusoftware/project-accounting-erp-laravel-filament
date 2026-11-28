@@ -3,7 +3,7 @@
   "name": "accounting-projects-and-jobs-api",
   "display_name": "Accounting Projects and Jobs API",
   "description": "HTTP API for projects and jobs.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ProjectsAndJobsApi\\ProjectsAndJobsApiServiceProvider",
   "requires": {

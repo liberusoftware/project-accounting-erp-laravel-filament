@@ -3,7 +3,7 @@
   "name": "accounting-carbon-accounting-livewire",
   "display_name": "Accounting Carbon Accounting Livewire",
   "description": "Livewire carbon activity view.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CarbonAccountingLivewire\\CarbonAccountingLivewireServiceProvider",
   "requires": {

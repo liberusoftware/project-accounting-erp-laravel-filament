@@ -7,6 +7,7 @@ use Filament\Facades\Filament;
 use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Schema;
+use Filament\Support\Exceptions\Halt;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\TernaryFilter;
@@ -22,11 +23,9 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
 use Liberu\Accounting\Erp\Actions\SaveBillOfMaterials;
 use Liberu\Accounting\Erp\Models\Account;
-use Liberu\Accounting\Erp\Models\ApprovalRule;
 use Liberu\Accounting\Erp\Models\BankConnection;
 use Liberu\Accounting\Erp\Models\BankStatement;
 use Liberu\Accounting\Erp\Models\Bill;
-use Liberu\Accounting\Erp\Models\Category;
 use Liberu\Accounting\Erp\Models\Company;
 use Liberu\Accounting\Erp\Models\ConsolidationGroup;
 use Liberu\Accounting\Erp\Models\CreditMemo;
@@ -34,12 +33,10 @@ use Liberu\Accounting\Erp\Models\Customer;
 use Liberu\Accounting\Erp\Models\DelayedCharge;
 use Liberu\Accounting\Erp\Models\Document;
 use Liberu\Accounting\Erp\Models\DocumentVersion;
-use Liberu\Accounting\Erp\Models\ForecastScenario;
 use Liberu\Accounting\Erp\Models\HmrcVatReturn;
 use Liberu\Accounting\Erp\Models\InventoryItem;
 use Liberu\Accounting\Erp\Models\Invoice;
 use Liberu\Accounting\Erp\Models\JournalEntry;
-use Liberu\Accounting\Erp\Models\JournalEntryLine;
 use Liberu\Accounting\Erp\Models\TaxRate;
 use Liberu\Accounting\Erp\Models\Team;
 use Liberu\Accounting\Erp\Models\Transaction;
@@ -263,7 +260,7 @@ it('covers BankConnections resource, pages, filters, and Plaid actions', functio
     $plaidMock->shouldReceive('syncTransactions')->once()->andReturn(['added' => [1], 'modified' => [], 'removed' => []]);
     $plaidMock->shouldReceive('syncTransactions')->once()->andThrow(new Exception('Plaid down'));
     $plaidMock->shouldReceive('removeItem')->once()->andThrow(new Exception('Remove failed'));
-    $plaidMock->shouldReceive('removeItem')->once()->andReturn(['removed' => true]);
+    $plaidMock->shouldReceive('removeItem')->once()->andReturn(true);
     $plaidMock->shouldReceive('createLinkToken')->once()->andReturn(['link_token' => 'link-sandbox-xyz']);
     $plaidMock->shouldReceive('createLinkToken')->once()->andThrow(new Exception('Link error'));
     $plaidMock->shouldReceive('syncTransactions')->once()->andReturn(['added' => [], 'modified' => [], 'removed' => []]);
@@ -426,7 +423,7 @@ it('covers Bills, Categories, ChartOfAccounts, and Companies resources and pages
     $editBill = new EditBill();
     $taxRate = TaxRate::forceCreate(['team_id' => $team->id, 'name' => 'VAT 20%', 'rate' => 20]);
 
-    $billForm = BillResource::form(Schema::make($createBill));
+    $billForm = BillResource::form(Schema::make($createBill)->model(Bill::class));
     $billForm->fill(['bill_date' => '2026-01-01', 'subtotal_amount' => 100, 'tax_rate_id' => $taxRate->id]);
     foreach ($billForm->getFlatComponents(withActions: false, withHidden: true) as $component) {
         $component->isVisible();
@@ -566,7 +563,7 @@ it('covers ConsolidationGroups, CreditMemos, Customers, DelayedCharges, and Fore
         ->and(Closure::bind(fn () => $this->getHeaderActions(), $listCg, ListConsolidationGroups::class)())->toHaveCount(1)
         ->and(Closure::bind(fn () => $this->getHeaderActions(), $editCg, EditConsolidationGroup::class)())->toHaveCount(1);
 
-    $cgForm = ConsolidationGroupResource::form(Schema::make($createCg));
+    $cgForm = ConsolidationGroupResource::form(Schema::make($createCg)->model(ConsolidationGroup::class));
     foreach ($cgForm->getFlatComponents(withActions: false, withHidden: true) as $component) {
         if ($component instanceof Select && $component->getName() === 'members') {
             expect($component->getOptions())->toBeArray();
@@ -589,7 +586,9 @@ it('covers ConsolidationGroups, CreditMemos, Customers, DelayedCharges, and Fore
         'team_id' => $team->id,
         'customer_name' => 'Jane',
         'customer_last_name' => 'Doe',
+        'customer_address' => '10 Downing St',
         'customer_email' => 'jane@example.com',
+        'customer_phone' => '07700900001',
         'customer_city' => 'London',
         'current_balance' => 100,
         'credit_limit' => 50,
@@ -637,6 +636,7 @@ it('covers ConsolidationGroups, CreditMemos, Customers, DelayedCharges, and Fore
         $component->isVisible();
     }
     $cmTable = CreditMemoResource::table(Table::make($listCm));
+    Closure::bind(fn () => $this->table = $cmTable, $listCm, ListCreditMemos::class)();
     $cmTable->getColumn('amount_remaining')->record($cm)->getState();
 
     // DelayedCharges
@@ -731,7 +731,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
 
     // 1. HmrcVatReturns
     $vatReturn = HmrcVatReturn::forceCreate([
-        'company_id' => $company->id,
+        'company_id' => $company->company_id,
         'period_key' => '26A1',
         'period_from' => '2026-01-01',
         'period_to' => '2026-03-31',
@@ -760,10 +760,10 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     // mutateFormDataBeforeCreate without company_id throws, with company_id succeeds
     expect(fn () => Closure::bind(fn (array $d) => $this->mutateFormDataBeforeCreate($d), $createVat, CreateHmrcVatReturn::class)([]))
         ->toThrow(Exception::class);
-    $team->company_id = $company->id;
+    $team->company_id = $company->company_id;
     $user->setRelation('currentTeam', $team);
     $vatMutated = Closure::bind(fn (array $d) => $this->mutateFormDataBeforeCreate($d), $createVat, CreateHmrcVatReturn::class)([]);
-    expect($vatMutated['company_id'])->toBe($company->id);
+    expect($vatMutated['company_id'])->toBe($company->company_id);
 
     $hmrcMock = Mockery::mock(HmrcMtdVatService::class);
     $hmrcMock->shouldReceive('submitVatReturn')->once()->andReturn([]);
@@ -771,6 +771,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     app()->instance(HmrcMtdVatService::class, $hmrcMock);
 
     $vatTable = HmrcVatReturnResource::table(Table::make($listVat));
+    Closure::bind(fn () => $this->table = $vatTable, $listVat, ListHmrcVatReturns::class)();
     $vatTable->getColumn('status')->record($vatReturn)->getState();
     foreach ($vatTable->getRecordActions() as $action) {
         if (! $action instanceof Action) {
@@ -873,8 +874,13 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     $moveMock->shouldReceive('recordSale')->once()->andReturn(['cogs' => 25.0]);
     app()->instance(InventoryMovementService::class, $moveMock);
 
-    $saveBomMock = Mockery::mock(SaveBillOfMaterials::class);
-    $saveBomMock->shouldReceive('handle')->once();
+    config([
+        'modules.enabled' => array_values(array_unique([
+            ...(array) config('modules.enabled', []),
+            'accounting-inventory-accounting',
+        ])),
+    ]);
+    $saveBom = app(SaveBillOfMaterials::class);
 
     $invTable = InventoryItemResource::table(Table::make($listInv));
     foreach ($invTable->getRecordActions() as $action) {
@@ -886,7 +892,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
         }
         if ($action->getName() === 'recordSale') {
             $action->record($item);
-            foreach ($action->getSchema(Schema::make($listInv))->getFlatComponents(withActions: false, withHidden: true) as $f) {
+            foreach ($action->getSchema(Schema::make($listInv)->record($item))->getFlatComponents(withActions: false, withHidden: true) as $f) {
                 if (method_exists($f, 'getMaxValue')) {
                     $f->getMaxValue();
                 }
@@ -900,7 +906,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
             $action->record($item);
             $action->isVisible();
             $action->isAuthorized();
-            $schema = $action->getSchema(Schema::make($listInv));
+            $schema = $action->getSchema(Schema::make($listInv)->record($item));
             foreach ($schema->getFlatComponents(withActions: false, withHidden: true) as $f) {
                 if ($f instanceof Select && $f->getName() === 'component_item_id') {
                     expect($f->getSearchResults('BLT'))->toHaveKey($componentItem->id);
@@ -911,7 +917,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
             $action->evaluate($action->getActionFunction(), [
                 'record' => $item,
                 'data' => ['components' => [['component_item_id' => $componentItem->id, 'quantity' => 4]]],
-                'save' => $saveBomMock,
+                'save' => $saveBom,
             ]);
         }
     }
@@ -920,7 +926,11 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     $customer = Customer::forceCreate([
         'team_id' => $team->id,
         'customer_name' => 'John',
+        'customer_last_name' => 'Smith',
+        'customer_address' => '221B Baker St',
         'customer_email' => 'john@example.com',
+        'customer_phone' => '07700900002',
+        'customer_city' => 'London',
     ]);
     $invoice = Invoice::forceCreate([
         'team_id' => $team->id,
@@ -1055,7 +1065,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     expect(JournalEntryResource::getPages())->toHaveKeys(['index', 'create', 'edit'])
         ->and(Closure::bind(fn () => $this->getHeaderActions(), $listJe, ListJournalEntries::class)())->toHaveCount(1);
 
-    $jeForm = JournalEntryResource::form(Schema::make($createJe));
+    $jeForm = JournalEntryResource::form(Schema::make($createJe)->model(JournalEntry::class));
     $jeForm->fill([
         'lines' => [
             ['account_id' => $invAccount->id, 'debit_amount' => 100, 'credit_amount' => 0],
@@ -1076,6 +1086,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     }
 
     $jeTable = JournalEntryResource::table(Table::make($listJe));
+    Closure::bind(fn () => $this->table = $jeTable, $listJe, ListJournalEntries::class)();
     /** @var TextColumn $jeTypeCol */
     $jeTypeCol = $jeTable->getColumn('entry_type');
     foreach (['general', 'adjusting', 'closing', 'reversing', 'other'] as $t) {
@@ -1084,9 +1095,9 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     $jeTable->getColumn('total_debits')->record($jeStub)->getState();
 
     $jePartial = Mockery::mock($jeStub)->makePartial();
-    $jePartial->shouldReceive('post')->once()->andReturn(true);
+    $jePartial->shouldReceive('post')->once()->andReturn($jePartial);
     $jePartial->shouldReceive('post')->once()->andThrow(new Exception('Unbalanced'));
-    $jePartial->shouldReceive('reverse')->once()->andReturn($jeStub);
+    $jePartial->shouldReceive('reverse')->once()->andReturn($jePartial);
     $jePartial->shouldReceive('reverse')->once()->andThrow(new Exception('Cannot reverse'));
 
     foreach ($jeTable->getRecordActions() as $action) {
@@ -1124,7 +1135,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     $editJe->record = $jeStub;
     $editActions = Closure::bind(fn () => $this->getHeaderActions(), $editJe, EditJournalEntry::class)();
     expect($editActions)->toHaveCount(1);
-    $editActions[0]->isVisible();
+    $editActions[0]->record($jeStub)->isVisible();
 
     $editJe->data = ['lines' => [['debit_amount' => 100, 'credit_amount' => 0]]];
     Closure::bind(fn () => $this->beforeValidate(), $editJe, EditJournalEntry::class)();
@@ -1134,7 +1145,7 @@ it('covers HmrcVatReturns, InventoryItems, BillOfMaterialsAction, Invoices, Docu
     $editJe->record = $jeStub;
     try {
         Closure::bind(fn () => $this->beforeValidate(), $editJe, EditJournalEntry::class)();
-    } catch (\Filament\Support\Exceptions\Halt) {
+    } catch (Halt) {
         // Expected halt when editing a posted journal entry
     }
 });

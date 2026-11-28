@@ -3,7 +3,7 @@
   "name": "accounting-revolut",
   "display_name": "Accounting Revolut",
   "description": "Revolut provider adapter for bank feeds and payments.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "adapter",
   "provider": "Liberu\\Accounting\\Revolut\\RevolutServiceProvider",
   "requires": {

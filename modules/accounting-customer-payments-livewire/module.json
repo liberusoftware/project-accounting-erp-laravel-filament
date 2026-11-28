@@ -3,7 +3,7 @@
   "name": "accounting-customer-payments-livewire",
   "display_name": "Accounting Customer Payments Livewire",
   "description": "Livewire 4 customer payment surfaces.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CustomerPaymentsLivewire\\CustomerPaymentsLivewireServiceProvider",
   "requires": {

@@ -100,7 +100,7 @@ it('boots analytics google service provider both with and without bound transpor
         }
     };
 
-    $transport = new class implements GoogleTransport
+    $transport = new class() implements GoogleTransport
     {
         public function send(array $payload): array
         {

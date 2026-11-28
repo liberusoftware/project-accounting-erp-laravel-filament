@@ -8,7 +8,6 @@ use Liberu\Accounting\BankRules\Actions\TestBankRule;
 use Liberu\Accounting\BankRules\BankRulesServiceProvider;
 use Liberu\Accounting\BankRules\Enums\BankRuleAutomationMode;
 use Liberu\Accounting\BankRules\Exceptions\InvalidBankRule;
-use Liberu\Accounting\BankRules\Models\BankRule;
 use Liberu\Accounting\BankRules\Models\BankRuleHistory;
 use Liberu\Accounting\BankRules\Queries\BankRuleQuery;
 

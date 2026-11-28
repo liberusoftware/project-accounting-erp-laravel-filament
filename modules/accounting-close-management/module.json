@@ -3,7 +3,7 @@
   "name": "accounting-close-management",
   "display_name": "Accounting Close Management",
   "description": "Close checklists, ownership, dependencies, evidence, reconciliations, certification, locking, and reopening.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\CloseManagement\\CloseManagementServiceProvider",
   "requires": {

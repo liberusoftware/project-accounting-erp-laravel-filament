@@ -3,7 +3,7 @@
   "name": "accounting-cash-collection-assistant-livewire",
   "display_name": "Accounting Cash Collection Assistant Livewire",
   "description": "Livewire adapter for collection assistance workflows.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CashCollectionAssistantLivewire\\CashCollectionAssistantLivewireServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-dimensions-and-tracking-livewire",
   "display_name": "Accounting Dimensions and Tracking Livewire",
   "description": "Livewire presentation for dimensions and tracking.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\DimensionsLivewire\\DimensionsLivewireServiceProvider",
   "requires": {

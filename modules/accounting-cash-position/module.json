@@ -3,7 +3,7 @@
   "name": "accounting-cash-position",
   "display_name": "Accounting Cash Position",
   "description": "Available and ledger balances, outstanding cash, committed cash, entity/currency views, and freshness.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\CashPosition\\CashPositionServiceProvider",
   "requires": {

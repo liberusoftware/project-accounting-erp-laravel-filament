@@ -22,7 +22,7 @@ final class CarbonAccountingFilamentPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->resources([Resources\CarbonActivityResource::class]);
+        $panel->resources([CarbonActivityResource::class]);
     }
 
     public function boot(Panel $panel): void {}

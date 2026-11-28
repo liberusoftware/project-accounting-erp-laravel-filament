@@ -44,7 +44,7 @@ it('boots LocalizationLivewireServiceProvider and exercises LanguageSwitcher mou
     expect(Session::get('locale'))->toBe('es');
 
     // Valid locale with safe internal Referer redirects to Referer and updates authenticated Eloquent model
-    $user = new class extends Authenticatable
+    $user = new class() extends Authenticatable
     {
         public ?string $updatedLocale = null;
 

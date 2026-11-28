@@ -3,7 +3,7 @@
   "name": "accounting-supplier-bills-livewire",
   "display_name": "Accounting Supplier Bills Livewire",
   "description": "Livewire 4 presentation for supplier bills.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\SupplierBillsLivewire\\SupplierBillsLivewireServiceProvider",
   "requires": {

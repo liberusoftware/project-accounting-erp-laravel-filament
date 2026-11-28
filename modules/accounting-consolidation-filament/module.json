@@ -3,7 +3,7 @@
   "name": "accounting-consolidation-filament",
   "display_name": "Accounting Consolidation Filament",
   "description": "Filament adapter for consolidation workflows.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ConsolidationFilament\\ConsolidationFilamentServiceProvider",
   "requires": {

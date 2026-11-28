@@ -3,7 +3,7 @@
   "name": "accounting-accountant-workspace",
   "display_name": "Accounting Accountant Workspace",
   "description": "Client and entity portfolio, status, deadlines, alerts, access, notes, requests, changes, and drill-through.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\AccountantWorkspace\\AccountantWorkspaceServiceProvider",
   "requires": {

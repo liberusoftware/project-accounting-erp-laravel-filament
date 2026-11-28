@@ -3,7 +3,7 @@
   "name": "accounting-collections",
   "display_name": "Accounting Collections",
   "description": "Reminder schedules, statements, promises, disputes, interest, stages, write-offs, and agency adapters.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\Collections\\CollectionsServiceProvider",
   "requires": {

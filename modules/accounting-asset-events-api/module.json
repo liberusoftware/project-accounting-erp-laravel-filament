@@ -3,7 +3,7 @@
   "name": "accounting-asset-events-api",
   "display_name": "Accounting Asset Events API",
   "description": "HTTP API for immutable asset event history.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\AssetEventsApi\\AssetEventsApiServiceProvider",
   "requires": {

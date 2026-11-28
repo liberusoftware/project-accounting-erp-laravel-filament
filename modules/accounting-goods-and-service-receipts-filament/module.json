@@ -3,7 +3,7 @@
   "name": "accounting-goods-and-service-receipts-filament",
   "display_name": "Accounting Goods and Service Receipts Filament",
   "description": "Filament 5 receipt and variance presentation.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\GoodsAndServiceReceiptsFilament\\GoodsAndServiceReceiptsFilamentServiceProvider",
   "requires": {

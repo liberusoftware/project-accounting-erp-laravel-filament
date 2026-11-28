@@ -3,7 +3,7 @@
   "name": "accounting-reimbursements-livewire",
   "display_name": "Accounting Reimbursements Livewire",
   "description": "Livewire presentation for reimbursements.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ReimbursementsLivewire\\ReimbursementsLivewireServiceProvider",
   "requires": {

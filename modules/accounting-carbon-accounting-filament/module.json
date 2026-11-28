@@ -3,7 +3,7 @@
   "name": "accounting-carbon-accounting-filament",
   "display_name": "Accounting Carbon Accounting Filament",
   "description": "Filament carbon activity records.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CarbonAccountingFilament\\CarbonAccountingFilamentServiceProvider",
   "requires": {

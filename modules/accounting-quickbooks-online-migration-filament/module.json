@@ -3,7 +3,7 @@
   "name": "accounting-quickbooks-online-migration-filament",
   "display_name": "Accounting QuickBooks Online Migration Filament",
   "description": "Filament presentation for QBO migration.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\QuickBooksOnlineMigrationFilament\\QuickBooksOnlineMigrationFilamentServiceProvider",
   "requires": {

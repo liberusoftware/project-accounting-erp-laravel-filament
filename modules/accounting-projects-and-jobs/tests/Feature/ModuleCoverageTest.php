@@ -8,7 +8,6 @@ use Liberu\Accounting\ProjectsAndJobs\Actions\TransitionProject;
 use Liberu\Accounting\ProjectsAndJobs\Enums\ProjectStatus;
 use Liberu\Accounting\ProjectsAndJobs\Exceptions\InvalidProject;
 use Liberu\Accounting\ProjectsAndJobs\Models\ProjectCustomer;
-use Liberu\Accounting\ProjectsAndJobs\Models\ProjectJob;
 use Liberu\Accounting\ProjectsAndJobs\ProjectsAndJobsServiceProvider;
 
 it('boots the service provider and loads projects and customers tables', function (): void {

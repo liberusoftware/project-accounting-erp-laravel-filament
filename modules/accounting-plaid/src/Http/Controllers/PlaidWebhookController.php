@@ -7,11 +7,11 @@ namespace Liberu\Accounting\Plaid\Http\Controllers;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Log;
 use Liberu\Accounting\Erp\Jobs\SyncPlaidTransactionsJob;
 use Liberu\Accounting\Erp\Models\BankConnection;
 use Liberu\Accounting\Erp\Services\PlaidService;
-use Illuminate\Routing\Controller;
 
 class PlaidWebhookController extends Controller
 {

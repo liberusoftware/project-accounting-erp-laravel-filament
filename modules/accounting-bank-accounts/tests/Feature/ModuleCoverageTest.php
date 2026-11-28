@@ -12,7 +12,6 @@ use Liberu\Accounting\BankAccounts\Enums\BankAccountType;
 use Liberu\Accounting\BankAccounts\Events\BankAccountCreated;
 use Liberu\Accounting\BankAccounts\Events\BankAccountStatusChanged;
 use Liberu\Accounting\BankAccounts\Exceptions\InvalidBankAccount;
-use Liberu\Accounting\BankAccounts\Models\BankAccount;
 use Liberu\Accounting\BankAccounts\Queries\BankAccountBalanceQuery;
 use Liberu\Accounting\Core\Models\LegalEntity;
 

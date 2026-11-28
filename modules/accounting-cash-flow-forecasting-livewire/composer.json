@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-cash-flow-forecasting-livewire",
   "description": "Accounting cash-flow forecasting Livewire presentation module.",
   "type": "liberu-module",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\CashFlowForecastingLivewire\\": "src/"

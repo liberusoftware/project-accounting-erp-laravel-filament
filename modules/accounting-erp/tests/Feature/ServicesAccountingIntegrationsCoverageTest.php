@@ -127,7 +127,7 @@ describe('ProviderTransactionImporter & Concerns', function (): void {
     });
 
     it('resolves synced contacts with custom provider tag fallback and null teamId', function (): void {
-        $helper = new class
+        $helper = new class()
         {
             use ResolvesSyncedContacts;
 

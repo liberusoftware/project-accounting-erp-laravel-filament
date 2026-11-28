@@ -3,7 +3,7 @@
   "name": "accounting-contractor-reporting-livewire",
   "display_name": "Accounting Contractor Reporting Livewire",
   "description": "Livewire 4 contractor reporting surfaces.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ContractorReportingLivewire\\ContractorReportingLivewireServiceProvider",
   "requires": {

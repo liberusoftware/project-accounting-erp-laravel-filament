@@ -3,7 +3,7 @@
   "name": "accounting-bank-rules-livewire",
   "display_name": "Accounting Bank Rules Livewire",
   "description": "Livewire adapter for accounting bank rules.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BankRulesLivewire\\BankRulesLivewireServiceProvider",
   "requires": {

@@ -24,7 +24,7 @@ it('boots erp http service provider and verifies base controller', function (): 
     $provider->boot();
 
     expect($provider)->toBeInstanceOf(ErpHttpServiceProvider::class)
-        ->and(new Controller)->toBeInstanceOf(Controller::class)
+        ->and(new Controller())->toBeInstanceOf(Controller::class)
         ->and(app(OpenApiController::class))->toBeInstanceOf(Controller::class)
         ->and(app(PortalAccessController::class))->toBeInstanceOf(Controller::class)
         ->and(app(SaasPremiumBillingController::class))->toBeInstanceOf(Controller::class);

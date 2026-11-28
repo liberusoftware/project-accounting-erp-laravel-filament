@@ -11,7 +11,6 @@ use Liberu\Accounting\CashCollectionAssistant\Actions\SetCollectionDecision;
 use Liberu\Accounting\CashCollectionAssistant\Actions\UpdateCashCollectionAssistant;
 use Liberu\Accounting\CashCollectionAssistant\CashCollectionAssistantServiceProvider;
 use Liberu\Accounting\CashCollectionAssistant\Exceptions\InvalidCashCollectionAssistant;
-use Liberu\Accounting\CashCollectionAssistant\Models\CashCollectionAssistant;
 use Liberu\Accounting\CashCollectionAssistant\Queries\CashCollectionAssistantQuery;
 
 it('boots the cash collection assistant service provider and schema', function (): void {

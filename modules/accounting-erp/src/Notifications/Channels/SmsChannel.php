@@ -6,6 +6,7 @@ namespace Liberu\Accounting\Erp\Notifications\Channels;
 
 use Illuminate\Notifications\Notification;
 use Liberu\Accounting\Erp\Models\Team;
+use Psr\Http\Client\ClientInterface;
 use Vonage\Client;
 use Vonage\Client\Credentials\Basic;
 use Vonage\SMS\Message\SMS;
@@ -20,6 +21,8 @@ use Vonage\SMS\Message\SMS;
  */
 class SmsChannel
 {
+    public function __construct(private readonly ?ClientInterface $httpClient = null) {}
+
     public function send(mixed $notifiable, Notification $notification): void
     {
         if (! method_exists($notification, 'toSms')) {
@@ -36,7 +39,7 @@ class SmsChannel
             return;
         }
 
-        $client = new Client(new Basic((string) $team->vonage_key, (string) $team->vonage_secret));
+        $client = new Client(new Basic((string) $team->vonage_key, (string) $team->vonage_secret), [], $this->httpClient);
         $client->sms()->send(
             new SMS((string) $to, (string) $team->vonage_from, (string) $notification->toSms($notifiable))
         );

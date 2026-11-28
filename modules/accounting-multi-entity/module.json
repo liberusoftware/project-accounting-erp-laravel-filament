@@ -3,7 +3,7 @@
   "name": "accounting-multi-entity",
   "display_name": "Accounting Multi-Entity",
   "description": "Entity books, shared master-data policies, access, switching, separate periods/tax, standardized mappings, and reporting.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\MultiEntity\\MultiEntityServiceProvider",
   "requires": {

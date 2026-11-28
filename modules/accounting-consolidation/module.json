@@ -3,7 +3,7 @@
   "name": "accounting-consolidation",
   "display_name": "Accounting Consolidation",
   "description": "Consolidation groups, entity scope, eliminations, translation, and consolidated reporting.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\Consolidation\\ConsolidationServiceProvider",
   "requires": {

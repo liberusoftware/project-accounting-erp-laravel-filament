@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-close-management-api",
   "description": "Accounting close management API presentation module.",
   "type": "liberu-module",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\CloseManagementApi\\": "src/"

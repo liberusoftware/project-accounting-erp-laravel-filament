@@ -3,7 +3,7 @@
   "name": "accounting-receipt-management-api",
   "display_name": "Accounting Receipt Management API",
   "description": "HTTP API for receipt management.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ReceiptManagementApi\\ReceiptManagementApiServiceProvider",
   "requires": {

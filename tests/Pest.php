@@ -1,7 +1,11 @@
 <?php
 
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Liberu\Accounting\Erp\Models\Team as ErpTeam;
 use Liberu\PackageTestbench\PackageTestCase;
+use Tests\Support\ErpTeamFactory;
 use Tests\TestCase;
 
 pest()->extend(TestCase::class)
@@ -82,6 +86,7 @@ if (is_dir(dirname(__DIR__).'/modules')) {
             if (is_dir($testDir.'/Feature')) {
                 $moduleTestDirs[] = '../modules/'.$modName.'/tests/Feature';
             }
+
             continue;
         }
         $moduleTestDirs[] = '../modules/'.$modName.'/tests';
@@ -90,6 +95,28 @@ if (is_dir(dirname(__DIR__).'/modules')) {
     if ($moduleTestDirs !== []) {
         pest()->extend(TestCase::class)
             ->use(RefreshDatabase::class)
+            ->beforeEach(function (): void {
+                Model::unguard();
+                Model::preventLazyLoading(false);
+                Model::preventSilentlyDiscardingAttributes(false);
+                Model::preventAccessingMissingAttributes(false);
+                Model::automaticallyEagerLoadRelationships(false);
+                Factory::guessFactoryNamesUsing(static function (string $modelName): string {
+                    if ($modelName === ErpTeam::class) {
+                        return ErpTeamFactory::class;
+                    }
+
+                    $appNamespace = 'App\\';
+                    $modelName = str_starts_with($modelName, $appNamespace.'Models\\')
+                        ? substr($modelName, strlen($appNamespace.'Models\\'))
+                        : substr($modelName, strlen($appNamespace));
+
+                    return Factory::$namespace.$modelName.'Factory';
+                });
+            })
+            ->afterEach(function (): void {
+                Model::reguard();
+            })
             ->in(...$moduleTestDirs);
     }
 }

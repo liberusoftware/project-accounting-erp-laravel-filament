@@ -3,7 +3,7 @@
   "name": "accounting-three-way-matching-livewire",
   "display_name": "Accounting Three-Way Matching Livewire",
   "description": "Livewire 4 presentation for match review and exception resolution.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ThreeWayMatchingLivewire\\ThreeWayMatchingLivewireServiceProvider",
   "requires": {

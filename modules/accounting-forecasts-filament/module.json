@@ -3,7 +3,7 @@
   "name": "accounting-forecasts-filament",
   "display_name": "Accounting Forecasts Filament",
   "description": "Filament 5 forecast and variance presentation.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ForecastsFilament\\ForecastsFilamentServiceProvider",
   "requires": {

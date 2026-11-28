@@ -3,7 +3,7 @@
   "name": "accounting-vat-filament",
   "display_name": "Accounting VAT Filament",
   "description": "Filament 5 adapter for Accounting VAT.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\VatFilament\\VatFilamentServiceProvider",
   "requires": {

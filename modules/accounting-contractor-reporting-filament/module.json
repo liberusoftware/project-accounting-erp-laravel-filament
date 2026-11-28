@@ -3,7 +3,7 @@
   "name": "accounting-contractor-reporting-filament",
   "display_name": "Accounting Contractor Reporting Filament",
   "description": "Filament 5 contractor reporting surfaces.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ContractorReportingFilament\\ContractorReportingFilamentServiceProvider",
   "requires": {

@@ -24,7 +24,7 @@ it('covers observability service providers, gates, and Telescope local and non-l
     $horizon = new HorizonDashboardServiceProvider($this->app);
     $horizon->boot();
 
-    $admin = new class implements ObservabilityActor
+    $admin = new class() implements ObservabilityActor
     {
         public function isAdmin(): bool
         {
@@ -32,7 +32,7 @@ it('covers observability service providers, gates, and Telescope local and non-l
         }
     };
 
-    $member = new class implements ObservabilityActor
+    $member = new class() implements ObservabilityActor
     {
         public function isAdmin(): bool
         {

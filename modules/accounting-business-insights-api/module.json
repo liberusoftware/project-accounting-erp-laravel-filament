@@ -3,7 +3,7 @@
   "name": "accounting-business-insights-api",
   "display_name": "Accounting Business Insights API",
   "description": "HTTP API for governed business insight snapshots.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BusinessInsightsApi\\BusinessInsightsApiServiceProvider",
   "requires": {

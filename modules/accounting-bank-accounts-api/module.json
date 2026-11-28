@@ -3,7 +3,7 @@
   "name": "accounting-bank-accounts-api",
   "display_name": "Accounting Bank Accounts API",
   "description": "Authenticated API for bank and cash accounts.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BankAccountsApi\\BankAccountsApiServiceProvider",
   "requires": {

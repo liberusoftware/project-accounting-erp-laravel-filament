@@ -3,7 +3,7 @@
   "name": "accounting-goods-and-service-receipts",
   "display_name": "Accounting Goods and Service Receipts",
   "description": "Receipts, service confirmation, quantities, variance, returns, attachments, inventory/project references and accrual events.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\GoodsAndServiceReceipts\\GoodsAndServiceReceiptsServiceProvider",
   "requires": {

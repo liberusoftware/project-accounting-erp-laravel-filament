@@ -3,7 +3,7 @@
   "name": "accounting-payment-reconciliation",
   "display_name": "Accounting Payment Reconciliation",
   "description": "Gateway settlement imports, gross-to-net reconciliation, matching, missing items, and provider drift.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\PaymentReconciliation\\PaymentReconciliationServiceProvider",
   "requires": {

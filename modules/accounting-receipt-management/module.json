@@ -3,7 +3,7 @@
   "name": "accounting-receipt-management",
   "display_name": "Accounting Receipt Management",
   "description": "Receipt inbox, matching, missing-receipt requests, annotations, retention, and audit.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ReceiptManagement\\ReceiptManagementServiceProvider",
   "requires": {

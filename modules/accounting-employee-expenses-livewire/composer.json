@@ -3,7 +3,7 @@
   "description": "Livewire 4 UI for employee expenses.",
   "type": "liberu-module",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "require": {
     "php": "^8.5",
     "livewire/livewire": "^4.4.8",

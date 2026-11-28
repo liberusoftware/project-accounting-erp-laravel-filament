@@ -3,7 +3,7 @@
   "name": "accounting-project-costing-api",
   "display_name": "Accounting Project Costing API",
   "description": "HTTP API for project cost entries and summaries.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ProjectCostingApi\\ProjectCostingApiServiceProvider",
   "requires": {

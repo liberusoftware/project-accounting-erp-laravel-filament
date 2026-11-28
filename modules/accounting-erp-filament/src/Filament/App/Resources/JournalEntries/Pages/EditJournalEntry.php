@@ -32,14 +32,13 @@ class EditJournalEntry extends EditRecord
     {
         // Don't allow editing posted entries
         if ($this->record->is_posted) {
-            $this->halt();
             Notification::make()
                 ->title('Cannot edit posted journal entry')
                 ->body('Please reverse the entry first before editing.')
                 ->danger()
                 ->send();
 
-            return;
+            $this->halt();
         }
 
         $lines = $this->data['lines'] ?? [];

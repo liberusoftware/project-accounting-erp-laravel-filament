@@ -6,14 +6,12 @@ use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Panel;
 use Filament\Schemas\Components\Text;
-use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
-use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
@@ -26,6 +24,7 @@ use Illuminate\View\View;
 use Laravel\Fortify\Actions\ConfirmTwoFactorAuthentication;
 use Laravel\Fortify\Actions\DisableTwoFactorAuthentication;
 use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
+use Laravel\Jetstream\Features;
 use Liberu\Accounting\Erp\Actions\Jetstream\CreateTeam as CreateTeamAction;
 use Liberu\Accounting\Erp\Exceptions\ApprovalDeniedException;
 use Liberu\Accounting\Erp\Models\ApprovalRequest;
@@ -33,10 +32,10 @@ use Liberu\Accounting\Erp\Models\ApprovalRule;
 use Liberu\Accounting\Erp\Models\ApprovalStep;
 use Liberu\Accounting\Erp\Models\AuditLog;
 use Liberu\Accounting\Erp\Models\ConsolidationGroup;
+use Liberu\Accounting\Erp\Models\Employee;
 use Liberu\Accounting\Erp\Models\Expense;
 use Liberu\Accounting\Erp\Models\ForecastScenario;
 use Liberu\Accounting\Erp\Models\Invoice;
-use Liberu\Accounting\Erp\Models\Menu;
 use Liberu\Accounting\Erp\Models\Payroll;
 use Liberu\Accounting\Erp\Models\Team;
 use Liberu\Accounting\Erp\Models\User;
@@ -204,9 +203,12 @@ it('covers all branches of EnsureTwoFactorEnabled middleware', function (): void
     expect($middleware->handle($noRouteRequest, $next)->getStatusCode())->toBe(302);
 
     // 8. Privileged user on tenant panel with no currentTeam passes through
+    $originalPanel = Filament::getCurrentPanel();
+    Filament::setCurrentPanel(Panel::make()->id('app')->tenant(Team::class));
     $admin->forceFill(['current_team_id' => null])->save();
-    $admin->unsetRelation('currentTeam');
+    $admin->setRelation('currentTeam', null);
     expect($middleware->handle($noRouteRequest, $next)->getContent())->toBe('ok');
+    Filament::setCurrentPanel($originalPanel);
 });
 
 it('covers AccountingQuickActions, SocialLinksWidget, FinancialDashboard, and PlatformSetup widgets', function (): void {
@@ -442,8 +444,18 @@ it('covers Admin resources: AuditLogs, Expenses, MenuResource, Payrolls, and Ven
     $payslipMock->shouldReceive('pdf')->once()->andReturn('%PDF-1.4 mock');
     app()->instance(PayslipService::class, $payslipMock);
 
+    $employee = Employee::forceCreate([
+        'team_id' => $team->id,
+        'name' => 'Test Employee',
+        'email' => 'employee@example.com',
+        'position' => 'Accountant',
+        'hire_date' => '2025-01-01',
+        'tax_id' => 'TAX-12345',
+    ]);
+
     $payroll = Payroll::forceCreate([
-        'employee_id' => $user->id,
+        'team_id' => $team->id,
+        'employee_id' => $employee->id,
         'base_salary' => 5000,
         'overtime_hours' => 0,
         'overtime_rate' => 0,
@@ -537,10 +549,21 @@ it('covers App Pages: AccountSetupWizard, ConsolidatedReports, CreateTeam, EditP
     $group = ConsolidationGroup::create(['name' => 'Holding Group', 'owner_team_id' => $team->id]);
     $group->members()->attach($team->id);
 
+    $pnlData = [
+        'consolidated' => ['revenue' => 200.0, 'expenses' => 100.0, 'net_income' => 100.0],
+        'eliminations' => ['revenue' => 0.0],
+    ];
+    $bsData = [
+        'consolidated' => ['assets' => 500.0, 'liabilities' => 200.0, 'equity' => 300.0],
+    ];
+    $cfData = [
+        'consolidated' => ['net_change_in_cash' => 50.0, 'ending_cash' => 150.0],
+    ];
+
     $consolidationMock = Mockery::mock(ConsolidationService::class);
-    $consolidationMock->shouldReceive('consolidatedProfitAndLoss')->once()->andReturn(['net_income' => 100]);
-    $consolidationMock->shouldReceive('consolidatedBalanceSheet')->once()->andReturn(['assets' => 500]);
-    $consolidationMock->shouldReceive('consolidatedCashFlow')->once()->andReturn(['net_cash' => 50]);
+    $consolidationMock->shouldReceive('consolidatedProfitAndLoss')->once()->andReturn($pnlData);
+    $consolidationMock->shouldReceive('consolidatedBalanceSheet')->once()->andReturn($bsData);
+    $consolidationMock->shouldReceive('consolidatedCashFlow')->once()->andReturn($cfData);
     app()->instance(ConsolidationService::class, $consolidationMock);
 
     $reportsPage = new ConsolidatedReports();
@@ -561,9 +584,9 @@ it('covers App Pages: AccountSetupWizard, ConsolidatedReports, CreateTeam, EditP
             'end_date' => '2026-12-31',
         ])
         ->call('generate')
-        ->assertSet('profitAndLoss', ['net_income' => 100])
-        ->assertSet('balanceSheet', ['assets' => 500])
-        ->assertSet('cashFlow', ['net_cash' => 50]);
+        ->assertSet('profitAndLoss', $pnlData)
+        ->assertSet('balanceSheet', $bsData)
+        ->assertSet('cashFlow', $cfData);
 
     // 3. CreateTeam
     $createTeamPage = new CreateTeam();
@@ -582,8 +605,8 @@ it('covers App Pages: AccountSetupWizard, ConsolidatedReports, CreateTeam, EditP
     $enableMock = Mockery::mock(EnableTwoFactorAuthentication::class);
     $enableMock->shouldReceive('__invoke')->once();
     $confirmMock = Mockery::mock(ConfirmTwoFactorAuthentication::class);
-    $confirmMock->shouldReceive('__invoke')->once()->with($user, '000000')->andThrow(ValidationException::withMessages(['code' => 'Invalid']));
-    $confirmMock->shouldReceive('__invoke')->once()->with($user, '123456');
+    $confirmMock->shouldReceive('__invoke')->once()->with(Mockery::type(User::class), '000000')->andThrow(ValidationException::withMessages(['code' => 'Invalid']));
+    $confirmMock->shouldReceive('__invoke')->once()->with(Mockery::type(User::class), '123456');
     $disableMock = Mockery::mock(DisableTwoFactorAuthentication::class);
     $disableMock->shouldReceive('__invoke')->once();
 
@@ -604,17 +627,24 @@ it('covers App Pages: AccountSetupWizard, ConsolidatedReports, CreateTeam, EditP
     $editProfile->disableTwoFactor($disableMock);
 
     // 5. EditTeam
+    config(['jetstream.features' => [...config('jetstream.features', []), Features::teams()]]);
     RouteFacade::get('/test-edit-team/{team}', fn () => 'ok')->name('filament.pages.edit-team');
+    RouteFacade::getRoutes()->refreshNameLookups();
     Gate::before(fn () => true);
     $editTeamPage = new EditTeam();
+    $editTeamPage->mount();
     expect(EditTeam::getLabel())->toBe('Edit Team')
         ->and($editTeamPage->getBreadcrumbs())->toBeArray()
         ->and($editTeamPage->form(Schema::make($editTeamPage)))->toBeInstanceOf(Schema::class);
 
-    Livewire::test(EditTeam::class)
-        ->set('data.name', 'Second Team')
-        ->call('submit')
-        ->assertRedirect();
+    $editTeamPage->data = ['name' => 'Second Team'];
+    Closure::bind(
+        fn () => $this->cacheSchema('form', $this->form(Schema::make($this)->statePath('data'))),
+        $editTeamPage,
+        EditTeam::class
+    )();
+    $editTeamPage->submit();
+    expect(Team::where('name', 'Second Team')->exists())->toBeTrue();
 });
 
 it('covers App Pages: ForecastComparison, NotificationSettings, PendingApprovals, PersonalAccessTokensPage, TeamNotificationSettings, UpdateProfileInformationPage', function (): void {
@@ -625,8 +655,12 @@ it('covers App Pages: ForecastComparison, NotificationSettings, PendingApprovals
 
     // 1. ForecastComparison
     $scenario = ForecastScenario::create(['name' => 'Optimistic', 'team_id' => $team->id]);
+    $forecastResult = [
+        'baseline_net_income' => ['2026-01' => 100.0, '2026-02' => 120.0],
+        'scenario_net_income' => ['2026-01' => 150.0, '2026-02' => 180.0],
+    ];
     $forecastMock = Mockery::mock(ForecastService::class);
-    $forecastMock->shouldReceive('compare')->once()->andReturn(['periods' => [1, 2, 3]]);
+    $forecastMock->shouldReceive('compare')->once()->andReturn($forecastResult);
     app()->instance(ForecastService::class, $forecastMock);
 
     $forecastPage = new ForecastComparison();
@@ -642,7 +676,7 @@ it('covers App Pages: ForecastComparison, NotificationSettings, PendingApprovals
     Livewire::test(ForecastComparison::class)
         ->fillForm(['forecast_scenario_id' => $scenario->id, 'periods' => 3])
         ->call('generate')
-        ->assertSet('result', ['periods' => [1, 2, 3]]);
+        ->assertSet('result', $forecastResult);
 
     // 2. NotificationSettings
     $notifPage = new NotificationSettings();
@@ -694,6 +728,7 @@ it('covers App Pages: ForecastComparison, NotificationSettings, PendingApprovals
     expect($pendingPage->actionableStepsQuery()->count())->toBe(1);
 
     $pendingTable = $pendingPage->table(Table::make($pendingPage));
+    Closure::bind(fn () => $this->table = $pendingTable, $pendingPage, PendingApprovals::class)();
     /** @var TextColumn $docCol */
     $docCol = $pendingTable->getColumn('document');
     expect($docCol->record($step)->getState())->toBe('Invoice #42');

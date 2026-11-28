@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 use Illuminate\Support\Facades\Route;
+use Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController;
 use Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimatesController;
 
 Route::middleware(['api', 'auth:sanctum', 'throttle:api'])->prefix('api/v1/accounting/estimates-and-quotes')->group(function (): void {
@@ -19,14 +20,14 @@ Route::middleware(['api', 'auth:sanctum', 'throttle:api'])->prefix('api/v1/accou
     });
 });
 
-\Illuminate\Support\Facades\Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
-    \Illuminate\Support\Facades\Route::apiResource('estimates', \Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class);
+Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
+    Route::apiResource('estimates', EstimateController::class);
 
-    \Illuminate\Support\Facades\Route::prefix('v1')->group(function (): void {
-        \Illuminate\Support\Facades\Route::get('estimates', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'index'])->middleware('ability:estimates:read');
-        \Illuminate\Support\Facades\Route::get('estimates/{estimate}', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'show'])->middleware('ability:estimates:read');
-        \Illuminate\Support\Facades\Route::post('estimates', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'store'])->middleware('ability:estimates:write');
-        \Illuminate\Support\Facades\Route::put('estimates/{estimate}', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'update'])->middleware('ability:estimates:write');
-        \Illuminate\Support\Facades\Route::delete('estimates/{estimate}', [\Liberu\Accounting\EstimatesAndQuotesApi\Http\Controllers\EstimateController::class, 'destroy'])->middleware('ability:estimates:write');
+    Route::prefix('v1')->group(function (): void {
+        Route::get('estimates', [EstimateController::class, 'index'])->middleware('ability:estimates:read');
+        Route::get('estimates/{estimate}', [EstimateController::class, 'show'])->middleware('ability:estimates:read');
+        Route::post('estimates', [EstimateController::class, 'store'])->middleware('ability:estimates:write');
+        Route::put('estimates/{estimate}', [EstimateController::class, 'update'])->middleware('ability:estimates:write');
+        Route::delete('estimates/{estimate}', [EstimateController::class, 'destroy'])->middleware('ability:estimates:write');
     });
 });

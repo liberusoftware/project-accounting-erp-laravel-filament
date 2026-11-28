@@ -89,7 +89,7 @@ it('covers MoneyFormatter, CurrencyPreferenceResolver, and CurrencyConverter bra
     $defaultFormatter = new MoneyFormatter();
     expect($defaultFormatter->format($money, 'en_US'))->toContain('19.99');
 
-    $failingFormatter = new MoneyFormatter(fn (string $locale): object => new class
+    $failingFormatter = new MoneyFormatter(fn (string $locale): object => new class()
     {
         public function formatCurrency(float $amount, string $currency): false
         {
@@ -116,7 +116,7 @@ it('covers MoneyFormatter, CurrencyPreferenceResolver, and CurrencyConverter bra
         'GBP' => ['minor_units' => 2, 'symbol' => '£'],
     ]);
 
-    $directProvider = new class implements ExchangeRateProvider
+    $directProvider = new class() implements ExchangeRateProvider
     {
         public ?ExchangeRate $next = null;
 

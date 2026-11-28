@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-construction-tax-filament",
   "description": "Accounting construction tax Filament presentation module.",
   "type": "liberu-module",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\ConstructionTaxFilament\\": "src/"

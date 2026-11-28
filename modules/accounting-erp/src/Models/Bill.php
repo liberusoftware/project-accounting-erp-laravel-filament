@@ -213,7 +213,7 @@ class Bill extends Model implements ApprovableRecord, Documentable
 
     public function calculateTotals(): void
     {
-        $this->subtotal_amount = $this->items->sum('amount');
+        $this->subtotal_amount = $this->items()->sum('amount');
         $this->calculateTax();
         $this->save();
     }

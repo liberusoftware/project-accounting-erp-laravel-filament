@@ -3,7 +3,7 @@
   "name": "accounting-matching-intelligence-filament",
   "display_name": "Accounting Matching Intelligence Filament",
   "description": "Filament 5 review surface for matching suggestions and evidence.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MatchingIntelligenceFilament\\MatchingIntelligenceFilamentServiceProvider",
   "requires": {

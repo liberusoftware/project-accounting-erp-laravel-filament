@@ -3,7 +3,7 @@
   "name": "accounting-revenue-recognition",
   "display_name": "Accounting Revenue Recognition",
   "description": "Obligations, allocation, deferred and accrued revenue, recognition runs, modifications, and reconciliation.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\RevenueRecognition\\RevenueRecognitionServiceProvider",
   "requires": {

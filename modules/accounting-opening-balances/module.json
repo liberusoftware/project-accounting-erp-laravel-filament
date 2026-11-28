@@ -3,7 +3,7 @@
   "name": "accounting-opening-balances",
   "display_name": "Accounting Opening Balances",
   "description": "Migration-date account, customer, supplier, bank, item, and outstanding-document balances with validation, approval, and reconciliation.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\OpeningBalances\\OpeningBalancesServiceProvider",
   "requires": {

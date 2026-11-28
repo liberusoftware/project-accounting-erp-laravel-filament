@@ -2,15 +2,14 @@
 
 declare(strict_types=1);
 
-use Liberu\Accounting\Erp\Models\User;
 use Filament\Actions\CreateAction;
 use Filament\Actions\DeleteAction;
-use Filament\Facades\Filament;
 use Filament\Panel;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Table;
 use Illuminate\Support\Facades\Hash;
+use Liberu\Accounting\Erp\Models\User;
 use Liberu\Foundation\IdentityFilament\IdentityFilamentPlugin;
 use Liberu\Foundation\IdentityFilament\IdentityFilamentServiceProvider;
 use Liberu\Foundation\IdentityFilament\Resources\UserResource;
@@ -36,7 +35,7 @@ it('registers identity filament plugin and service provider and exposes UserReso
 });
 
 it('builds UserResource form schema, table columns, and page header actions', function (): void {
-    $listPage = new class extends ListUsers
+    $listPage = new class() extends ListUsers
     {
         public function exposedHeaderActions(): array
         {
@@ -44,7 +43,7 @@ it('builds UserResource form schema, table columns, and page header actions', fu
         }
     };
 
-    $editPage = new class extends EditUser
+    $editPage = new class() extends EditUser
     {
         public function exposedHeaderActions(): array
         {

@@ -3,7 +3,7 @@
   "name": "accounting-automation-pack",
   "display_name": "Accounting Automation Pack",
   "description": "Financial triggers, recipes, approvals, schedules, simulation and idempotent execution.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\AutomationPack\\AutomationPackServiceProvider",
   "requires": {

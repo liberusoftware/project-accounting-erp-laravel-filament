@@ -3,7 +3,7 @@
   "name": "accounting-management-reporting-api",
   "display_name": "Accounting Management Reporting API",
   "description": "Versioned report pack, review and delivery API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ManagementReportingApi\\ManagementReportingApiServiceProvider",
   "requires": {

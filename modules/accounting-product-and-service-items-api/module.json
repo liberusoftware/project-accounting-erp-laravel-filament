@@ -3,7 +3,7 @@
   "name": "accounting-product-and-service-items-api",
   "display_name": "Accounting Product and Service Items API",
   "description": "HTTP API for item and service master data.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ProductAndServiceItemsApi\\ProductAndServiceItemsApiServiceProvider",
   "requires": {

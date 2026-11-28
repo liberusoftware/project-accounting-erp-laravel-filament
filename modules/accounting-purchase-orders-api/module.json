@@ -3,7 +3,7 @@
   "name": "accounting-purchase-orders-api",
   "display_name": "Accounting Purchase Orders API",
   "description": "HTTP API for purchase orders.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PurchaseOrdersApi\\PurchaseOrdersApiServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-sales-orders-livewire",
   "display_name": "Accounting Sales Orders Livewire",
   "description": "Livewire 4 adapter for Sales Orders.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\SalesOrdersLivewire\\SalesOrdersLivewireServiceProvider",
   "requires": {

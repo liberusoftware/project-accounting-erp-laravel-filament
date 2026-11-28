@@ -28,6 +28,6 @@
     "php": "^8.5",
     "laravel/sanctum": "^4.3.3"
   },
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "MIT"
 }

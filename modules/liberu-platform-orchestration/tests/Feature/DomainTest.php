@@ -5,19 +5,19 @@ declare(strict_types=1);
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Validation\ValidationException;
-use Liberu\Platform\PlatformOrchestration\Actions\CreatePlatformWorkflow;
-use Liberu\Platform\PlatformOrchestration\Actions\TransitionPlatformWorkflow;
-use Liberu\Platform\PlatformOrchestration\Enums\LifecycleStatus;
-use Liberu\Platform\PlatformOrchestration\Events\PlatformWorkflowTransitioned;
-use Liberu\Platform\PlatformOrchestration\Exceptions\InvalidLifecycleTransition;
-use Liberu\Platform\PlatformOrchestration\Models\PlatformWorkflow;
 use Liberu\Platform\PlatformOrchestration\Actions\CreateComposition;
+use Liberu\Platform\PlatformOrchestration\Actions\CreatePlatformWorkflow;
 use Liberu\Platform\PlatformOrchestration\Actions\TransitionComposition;
+use Liberu\Platform\PlatformOrchestration\Actions\TransitionPlatformWorkflow;
 use Liberu\Platform\PlatformOrchestration\Enums\CompositionState;
+use Liberu\Platform\PlatformOrchestration\Enums\LifecycleStatus;
 use Liberu\Platform\PlatformOrchestration\Events\CompositionCreated;
 use Liberu\Platform\PlatformOrchestration\Events\CompositionStateChanged;
+use Liberu\Platform\PlatformOrchestration\Events\PlatformWorkflowTransitioned;
 use Liberu\Platform\PlatformOrchestration\Exceptions\InvalidCompositionTransition;
+use Liberu\Platform\PlatformOrchestration\Exceptions\InvalidLifecycleTransition;
 use Liberu\Platform\PlatformOrchestration\Models\PlatformComposition;
+use Liberu\Platform\PlatformOrchestration\Models\PlatformWorkflow;
 
 foreach ([
     __DIR__.'/../../src/Enums/CompositionState.php',

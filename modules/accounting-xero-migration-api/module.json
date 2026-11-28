@@ -3,7 +3,7 @@
   "name": "accounting-xero-migration-api",
   "display_name": "Accounting Xero Migration API",
   "description": "HTTP API adapter for Accounting Xero Migration.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\XeroMigrationApi\\XeroMigrationApiServiceProvider",
   "requires": {

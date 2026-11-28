@@ -1,41 +1,41 @@
 {
-    "name": "liberusoftware/module-accounting-chart-of-accounts-api",
-    "description": "Authenticated API adapter for the accounting chart of accounts.",
-    "type": "liberu-module",
-    "license": "MIT",
-    "require": {
-        "laravel/framework": "^13.38.0",
-        "laravel/sanctum": "^4.3.3",
-        "liberusoftware/module-accounting-chart-of-accounts": "^1.0",
-        "liberusoftware/module-accounting-erp": "^1.0",
-        "php": "^8.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Liberu\\Accounting\\ChartOfAccountsApi\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Liberu\\Accounting\\ChartOfAccountsApi\\ChartOfAccountsApiServiceProvider"
-            ]
-        },
-        "liberu": {
-            "name": "accounting-chart-of-accounts-api"
-        }
-    },
-    "version": "1.0.0",
-    "require-dev": {
-        "liberusoftware/package-testbench": "^1.5",
-        "pestphp/pest": "^5.3.3"
-    },
-    "scripts": {
-        "test": "pest"
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
+  "name": "liberusoftware/module-accounting-chart-of-accounts-api",
+  "description": "Authenticated API adapter for the accounting chart of accounts.",
+  "type": "liberu-module",
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "^13.38.0",
+    "laravel/sanctum": "^4.3.3",
+    "liberusoftware/module-accounting-chart-of-accounts": "^1.0",
+    "liberusoftware/module-accounting-erp": "^1.0",
+    "php": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\ChartOfAccountsApi\\": "src/"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\ChartOfAccountsApi\\ChartOfAccountsApiServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-chart-of-accounts-api"
+    }
+  },
+  "version": "1.0.2",
+  "require-dev": {
+    "liberusoftware/package-testbench": "^1.5",
+    "pestphp/pest": "^5.3.3"
+  },
+  "scripts": {
+    "test": "pest"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
 }

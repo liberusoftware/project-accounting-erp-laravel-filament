@@ -3,7 +3,7 @@
   "name": "accounting-operational-reports-livewire",
   "display_name": "Accounting Operational Reports Livewire",
   "description": "Livewire 4 report review adapter.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\OperationalReportsLivewire\\OperationalReportsLivewireServiceProvider",
   "requires": {

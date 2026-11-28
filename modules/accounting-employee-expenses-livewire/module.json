@@ -3,7 +3,7 @@
   "name": "accounting-employee-expenses-livewire",
   "display_name": "Accounting Employee Expenses Livewire",
   "description": "Livewire 4 employee expense claim monitor.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\EmployeeExpensesLivewire\\EmployeeExpensesLivewireServiceProvider",
   "requires": {

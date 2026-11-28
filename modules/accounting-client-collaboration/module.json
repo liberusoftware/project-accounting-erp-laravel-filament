@@ -3,7 +3,7 @@
   "name": "accounting-client-collaboration",
   "display_name": "Accounting Client Collaboration",
   "description": "Secure requests, questions, tasks, discussions, approvals, reminders, status, and evidence.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ClientCollaboration\\ClientCollaborationServiceProvider",
   "requires": {

@@ -29,6 +29,6 @@
     "liberusoftware/module-accounting-core": "^1.0",
     "illuminate/database": "^13.38.0"
   },
-  "version": "1.0.1",
+  "version": "1.0.3",
   "license": "MIT"
 }

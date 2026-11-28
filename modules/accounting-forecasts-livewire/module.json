@@ -3,7 +3,7 @@
   "name": "accounting-forecasts-livewire",
   "display_name": "Accounting Forecasts Livewire",
   "description": "Livewire 4 forecast and variance monitor.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ForecastsLivewire\\ForecastsLivewireServiceProvider",
   "requires": {

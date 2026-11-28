@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Carbon\CarbonImmutable;
 use Illuminate\Support\Facades\Event;
 use Liberu\Accounting\AccountsPayable\AccountsPayableServiceProvider;
 use Liberu\Accounting\AccountsPayable\Actions\ApplyPayment;
@@ -23,8 +24,6 @@ use Liberu\Accounting\AccountsPayable\Events\PaymentRecorded;
 use Liberu\Accounting\AccountsPayable\Exceptions\InvalidPayable;
 use Liberu\Accounting\AccountsPayable\Models\PayableAccount;
 use Liberu\Accounting\AccountsPayable\Models\PayableDispute;
-use Liberu\Accounting\AccountsPayable\Models\PayableOpenItem;
-use Liberu\Accounting\AccountsPayable\Models\PayablePayment;
 use Liberu\Accounting\AccountsPayable\Models\PaymentApplication;
 use Liberu\Accounting\AccountsPayable\Queries\AgingQuery;
 use Liberu\Accounting\AccountsPayable\Queries\ControlAccountReconciliationQuery;
@@ -333,7 +332,7 @@ it('boots the service provider and covers enums, exception, events, models, acti
         ->toThrow(InvalidPayable::class);
 
     // Create items across aging buckets for supplier2
-    $asOf = Carbon\CarbonImmutable::parse('2026-06-01');
+    $asOf = CarbonImmutable::parse('2026-06-01');
     $createOpenItem->handle([
         'party_id' => $supplier2->id,
         'reference' => 'AGE-CURR-NULL',

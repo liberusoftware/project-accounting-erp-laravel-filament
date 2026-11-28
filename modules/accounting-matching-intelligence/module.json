@@ -3,7 +3,7 @@
   "name": "accounting-matching-intelligence",
   "display_name": "Accounting Matching Intelligence",
   "description": "Bank, document, payment and settlement matching suggestions with evidence, feedback and safe automation.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\MatchingIntelligence\\MatchingIntelligenceServiceProvider",
   "requires": {

@@ -6,11 +6,11 @@ namespace Liberu\Accounting\XeroMigrationApi\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
 use Liberu\Accounting\Erp\Models\XeroConnection;
 use Liberu\Accounting\Erp\Services\XeroService;
-use Illuminate\Routing\Controller;
 
 class XeroController extends Controller
 {

@@ -3,7 +3,7 @@
   "name": "accounting-tax-core-livewire",
   "display_name": "Accounting Tax Core Livewire",
   "description": "Livewire 4 adapter for Accounting Tax Core.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\TaxCoreLivewire\\TaxCoreLivewireServiceProvider",
   "requires": {

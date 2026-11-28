@@ -3,7 +3,7 @@
   "name": "accounting-inventory-accounting-livewire",
   "display_name": "Accounting Inventory Accounting Livewire",
   "description": "Livewire 4 inventory valuation and movement monitor.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\InventoryAccountingLivewire\\InventoryAccountingLivewireServiceProvider",
   "requires": {

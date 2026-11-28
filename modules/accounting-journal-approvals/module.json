@@ -3,7 +3,7 @@
   "name": "accounting-journal-approvals",
   "display_name": "Accounting Journal Approvals",
   "description": "Journal sources, thresholds, preparer/reviewer, evidence, rejection, posting and emergency controls.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\JournalApprovals\\JournalApprovalsServiceProvider",
   "requires": {

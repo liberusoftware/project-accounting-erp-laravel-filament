@@ -3,7 +3,7 @@
   "name": "accounting-multi-entity-api",
   "display_name": "Accounting Multi-Entity API",
   "description": "Authenticated API adapter for entity books and context switching.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MultiEntityApi\\MultiEntityApiServiceProvider",
   "requires": {

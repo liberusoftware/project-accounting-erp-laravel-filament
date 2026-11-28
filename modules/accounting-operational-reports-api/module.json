@@ -3,7 +3,7 @@
   "name": "accounting-operational-reports-api",
   "display_name": "Accounting Operational Reports API",
   "description": "Authenticated API adapter for operational report runs and exceptions.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\OperationalReportsApi\\OperationalReportsApiServiceProvider",
   "requires": {

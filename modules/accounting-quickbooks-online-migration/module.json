@@ -3,7 +3,7 @@
   "name": "accounting-quickbooks-online-migration",
   "display_name": "Accounting QuickBooks Online Migration",
   "description": "QBO migration records for chart, classes, contacts, items, transactions, journals, bank, projects, tax, attachments, and source IDs.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\QuickBooksOnlineMigration\\QuickBooksOnlineMigrationServiceProvider",
   "requires": {

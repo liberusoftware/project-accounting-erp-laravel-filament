@@ -3,7 +3,7 @@
   "name": "accounting-revenue-recognition-api",
   "display_name": "Accounting Revenue Recognition API",
   "description": "HTTP API for revenue recognition.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\RevenueRecognitionApi\\RevenueRecognitionApiServiceProvider",
   "requires": {

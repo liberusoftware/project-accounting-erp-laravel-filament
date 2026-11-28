@@ -3,7 +3,7 @@
   "name": "accounting-estimates-and-quotes-filament",
   "display_name": "Accounting Estimates and Quotes Filament",
   "description": "Filament 5 presentation for estimates and quotes.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\EstimatesAndQuotesFilament\\EstimatesAndQuotesFilamentServiceProvider",
   "requires": {

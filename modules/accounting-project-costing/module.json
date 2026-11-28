@@ -3,7 +3,7 @@
   "name": "accounting-project-costing",
   "display_name": "Accounting Project Costing",
   "description": "Labor, expense, bill, inventory, subcontractor, overhead, commitments, WIP, cost-to-complete, and variance.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ProjectCosting\\ProjectCostingServiceProvider",
   "requires": {

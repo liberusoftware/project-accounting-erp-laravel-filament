@@ -6,7 +6,9 @@ use Liberu\Foundation\OrganizationsFilament\OrganizationsFilamentPlugin;
 use Liberu\Foundation\OrganizationsFilament\Resources\TeamResource\Pages\EditTeam;
 use Liberu\Foundation\OrganizationsFilament\Resources\TeamResource\Pages\ListTeams;
 use Liberu\Foundation\OrganizationsFilament\Tests\Fixtures\OrganizationUser;
+use Liberu\Foundation\RolesPermissions\Enums\Role;
 use Livewire\Livewire;
+use Spatie\Permission\Models\Role as SpatieRole;
 
 /**
  * A record is created rather than asserting `assertOk()` on an empty page: an
@@ -23,6 +25,8 @@ it('renders the team table with its columns resolved', function () {
         'email' => 'ada@example.test',
         'password' => bcrypt('secret'),
     ]);
+    setPermissionsTeamId(null);
+    $owner->assignRole(SpatieRole::firstOrCreate(['name' => Role::SuperAdmin->value, 'guard_name' => 'web', 'team_id' => null]));
 
     Team::forceCreate([
         'user_id' => $owner->id,
@@ -44,6 +48,8 @@ it('renders the edit team page with its delete header action', function () {
         'email' => 'ada-edit@example.test',
         'password' => bcrypt('secret'),
     ]);
+    setPermissionsTeamId(null);
+    $owner->assignRole(SpatieRole::firstOrCreate(['name' => Role::SuperAdmin->value, 'guard_name' => 'web', 'team_id' => null]));
 
     $team = Team::forceCreate([
         'user_id' => $owner->id,

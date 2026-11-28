@@ -3,7 +3,7 @@
   "name": "accounting-reimbursements",
   "display_name": "Accounting Reimbursements",
   "description": "Approved reimbursement liabilities, payment batches, provider status, remittance, failure, and reconciliation.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\Reimbursements\\ReimbursementsServiceProvider",
   "requires": {

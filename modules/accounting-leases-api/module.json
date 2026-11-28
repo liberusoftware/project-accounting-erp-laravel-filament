@@ -3,7 +3,7 @@
   "name": "accounting-leases-api",
   "display_name": "Accounting Leases API",
   "description": "Versioned lease lifecycle, schedule, payment and disclosure API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\LeasesApi\\LeasesApiServiceProvider",
   "requires": {

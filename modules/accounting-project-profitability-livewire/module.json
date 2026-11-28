@@ -3,7 +3,7 @@
   "name": "accounting-project-profitability-livewire",
   "display_name": "Accounting Project Profitability Livewire",
   "description": "Livewire 4 dashboard and drill-through adapters for profitability.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ProjectProfitabilityLivewire\\ProjectProfitabilityLivewireServiceProvider",
   "requires": {

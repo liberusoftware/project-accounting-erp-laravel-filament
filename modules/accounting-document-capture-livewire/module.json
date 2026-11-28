@@ -3,7 +3,7 @@
   "name": "accounting-document-capture-livewire",
   "display_name": "Accounting Document Capture Livewire",
   "description": "Livewire 4 capture review monitor.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\DocumentCaptureLivewire\\DocumentCaptureLivewireServiceProvider",
   "requires": {

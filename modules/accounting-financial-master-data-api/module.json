@@ -3,7 +3,7 @@
   "name": "accounting-financial-master-data-api",
   "display_name": "Accounting Financial Master Data API",
   "description": "Versioned authenticated transport for financial master data.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\FinancialMasterDataApi\\FinancialMasterDataApiServiceProvider",
   "requires": {

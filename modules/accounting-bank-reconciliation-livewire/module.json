@@ -3,7 +3,7 @@
   "name": "accounting-bank-reconciliation-livewire",
   "display_name": "Accounting Bank Reconciliation Livewire",
   "description": "Livewire adapter for bank reconciliation.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BankReconciliationLivewire\\BankReconciliationLivewireServiceProvider",
   "requires": {

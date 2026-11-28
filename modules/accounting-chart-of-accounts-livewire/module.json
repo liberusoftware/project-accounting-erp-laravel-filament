@@ -3,7 +3,7 @@
   "name": "accounting-chart-of-accounts-livewire",
   "display_name": "Accounting Chart of Accounts Livewire",
   "description": "Livewire 4 account hierarchy management surface.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ChartOfAccountsLivewire\\ChartOfAccountsLivewireServiceProvider",
   "requires": {

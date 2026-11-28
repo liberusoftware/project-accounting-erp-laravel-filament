@@ -12,7 +12,6 @@ use Liberu\Accounting\Erp\Models\BankStatement;
 use Liberu\Accounting\Erp\Models\Company;
 use Liberu\Accounting\Erp\Models\HmrcCorporationTaxSubmission;
 use Liberu\Accounting\Erp\Models\HmrcPayeSubmission;
-use Liberu\Accounting\Erp\Models\HmrcSubmission;
 use Liberu\Accounting\Erp\Models\HmrcVatReturn;
 use Liberu\Accounting\Erp\Models\Transaction;
 use Liberu\Accounting\Erp\Models\User;

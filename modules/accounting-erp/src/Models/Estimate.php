@@ -155,7 +155,7 @@ class Estimate extends Model implements Documentable
 
     public function calculateTotals(): void
     {
-        $this->subtotal_amount = $this->items->sum('amount');
+        $this->subtotal_amount = $this->items()->sum('amount');
         $this->calculateTax();
         $this->save();
     }
@@ -217,8 +217,6 @@ class Estimate extends Model implements Documentable
             'invoice_date' => now(),
             'due_date' => now()->addDays(30),
             'total_amount' => $this->subtotal_amount,
-            'tax_amount' => $this->tax_amount,
-            'tax_rate_id' => $this->tax_rate_id,
             'payment_status' => 'pending',
             'notes' => "Converted from Estimate {$this->estimate_number}",
         ]);

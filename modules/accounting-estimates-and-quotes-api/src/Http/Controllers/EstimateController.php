@@ -8,9 +8,9 @@ use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Routing\Controller;
 use Illuminate\Validation\Rule;
 use Liberu\Accounting\Erp\Models\Estimate;
-use Illuminate\Routing\Controller;
 
 class EstimateController extends Controller
 {

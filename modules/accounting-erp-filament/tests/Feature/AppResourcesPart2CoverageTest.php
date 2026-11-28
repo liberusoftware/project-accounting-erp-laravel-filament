@@ -298,7 +298,7 @@ it('covers RefundReceiptResource and its pages including lifecycle hooks and act
         ->and(RefundReceiptResource::getRelations())->toBeArray()
         ->and(RefundReceiptResource::getPages())->toHaveKeys(['index', 'create', 'edit']);
 
-    $schema = RefundReceiptResource::form(Schema::make($listPage));
+    $schema = RefundReceiptResource::form(Schema::make($listPage)->model(RefundReceipt::class));
     $table = RefundReceiptResource::table(Table::make($listPage));
 
     $receiptNumber = $findSchemaComponent($schema, 'refund_receipt_number');
@@ -372,7 +372,7 @@ it('covers SalesReceiptResource and its pages including tax recalculation and ac
         ->and(SalesReceiptResource::getRelations())->toBeArray()
         ->and(SalesReceiptResource::getPages())->toHaveKeys(['index', 'create', 'edit']);
 
-    $schema = SalesReceiptResource::form(Schema::make($listPage));
+    $schema = SalesReceiptResource::form(Schema::make($listPage)->model(SalesReceipt::class));
     $table = SalesReceiptResource::table(Table::make($listPage));
 
     $receiptNumber = $findSchemaComponent($schema, 'sales_receipt_number');
@@ -602,7 +602,7 @@ it('covers VendorCreditResource and its pages including apply_to_bill, void, and
         ->and(VendorCreditResource::getRelations())->toBeArray()
         ->and(VendorCreditResource::getPages())->toHaveKeys(['index', 'create', 'edit']);
 
-    $schema = VendorCreditResource::form(Schema::make($listPage));
+    $schema = VendorCreditResource::form(Schema::make($listPage)->model(VendorCredit::class));
     $table = VendorCreditResource::table(Table::make($listPage));
 
     $creditNumber = $findSchemaComponent($schema, 'vendor_credit_number');

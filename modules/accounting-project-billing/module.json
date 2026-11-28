@@ -3,7 +3,7 @@
   "name": "accounting-project-billing",
   "display_name": "Accounting Project Billing",
   "description": "Fixed fee, time/material, milestone, progress, retainer, billable time and expense, write-up/down, and invoice handoff.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ProjectBilling\\ProjectBillingServiceProvider",
   "requires": {

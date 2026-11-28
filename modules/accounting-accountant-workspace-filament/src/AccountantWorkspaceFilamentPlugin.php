@@ -22,7 +22,7 @@ final class AccountantWorkspaceFilamentPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->resources([Resources\WorkspaceItemResource::class]);
+        $panel->resources([WorkspaceItemResource::class]);
     }
 
     public function boot(Panel $panel): void {}

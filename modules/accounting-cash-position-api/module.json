@@ -3,7 +3,7 @@
   "name": "accounting-cash-position-api",
   "display_name": "Accounting Cash Position API",
   "description": "HTTP adapter for cash position snapshots.",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CashPositionApi\\CashPositionApiServiceProvider",
   "requires": {

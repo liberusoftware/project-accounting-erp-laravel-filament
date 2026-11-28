@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-accountant-workspace-api",
   "description": "Accounting accountant workspace API",
   "type": "liberu-module",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\AccountantWorkspaceApi\\": "src/"

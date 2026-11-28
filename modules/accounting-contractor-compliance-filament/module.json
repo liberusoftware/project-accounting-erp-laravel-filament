@@ -3,7 +3,7 @@
   "name": "accounting-contractor-compliance-filament",
   "display_name": "Accounting Contractor Compliance Filament",
   "description": "Filament adapter for contractor compliance workflows.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ContractorComplianceFilament\\ContractorComplianceFilamentServiceProvider",
   "requires": {

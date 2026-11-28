@@ -120,25 +120,17 @@ it('supports theme helpers real assets layouts and built manifest selection', fu
 
 it('persists only the validated active theme through both persistence entry points', function () {
     [$manager, $name] = contractThemeManager($this);
-    if (! Schema::hasTable('users')) {
-        Schema::create('users', function (Blueprint $table): void {
-            $table->id();
-            $table->string('theme_preference')->nullable();
-            $table->timestamps();
-        });
-    } elseif (! Schema::hasColumn('users', 'theme_preference')) {
-        Schema::table('users', function (Blueprint $table): void {
-            $table->string('theme_preference')->nullable();
-        });
-    }
+    Schema::create('users', function (Blueprint $table): void {
+        $table->id();
+        $table->string('theme_preference')->nullable();
+        $table->timestamps();
+    });
     $actor = new class() extends User
     {
         protected $table = 'users';
 
         protected $guarded = [];
     };
-    $actor->name = 'Test User';
-    $actor->email = 'theme-test-'.bin2hex(random_bytes(4)).'@example.test';
     $actor->save();
     Auth::setUser($actor);
     $manager->persistTheme($name);

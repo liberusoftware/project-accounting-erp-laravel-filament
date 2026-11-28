@@ -3,7 +3,7 @@
   "name": "accounting-year-end-livewire",
   "display_name": "Accounting Year End Livewire",
   "description": "Livewire 4 surfaces for year-end close.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\YearEndLivewire\\YearEndLivewireServiceProvider",
   "requires": {

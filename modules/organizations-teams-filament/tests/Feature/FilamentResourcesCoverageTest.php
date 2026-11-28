@@ -2,61 +2,66 @@
 
 declare(strict_types=1);
 
-use App\Models\Territory;
 use Filament\Facades\Filament;
 use Filament\Schemas\Schema as FilamentSchema;
 use Filament\Tables\Table;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TeamMemberResource;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TeamMemberResource\Pages\ListTeamMembers;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TeamRoleLogResource;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TeamRoleLogResource\Pages\ListTeamRoleLogs;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TeamRoleResource;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TeamRoleResource\Pages\CreateTeamRole;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TeamRoleResource\Pages\EditTeamRole;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TeamRoleResource\Pages\ListTeamRoles;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TerritoryResource;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TerritoryResource\Pages\CreateTerritory;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TerritoryResource\Pages\EditTerritory;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TerritoryResource\Pages\ListTerritories;
-use Liberu\Foundation\Organizations\Filament\App\Resources\TerritoryResource\Pages\ViewTerritory;
-use Liberu\Foundation\Organizations\Filament\Resources\TeamBackupResource;
-use Liberu\Foundation\Organizations\Filament\Resources\TeamBackupResource\Pages\ListTeamBackups;
-use Liberu\Foundation\Organizations\Filament\Resources\TeamResource;
-use Liberu\Foundation\Organizations\Filament\Resources\TeamResource\Pages\ListTeams;
-use Liberu\Foundation\Organizations\Filament\Resources\TeamSubscriptionResource;
-use Liberu\Foundation\Organizations\Filament\Resources\TeamSubscriptionResource\Pages\CreateTeamSubscription;
-use Liberu\Foundation\Organizations\Filament\Resources\TeamSubscriptionResource\Pages\EditTeamSubscription;
-use Liberu\Foundation\Organizations\Filament\Resources\TeamSubscriptionResource\Pages\ListTeamSubscriptions;
-use Liberu\Foundation\Organizations\Http\Middleware\SetFilamentDefaultTenant;
+use Liberu\Foundation\Organizations\Contracts\OrganizationActor;
 use Liberu\Foundation\Organizations\Jobs\GenerateTeamBackup;
 use Liberu\Foundation\Organizations\Jobs\ImportTeamBackup;
 use Liberu\Foundation\Organizations\Jobs\RestoreTeamBackup;
 use Liberu\Foundation\Organizations\Models\Team;
 use Liberu\Foundation\Organizations\Models\TeamBackup;
 use Liberu\Foundation\Organizations\Services\TeamManagementService;
-use Liberu\Foundation\Organizations\Tests\Fixtures\OrgTestUser;
+use Liberu\Foundation\Organizations\Services\TeamRestoreService;
+use Liberu\Foundation\OrganizationsFilament\App\Resources\TeamMemberResource;
+use Liberu\Foundation\OrganizationsFilament\App\Resources\TeamMemberResource\Pages\ListTeamMembers;
+use Liberu\Foundation\OrganizationsFilament\App\Resources\TeamRoleLogResource;
+use Liberu\Foundation\OrganizationsFilament\App\Resources\TeamRoleLogResource\Pages\ListTeamRoleLogs;
+use Liberu\Foundation\OrganizationsFilament\App\Resources\TeamRoleResource;
+use Liberu\Foundation\OrganizationsFilament\App\Resources\TeamRoleResource\Pages\CreateTeamRole;
+use Liberu\Foundation\OrganizationsFilament\App\Resources\TeamRoleResource\Pages\EditTeamRole;
+use Liberu\Foundation\OrganizationsFilament\App\Resources\TeamRoleResource\Pages\ListTeamRoles;
+use Liberu\Foundation\OrganizationsFilament\Http\Middleware\AssignDefaultTeam;
+use Liberu\Foundation\OrganizationsFilament\Http\Middleware\SetFilamentDefaultTenant;
+use Liberu\Foundation\OrganizationsFilament\OrganizationsFilamentPlugin;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamBackupResource;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamBackupResource\Pages\ListTeamBackups;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamResource;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamResource\Pages\CreateTeam;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamResource\Pages\EditTeam;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamResource\Pages\ListTeams;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamSubscriptionResource;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamSubscriptionResource\Pages\CreateTeamSubscription;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamSubscriptionResource\Pages\EditTeamSubscription;
+use Liberu\Foundation\OrganizationsFilament\Resources\TeamSubscriptionResource\Pages\ListTeamSubscriptions;
+use Liberu\Foundation\OrganizationsFilament\Support\FilamentTeamJobNotifier;
+use Liberu\Foundation\OrganizationsFilament\Tests\Fixtures\OrganizationUser;
+use Liberu\Foundation\OrganizationsFilament\Tests\Fixtures\TestAuditLog;
 use Liberu\Foundation\RolesPermissions\Enums\Role;
+use Liberu\Foundation\RolesPermissionsFilament\Forms\RolePermissionBuilder;
+use Liberu\PackageTestbench\TestUser;
 use Spatie\Permission\Models\Role as SpatieRole;
 
-function createFilamentUser(array $overrides = []): OrgTestUser
+function createFilamentUser(array $overrides = []): OrganizationUser
 {
     static $seq = 0;
     $seq++;
 
-    return OrgTestUser::forceCreate(array_merge([
+    return OrganizationUser::forceCreate(array_merge([
         'name' => "Filament User {$seq}",
         'email' => "fil-user-{$seq}-".uniqid().'@example.test',
         'password' => bcrypt('Password123!@#'),
     ], $overrides));
 }
 
-function createFilamentTeam(OrgTestUser $owner, array $overrides = []): Team
+function createFilamentTeam(OrganizationUser $owner, array $overrides = []): Team
 {
     return Team::forceCreate(array_merge([
         'user_id' => $owner->id,
@@ -75,6 +80,41 @@ function invokeProtectedMethod(object $instance, string $method, array $args = [
 afterEach(function () {
     Auth::logout();
     Filament::setTenant(null);
+    config()->set('organizations-teams.audit_log_model', null);
+});
+
+it('covers AssignDefaultTeam, SetFilamentDefaultTenant, FilamentTeamJobNotifier, and plugin', function () {
+    $next = fn (Request $req): Response => new Response('ok', 200);
+    $req = Request::create('/test', 'GET');
+
+    Filament::setTenant(null);
+    $mw = new AssignDefaultTeam();
+    expect($mw->handle($req, $next)->getStatusCode())->toBe(200)
+        ->and(Filament::getTenant())->toBeNull();
+
+    $userNoTeam = createFilamentUser();
+    Auth::login($userNoTeam);
+    $mw->handle($req, $next);
+    expect(Filament::getTenant())->toBeInstanceOf(Team::class)
+        ->and($userNoTeam->fresh()->current_team_id)->not->toBeNull();
+
+    Filament::setTenant(null);
+    $mw->handle($req, $next);
+    expect(Filament::getTenant()?->id)->toBe($userNoTeam->fresh()->current_team_id);
+
+    Filament::setTenant(null);
+    Filament::setCurrentPanel(Filament::getPanel('admin'));
+    $defaultTenantMw = new SetFilamentDefaultTenant();
+    expect($defaultTenantMw->handle($req, $next)->getStatusCode())->toBe(200)
+        ->and($defaultTenantMw->handle($req, $next)->getStatusCode())->toBe(200);
+
+    $notifier = new FilamentTeamJobNotifier();
+    $notifier->notify($userNoTeam, 'Done', 'All good', true);
+    $notifier->notify($userNoTeam, 'Failed', 'Something broke', false);
+    expect($userNoTeam->notifications()->count())->toBe(2);
+
+    $plugin = OrganizationsFilamentPlugin::make();
+    expect($plugin->getId())->toBe('liberu-organizations');
 });
 
 it('covers TeamMemberResource and ListTeamMembers page', function () {
@@ -86,7 +126,6 @@ it('covers TeamMemberResource and ListTeamMembers page', function () {
 
     $customRole = SpatieRole::create(['name' => 'fil_custom_role', 'guard_name' => 'web', 'team_id' => $team->id]);
 
-    // Guest denied
     expect(TeamMemberResource::permissionResource())->toBe('team_member')
         ->and(TeamMemberResource::canViewAny())->toBeFalse()
         ->and(TeamMemberResource::getViewAnyAuthorizationResponse()->denied())->toBeTrue()
@@ -102,16 +141,15 @@ it('covers TeamMemberResource and ListTeamMembers page', function () {
         ->and(TeamMemberResource::getEloquentQuery()->pluck('id')->all())->toContain($owner->id, $member->id)
         ->and(TeamMemberResource::assignableRoles())->toHaveKeys(['manager', 'sales_rep', 'free', 'fil_custom_role']);
 
-    // Build table and exercise columns, record actions, and toolbar bulk action
     $page = new ListTeamMembers();
     $table = TeamMemberResource::table(Table::make($page));
+    (new ReflectionProperty($page, 'table'))->setValue($page, $table);
 
     $roleColumn = $table->getColumns()['team_role'];
     expect($roleColumn->record($member)->getState())->toBe('—');
 
     $recordActions = collect($table->getRecordActions())->keyBy(fn ($a) => $a->getName());
 
-    // changeRole action: visibility + schema + fixed role + custom role
     $changeRole = $recordActions['changeRole'];
     expect($changeRole->record($owner)->isVisible())->toBeFalse()
         ->and($changeRole->record($member)->isVisible())->toBeTrue();
@@ -130,7 +168,6 @@ it('covers TeamMemberResource and ListTeamMembers page', function () {
     ]);
     expect($member->fresh()->hasRole('fil_custom_role'))->toBeTrue();
 
-    // Toolbar bulk action setRole
     $bulkActions = collect($table->getToolbarActions())->keyBy(fn ($a) => $a->getName());
     $setRole = $bulkActions['setRole'];
     $setRole->evaluate($setRole->getActionFunction(), [
@@ -141,13 +178,12 @@ it('covers TeamMemberResource and ListTeamMembers page', function () {
     expect($member->fresh()->hasRole(Role::SalesRep->value))->toBeTrue();
 
     $setRole->evaluate($setRole->getActionFunction(), [
-        'records' => Collection::make([$member]),
+        'records' => Collection::make([$member, createFilamentUser()]),
         'data' => ['role' => 'fil_custom_role'],
         'service' => new TeamManagementService(),
     ]);
     expect($member->fresh()->hasRole('fil_custom_role'))->toBeTrue();
 
-    // removeMember action
     $removeMember = $recordActions['removeMember'];
     expect($removeMember->record($owner)->isVisible())->toBeFalse()
         ->and($removeMember->record($member)->isVisible())->toBeTrue();
@@ -158,33 +194,39 @@ it('covers TeamMemberResource and ListTeamMembers page', function () {
     ]);
     expect($team->users()->whereKey($member->id)->exists())->toBeFalse();
 
-    // ListTeamMembers header action: addMember
     $headerActions = invokeProtectedMethod($page, 'getHeaderActions');
     $addMember = $headerActions[0];
 
-    // Existing user without password -> addTeamMember
     $addMember->evaluate($addMember->getActionFunction(), [
         'data' => ['email' => $extra->email, 'password' => null, 'role' => Role::Free->value],
         'service' => new TeamManagementService(),
     ]);
     expect($team->users()->whereKey($extra->id)->exists())->toBeTrue();
 
-    // New user without password -> danger notification, early return
     $addMember->evaluate($addMember->getActionFunction(), [
         'data' => ['name' => 'No Pass', 'email' => 'nopass@example.test', 'password' => null, 'role' => Role::Free->value],
         'service' => new TeamManagementService(),
     ]);
 
-    // New user with password -> createTeamMember
     $addMember->evaluate($addMember->getActionFunction(), [
         'data' => ['name' => 'Brand New', 'email' => 'brandnew@example.test', 'password' => 'SuperSecret123!@#', 'role' => Role::Manager->value],
         'service' => new TeamManagementService(),
     ]);
-    expect(OrgTestUser::where('email', 'brandnew@example.test')->exists())->toBeTrue();
+    expect(OrganizationUser::where('email', 'brandnew@example.test')->exists())->toBeTrue();
 
-    // No tenant branch
     Filament::setTenant(null);
     $owner->forceFill(['current_team_id' => null])->save();
+    expect(TeamMemberResource::assignableRoles())->toHaveKeys(['manager', 'sales_rep', 'free']);
+    $changeRole->record($member)->evaluate($changeRole->getActionFunction(), [
+        'record' => $member,
+        'data' => ['role' => Role::Free->value],
+        'service' => new TeamManagementService(),
+    ]);
+    $setRole->evaluate($setRole->getActionFunction(), [
+        'records' => Collection::make([$member]),
+        'data' => ['role' => Role::Free->value],
+        'service' => new TeamManagementService(),
+    ]);
     $addMember->evaluate($addMember->getActionFunction(), [
         'data' => ['email' => 'x@example.test', 'password' => 'SuperSecret123!@#', 'role' => Role::Free->value],
         'service' => new TeamManagementService(),
@@ -195,7 +237,8 @@ it('covers TeamRoleLogResource and ListTeamRoleLogs page', function () {
     $owner = createFilamentUser();
     $team = createFilamentTeam($owner);
 
-    expect(TeamRoleLogResource::permissionResource())->toBe('team_role_log')
+    expect(TeamRoleLogResource::getModel())->toBe(Team::class)
+        ->and(TeamRoleLogResource::permissionResource())->toBe('team_role_log')
         ->and(TeamRoleLogResource::canAccess())->toBeFalse()
         ->and(TeamRoleLogResource::canViewAny())->toBeFalse()
         ->and(TeamRoleLogResource::getViewAnyAuthorizationResponse()->denied())->toBeTrue()
@@ -203,10 +246,13 @@ it('covers TeamRoleLogResource and ListTeamRoleLogs page', function () {
         ->and(TeamRoleLogResource::getCreateAuthorizationResponse()->denied())->toBeTrue()
         ->and(TeamRoleLogResource::getPages())->toHaveKey('index');
 
+    config()->set('organizations-teams.audit_log_model', TestAuditLog::class);
+
     Auth::login($owner);
     Filament::setTenant($team);
 
-    expect(TeamRoleLogResource::canAccess())->toBeTrue()
+    expect(TeamRoleLogResource::getModel())->toBe(TestAuditLog::class)
+        ->and(TeamRoleLogResource::canAccess())->toBeTrue()
         ->and(TeamRoleLogResource::canViewAny())->toBeTrue()
         ->and(TeamRoleLogResource::getViewAnyAuthorizationResponse()->allowed())->toBeTrue()
         ->and(TeamRoleLogResource::getEloquentQuery()->toSql())->toContain('team_id');
@@ -223,7 +269,6 @@ it('covers TeamRoleResource and its List, Create, and Edit pages', function () {
     $customRole = SpatieRole::create(['name' => 'team_editor_custom', 'guard_name' => 'web', 'team_id' => $team->id]);
     $systemRole = SpatieRole::firstOrCreate(['name' => Role::Admin->value, 'guard_name' => 'web', 'team_id' => null]);
 
-    // Guest state
     expect(TeamRoleResource::permissionResource())->toBe('team_role')
         ->and(TeamRoleResource::team())->toBeNull()
         ->and(TeamRoleResource::canAccess())->toBeFalse()
@@ -243,7 +288,6 @@ it('covers TeamRoleResource and its List, Create, and Edit pages', function () {
         ->and(TeamRoleResource::grantablePermissions())->toBeArray()
         ->and(TeamRoleResource::getPages())->toHaveKeys(['index', 'create', 'edit']);
 
-    // Authenticated owner with tenant
     Auth::login($owner);
     Filament::setTenant($team);
 
@@ -262,17 +306,20 @@ it('covers TeamRoleResource and its List, Create, and Edit pages', function () {
         ->and(TeamRoleResource::canDelete($systemRole))->toBeFalse()
         ->and(TeamRoleResource::getEloquentQuery()->pluck('id')->all())->toContain($customRole->id);
 
-    // Form & Table
     $listPage = new ListTeamRoles();
     expect(invokeProtectedMethod($listPage, 'getHeaderActions'))->toHaveCount(1);
 
     $formSchema = TeamRoleResource::form(FilamentSchema::make($listPage));
     expect($formSchema->getComponents())->not->toBeEmpty();
 
+    if (! class_exists(RolePermissionBuilder::class)) {
+        eval('namespace Liberu\\Foundation\\RolesPermissionsFilament\\Forms; class RolePermissionBuilder { public static function components(): array { return [\\Filament\\Forms\\Components\\TextInput::make("name")]; } }');
+    }
+    expect(TeamRoleResource::form(FilamentSchema::make($listPage))->getComponents())->toHaveCount(1);
+
     $table = TeamRoleResource::table(Table::make($listPage));
     expect($table->getColumns())->toHaveKeys(['name', 'permissions_count', 'updated_at']);
 
-    // CreateTeamRole::handleRecordCreation (valid + validation error)
     $createPage = new CreateTeamRole();
     $createdRole = invokeProtectedMethod($createPage, 'handleRecordCreation', [[
         'name' => 'Support Lead',
@@ -286,7 +333,6 @@ it('covers TeamRoleResource and its List, Create, and Edit pages', function () {
         'permissions' => [],
     ]]))->toThrow(ValidationException::class);
 
-    // EditTeamRole::mutateFormDataBeforeFill & handleRecordUpdate (valid + validation error)
     $editPage = new EditTeamRole();
     $editPage->record = $createdRole;
     $filled = invokeProtectedMethod($editPage, 'mutateFormDataBeforeFill', [['name' => 'Support Lead']]);
@@ -303,7 +349,6 @@ it('covers TeamRoleResource and its List, Create, and Edit pages', function () {
         'permissions' => [],
     ]]))->toThrow(ValidationException::class);
 
-    // Delete action in TeamRoleResource table
     $deleteAction = collect($table->getRecordActions())->first(fn ($a) => $a->getName() === 'delete');
     $refUsing = new ReflectionProperty($deleteAction, 'using');
     $usingClosure = $refUsing->getValue($deleteAction);
@@ -311,40 +356,13 @@ it('covers TeamRoleResource and its List, Create, and Edit pages', function () {
         ->and(SpatieRole::find($updatedRole->id))->toBeNull();
 });
 
-it('covers TerritoryResource and its List, Create, Edit, and View pages', function () {
-    $owner = createFilamentUser();
-    $team = createFilamentTeam($owner);
-    Filament::setTenant($team);
-
-    $listPage = new ListTerritories();
-    $createPage = new CreateTerritory();
-    $editPage = new EditTerritory();
-    $viewPage = new ViewTerritory();
-
-    $form = TerritoryResource::form(FilamentSchema::make($listPage));
-    $table = TerritoryResource::table(Table::make($listPage));
-    $infolist = $viewPage->infolist(FilamentSchema::make($viewPage));
-
-    expect($form->getComponents())->toHaveCount(2)
-        ->and($table->getColumns())->toHaveKeys(['name', 'users_count', 'updated_at'])
-        ->and($infolist->getComponents())->toHaveCount(3)
-        ->and(TerritoryResource::getPages())->toHaveKeys(['index', 'create', 'view', 'edit'])
-        ->and(invokeProtectedMethod($listPage, 'getHeaderActions'))->toHaveCount(1)
-        ->and(invokeProtectedMethod($editPage, 'getHeaderActions'))->toHaveCount(1)
-        ->and($createPage)->toBeInstanceOf(CreateTerritory::class);
-
-    // Also test teamMemberIds with null tenant
-    Filament::setTenant(null);
-    $ref = new ReflectionMethod(TerritoryResource::class, 'teamMemberIds');
-    expect($ref->invoke(null))->toBe([]);
-});
-
 it('covers TeamBackupResource and ListTeamBackups page', function () {
     Queue::fake();
     Storage::fake('local');
 
     $admin = createFilamentUser(['email' => 'ops-admin@example.test']);
-    config(['app.admin_emails' => ['ops-admin@example.test']]);
+    setPermissionsTeamId(null);
+    $admin->assignRole(SpatieRole::firstOrCreate(['name' => Role::SuperAdmin->value, 'guard_name' => 'web', 'team_id' => null]));
     $team = createFilamentTeam($admin);
 
     expect(TeamBackupResource::isScopedToTenant())->toBeFalse()
@@ -355,6 +373,17 @@ it('covers TeamBackupResource and ListTeamBackups page', function () {
     Auth::login($admin);
     expect(TeamBackupResource::canAccess())->toBeTrue();
 
+    $customAdmin = new class() extends TestUser
+    {
+        public function isAdmin(): bool
+        {
+            return true;
+        }
+    };
+    Auth::setUser($customAdmin);
+    expect(TeamBackupResource::canAccess())->toBeTrue();
+    Auth::login($admin);
+
     $page = new ListTeamBackups();
     expect(TeamBackupResource::form(FilamentSchema::make($page))->getComponents())->toBe([]);
 
@@ -362,7 +391,6 @@ it('covers TeamBackupResource and ListTeamBackups page', function () {
     $columns = $table->getColumns();
     expect($columns)->toHaveKeys(['team.name', 'status', 'size_bytes', 'created_at']);
 
-    // Test status color & size_bytes formatter
     $statusCol = $columns['status'];
     foreach (['completed' => 'success', 'failed' => 'danger', 'processing' => 'warning', 'pending' => 'gray'] as $state => $color) {
         expect($statusCol->getColor($state))->toBe($color);
@@ -372,7 +400,6 @@ it('covers TeamBackupResource and ListTeamBackups page', function () {
     expect($sizeCol->formatState(2048))->toBe('2.0 KB')
         ->and($sizeCol->formatState(null))->toBe('—');
 
-    // Record actions: download, restore, delete
     Storage::disk('local')->put('backups/b1.zip', 'zipdata');
     $backup = TeamBackup::create([
         'team_id' => $team->id,
@@ -386,17 +413,30 @@ it('covers TeamBackupResource and ListTeamBackups page', function () {
     expect($actions['download']->record($backup)->isVisible())->toBeTrue()
         ->and($actions['restore']->record($backup)->isVisible())->toBeTrue();
 
-    // Restore dispatches RestoreTeamBackup when team is empty
     $actions['restore']->record($backup)->evaluate($actions['restore']->getActionFunction(), ['record' => $backup]);
     Queue::assertPushed(RestoreTeamBackup::class);
 
-    // Header action: generate
+    app()->instance(TeamRestoreService::class, new class() extends TeamRestoreService
+    {
+        public function firstPopulatedTable(Team $team): ?string
+        {
+            return 'populated_items';
+        }
+    });
+    $actions['restore']->record($backup)->evaluate($actions['restore']->getActionFunction(), ['record' => $backup]);
+
+    $deleteAction = $actions['delete'];
+    $beforeRef = new ReflectionProperty($deleteAction, 'before');
+    $beforeClosure = $beforeRef->getValue($deleteAction);
+    $deleteAction->record($backup)->evaluate($beforeClosure, ['record' => $backup]);
+    Storage::disk('local')->assertMissing('backups/b1.zip');
+
     $generate = invokeProtectedMethod($page, 'getHeaderActions')[0];
     $generate->evaluate($generate->getActionFunction(), ['data' => ['team_id' => $team->id]]);
     Queue::assertPushed(GenerateTeamBackup::class);
 });
 
-it('covers TeamResource and ListTeams page', function () {
+it('covers TeamResource and ListTeams, CreateTeam, EditTeam pages', function () {
     Queue::fake();
 
     $superAdmin = createFilamentUser();
@@ -410,15 +450,34 @@ it('covers TeamResource and ListTeams page', function () {
     expect(TeamResource::isScopedToTenant())->toBeFalse()
         ->and(TeamResource::canAccess())->toBeFalse()
         ->and(TeamResource::getRouteMiddleware(Filament::getPanel('admin')))->toBe([SetFilamentDefaultTenant::class])
-        ->and(TeamResource::getPages())->toHaveKey('index');
+        ->and(TeamResource::getPages())->toHaveKeys(['index', 'create', 'edit'])
+        ->and(new CreateTeam())->toBeInstanceOf(CreateTeam::class)
+        ->and(new EditTeam())->toBeInstanceOf(EditTeam::class);
 
     Auth::login($superAdmin);
     expect(TeamResource::canAccess())->toBeTrue();
 
+    $plainUser = new class() extends TestUser implements OrganizationActor
+    {
+        public function belongsToTeam($team): bool
+        {
+            return false;
+        }
+
+        public function ownsTeam($team): bool
+        {
+            return false;
+        }
+    };
+    Auth::setUser($plainUser);
+    expect(TeamResource::canAccess())->toBeTrue();
+    Auth::login($superAdmin);
+
     $page = new ListTeams();
-    expect(TeamResource::form(FilamentSchema::make($page))->getComponents())->toBe([]);
+    expect(TeamResource::form(FilamentSchema::make($page))->getComponents())->toHaveCount(3);
 
     $table = TeamResource::table(Table::make($page));
+    (new ReflectionProperty($page, 'table'))->setValue($page, $table);
     $statusCol = $table->getColumns()['status'];
     expect($statusCol->record($team)->getState())->toBe('Active')
         ->and($statusCol->getColor('Active'))->toBe('success')
@@ -426,33 +485,41 @@ it('covers TeamResource and ListTeams page', function () {
 
     $actions = collect($table->getRecordActions())->keyBy(fn ($a) => $a->getName());
 
-    // Archive & Restore actions
     expect($actions['archive']->record($team)->isVisible())->toBeTrue()
         ->and($actions['archive']->record($personal)->isVisible())->toBeFalse()
         ->and($actions['restore']->record($team)->isVisible())->toBeFalse();
 
     $actions['archive']->record($team)->evaluate($actions['archive']->getActionFunction(), ['record' => $team]);
-    expect($team->fresh()->isArchived())->toBeTrue()
-        ->and($statusCol->record($team->fresh())->getState())->toBe('Archived')
-        ->and($actions['restore']->record($team->fresh())->isVisible())->toBeTrue();
+    $archivedTeam = $team->fresh();
+    $statusCol->clearCachedState();
+    expect($archivedTeam->isArchived())->toBeTrue()
+        ->and($statusCol->record($archivedTeam)->getState())->toBe('Archived')
+        ->and($actions['restore']->record($archivedTeam)->isVisible())->toBeTrue();
 
     $actions['restore']->record($team->fresh())->evaluate($actions['restore']->getActionFunction(), ['record' => $team->fresh()]);
     expect($team->fresh()->isArchived())->toBeFalse();
 
-    // Clone action (valid owner + missing owner)
+    $cloneSchema = $actions['clone']->record($team)->getSchema(FilamentSchema::make($page));
+    $ownerField = collect($cloneSchema->getComponents())->first(fn ($c) => $c->getName() === 'owner_id');
+    expect($ownerField->getOptions())->toHaveKey($superAdmin->id);
+
     $actions['clone']->record($team)->evaluate($actions['clone']->getActionFunction(), [
         'record' => $team,
         'data' => ['name' => 'Cloned Via Resource', 'owner_id' => $superAdmin->id],
     ]);
     expect(Team::where('name', 'Cloned Via Resource')->exists())->toBeTrue();
 
+    $cloneSchema = $actions['clone']->record($team)->getSchema(FilamentSchema::make($page));
+    $ownerField = collect($cloneSchema->getComponents())->first(fn ($c) => $c->getName() === 'owner_id');
+    expect($ownerField->getOptions())->toHaveKey($superAdmin->id);
+
     $actions['clone']->record($team)->evaluate($actions['clone']->getActionFunction(), [
         'record' => $team,
         'data' => ['name' => 'Missing Owner', 'owner_id' => 999999],
     ]);
 
-    // Header action: import
-    $import = invokeProtectedMethod($page, 'getHeaderActions')[0];
+    $headerActions = invokeProtectedMethod($page, 'getHeaderActions');
+    $import = collect($headerActions)->first(fn ($a) => $a->getName() === 'import');
     $import->evaluate($import->getActionFunction(), [
         'data' => ['file' => 'imports/sample.zip', 'name' => 'From UI'],
     ]);

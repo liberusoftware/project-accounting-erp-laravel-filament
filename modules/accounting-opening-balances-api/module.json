@@ -3,7 +3,7 @@
   "name": "accounting-opening-balances-api",
   "display_name": "Accounting Opening Balances API",
   "description": "Authenticated API adapter for opening-balance migration workflows.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\OpeningBalancesApi\\OpeningBalancesApiServiceProvider",
   "requires": {

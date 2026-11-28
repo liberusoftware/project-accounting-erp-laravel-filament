@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
@@ -18,9 +19,9 @@ it('covers IndexableRegistry, SearcherRegistry, LocalSearchIndexer, and SearchSe
     $provider->boot();
 
     $indexables = new IndexableRegistry();
-    $indexables->register('users', \App\Models\User::class);
-    expect($indexables->all())->toBe(['users' => \App\Models\User::class]);
-    expect(fn () => $indexables->register('users', \App\Models\User::class))
+    $indexables->register('users', User::class);
+    expect($indexables->all())->toBe(['users' => User::class]);
+    expect(fn () => $indexables->register('users', User::class))
         ->toThrow(InvalidArgumentException::class, 'Search type [users] already exists.');
 
     $searchers = new SearcherRegistry();
@@ -66,8 +67,8 @@ it('covers ReindexCommand failure and success paths', function (): void {
         ->assertExitCode(1);
 
     // Register User model and seed a record
-    $user = \App\Models\User::factory()->create();
-    $registry->register('users', \App\Models\User::class);
+    $user = User::factory()->create();
+    $registry->register('users', User::class);
 
     $this->artisan('search:reindex', ['type' => 'nonexistent'])
         ->expectsOutput('No matching indexable search type.')
@@ -82,7 +83,7 @@ it('covers ReindexCommand failure and success paths', function (): void {
 });
 
 it('covers SearchService role, date range, verification, ordering, coercion, and searchAll branches', function (): void {
-    $modelClass = new class extends Model
+    $modelClass = new class() extends Model
     {
         use Searchable;
 
@@ -99,13 +100,13 @@ it('covers SearchService role, date range, verification, ordering, coercion, and
         }
     };
 
-    \App\Models\User::factory()->create([
+    User::factory()->create([
         'name' => 'Admin Alice',
         'email' => 'alice@example.com',
         'email_verified_at' => now(),
         'created_at' => now()->subDays(2),
     ]);
-    \App\Models\User::factory()->create([
+    User::factory()->create([
         'name' => 'Guest Bob',
         'email' => 'bob@example.com',
         'email_verified_at' => null,

@@ -3,7 +3,7 @@
   "name": "accounting-budgets-filament",
   "display_name": "Accounting Budgets Filament",
   "description": "Filament workspace for budgets.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BudgetsFilament\\BudgetsFilamentServiceProvider",
   "requires": {

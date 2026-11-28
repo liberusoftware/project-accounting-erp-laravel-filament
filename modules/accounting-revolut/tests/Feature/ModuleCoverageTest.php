@@ -245,13 +245,13 @@ it('sends outbound single and bulk payments and guards missing connections or to
 
     $unconnected = new RevolutAdapter();
     expect(fn () => $unconnected->sendPayment(['amount' => 10]))
-        ->toThrow(\RuntimeException::class, 'A connection is required for payments.');
+        ->toThrow(RuntimeException::class, 'A connection is required for payments.');
     expect(fn () => $unconnected->sendBulkPayments('Payroll', [['amount' => 10]]))
-        ->toThrow(\RuntimeException::class, 'A connection is required for payments.');
+        ->toThrow(RuntimeException::class, 'A connection is required for payments.');
 
     $noTokenAccount = new MerchantAccountContextDto('10', 'revolut', [], true);
     expect(fn () => $unconnected->sendOutboundPayment($noTokenAccount, ['amount' => 10]))
-        ->toThrow(\InvalidArgumentException::class, 'An access token is required for payments.');
+        ->toThrow(InvalidArgumentException::class, 'An access token is required for payments.');
 
     Http::fake([
         'https://sandbox-b2b.revolut.com/api/1.0/pay' => Http::response(['id' => 'pay-1', 'state' => 'completed'], 200),

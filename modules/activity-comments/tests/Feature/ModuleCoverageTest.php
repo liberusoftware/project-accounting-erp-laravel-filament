@@ -30,7 +30,7 @@ it('evaluates all visibility levels and authorizer contract', function (): void 
         ->and(Visibility::Private->visible(false, true, false))->toBeTrue()
         ->and(Visibility::Private->visible(true, false, false))->toBeFalse();
 
-    $authorizer = new class implements ActivityAuthorizer
+    $authorizer = new class() implements ActivityAuthorizer
     {
         public function allowed(string|int $actorId, string $subjectType, string|int $subjectId, string $operation): bool
         {

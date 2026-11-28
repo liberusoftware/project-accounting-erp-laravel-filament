@@ -3,7 +3,7 @@
   "name": "accounting-reimbursements-api",
   "display_name": "Accounting Reimbursements API",
   "description": "HTTP API for reimbursements.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ReimbursementsApi\\ReimbursementsApiServiceProvider",
   "requires": {

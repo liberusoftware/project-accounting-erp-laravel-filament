@@ -3,7 +3,7 @@
   "name": "accounting-multi-currency-filament",
   "display_name": "Accounting Multi-Currency Filament",
   "description": "Filament 5 rates and revaluation review adapter.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MultiCurrencyFilament\\MultiCurrencyFilamentServiceProvider",
   "requires": {

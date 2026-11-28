@@ -3,7 +3,7 @@
   "name": "accounting-mileage",
   "display_name": "Accounting Mileage",
   "description": "Vehicles, rates, trips, policy, approval, reimbursement and regional mileage reporting.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\Mileage\\MileageServiceProvider",
   "requires": {

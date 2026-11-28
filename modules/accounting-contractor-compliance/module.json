@@ -3,7 +3,7 @@
   "name": "accounting-contractor-compliance",
   "display_name": "Accounting Contractor Compliance",
   "description": "Contractor records, withholding schemes, classifications, deductions, statements, evidence, and regional exports.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ContractorCompliance\\ContractorComplianceServiceProvider",
   "requires": {

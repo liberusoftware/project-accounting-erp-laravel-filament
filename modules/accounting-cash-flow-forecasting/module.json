@@ -3,7 +3,7 @@
   "name": "accounting-cash-flow-forecasting",
   "display_name": "Accounting Cash-Flow Forecasting",
   "description": "Direct cash-flow forecasts with opening cash, timing, recurring items, scenarios, assumptions, variance, and confidence.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\CashFlowForecasting\\CashFlowForecastingServiceProvider",
   "requires": {

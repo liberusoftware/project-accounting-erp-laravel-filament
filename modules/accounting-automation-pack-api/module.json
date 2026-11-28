@@ -3,7 +3,7 @@
   "name": "accounting-automation-pack-api",
   "display_name": "Accounting Automation Pack API",
   "description": "HTTP API for governed accounting automation.",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\AutomationPackApi\\AutomationPackApiServiceProvider",
   "requires": {

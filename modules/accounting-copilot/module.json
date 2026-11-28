@@ -3,7 +3,7 @@
   "name": "accounting-copilot",
   "display_name": "Accounting Copilot",
   "description": "Permission-bounded accounting search, explanations, summaries, narratives and confirmed drafts.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\Copilot\\CopilotServiceProvider",
   "requires": {

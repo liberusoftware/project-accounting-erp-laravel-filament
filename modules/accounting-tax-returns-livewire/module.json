@@ -3,7 +3,7 @@
   "name": "accounting-tax-returns-livewire",
   "display_name": "Accounting Tax Returns Livewire",
   "description": "Livewire 4 adapter for Accounting Tax Returns.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\TaxReturnsLivewire\\TaxReturnsLivewireServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-deposits-and-clearing-livewire",
   "display_name": "Accounting Deposits and Clearing Livewire",
   "description": "Livewire 4 surfaces for funds and deposits.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\DepositsAndClearingLivewire\\DepositsAndClearingLivewireServiceProvider",
   "requires": {

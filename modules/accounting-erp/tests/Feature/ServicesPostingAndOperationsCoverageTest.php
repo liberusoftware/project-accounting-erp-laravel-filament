@@ -17,13 +17,13 @@ use Liberu\Accounting\Erp\Models\InventoryTransaction;
 use Liberu\Accounting\Erp\Models\Invoice;
 use Liberu\Accounting\Erp\Models\JournalEntry;
 use Liberu\Accounting\Erp\Models\Payment;
+use Liberu\Accounting\Erp\Models\PaymentTerm;
 use Liberu\Accounting\Erp\Models\PurchaseRequest;
 use Liberu\Accounting\Erp\Models\SalesOrder;
 use Liberu\Accounting\Erp\Models\Supplier;
 use Liberu\Accounting\Erp\Models\Team;
 use Liberu\Accounting\Erp\Models\Transaction;
 use Liberu\Accounting\Erp\Models\User;
-use Liberu\Accounting\Erp\Notifications\CollectionNotification;
 use Liberu\Accounting\Erp\Services\ApprovalService;
 use Liberu\Accounting\Erp\Services\CollectionService;
 use Liberu\Accounting\Erp\Services\InventoryMovementService;
@@ -274,18 +274,26 @@ describe('SalesOrderService & ProcurementService', function (): void {
         expect(fn () => $service->convertToInvoice($order->fresh()))->toThrow(DomainException::class, 'cannot be invoiced');
 
         // Non-invoiced status but existing invoice guard
-        $order->update(['status' => 'confirmed']);
+        $order->fresh()->update(['status' => 'confirmed']);
         expect(fn () => $service->convertToInvoice($order->fresh()))->toThrow(DomainException::class, 'already has an invoice');
     });
 
     it('creates purchase orders from approved purchase requests with domain guards', function (): void {
         $team = Team::factory()->create();
+        $paymentTerm = PaymentTerm::create([
+            'payment_term_name' => 'Net 30',
+            'payment_term_description' => 'Due in 30 days',
+            'payment_term_number_of_days' => 30,
+        ]);
         $supplier = Supplier::create([
             'supplier_first_name' => 'Acme',
             'supplier_last_name' => 'Supply',
             'supplier_email' => 'acme@supply.test',
             'supplier_address' => '1 Main St',
             'supplier_phone_number' => '555-0100',
+            'payment_term_id' => $paymentTerm->payment_term_id,
+            'supplier_limit_credit' => 10000,
+            'supplier_tin' => 123456789,
         ]);
 
         $pr = PurchaseRequest::create([

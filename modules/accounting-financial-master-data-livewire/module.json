@@ -3,7 +3,7 @@
   "name": "accounting-financial-master-data-livewire",
   "display_name": "Accounting Financial Master Data Livewire",
   "description": "Livewire 4 party management surface.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\FinancialMasterDataLivewire\\FinancialMasterDataLivewireServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-payroll-liabilities-api",
   "display_name": "Accounting Payroll Liabilities API",
   "description": "HTTP API for payroll liabilities, allocations, and reconciliation.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PayrollLiabilitiesApi\\PayrollLiabilitiesApiServiceProvider",
   "requires": {

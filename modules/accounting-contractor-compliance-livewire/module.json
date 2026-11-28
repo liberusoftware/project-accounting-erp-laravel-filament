@@ -3,7 +3,7 @@
   "name": "accounting-contractor-compliance-livewire",
   "display_name": "Accounting Contractor Compliance Livewire",
   "description": "Livewire adapter for contractor compliance workflows.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ContractorComplianceLivewire\\ContractorComplianceLivewireServiceProvider",
   "requires": {

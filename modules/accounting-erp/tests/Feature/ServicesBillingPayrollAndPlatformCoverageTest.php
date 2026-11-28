@@ -55,23 +55,12 @@ describe('SaasPremiumBillingService', function (): void {
         expect(fn () => $service->createPortalSession($team, 'https://app.test/back'))
             ->toThrow(RuntimeException::class, 'Stripe customer');
 
-        // Stripe HTTP failure path
+        // Stripe HTTP failure, missing product id, and full happy path in one sequence
         Http::fake([
-            'api.stripe.com/v1/products' => Http::response(['error' => ['message' => 'Stripe down']], 500),
-        ]);
-        expect(fn () => $service->createCheckoutSession($team, 'monthly', 'https://app.test/ok', 'https://app.test/cancel'))
-            ->toThrow(RuntimeException::class, 'Stripe down');
-
-        // Missing product id response
-        Http::fake([
-            'api.stripe.com/v1/products' => Http::response([]),
-        ]);
-        expect(fn () => $service->createCheckoutSession($team, 'monthly', 'https://app.test/ok', 'https://app.test/cancel'))
-            ->toThrow(RuntimeException::class, 'product id');
-
-        // Full happy path: creates catalog (product + 2 prices), customer, checkout session (monthly & yearly), portal session
-        Http::fake([
-            'api.stripe.com/v1/products' => Http::response(['id' => 'prod_1']),
+            'api.stripe.com/v1/products' => Http::sequence()
+                ->push(['error' => ['message' => 'Stripe down']], 500)
+                ->push([])
+                ->push(['id' => 'prod_1']),
             'api.stripe.com/v1/prices' => Http::sequence()
                 ->push(['id' => 'price_month'])
                 ->push(['id' => 'price_year']),
@@ -79,6 +68,16 @@ describe('SaasPremiumBillingService', function (): void {
             'api.stripe.com/v1/checkout/sessions' => Http::response(['id' => 'cs_1', 'url' => 'https://checkout.stripe.test/cs_1']),
             'api.stripe.com/v1/billing_portal/sessions' => Http::response(['id' => 'bps_1', 'url' => 'https://portal.stripe.test/bps_1']),
         ]);
+
+        // Stripe HTTP failure path
+        expect(fn () => $service->createCheckoutSession($team, 'monthly', 'https://app.test/ok', 'https://app.test/cancel'))
+            ->toThrow(RuntimeException::class, 'Stripe down');
+
+        // Missing product id response
+        expect(fn () => $service->createCheckoutSession($team, 'monthly', 'https://app.test/ok', 'https://app.test/cancel'))
+            ->toThrow(RuntimeException::class, 'product id');
+
+        // Full happy path: creates catalog (product + 2 prices), customer, checkout session (monthly & yearly), portal session
 
         $session = $service->createCheckoutSession($team, 'monthly', 'https://app.test/ok', 'https://app.test/cancel');
         expect($session['id'])->toBe('cs_1')
@@ -162,11 +161,19 @@ describe('SubscriptionBillingService', function (): void {
         $customer = Customer::factory()->create(['team_id' => $team->id]);
         $service = new SubscriptionBillingService();
 
+        $placeholderPlan = Plan::create([
+            'team_id' => $team->id,
+            'name' => 'Placeholder',
+            'amount' => 10.00,
+            'currency' => 'USD',
+            'interval' => 'monthly',
+        ]);
+
         // Inactive subscription -> 0
         $inactive = Subscription::create([
             'team_id' => $team->id,
             'customer_id' => $customer->id,
-            'plan_id' => null,
+            'plan_id' => $placeholderPlan->id,
             'status' => 'paused',
             'started_at' => today()->subMonth(),
             'next_billing_date' => today(),
@@ -175,7 +182,9 @@ describe('SubscriptionBillingService', function (): void {
 
         // Active with null plan -> 0
         $inactive->update(['status' => 'active']);
-        expect($service->generateDueInvoices($inactive->fresh()))->toBe(0);
+        $activeNoPlan = $inactive->fresh();
+        $activeNoPlan->setRelation('plan', null);
+        expect($service->generateDueInvoices($activeNoPlan))->toBe(0);
 
         foreach (['daily', 'weekly', 'monthly', 'yearly'] as $interval) {
             $plan = Plan::create([
@@ -231,6 +240,7 @@ describe('PayrollTaxService & PayslipService', function (): void {
             'email' => 'john@payroll.test',
             'position' => 'Accountant',
             'hire_date' => '2024-01-01',
+            'tax_id' => 'TAX-123456',
             'national_insurance_number' => 'QQ123456C',
         ]);
         $payroll = Payroll::create([
@@ -286,7 +296,7 @@ describe('DocumentService', function (): void {
 
 describe('InvoiceScanner', function (): void {
     it('extracts invoice metadata and handles missing values cleanly', function (): void {
-        $scanner = new class extends InvoiceScanner
+        $scanner = new class() extends InvoiceScanner
         {
             public function parse(string $text): array
             {
@@ -318,7 +328,7 @@ describe('InvoiceScanner', function (): void {
         // Exercise scanInvoice() entry point (gracefully tolerate missing tesseract binary in CI)
         try {
             $scanner->scanInvoice($file);
-        } catch (\Throwable) {
+        } catch (Throwable) {
             expect(true)->toBeTrue();
         }
     });

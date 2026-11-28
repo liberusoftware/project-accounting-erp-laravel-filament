@@ -3,7 +3,7 @@
   "name": "accounting-payment-reconciliation-filament",
   "display_name": "Accounting Payment Reconciliation Filament",
   "description": "Filament 5 adapter for settlement reconciliation workflows.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PaymentReconciliationFilament\\PaymentReconciliationFilamentServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-payroll-integration",
   "display_name": "Accounting Payroll Integration",
   "description": "Provider, period, run identity, employee and contractor references, import validation, dimensions, projects, and provider adapters.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\PayrollIntegration\\PayrollIntegrationServiceProvider",
   "requires": {

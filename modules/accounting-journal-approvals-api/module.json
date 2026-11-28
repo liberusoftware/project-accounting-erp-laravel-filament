@@ -3,7 +3,7 @@
   "name": "accounting-journal-approvals-api",
   "display_name": "Accounting Journal Approvals API",
   "description": "Versioned journal approval and posting API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\JournalApprovalsApi\\JournalApprovalsApiServiceProvider",
   "requires": {

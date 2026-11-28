@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-use Liberu\Accounting\Erp\Models\User;
 use Illuminate\Auth\Events\Failed;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Logout;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Liberu\Accounting\Erp\Models\User;
 use Liberu\Foundation\Identity\Contracts\InvitationValidator;
 use Liberu\Foundation\Identity\Contracts\RegistrationPolicy;
 use Liberu\Foundation\Identity\Events\IdentityEvent;

@@ -22,7 +22,7 @@ final class AnomalyDetectionFilamentPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->resources([Resources\AnomalyResource::class]);
+        $panel->resources([AnomalyResource::class]);
     }
 
     public function boot(Panel $panel): void {}

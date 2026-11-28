@@ -3,7 +3,7 @@
   "name": "accounting-dashboards-livewire",
   "display_name": "Accounting Dashboards Livewire",
   "description": "Livewire 4 dashboard surfaces.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\DashboardsLivewire\\DashboardsLivewireServiceProvider",
   "requires": {

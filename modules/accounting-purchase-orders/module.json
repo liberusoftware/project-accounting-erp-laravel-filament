@@ -3,7 +3,7 @@
   "name": "accounting-purchase-orders",
   "display_name": "Accounting Purchase Orders",
   "description": "Supplier items, prices, quantities, delivery, approval, issue, receipts, changes, closure, and commitments.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\PurchaseOrders\\PurchaseOrdersServiceProvider",
   "requires": {

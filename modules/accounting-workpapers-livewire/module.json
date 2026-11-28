@@ -3,7 +3,7 @@
   "name": "accounting-workpapers-livewire",
   "display_name": "Accounting Workpapers Livewire",
   "description": "Livewire 4 adapter for Accounting Workpapers.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\WorkpapersLivewire\\WorkpapersLivewireServiceProvider",
   "requires": {

@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-branch-and-location-accounting-api",
   "description": "Branch and Location Accounting API presentation module.",
   "type": "liberu-module",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\BranchLocationAccountingApi\\": "src/"

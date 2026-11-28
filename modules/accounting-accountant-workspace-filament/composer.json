@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-accountant-workspace-filament",
   "description": "Accounting accountant workspace Filament adapter",
   "type": "liberu-module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\AccountantWorkspaceFilament\\": "src/"

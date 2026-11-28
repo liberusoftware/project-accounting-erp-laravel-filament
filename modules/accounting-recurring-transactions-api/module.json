@@ -3,7 +3,7 @@
   "name": "accounting-recurring-transactions-api",
   "display_name": "Accounting Recurring Transactions API",
   "description": "HTTP API for recurring transactions.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\RecurringTransactionsApi\\RecurringTransactionsApiServiceProvider",
   "requires": {

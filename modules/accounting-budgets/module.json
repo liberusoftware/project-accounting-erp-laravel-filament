@@ -3,7 +3,7 @@
   "name": "accounting-budgets",
   "display_name": "Accounting Budgets",
   "description": "Annual and rolling budgets with versions, phasing, approvals, revisions, and actual comparison.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\Budgets\\BudgetsServiceProvider",
   "requires": {

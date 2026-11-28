@@ -3,7 +3,7 @@
   "name": "accounting-accountant-workspace-api",
   "display_name": "Accounting Accountant Workspace API",
   "description": "HTTP API for accountant portfolio records.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\AccountantWorkspaceApi\\AccountantWorkspaceApiServiceProvider",
   "requires": {

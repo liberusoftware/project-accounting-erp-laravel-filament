@@ -3,7 +3,7 @@
   "name": "accounting-anomaly-detection-livewire",
   "display_name": "Accounting Anomaly Detection Livewire",
   "description": "Livewire advisory anomaly queue.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\AnomalyDetectionLivewire\\AnomalyDetectionLivewireServiceProvider",
   "requires": {

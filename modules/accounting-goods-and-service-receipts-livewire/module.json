@@ -3,7 +3,7 @@
   "name": "accounting-goods-and-service-receipts-livewire",
   "display_name": "Accounting Goods and Service Receipts Livewire",
   "description": "Livewire 4 receipt and variance monitor.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\GoodsAndServiceReceiptsLivewire\\GoodsAndServiceReceiptsLivewireServiceProvider",
   "requires": {

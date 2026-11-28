@@ -3,7 +3,7 @@
   "name": "accounting-multi-currency-api",
   "display_name": "Accounting Multi-Currency API",
   "description": "Authenticated API adapter for currency profiles, rates, and revaluation.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MultiCurrencyApi\\MultiCurrencyApiServiceProvider",
   "requires": {

@@ -207,7 +207,7 @@ it('records a recurring exception and marks template failed when generation thro
     RecurringOccurrence::creating(function (RecurringOccurrence $occurrence) use ($template, &$listenerActive): void {
         if ($listenerActive && $occurrence->template_id === $template->id) {
             $listenerActive = false;
-            throw new \RuntimeException('Simulated occurrence write failure.');
+            throw new RuntimeException('Simulated occurrence write failure.');
         }
     });
 

@@ -21,7 +21,7 @@ class CollectionService
             $customer->credit_hold = true;
             $customer->save();
 
-            if ($customer->email) {
+            if ($customer->customer_email) {
                 $customer->notify(new CollectionNotification($customer));
             }
         }

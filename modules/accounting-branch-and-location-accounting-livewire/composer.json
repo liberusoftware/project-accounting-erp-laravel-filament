@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-branch-and-location-accounting-livewire",
   "description": "Branch and Location Accounting Livewire presentation module.",
   "type": "liberu-module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\BranchLocationAccountingLivewire\\": "src/"

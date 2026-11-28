@@ -3,7 +3,7 @@
   "name": "accounting-inventory-accounting",
   "display_name": "Accounting Inventory Accounting",
   "description": "Perpetual and periodic inventory valuation, layers, cost of sales, landed costs, adjustments, write-downs and reconciliation.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\InventoryAccounting\\InventoryAccountingServiceProvider",
   "requires": {

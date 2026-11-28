@@ -3,7 +3,7 @@
   "name": "accounting-goods-and-service-receipts-api",
   "display_name": "Accounting Goods and Service Receipts API",
   "description": "Versioned goods receipt, service confirmation, return, attachment and accrual API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\GoodsAndServiceReceiptsApi\\GoodsAndServiceReceiptsApiServiceProvider",
   "requires": {

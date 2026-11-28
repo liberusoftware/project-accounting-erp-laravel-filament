@@ -3,7 +3,7 @@
   "name": "accounting-job-estimates-livewire",
   "display_name": "Accounting Job Estimates Livewire",
   "description": "Livewire 4 estimate monitor and comparison surface.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\JobEstimatesLivewire\\JobEstimatesLivewireServiceProvider",
   "requires": {

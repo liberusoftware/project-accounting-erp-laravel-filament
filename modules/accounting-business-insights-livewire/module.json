@@ -3,7 +3,7 @@
   "name": "accounting-business-insights-livewire",
   "display_name": "Accounting Business Insights Livewire",
   "description": "Livewire business insight view.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BusinessInsightsLivewire\\BusinessInsightsLivewireServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-estimates-and-quotes-livewire",
   "display_name": "Accounting Estimates and Quotes Livewire",
   "description": "Livewire 4 estimate lifecycle monitor.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\EstimatesAndQuotesLivewire\\EstimatesAndQuotesLivewireServiceProvider",
   "requires": {

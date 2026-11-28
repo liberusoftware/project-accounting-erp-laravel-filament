@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Models\User;
 use Illuminate\Foundation\Auth\User as AuthUser;
 use Liberu\Foundation\UsersRoles\Database\Factories\UserFactory;
 use Liberu\Foundation\UsersRoles\DatabaseServiceProvider;
@@ -25,27 +26,27 @@ it('covers DatabaseServiceProvider, UsersRolesServiceProvider, UserFactory, HasU
         ->and($unverifiedAttrs['email_verified_at'])->toBeNull();
 
     // HasUserRoles + UserRoleLookup edge cases
-    $user = \App\Models\User::factory()->create();
+    $user = User::factory()->create();
     expect($user->authorizationIdentifier())->toBe($user->getKey())
         ->and($user->authorizationType())->toBe($user->getMorphClass())
         ->and($user->isSuperAdmin())->toBeFalse();
 
     $lookup = new UserRoleLookup();
-    $unsavedUser = new \App\Models\User();
+    $unsavedUser = new User();
     expect($lookup->hasRoleInAnyTeam($unsavedUser, 'admin'))->toBeFalse()
         ->and($lookup->hasRoleInAnyTeam($user, []))->toBeFalse()
         ->and($lookup->hasRoleInAnyTeam($user, 'nonexistent_role'))->toBeFalse();
 
     // UserPolicy delegates all 12 abilities to $authUser->can(...)
     $policy = new UserPolicy();
-    $grantingUser = new class extends AuthUser
+    $grantingUser = new class() extends AuthUser
     {
         public function can($abilities, $arguments = []): bool
         {
             return true;
         }
     };
-    $denyingUser = new class extends AuthUser
+    $denyingUser = new class() extends AuthUser
     {
         public function can($abilities, $arguments = []): bool
         {

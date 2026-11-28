@@ -3,7 +3,7 @@
   "name": "accounting-core",
   "display_name": "Accounting Core",
   "description": "Provider-neutral accounting foundation and lifecycle rules.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "category": "capability",
   "provider": "Liberu\\Accounting\\Core\\AccountingCoreServiceProvider",
   "requires": {

@@ -54,7 +54,7 @@ it('exercises readiness registry and readiness controller for ready and unavaila
     config()->set('application-core.release', 'v2026.1');
 
     $registry = new ReadinessRegistry();
-    $passingCheck = new class implements ReadinessCheck
+    $passingCheck = new class() implements ReadinessCheck
     {
         public function name(): string
         {
@@ -66,7 +66,7 @@ it('exercises readiness registry and readiness controller for ready and unavaila
             return true;
         }
     };
-    $failingCheck = new class implements ReadinessCheck
+    $failingCheck = new class() implements ReadinessCheck
     {
         public function name(): string
         {

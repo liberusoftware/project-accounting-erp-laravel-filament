@@ -14,8 +14,8 @@ use Illuminate\Auth\Access\Response;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
-use Liberu\Accounting\Erp\Models\Invoice;
 use Liberu\Accounting\CustomerPortalFilament\Resources\Invoices\Pages\ListPortalInvoices;
+use Liberu\Accounting\Erp\Models\Invoice;
 
 /**
  * The customer's own invoices — read-only. Every query is scoped to the logged-in

@@ -14,8 +14,6 @@ use Liberu\Accounting\BankReconciliation\Enums\ReconciliationStatus;
 use Liberu\Accounting\BankReconciliation\Events\ReconciliationEntryConfirmed;
 use Liberu\Accounting\BankReconciliation\Events\ReconciliationSignedOff;
 use Liberu\Accounting\BankReconciliation\Exceptions\InvalidReconciliation;
-use Liberu\Accounting\BankReconciliation\Models\ReconciliationEntry;
-use Liberu\Accounting\BankReconciliation\Models\ReconciliationSession;
 use Liberu\Accounting\BankReconciliation\Queries\ReconciliationSummaryQuery;
 use Liberu\Accounting\Erp\Models\User;
 

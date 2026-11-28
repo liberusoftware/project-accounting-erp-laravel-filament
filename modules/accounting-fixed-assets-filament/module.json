@@ -3,7 +3,7 @@
   "name": "accounting-fixed-assets-filament",
   "display_name": "Accounting Fixed Assets Filament",
   "description": "Filament 5 fixed-asset register and capitalization presentation.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\FixedAssetsFilament\\FixedAssetsFilamentServiceProvider",
   "requires": {

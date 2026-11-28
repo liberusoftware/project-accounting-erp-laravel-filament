@@ -3,7 +3,7 @@
   "name": "accounting-transfers-livewire",
   "display_name": "Accounting Transfers Livewire",
   "description": "Livewire 4 adapter for Accounting Transfers.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\TransfersLivewire\\TransfersLivewireServiceProvider",
   "requires": {

@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-branch-and-location-accounting",
   "description": "Accounting branches, locations, allocations and performance.",
   "type": "liberu-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\BranchLocationAccounting\\": "src/"

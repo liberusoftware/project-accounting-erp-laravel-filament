@@ -3,7 +3,7 @@
   "name": "accounting-cash-collection-assistant",
   "display_name": "Accounting Cash Collection Assistant",
   "description": "Invoice-risk prioritization, reminder timing, promise tracking, policy, approval, and outcome feedback.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\CashCollectionAssistant\\CashCollectionAssistantServiceProvider",
   "requires": {

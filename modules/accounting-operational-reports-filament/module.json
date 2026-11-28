@@ -3,7 +3,7 @@
   "name": "accounting-operational-reports-filament",
   "display_name": "Accounting Operational Reports Filament",
   "description": "Filament 5 report review adapter.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\OperationalReportsFilament\\OperationalReportsFilamentServiceProvider",
   "requires": {

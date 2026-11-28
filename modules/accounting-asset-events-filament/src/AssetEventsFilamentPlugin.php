@@ -22,7 +22,7 @@ final class AssetEventsFilamentPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->resources([Resources\AssetEventResource::class]);
+        $panel->resources([AssetEventResource::class]);
     }
 
     public function boot(Panel $panel): void {}

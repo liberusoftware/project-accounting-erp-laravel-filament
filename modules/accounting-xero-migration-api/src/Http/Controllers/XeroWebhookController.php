@@ -4,9 +4,9 @@ namespace Liberu\Accounting\XeroMigrationApi\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Liberu\Accounting\Erp\Jobs\SyncAccountingProviderConnectionJob;
 use Liberu\Accounting\Erp\Models\XeroConnection;
-use Illuminate\Routing\Controller;
 
 final class XeroWebhookController extends Controller
 {

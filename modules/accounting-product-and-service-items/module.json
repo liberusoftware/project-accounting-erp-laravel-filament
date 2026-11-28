@@ -3,7 +3,7 @@
   "name": "accounting-product-and-service-items",
   "display_name": "Accounting Product and Service Items",
   "description": "Items and services, codes, descriptions, accounts, tax defaults, units, costs, prices, and ecommerce references.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ProductAndServiceItems\\ProductAndServiceItemsServiceProvider",
   "requires": {

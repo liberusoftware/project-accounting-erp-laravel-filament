@@ -3,7 +3,7 @@
   "name": "accounting-audit-support",
   "display_name": "Accounting Audit Support",
   "description": "Audit requests, evidence, owners, and review status.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\AuditSupport\\AuditSupportServiceProvider",
   "requires": {

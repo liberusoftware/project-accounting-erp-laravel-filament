@@ -3,7 +3,7 @@
   "name": "accounting-carbon-accounting",
   "display_name": "Accounting Carbon Accounting",
   "description": "Activity data, emission factors, scopes, evidence, estimates, and export-ready carbon calculations.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\CarbonAccounting\\CarbonAccountingServiceProvider",
   "requires": {

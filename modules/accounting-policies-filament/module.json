@@ -3,7 +3,7 @@
   "name": "accounting-policies-filament",
   "display_name": "Accounting Policies Filament",
   "description": "Filament resource for effective-dated accounting policy rules.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PoliciesFilament\\AccountingPoliciesFilamentServiceProvider",
   "requires": {

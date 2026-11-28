@@ -3,7 +3,7 @@
   "name": "accounting-custom-report-builder-livewire",
   "display_name": "Accounting Custom Report Builder Livewire",
   "description": "Livewire 4 custom report surfaces.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CustomReportBuilderLivewire\\CustomReportBuilderLivewireServiceProvider",
   "requires": {

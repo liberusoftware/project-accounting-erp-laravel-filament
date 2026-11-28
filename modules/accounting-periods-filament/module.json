@@ -3,7 +3,7 @@
   "name": "accounting-periods-filament",
   "display_name": "Accounting Periods Filament",
   "description": "Filament resource for period visibility and lifecycle operations.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PeriodsFilament\\AccountingPeriodsFilamentServiceProvider",
   "requires": {

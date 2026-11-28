@@ -7,9 +7,9 @@ namespace Liberu\Accounting\BankAccountsApi\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
-use Liberu\Accounting\Erp\Models\Transaction;
 use Illuminate\Routing\Controller;
 use Liberu\Accounting\BankAccountsApi\Http\Resources\TransactionResource;
+use Liberu\Accounting\Erp\Models\Transaction;
 
 class TransactionController extends Controller
 {

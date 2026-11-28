@@ -3,7 +3,7 @@
   "name": "accounting-payment-reconciliation-livewire",
   "display_name": "Accounting Payment Reconciliation Livewire",
   "description": "Livewire 4 adapter for settlement and exception review.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PaymentReconciliationLivewire\\PaymentReconciliationLivewireServiceProvider",
   "requires": {

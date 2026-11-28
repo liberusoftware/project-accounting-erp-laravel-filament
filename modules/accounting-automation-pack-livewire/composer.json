@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-automation-pack-livewire",
   "description": "Accounting Automation Pack Livewire presentation module.",
   "type": "liberu-module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\AutomationPackLivewire\\": "src/"

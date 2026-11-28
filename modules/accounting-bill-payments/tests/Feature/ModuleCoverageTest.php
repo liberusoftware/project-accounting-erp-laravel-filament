@@ -14,7 +14,6 @@ use Liberu\Accounting\BillPayments\Enums\BillPaymentStatus;
 use Liberu\Accounting\BillPayments\Events\BillPaymentApproved;
 use Liberu\Accounting\BillPayments\Events\BillPaymentSubmitted;
 use Liberu\Accounting\BillPayments\Exceptions\InvalidBillPayment;
-use Liberu\Accounting\BillPayments\Models\BillPaymentProposal;
 use Liberu\Accounting\BillPayments\Queries\BillPaymentOptimizationQuery;
 use Liberu\Accounting\Erp\Models\User;
 use Liberu\Foundation\Integrations\Contracts\PaymentProviderAdapter;

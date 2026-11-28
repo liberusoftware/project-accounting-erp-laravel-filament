@@ -6,10 +6,10 @@ namespace Liberu\Accounting\QuickBooksOnlineMigrationApi\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Log;
 use Liberu\Accounting\Erp\Jobs\SyncAccountingProviderConnectionJob;
 use Liberu\Accounting\Erp\Models\QboConnection;
-use Illuminate\Routing\Controller;
 
 class QboWebhookController extends Controller
 {

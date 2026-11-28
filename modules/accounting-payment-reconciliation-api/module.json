@@ -3,7 +3,7 @@
   "name": "accounting-payment-reconciliation-api",
   "display_name": "Accounting Payment Reconciliation API",
   "description": "Authenticated HTTP adapter for payment reconciliation.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PaymentReconciliationApi\\PaymentReconciliationApiServiceProvider",
   "requires": {

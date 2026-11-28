@@ -7,6 +7,7 @@ namespace Liberu\Accounting\Wise\Http\Controllers;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
@@ -16,7 +17,6 @@ use Liberu\Accounting\Erp\Models\BankConnection;
 use Liberu\Accounting\Erp\Models\BankFeedTransaction;
 use Liberu\Accounting\Erp\Models\Transaction;
 use Liberu\Accounting\Erp\Services\WiseService;
-use Illuminate\Routing\Controller;
 
 class WiseController extends Controller
 {

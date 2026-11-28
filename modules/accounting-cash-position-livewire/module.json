@@ -3,7 +3,7 @@
   "name": "accounting-cash-position-livewire",
   "display_name": "Accounting Cash Position Livewire",
   "description": "Livewire adapter for cash position snapshots.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CashPositionLivewire\\CashPositionLivewireServiceProvider",
   "requires": {

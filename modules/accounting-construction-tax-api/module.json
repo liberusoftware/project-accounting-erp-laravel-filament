@@ -3,7 +3,7 @@
   "name": "accounting-construction-tax-api",
   "display_name": "Accounting Construction Tax API",
   "description": "HTTP adapter for construction tax workflows.",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ConstructionTaxApi\\ConstructionTaxApiServiceProvider",
   "requires": {

@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-cash-position-api",
   "description": "Accounting cash position API presentation module.",
   "type": "liberu-module",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\CashPositionApi\\": "src/"

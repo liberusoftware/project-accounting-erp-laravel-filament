@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Liberu\Accounting\SalesInvoicingApi\Http\Controllers\InvoiceController;
 use Liberu\Accounting\SalesInvoicingApi\Http\Controllers\SalesInvoicingController;
 
 Route::middleware(['auth:sanctum', 'throttle:60,1'])->prefix('api/v1/accounting/sales-invoicing')->group(function (): void {
@@ -14,14 +15,14 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->prefix('api/v1/accounting/
     Route::delete('/{invoice}', [SalesInvoicingController::class, 'destroy'])->middleware('ability:accounting.invoices.write');
 });
 
-\Illuminate\Support\Facades\Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
-    \Illuminate\Support\Facades\Route::apiResource('invoices', \Liberu\Accounting\SalesInvoicingApi\Http\Controllers\InvoiceController::class);
+Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
+    Route::apiResource('invoices', InvoiceController::class);
 
-    \Illuminate\Support\Facades\Route::prefix('v1')->group(function (): void {
-        \Illuminate\Support\Facades\Route::get('invoices', [\Liberu\Accounting\SalesInvoicingApi\Http\Controllers\InvoiceController::class, 'index'])->middleware('ability:invoices:read');
-        \Illuminate\Support\Facades\Route::get('invoices/{invoice}', [\Liberu\Accounting\SalesInvoicingApi\Http\Controllers\InvoiceController::class, 'show'])->middleware('ability:invoices:read');
-        \Illuminate\Support\Facades\Route::post('invoices', [\Liberu\Accounting\SalesInvoicingApi\Http\Controllers\InvoiceController::class, 'store'])->middleware('ability:invoices:write');
-        \Illuminate\Support\Facades\Route::put('invoices/{invoice}', [\Liberu\Accounting\SalesInvoicingApi\Http\Controllers\InvoiceController::class, 'update'])->middleware('ability:invoices:write');
-        \Illuminate\Support\Facades\Route::delete('invoices/{invoice}', [\Liberu\Accounting\SalesInvoicingApi\Http\Controllers\InvoiceController::class, 'destroy'])->middleware('ability:invoices:write');
+    Route::prefix('v1')->group(function (): void {
+        Route::get('invoices', [InvoiceController::class, 'index'])->middleware('ability:invoices:read');
+        Route::get('invoices/{invoice}', [InvoiceController::class, 'show'])->middleware('ability:invoices:read');
+        Route::post('invoices', [InvoiceController::class, 'store'])->middleware('ability:invoices:write');
+        Route::put('invoices/{invoice}', [InvoiceController::class, 'update'])->middleware('ability:invoices:write');
+        Route::delete('invoices/{invoice}', [InvoiceController::class, 'destroy'])->middleware('ability:invoices:write');
     });
 });

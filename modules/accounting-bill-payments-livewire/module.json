@@ -3,7 +3,7 @@
   "name": "accounting-bill-payments-livewire",
   "display_name": "Accounting Bill Payments Livewire",
   "description": "Livewire adapter for bill payments.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\BillPaymentsLivewire\\BillPaymentsLivewireServiceProvider",
   "requires": {

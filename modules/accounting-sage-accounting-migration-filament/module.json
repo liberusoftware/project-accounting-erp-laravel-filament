@@ -3,7 +3,7 @@
   "name": "accounting-sage-accounting-migration-filament",
   "display_name": "Accounting Sage Accounting Migration Filament",
   "description": "Filament presentation boundary for Sage Accounting migration.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\SageAccountingMigrationFilament\\SageAccountingMigrationFilamentServiceProvider",
   "requires": {

@@ -18,7 +18,7 @@
   "features": [
     "Inbox and matching"
   ],
-  "version": "1.1.0",
+  "version": "1.1.1",
   "provider": "Liberu\\Accounting\\ReceiptManagementFilament\\ReceiptManagementFilamentServiceProvider",
   "presentation": {
     "filament": {

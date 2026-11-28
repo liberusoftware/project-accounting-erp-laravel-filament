@@ -3,7 +3,7 @@
   "name": "accounting-xero-migration-livewire",
   "display_name": "Accounting Xero Migration Livewire",
   "description": "Livewire 4 adapter for Accounting Xero Migration.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\XeroMigrationLivewire\\XeroMigrationLivewireServiceProvider",
   "requires": {

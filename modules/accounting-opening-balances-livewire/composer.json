@@ -27,6 +27,6 @@
     "liberusoftware/module-accounting-opening-balances": "^1.0",
     "livewire/livewire": "^4.4.8"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT"
 }

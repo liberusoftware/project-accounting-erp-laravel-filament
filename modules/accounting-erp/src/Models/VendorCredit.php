@@ -90,13 +90,15 @@ class VendorCredit extends Model
             // Update amount_remaining
             $credit->amount_remaining = $credit->total_amount - $credit->amount_applied;
 
-            // Update status based on remaining amount
-            if ($credit->amount_remaining <= 0) {
-                $credit->status = 'applied';
-            } elseif ($credit->amount_applied > 0) {
-                $credit->status = 'partial';
-            } else {
-                $credit->status = 'open';
+            // Update status based on remaining amount (preserve void status)
+            if ($credit->status !== 'void') {
+                if ($credit->amount_remaining <= 0) {
+                    $credit->status = 'applied';
+                } elseif ($credit->amount_applied > 0) {
+                    $credit->status = 'partial';
+                } else {
+                    $credit->status = 'open';
+                }
             }
 
             if ($credit->isDirty(['amount_remaining', 'status'])) {

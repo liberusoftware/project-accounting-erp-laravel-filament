@@ -3,7 +3,7 @@
   "name": "accounting-project-billing-api",
   "display_name": "Accounting Project Billing API",
   "description": "HTTP API for project billing and invoice handoff.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ProjectBillingApi\\ProjectBillingApiServiceProvider",
   "requires": {

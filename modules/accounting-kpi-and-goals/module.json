@@ -3,7 +3,7 @@
   "name": "accounting-kpi-and-goals",
   "display_name": "Accounting KPI and Goals",
   "description": "Governed metrics, targets, owners, thresholds, periods, alerts, commentary and history.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\KpiAndGoals\\KpiAndGoalsServiceProvider",
   "requires": {

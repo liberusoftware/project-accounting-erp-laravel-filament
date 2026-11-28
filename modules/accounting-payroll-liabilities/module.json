@@ -3,7 +3,7 @@
   "name": "accounting-payroll-liabilities",
   "display_name": "Accounting Payroll Liabilities",
   "description": "Agency and payee balances, due dates, payments, allocations, exceptions, and reconciliation.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\PayrollLiabilities\\PayrollLiabilitiesServiceProvider",
   "requires": {

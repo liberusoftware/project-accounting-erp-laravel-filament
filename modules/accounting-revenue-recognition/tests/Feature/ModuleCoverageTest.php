@@ -230,12 +230,12 @@ it('recognizes due revenue for funded schedules, skips unfunded ones, handles fa
     RevenueScheduleEntry::updating(function (RevenueScheduleEntry $entry) use ($failingSchedule, &$shouldFail): void {
         if ($shouldFail && $entry->schedule_id === $failingSchedule->id) {
             $shouldFail = false;
-            throw new \RuntimeException('Ledger posting failed.');
+            throw new RuntimeException('Ledger posting failed.');
         }
     });
 
     expect(fn () => $recognize->handle($failingSchedule, '2026-05-31', 9))
-        ->toThrow(\RuntimeException::class, 'Ledger posting failed.');
+        ->toThrow(RuntimeException::class, 'Ledger posting failed.');
 
     $failedRun = RevenueRecognitionRun::where('team_id', 9)->latest('id')->first();
     expect($failedRun->status)->toBe(RecognitionRunStatus::Failed)

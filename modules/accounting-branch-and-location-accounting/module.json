@@ -3,7 +3,7 @@
   "name": "accounting-branch-and-location-accounting",
   "display_name": "Branch and Location Accounting",
   "description": "Tenant-scoped branches and locations with local tax, sequences, allocations, performance and statutory references.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\BranchLocationAccounting\\BranchLocationAccountingServiceProvider",
   "requires": {

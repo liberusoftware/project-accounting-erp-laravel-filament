@@ -13,7 +13,7 @@ it('covers SettingsServiceProvider, SiteSettings group, and ScopedSettings plain
 
     expect(SiteSettings::group())->toBe('site');
 
-    $plainDef = new class implements SettingDefinition
+    $plainDef = new class() implements SettingDefinition
     {
         public function key(): string
         {
@@ -31,7 +31,7 @@ it('covers SettingsServiceProvider, SiteSettings group, and ScopedSettings plain
         }
     };
 
-    $secretDef = new class implements SettingDefinition
+    $secretDef = new class() implements SettingDefinition
     {
         public function key(): string
         {

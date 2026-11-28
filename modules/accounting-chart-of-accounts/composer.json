@@ -9,14 +9,37 @@
     "illuminate/support": "^13.38.0",
     "liberusoftware/module-accounting-core": "^1.0"
   },
-  "autoload": { "psr-4": { "Liberu\\Accounting\\ChartOfAccounts\\": "src/" } },
-  "autoload-dev": { "psr-4": { "Liberu\\Accounting\\ChartOfAccounts\\Tests\\": "tests/" } },
-  "extra": {
-    "laravel": { "providers": ["Liberu\\Accounting\\ChartOfAccounts\\ChartOfAccountsServiceProvider"] },
-    "liberu": { "name": "accounting-chart-of-accounts" }
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\ChartOfAccounts\\": "src/"
+    }
   },
-  "version": "1.0.0",
-  "require-dev": { "liberusoftware/package-testbench": "^1.5", "pestphp/pest": "^5.3.3" },
-  "scripts": { "test": "pest" },
-  "config": { "allow-plugins": { "pestphp/pest-plugin": true } }
+  "autoload-dev": {
+    "psr-4": {
+      "Liberu\\Accounting\\ChartOfAccounts\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\ChartOfAccounts\\ChartOfAccountsServiceProvider"
+      ]
+    },
+    "liberu": {
+      "name": "accounting-chart-of-accounts"
+    }
+  },
+  "version": "1.0.1",
+  "require-dev": {
+    "liberusoftware/package-testbench": "^1.5",
+    "pestphp/pest": "^5.3.3"
+  },
+  "scripts": {
+    "test": "pest"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
 }

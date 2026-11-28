@@ -3,7 +3,7 @@
   "name": "accounting-copilot-livewire",
   "display_name": "Accounting Copilot Livewire",
   "description": "Livewire 4 Copilot request surface.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CopilotLivewire\\CopilotLivewireServiceProvider",
   "requires": {

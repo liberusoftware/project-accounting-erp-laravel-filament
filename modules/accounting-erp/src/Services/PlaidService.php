@@ -198,7 +198,8 @@ class PlaidService
                     // Only retry on 5xx errors or network issues, not 4xx
                     fn ($exception, $request): bool => $exception instanceof ConnectionException ||
                        ($exception instanceof RequestException &&
-                        $exception->response->status() >= 500))
+                        $exception->response->status() >= 500),
+                    false)
                 ->post("{$this->baseUrl}/transactions/sync", $payload);
 
             if ($response->successful()) {

@@ -3,7 +3,7 @@
   "name": "accounting-close-management-livewire",
   "display_name": "Accounting Close Management Livewire",
   "description": "Livewire adapter for close-cycle workflows.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CloseManagementLivewire\\CloseManagementLivewireServiceProvider",
   "requires": {

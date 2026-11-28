@@ -3,7 +3,7 @@
   "name": "accounting-purchase-requisitions-livewire",
   "display_name": "Accounting Purchase Requisitions Livewire",
   "description": "Livewire presentation for purchase requisitions.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PurchaseRequisitionsLivewire\\PurchaseRequisitionsLivewireServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-payroll-journals",
   "display_name": "Accounting Payroll Journals",
   "description": "Gross pay, taxes, deductions, benefits, employer costs, net pay, liabilities, allocation, posting, reversal, and corrections.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\PayrollJournals\\PayrollJournalsServiceProvider",
   "requires": {

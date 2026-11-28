@@ -2,7 +2,7 @@
   "name": "liberusoftware/module-accounting-review-filament",
   "description": "Accounting review Filament adapter",
   "type": "liberu-module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "autoload": {
     "psr-4": {
       "Liberu\\Accounting\\ReviewFilament\\": "src/"

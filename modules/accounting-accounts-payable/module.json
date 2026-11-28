@@ -1,6 +1,6 @@
 {
   "name": "accounting-accounts-payable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "display_name": "Accounts Payable",
   "description": "Supplier subledger, open items, payments, aging, holds, disputes, and control-account reconciliation.",
   "category": "capability",
@@ -12,7 +12,18 @@
       "liberusoftware/module-accounting-financial-master-data": "^1.0"
     }
   },
-  "capabilities": ["supplier-subledger", "aging", "payment-application", "control-reconciliation"],
-  "features": ["open-items", "payments", "disputes", "holds", "payment-terms"],
+  "capabilities": [
+    "supplier-subledger",
+    "aging",
+    "payment-application",
+    "control-reconciliation"
+  ],
+  "features": [
+    "open-items",
+    "payments",
+    "disputes",
+    "holds",
+    "payment-terms"
+  ],
   "default_enabled": true
 }

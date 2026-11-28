@@ -128,7 +128,7 @@ class CreditMemo extends Model implements Documentable
 
     public function calculateTotals(): void
     {
-        $this->subtotal_amount = $this->items->sum('amount');
+        $this->subtotal_amount = $this->items()->sum('amount');
         $this->calculateTax();
         $this->save();
     }

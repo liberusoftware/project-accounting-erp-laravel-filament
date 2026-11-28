@@ -3,7 +3,7 @@
   "name": "accounting-intercompany-api",
   "display_name": "Accounting Intercompany API",
   "description": "Versioned intercompany counterparty, transaction, settlement and reconciliation API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\IntercompanyApi\\IntercompanyApiServiceProvider",
   "requires": {

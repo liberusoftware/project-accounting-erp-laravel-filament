@@ -3,7 +3,7 @@
   "name": "accounting-management-reporting",
   "display_name": "Accounting Management Reporting",
   "description": "Report packs, narratives, charts, schedules, review, approval, delivery and archive.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ManagementReporting\\ManagementReportingServiceProvider",
   "requires": {

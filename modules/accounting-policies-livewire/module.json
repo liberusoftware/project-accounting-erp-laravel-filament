@@ -3,7 +3,7 @@
   "name": "accounting-policies-livewire",
   "display_name": "Accounting Policies Livewire",
   "description": "Interactive effective-dated policy rule management.",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PoliciesLivewire\\AccountingPoliciesLivewireServiceProvider",
   "requires": {

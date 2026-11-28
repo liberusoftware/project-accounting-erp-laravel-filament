@@ -3,7 +3,7 @@
   "name": "accounting-plaid",
   "display_name": "Accounting Plaid",
   "description": "Plaid provider adapter for bank feeds.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "category": "adapter",
   "provider": "Liberu\\Accounting\\Plaid\\PlaidServiceProvider",
   "requires": {

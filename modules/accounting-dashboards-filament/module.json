@@ -3,7 +3,7 @@
   "name": "accounting-dashboards-filament",
   "display_name": "Accounting Dashboards Filament",
   "description": "Filament 5 dashboard surfaces.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\DashboardsFilament\\DashboardsFilamentServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-asset-events",
   "display_name": "Accounting Asset Events",
   "description": "Immutable history for transfers, improvements, revaluations, impairments, disposals, and write-offs.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\AssetEvents\\AssetEventsServiceProvider",
   "requires": {

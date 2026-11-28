@@ -8,9 +8,9 @@ use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Routing\Controller;
 use Illuminate\Validation\Rule;
 use Liberu\Accounting\Erp\Models\Bill;
-use Illuminate\Routing\Controller;
 
 class BillController extends Controller
 {

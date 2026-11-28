@@ -3,7 +3,7 @@
   "name": "accounting-matching-intelligence-api",
   "display_name": "Accounting Matching Intelligence API",
   "description": "Versioned matching suggestions, decisions, feedback and thresholds API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MatchingIntelligenceApi\\MatchingIntelligenceApiServiceProvider",
   "requires": {

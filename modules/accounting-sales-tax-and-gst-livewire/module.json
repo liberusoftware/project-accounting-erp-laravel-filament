@@ -3,7 +3,7 @@
   "name": "accounting-sales-tax-and-gst-livewire",
   "display_name": "Accounting Sales Tax and GST Livewire",
   "description": "Livewire 4 adapter for Sales Tax and GST.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\SalesTaxAndGstLivewire\\SalesTaxAndGstLivewireServiceProvider",
   "requires": {

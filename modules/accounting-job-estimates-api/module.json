@@ -3,7 +3,7 @@
   "name": "accounting-job-estimates-api",
   "display_name": "Accounting Job Estimates API",
   "description": "Versioned HTTP API for job estimates and actual comparison.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\JobEstimatesApi\\JobEstimatesApiServiceProvider",
   "requires": {

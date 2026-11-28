@@ -3,7 +3,7 @@
   "name": "accounting-collections-api",
   "display_name": "Accounting Collections API",
   "description": "HTTP adapter for collections workflows.",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CollectionsApi\\CollectionsApiServiceProvider",
   "requires": {

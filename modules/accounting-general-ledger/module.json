@@ -3,7 +3,7 @@
   "name": "accounting-general-ledger",
   "display_name": "Accounting General Ledger",
   "description": "Journals and authoritative balanced postings.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "capability",
   "provider": "Liberu\\Accounting\\GeneralLedger\\GeneralLedgerServiceProvider",
   "requires": {

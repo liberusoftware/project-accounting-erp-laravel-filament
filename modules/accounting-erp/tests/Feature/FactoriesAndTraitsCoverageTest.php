@@ -9,25 +9,17 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Validation\Rules\Password;
 use Laravel\Jetstream\Features as JetstreamFeatures;
 use Liberu\Accounting\Erp\Actions\Fortify\PasswordValidationRules;
-use Liberu\Accounting\Erp\Database\Factories\AccountFactory;
 use Liberu\Accounting\Erp\Database\Factories\BankConnectionFactory;
-use Liberu\Accounting\Erp\Database\Factories\BankStatementFactory;
 use Liberu\Accounting\Erp\Database\Factories\BillFactory;
-use Liberu\Accounting\Erp\Database\Factories\BudgetFactory;
-use Liberu\Accounting\Erp\Database\Factories\CompanyFactory;
 use Liberu\Accounting\Erp\Database\Factories\ConnectedAccountFactory;
-use Liberu\Accounting\Erp\Database\Factories\CurrencyFactory;
 use Liberu\Accounting\Erp\Database\Factories\CustomerFactory;
 use Liberu\Accounting\Erp\Database\Factories\EstimateFactory;
 use Liberu\Accounting\Erp\Database\Factories\ExchangeRateFactory;
 use Liberu\Accounting\Erp\Database\Factories\InventoryItemFactory;
 use Liberu\Accounting\Erp\Database\Factories\InvoiceFactory;
-use Liberu\Accounting\Erp\Database\Factories\JournalEntryFactory;
 use Liberu\Accounting\Erp\Database\Factories\MenuFactory;
 use Liberu\Accounting\Erp\Database\Factories\ProjectFactory;
-use Liberu\Accounting\Erp\Database\Factories\ReconciliationRuleFactory;
 use Liberu\Accounting\Erp\Database\Factories\TaxRateFactory;
-use Liberu\Accounting\Erp\Database\Factories\TransactionFactory;
 use Liberu\Accounting\Erp\Database\Factories\UserFactory;
 use Liberu\Accounting\Erp\Database\Factories\VendorFactory;
 use Liberu\Accounting\Erp\Models\Account;
@@ -92,30 +84,30 @@ it('exercises every accounting-erp factory definition and state method', functio
     expect(ConnectedAccount::where('user_id', $userWithConnected->id)->where('provider', 'github')->exists())->toBeTrue();
 
     // All remaining 20 factories and their state methods
-    expect(AccountFactory::new()->make())->toBeInstanceOf(Account::class)
+    expect(Account::factory()->make())->toBeInstanceOf(Account::class)
         ->and(BankConnectionFactory::new()->make())->toBeInstanceOf(BankConnection::class)
         ->and(BankConnectionFactory::new()->active()->make()->status)->toBe('active')
         ->and(BankConnectionFactory::new()->disconnected()->make()->status)->toBe('disconnected')
         ->and(BankConnectionFactory::new()->withCursor()->make()->plaid_cursor)->toStartWith('cursor-')
-        ->and(BankStatementFactory::new()->make())->toBeInstanceOf(BankStatement::class)
+        ->and(BankStatement::factory()->make())->toBeInstanceOf(BankStatement::class)
         ->and(BillFactory::new()->make())->toBeInstanceOf(Bill::class)
-        ->and(BudgetFactory::new()->make())->toBeInstanceOf(Budget::class)
-        ->and(CompanyFactory::new()->make())->toBeInstanceOf(Company::class)
+        ->and(Budget::factory()->make())->toBeInstanceOf(Budget::class)
+        ->and(Company::factory()->make())->toBeInstanceOf(Company::class)
         ->and(ConnectedAccountFactory::new()->make())->toBeInstanceOf(ConnectedAccount::class)
-        ->and(CurrencyFactory::new()->make())->toBeInstanceOf(Currency::class)
-        ->and(CurrencyFactory::new()->asDefault()->make()->is_default)->toBeTrue()
+        ->and(Currency::factory()->make())->toBeInstanceOf(Currency::class)
+        ->and(Currency::factory()->asDefault()->make()->is_default)->toBeTrue()
         ->and(CustomerFactory::new()->make())->toBeInstanceOf(Customer::class)
         ->and(EstimateFactory::new()->make())->toBeInstanceOf(Estimate::class)
         ->and(ExchangeRateFactory::new()->make())->toBeInstanceOf(ExchangeRate::class)
         ->and(InventoryItemFactory::new()->make())->toBeInstanceOf(InventoryItem::class)
         ->and(InvoiceFactory::new()->make())->toBeInstanceOf(Invoice::class)
-        ->and(JournalEntryFactory::new()->make())->toBeInstanceOf(JournalEntry::class)
-        ->and(JournalEntryFactory::new()->posted()->make()->is_posted)->toBeTrue()
+        ->and(JournalEntry::factory()->make())->toBeInstanceOf(JournalEntry::class)
+        ->and(JournalEntry::factory()->posted()->make()->is_posted)->toBeTrue()
         ->and(MenuFactory::new()->make())->toBeInstanceOf(Menu::class)
         ->and(ProjectFactory::new()->make())->toBeInstanceOf(Project::class)
-        ->and(ReconciliationRuleFactory::new()->make())->toBeInstanceOf(ReconciliationRule::class)
+        ->and(ReconciliationRule::factory()->make())->toBeInstanceOf(ReconciliationRule::class)
         ->and(TaxRateFactory::new()->make())->toBeInstanceOf(TaxRate::class)
-        ->and(TransactionFactory::new()->make())->toBeInstanceOf(Transaction::class)
+        ->and(Transaction::factory()->make())->toBeInstanceOf(Transaction::class)
         ->and(VendorFactory::new()->make())->toBeInstanceOf(Vendor::class);
 });
 

@@ -3,7 +3,7 @@
   "name": "accounting-payroll-integration-api",
   "display_name": "Accounting Payroll Integration API",
   "description": "HTTP API for provider-neutral payroll imports and reconciliation.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PayrollIntegrationApi\\PayrollIntegrationApiServiceProvider",
   "requires": {

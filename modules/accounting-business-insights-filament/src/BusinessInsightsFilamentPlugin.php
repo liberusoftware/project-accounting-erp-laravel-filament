@@ -22,7 +22,7 @@ final class BusinessInsightsFilamentPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->resources([Resources\InsightSnapshotResource::class]);
+        $panel->resources([InsightSnapshotResource::class]);
     }
 
     public function boot(Panel $panel): void {}

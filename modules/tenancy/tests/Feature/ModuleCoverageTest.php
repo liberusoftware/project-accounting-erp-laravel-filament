@@ -36,16 +36,16 @@ it('covers TenancyServiceProvider, TenantContext, middleware, listeners, jobs, a
     // TenantContext::forUser with null, model without currentTeam, and model with currentTeam
     expect(TenantContext::forUser(null))->toBeNull();
 
-    $plainUser = new class extends Authenticatable {};
+    $plainUser = new class() extends Authenticatable {};
     expect(TenantContext::forUser($plainUser))->toBeNull();
 
-    $teamModel = new class extends Model
+    $teamModel = new class() extends Model
     {
         protected $guarded = [];
     };
     $teamModel->setAttribute('id', 55);
 
-    $teamUser = new class extends Authenticatable
+    $teamUser = new class() extends Authenticatable
     {
         public function currentTeam(): mixed
         {
@@ -84,7 +84,7 @@ it('covers TenancyServiceProvider, TenantContext, middleware, listeners, jobs, a
 
     // TenantAware + RestoreTenantContext
     TenantContext::set(88);
-    $job = new class
+    $job = new class()
     {
         use TenantAware;
 
@@ -115,7 +115,7 @@ it('covers TenancyServiceProvider, TenantContext, middleware, listeners, jobs, a
     });
 
     try {
-        $itemClass = new class extends Model
+        $itemClass = new class() extends Model
         {
             use IsTenantModel;
 

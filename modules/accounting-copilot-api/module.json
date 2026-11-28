@@ -3,7 +3,7 @@
   "name": "accounting-copilot-api",
   "display_name": "Accounting Copilot API",
   "description": "Tenant-scoped, permission-bounded Copilot API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CopilotApi\\CopilotApiServiceProvider",
   "requires": {

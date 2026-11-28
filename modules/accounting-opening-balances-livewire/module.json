@@ -3,7 +3,7 @@
   "name": "accounting-opening-balances-livewire",
   "display_name": "Accounting Opening Balances Livewire",
   "description": "Livewire 4 adapter for migration review.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\OpeningBalancesLivewire\\OpeningBalancesLivewireServiceProvider",
   "requires": {

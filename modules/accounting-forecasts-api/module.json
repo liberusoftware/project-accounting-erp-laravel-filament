@@ -3,7 +3,7 @@
   "name": "accounting-forecasts-api",
   "display_name": "Accounting Forecasts API",
   "description": "Versioned forecast, actual replacement, approval and variance API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ForecastsApi\\ForecastsApiServiceProvider",
   "requires": {

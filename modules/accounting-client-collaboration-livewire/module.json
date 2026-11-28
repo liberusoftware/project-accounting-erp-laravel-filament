@@ -3,7 +3,7 @@
   "name": "accounting-client-collaboration-livewire",
   "display_name": "Accounting Client Collaboration Livewire",
   "description": "Livewire adapter for client collaboration workflows.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ClientCollaborationLivewire\\ClientCollaborationLivewireServiceProvider",
   "requires": {

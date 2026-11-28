@@ -22,7 +22,7 @@ final class AuditSupportFilamentPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->resources([Resources\AuditRequestResource::class]);
+        $panel->resources([AuditRequestResource::class]);
     }
 
     public function boot(Panel $panel): void {}

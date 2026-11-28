@@ -3,7 +3,7 @@
   "name": "accounting-construction-tax",
   "display_name": "Accounting Construction Tax",
   "description": "CIS subcontractor verification, deduction rates, statements, monthly returns, corrections, and filing adapters.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ConstructionTax\\ConstructionTaxServiceProvider",
   "requires": {

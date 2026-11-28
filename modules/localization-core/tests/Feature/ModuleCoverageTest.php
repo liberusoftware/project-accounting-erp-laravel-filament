@@ -71,7 +71,7 @@ it('sets locale in session when SetLocale middleware receives a supported locale
 it('registers, retrieves, lists, and guards against duplicate or unknown providers in TranslationRegistry', function (): void {
     $registry = new TranslationRegistry();
 
-    $provider = new class implements TranslationProvider
+    $provider = new class() implements TranslationProvider
     {
         public function name(): string
         {

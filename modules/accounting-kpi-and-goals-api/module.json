@@ -3,7 +3,7 @@
   "name": "accounting-kpi-and-goals-api",
   "display_name": "Accounting KPI and Goals API",
   "description": "Versioned metrics, goals, measurements and commentary API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\KpiAndGoalsApi\\KpiAndGoalsApiServiceProvider",
   "requires": {

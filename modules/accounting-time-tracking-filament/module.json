@@ -3,7 +3,7 @@
   "name": "accounting-time-tracking-filament",
   "display_name": "Accounting Time Tracking Filament",
   "description": "Filament 5 adapter for Accounting Time Tracking.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\TimeTrackingFilament\\TimeTrackingFilamentServiceProvider",
   "requires": {

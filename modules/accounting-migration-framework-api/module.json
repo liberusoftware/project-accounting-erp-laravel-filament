@@ -3,7 +3,7 @@
   "name": "accounting-migration-framework-api",
   "display_name": "Accounting Migration Framework API",
   "description": "Versioned migration source, batch and reconciliation API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MigrationFrameworkApi\\MigrationFrameworkApiServiceProvider",
   "requires": {

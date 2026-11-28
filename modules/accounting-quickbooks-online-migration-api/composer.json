@@ -1,34 +1,34 @@
 {
-    "type": "liberu-module",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Liberu\\Accounting\\QuickBooksOnlineMigrationApi\\QuickBooksOnlineMigrationApiServiceProvider"
-            ]
-        },
-        "liberu": {
-            "name": "accounting-quickbooks-online-migration-api"
-        }
+  "type": "liberu-module",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Liberu\\Accounting\\QuickBooksOnlineMigrationApi\\QuickBooksOnlineMigrationApiServiceProvider"
+      ]
     },
-    "autoload": {
-        "psr-4": {
-            "Liberu\\Accounting\\QuickBooksOnlineMigrationApi\\": "src/"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
-    },
-    "name": "liberusoftware/module-accounting-quickbooks-online-migration-api",
-    "description": "QuickBooks Online migration API adapter.",
-    "require": {
-        "illuminate/http": "^13.38.0",
-        "illuminate/routing": "^13.38.0",
-        "liberusoftware/module-accounting-erp": "^1.0",
-        "liberusoftware/module-accounting-quickbooks-online-migration": "^1.0",
-        "php": "^8.5"
-    },
-    "version": "1.0.1",
-    "license": "MIT"
+    "liberu": {
+      "name": "accounting-quickbooks-online-migration-api"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Liberu\\Accounting\\QuickBooksOnlineMigrationApi\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "name": "liberusoftware/module-accounting-quickbooks-online-migration-api",
+  "description": "QuickBooks Online migration API adapter.",
+  "require": {
+    "illuminate/http": "^13.38.0",
+    "illuminate/routing": "^13.38.0",
+    "liberusoftware/module-accounting-erp": "^1.0",
+    "liberusoftware/module-accounting-quickbooks-online-migration": "^1.0",
+    "php": "^8.5"
+  },
+  "version": "1.0.3",
+  "license": "MIT"
 }

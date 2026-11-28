@@ -3,7 +3,7 @@
   "name": "accounting-recurring-transactions",
   "display_name": "Accounting Recurring Transactions",
   "description": "Recurring transaction templates, schedules, rules, approval, generation, exceptions, expiry, and history.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\RecurringTransactions\\RecurringTransactionsServiceProvider",
   "requires": {

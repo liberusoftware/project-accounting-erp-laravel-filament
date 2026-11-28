@@ -56,7 +56,7 @@ it('creates new users under open policy and rejects closed or uninvited registra
     Event::fake([IdentityEvent::class]);
 
     $originalUserModel = config('auth.providers.users.model');
-    $userModel = new class extends User
+    $userModel = new class() extends User
     {
         protected $table = 'users';
 
@@ -113,7 +113,7 @@ it('creates new users under open policy and rejects closed or uninvited registra
 it('resets and updates passwords and updates profile information for standard and verifiable users', function (): void {
     Event::fake([IdentityEvent::class]);
 
-    $user = new class extends User
+    $user = new class() extends User
     {
         protected $table = 'users';
 
@@ -148,7 +148,7 @@ it('resets and updates passwords and updates profile information for standard an
     ]);
     expect($user->fresh()->name)->toBe('Rear Admiral Grace');
 
-    $verifiable = new class extends User implements MustVerifyEmail
+    $verifiable = new class() extends User implements MustVerifyEmail
     {
         protected $table = 'users';
 

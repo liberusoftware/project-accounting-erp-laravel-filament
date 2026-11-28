@@ -3,7 +3,7 @@
   "name": "accounting-cash-flow-forecasting-api",
   "display_name": "Accounting Cash-Flow Forecasting API",
   "description": "HTTP adapter for cash-flow forecasting.",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CashFlowForecastingApi\\CashFlowForecastingApiServiceProvider",
   "requires": {

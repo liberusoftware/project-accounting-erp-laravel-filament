@@ -3,7 +3,7 @@
   "name": "accounting-withholding-tax-filament",
   "display_name": "Accounting Withholding Tax Filament",
   "description": "Filament 5 withholding tax workflows.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\WithholdingTaxFilament\\WithholdingTaxFilamentServiceProvider",
   "requires": {

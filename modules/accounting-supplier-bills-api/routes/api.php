@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+use Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController;
 use Liberu\Accounting\SupplierBillsApi\Http\Controllers\SupplierBillController;
 
 Route::prefix('api/v1/accounting/supplier-bills')->middleware(['auth:sanctum', 'throttle:60,1'])->group(function (): void {
@@ -25,14 +26,14 @@ Route::prefix('api/v1/accounting/supplier-bills')->middleware(['auth:sanctum', '
     });
 });
 
-\Illuminate\Support\Facades\Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
-    \Illuminate\Support\Facades\Route::apiResource('bills', \Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class);
+Route::middleware(['api', 'auth:sanctum', 'throttle:60,1'])->prefix('api')->group(function (): void {
+    Route::apiResource('bills', BillController::class);
 
-    \Illuminate\Support\Facades\Route::prefix('v1')->group(function (): void {
-        \Illuminate\Support\Facades\Route::get('bills', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'index'])->middleware('ability:bills:read');
-        \Illuminate\Support\Facades\Route::get('bills/{bill}', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'show'])->middleware('ability:bills:read');
-        \Illuminate\Support\Facades\Route::post('bills', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'store'])->middleware('ability:bills:write');
-        \Illuminate\Support\Facades\Route::put('bills/{bill}', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'update'])->middleware('ability:bills:write');
-        \Illuminate\Support\Facades\Route::delete('bills/{bill}', [\Liberu\Accounting\SupplierBillsApi\Http\Controllers\BillController::class, 'destroy'])->middleware('ability:bills:write');
+    Route::prefix('v1')->group(function (): void {
+        Route::get('bills', [BillController::class, 'index'])->middleware('ability:bills:read');
+        Route::get('bills/{bill}', [BillController::class, 'show'])->middleware('ability:bills:read');
+        Route::post('bills', [BillController::class, 'store'])->middleware('ability:bills:write');
+        Route::put('bills/{bill}', [BillController::class, 'update'])->middleware('ability:bills:write');
+        Route::delete('bills/{bill}', [BillController::class, 'destroy'])->middleware('ability:bills:write');
     });
 });

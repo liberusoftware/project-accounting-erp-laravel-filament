@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Liberu\Accounting\BranchLocationAccounting\Actions\AllocateBranchValue;
 use Liberu\Accounting\BranchLocationAccounting\Actions\CreateBranch;
 use Liberu\Accounting\BranchLocationAccounting\BranchLocationAccountingServiceProvider;
-use Liberu\Accounting\BranchLocationAccounting\Models\Branch;
 use Liberu\Accounting\BranchLocationAccounting\Queries\BranchQuery;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 

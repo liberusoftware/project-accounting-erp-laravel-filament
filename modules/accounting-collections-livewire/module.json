@@ -3,7 +3,7 @@
   "name": "accounting-collections-livewire",
   "display_name": "Accounting Collections Livewire",
   "description": "Livewire adapter for collections workflows.",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CollectionsLivewire\\CollectionsLivewireServiceProvider",
   "requires": {

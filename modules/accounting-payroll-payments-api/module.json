@@ -3,7 +3,7 @@
   "name": "accounting-payroll-payments-api",
   "display_name": "Accounting Payroll Payments API",
   "description": "HTTP API for payroll payment batches and transitions.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PayrollPaymentsApi\\PayrollPaymentsApiServiceProvider",
   "requires": {

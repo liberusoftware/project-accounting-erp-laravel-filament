@@ -25,7 +25,7 @@ it('covers SchedulerQueuesServiceProvider, JobPolicy, TenantAware trait, and Res
 
     TenantContext::set(42);
 
-    $job = new class
+    $job = new class()
     {
         use TenantAware;
 
@@ -37,7 +37,7 @@ it('covers SchedulerQueuesServiceProvider, JobPolicy, TenantAware trait, and Res
 
     expect($job->tenantId)->toBe(42)
         ->and($job->middleware())->toHaveCount(1)
-        ->and($job->middleware()[0])->toBeInstanceOf(\Liberu\Foundation\Tenancy\Jobs\Middleware\RestoreTenantContext::class);
+        ->and($job->middleware()[0])->toBeInstanceOf(Liberu\Foundation\Tenancy\Jobs\Middleware\RestoreTenantContext::class);
 
     TenantContext::clear();
     expect(TenantContext::currentId())->toBeNull();

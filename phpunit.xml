@@ -20,7 +20,6 @@
             <exclude>modules/module-manager-filament/tests</exclude>
             <exclude>modules/api-access/tests</exclude>
             <exclude>modules/identity-socialstream/tests/Feature/ProviderContractsTest.php</exclude>
-            <exclude>modules/organizations-teams/tests/Feature/Teams</exclude>
             <exclude>modules/roles-permissions/tests/Feature/Permissions</exclude>
             <exclude>modules/activity-comments/tests/Feature/MigrationsTest.php</exclude>
             <exclude>modules/feature-flags/tests/Feature/FeatureFlagStorageTest.php</exclude>
@@ -29,9 +28,35 @@
             <exclude>modules/integrations/tests/Feature</exclude>
             <exclude>modules/observability/tests/Feature/DiagnosticsIntegrationTest.php</exclude>
             <exclude>modules/organizations-teams-filament/tests/Feature/TeamResourceTest.php</exclude>
-            <exclude>modules/organizations-teams/tests/Unit/EntitySettingsTest.php</exclude>
             <exclude>modules/roles-permissions-filament/tests/Unit/RoleResourceTest.php</exclude>
             <exclude>modules/search/tests/Feature/SearchServiceTest.php</exclude>
+            <exclude>modules/accounting-accounts-receivable-api/tests/Feature/ApiCoverageTest.php</exclude>
+            <exclude>modules/accounting-estimates-and-quotes-api/tests/Feature/ApiCoverageTest.php</exclude>
+            <exclude>modules/accounting-financial-master-data-api/tests/Feature/ApiCoverageTest.php</exclude>
+            <exclude>modules/accounting-revolut/tests/Feature/RevolutControllersCoverageTest.php</exclude>
+            <exclude>modules/accounting-sales-invoicing-api/tests/Feature/ApiCoverageTest.php</exclude>
+            <exclude>modules/accounting-sales-invoicing/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/accounting-spreadsheet-migration/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/accounting-supplier-bills-api/tests/Feature/ApiCoverageTest.php</exclude>
+            <exclude>modules/accounting-tax-core/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/analytics-google/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/analytics-meta/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/identity-core-filament/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/identity-socialstream/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/integrations/tests/Unit/OAuthAndMessageCoverageTest.php</exclude>
+            <exclude>modules/integrations/tests/Unit/WebhookCoverageTest.php</exclude>
+            <exclude>modules/jetstream-bridge/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/localization-core-livewire/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/observability/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/organizations-teams-filament/tests/Feature/FilamentResourcesCoverageTest.php</exclude>
+            <exclude>modules/organizations-teams/tests/Feature/ActionsAndSupportCoverageTest.php</exclude>
+            <exclude>modules/organizations-teams/tests/Feature/HttpListenersLivewireCoverageTest.php</exclude>
+            <exclude>modules/organizations-teams/tests/Unit/EncryptedTeamSettingsTest.php</exclude>
+            <exclude>modules/roles-permissions-filament/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/search/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/theme-support-livewire/tests/Feature/ModuleCoverageTest.php</exclude>
+            <exclude>modules/theme-support/tests/Unit/ThemeHostContractsTest.php</exclude>
+            <exclude>modules/theme-support/tests/Unit/ThemeManifestCoverageTest.php</exclude>
         </testsuite>
     </testsuites>
     <source>

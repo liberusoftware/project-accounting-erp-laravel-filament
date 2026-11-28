@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Carbon\CarbonImmutable;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Liberu\Accounting\AccountsReceivable\AccountsReceivableServiceProvider;
@@ -28,7 +29,6 @@ use Liberu\Accounting\AccountsReceivable\Models\ReceiptApplication;
 use Liberu\Accounting\AccountsReceivable\Models\ReceivableAccount;
 use Liberu\Accounting\AccountsReceivable\Models\ReceivableDispute;
 use Liberu\Accounting\AccountsReceivable\Models\ReceivableOpenItem;
-use Liberu\Accounting\AccountsReceivable\Models\ReceivableReceipt;
 use Liberu\Accounting\AccountsReceivable\Queries\AgingQuery;
 use Liberu\Accounting\AccountsReceivable\Queries\ControlAccountReconciliationQuery;
 use Liberu\Accounting\AccountsReceivable\Queries\CustomerSubledgerQuery;
@@ -314,8 +314,8 @@ it('boots the service provider and covers enums, exception, events, listener, mo
     ]);
     $statement = app(StatementQuery::class)->handle(
         $customer->id,
-        Carbon\CarbonImmutable::parse('2026-02-01'),
-        Carbon\CarbonImmutable::parse('2026-02-28')
+        CarbonImmutable::parse('2026-02-01'),
+        CarbonImmutable::parse('2026-02-28')
     );
     expect($statement['opening_balance'])->toBe(100.0)
         ->and($statement['charges'])->toBe(150.0)
@@ -325,7 +325,7 @@ it('boots the service provider and covers enums, exception, events, listener, mo
         ->and($statement['receipts'])->toHaveCount(0);
 
     // AgingQuery across all buckets for customer2
-    $asOf = Carbon\CarbonImmutable::parse('2026-06-01');
+    $asOf = CarbonImmutable::parse('2026-06-01');
     $createOpenItem->handle([
         'party_id' => $customer2->id,
         'reference' => 'AR-CURR-NULL',

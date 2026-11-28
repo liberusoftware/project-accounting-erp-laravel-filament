@@ -3,7 +3,7 @@
   "name": "accounting-mileage-api",
   "display_name": "Accounting Mileage API",
   "description": "Versioned HTTP API for accounting mileage.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MileageApi\\MileageApiServiceProvider",
   "requires": {

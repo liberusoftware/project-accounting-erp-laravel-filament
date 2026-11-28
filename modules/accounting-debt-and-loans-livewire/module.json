@@ -3,7 +3,7 @@
   "name": "accounting-debt-and-loans-livewire",
   "display_name": "Accounting Debt and Loans Livewire",
   "description": "Livewire 4 surfaces for debt position.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\DebtAndLoansLivewire\\DebtAndLoansLivewireServiceProvider",
   "requires": {

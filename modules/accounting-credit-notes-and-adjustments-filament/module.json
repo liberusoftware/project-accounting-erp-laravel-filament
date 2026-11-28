@@ -3,7 +3,7 @@
   "name": "accounting-credit-notes-and-adjustments-filament",
   "display_name": "Accounting Credit Notes and Adjustments Filament",
   "description": "Filament 5 credit note surfaces.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CreditNotesAndAdjustmentsFilament\\CreditNotesAndAdjustmentsFilamentServiceProvider",
   "requires": {

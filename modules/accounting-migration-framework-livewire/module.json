@@ -3,7 +3,7 @@
   "name": "accounting-migration-framework-livewire",
   "display_name": "Accounting Migration Framework Livewire",
   "description": "Livewire 4 migration batch monitor.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\MigrationFrameworkLivewire\\MigrationFrameworkLivewireServiceProvider",
   "requires": {

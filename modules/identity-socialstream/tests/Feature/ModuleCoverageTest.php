@@ -54,7 +54,7 @@ it('boots socialstream service provider and covers ConnectedAccount model and po
         ->and($serialized)->not->toHaveKey('secret')
         ->and($serialized)->not->toHaveKey('refresh_token');
 
-    $owner = new class implements ConnectedAccountOwner
+    $owner = new class() implements ConnectedAccountOwner
     {
         public bool $owns = true;
 
@@ -102,7 +102,7 @@ it('covers CreateConnectedAccount, UpdateConnectedAccount, CreateUserFromProvide
         ->and($account->expires_at)->not->toBeNull();
 
     // UpdateConnectedAccount::update with authorized owner
-    $owner = new class implements ConnectedAccountOwner
+    $owner = new class() implements ConnectedAccountOwner
     {
         public function ownsConnectedAccount($account): bool
         {
@@ -239,7 +239,7 @@ it('covers Telegram verification, TelegramAuthController, SpaAwareOAuthResponse,
     expect($spa->toResponse($req))->toBe($defaultResp);
 
     session(['socialstream.spa_redirect' => true]);
-    $req->setUserResolver(fn () => new class
+    $req->setUserResolver(fn () => new class()
     {
         public int $id = 5;
 

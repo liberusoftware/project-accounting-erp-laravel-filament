@@ -3,7 +3,7 @@
   "name": "accounting-accounts-receivable-livewire",
   "display_name": "Accounting Accounts Receivable Livewire",
   "description": "Livewire 4 presentation for customer balances and receivable workflows.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\AccountsReceivableLivewire\\AccountsReceivableLivewireServiceProvider",
   "requires": {

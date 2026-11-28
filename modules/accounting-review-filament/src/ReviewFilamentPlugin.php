@@ -22,7 +22,7 @@ final class ReviewFilamentPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->resources([Resources\ReviewItemResource::class]);
+        $panel->resources([ReviewItemResource::class]);
     }
 
     public function boot(Panel $panel): void {}

@@ -3,7 +3,7 @@
   "name": "accounting-payroll-journals-api",
   "display_name": "Accounting Payroll Journals API",
   "description": "HTTP API for payroll journals and posting workflows.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\PayrollJournalsApi\\PayrollJournalsApiServiceProvider",
   "requires": {

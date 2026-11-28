@@ -60,13 +60,13 @@ it('handles model audit listener across all branches and ActivityLogEntry casts 
 
     // Non-model and non-genealogy model are ignored
     $listener->handle('eloquent.created: stdClass', [new stdClass()]);
-    $otherModel = new class extends Model
+    $otherModel = new class() extends Model
     {
         protected $table = 'users';
     };
     $listener->handle('eloquent.created: User', [$otherModel]);
 
-    $genealogy = new class extends Model
+    $genealogy = new class() extends Model
     {
         protected $table = 'genealogy_people';
 
@@ -88,7 +88,7 @@ it('handles model audit listener across all branches and ActivityLogEntry casts 
     // Rebind and test created, updated, deleted with authenticated actor and request headers
     app()->instance(AuditRecorder::class, $originalBinding);
 
-    $actor = new class extends Authenticatable
+    $actor = new class() extends Authenticatable
     {
         protected $guarded = [];
     };

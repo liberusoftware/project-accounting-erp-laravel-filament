@@ -3,7 +3,7 @@
   "name": "accounting-automation-pack-livewire",
   "display_name": "Accounting Automation Pack Livewire",
   "description": "Livewire 4 automation recipe surface.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\AutomationPackLivewire\\AutomationPackLivewireServiceProvider",
   "requires": {

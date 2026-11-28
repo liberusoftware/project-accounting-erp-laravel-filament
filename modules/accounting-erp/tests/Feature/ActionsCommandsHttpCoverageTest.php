@@ -8,18 +8,15 @@ use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Route as RoutingRoute;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Validation\ValidationException;
-use Laravel\Jetstream\Contracts\DeletesTeams;
 use Laravel\Jetstream\Events\AddingTeam;
 use Laravel\Jetstream\Events\AddingTeamMember;
 use Laravel\Jetstream\Events\InvitingTeamMember;
@@ -80,7 +77,6 @@ use Liberu\Accounting\Erp\Services\RevenueRecognitionService;
 use Liberu\Accounting\Erp\Services\SubscriptionBillingService;
 use Liberu\Accounting\Erp\Services\TeamManagementService;
 use Liberu\Accounting\Erp\Services\TenantProvisioningService;
-use Liberu\Foundation\ModuleManager\ModuleRegistry;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 
@@ -345,7 +341,7 @@ test('Jetstream team actions cover create, update, add, invite, remove, delete t
     Event::assertDispatched(TeamMemberAdded::class);
 
     // Duplicate AddTeamMember fails validation
-    expect(fn () => $addAction->add($owner, $team, $member->email, 'editor'))
+    expect(fn () => $addAction->add($owner, $team->fresh(), $member->email, 'editor'))
         ->toThrow(ValidationException::class);
 
     // InviteTeamMember
@@ -359,7 +355,7 @@ test('Jetstream team actions cover create, update, add, invite, remove, delete t
         ->toThrow(ValidationException::class);
 
     // Inviting existing member fails validation
-    expect(fn () => $inviteAction->invite($owner, $team, $member->email, 'editor'))
+    expect(fn () => $inviteAction->invite($owner, $team->fresh(), $member->email, 'editor'))
         ->toThrow(ValidationException::class);
 
     // RemoveTeamMember: unauthorized actor throws AuthorizationException
@@ -414,7 +410,12 @@ test('SaveBillOfMaterials enforces authorization, team scoping, cycle detection,
     $action = new SaveBillOfMaterials(new BillOfMaterialsPolicy());
 
     // Module disabled -> AuthorizationException
-    config(['modules.disabled' => ['accounting-inventory-accounting']]);
+    config(['modules.disabled' => [
+        'accounting-inventory-accounting',
+        'accounting-inventory-accounting-filament',
+        'accounting-inventory-accounting-livewire',
+        'accounting-inventory-accounting-api',
+    ]]);
     expect(fn () => $action->handle($user, $itemA, [
         ['component_item_id' => $itemB->id, 'quantity' => 2],
     ]))->toThrow(AuthorizationException::class);
@@ -727,6 +728,7 @@ test('ProcessSubscriptions, ProvisionTenantChart, PruneDocuments, and RecognizeR
 
     // RecognizeRevenue: one succeeds, one throws
     $invoice = Invoice::factory()->create(['team_id' => $team->id]);
+    $invoice2 = Invoice::factory()->create(['team_id' => $team->id]);
     $deferred = Account::factory()->create(['user_id' => $user->id, 'team_id' => $team->id]);
     $revenue = Account::factory()->create(['user_id' => $user->id, 'team_id' => $team->id]);
 
@@ -741,7 +743,7 @@ test('ProcessSubscriptions, ProvisionTenantChart, PruneDocuments, and RecognizeR
         'team_id' => $team->id,
     ]);
     $sched2 = RevenueSchedule::create([
-        'invoice_id' => $invoice->id,
+        'invoice_id' => $invoice2->id,
         'total_amount' => 600,
         'start_date' => today(),
         'periods' => 6,
@@ -986,6 +988,7 @@ test('TeamsPermission enforces auth, role, team membership, tenant matching, and
     if (! Route::has('staff.dashboard')) {
         Route::get('/_test-staff/{tenant}', fn () => 'staff')->name('staff.dashboard');
     }
+    Route::getRoutes()->refreshNameLookups();
 
     $middleware = new TeamsPermission();
     $next = fn (Request $req) => new Response('allowed');
@@ -1008,13 +1011,14 @@ test('TeamsPermission enforces auth, role, team membership, tenant matching, and
 
     // Accountant without currentTeam -> home
     Role::firstOrCreate(['name' => 'accountant', 'guard_name' => 'web', 'team_id' => $team->id]);
-    $user->syncRoles(['accountant']);
-    $user->forceFill(['current_team_id' => null])->save();
-    $this->actingAs($user->fresh());
+    $noTeamUser = User::factory()->create(['current_team_id' => null]);
+    $noTeamUser->syncRoles(['accountant']);
+    $this->actingAs($noTeamUser);
     $noTeamRes = $middleware->handle(Request::create('/staff', 'GET'), $next);
     expect($noTeamRes->headers->get('Location'))->toBe(route('home'));
 
     // Accountant with currentTeam but mismatched tenant param -> staff.dashboard
+    $user->syncRoles(['accountant']);
     $user->forceFill(['current_team_id' => $team->id])->save();
     $this->actingAs($user->fresh());
 

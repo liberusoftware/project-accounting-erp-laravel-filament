@@ -6,11 +6,11 @@ namespace Liberu\Accounting\SageAccountingMigrationApi\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Str;
 use Liberu\Accounting\Erp\Models\SageConnection;
 use Liberu\Accounting\Erp\Services\SageService;
-use Illuminate\Routing\Controller;
 
 class SageController extends Controller
 {

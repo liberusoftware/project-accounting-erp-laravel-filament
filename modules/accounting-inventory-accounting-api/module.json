@@ -3,7 +3,7 @@
   "name": "accounting-inventory-accounting-api",
   "display_name": "Accounting Inventory Accounting API",
   "description": "Versioned inventory accounting operations and valuation API.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\InventoryAccountingApi\\InventoryAccountingApiServiceProvider",
   "requires": {

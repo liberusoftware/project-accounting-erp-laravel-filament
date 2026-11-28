@@ -3,7 +3,7 @@
   "name": "accounting-regional-packs",
   "display_name": "Accounting Regional Packs",
   "description": "Country tax, reports, document formats, filing calendars, account templates, terminology, and compliance tests.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "category": "capability",
   "provider": "Liberu\\Accounting\\RegionalPacks\\RegionalPacksServiceProvider",
   "requires": {

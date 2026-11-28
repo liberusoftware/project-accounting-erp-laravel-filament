@@ -6,8 +6,8 @@ namespace Liberu\Accounting\GeneralLedgerApi\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use Liberu\Accounting\Erp\Services\GeneralLedgerService;
 use Illuminate\Routing\Controller;
+use Liberu\Accounting\Erp\Services\GeneralLedgerService;
 
 /**
  * Read-only general-ledger reporting endpoints.

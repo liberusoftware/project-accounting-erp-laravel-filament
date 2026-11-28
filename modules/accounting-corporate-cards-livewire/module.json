@@ -3,7 +3,7 @@
   "name": "accounting-corporate-cards-livewire",
   "display_name": "Accounting Corporate Cards Livewire",
   "description": "Livewire 4 corporate card surfaces.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\CorporateCardsLivewire\\CorporateCardsLivewireServiceProvider",
   "requires": {

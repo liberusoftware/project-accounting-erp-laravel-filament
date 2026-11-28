@@ -3,7 +3,7 @@
   "name": "accounting-depreciation-filament",
   "display_name": "Accounting Depreciation Filament",
   "description": "Filament 5 surfaces for depreciation schedules and runs.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\DepreciationFilament\\DepreciationFilamentServiceProvider",
   "requires": {

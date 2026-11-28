@@ -62,7 +62,7 @@ class Budget extends Model
 
     public function getVariancePercentageAttribute(): float|int
     {
-        if (! $this->planned_amount) {
+        if ((float) $this->planned_amount === 0.0) {
             return 0;
         }
 
