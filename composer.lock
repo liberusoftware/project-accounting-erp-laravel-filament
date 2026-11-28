@@ -6740,16 +6740,16 @@
         },
         {
             "name": "liberusoftware/integrations",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-integrations.git",
-                "reference": "f6321c45b0ea2e3a94101bbd18d0ceed073f54ad"
+                "reference": "7ea54c002c0e2f957b38d6907fee3ac7b4ad1fef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-integrations/zipball/f6321c45b0ea2e3a94101bbd18d0ceed073f54ad",
-                "reference": "f6321c45b0ea2e3a94101bbd18d0ceed073f54ad",
+                "url": "https://api.github.com/repos/liberusoftware/module-integrations/zipball/7ea54c002c0e2f957b38d6907fee3ac7b4ad1fef",
+                "reference": "7ea54c002c0e2f957b38d6907fee3ac7b4ad1fef",
                 "shasum": ""
             },
             "require": {
@@ -6781,9 +6781,9 @@
             "description": "Provider adapter registry and protected connection lifecycle.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-integrations/issues",
-                "source": "https://github.com/liberusoftware/module-integrations/tree/v1.14.0"
+                "source": "https://github.com/liberusoftware/module-integrations/tree/v1.15.0"
             },
-            "time": "2026-11-25T18:15:11+00:00"
+            "time": "2026-11-28T02:49:21+00:00"
         },
         {
             "name": "liberusoftware/jetstream-bridge",
