@@ -3,7 +3,7 @@
   "name": "accounting-supplier-bills-api",
   "display_name": "Accounting Supplier Bills API",
   "description": "Authenticated HTTP API for supplier bills.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\SupplierBillsApi\\SupplierBillsApiServiceProvider",
   "requires": {

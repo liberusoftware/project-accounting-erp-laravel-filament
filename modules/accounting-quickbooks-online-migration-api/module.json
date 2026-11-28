@@ -3,7 +3,7 @@
   "name": "accounting-quickbooks-online-migration-api",
   "display_name": "Accounting QuickBooks Online Migration API",
   "description": "HTTP API for QuickBooks Online migration.",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\QuickBooksOnlineMigrationApi\\QuickBooksOnlineMigrationApiServiceProvider",
   "requires": {

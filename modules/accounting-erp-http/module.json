@@ -3,7 +3,7 @@
   "name": "accounting-erp-http",
   "display_name": "Accounting Erp Http",
   "description": "HTTP controllers, API resources, and routes for the ERP runtime.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ErpHttp\\ErpHttpServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-wise",
   "display_name": "Accounting Wise",
   "description": "Wise provider adapter for bank feeds and bank payments.",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "category": "adapter",
   "provider": "Liberu\\Accounting\\Wise\\WiseServiceProvider",
   "requires": {

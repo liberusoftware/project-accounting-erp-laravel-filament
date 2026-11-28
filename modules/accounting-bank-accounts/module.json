@@ -3,7 +3,7 @@
   "name": "accounting-bank-accounts",
   "display_name": "Accounting Bank Accounts",
   "description": "Bank, current, savings, credit, loan, and cash accounts with ownership, opening data, lifecycle, feeds, and restricted details.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "capability",
   "provider": "Liberu\\Accounting\\BankAccounts\\BankAccountsServiceProvider",
   "requires": {

@@ -3,7 +3,7 @@
   "name": "accounting-bill-payments",
   "display_name": "Accounting Bill Payments",
   "description": "Payment proposals, optimization, approval, execution, remittances, and status.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "capability",
   "provider": "Liberu\\Accounting\\BillPayments\\BillPaymentsServiceProvider",
   "requires": {

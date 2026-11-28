@@ -3,7 +3,7 @@
   "name": "accounting-erp-filament",
   "display_name": "Accounting Erp Filament",
   "description": "Filament resources, pages, widgets, and portal presentation for the ERP runtime.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "category": "presentation",
   "provider": "Liberu\\Accounting\\ErpFilament\\ErpFilamentServiceProvider",
   "requires": {

@@ -29,6 +29,6 @@
     "liberusoftware/module-accounting-general-ledger": "^1.0",
     "php": "^8.5"
   },
-  "version": "1.0.3",
+  "version": "1.1.0",
   "license": "MIT"
 }

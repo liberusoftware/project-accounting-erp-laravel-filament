@@ -3,7 +3,7 @@
   "name": "accounting-projects-and-jobs",
   "display_name": "Accounting Projects and Jobs",
   "description": "Customers, project and job hierarchy, status, dates, managers, budgets, dimensions, source links, and lifecycle.",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "category": "capability",
   "provider": "Liberu\\Accounting\\ProjectsAndJobs\\ProjectsAndJobsServiceProvider",
   "requires": {

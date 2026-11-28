@@ -3,7 +3,7 @@
   "description": "HTTP API for estimates and quotes.",
   "type": "liberu-module",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "require": {
     "illuminate/http": "^13.38.0",
     "illuminate/routing": "^13.38.0",

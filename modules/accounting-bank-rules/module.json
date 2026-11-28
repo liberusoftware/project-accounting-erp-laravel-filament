@@ -3,7 +3,7 @@
   "name": "accounting-bank-rules",
   "display_name": "Accounting Bank Rules",
   "description": "Tenant-scoped bank transaction rules, suggestions, automation, testing and history.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "category": "capability",
   "provider": "Liberu\\Accounting\\BankRules\\BankRulesServiceProvider",
   "requires": {

@@ -7286,16 +7286,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-accountant-workspace-filament",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-accountant-workspace-filament.git",
-                "reference": "41cc3742f0a76f70a2cabad0262a9d3a3fd95738"
+                "reference": "bb37f0f7c32c9cf8d15671a2649285b31ebcd43c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-accountant-workspace-filament/zipball/41cc3742f0a76f70a2cabad0262a9d3a3fd95738",
-                "reference": "41cc3742f0a76f70a2cabad0262a9d3a3fd95738",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-accountant-workspace-filament/zipball/bb37f0f7c32c9cf8d15671a2649285b31ebcd43c",
+                "reference": "bb37f0f7c32c9cf8d15671a2649285b31ebcd43c",
                 "shasum": ""
             },
             "require": {
@@ -7326,9 +7326,9 @@
             "description": "Accounting accountant workspace Filament adapter",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-accountant-workspace-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-accountant-workspace-filament/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-accountant-workspace-filament/tree/v1.2.0"
             },
-            "time": "2026-11-26T23:42:31+00:00"
+            "time": "2026-11-28T02:28:33+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-accountant-workspace-livewire",
@@ -7378,16 +7378,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-accounts-payable",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-accounts-payable.git",
-                "reference": "afba618d5f86bb8dda006d3e6cf0cf2ac4fdbf43"
+                "reference": "fec4cf6477cd31ad10eccf99da04e03b4937962a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-accounts-payable/zipball/afba618d5f86bb8dda006d3e6cf0cf2ac4fdbf43",
-                "reference": "afba618d5f86bb8dda006d3e6cf0cf2ac4fdbf43",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-accounts-payable/zipball/fec4cf6477cd31ad10eccf99da04e03b4937962a",
+                "reference": "fec4cf6477cd31ad10eccf99da04e03b4937962a",
                 "shasum": ""
             },
             "require": {
@@ -7419,9 +7419,9 @@
             "description": "Accounts Payable domain module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-accounts-payable/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-accounts-payable/tree/v1.0.1"
+                "source": "https://github.com/liberusoftware/module-accounting-accounts-payable/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:25:29+00:00"
+            "time": "2026-11-28T02:28:37+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-accounts-payable-api",
@@ -7564,16 +7564,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-accounts-receivable",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-accounts-receivable.git",
-                "reference": "bf7afd47b528d8ae46fe0fed3c54b0f60b337799"
+                "reference": "84c053de6bc7112d566669547bcb5727ef8d5769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-accounts-receivable/zipball/bf7afd47b528d8ae46fe0fed3c54b0f60b337799",
-                "reference": "bf7afd47b528d8ae46fe0fed3c54b0f60b337799",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-accounts-receivable/zipball/84c053de6bc7112d566669547bcb5727ef8d5769",
+                "reference": "84c053de6bc7112d566669547bcb5727ef8d5769",
                 "shasum": ""
             },
             "require": {
@@ -7608,9 +7608,9 @@
             "description": "Independent Accounts Receivable domain module for Liberu Accounting.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-accounts-receivable/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-accounts-receivable/tree/v1.0.1"
+                "source": "https://github.com/liberusoftware/module-accounting-accounts-receivable/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:25:37+00:00"
+            "time": "2026-11-28T02:28:41+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-accounts-receivable-api",
@@ -7842,16 +7842,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-anomaly-detection-filament",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-anomaly-detection-filament.git",
-                "reference": "286511e768a2f2452a12a8826f76efeb25d9f5f8"
+                "reference": "5bd558819cde33476ca1e60bf5be876e5d8f5bc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-anomaly-detection-filament/zipball/286511e768a2f2452a12a8826f76efeb25d9f5f8",
-                "reference": "286511e768a2f2452a12a8826f76efeb25d9f5f8",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-anomaly-detection-filament/zipball/5bd558819cde33476ca1e60bf5be876e5d8f5bc3",
+                "reference": "5bd558819cde33476ca1e60bf5be876e5d8f5bc3",
                 "shasum": ""
             },
             "require": {
@@ -7882,9 +7882,9 @@
             "description": "Accounting anomaly detection Filament adapter",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-anomaly-detection-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-anomaly-detection-filament/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-anomaly-detection-filament/tree/v1.2.0"
             },
-            "time": "2026-11-26T23:43:00+00:00"
+            "time": "2026-11-28T02:28:46+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-anomaly-detection-livewire",
@@ -8023,16 +8023,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-asset-events-filament",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-asset-events-filament.git",
-                "reference": "39e21f578c1fb5fc1bee581bd4d9e64283f51879"
+                "reference": "7a5dd1d73d24a3f6f0408e25b491c20895e300c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-asset-events-filament/zipball/39e21f578c1fb5fc1bee581bd4d9e64283f51879",
-                "reference": "39e21f578c1fb5fc1bee581bd4d9e64283f51879",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-asset-events-filament/zipball/7a5dd1d73d24a3f6f0408e25b491c20895e300c5",
+                "reference": "7a5dd1d73d24a3f6f0408e25b491c20895e300c5",
                 "shasum": ""
             },
             "require": {
@@ -8063,9 +8063,9 @@
             "description": "Accounting asset events Filament adapter",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-asset-events-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-asset-events-filament/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-asset-events-filament/tree/v1.2.0"
             },
-            "time": "2026-11-26T23:43:09+00:00"
+            "time": "2026-11-28T02:28:49+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-asset-events-livewire",
@@ -8204,16 +8204,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-audit-support-filament",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-audit-support-filament.git",
-                "reference": "84d1bdb51e95d2e1b02ecf6d3431d3dc4edaaafd"
+                "reference": "ea3d0caaeb3120bf95795c29541b41d479f9fc62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-audit-support-filament/zipball/84d1bdb51e95d2e1b02ecf6d3431d3dc4edaaafd",
-                "reference": "84d1bdb51e95d2e1b02ecf6d3431d3dc4edaaafd",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-audit-support-filament/zipball/ea3d0caaeb3120bf95795c29541b41d479f9fc62",
+                "reference": "ea3d0caaeb3120bf95795c29541b41d479f9fc62",
                 "shasum": ""
             },
             "require": {
@@ -8244,9 +8244,9 @@
             "description": "Accounting audit support Filament adapter",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-audit-support-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-audit-support-filament/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-audit-support-filament/tree/v1.2.0"
             },
-            "time": "2026-11-26T23:43:28+00:00"
+            "time": "2026-11-28T02:28:53+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-audit-support-livewire",
@@ -8480,16 +8480,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-bank-accounts",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-bank-accounts.git",
-                "reference": "e70383456e3f7b5cb97bd603822503a506487c1a"
+                "reference": "7b53e62389645b18c681e4c4d686c6d49827f122"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-accounts/zipball/e70383456e3f7b5cb97bd603822503a506487c1a",
-                "reference": "e70383456e3f7b5cb97bd603822503a506487c1a",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-accounts/zipball/7b53e62389645b18c681e4c4d686c6d49827f122",
+                "reference": "7b53e62389645b18c681e4c4d686c6d49827f122",
                 "shasum": ""
             },
             "require": {
@@ -8521,22 +8521,22 @@
             "description": "Provider-neutral bank and cash account domain module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-bank-accounts/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-bank-accounts/tree/v1.0.1"
+                "source": "https://github.com/liberusoftware/module-accounting-bank-accounts/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:26:16+00:00"
+            "time": "2026-11-28T02:28:57+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-bank-accounts-api",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-bank-accounts-api.git",
-                "reference": "751f00628bb398f95166d3dcd2eb4c6acb9f319f"
+                "reference": "4d9ff62b3c79e420beb61394422cb818b29b4a1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-accounts-api/zipball/751f00628bb398f95166d3dcd2eb4c6acb9f319f",
-                "reference": "751f00628bb398f95166d3dcd2eb4c6acb9f319f",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-accounts-api/zipball/4d9ff62b3c79e420beb61394422cb818b29b4a1c",
+                "reference": "4d9ff62b3c79e420beb61394422cb818b29b4a1c",
                 "shasum": ""
             },
             "require": {
@@ -8569,9 +8569,9 @@
             "description": "HTTP API adapter for bank accounts.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-bank-accounts-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-bank-accounts-api/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-bank-accounts-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:30:27+00:00"
+            "time": "2026-11-28T02:29:01+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-bank-accounts-filament",
@@ -8667,16 +8667,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-bank-feeds",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-bank-feeds.git",
-                "reference": "3bc0f199c4d2c7a188060d3b3a54a25fd61516b8"
+                "reference": "e5e0f6b5720400bfde43562a7f082ab9d6e1226d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-feeds/zipball/3bc0f199c4d2c7a188060d3b3a54a25fd61516b8",
-                "reference": "3bc0f199c4d2c7a188060d3b3a54a25fd61516b8",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-feeds/zipball/e5e0f6b5720400bfde43562a7f082ab9d6e1226d",
+                "reference": "e5e0f6b5720400bfde43562a7f082ab9d6e1226d",
                 "shasum": ""
             },
             "require": {
@@ -8708,9 +8708,9 @@
             "description": "Provider-neutral bank feed connections, imports, mapping, and health.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-bank-feeds/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-bank-feeds/tree/v1.0.1"
+                "source": "https://github.com/liberusoftware/module-accounting-bank-feeds/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:26:24+00:00"
+            "time": "2026-11-28T02:29:05+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-bank-feeds-api",
@@ -8853,16 +8853,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-bank-reconciliation",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-bank-reconciliation.git",
-                "reference": "59208d17e37a4ba38bf92a89745a296668677b57"
+                "reference": "b6fb64b13e70bdb36d5ae52c1704ec768a19f08d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-reconciliation/zipball/59208d17e37a4ba38bf92a89745a296668677b57",
-                "reference": "59208d17e37a4ba38bf92a89745a296668677b57",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-reconciliation/zipball/b6fb64b13e70bdb36d5ae52c1704ec768a19f08d",
+                "reference": "b6fb64b13e70bdb36d5ae52c1704ec768a19f08d",
                 "shasum": ""
             },
             "require": {
@@ -8893,9 +8893,9 @@
             "description": "Provider-neutral bank reconciliation domain module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-bank-reconciliation/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-bank-reconciliation/tree/v1.0.1"
+                "source": "https://github.com/liberusoftware/module-accounting-bank-reconciliation/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:26:31+00:00"
+            "time": "2026-11-28T02:29:09+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-bank-reconciliation-api",
@@ -9038,16 +9038,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-bank-rules",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-bank-rules.git",
-                "reference": "11fa3031bd493a9442181eb741eb03baeb34adcd"
+                "reference": "2ed2cb531df8e3d93d6c7a1bfdf4d48c5c701be0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-rules/zipball/11fa3031bd493a9442181eb741eb03baeb34adcd",
-                "reference": "11fa3031bd493a9442181eb741eb03baeb34adcd",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bank-rules/zipball/2ed2cb531df8e3d93d6c7a1bfdf4d48c5c701be0",
+                "reference": "2ed2cb531df8e3d93d6c7a1bfdf4d48c5c701be0",
                 "shasum": ""
             },
             "require": {
@@ -9078,9 +9078,9 @@
             "description": "Provider-neutral accounting bank rules domain module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-bank-rules/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-bank-rules/tree/v1.0.1"
+                "source": "https://github.com/liberusoftware/module-accounting-bank-rules/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:26:38+00:00"
+            "time": "2026-11-28T02:29:13+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-bank-rules-api",
@@ -9222,16 +9222,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-bill-payments",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-bill-payments.git",
-                "reference": "b897a50c299a854235dee4746101e686ce218037"
+                "reference": "fd16402e9212d1d2b520ae86bc3f069011276cbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bill-payments/zipball/b897a50c299a854235dee4746101e686ce218037",
-                "reference": "b897a50c299a854235dee4746101e686ce218037",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-bill-payments/zipball/fd16402e9212d1d2b520ae86bc3f069011276cbc",
+                "reference": "fd16402e9212d1d2b520ae86bc3f069011276cbc",
                 "shasum": ""
             },
             "require": {
@@ -9263,9 +9263,9 @@
             "description": "Provider-neutral supplier bill payment proposals and approval.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-bill-payments/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-bill-payments/tree/v1.0.1"
+                "source": "https://github.com/liberusoftware/module-accounting-bill-payments/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:26:45+00:00"
+            "time": "2026-11-28T02:29:18+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-bill-payments-api",
@@ -9408,16 +9408,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-branch-and-location-accounting",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-branch-and-location-accounting.git",
-                "reference": "504284e487b23595d2ebbb7c5f5f3e7c2edbfe03"
+                "reference": "2ff546f6f8ee689398f16abe89c604235cf71023"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-branch-and-location-accounting/zipball/504284e487b23595d2ebbb7c5f5f3e7c2edbfe03",
-                "reference": "504284e487b23595d2ebbb7c5f5f3e7c2edbfe03",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-branch-and-location-accounting/zipball/2ff546f6f8ee689398f16abe89c604235cf71023",
+                "reference": "2ff546f6f8ee689398f16abe89c604235cf71023",
                 "shasum": ""
             },
             "require": {
@@ -9448,9 +9448,9 @@
             "description": "Accounting branches, locations, allocations and performance.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-branch-and-location-accounting/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-branch-and-location-accounting/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-branch-and-location-accounting/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:26:53+00:00"
+            "time": "2026-11-28T02:29:22+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-branch-and-location-accounting-api",
@@ -9866,16 +9866,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-business-insights-filament",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-business-insights-filament.git",
-                "reference": "085da1b93b413db8bd404834b3221942f7fe4cce"
+                "reference": "7bcab038a7b3e0a347b11cd779bb378cb27c0c51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-business-insights-filament/zipball/085da1b93b413db8bd404834b3221942f7fe4cce",
-                "reference": "085da1b93b413db8bd404834b3221942f7fe4cce",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-business-insights-filament/zipball/7bcab038a7b3e0a347b11cd779bb378cb27c0c51",
+                "reference": "7bcab038a7b3e0a347b11cd779bb378cb27c0c51",
                 "shasum": ""
             },
             "require": {
@@ -9906,9 +9906,9 @@
             "description": "Accounting business insights Filament adapter",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-business-insights-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-business-insights-filament/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-business-insights-filament/tree/v1.2.0"
             },
-            "time": "2026-11-26T23:44:55+00:00"
+            "time": "2026-11-28T02:29:27+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-business-insights-livewire",
@@ -10047,16 +10047,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-carbon-accounting-filament",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-carbon-accounting-filament.git",
-                "reference": "6a4ceeb2984c6f6bcb96beeed8d27f5103f31f31"
+                "reference": "a9242f8bb6136d74e47636e92771c86d6b7591fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-carbon-accounting-filament/zipball/6a4ceeb2984c6f6bcb96beeed8d27f5103f31f31",
-                "reference": "6a4ceeb2984c6f6bcb96beeed8d27f5103f31f31",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-carbon-accounting-filament/zipball/a9242f8bb6136d74e47636e92771c86d6b7591fb",
+                "reference": "a9242f8bb6136d74e47636e92771c86d6b7591fb",
                 "shasum": ""
             },
             "require": {
@@ -10087,9 +10087,9 @@
             "description": "Accounting carbon accounting Filament adapter",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-carbon-accounting-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-carbon-accounting-filament/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-carbon-accounting-filament/tree/v1.2.0"
             },
-            "time": "2026-11-26T23:45:04+00:00"
+            "time": "2026-11-28T02:29:31+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-carbon-accounting-livewire",
@@ -10323,16 +10323,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-cash-collection-assistant",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-cash-collection-assistant.git",
-                "reference": "623ef2aa5d6d5580ca5d2e0325ae019efef2f34f"
+                "reference": "fdbc5ce96486774beb86e26091311b694b3dde74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-cash-collection-assistant/zipball/623ef2aa5d6d5580ca5d2e0325ae019efef2f34f",
-                "reference": "623ef2aa5d6d5580ca5d2e0325ae019efef2f34f",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-cash-collection-assistant/zipball/fdbc5ce96486774beb86e26091311b694b3dde74",
+                "reference": "fdbc5ce96486774beb86e26091311b694b3dde74",
                 "shasum": ""
             },
             "require": {
@@ -10363,9 +10363,9 @@
             "description": "Accounting cash collection assistant domain module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-cash-collection-assistant/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-cash-collection-assistant/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-cash-collection-assistant/tree/v1.2.0"
             },
-            "time": "2026-11-25T13:27:30+00:00"
+            "time": "2026-11-28T02:29:35+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-cash-collection-assistant-api",
@@ -10926,16 +10926,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-chart-of-accounts-api",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-chart-of-accounts-api.git",
-                "reference": "ddd5d7e2e84ee78b6a4bf9c5e9024cf7741fa6db"
+                "reference": "04c5d750c709984c5d1ffeacc5952bfda4be0bfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-chart-of-accounts-api/zipball/ddd5d7e2e84ee78b6a4bf9c5e9024cf7741fa6db",
-                "reference": "ddd5d7e2e84ee78b6a4bf9c5e9024cf7741fa6db",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-chart-of-accounts-api/zipball/04c5d750c709984c5d1ffeacc5952bfda4be0bfe",
+                "reference": "04c5d750c709984c5d1ffeacc5952bfda4be0bfe",
                 "shasum": ""
             },
             "require": {
@@ -10972,9 +10972,9 @@
             "description": "Authenticated API adapter for the accounting chart of accounts.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-chart-of-accounts-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-chart-of-accounts-api/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-chart-of-accounts-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:31:53+00:00"
+            "time": "2026-11-28T02:29:40+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-chart-of-accounts-filament",
@@ -13766,16 +13766,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-customer-portal-filament",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-customer-portal-filament.git",
-                "reference": "8c9f98a0fb2bc7f483ce8f441bd762c8c4e60d85"
+                "reference": "5cef648e889f52b06a35a385d3eb92adc083cfe1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-customer-portal-filament/zipball/8c9f98a0fb2bc7f483ce8f441bd762c8c4e60d85",
-                "reference": "8c9f98a0fb2bc7f483ce8f441bd762c8c4e60d85",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-customer-portal-filament/zipball/5cef648e889f52b06a35a385d3eb92adc083cfe1",
+                "reference": "5cef648e889f52b06a35a385d3eb92adc083cfe1",
                 "shasum": ""
             },
             "require": {
@@ -13807,9 +13807,9 @@
             "description": "Accounting customer portal Filament 5 surfaces.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-customer-portal-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-customer-portal-filament/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-customer-portal-filament/tree/v1.2.0"
             },
-            "time": "2026-11-26T23:48:06+00:00"
+            "time": "2026-11-28T02:29:51+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-customer-portal-livewire",
@@ -15339,16 +15339,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-erp",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-erp.git",
-                "reference": "fec542a059ece8d492c7c0e21e487619ab4d0bab"
+                "reference": "4a00f780bd0e540867584ad84973ededcb7eacce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-erp/zipball/fec542a059ece8d492c7c0e21e487619ab4d0bab",
-                "reference": "fec542a059ece8d492c7c0e21e487619ab4d0bab",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-erp/zipball/4a00f780bd0e540867584ad84973ededcb7eacce",
+                "reference": "4a00f780bd0e540867584ad84973ededcb7eacce",
                 "shasum": ""
             },
             "require": {
@@ -15403,22 +15403,22 @@
             "description": "Integrated ERP workflows and the existing application accounting schema.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-erp/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-erp/tree/v1.3.1"
+                "source": "https://github.com/liberusoftware/module-accounting-erp/tree/v1.4.0"
             },
-            "time": "2026-11-27T00:38:34+00:00"
+            "time": "2026-11-28T02:30:00+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-erp-filament",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-erp-filament.git",
-                "reference": "d9ecbe8134a69e90407a2ecfdc48501cd295641f"
+                "reference": "35d87f24e6792f6fbe82b7d189f2450c3d544898"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-erp-filament/zipball/d9ecbe8134a69e90407a2ecfdc48501cd295641f",
-                "reference": "d9ecbe8134a69e90407a2ecfdc48501cd295641f",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-erp-filament/zipball/35d87f24e6792f6fbe82b7d189f2450c3d544898",
+                "reference": "35d87f24e6792f6fbe82b7d189f2450c3d544898",
                 "shasum": ""
             },
             "require": {
@@ -15456,22 +15456,22 @@
             "description": "Filament resources, pages, widgets, and portal presentation for the ERP runtime.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-erp-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-erp-filament/tree/v1.1.0"
+                "source": "https://github.com/liberusoftware/module-accounting-erp-filament/tree/v1.2.0"
             },
-            "time": "2026-11-25T18:18:23+00:00"
+            "time": "2026-11-28T02:30:04+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-erp-http",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-erp-http.git",
-                "reference": "518f00602ebfde4808c87db0bc4689a371e0535d"
+                "reference": "da23554b197d7fc8606fd8e5edd5c79cb6b57bcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-erp-http/zipball/518f00602ebfde4808c87db0bc4689a371e0535d",
-                "reference": "518f00602ebfde4808c87db0bc4689a371e0535d",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-erp-http/zipball/da23554b197d7fc8606fd8e5edd5c79cb6b57bcb",
+                "reference": "da23554b197d7fc8606fd8e5edd5c79cb6b57bcb",
                 "shasum": ""
             },
             "require": {
@@ -15507,9 +15507,9 @@
             "description": "HTTP controllers, API resources, and routes for the ERP runtime.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-erp-http/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-erp-http/tree/v1.0.1"
+                "source": "https://github.com/liberusoftware/module-accounting-erp-http/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:31:08+00:00"
+            "time": "2026-11-28T02:30:08+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-estimates-and-quotes",
@@ -15559,16 +15559,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-estimates-and-quotes-api",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-estimates-and-quotes-api.git",
-                "reference": "1880758704d86c85c4d3b77c3de912eeadf5216e"
+                "reference": "c1d107b2f69abaa48738f31d903b631f18727764"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-estimates-and-quotes-api/zipball/1880758704d86c85c4d3b77c3de912eeadf5216e",
-                "reference": "1880758704d86c85c4d3b77c3de912eeadf5216e",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-estimates-and-quotes-api/zipball/c1d107b2f69abaa48738f31d903b631f18727764",
+                "reference": "c1d107b2f69abaa48738f31d903b631f18727764",
                 "shasum": ""
             },
             "require": {
@@ -15601,9 +15601,9 @@
             "description": "HTTP API for estimates and quotes.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-estimates-and-quotes-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-estimates-and-quotes-api/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-estimates-and-quotes-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:34:35+00:00"
+            "time": "2026-11-28T02:30:12+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-estimates-and-quotes-filament",
@@ -16507,16 +16507,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-general-ledger-api",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-general-ledger-api.git",
-                "reference": "a2644e7f225a8474c83cc03c813904d24614e139"
+                "reference": "fbe3180f2f086e036e6f0abe536eefb86fd1bd4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-general-ledger-api/zipball/a2644e7f225a8474c83cc03c813904d24614e139",
-                "reference": "a2644e7f225a8474c83cc03c813904d24614e139",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-general-ledger-api/zipball/fbe3180f2f086e036e6f0abe536eefb86fd1bd4f",
+                "reference": "fbe3180f2f086e036e6f0abe536eefb86fd1bd4f",
                 "shasum": ""
             },
             "require": {
@@ -16549,9 +16549,9 @@
             "description": "Authenticated API adapter for the accounting general ledger.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-general-ledger-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-general-ledger-api/tree/v1.0.3"
+                "source": "https://github.com/liberusoftware/module-accounting-general-ledger-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:35:11+00:00"
+            "time": "2026-11-28T02:30:18+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-general-ledger-filament",
@@ -20534,16 +20534,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-plaid",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-plaid.git",
-                "reference": "516570b6f18f4fa45c682f68f5c4cd558e7db5cd"
+                "reference": "17e9aed1a46d894ddd5aa03617ee81aceb1d1742"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-plaid/zipball/516570b6f18f4fa45c682f68f5c4cd558e7db5cd",
-                "reference": "516570b6f18f4fa45c682f68f5c4cd558e7db5cd",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-plaid/zipball/17e9aed1a46d894ddd5aa03617ee81aceb1d1742",
+                "reference": "17e9aed1a46d894ddd5aa03617ee81aceb1d1742",
                 "shasum": ""
             },
             "require": {
@@ -20577,9 +20577,9 @@
             "description": "Plaid adapter for the Accounting Bank Feeds contract.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-plaid/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-plaid/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-plaid/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:37:38+00:00"
+            "time": "2026-11-28T02:30:33+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-policies",
@@ -21512,16 +21512,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-projects-and-jobs",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-projects-and-jobs.git",
-                "reference": "c736b7197a6d28577e686b45fdbc04d317a17890"
+                "reference": "bf70c50c0f07ff7be90ad000840ddc0b55c71832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-projects-and-jobs/zipball/c736b7197a6d28577e686b45fdbc04d317a17890",
-                "reference": "c736b7197a6d28577e686b45fdbc04d317a17890",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-projects-and-jobs/zipball/bf70c50c0f07ff7be90ad000840ddc0b55c71832",
+                "reference": "bf70c50c0f07ff7be90ad000840ddc0b55c71832",
                 "shasum": ""
             },
             "require": {
@@ -21552,9 +21552,9 @@
             "description": "Accounting projects and jobs domain module",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-projects-and-jobs/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-projects-and-jobs/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-projects-and-jobs/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:35:23+00:00"
+            "time": "2026-11-28T02:30:39+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-projects-and-jobs-api",
@@ -22113,16 +22113,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-quickbooks-online-migration-api",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-quickbooks-online-migration-api.git",
-                "reference": "5d7883fa3729aed218b6b4582c60b6426bb6a2e0"
+                "reference": "ab7c64411cc83fa5318dcfeee621ac8f926e5dc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-quickbooks-online-migration-api/zipball/5d7883fa3729aed218b6b4582c60b6426bb6a2e0",
-                "reference": "5d7883fa3729aed218b6b4582c60b6426bb6a2e0",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-quickbooks-online-migration-api/zipball/ab7c64411cc83fa5318dcfeee621ac8f926e5dc2",
+                "reference": "ab7c64411cc83fa5318dcfeee621ac8f926e5dc2",
                 "shasum": ""
             },
             "require": {
@@ -22155,9 +22155,9 @@
             "description": "QuickBooks Online migration API adapter.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-quickbooks-online-migration-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-quickbooks-online-migration-api/tree/v1.0.3"
+                "source": "https://github.com/liberusoftware/module-accounting-quickbooks-online-migration-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:38:38+00:00"
+            "time": "2026-11-28T02:30:44+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-quickbooks-online-migration-filament",
@@ -22438,16 +22438,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-recurring-transactions",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-recurring-transactions.git",
-                "reference": "c58d7cbbe99b269131386e60d0451b3b707582dc"
+                "reference": "efbf3851f3b187c0b5cc9f3e5e167474ee891af5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-recurring-transactions/zipball/c58d7cbbe99b269131386e60d0451b3b707582dc",
-                "reference": "c58d7cbbe99b269131386e60d0451b3b707582dc",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-recurring-transactions/zipball/efbf3851f3b187c0b5cc9f3e5e167474ee891af5",
+                "reference": "efbf3851f3b187c0b5cc9f3e5e167474ee891af5",
                 "shasum": ""
             },
             "require": {
@@ -22478,9 +22478,9 @@
             "description": "Accounting recurring transactions domain module",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-recurring-transactions/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-recurring-transactions/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-recurring-transactions/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:36:03+00:00"
+            "time": "2026-11-28T02:30:48+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-recurring-transactions-api",
@@ -22993,16 +22993,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-revenue-recognition",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-revenue-recognition.git",
-                "reference": "bfebfa89e2e26f75bed74e9945d7bd17bfb79116"
+                "reference": "fa30ae0b92a9885e6f264dadb2044937ec8782ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-revenue-recognition/zipball/bfebfa89e2e26f75bed74e9945d7bd17bfb79116",
-                "reference": "bfebfa89e2e26f75bed74e9945d7bd17bfb79116",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-revenue-recognition/zipball/fa30ae0b92a9885e6f264dadb2044937ec8782ed",
+                "reference": "fa30ae0b92a9885e6f264dadb2044937ec8782ed",
                 "shasum": ""
             },
             "require": {
@@ -23033,9 +23033,9 @@
             "description": "Accounting revenue recognition domain module",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-revenue-recognition/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-revenue-recognition/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-revenue-recognition/tree/v1.1.0"
             },
-            "time": "2026-11-25T13:36:28+00:00"
+            "time": "2026-11-28T02:30:53+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-revenue-recognition-api",
@@ -23271,16 +23271,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-review-filament",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-review-filament.git",
-                "reference": "075f38ca2488981d4abaa16430f62b10fa7d0dd3"
+                "reference": "32d12487110be660236ae13d830546b4d3aebe92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-review-filament/zipball/075f38ca2488981d4abaa16430f62b10fa7d0dd3",
-                "reference": "075f38ca2488981d4abaa16430f62b10fa7d0dd3",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-review-filament/zipball/32d12487110be660236ae13d830546b4d3aebe92",
+                "reference": "32d12487110be660236ae13d830546b4d3aebe92",
                 "shasum": ""
             },
             "require": {
@@ -23311,9 +23311,9 @@
             "description": "Accounting review Filament adapter",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-review-filament/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-review-filament/tree/v1.1.1"
+                "source": "https://github.com/liberusoftware/module-accounting-review-filament/tree/v1.2.0"
             },
-            "time": "2026-11-27T00:32:51+00:00"
+            "time": "2026-11-28T02:30:58+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-review-livewire",
@@ -23363,16 +23363,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-revolut",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-revolut.git",
-                "reference": "38edb67311f8dece113764c83679d1ada5ec4b38"
+                "reference": "b653f1a4e41d679cafb95e19f46488fba471e06b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-revolut/zipball/38edb67311f8dece113764c83679d1ada5ec4b38",
-                "reference": "38edb67311f8dece113764c83679d1ada5ec4b38",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-revolut/zipball/b653f1a4e41d679cafb95e19f46488fba471e06b",
+                "reference": "b653f1a4e41d679cafb95e19f46488fba471e06b",
                 "shasum": ""
             },
             "require": {
@@ -23408,9 +23408,9 @@
             "description": "Revolut adapter for Accounting bank feeds and bank payments.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-revolut/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-revolut/tree/v1.0.3"
+                "source": "https://github.com/liberusoftware/module-accounting-revolut/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:39:22+00:00"
+            "time": "2026-11-28T02:31:02+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-sage-accounting-migration",
@@ -23460,16 +23460,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-sage-accounting-migration-api",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-sage-accounting-migration-api.git",
-                "reference": "44d22d96f9e2ab6394e881019f0b61f57a566bd0"
+                "reference": "6d8b335a64849e1baf7bc779614343f539723e88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-sage-accounting-migration-api/zipball/44d22d96f9e2ab6394e881019f0b61f57a566bd0",
-                "reference": "44d22d96f9e2ab6394e881019f0b61f57a566bd0",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-sage-accounting-migration-api/zipball/6d8b335a64849e1baf7bc779614343f539723e88",
+                "reference": "6d8b335a64849e1baf7bc779614343f539723e88",
                 "shasum": ""
             },
             "require": {
@@ -23502,9 +23502,9 @@
             "description": "Sage Accounting migration API adapter.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-sage-accounting-migration-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-sage-accounting-migration-api/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-sage-accounting-migration-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:39:26+00:00"
+            "time": "2026-11-28T02:31:05+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-sage-accounting-migration-filament",
@@ -23648,16 +23648,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-sales-invoicing-api",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-sales-invoicing-api.git",
-                "reference": "003098d0d85e2c5cec92df106e657c1e67490ee6"
+                "reference": "dd5ef3ddbcf6dc2e3a65de900566590cd09656db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-sales-invoicing-api/zipball/003098d0d85e2c5cec92df106e657c1e67490ee6",
-                "reference": "003098d0d85e2c5cec92df106e657c1e67490ee6",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-sales-invoicing-api/zipball/dd5ef3ddbcf6dc2e3a65de900566590cd09656db",
+                "reference": "dd5ef3ddbcf6dc2e3a65de900566590cd09656db",
                 "shasum": ""
             },
             "require": {
@@ -23690,9 +23690,9 @@
             "description": "Authenticated API adapter for accounting sales invoicing.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-sales-invoicing-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-sales-invoicing-api/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-sales-invoicing-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:39:33+00:00"
+            "time": "2026-11-28T02:31:09+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-sales-invoicing-filament",
@@ -24391,16 +24391,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-supplier-bills-api",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-supplier-bills-api.git",
-                "reference": "87c78894a758482f4b1c6cf3a61cbfa9065620d6"
+                "reference": "ed76b33c10255d94d8690d9819545b3d2b449c06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-supplier-bills-api/zipball/87c78894a758482f4b1c6cf3a61cbfa9065620d6",
-                "reference": "87c78894a758482f4b1c6cf3a61cbfa9065620d6",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-supplier-bills-api/zipball/ed76b33c10255d94d8690d9819545b3d2b449c06",
+                "reference": "ed76b33c10255d94d8690d9819545b3d2b449c06",
                 "shasum": ""
             },
             "require": {
@@ -24433,9 +24433,9 @@
             "description": "HTTP API adapter for Supplier Bills.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-supplier-bills-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-supplier-bills-api/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-supplier-bills-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:39:59+00:00"
+            "time": "2026-11-28T02:31:15+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-supplier-bills-filament",
@@ -25827,16 +25827,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-wise",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-wise.git",
-                "reference": "78f3c0f773767fe09a20aca946b8528e05ef9c4f"
+                "reference": "4ea2530400fcc449ca14c6a2c1587051e5e54833"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-wise/zipball/78f3c0f773767fe09a20aca946b8528e05ef9c4f",
-                "reference": "78f3c0f773767fe09a20aca946b8528e05ef9c4f",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-wise/zipball/4ea2530400fcc449ca14c6a2c1587051e5e54833",
+                "reference": "4ea2530400fcc449ca14c6a2c1587051e5e54833",
                 "shasum": ""
             },
             "require": {
@@ -25872,9 +25872,9 @@
             "description": "Wise adapter for the Accounting Bank Feeds contract.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-wise/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-wise/tree/v1.0.3"
+                "source": "https://github.com/liberusoftware/module-accounting-wise/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:40:50+00:00"
+            "time": "2026-11-28T02:31:22+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-withholding-tax",
@@ -26479,16 +26479,16 @@
         },
         {
             "name": "liberusoftware/module-accounting-xero-migration-api",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-accounting-xero-migration-api.git",
-                "reference": "422b95e5e372ba7d0b6a84187e3c55f9f65665c4"
+                "reference": "00af1daf6ea4d674efd8a431d23c2e7f1e35bcd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-accounting-xero-migration-api/zipball/422b95e5e372ba7d0b6a84187e3c55f9f65665c4",
-                "reference": "422b95e5e372ba7d0b6a84187e3c55f9f65665c4",
+                "url": "https://api.github.com/repos/liberusoftware/module-accounting-xero-migration-api/zipball/00af1daf6ea4d674efd8a431d23c2e7f1e35bcd8",
+                "reference": "00af1daf6ea4d674efd8a431d23c2e7f1e35bcd8",
                 "shasum": ""
             },
             "require": {
@@ -26521,9 +26521,9 @@
             "description": "Accounting Xero migration API presentation module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-accounting-xero-migration-api/issues",
-                "source": "https://github.com/liberusoftware/module-accounting-xero-migration-api/tree/v1.0.2"
+                "source": "https://github.com/liberusoftware/module-accounting-xero-migration-api/tree/v1.1.0"
             },
-            "time": "2026-11-26T23:41:12+00:00"
+            "time": "2026-11-28T02:31:27+00:00"
         },
         {
             "name": "liberusoftware/module-accounting-xero-migration-filament",
@@ -26803,16 +26803,16 @@
         },
         {
             "name": "liberusoftware/module-liberu-business-workflow-reconciliation",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-liberu-business-workflow-reconciliation.git",
-                "reference": "e730469bfb5b1091f5a2660da6843c30f7b0cde4"
+                "reference": "4289dbf60c32a51db133392c6ba6fec949c6cb9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-liberu-business-workflow-reconciliation/zipball/e730469bfb5b1091f5a2660da6843c30f7b0cde4",
-                "reference": "e730469bfb5b1091f5a2660da6843c30f7b0cde4",
+                "url": "https://api.github.com/repos/liberusoftware/module-liberu-business-workflow-reconciliation/zipball/4289dbf60c32a51db133392c6ba6fec949c6cb9f",
+                "reference": "4289dbf60c32a51db133392c6ba6fec949c6cb9f",
                 "shasum": ""
             },
             "require": {
@@ -26844,22 +26844,22 @@
             "description": "Liberu liberu-business-workflow-reconciliation module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-liberu-business-workflow-reconciliation/issues",
-                "source": "https://github.com/liberusoftware/module-liberu-business-workflow-reconciliation/tree/v1.7.0"
+                "source": "https://github.com/liberusoftware/module-liberu-business-workflow-reconciliation/tree/v1.8.0"
             },
-            "time": "2026-11-27T00:35:47+00:00"
+            "time": "2026-11-28T02:31:31+00:00"
         },
         {
             "name": "liberusoftware/module-liberu-executive-insights",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-liberu-executive-insights.git",
-                "reference": "54f7d83de8faffb3168eb6a88711fe34dd0429b5"
+                "reference": "30183c4a08465c04580cfcbdac42b5db3893ead8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-liberu-executive-insights/zipball/54f7d83de8faffb3168eb6a88711fe34dd0429b5",
-                "reference": "54f7d83de8faffb3168eb6a88711fe34dd0429b5",
+                "url": "https://api.github.com/repos/liberusoftware/module-liberu-executive-insights/zipball/30183c4a08465c04580cfcbdac42b5db3893ead8",
+                "reference": "30183c4a08465c04580cfcbdac42b5db3893ead8",
                 "shasum": ""
             },
             "require": {
@@ -26891,22 +26891,22 @@
             "description": "Liberu liberu-executive-insights module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-liberu-executive-insights/issues",
-                "source": "https://github.com/liberusoftware/module-liberu-executive-insights/tree/v1.7.0"
+                "source": "https://github.com/liberusoftware/module-liberu-executive-insights/tree/v1.8.0"
             },
-            "time": "2026-11-27T00:35:53+00:00"
+            "time": "2026-11-28T02:31:35+00:00"
         },
         {
             "name": "liberusoftware/module-liberu-platform-orchestration",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-liberu-platform-orchestration.git",
-                "reference": "056d4375012fd1658a0bb21630645d31a976a41b"
+                "reference": "d722f87c145d468939617b8fe70665143e046926"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-liberu-platform-orchestration/zipball/056d4375012fd1658a0bb21630645d31a976a41b",
-                "reference": "056d4375012fd1658a0bb21630645d31a976a41b",
+                "url": "https://api.github.com/repos/liberusoftware/module-liberu-platform-orchestration/zipball/d722f87c145d468939617b8fe70665143e046926",
+                "reference": "d722f87c145d468939617b8fe70665143e046926",
                 "shasum": ""
             },
             "require": {
@@ -26938,9 +26938,9 @@
             "description": "Liberu liberu-platform-orchestration module.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-liberu-platform-orchestration/issues",
-                "source": "https://github.com/liberusoftware/module-liberu-platform-orchestration/tree/v1.6.0"
+                "source": "https://github.com/liberusoftware/module-liberu-platform-orchestration/tree/v1.7.0"
             },
-            "time": "2026-11-27T00:35:58+00:00"
+            "time": "2026-11-28T02:31:39+00:00"
         },
         {
             "name": "liberusoftware/module-manager",
@@ -26991,16 +26991,16 @@
         },
         {
             "name": "liberusoftware/module-manager-filament",
-            "version": "1.12.1",
+            "version": "1.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-module-manager-filament.git",
-                "reference": "6f98f21c6a99ab7e512b8606975df4b01a975de2"
+                "reference": "9f62375db0ea85270314d67a6b6111e388b31166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-module-manager-filament/zipball/6f98f21c6a99ab7e512b8606975df4b01a975de2",
-                "reference": "6f98f21c6a99ab7e512b8606975df4b01a975de2",
+                "url": "https://api.github.com/repos/liberusoftware/module-module-manager-filament/zipball/9f62375db0ea85270314d67a6b6111e388b31166",
+                "reference": "9f62375db0ea85270314d67a6b6111e388b31166",
                 "shasum": ""
             },
             "require": {
@@ -27031,9 +27031,9 @@
             "description": "Filament page for enabling and disabling Liberu feature modules.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-module-manager-filament/issues",
-                "source": "https://github.com/liberusoftware/module-module-manager-filament/tree/v1.12.1"
+                "source": "https://github.com/liberusoftware/module-module-manager-filament/tree/v1.12.3"
             },
-            "time": "2026-11-21T17:59:35+00:00"
+            "time": "2026-11-28T01:33:03+00:00"
         },
         {
             "name": "liberusoftware/notifications",
@@ -28200,16 +28200,16 @@
         },
         {
             "name": "liberusoftware/theme-support",
-            "version": "1.9.1",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/liberusoftware/module-theme-support.git",
-                "reference": "c33df013cf00cbb2ad21ae74ac9b5a696ef94088"
+                "reference": "4d95781460f284858998bbe299480ccdef76df7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/liberusoftware/module-theme-support/zipball/c33df013cf00cbb2ad21ae74ac9b5a696ef94088",
-                "reference": "c33df013cf00cbb2ad21ae74ac9b5a696ef94088",
+                "url": "https://api.github.com/repos/liberusoftware/module-theme-support/zipball/4d95781460f284858998bbe299480ccdef76df7b",
+                "reference": "4d95781460f284858998bbe299480ccdef76df7b",
                 "shasum": ""
             },
             "require": {
@@ -28244,9 +28244,9 @@
             "description": "Theme discovery and host presentation support for Liberu applications.",
             "support": {
                 "issues": "https://github.com/liberusoftware/module-theme-support/issues",
-                "source": "https://github.com/liberusoftware/module-theme-support/tree/v1.9.1"
+                "source": "https://github.com/liberusoftware/module-theme-support/tree/v1.10.0"
             },
-            "time": "2026-11-22T05:19:45+00:00"
+            "time": "2026-11-28T02:32:03+00:00"
         },
         {
             "name": "liberusoftware/theme-support-livewire",

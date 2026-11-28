@@ -1,6 +1,6 @@
 {
   "name": "accounting-accounts-payable",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "display_name": "Accounts Payable",
   "description": "Supplier subledger, open items, payments, aging, holds, disputes, and control-account reconciliation.",
   "category": "capability",
