@@ -121,11 +121,11 @@
   },
   "liberusoftware/integrations": {
     "path": "modules/integrations",
-    "reference": "f6321c45b0ea2e3a94101bbd18d0ceed073f54ad",
+    "reference": "7ea54c002c0e2f957b38d6907fee3ac7b4ad1fef",
     "repository": "https://github.com/liberusoftware/module-integrations",
-    "source_signature": "2c73aba3ff90d835a1d6b6569675de04a2c000e492d80a1def8f35c88ac60c81",
-    "source_tree": "145550184ee9854fdafcc0cb50fad43dd808b93a",
-    "version": "1.14.0"
+    "source_signature": "19a212f8438364d358b3feb062397897c33907ff815b795c27c87373a613cf1f",
+    "source_tree": "3760177dc797a3b6a9106723b58a252c87fbb969",
+    "version": "1.15.0"
   },
   "liberusoftware/jetstream-bridge": {
     "path": "modules/jetstream-bridge",
